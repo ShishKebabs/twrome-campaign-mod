@@ -59,6 +59,11 @@ package-lock.json
 /**/*.zip
 /**/*.pak
 /**/*.webm
+/**/*.jpg
+/**/*.mp4
 /**/*.bpi
 /**/*.fxo
 /**/*.strings
+/**/*.feral
+/**/*.wfc
+/**/*.max
