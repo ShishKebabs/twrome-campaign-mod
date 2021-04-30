@@ -1,18 +1,64 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+min/
+node_modules/
+packs/
+sounds/
+fmv/
+ui/
+models_building/
+models_world/
+models_unit/
+models_landscape/
+editor/
+terrain/
+sprites/
+loading_screen/
+animations/
+sky/
+items/
+models_strat/
+battlefield/
+menu/
+vegetation/
 
-# Other files and folders
-.settings/
+/**/*.xmb
+/**/*.lnk
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+/**/*~lock.*
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+
+/**/*.xtd
+/**/*.lrp
+/**/*.xtt
+/**/*.bik
+/**/*.gfx
+
+/mod/art/ui/flash/*
+
+/**/*.swf
+/**/*.ugx
+
+/**/*.ddx
+/**/*.lrp
+/**/*.xth
+/**/*.xtd
+/**/*.xtt
+/**/*.xsd
+/**/*.wav
+/**/*.bin
+/**/*.ttf
+
+/**/*.xsddelta
+/**/*.dds
+/**/*.tga
+/**/*.wfc
+/**/*.cas
+
+package-lock.json
+
+
+/**/*.zip
+/**/*.pak
+/**/*.webm
+/**/*.bpi
+/**/*.fxo
+/**/*.strings
