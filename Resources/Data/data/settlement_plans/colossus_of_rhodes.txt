@@ -1,0 +1,16 @@
+plan
+
+{
+
+floor underlay_colossus_settlement.cas
+
+
+colossus_of_rhodes,	0,	-85,	180,	9.7
+
+colossus_harbour_mouth,	0,	0,	0,	0
+
+roman_dockyard,		0,	0,	0,	0
+
+roman_statue,		0.5,	-39.5,	0,	3.75
+
+}

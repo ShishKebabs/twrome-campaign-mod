@@ -1,0 +1,10 @@
+plan
+
+{
+
+floor	underlay_egyptian_underground_tomb.cas  overlay_egyptian_underground_tomb.cas
+
+egyptian_underground_tomb,	0,	0,	0,	0
+limestone_boulders,		-4,	-8,	0,	-38.75
+
+	}

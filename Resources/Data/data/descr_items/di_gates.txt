@@ -1,0 +1,585 @@
+type			gate_iron_open
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_iron.cas&models_gates/static_open.cas
+
+type			gate_iron_closed
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_iron.cas&models_gates/static_closed.cas
+
+type			gate_iron_open_to_closed
+lod
+max_distance	4000
+model_anim		+models_gates/gate_iron.cas&models_gates/open_to_closed.cas
+
+type			gate_iron_closed_to_open
+lod
+max_distance	4000
+model_anim		+models_gates/gate_iron.cas&models_gates/closed_to_open.cas
+
+type			gate_iron_closed_impact
+lod
+max_distance	4000
+model_anim		+models_gates/gate_iron.cas&models_gates/closed_impact.cas
+
+type			gate_iron_open_impact
+lod
+max_distance	4000
+model_anim		+models_gates/gate_iron.cas&models_gates/open_impact.cas
+
+type			gate_iron_open_damaged
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_iron.cas&models_gates/static_open_damaged.cas
+
+type			gate_iron_closed_damaged
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_iron.cas&models_gates/static_closed_damaged.cas
+
+type			gate_iron_open_to_closed_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_iron.cas&models_gates/open_to_closed_damaged.cas
+
+type			gate_iron_closed_to_open_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_iron.cas&models_gates/closed_to_open_damaged.cas
+
+type			gate_iron_closed_impact_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_iron.cas&models_gates/closed_impact_damaged.cas
+
+type			gate_iron_open_impact_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_iron.cas&models_gates/open_impact_damaged.cas
+
+type			gate_iron_closed_to_collapsed
+lod
+max_distance	4000
+model_anim		+models_gates/gate_iron.cas&models_gates/closed_collapse.cas
+
+type			gate_iron_collapsed
+lod
+max_distance	4000
+model_rigid_from_anim	2	+models_gates/gate_iron.cas&models_gates/closed_collapse.cas
+
+
+
+
+; SHORT WOODEN
+
+type			gate_short_wooden_open
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/wooden_wall_short_gate.cas&models_gates/static_open.cas
+
+type			gate_short_wooden_closed
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/wooden_wall_short_gate.cas&models_gates/static_closed.cas
+
+type			gate_short_wooden_open_to_closed
+lod
+max_distance	4000
+model_anim		+models_gates/wooden_wall_short_gate.cas&models_gates/open_to_closed.cas
+
+type			gate_short_wooden_closed_to_open
+lod
+max_distance	4000
+model_anim		+models_gates/wooden_wall_short_gate.cas&models_gates/closed_to_open.cas
+
+type			gate_short_wooden_closed_impact
+lod
+max_distance	4000
+model_anim		+models_gates/wooden_wall_short_gate.cas&models_gates/closed_impact.cas
+
+type			gate_short_wooden_open_impact
+lod
+max_distance	4000
+model_anim		+models_gates/wooden_wall_short_gate.cas&models_gates/open_impact.cas
+
+type			gate_short_wooden_open_damaged
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/wooden_wall_short_gate.cas&models_gates/static_open_damaged.cas
+
+type			gate_short_wooden_closed_damaged
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/wooden_wall_short_gate.cas&models_gates/static_closed_damaged.cas
+
+type			gate_short_wooden_open_to_closed_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/wooden_wall_short_gate.cas&models_gates/open_to_closed_damaged.cas
+
+type			gate_short_wooden_closed_to_open_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/wooden_wall_short_gate.cas&models_gates/closed_to_open_damaged.cas
+
+type			gate_short_wooden_closed_impact_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/wooden_wall_short_gate.cas&models_gates/closed_impact_damaged.cas
+
+type			gate_short_wooden_open_impact_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/wooden_wall_short_gate.cas&models_gates/open_impact_damaged.cas
+
+type			gate_short_wooden_closed_to_collapsed
+lod
+max_distance	4000
+model_anim		+models_gates/wooden_wall_short_gate.cas&models_gates/closed_collapse.cas
+
+type			gate_short_wooden_collapsed
+lod
+max_distance	4000
+model_rigid_from_anim	2	+models_gates/wooden_wall_short_gate.cas&models_gates/closed_collapse.cas
+
+
+; MEDIUM WOODEN
+
+type			gate_medium_wooden_open
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_wooden.cas&models_gates/static_open.cas
+
+type			gate_medium_wooden_closed
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_wooden.cas&models_gates/static_closed.cas
+
+type			gate_medium_wooden_open_to_closed
+lod
+max_distance	4000
+model_anim		+models_gates/gate_wooden.cas&models_gates/open_to_closed.cas
+
+type			gate_medium_wooden_closed_to_open
+lod
+max_distance	4000
+model_anim		+models_gates/gate_wooden.cas&models_gates/closed_to_open.cas
+
+type			gate_medium_wooden_closed_impact
+lod
+max_distance	4000
+model_anim		+models_gates/gate_wooden.cas&models_gates/closed_impact.cas
+
+type			gate_medium_wooden_open_impact
+lod
+max_distance	4000
+model_anim		+models_gates/gate_wooden.cas&models_gates/open_impact.cas
+
+type			gate_medium_wooden_open_damaged
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_wooden.cas&models_gates/static_open_damaged.cas
+
+type			gate_medium_wooden_closed_damaged
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_wooden.cas&models_gates/static_closed_damaged.cas
+
+type			gate_medium_wooden_open_to_closed_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_wooden.cas&models_gates/open_to_closed_damaged.cas
+
+type			gate_medium_wooden_closed_to_open_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_wooden.cas&models_gates/closed_to_open_damaged.cas
+
+type			gate_medium_wooden_closed_impact_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_wooden.cas&models_gates/closed_impact_damaged.cas
+
+type			gate_medium_wooden_open_impact_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_wooden.cas&models_gates/open_impact_damaged.cas
+
+type			gate_medium_wooden_closed_to_collapsed
+lod
+max_distance	4000
+model_anim		+models_gates/gate_wooden.cas&models_gates/closed_collapse.cas
+
+type			gate_medium_wooden_collapsed
+lod
+max_distance	4000
+model_rigid_from_anim	2	+models_gates/gate_wooden.cas&models_gates/closed_collapse.cas
+
+
+; MEDIUM REINFORCED
+
+type			gate_medium_reinforced_open
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_reinforced.cas&models_gates/static_open.cas
+
+type			gate_medium_reinforced_closed
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_reinforced.cas&models_gates/static_closed.cas
+
+type			gate_medium_reinforced_open_to_closed
+lod
+max_distance	4000
+model_anim		+models_gates/gate_reinforced.cas&models_gates/open_to_closed.cas
+
+type			gate_medium_reinforced_closed_to_open
+lod
+max_distance	4000
+model_anim		+models_gates/gate_reinforced.cas&models_gates/closed_to_open.cas
+
+type			gate_medium_reinforced_closed_impact
+lod
+max_distance	4000
+model_anim		+models_gates/gate_reinforced.cas&models_gates/closed_impact.cas
+
+type			gate_medium_reinforced_open_impact
+lod
+max_distance	4000
+model_anim		+models_gates/gate_reinforced.cas&models_gates/open_impact.cas
+
+type			gate_medium_reinforced_open_damaged
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_reinforced.cas&models_gates/static_open_damaged.cas
+
+type			gate_medium_reinforced_closed_damaged
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_reinforced.cas&models_gates/static_closed_damaged.cas
+
+type			gate_medium_reinforced_open_to_closed_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_reinforced.cas&models_gates/open_to_closed_damaged.cas
+
+type			gate_medium_reinforced_closed_to_open_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_reinforced.cas&models_gates/closed_to_open_damaged.cas
+
+type			gate_medium_reinforced_closed_impact_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_reinforced.cas&models_gates/closed_impact_damaged.cas
+
+type			gate_medium_reinforced_open_impact_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_reinforced.cas&models_gates/open_impact_damaged.cas
+
+type			gate_medium_reinforced_closed_to_collapsed
+lod
+max_distance	4000
+model_anim		+models_gates/gate_reinforced.cas&models_gates/closed_collapse.cas
+
+type			gate_medium_reinforced_collapsed
+lod
+max_distance	4000
+model_rigid_from_anim	2	+models_gates/gate_reinforced.cas&models_gates/closed_collapse.cas
+
+
+; MEDIUM IRON
+
+type			gate_medium_iron_open
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_iron.cas&models_gates/static_open.cas
+
+type			gate_medium_iron_closed
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_iron.cas&models_gates/static_closed.cas
+
+type			gate_medium_iron_open_to_closed
+lod
+max_distance	4000
+model_anim		+models_gates/gate_iron.cas&models_gates/open_to_closed.cas
+
+type			gate_medium_iron_closed_to_open
+lod
+max_distance	4000
+model_anim		+models_gates/gate_iron.cas&models_gates/closed_to_open.cas
+
+type			gate_medium_iron_closed_impact
+lod
+max_distance	4000
+model_anim		+models_gates/gate_iron.cas&models_gates/closed_impact.cas
+
+type			gate_medium_iron_open_impact
+lod
+max_distance	4000
+model_anim		+models_gates/gate_iron.cas&models_gates/open_impact.cas
+
+type			gate_medium_iron_open_damaged
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_iron.cas&models_gates/static_open_damaged.cas
+
+type			gate_medium_iron_closed_damaged
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_iron.cas&models_gates/static_closed_damaged.cas
+
+type			gate_medium_iron_open_to_closed_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_iron.cas&models_gates/open_to_closed_damaged.cas
+
+type			gate_medium_iron_closed_to_open_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_iron.cas&models_gates/closed_to_open_damaged.cas
+
+type			gate_medium_iron_closed_impact_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_iron.cas&models_gates/closed_impact_damaged.cas
+
+type			gate_medium_iron_open_impact_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_iron.cas&models_gates/open_impact_damaged.cas
+
+type			gate_medium_iron_closed_to_collapsed
+lod
+max_distance	4000
+model_anim		+models_gates/gate_iron.cas&models_gates/closed_collapse.cas
+
+type			gate_medium_iron_collapsed
+lod
+max_distance	4000
+model_rigid_from_anim	2	+models_gates/gate_iron.cas&models_gates/closed_collapse.cas
+
+
+
+
+; HUGE WOODEN
+
+type			gate_huge_wooden_open
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_large_wooden.cas&models_gates/static_open.cas
+
+type			gate_huge_wooden_closed
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_large_wooden.cas&models_gates/static_closed.cas
+
+type			gate_huge_wooden_open_to_closed
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_wooden.cas&models_gates/open_to_closed.cas
+
+type			gate_huge_wooden_closed_to_open
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_wooden.cas&models_gates/closed_to_open.cas
+
+type			gate_huge_wooden_closed_impact
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_wooden.cas&models_gates/closed_impact.cas
+
+type			gate_huge_wooden_open_impact
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_wooden.cas&models_gates/open_impact.cas
+
+type			gate_huge_wooden_open_damaged
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_large_wooden.cas&models_gates/static_open_damaged.cas
+
+type			gate_huge_wooden_closed_damaged
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_large_wooden.cas&models_gates/static_closed_damaged.cas
+
+type			gate_huge_wooden_open_to_closed_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_wooden.cas&models_gates/open_to_closed_damaged.cas
+
+type			gate_huge_wooden_closed_to_open_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_wooden.cas&models_gates/closed_to_open_damaged.cas
+
+type			gate_huge_wooden_closed_impact_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_wooden.cas&models_gates/closed_impact_damaged.cas
+
+type			gate_huge_wooden_open_impact_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_wooden.cas&models_gates/open_impact_damaged.cas
+
+type			gate_huge_wooden_closed_to_collapsed
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_wooden.cas&models_gates/closed_collapse.cas
+
+type			gate_huge_wooden_collapsed
+lod
+max_distance	4000
+model_rigid_from_anim	2	+models_gates/gate_large_wooden.cas&models_gates/closed_collapse.cas
+
+
+; HUGE REINFORCED
+
+type			gate_huge_reinforced_open
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_large_reinforced.cas&models_gates/static_open.cas
+
+type			gate_huge_reinforced_closed
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_large_reinforced.cas&models_gates/static_closed.cas
+
+type			gate_huge_reinforced_open_to_closed
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_reinforced.cas&models_gates/open_to_closed.cas
+
+type			gate_huge_reinforced_closed_to_open
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_reinforced.cas&models_gates/closed_to_open.cas
+
+type			gate_huge_reinforced_closed_impact
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_reinforced.cas&models_gates/closed_impact.cas
+
+type			gate_huge_reinforced_open_impact
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_reinforced.cas&models_gates/open_impact.cas
+
+type			gate_huge_reinforced_open_damaged
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_large_reinforced.cas&models_gates/static_open_damaged.cas
+
+type			gate_huge_reinforced_closed_damaged
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_large_reinforced.cas&models_gates/static_closed_damaged.cas
+
+type			gate_huge_reinforced_open_to_closed_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_reinforced.cas&models_gates/open_to_closed_damaged.cas
+
+type			gate_huge_reinforced_closed_to_open_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_reinforced.cas&models_gates/closed_to_open_damaged.cas
+
+type			gate_huge_reinforced_closed_impact_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_reinforced.cas&models_gates/closed_impact_damaged.cas
+
+type			gate_huge_reinforced_open_impact_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_reinforced.cas&models_gates/open_impact_damaged.cas
+
+type			gate_huge_reinforced_closed_to_collapsed
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_reinforced.cas&models_gates/closed_collapse.cas
+
+type			gate_huge_reinforced_collapsed
+lod
+max_distance	4000
+model_rigid_from_anim	2	+models_gates/gate_large_reinforced.cas&models_gates/closed_collapse.cas
+
+
+; HUGE IRON
+
+type			gate_huge_iron_open
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_large_iron.cas&models_gates/static_open.cas
+
+type			gate_huge_iron_closed
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_large_iron.cas&models_gates/static_closed.cas
+
+type			gate_huge_iron_open_to_closed
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_iron.cas&models_gates/open_to_closed.cas
+
+type			gate_huge_iron_closed_to_open
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_iron.cas&models_gates/closed_to_open.cas
+
+type			gate_huge_iron_closed_impact
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_iron.cas&models_gates/closed_impact.cas
+
+type			gate_huge_iron_open_impact
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_iron.cas&models_gates/open_impact.cas
+
+type			gate_huge_iron_open_damaged
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_large_iron.cas&models_gates/static_open_damaged.cas
+
+type			gate_huge_iron_closed_damaged
+lod
+max_distance	4000
+model_rigid_from_anim	0	+models_gates/gate_large_iron.cas&models_gates/static_closed_damaged.cas
+
+type			gate_huge_iron_open_to_closed_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_iron.cas&models_gates/open_to_closed_damaged.cas
+
+type			gate_huge_iron_closed_to_open_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_iron.cas&models_gates/closed_to_open_damaged.cas
+
+type			gate_huge_iron_closed_impact_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_iron.cas&models_gates/closed_impact_damaged.cas
+
+type			gate_huge_iron_open_impact_damaged
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_iron.cas&models_gates/open_impact_damaged.cas
+
+type			gate_huge_iron_closed_to_collapsed
+lod
+max_distance	4000
+model_anim		+models_gates/gate_large_iron.cas&models_gates/closed_collapse.cas
+
+type			gate_huge_iron_collapsed
+lod
+max_distance	4000
+model_rigid_from_anim	2	+models_gates/gate_large_iron.cas&models_gates/closed_collapse.cas
+

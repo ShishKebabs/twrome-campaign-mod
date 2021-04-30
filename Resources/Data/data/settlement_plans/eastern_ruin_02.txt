@@ -1,0 +1,13 @@
+plan
+
+{
+	floor		eastern_ruin_02_underlay.cas eastern_ruin_02_overlay.cas
+
+	ground_types	ground_default_grass.tga	-64,	-64,	64,	64
+	borders	border_limits_64m_diameter.CAS
+;				x,		y,		rot,	        z,
+eastern_ruin_02,		0.0m,		0.0m,	        -110.307	0
+
+
+
+}

@@ -1,0 +1,15 @@
+plan
+
+{
+
+floor	eastern_blacksmith_ruin_underlay.CAS	eastern_blacksmith_ruin_overlay.CAS
+
+	ground_types	ground_default_grass.tga	-64,	-64,	64,	64		
+	borders	border_limits_64m_diameter.CAS
+
+
+eastern_blacksmith_ruin,		0,	0,	0,	0
+
+
+
+	}

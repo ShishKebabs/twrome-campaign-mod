@@ -1,0 +1,1437 @@
+; *****    MISSILES tech-tree buildings    *****
+
+
+
+type			practice_field_roman
+lod
+max_distance	200
+model_rigid		practice_field_roman_high.cas
+lod
+max_distance	400
+model_rigid		practice_field_roman_med.cas
+lod
+max_distance	1000
+model_rigid		practice_field_roman_low.cas
+
+
+
+type			archery_range_roman
+lod
+max_distance	200
+model_rigid		archery_range_roman_high.cas
+lod
+max_distance	400
+model_rigid		archery_range_roman_med.cas
+lod
+max_distance	1000
+model_rigid		archery_range_roman_low.cas
+
+
+
+type			catapult_range_roman
+lod
+max_distance	200
+model_rigid		catapult_range_roman_high.cas
+lod
+max_distance	400
+model_rigid		catapult_range_roman_med.cas
+lod
+max_distance	1000
+model_rigid		catapult_range_roman_low.cas
+
+
+
+type			siege_engineer_roman
+lod
+max_distance	300
+model_rigid		siege_engineer_roman_high.cas
+lod
+max_distance	500
+model_rigid		siege_engineer_roman_med.cas
+lod
+max_distance	1000
+model_rigid		siege_engineer_roman_low.cas
+
+
+
+
+; EASTERN/EGYPTIAN
+
+type			practice_field_eastern
+lod
+max_distance	200
+model_rigid		practice_field_eastern_high.cas
+lod
+max_distance	400
+model_rigid		practice_field_eastern_med.cas
+lod
+max_distance	1000
+model_rigid		practice_field_eastern_low.cas
+
+
+
+type			archery_range_eastern
+lod
+max_distance	200
+model_rigid		archery_range_eastern_high.cas
+lod
+max_distance	400
+model_rigid		archery_range_eastern_med.cas
+lod
+max_distance	1000
+model_rigid		archery_range_eastern_low.cas
+
+
+type			catapult_range_eastern
+lod
+max_distance	200
+model_rigid		catapult_range_eastern_high.cas
+lod
+max_distance	400
+model_rigid		catapult_range_eastern_med.cas
+lod
+max_distance	1000
+model_rigid		catapult_range_eastern_low.cas
+
+
+
+type			siege_engineer_eastern
+lod
+max_distance	300
+model_rigid		siege_engineer_eastern_high.cas
+lod
+max_distance	500
+model_rigid		siege_engineer_eastern_med.cas
+lod
+max_distance	1000
+model_rigid		siege_engineer_eastern_low.cas
+
+
+;BARBARIAN
+
+
+type			practice_field_barbarian
+lod
+max_distance	200
+model_rigid		practice_field_barbarian_high.cas
+lod
+max_distance	400
+model_rigid		practice_field_barbarian_med.cas
+lod
+max_distance	1000
+model_rigid		practice_field_barbarian_low.cas
+
+
+
+type			archery_range_barbarian
+lod
+max_distance	500
+model_rigid		archery_range_barbarian_high.cas
+lod
+max_distance	400
+model_rigid		archery_range_barbarian_med.cas
+lod
+max_distance	1000
+model_rigid		archery_range_barbarian_low.cas
+
+
+
+
+; *******    HEALTH tech-tree buildings    *****
+
+
+;ROMAN
+
+type			sewers_roman
+lod
+max_distance	200
+model_rigid		sewers_roman_high.cas
+lod
+max_distance	300
+model_rigid		sewers_roman_med.cas
+lod
+max_distance	500
+model_rigid		sewers_roman_low.cas
+lod
+max_distance	1000
+model_rigid		sewers_roman_lowest.cas
+
+
+
+type			baths_roman
+lod
+max_distance	200
+model_rigid		baths_roman_high.cas
+lod
+max_distance	300
+model_rigid		baths_roman_med.cas
+lod
+max_distance	500
+model_rigid		baths_roman_low.cas
+lod
+max_distance	1000
+model_rigid		baths_roman_lowest.cas
+
+
+
+type			baths_greek
+lod
+max_distance	300
+model_rigid		baths_greek_high.cas
+lod
+max_distance	1000
+model_rigid		baths_greek_low.cas
+
+
+
+; EGYPTIAN
+
+type			sewers_egyptian
+lod
+max_distance	200
+model_rigid		sewers_egyptian_high.cas
+lod
+max_distance	400
+model_rigid		sewers_egyptian_med.cas
+lod
+max_distance	1000
+model_rigid		sewers_egyptian_low.cas
+
+
+
+type			baths_egyptian
+lod
+max_distance	200
+model_rigid		baths_egyptian_high.cas
+lod
+max_distance	400
+model_rigid		baths_egyptian_med.cas
+lod
+max_distance	1000
+model_rigid		baths_egyptian_low.cas
+
+
+
+; **************   AQUEDUCTS
+
+
+
+type			aqueduct_large_city
+lod
+max_distance		1000
+model_rigid		aquaduct_large_city.cas
+
+
+type			aqueduct_huge_city
+lod
+max_distance		1000
+model_rigid		aquaduct_huge_city.cas
+
+
+type			city_plumbing_huge_city
+lod
+max_distance		1000
+model_rigid		city_plumbing_huge_city.cas
+
+
+
+
+; *****    DESPOTIC LAW tech-tree buildings    *****
+
+; EGYPTIAN/EASTERN
+
+
+type			execution_square_eastern
+lod
+max_distance	300
+model_rigid		execution_square_eastern_high.cas
+lod
+max_distance	500
+model_rigid		execution_square_eastern_med.cas
+lod
+max_distance	1000
+model_rigid		execution_square_eastern_low.cas
+
+
+
+type			secret_police_HQ_eastern
+lod
+max_distance	300
+model_rigid		secret_police_HQ_eastern_high.cas
+lod
+max_distance	500
+model_rigid		secret_police_HQ_eastern_med.cas
+lod
+max_distance	1000
+model_rigid		secret_police_HQ_eastern_low.cas
+
+
+
+type			secret_police_network_eastern
+lod
+max_distance	300
+model_rigid		secret_police_network_eastern_high.cas
+lod
+max_distance	500
+model_rigid		secret_police_network_eastern_med.cas
+lod
+max_distance	1000
+model_rigid		secret_police_network_eastern_low.cas
+
+
+
+; *****     THEATRE tech-tree buildings    *****
+
+
+type			odeon_greek
+lod
+max_distance	200
+model_rigid		greek_odeon_high.cas
+lod
+max_distance	300
+model_rigid		greek_odeon_med.cas
+lod
+max_distance	500
+model_rigid		greek_odeon_low.cas
+lod
+max_distance	1000
+model_rigid		greek_odeon_lowest.cas
+
+
+
+type			lyceum_greek
+lod
+max_distance	300
+model_rigid		lyceum_greek_high.cas
+lod
+max_distance	500
+model_rigid		lyceum_greek_med.cas
+lod
+max_distance	1000
+model_rigid		lyceum_greek_low.cas
+
+
+
+type			theatre_greek
+lod
+max_distance	300
+model_rigid		theatre_greek_high.cas
+lod
+max_distance	600
+model_rigid		theatre_greek_med.cas
+lod
+max_distance	1200
+model_rigid		theatre_greek_low.cas
+lod
+max_distance	2500
+model_rigid		theatre_greek_lowest.cas
+
+
+
+; ***   TAVERNS tech-tree buildings   **********
+
+
+type			tavern_barbarian
+lod
+max_distance	200
+model_rigid		tavern_barbarian_high.cas
+lod
+max_distance	400
+model_rigid		tavern_barbarian_med.cas
+lod
+max_distance	1000
+model_rigid		tavern_barbarian_low.cas
+
+
+
+type			bardic_circle_barbarian
+lod
+max_distance	200
+model_rigid		bardic_circle_barbarian_high.cas
+lod
+max_distance	400
+model_rigid		bardic_circle_barbarian_med.cas
+lod
+max_distance	1000
+model_rigid		bardic_circle_barbarian_low.cas
+
+
+; ********  OTHER
+
+
+type			egyptian_great_forum
+lod
+max_distance	500
+model_rigid		egyptian_great_forum_high.cas
+
+
+; ************  RUBBLE
+
+type			roman_rubble_10_4x7
+lod
+max_distance	1000
+model_rigid		roman_rubble_10_4x7.cas
+
+
+type			roman_rubble_10_7x27_4
+lod
+max_distance	1000
+model_rigid		roman_rubble_10_7x27_4.cas
+
+
+type			roman_rubble_10x24
+lod
+max_distance	1000
+model_rigid		roman_rubble_10x24.cas
+
+
+type			roman_rubble_11x24
+lod
+max_distance	1000
+model_rigid		roman_rubble_11x24.cas
+
+
+type			roman_rubble_14x15
+lod
+max_distance	1000
+model_rigid		roman_rubble_14x15.cas
+
+
+type 			roman_rubble_24x22
+lod
+max_distance	1000
+model_rigid		roman_rubble_24x22.cas
+
+
+type			roman_rubble_32x32
+lod
+max_distance	1000
+model_rigid		roman_rubble_32x32.cas
+
+
+type 			roman_rubble_48x32
+lod
+max_distance	1000
+model_rigid		roman_rubble_48x32.cas
+
+
+type			roman_rubble_52x18
+lod
+max_distance	1000
+model_rigid		roman_rubble_52x18.cas
+
+
+type			roman_rubble_58x28
+lod
+max_distance	1000
+model_rigid		roman_rubble_58x28.cas
+
+
+type			roman_rubble_64x80
+lod
+max_distance	1000
+model_rigid		roman_rubble_64x80.cas
+
+
+type 			roman_rubble_6x6
+lod
+max_distance	1000
+model_rigid		roman_rubble_6x6.cas
+
+
+type			roman_rubble_6x8
+lod
+max_distance	1000
+model_rigid		roman_rubble_6x8.cas
+
+
+type 			roman_rubble_7x29
+lod
+max_distance	1000
+model_rigid		roman_rubble_7x29.cas
+
+
+type			roman_rubble_112x64
+lod
+max_distance	1000
+model_rigid		roman_rubble_112x64.cas
+
+
+type			roman_rubble_160x128
+lod
+max_distance	1000
+model_rigid		roman_rubble_160x128.cas
+
+
+type			roman_rubble_17x13
+lod
+max_distance	1000
+model_rigid		roman_rubble_17x13.cas
+
+
+type			roman_rubble_192x192
+lod
+max_distance	1000
+model_rigid		roman_rubble_192x192.cas
+
+
+type			roman_rubble_256x192
+lod
+max_distance	1000
+model_rigid		roman_rubble_256x192.cas
+
+
+type			roman_rubble_256x96
+lod
+max_distance	1000
+model_rigid		roman_rubble_256x96.cas
+
+
+type			roman_rubble_26x22
+lod
+max_distance	1000
+model_rigid		roman_rubble_26x22.cas
+
+
+type			roman_rubble_30x27
+lod
+max_distance	1000
+model_rigid		roman_rubble_30x27.cas
+
+
+type			roman_rubble_50x20
+lod
+max_distance	1000
+model_rigid		roman_rubble_50x20.cas
+
+
+type			roman_rubble_58x34
+lod
+max_distance	1000
+model_rigid		roman_rubble_58x34.cas
+
+
+type			roman_rubble_63x46
+lod
+max_distance	1000
+model_rigid		roman_rubble_63x46.cas
+
+
+type			roman_rubble_aqueduct_huge_city
+lod
+max_distance	1000
+model_rigid		rubble_roman_aquaduct_huge_city.cas
+
+
+type			roman_rubble_aqueduct_large_city
+lod
+max_distance	1000
+model_rigid		rubble_roman_aquaduct_large_city.cas
+
+
+
+type			roman_rubble_triumphal_column
+lod
+max_distance	1000
+model_rigid		roman_rubble_triumphal_column.cas
+
+
+type			roman_rubble_small_plinth_bridge
+lod
+max_distance	1000
+model_rigid		roman_rubble_small_plinth_bridge.cas
+
+
+type			roman_rubble_7_radius
+lod
+max_distance	1000
+model_rigid		roman_rubble_7_radius.cas
+
+
+type			eastern_rubble_eastern_poor_houseC
+lod
+max_distance	1000
+model_rigid		eastern_rubble_eastern_poor_houseC.cas
+
+
+type			eastern_rubble_egyptian_open_tent
+lod
+max_distance	1000
+model_rigid		eastern_rubble_egyptian_open_tent.cas
+
+
+
+type			eastern_rubble_egyptian_storage_building
+lod
+max_distance	1000
+model_rigid		eastern_rubble_egyptian_storage_building.cas
+
+
+type			eastern_rubble_tenamentA
+lod
+max_distance	1000
+model_rigid		eastern_rubble_tenamentA.cas
+
+
+type			eastern_rubble_tenamentB
+lod
+max_distance	1000
+model_rigid		eastern_rubble_tenamentB.cas
+
+
+type			eastern_rubble_tenamentC
+lod
+max_distance	1000
+model_rigid		eastern_rubble_tenamentC.cas
+
+
+type			eastern_rubble_tenamentD
+lod
+max_distance	1000
+model_rigid		eastern_rubble_tenamentD.cas
+
+
+type			roman_rubble_large_palace
+lod
+max_distance	1000
+model_rigid		roman_rubble_large_palace.cas
+
+
+type			greek_rubble_bouleuterion
+lod
+max_distance	1000
+model_rigid		greek_rubble_bouleuterion.cas
+
+
+
+type			barb_rubble_5_radius
+lod
+max_distance	1000
+model_rigid		barb_rubble_5_radius.cas
+
+
+type			barb_rubble_hall_large
+lod
+max_distance	1000
+model_rigid		barb_rubble_hall_large.cas
+
+
+type			barb_rubble_long_house
+lod
+max_distance	1000
+model_rigid		barb_rubble_long_house.cas
+
+
+
+type			egyptian_rubble_proconsuls_palace
+lod
+max_distance	1000
+model_rigid		egyptian_rubble_proconsuls_palace.cas
+
+		
+
+type			eastern_rubble_imperial_palace
+lod
+max_distance	1000
+model_rigid		eastern_rubble_imperial_palace.cas
+
+
+;; Items added for RomeHD
+
+
+;; Tents and Roman
+
+
+type			barbarian_shrine_rubble
+lod
+max_distance	1000
+model_rigid		barbarian_shrine_rubble.cas
+
+
+
+type			sacred_grove_rubble
+lod
+max_distance	1000
+model_rigid		sacred_grove_rubble.cas
+
+
+
+type			sacred_circle_rubble
+lod
+max_distance	1000
+model_rigid		sacred_circle_rubble.cas
+
+
+
+type			centurions_tent_rubble
+lod
+max_distance	1000
+model_rigid		centurions_tent_rubble.cas
+
+
+
+type			generals_side_tent_rubble
+lod
+max_distance	1000
+model_rigid		generals_side_tent_rubble.cas
+
+
+
+type			generals_tent_rubble
+lod
+max_distance	1000
+model_rigid		generals_tent_rubble.cas
+
+
+
+type			legionary_tent_both_flaps_closed_rubble
+lod
+max_distance	1000
+model_rigid		legionary_tent_both_flaps_closed_rubble.cas
+
+
+
+type			legionary_tent_both_flaps_open_rubble
+lod
+max_distance	1000
+model_rigid		legionary_tent_both_flaps_open_rubble.cas
+
+
+
+type			legionary_tent_left_flap_open_rubble
+lod
+max_distance	1000
+model_rigid		legionary_tent_left_flap_open_rubble.cas
+
+
+
+type			legionary_tent_right_flap_open_rubble
+lod
+max_distance	1000
+model_rigid		legionary_tent_right_flap_open_rubble.cas
+
+
+
+type			barb_camp_tent_rubble
+lod
+max_distance	1000
+model_rigid		barb_camp_tent_rubble.cas
+
+
+
+type			barb_camp_tentb_rubble
+lod
+max_distance	1000
+model_rigid		barb_camp_tentb_rubble.cas
+
+
+
+type			barbarian_tent_rubble
+lod
+max_distance	1000
+model_rigid		barbarian_tent_rubble.cas
+
+
+
+type			egyptian_eastern_closed_tent_rubble
+lod
+max_distance	1000
+model_rigid		egyptian_eastern_closed_tent_rubble.cas
+
+
+
+type			egyptian_eastern_open_tent_rubble
+lod
+max_distance	1000
+model_rigid		egyptian_eastern_open_tent_rubble.cas
+
+
+type			archery_range_roman_rubble
+lod
+max_distance	1000
+model_rigid		archery_range_roman_rubble.cas
+
+
+
+type			catapult_range_roman_rubble
+lod
+max_distance	1000
+model_rigid		catapult_range_roman_rubble.cas
+
+
+
+type			cavalry_barracks_rubble
+lod
+max_distance	1000
+model_rigid		cavalry_barracks_rubble.cas
+
+
+
+type			circus_maximus_rubble
+lod
+max_distance	1000
+model_rigid		circus_maximus_rubble.cas
+
+
+type			city_barracks_roman_rubble
+lod
+max_distance	1000
+model_rigid		city_barracks_roman_rubble.cas
+
+
+
+type			colosseum_rubble
+lod
+max_distance	1000
+model_rigid		colosseum_rubble.cas
+
+
+
+type			farmhouse_thatched_round_rubble
+lod
+max_distance	1000
+model_rigid		farmhouse_thatched_round_rubble.cas
+
+
+
+type			forum_rubble
+lod
+max_distance	1000
+model_rigid		forum_rubble.cas
+
+
+
+type			hippodrome_rubble
+lod
+max_distance	1000
+model_rigid		hippodrome_rubble.cas
+
+
+
+type			pantheon_rubble
+lod
+max_distance	1000
+model_rigid		pantheon_rubble.cas
+
+
+
+type			practice_field_roman_rubble
+lod
+max_distance	1000
+model_rigid		practice_field_roman_rubble.cas
+
+
+
+type			roman_blacksmith_rubble
+lod
+max_distance	1000
+model_rigid		roman_blacksmith_rubble.cas
+
+
+
+type			roman_governors_house_rubble
+lod
+max_distance	1000
+model_rigid		roman_governors_house_rubble.cas
+
+
+
+type			roman_marketplace_rubble
+lod
+max_distance	1000
+model_rigid		roman_marketplace_rubble.cas
+
+
+
+type			roman_statue_rubble
+lod
+max_distance	1000
+model_rigid		roman_statue_rubble.cas
+
+
+
+type			roman_tenamenta_rubble
+lod
+max_distance	1000
+model_rigid		roman_tenamenta_rubble.cas
+
+
+
+type			roman_trader_rubble
+lod
+max_distance	1000
+model_rigid		roman_trader_rubble.cas
+
+
+
+type			siege_engineer_roman_rubble
+lod
+max_distance	1000
+model_rigid		siege_engineer_roman_rubble.cas
+
+
+
+type			stone_amphitheatre_rubble
+lod
+max_distance	1000
+model_rigid		stone_amphitheatre_rubble.cas
+
+
+
+type			stone_stables_rubble
+lod
+max_distance	1000
+model_rigid		stone_stables_rubble.cas
+
+
+
+type			urban_amphitheatre_rubble
+lod
+max_distance	1000
+model_rigid		urban_amphitheatre_rubble.cas
+
+
+
+type			urban_barracks_roman_rubble
+lod
+max_distance	1000
+model_rigid		urban_barracks_roman_rubble.cas
+
+
+
+type			roman_foundry_rubble
+lod
+max_distance	1000
+model_rigid		roman_foundry_rubble.cas
+
+
+
+type			roman_pro-consuls_palace_rubble
+lod
+max_distance	1000
+model_rigid		roman_pro-consuls_palace_rubble.cas
+
+
+
+type			base_roman_awesome_temple_rubble
+lod
+max_distance	1000
+model_rigid		base_roman_awesome_temple_rubble.cas
+
+
+
+type			base_roman_small_temple_rubble
+lod
+max_distance	1000
+model_rigid		base_roman_small_temple_rubble.cas
+
+
+
+type			roman_awesome_temple_rubble
+lod
+max_distance	1000
+model_rigid		roman_awesome_temple_rubble.cas
+
+
+
+type			roman_small_temple_rubble
+lod
+max_distance	1000
+model_rigid		roman_small_temple_rubble.cas
+
+
+
+type			shrine_round_rubble
+lod
+max_distance	1000
+model_rigid		shrine_round_rubble.cas
+
+
+
+type			stoa_rubble
+lod
+max_distance	1000
+model_rigid		stoa_rubble.cas
+
+
+
+;; Barbaric
+
+type			archery_range_barbarian_rubble
+lod
+max_distance	1000
+model_rigid		archery_range_barbarian_rubble.cas
+
+
+
+type			barbarian_blacksmith_rubble
+lod
+max_distance	1000
+model_rigid		barbarian_blacksmith_rubble.cas
+
+
+
+type			barbarian_long_house2_rubble
+lod
+max_distance	1000
+model_rigid		barbarian_long_house2_rubble.cas
+
+
+
+type			barbarian_long_house_rubble
+lod
+max_distance	1000
+model_rigid		barbarian_long_house_rubble.cas
+
+
+
+type			barbarian_stables_rubble
+lod
+max_distance	1000
+model_rigid		barbarian_stables_rubble.cas
+
+
+
+type			bardic_circle_barbarian_rubble
+lod
+max_distance	1000
+model_rigid		bardic_circle_barbarian_rubble.cas
+
+
+
+type			hall_of_heroes_rubble
+lod
+max_distance	1000
+model_rigid		hall_of_heroes_rubble.cas
+
+
+
+type			paddock_rubble
+lod
+max_distance	1000
+model_rigid		paddock_rubble.cas
+
+
+
+type			tavern_barbarian_rubble
+lod
+max_distance	1000
+model_rigid		tavern_barbarian_rubble.cas
+
+
+;; Greek
+
+type			city_barracks_greek_rubble
+lod
+max_distance	1000
+model_rigid		city_barracks_greek_rubble.cas
+
+
+
+type			greek_councillors_chambers_rubble
+lod
+max_distance	1000
+model_rigid		greek_councillors_chambers_rubble.cas
+
+
+
+type			greek_elite_cavalry_stables_rubble
+lod
+max_distance	1000
+model_rigid		greek_elite_cavalry_stables_rubble.cas
+
+
+
+type			greek_governors_palace_rubble
+lod
+max_distance	1000
+model_rigid		greek_governors_palace_rubble.cas
+
+
+
+type			greek_governors_villa_rubble
+lod
+max_distance	1000
+model_rigid		greek_governors_villa_rubble.cas
+
+
+
+type			greek_large_marketplace_rubble
+lod
+max_distance	1000
+model_rigid		greek_large_marketplace_rubble.cas
+
+
+
+type			greek_merchants_quarter_rubble
+lod
+max_distance	1000
+model_rigid		greek_merchants_quarter_rubble.cas
+
+
+
+type			greek_odeon_rubble
+lod
+max_distance	1000
+model_rigid		greek_odeon_rubble.cas
+
+
+
+type			greek_royal_cavalry_stables_rubble
+lod
+max_distance	1000
+model_rigid		greek_royal_cavalry_stables_rubble.cas
+
+
+
+type			greek_royal_palace_rubble
+lod
+max_distance	1000
+model_rigid		greek_royal_palace_rubble.cas
+
+
+
+type			greek_semidetached_house_rubble
+lod
+max_distance	1000
+model_rigid		greek_semidetached_house_rubble.cas
+
+
+
+type			greek_small_temple_rubble
+lod
+max_distance	1000
+model_rigid		greek_small_temple_rubble.cas
+
+
+
+type			greek_theatre_rubble
+lod
+max_distance	1000
+model_rigid		greek_theatre_rubble.cas
+
+
+
+type			lyceum_greek_rubble
+lod
+max_distance	1000
+model_rigid		lyceum_greek_rubble.cas
+
+
+
+type			militia_barracks_greek_rubble
+lod
+max_distance	1000
+model_rigid		militia_barracks_greek_rubble.cas
+
+
+;; carthage
+
+type			archery_range_eastern_rubble
+lod
+max_distance	1000
+model_rigid		archery_range_eastern_rubble.cas
+
+
+
+type			baths_egyptian_rubble
+lod
+max_distance	1000
+model_rigid		baths_egyptian_rubble.cas
+
+
+
+type			camel_stables_rubble
+lod
+max_distance	1000
+model_rigid		camel_stables_rubble.cas
+
+
+
+type			catapult_range_eastern_rubble
+lod
+max_distance	1000
+model_rigid		catapult_range_eastern_rubble.cas
+
+
+
+type			city_barracks_eastern_rubble
+lod
+max_distance	1000
+model_rigid		city_barracks_eastern_rubble.cas
+
+
+
+type			eastern_armourer_rubble
+lod
+max_distance	1000
+model_rigid		eastern_armourer_rubble.cas
+
+
+
+type			eastern_awesome_temple_rubble
+lod
+max_distance	1000
+model_rigid		eastern_awesome_temple_rubble.cas
+
+
+
+type			eastern_blacksmith_rubble
+lod
+max_distance	1000
+model_rigid		eastern_blacksmith_rubble.cas
+
+
+
+type			eastern_cavalry_barracks_rubble
+lod
+max_distance	1000
+model_rigid		eastern_cavalry_barracks_rubble.cas
+
+
+
+type			eastern_governors_palace_rubble
+lod
+max_distance	1000
+model_rigid		eastern_governors_palace_rubble.cas
+
+
+
+type			eastern_governors_villa_rubble
+lod
+max_distance	1000
+model_rigid		eastern_governors_villa_rubble.cas
+
+
+
+type			eastern_great_forum_rubble
+lod
+max_distance	1000
+model_rigid		eastern_great_forum_rubble.cas
+
+
+
+type			eastern_imperial_palace_rubble
+lod
+max_distance	1000
+model_rigid		eastern_imperial_palace_rubble.cas
+
+
+
+type			eastern_large_marketplace_rubble
+lod
+max_distance	1000
+model_rigid		eastern_large_marketplace_rubble.cas
+
+
+
+type			eastern_large_temple_rubble
+lod
+max_distance	1000
+model_rigid		eastern_large_temple_rubble.cas
+
+
+
+type			eastern_merchants_quarter_rubble
+lod
+max_distance	1000
+model_rigid		eastern_merchants_quarter_rubble.cas
+
+
+
+type			eastern_poor_house_c_rubble
+lod
+max_distance	1000
+model_rigid		eastern_poor_house_c_rubble.cas
+
+
+
+type			egyptian_apartment_block_rubble
+lod
+max_distance	1000
+model_rigid		egyptian_apartment_block_rubble.cas
+
+
+
+type			egyptian_granary_rubble
+lod
+max_distance	1000
+model_rigid		egyptian_granary_rubble.cas
+
+
+
+type			egyptian_village_house_large_rubble
+lod
+max_distance	1000
+model_rigid		egyptian_village_house_large_rubble.cas
+
+
+
+type			elite_cavalry_barracks_eastern_rubble
+lod
+max_distance	1000
+model_rigid		elite_cavalry_barracks_eastern_rubble.cas
+
+
+
+type			execution_square_eastern_rubble
+lod
+max_distance	1000
+model_rigid		execution_square_eastern_rubble.cas
+
+
+
+type			militia_barracks_eastern_rubble
+lod
+max_distance	1000
+model_rigid		militia_barracks_eastern_rubble.cas
+
+
+
+type			practice_field_eastern_rubble
+lod
+max_distance	1000
+model_rigid		practice_field_eastern_rubble.cas
+
+
+
+type			royal_cavalry_stables_eastern_rubble
+lod
+max_distance	1000
+model_rigid		royal_cavalry_stables_eastern_rubble.cas
+
+
+
+type			secret_police_hq_eastern_rubble
+lod
+max_distance	1000
+model_rigid		secret_police_hq_eastern_rubble.cas
+
+
+
+type			sewers_egyptian_rubble
+lod
+max_distance	1000
+model_rigid		sewers_egyptian_rubble.cas
+
+
+
+type			siege_engineer_eastern_rubble
+lod
+max_distance	1000
+model_rigid		siege_engineer_eastern_rubble.cas
+
+
+;; egyptian
+
+
+type			city_barracks_egyptian_rubble
+lod
+max_distance	1000
+model_rigid		city_barracks_egyptian_rubble.cas
+
+
+
+type			egyptian_arch_rubble
+lod
+max_distance	1000
+model_rigid		egyptian_arch_rubble.cas
+
+
+
+type			egyptian_armourer_rubble
+lod
+max_distance	1000
+model_rigid		egyptian_armourer_rubble.cas
+
+
+
+type			egyptian_blacksmith_rubble
+lod
+max_distance	1000
+model_rigid		egyptian_blacksmith_rubble.cas
+
+
+
+type			egyptian_camel_stables_rubble
+lod
+max_distance	1000
+model_rigid		egyptian_camel_stables_rubble.cas
+
+
+
+type			egyptian_cavalry_barracks_rubble
+lod
+max_distance	1000
+model_rigid		egyptian_cavalry_barracks_rubble.cas
+
+
+
+type			egyptian_eastern_merchants_quarter_rubble
+lod
+max_distance	1000
+model_rigid		egyptian_eastern_merchants_quarter_rubble.cas
+
+
+
+type			egyptian_great_forum_rubble
+lod
+max_distance	1000
+model_rigid		egyptian_great_forum_rubble.cas
+
+
+
+type			egyptian_large_marketplace_rubble
+lod
+max_distance	1000
+model_rigid		egyptian_large_marketplace_rubble.cas
+
+
+
+type			egyptian_obelisk_rubble
+lod
+max_distance	1000
+model_rigid		egyptian_obelisk_rubble.cas
+
+
+
+type			egyptian_shrine_rubble
+lod
+max_distance	1000
+model_rigid		egyptian_shrine_rubble.cas
+
+
+
+type			egyptian_temple_rubble
+lod
+max_distance	1000
+model_rigid		egyptian_temple_rubble.cas
+
+
+
+type			elite_cavalry_barracks_egyptian_rubble
+lod
+max_distance	1000
+model_rigid		elite_cavalry_barracks_egyptian_rubble.cas
+
+
+
+type			militia_barracks_egyptian_rubble
+lod
+max_distance	1000
+model_rigid		militia_barracks_egyptian_rubble.cas
+
+
+
+type			secret_police_network_eastern_rubble
+lod
+max_distance	1000
+model_rigid		secret_police_network_eastern_rubble.cas
+
+
+;; Eastern
+
+type			eastern_foundry_rubble
+lod
+max_distance	1000
+model_rigid		eastern_foundry_rubble.cas

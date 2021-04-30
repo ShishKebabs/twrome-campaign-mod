@@ -1,0 +1,126 @@
+[
+	{
+		"_Comment": "For displays with ratios within the range of TallestRatio to WidestRatio, the Resolutions list will be used to supplement the list of natively supported resolutions",
+	},
+	{
+		"NominalRatio": [5, 4],
+		"TallestRatio": [0, 1],
+		"WidestRatio": [31, 24],
+		"Resolutions": [
+			[1280, 1024],
+			[1600, 1280],
+			[1800, 1440],
+			[2560, 2048],
+			[5120, 4096],
+		],
+	},
+	{
+		"NominalRatio": [4, 3],
+		"TallestRatio": [31, 24],
+		"WidestRatio": [17, 12],
+		"Resolutions": [
+			[1024, 768],
+			[1152, 864],
+			[1280, 960],
+			[1440, 1080],
+			[1600, 1200],
+			[1792, 1344],
+			[1856, 1392],
+			[1920, 1440],
+			[2048, 1536],
+			[2304, 1728],
+			[2560, 1920],
+			[2732, 2048],
+			[2800, 2100],
+			[3200, 2400],
+			[4096, 3072],
+			[6400, 4800],
+		],
+	},
+	{
+		"NominalRatio": [3, 2],
+		"TallestRatio": [17, 12],
+		"WidestRatio": [31, 20],
+		"Resolutions": [
+			[1152, 768],
+			[1280, 854],
+			[1440, 960],
+			[1920, 1280],
+			[2160, 1440],
+			[2560, 1700],
+			[2736, 1824],
+			[3000, 2000],
+		],
+	},
+	{
+		"NominalRatio": [16, 10],
+		"TallestRatio": [31, 20],
+		"WidestRatio": [32, 19],
+		"Resolutions": [
+			[1152, 720],
+			[1280, 800],
+			[1440, 900],
+			[1680, 1050],
+			[1920, 1200],
+			[2048, 1280],
+			[2304, 1440],
+			[2560, 1600],
+			[2880, 1800],
+			[3840, 2400],
+			[5120, 3200],
+			[7680, 4800],
+		],
+	},
+	{
+		"_Comment": "Anything wider than 16:9 also gets 16:9 resolutions, because there are very few standard resolutions wider than this.",
+		"NominalRatio": [16, 9],
+		"TallestRatio": [32, 19],
+		"WidestRatio": [1, 0],
+		"Resolutions": [
+			[1280, 720],
+			[1366, 768],
+			[1536, 864],
+			[1600, 900],
+			[1920, 1080],
+			[2048, 1152],
+			[2560, 1440],
+			[3200, 1800],
+			[3840, 2160],
+			[4096, 2304],
+			[5120, 2880],
+			[7680, 4320],
+			[8192, 4608],
+		],
+	},
+	{
+		"NominalRatio": [21, 9],
+		"TallestRatio": [37, 18],
+		"WidestRatio": [1, 0],
+		"Resolutions": [
+			[2560, 1080],
+			[3440, 1440],
+			[3840, 1600],
+			[5120, 2160],
+			[10240, 4320]
+		],
+	},
+	{
+		"_Comment": "AJD 23-Dec-2020 - These resolutions are present in other total war games so always add them for Rome; they get filtered anyway. See fbug://RHD-6032",
+		"NominalRatio": [4, 3],
+		"TallestRatio": [0, 1],
+		"WidestRatio": [1, 0],
+		"Resolutions": [
+			[1152, 864],
+			[1280, 960]
+		]
+	},
+	{
+		"_Comment": "AJD 23-Dec-2020 - These resolutions are present in other total war games so always add them for Rome; they get filtered anyway. See fbug://RHD-6032",
+		"NominalRatio": [5, 4],
+		"TallestRatio": [0, 1],
+		"WidestRatio": [1, 0],
+		"Resolutions": [
+			[1280, 1024]
+		]
+	}
+]

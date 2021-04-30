@@ -1,0 +1,266 @@
+plan
+
+{
+target rectangle 	x -24 z 24 rot 0 width 32 height 32
+floor		greek_town_underlay.cas greek_town_overlay.CAS
+ground_types	roman_town_ground.tga -288 -288 288 288
+street_plan	pathfinding_roman_town.cas
+borders
+	{
+
+gateway,	224,	0,	90,	0.50
+gateway,	-224,	0,	-90,	0.50
+gateway,	0,	-224,	0,	0.50
+gateway,	0,	224,	180,	0.50
+
+tower_external_corner_link,	-224,	-224,	0,	0.50
+tower_external_corner_link,	-224,	224,	-90,	0.50
+tower_external_corner_link,	224,	224,	180,	0.50
+tower_external_corner_link,	224,	-224,	90,	0.50
+
+tower_straight,	-128,	-224,	0,	0.50
+tower_straight,	128,	-224,	0,	0.50
+tower_straight,	224,	128,	90,	0.50
+tower_straight,	-128,	224,	-180,	0.50
+tower_straight,	-224,	-128,	-90,	0.50
+tower_straight,	-224,	128,	-90,	0.50
+tower_straight,	128,	224,	-180,	0.50
+tower_straight,	224,	-128,	90,	0.50
+
+straight_link,	-96,	-224,	0,	0.50
+straight_link,	-160,	-224,	0,	0.50
+straight_link,	160,	-224,	0,	0.50
+straight_link,	96,	-224,	0,	0.50
+straight_link,	224,	160,	90,	0.50
+straight_link,	224,	96,	90,	0.50
+straight_link,	-160,	224,	-180,	0.50
+straight_link,	-96,	224,	-180,	0.50
+straight_link,	-224,	-160,	-90,	0.50
+straight_link,	-224,	-96,	-90,	0.50
+straight_link,	-224,	96,	-90,	0.50
+straight_link,	-224,	160,	-90,	0.50
+straight_link,	96,	224,	-180,	0.50
+straight_link,	160,	224,	-180,	0.50
+straight_link,	224,	-96,	90,	0.50
+straight_link,	224,	-160,	90,	0.50
+
+straight,	-192,	-224,	0,	0.50
+straight,	-64,	-224,	0,	0.50
+straight,	192,	-224,	0,	0.50
+straight,	64,	-224,	0,	0.50
+straight,	224,	192,	90,	0.50
+straight,	224,	64,	90,	0.50
+straight,	-192,	224,	-180,	0.50
+straight,	-64,	224,	-180,	0.50
+straight,	-224,	-192,	-90,	0.50
+straight,	-224,	-64,	-90,	0.50
+straight,	-224,	64,	-90,	0.50
+straight,	-224,	192,	-90,	0.50
+straight,	64,	224,	-180,	0.50
+straight,	192,	224,	-180,	0.50
+straight,	224,	-64,	90,	0.50
+straight,	224,	-192,	90,	0.50
+
+
+	}
+
+; road joiners
+
+gateway_slot_into_roman_town,	256,	0,	0,	0
+gateway_slot_into_roman_town,	0,	256,	90,	0
+gateway_slot_into_roman_town,	-256,	0,	180,	0
+gateway_slot_into_roman_town,	0,	-256,	-90,	0
+
+
+; COLLISION OBJECTS
+
+greek_town_collision_info,	0,	0,	0,	0
+
+; SLOTS
+
+
+slot_48x32_religious,	-32,	-24,	180,	0.50
+slot_48x32_market,	56,	-24,	0,	0.50
+slot_48x32_barracks,	-72,	32,	-90,	0.50
+slot_48x32_core_building,	140,	32,	0,	0.50
+slot_plaza_greek_32x32m,	-24,	24,	0,	0.50
+
+
+; AMBIENT
+
+
+greek_ambush_building,	21.82,	-88.99,	-90,	0.50
+
+roman_statue,	-37.34,	-167.82,-89,	0.50
+roman_statue,	-84.82,	59.01,	-94,	0.50
+roman_statue,	-66.23,	-57.87,	91,	0.50
+
+
+stoa,		154.43,	118.59,	0,	0.5
+stoa,		21.81,	-37.15,	-90,	0.5
+stoa,		-133.53,	20.54,	0,	0.5
+stoa,		-144.53,	172.71,	180,	0.5
+stoa,		-125.25,	-157.35,	90,	0.5
+
+bouleuterion,		-127.83,	133.58,	90,	0.5
+bouleuterion,		-165.55,	-125.8,	90,	0.5
+
+
+greek_semidetached_house,	-163.87,	141.14,	-90,	0.5
+greek_semidetached_house,	-161.31,	-167.08,	0,	0.5
+greek_semidetached_house,	31.88,	-154.46,	180,	0.5
+
+greek_granary,	-20.91,	109.13,	90,	0.5
+greek_granary,	-80.32,	74.67,	180,	0.5
+greek_granary,	-14.32,	-56.26,	180,	0.5
+greek_granary,	-109.58,	-76.68,	180,	0.5
+
+greek_tenamentA1_group,	42.27,	141.44,	0,	0.500
+greek_tenamentA2_group,	-50.56,	149.73,	-90,	0.500
+greek_tenamentA3_group,	-138.57,	75.61,	-180,	0.500
+greek_tenamentA3_group,	-149.27,	-49.44,	-180,	0.500
+greek_tenamentA3_group,	44.25,	50.84,	0,	0.500
+greek_tenamentA1_group,	-53.73,	-104.56,	0,	0.500
+greek_tenamentA2_group,	76.56,	-85.73,	90,	0.500
+
+greek_tenamentB1,	-72.16,	-23.75,	0,	0.500
+greek_tenamentB2,	88.23,	-167.01,	0,	0.500
+greek_tenamentB3,	152.88,	-98.70,	-180,	0.500
+greek_tenamentB4,	-25.28,	-166.93,	90,	0.500
+greek_tenamentB5,	-130.92,	-112,	-90,	0.5
+
+greek_tenamentC1,	136,	168,	0,	0.500
+greek_tenamentC2,	152,	68,	0,	0.500
+greek_tenamentC3,	96,	48,	-90,	0.500
+greek_tenamentC4,	166,	-40,	-90,	0.500
+greek_tenamentC5,	153.56,	-150.34,	-90,	0.500
+greek_tenamentC1,	-40,	72,	0,	0.500
+
+greek_tenamentD1,	-13.62,	-113.67,	0,	0.50
+greek_tenamentD2,	-108.23,	-126.35,	0,	0.50
+greek_tenamentD3,	-37.09,	-45.16,	90,	0.50
+greek_tenamentD4,	-108.87,	-32.07,	0,	0.50
+greek_tenamentD5,	-179.43,	23.80,	0,	0.50
+greek_tenamentD1,	-47.23,	24.07,	-10,	0.50
+greek_tenamentD2,	-96.22,	166.82,	0,	0.50
+greek_tenamentD3,	-96.22,	132.66,	0,	0.50
+greek_tenamentD4,	-178.74,	58.34,	-5,	0.50
+greek_tenamentD5,	142.89,	-63.48,	0,	0.50
+greek_tenamentD1,	167.18,	-77.76,	-90,	0.50
+greek_tenamentD2,	103.10,	-140.79,	-90,	0.50
+greek_tenamentD3,	114.62,	-168.02,	180,	0.50
+greek_tenamentD4,	178.21,	-166.41,	0,	0.50
+greek_tenamentD5,	176.87,	-135.29,	5,	0.50
+greek_tenamentD1,	169.52,	26.44,	0,	0.50
+greek_tenamentD2,	178.98,	29.08,	0,	0.50
+greek_tenamentD3,	110.28,	134.50,	0,	0.50
+greek_tenamentD4,	120.53,	134.53,	0,	0.50
+greek_tenamentD5,	177.43,	167.33,	0,	0.50
+greek_tenamentD1,	63.89,	-45.56,	90,	0.50
+greek_tenamentD2,	-51.14,	108.51,	-90,	0.50
+greek_tenamentD3,	39.85,	-178.73,	-90,	0.50
+greek_tenamentD4,	-106.16,	166.82,	0,	0.5
+greek_tenamentD5,	-106.224,	132.665,	0,	0.5
+greek_tenamentD1,	-164.48,	-144.66,	-90,	0.5
+greek_tenamentD2,	-24.36,	48.34,	90,	0.5
+
+greek_tenamentE1,	-14.32,	-76.19,	-173.31,	0
+greek_tenamentE2,	-14.07,	-86.81,	176.69,	0
+greek_tenamentE1,	-109.45,	-54.53,	-88.31,	0
+greek_tenamentE2,	-109.31,	-12.11,	-178.31,	0
+greek_tenamentE1,	-47.71,	49.21,	-88.31,	0
+greek_tenamentE2,	-178.70,	82.11,	-88.31,	0
+greek_tenamentE1,	175.83,	-112.87,	-93.31,	0
+greek_tenamentE2,	78.90,	-141.16,	-178.31,	0
+greek_tenamentE1,	13.67,	-176.51,	96.69,	0
+greek_tenamentE2,	-78.3,	120.5,	-178.308,	0.5
+
+
+
+
+
+tree_B,	-24.74,	-167.48,	0, 1.00
+tree_B,	-178.06,	-96.51,	0, 1.00
+tree_B,	-139.44,	-75.09,	0, 1.00
+tree_B,	-141.10,	-158.05,	0, 1.00
+tree_B,	-49.79,	-55.44,	0, 1.00
+tree_B,	-24.92,	162.53,	0, 1.00
+tree_B,	119.51,	113.03,	90, 1.00
+tree_B,	88.08,	-166.64,	90, 1.00
+tree_B,	176.08,	-89.60,	90, 1.00
+tree_B,	156.46,	145.75,	0, 1.00
+tree_B,	167.10,	145.68,	0, 1.00
+tree_B,	40.73,	-45.25,	90, 1.00
+tree_B,	-166.61,	-25.70,	90, 1.00
+tree_B,	13.14,	-161.6,	0, 1.00
+tree_B,	-36.62,	-86.71,	0, 1.00
+tree_B,	-75.19,	109.66,	0,	1.5
+
+tree_C,	59.38,	118.30,	-180, 1.00
+tree_C,	-108.67,	-96.03,	-180, 1.00
+tree_C,	62.67,	26.92,	-180, 1.00
+tree_C,	-127.93,	46.68,	180, 1.00 
+tree_C,	30.68,	76.49,	-180, 1.00
+tree_C,	51.41,	-139.38,	-180, 1.00
+tree_C,	174.81,	-100.86,	-180, 1.00
+tree_C,	-68.84,	-78.57,	-180, 1.00
+tree_C,	115.40,	-148.62,	-180, 1.00
+
+tree_E,	-143.22,	-136.39,	90, 1.00
+tree_E,	-177.38,	-132.44,	0, 1.00
+tree_E,	153.94,	-98.83,	90, 1.00
+tree_E,	32.44,	166.85,	90, 1.00
+tree_E,	177.46,	145.68,	0, 1.00
+tree_E,	21.86,	-169.61,	90, 1.00
+tree_E,	169.26,	46.91,	90, 1.00
+tree_E,	50.12,	-96.07,	0, 1.00
+tree_E,	-29.62,	-55.23,	0, 1.00
+tree_E,	-81.05,	-47,	0,	1.0
+
+tree_box,	-141.10,	-158.05,	0,	0.50
+tree_box,	-139.44,	-75.09,	0,	0.50
+tree_box,	62.67,	26.92,	90,	0.50
+tree_box,	-108.67,	-96.03,	90,	0.50
+tree_box,	-143.22,	-136.39,	90,	0.50
+tree_box,	-178.06,	-96.51,	0,	0.50
+tree_box,	-24.74,	-167.48,	0,	0.50
+tree_box,	-177.25,	-132.51,	0,	0.50
+tree_box,	-29.81,	-55.26,	0,	0.50
+tree_box,	-49.79,	-55.44,	0,	0.50
+tree_box,	-24.92,	162.53,	0,	0.50
+tree_box,	-36.62,	-86.71,	0,	0.50
+tree_box,	50.12,	-96.07,	0,	0.50
+tree_box,	-68.84,	-78.57,	0,	0.50
+tree_box,	13.14,	-161.6,	0,	0.50
+tree_box,	-127.93,	46.68,	90,	0.50
+tree_box,	-166.61,	-25.70,	90,	0.50
+tree_box,	40.73,	-45.25,	90,	0.50
+tree_box,	169.26,	46.91,	90,	0.50
+tree_box,	174.81,	-100.86,	90,	0.50
+tree_box,	21.86,	-169.61,	90,	0.50
+tree_box,	51.41,	-139.38,	90,	0.50
+tree_box,	167.10,	145.68,	0,	0.50
+tree_box,	177.46,	145.68,	0,	0.50
+tree_box,	59.38,	118.30,	0,	0.50
+tree_box,	156.46,	145.75,	0,	0.50
+tree_box,	30.68,	76.49,	90,	0.50
+tree_box,	32.44,	166.85,	90,	0.50
+tree_box,	119.51,	113.03,	90,	0.50
+tree_box,	115.40,	-148.62,	90,	0.50
+tree_box,	154.30,	-98.93,	90,	0.50
+tree_box,	88.08,	-166.64,	90,	0.50
+tree_box,	176.08,	-89.60,	90,	0.50
+tree_box,	-75.19,	109.66,	0,	0.50
+tree_box,	-80.91,	-47.05,	0,	0.50
+
+
+
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,316 @@
+;
+; Ground Type Database
+;
+
+climate default
+{
+    types
+    {
+;	    dirt		DIRT		20.0	2000.0	0.0		70.0    0
+		grass		GRASS_SHORT	20.0	2000.0	0.0		70.0    2
+		grass1	    GRASS_LONG	50.0    900.0   0.0     10.0	4	50.0
+		forest		FOREST		50.0	800.0	0.0		10.0	3	150.0
+		mud			MUD			20.0	2000.0  0.0		3.0		1
+		rock		ROCK		MIN		MAX		0.0		90.0    0
+		sand		SAND		MIN     20.0f	0.0		30.0    1
+		snow		SNOW		1000.0	MAX		0.0		60.0    1
+		shrub_base	SCRUB		20.0	2000.0	0.0		20.0	4	
+	}
+
+;    prerequisites
+;    {
+;		grass dirt
+;        forest dirt
+;		shrub_base dirt
+;    }
+
+    base rock
+
+    layer 0
+    {
+		sand
+;	 dirt
+    }
+
+    layer 1
+    {
+		grass
+		forest
+		shrub_base
+    }
+}
+
+climate test_climate
+{
+	modifies default
+
+	colour
+	{
+		236 0 140
+	}
+}
+
+climate sandy_desert
+{
+	colour
+	{
+		102 45 145
+	}
+
+	types
+	{
+		caked_sand	SAND	MIN		MAX		0.0		2.0	    4	
+		sand		SAND	MIN		MAX		0.0		30.0    0
+		sand_blown	SAND	MIN		MAX		0.0		10.0    4
+		rock		ROCK	MIN		MAX		0.0		90.0	0
+ 	}
+
+	prerequisites
+	{
+		caked_sand sand
+		sand_blown sand
+	}
+
+	base rock
+
+	layer 0
+	{
+		sand
+	}
+
+	layer 1
+	{
+		caked_sand
+	}
+
+	layer 2
+	{
+		sand_blown
+	}
+}
+
+climate rocky_desert
+{
+	colour
+	{
+		146 29 143
+	}
+
+	types
+	{
+		pebble		ROCK	MIN		MAX		0.0		90.0	0
+		rock		ROCK	MIN		MAX		0.0		90.0	0
+		sand		SAND	MIN		MAX		0.0		90.0	0
+	}
+
+	base rock
+
+	layer 0
+	{
+		pebble sand
+	}
+}
+
+climate temperate_grassland_fertile
+{
+	modifies default
+
+	colour
+	{
+		237 20 91
+	}
+
+    types
+    {
+		dirt		DIRT		20.0	1000.0	0.0		40.0	0
+		grass		GRASS_SHORT	20.0	1000.0	0.0		40.0	2
+		grass1		GRASS_LONG	100.0   900.0   0.0     10.0	4	50.0
+		forest		FOREST		50.0	900.0	0.0		10.0	4	150.0
+		rock		ROCK		MIN		MAX		0.0		90.0	0
+		sand		SAND		MIN     20.0f	0.0		30.0	1
+		shrub_base	SCRUB		50.0	900.0	0.0		15.0	3	150.0
+		snow		SNOW		1000.0	MAX		0.0		60.0	1
+   }
+
+;    prerequisites
+;    {
+;		grass dirt
+;		grass1 dirt
+;       forest dirt
+;    }
+
+	curve_dependent
+	{
+		forest
+		sand
+		snow
+	}
+
+    base rock
+
+    layer 0
+    {
+		sand
+;		dirt
+    }
+
+    layer 1
+    {
+		grass
+		grass1
+		forest
+		shrub_base
+    }
+
+;   layer 2
+;   {
+;		snow
+;   }
+}
+
+climate temperate_grassland_infertile
+{
+    modifies temperate_grassland_fertile
+
+	colour
+	{
+		237 28 36
+	}
+
+}
+
+climate temperate_forest_open
+{
+	modifies default
+
+	colour
+	{
+		242 101 34
+	}
+
+}
+
+climate temperate_forest_deep
+{
+	modifies default
+
+	colour
+	{
+		247 148 29
+	}
+}
+
+climate swamp
+{
+	colour
+	{
+		255 242 0
+	}
+
+	types
+	{
+		grass		GRASS_SHORT		10.0	MAX		0.0		90.0	2
+		sand		SAND			MIN		20.0	0.0		90.0	1
+		mud			MUD				10.0	MAX		0.0		90.0	0
+		swamp		SWAMP			10.0	MAX		0.0		90.0	6
+	}
+
+	layer 0
+	{
+		grass sand mud swamp
+	}
+}
+
+climate highland
+{
+	modifies default
+
+	colour
+	{
+		141 198 63
+	}
+}
+
+climate alpine
+{
+	modifies default
+
+	colour
+	{
+		57 181 74
+	}
+
+    types
+    {
+		snow		SNOW		900.0	MAX		0.0		40.0	1	100.0
+	}
+
+	curve_dependent
+	{
+		forest
+		sand
+		snow
+	}
+}
+
+climate sub_arctic
+{
+	modifies default
+
+	colour
+	{
+		0 166 81
+	}
+
+	types
+	{
+		pebble		ROCK		MIN		MAX		0.0		90.0	0
+	}
+}
+
+climate semi_arid
+{
+	colour
+	{
+		0 114 188
+	}
+
+    types
+    {
+		grass		GRASS_SHORT	20.0	2000.0	0.0		70.0	2
+		grass1		GRASS_LONG	100.0   900.0   0.0     10.0	4	50.0
+		forest		FOREST		40.0	1000.0	0.0		10.0	4
+		pebble		ROCK		MIN		MAX		0.0		90.0	0
+		mud			MUD			20.0	2000.0  0.0		3.0		0
+		sand		SAND		MIN     20.0f	0.0		30.0	1
+		shrub_base	SCRUB		20.0	2000.0	0.0		20.0	4 	
+	}
+
+    prerequisites
+    {
+		grass1	grass
+		mud     grass
+    }
+
+;    base rock
+
+    layer 0
+    {
+		sand
+		pebble
+    }
+
+    layer 1
+    {
+		grass
+		forest
+		shrub_base
+    }
+
+	layer 2
+	{
+		grass1
+		mud
+	}
+}
+

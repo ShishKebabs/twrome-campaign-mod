@@ -1,0 +1,292 @@
+
+{
+    "frames": [
+        {
+            "position": {
+                "x": 356,
+                "y": 0
+            },
+            "size": {
+                "width": 482
+            },
+            "priority": -5,
+            "fill": "invisible",
+            "ignore_scale": true
+        },
+        {
+            "position": {
+                "x": 0,
+                "y": 26,
+            },
+            "size": {
+                "width": 773,
+                "height": 722
+            },
+            "align": "C",
+            "priority": -5,
+            "fill": "decorated",
+            "anchor": "RIGHT_PNL",
+            "ignore_scale": true
+        }
+    ],
+    "tooltip": {
+        "x": 18,
+        "y": 3,
+        "width": 1783,
+        "height": 80,
+        "font":"verdana_lrg"
+    },
+    "tooltip_ticker": {
+        "x": 12,
+        "y": 3,
+        "width": 1794,
+        "height": 100,
+        "font":"verdana_lrg"
+    },
+    "list": [
+        {
+            "name": "main_panel",
+            "x": 0,
+            "y": 26,
+            "size": {
+                "width": 773,
+                "height": 722
+            },
+            "align": "C",
+            "priority": -5,
+            "fill": "invisible",
+            "anchor": "RIGHT_PNL",
+            "ignore_scale": true
+        },
+        {
+            "name": "eagle_header",
+            "size": {
+                "width": 290,
+                "height": 110
+            },
+            "align": "C",
+            "ignore_scale": true
+        },
+        {
+            "name": "title_group",
+            "size": {
+                "width": 637,
+            },
+            "align": "BC",
+            "ignore_scale": true
+        },
+        {
+            "name":"gameplay_string",
+            "x": -309,
+            "y": -223,
+            "align":"BL",
+            "anchor":"RIGHT_PNL",
+            "font_colour": "dark_brown",
+            "ignore_scale": true
+        },
+        {
+            "name":"gameplay_divider",
+            "x": 0,
+            "y": -210,
+            "size": {
+                "height": 20,
+                "width":654,
+            },
+            "align":"C",
+            "anchor": "RIGHT_PNL",
+            "ignore_scale": true
+        },
+        {
+            "name":"settlement_string",
+            "x": -309,
+            "y": 93,
+            "align": "BL",
+            "anchor": "RIGHT_PNL",
+            "font_colour": "dark_brown",
+            "ignore_scale": true
+        },
+        {
+           "name": "settlement_divider",
+           "x": 0,
+           "y": 105,
+           "size": {
+               "width": 654,
+               "height": 20
+           },
+           "align": "C",
+           "anchor": "RIGHT_PNL",
+           "ignore_scale": true
+        },
+        {
+            "name":"campaign_difficulty_dropdown",
+            "x": -317,
+            "y": -152,
+			"size":{
+                "width": 293,
+                "height": 54,
+            },
+            "hitbox" : {
+                "right":-20
+            },
+            "align":"CL",
+            "anchor":"RIGHT_PNL",
+            "priority": 5,
+            "ignore_scale": true
+        },
+        {
+            "name":"battle_difficulty_dropdown",
+            "x": 317,
+            "y":-152,
+            "size":{
+                "width": 293,
+                "height": 54,
+            },
+            "hitbox" : {
+                "right":-20
+            },
+            "align": "CR",
+            "anchor": "RIGHT_PNL",
+            "priority": 5,
+            "ignore_scale": true
+        },
+        {
+			"name": "map_overlays_transition_check",
+			"x": -325,
+			"y": -82,
+			"size": {
+				"height": 45,
+				"width": 293,
+			},
+			"use_label_width": true,
+			"anchor": "RIGHT_PNL",
+			"ignore_scale": true
+		},
+		{
+			"name": "battle_time_limit_check",
+			"x": 17,
+			"y": -82,
+			"size": {
+				"height": 45,
+				"width": 293,
+			},
+			"use_label_width": true,
+			"anchor": "RIGHT_PNL",
+			"ignore_scale": true
+		},
+		{
+			"name": "follow_ai_character_check",
+			"x": -325,
+			"y": -30,
+			"size": {
+				"height": 45,
+				"width": 293,
+			},
+			"use_label_width": true,
+			"anchor": "RIGHT_PNL",
+			"ignore_scale": true
+		},
+		{
+			"name": "follow_merchants_check",
+			"x": -325,
+			"y": 22,
+            "alex_override":{
+                "x": -10000,
+                "y": 0,
+            },
+			"size": {
+				"height": 45,
+				"width": 293,
+			},
+			"use_label_width": true,
+			"anchor": "RIGHT_PNL",
+			"ignore_scale": true
+		},
+		{
+			"name": "arcade_style_battle_check",
+			"x": 17,
+			"y": -30,
+			"size": {
+				"height": 45,
+				"width": 293,
+			},
+			"use_label_width": true,
+			"anchor": "RIGHT_PNL",
+			"ignore_scale": true
+		},
+		{
+			"name": "tags_max_size_dropdown",
+			"x": -317,
+			"y": 175,
+            "size":{
+                "width": 293,
+                "height": 54,
+            },
+            "hitbox" : {
+                "right":-20
+            },
+            "align": "CL",
+            "priority": 5,
+            "anchor": "RIGHT_PNL",
+            "ignore_scale": true
+		},
+		{
+			"name": "manage_all_settlements_check",
+			"x": 17,
+			"y": 152,
+			"size": {
+				"height": 45,
+				"width": 293,
+			},
+			"use_label_width": true,
+			"anchor": "RIGHT_PNL",
+			"ignore_scale": true
+		},
+        {
+            "name": "confirm_button",
+            "x": 0,
+            "y": 288,
+            "size": {
+                "width": 222,
+                "height": 54
+            },
+            "align": "BC",
+            "anchor": "RIGHT_PNL",
+            "ignore_scale": true
+        },
+        {
+            "name": "recommended_button",
+            "x": -222,
+            "y": 288,
+            "size": {
+                "width": 222,
+                "height": 54
+            },
+            "align": "BC",
+            "anchor": "RIGHT_PNL",
+            "ignore_scale": true
+        },
+        {
+            "name": "cancel_button",
+            "x": 222,
+            "y": 288,
+            "size": {
+                "width": 222,
+                "height": 54
+            },
+            "align": "BC",
+            "anchor": "RIGHT_PNL",
+            "ignore_scale": true
+        },
+        {
+			"name": "back_button",
+			"x": -330,
+			"y": 306,
+			"size": {
+                "width": 82,
+                "height": 56
+            },
+            "anchor": "RIGHT_PNL",
+            "ignore_scale": true
+		}
+    ]
+}

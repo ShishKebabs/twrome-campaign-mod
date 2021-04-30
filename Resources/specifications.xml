@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gameinfo>
+
+	<!-- GAME INFO START -->
+
+	<!-- *** DO NOT EDIT ANYTHING IN THIS SECTION - AUTO GENERATED FROM GAME INFO *** -->
+
+	<spec>
+		<regkey>
+			<value name="DonePromotional"     type="integer">0</value>
+			<value name="DoneUnsupported"     type="integer">0</value>
+			<value name="DoneMinOS"           type="integer">0</value>
+		</regkey>
+	</spec>
+
+
+	<date>20210429000103</date>
+	
+	<!-- Auto-generated: Misc. GameInfo -->
+	<spec>
+		<uuid>MiscGameInfoSettings</uuid>
+		<regkey>
+        
+			<value name="SupportEmail" type="string">romeremastered@feralinteractive.com</value>
+
+		</regkey>
+	</spec>
+
+	
+	
+	<!-- GAME INFO END -->
+	<spec>
+		<uuid>TextureStreaming</uuid>
+		<regkey>
+				<value name="EnableTextureStreaming"	  type="integer">1</value>
+		</regkey>
+	</spec>
+	
+	<spec>
+		<uuid>WindowsClass</uuid>
+		
+		<!-- This should be RomeHD only, once we come up with a way to express that, add a condition. -->
+		<!-- set Windows' default Display Mode as "Borderless Window" (as opposed to Fullscreen everywhere else) -->
+		<setting type="integer">
+			<key>Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\UISettingDefault</key>
+			<name>display_mode</name>
+			<value>2</value>
+		</setting>
+	</spec>
+
+
+	<!-- Blocked Software-->
+	<spec>
+		<conditions>
+			<and>
+				<OS_version_major><less>10</less></OS_version_major>
+			</and>
+		</conditions>
+		<alert stock_id="BlockedSoftware">
+			<replace>
+				<from>#{min}</from>
+				<to>10 RS5 1809 (10.0.17763)</to>
+			</replace>
+		</alert>
+	</spec>
+
+
+
+	<!-- Unsupported Hardware-->
+	<spec>
+		<uuid>UnsupportedHardware_b409</uuid>
+		<conditions>
+			<or>
+				<!--Single core CPUs not supported-->
+				<CPU_physical_cores><less>2</less></CPU_physical_cores>
+				<!--Hardware with less than 6GB RAM not supported-->
+				<RAM><less>5499M</less></RAM>
+				<!-- Nvidia and AMD GPUs with less than 800 MB VRAM not supported-->
+				<and>
+					<or>
+						<GPU_vendor><is>amd</is></GPU_vendor>
+						<GPU_vendor><is>nvidia</is></GPU_vendor>
+					</or>
+					<VRAM><less>800M</less></VRAM>
+				</and>
+				<!--8GB RAM required for Intel integrated graphics-->
+				<and>
+					<GPU_vendor><is>intel</is></GPU_vendor>
+					<RAM><less>7499M</less></RAM>
+				</and>
+			</or>
+		</conditions>
+		<alert stock_id="UnsupportedPlayableDoNotNotify" />
+        <ignore_if_set>SkipUnsupportedHardwareCheck</ignore_if_set>
+        <regkey><value name="DoneUnsupported" type="integer">1</value></regkey>
+	</spec>
+
+
+	<!-- Unsupported Software-->
+	<spec>
+		<uuid>UnsupportedWindowsVersion</uuid>
+		<conditions>
+			<and>
+				<OS_version_major><less_or_equal>10</less_or_equal></OS_version_major>
+				<OS_version_minor><more_or_equal>0</more_or_equal></OS_version_minor>
+				<OS_version_bug_fix><less>17763</less></OS_version_bug_fix>
+			</and>
+		</conditions>
+		<alert stock_id="UnsupportedOSPlayable">
+			<replace>
+				<from>#{min}</from>
+				<to>10 RS5 1809 (10.0.17763)</to>
+			</replace>
+		</alert>
+	</spec>
+
+	<!--eGPU waring if paired with a weak CPU-->
+	<spec>
+        <uuid>ExternalGPUWarning</uuid>
+        <per-renderer/>
+       
+        <conditions>
+            <CPU_physical_cores>
+                <less>4</less>
+            </CPU_physical_cores>
+            <GPU_is_external><have/></GPU_is_external>
+        </conditions>
+       
+        <alert stock_id="ExternalGPUWarning" />
+    </spec>
+
+    <!--============================================================================>
+    <                              Remap settings                                   >
+    <=============================================================================-->
+
+    <spec>
+        <!-- Update UUID name when making additions -->
+        <uuid>PerRendererMappedSettings</uuid>
+
+        <regkey path="AutoValueRemap\GPURemap\keys">
+            <!-- UI Enum Option Values -->
+            
+            <!-- All quality settings are assumed card-specific -->
+            <value name="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\QualitySetting-0" type="integer">1</value>
+            <value name="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\QualitySetting-1" type="integer">1</value>
+            <value name="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\QualitySetting-2" type="integer">1</value>
+            <value name="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\QualitySetting-3" type="integer">1</value>
+            <value name="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\UISetting" type="integer">1</value>
+            <value name="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\UISettingDefault" type="integer">1</value>
+        </regkey>
+
+		<regkey path="AutoValueRemap\GPURemap\values">
+            <value name="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\EnableCloudShaderWorkaround" type="integer">1</value>
+            
+            <!-- UI Enum Option Values -->
+          	
+            <!-- These 3 control the over-arching value of the quality preset, they definitely should be gpu specific, if anything else is -->
+            <value name="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\QualitySettingDefault" type="integer">1</value>
+            <value name="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\QualitySettingLastApplied" type="integer">1</value>
+            <value name="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\QualitySettingReapply" type="integer">1</value>
+        </regkey>
+    </spec>
+
+    <!--============================================================================>
+	<                        Vendor Specific Configuration                          >
+	<=============================================================================-->
+
+	<!-- fbug://RHD-9967 workaround for AMD pre RDNA GPUs-->
+	<spec>
+		<uuid>CloudShaderWorkaroundEnabled</uuid>
+		<per-renderer/>
+		<conditions>
+			<!-- Default to On for everything as we are missing some GPUs with failing vendor checks on AMD -->
+		</conditions>
+		<regkey>
+            <value name="EnableCloudShaderWorkaround" type="integer">1</value>
+        </regkey>
+	</spec>
+
+	<!-- Disable this for Nvidia/Intel and RDNA AMD GPUs -->
+	<spec>
+		<uuid>CloudShaderWorkaroundDisabled</uuid>
+		<per-renderer/>
+		<conditions>
+			<or>
+				<stock id="vendor_intel"/>
+				<stock id="vendor_nvidia"/>
+				<stock id="windows_radeon_rx_5500"/>
+				<stock id="windows_radeon_rx_5500xt"/>
+				<stock id="windows_radeon_rx_5600"/>
+				<stock id="windows_radeon_rx_5600xt"/>
+				<stock id="windows_radeon_rx_5700"/>
+				<stock id="windows_radeon_rx_5700xt"/>
+				<stock id="windows_radeon_rx_6600"/>
+				<stock id="windows_radeon_rx_6600xt"/>
+				<stock id="windows_radeon_rx_6700"/>
+				<stock id="windows_radeon_rx_6700xt"/>
+				<stock id="windows_radeon_rx_6800"/>
+				<stock id="windows_radeon_rx_6800xt"/>
+				<stock id="windows_radeon_rx_6900xt"/>
+			</or>
+		</conditions>
+		<regkey>
+            <value name="EnableCloudShaderWorkaround" type="integer">0</value>
+        </regkey>
+	</spec>
+	
+	<!-- fbug://RHD-9815 Resolution warning removed-->
+	<spec>
+		<uuid>ResolutionWarning_b410</uuid>
+		<conditions>
+			<!--No condition applies for all hardware-->
+		</conditions>
+		<regkey>
+            <value name="FeralUIResolutionWarningThreshold" type="integer">14745700</value>
+        </regkey>
+	</spec>
+	<!--============================================================================>
+	<                       Hardware classes                                        >
+	<=============================================================================-->
+	
+
+	<!-- 4GB and up -->
+	<spec>
+		<uuid>high_vram_gpu_spec_b409</uuid>
+		<per-renderer/>
+		<regkey>
+			<value name="ScreenW" type="integer">1920</value>
+			<value name="ScreenH" type="integer">1080</value>
+			<value name="AdjustResolution" type="integer">1</value>
+			<value name="QualitySettingDefault" type="integer">2</value>
+		</regkey>
+		<regkey path="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\QualitySetting-2">
+			<value name="unit_size" type="integer">3</value>
+        </regkey>
+	</spec>
+	
+	<!-- 2GB - 4GB -->
+	<spec>
+		<uuid>medium_vram_gpu_spec_b409</uuid>
+		<conditions><VRAM><less>3999M</less></VRAM></conditions>
+		<per-renderer/>
+		<regkey>
+			<value name="ScreenW" type="integer">1920</value>
+			<value name="ScreenH" type="integer">1080</value>
+			<value name="AdjustResolution" type="integer">1</value>
+			<value name="QualitySettingDefault" type="integer">1</value>
+		</regkey>
+		<regkey path="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\QualitySetting-1" >
+			<value name="unit_size" type="integer">2</value>
+        </regkey>
+	</spec>
+	
+	<!-- 2GB and down -->
+	<spec>
+		<conditions><VRAM><less>1999M</less></VRAM></conditions>
+		<uuid>LowHardwareClass_b409</uuid>
+		<per-renderer/>
+		<regkey>
+			<value name="ScreenW" type="integer">1920</value>
+			<value name="ScreenH" type="integer">1080</value>
+			<value name="AdjustResolution" type="integer">1</value>
+			<value name="QualitySettingDefault" type="integer">0</value>
+		</regkey>
+		<regkey path="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\GraphicsSetting\resolution_scale-custom">
+			<value name="resolution_scale_value" type="integer">90</value>
+		 </regkey>
+		 <regkey path="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\QualitySetting-0" >
+			<value name="unit_size" type="integer">1</value>
+        </regkey>
+	</spec>
+
+	<!-- 1GB very low end hardware -->
+	<spec>
+		<conditions><VRAM><less>1200M</less></VRAM></conditions>
+		<uuid>VeryLowHardwareClass_b409</uuid>
+		<per-renderer/>
+		<regkey>
+			<value name="ScreenW" type="integer">1920</value>
+			<value name="ScreenH" type="integer">1080</value>
+			<value name="AdjustResolution" type="integer">1</value>
+			<value name="QualitySettingDefault" type="integer">0</value>
+		</regkey>
+		<regkey path="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\GraphicsSetting\resolution_scale-custom">
+			<value name="resolution_scale_value" type="integer">66</value>
+		 </regkey>
+		 <regkey path="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\QualitySetting-0" >
+			<value name="unit_size" type="integer">1</value>
+        </regkey>
+	</spec>
+
+	
+	<!--============================================================================>
+	<                          GPU specific settings                                >
+	<=============================================================================-->
+
+	<!--Preset - Low
+		Resolution - 1920x1080 (or closest) 
+	-->
+	<spec>
+		<conditions>
+			<or>
+				<!-- Nvidia Devices-->
+				<stock id="nvidia_965m"/>
+				<stock id="nvidia_970m"/>
+				<stock id="windows_nvidia_1010"/>
+				<stock id="windows_nvidia_1030"/>
+				<!-- AMD Devices-->
+				<!-- Intel Devices-->
+				<stock id="vendor_Intel"/>
+			</or>
+		</conditions>
+		<uuid>Very_low_end_devices_specification_b409</uuid>
+		<per-renderer/>
+		<regkey>
+			<value name="ScreenW" type="integer">1920</value>
+			<value name="ScreenH" type="integer">1080</value>
+			<value name="AdjustResolution" type="integer">1</value>
+			<value name="QualitySettingDefault" type="integer">0</value>
+		 </regkey>
+		 <regkey path="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\GraphicsSetting\resolution_scale-custom">
+			<value name="resolution_scale_value" type="integer">83</value>
+		 </regkey>
+		 <regkey path="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\QualitySetting-0" >
+			<value name="unit_size" type="integer">1</value>
+        </regkey>
+	</spec>
+
+
+	<!--Preset - Low
+		Resolution - 1920x1080 (or closest) 
+	-->
+	<spec>
+		<conditions>
+			<or>
+				<!-- Nvidia Devices-->
+				<stock id="mac_nvidia_780"/>
+				<stock id="mac_nvidia_780m"/>
+				<stock id="mac_nvidia_780_ti"/>
+				<stock id="mac_nvidia_950"/>
+				<stock id="mac_nvidia_960"/>
+				<stock id="mac_nvidia_960"/>
+				<stock id="nvidia_980mx"/>
+				<stock id="mac_nvidia_1050"/>
+				<!-- AMD Devices-->
+				<stock id="radeon_550x"/>
+				<stock id="mac_amd_radeon_pro_570x"/>
+				<stock id="mac_amd_radeon_pro_575"/>
+				<stock id="mac_amd_radeon_pro_575x"/>
+				<!-- Intel Devices-->
+				<stock id="mac_intel_iris_plus_g4"/>
+				<stock id="mac_intel_iris_plus_g7"/>
+				<stock id="mac_intel_iris_xe_g7"/>
+			</or>
+		</conditions>
+		<uuid>Low_preset_low_res_specification_b409</uuid>
+		<per-renderer/>
+		<regkey>
+			<value name="ScreenW" type="integer">1920</value>
+			<value name="ScreenH" type="integer">1080</value>
+			<value name="AdjustResolution" type="integer">1</value>
+			<value name="QualitySettingDefault" type="integer">0</value>
+		 </regkey>
+		 <regkey path="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\GraphicsSetting\resolution_scale-custom">
+			<value name="resolution_scale_value" type="integer">95</value>
+		 </regkey>
+		 <regkey path="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\QualitySetting-0" >
+			<value name="unit_size" type="integer">2</value>
+        </regkey>
+	</spec>
+
+
+	<!--Preset - Medium
+		Resolution - 1920x1080 (or closest) 
+	-->
+	<spec>
+		<conditions>
+			<or>
+				<!-- Nvidia Devices-->
+				<stock id="mac_nvidia_titan_series"/>
+				<stock id="mac_nvidia_titan_black"/>
+				<stock id="mac_nvidia_970"/>
+				<stock id="mac_nvidia_980"/>
+				<stock id="mac_nvidia_980_ti"/>
+				<stock id="mac_nvidia_1050_ti"/>
+				<stock id="mac_nvidia_1060_3gb"/>
+				<stock id="windows_nvidia_1650"/>
+				<!-- AMD Devices-->
+				<stock id="mac_amd_radeon_rx_470"/>
+				<stock id="mac_amd_radeon_rx_480"/>
+				<stock id="mac_amd_radeon_rx_560"/>
+				<stock id="mac_amd_radeon_rx_570"/>
+				<stock id="mac_amd_radeon_pro_580"/>
+				<stock id="mac_amd_radeon_pro_580x"/>
+				<stock id="windows_radeon_rx_5300"/>
+				<stock id="mac_amd_radeon_pro_5300m"/>
+				<!-- Intel Devices-->
+			</or>
+		</conditions>
+		<uuid>Medium_reset_low_res_specification_b409</uuid>
+		<per-renderer/>
+		<regkey>
+			<value name="ScreenW" type="integer">1920</value>
+			<value name="ScreenH" type="integer">1080</value>
+			<value name="AdjustResolution" type="integer">1</value>
+			<value name="QualitySettingDefault" type="integer">1</value>
+		 </regkey>
+		 <regkey path="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\QualitySetting-1" >
+			<value name="unit_size" type="integer">3</value>
+        </regkey>
+	</spec>
+
+
+
+	<!--Preset - High
+		Resolution - 1920x1080 (or closest) 
+	-->
+	<spec>
+		<conditions>
+			<or>
+				<!-- Nvidia Devices-->
+				<stock id="mac_nvidia_980"/>
+				<stock id="mac_nvidia_980_ti"/>
+				<stock id="mac_nvidia_1060_6gb"/>
+				<stock id="windows_nvidia_1660"/>
+				<stock id="windows_nvidia_3050"/>
+				<stock id="windows_nvidia_3050ti"/>
+				<stock id="mac_nvidia_titan_x"/>
+				<stock id="windows_nvidia_1660ti"/>
+				<stock id="mac_nvidia_1070"/>
+				<stock id="mac_nvidia_1070_ti"/>
+				<!-- AMD Devices-->
+				<stock id="mac_amd_radeon_rx_580"/>
+				<stock id="radeon_590"/>
+				<stock id="windows_radeon_rx_5300xt"/>
+				<stock id="mac_amd_vega_48"/>
+				<stock id="mac_radeon_pro_5500xt"/>
+				<stock id="radeon_pro_5600"/>
+				<stock id="windows_radeon_rx_5500"/>
+				<stock id="windows_radeon_rx_5500xt"/>
+				<stock id="windows_radeon_rx_5600"/>
+				<stock id="mac_amd_vega_56"/>
+				<stock id="windows_amd_vega_64"/>
+				<stock id="windows_radeon_rx_5600xt"/>
+				<stock id="radeon_pro_5700"/>
+			</or>
+		</conditions>
+		<uuid>High_preset_medium_res_specification_b409</uuid>
+		<per-renderer/>
+		<regkey>
+			<value name="ScreenW" type="integer">1920</value>
+			<value name="ScreenH" type="integer">1080</value>
+			<value name="AdjustResolution" type="integer">1</value>
+			<value name="QualitySettingDefault" type="integer">2</value>
+		 </regkey>
+		 <regkey path="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\QualitySetting-2" >
+			<value name="unit_size" type="integer">3</value>
+        </regkey>
+	</spec>
+
+
+
+
+	<!--Preset - Ultra
+		Resolution - 1920x1080 (or closest) 
+	-->
+	<spec>
+		<conditions>
+			<or>
+				<!-- Nvidia Devices-->
+				<stock id="windows_nvidia_1080"/>
+				<stock id="windows_nvidia_2060"/>
+				<stock id="windows_nvidia_2060_super"/>
+				<stock id="windows_nvidia_3060"/>
+				<stock id="windows_nvidia_3060ti"/>
+				<!-- AMD Devices-->
+				<stock id="radeon_seven"/>
+				<stock id="windows_radeon_rx_5700"/>
+				<stock id="windows_radeon_rx_5700xt"/>
+				<stock id="windows_radeon_rx_6600"/>
+			</or>
+		</conditions>
+		<uuid>Ultra_preset_high_res_specification_b409</uuid>
+		<per-renderer/>
+		<regkey>
+			<value name="ScreenW" type="integer">1920</value>
+			<value name="ScreenH" type="integer">1080</value>
+			<value name="AdjustResolution" type="integer">1</value>
+			<value name="QualitySettingDefault" type="integer">3</value>
+		 </regkey>
+		 <regkey path="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\QualitySetting-3" >
+			<value name="unit_size" type="integer">3</value>
+        </regkey>
+	</spec>
+
+
+	<!--Preset - Ultra
+		Unit size - High
+		Resolution - 2560x1440 (or closest) 
+	-->
+	<spec>
+		<conditions>
+			<or>
+				<!-- Nvidia Devices-->
+				<stock id="windows_nvidia_1080ti"/>
+				<stock id="nvidia_titan_x_pascal"/>
+				<stock id="nvidia_titan_xp"/>
+				<stock id="nvidia_titan_v"/>
+				<stock id="windows_nvidia_2070"/>
+				<stock id="windows_nvidia_2070_super"/>
+				<stock id="windows_nvidia_2080"/>
+				<stock id="windows_nvidia_2080_super"/>
+				<stock id="windows_nvidia_2080ti"/>
+				<stock id="windows_nvidia_3070"/>
+				<stock id="windows_nvidia_3070ti"/>
+				<stock id="windows_nvidia_rtx_titan"/>
+				<!-- AMD Devices-->
+				<stock id="windows_radeon_rx_6600xt"/>
+				<stock id="windows_radeon_rx_6700"/>
+				<stock id="windows_radeon_rx_6700xt"/>
+			</or>
+		</conditions>
+		<uuid>Ultra_preset_ultra_res_specification_b409</uuid>
+		<per-renderer/>
+		<regkey>
+			<value name="ScreenW" type="integer">2560</value>
+			<value name="ScreenH" type="integer">1440</value>
+			<value name="AdjustResolution" type="integer">1</value>
+			<value name="QualitySettingDefault" type="integer">3</value>
+		 </regkey>
+		 <regkey path="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\QualitySetting-3" >
+			<value name="unit_size" type="integer">3</value>
+        </regkey>
+	</spec>
+
+	<!--Preset - Ultra
+		Unit size - High
+		Resolution - 3840x2160 (or closest) 
+	-->
+	<spec>
+		<conditions>
+			<or>
+				<!-- Nvidia Devices-->
+				<stock id="windows_nvidia_3080"/>
+				<stock id="windows_nvidia_3080ti"/>
+				<stock id="windows_nvidia_3090"/>
+				<!-- AMD Devices-->
+				<stock id="windows_radeon_rx_6800"/>
+				<stock id="windows_radeon_rx_6800xt"/>
+				<stock id="windows_radeon_rx_6900xt"/>
+			</or>
+		</conditions>
+		<uuid>Ultra_preset_4k_res_specification_b409</uuid>
+		<per-renderer/>
+		<regkey>
+			<value name="ScreenW" type="integer">3840</value>
+			<value name="ScreenH" type="integer">2160</value>
+			<value name="AdjustResolution" type="integer">1</value>
+			<value name="QualitySettingDefault" type="integer">3</value>
+		 </regkey>
+		 <regkey path="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\QualitySetting-3" >
+			<value name="unit_size" type="integer">3</value>
+        </regkey>
+	</spec>
+
+	<!--Preset - Ultra
+		Unit size - Ultra
+		Resolution - 3840x2160 (or closest) 
+	-->
+	<spec>
+		<conditions>
+			<and>
+				<CPU_physical_cores>
+					<more_or_equal>6</more_or_equal>
+				</CPU_physical_cores>
+				<or>
+					<!-- Nvidia Devices-->
+					<stock id="windows_nvidia_3080"/>
+					<stock id="windows_nvidia_3080ti"/>
+					<stock id="windows_nvidia_3090"/>
+					<!-- AMD Devices-->
+					<stock id="windows_radeon_rx_6800"/>
+					<stock id="windows_radeon_rx_6800xt"/>
+					<stock id="windows_radeon_rx_6900xt"/>
+				</or>
+			</and>
+		</conditions>
+		<uuid>Ultra_preset_4k_res_ultra_unit_specification_b409</uuid>
+		<per-renderer/>
+		<regkey>
+			<value name="ScreenW" type="integer">3840</value>
+			<value name="ScreenH" type="integer">2160</value>
+			<value name="AdjustResolution" type="integer">1</value>
+			<value name="QualitySettingDefault" type="integer">3</value>
+		 </regkey>
+		 <regkey path="Software\The Creative Assembly Limited\Total War ROME REMASTERED\Setup\QualitySetting-3" >
+			<value name="unit_size" type="integer">4</value>
+        </regkey>
+	</spec>
+
+
+</gameinfo>

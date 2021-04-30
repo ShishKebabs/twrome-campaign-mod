@@ -1,0 +1,239 @@
+; *********** dodgy Giza   *********************************
+
+
+type			sphinx
+lod
+max_distance	200
+model_rigid		sphinx_med.cas
+lod
+max_distance	4000
+model_rigid		sphinx_low.cas
+
+
+
+type			great_sphinx
+lod
+max_distance	200
+model_rigid		great_sphinx_med.cas
+lod
+max_distance	4000
+model_rigid		great_sphinx_low.cas
+
+
+
+; *********** Temple to Artemis at Ephesus  ******************
+
+
+
+type			temple_to_artemis
+lod
+max_distance	300
+model_rigid		temple_to_artemis_high.cas
+lod
+max_distance	500
+model_rigid		temple_to_artemis_med.cas
+lod
+max_distance	4000
+model_rigid		temple_to_artemis_low.cas
+
+
+
+type			temple_to_artemis_RTM
+lod
+max_distance	4000
+model_rigid		temple_to_artemis_RTM.cas
+
+
+
+; ********** Statue of Zeus at Olympia
+
+
+
+
+type			temple_of_zeus
+lod
+max_distance	300
+model_rigid		temple_of_zeus_high.cas
+lod
+max_distance	500
+model_rigid		temple_of_zeus_med.cas
+lod
+max_distance	4000
+model_rigid		temple_of_zeus_low.cas
+
+
+
+type			temple_of_zeus_RTM
+lod
+max_distance	4000
+model_rigid		temple_of_zeus_RTM_high.cas
+
+
+
+type			statue_of_zeus
+;lod
+;max_distance	200
+;model_rigid		statue_of_zeus_high.cas
+;lod
+;max_distance	4000
+;model_rigid		statue_of_zeus_med.cas
+lod
+max_distance	4000
+model_rigid		statue_of_zeus_low.cas
+
+
+
+
+type			statue_of_zeus_RTM
+lod
+max_distance	200
+model_rigid		statue_of_zeus_RTM_high.cas
+
+
+
+type			altis_walls
+lod
+max_distance	4000
+model_rigid		altis_walls.cas
+
+
+
+type			statue_of_zeus_temple_interior
+lod
+max_distance	50
+model_rigid		statue_of_zeus_temple_interior.cas
+
+
+; ************  Colossus of Rhodes  ********************
+
+
+
+
+type			colossus_of_rhodes
+lod
+max_distance	200
+model_rigid		colossus_of_rhodes_high.cas
+lod
+max_distance	400
+model_rigid		colossus_of_rhodes_med.cas
+lod
+max_distance	4000
+model_rigid		colossus_of_rhodes_low.cas
+
+
+
+
+type			colossus_harbour_mouth
+lod
+max_distance	4000
+model_rigid		colossus_harbour_mouth.cas
+
+
+; ************  Mausoleum at Halicarnassus   ************************
+
+
+
+type			mausoleum_at_halicarnassus
+lod
+max_distance	200
+model_rigid		mausoleum_halicarnassus_high.cas
+lod
+max_distance	500
+model_rigid		mausoleum_halicarnassus_med.cas
+lod
+max_distance	4000
+model_rigid		mausoleum_halicarnassus_low.cas
+
+
+
+type			lion_statue
+lod
+max_distance	200
+model_rigid		lion_statue_high.cas
+lod
+max_distance	300
+model_rigid		lion_statue_med.cas
+lod
+max_distance	4000
+model_rigid		lion_statue_low.cas
+
+
+type			quadriga_small
+lod
+max_distance	4000
+model_rigid		quadriga_small_high.cas
+
+
+; ************** Pharos at Alexandria   *****************************
+
+
+
+
+type			pharos_at_alexandria
+lod
+max_distance	200
+model_rigid		pharos_high.cas
+lod
+max_distance	4000
+model_rigid		pharos_low.cas
+
+
+
+; ******************** Hanging Gardens of Babylon
+
+
+
+type			hanging_gardens_of_babylon
+lod
+max_distance	4000
+model_rigid		hanging_gardens_of_babylon_high.cas
+
+
+
+type			ziggurat
+lod
+max_distance	4000
+model_rigid		ziggurat_low.cas
+
+
+
+; ********************  Colosseum for RTM
+
+
+type			colosseum_interior_RTM
+lod
+max_distance	4000
+model_rigid		colosseum_interior_RTM.cas
+
+
+
+; ********************* Circus Maximus for RTM
+
+
+
+type			circus_maximus_RTM_carceres_statues
+lod
+max_distance	4000
+model_rigid		circus_maximus_RTM_carceres_statues.cas
+
+
+type			circus_maximus_RTM_carceres_end
+lod
+max_distance	4000
+model_rigid		circus_maximus_RTM_carceres_end.cas
+
+
+type			circus_maximus_RTM_middle_section
+lod
+max_distance	4000
+model_rigid		circus_maximus_RTM_middle_section.cas
+
+
+type			circus_maximus_RTM_rounded_end
+lod
+max_distance	4000
+model_rigid		circus_maximus_RTM_rounded_end.cas
+
+
+
+

@@ -1,0 +1,32 @@
+plan
+
+{
+
+floor 	underlay_long_roman_street.cas 		overlay_long_roman_street.cas
+
+
+long_roman_street,	0,	0,	0,	0
+
+roman_pro-consuls_palace,	-38,		333,		-65,		30
+
+roman_triumphal_column,		-30,		200,		0,		26
+roman_triumphal_column,		-50,		-100,		0,		20
+
+roman_colonnaded_portico,	11,		234,		90,		33
+roman_colonnaded_portico,	-59,		-47,		90,		16
+roman_colonnaded_portico,	32,		-58,		90,		16
+
+domus,				76.551,		-6.996,		90,		0
+
+insulae_white,			97.396,		-47.857,	135,		0
+insulae_white,			17.396,		-157.857,	135,		0
+
+roman_small_ambient_plinth,	128,		-1,		0,		0
+
+colosseum,			180,		-150,		155,		20
+
+roman_imperial_palace,		42,		-282,		-135,		0
+
+;roman_main_plinth_bridge,	-25,		-175,		-45,		10
+
+}

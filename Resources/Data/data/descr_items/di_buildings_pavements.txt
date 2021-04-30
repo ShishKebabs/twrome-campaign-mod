@@ -1,0 +1,77 @@
+;;;;  pavements for slots
+
+
+type			pavement_roman_imperial_palace
+lod
+max_distance		4000
+model_rigid		pavement_roman_imperial_palace.cas
+
+
+type			pavement_roman_awesome_temple
+lod
+max_distance		4000
+model_rigid		pavement_roman_awesome_temple.cas
+
+
+type			pavement_bath_house
+lod
+max_distance		4000
+model_rigid		pavement_bath_house.cas
+
+
+type			pavement_circus
+lod
+max_distance		4000
+model_rigid		pavement_circus.cas
+
+
+type			pavement_city_barracks_roman
+lod
+max_distance		4000
+model_rigid		pavement_city_barracks_roman.cas
+
+
+type			pavement_colosseum
+lod
+max_distance		4000
+model_rigid		pavement_colosseum.cas
+
+
+type			pavement_theatre
+lod
+max_distance		4000
+model_rigid		pavement_theatre.cas
+
+
+type			pavement_forum
+lod
+max_distance		4000
+model_rigid		pavement_forum.cas
+
+
+type			pavement_stone_amphitheatre
+lod
+max_distance		4000
+model_rigid		pavement_stone_amphitheatre.cas
+
+
+type			pavement_scriptorium_roman
+lod
+max_distance		4000
+model_rigid		pavement_scriptorium_roman.cas
+
+
+type			pavement_ludus_magnus_roman
+lod
+max_distance		4000
+model_rigid		pavement_ludus_magnus_roman.cas
+
+
+type			pavement_small_circus
+lod
+max_distance		200
+model_rigid		pavement_small_circus_high.cas
+lod
+max_distance		4000
+model_rigid		pavement_small_circus_low.cas
+

@@ -1,0 +1,560 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+;
+;	format:
+;	-------------------------------------------------------------------------
+;
+;		[ multi_texture	<proportion> ]
+;
+;		<climate name>
+;		{
+;			[ multi_texture	<proportion> ]
+;
+;			[ snow_line	<height> ]
+;
+;			types
+;			{
+;				<name>	<game type>	[ <winter game type> ]
+;				...
+;			}
+;
+;			low_detail
+;			{
+;				<name>	<low detail name>
+;				...
+;			}
+;
+;			bands
+;			{
+;				<name>	<min height>	<max height>	<probability weight>	<cohesion>
+;				...
+;			}
+;
+;			band_additions	<map type>
+;			{
+;				<name>	<min height>	<max height>	<probability weight>	<cohesion>
+;				...			
+;			}
+;
+;		}
+;
+;		...
+;	-------------------------------------------------------------------------
+;
+;	glossary:
+;	-------------------------------------------------------------------------
+;
+;		keywords:	
+;			multi_texture
+;			types
+;			low_detail
+;			bands
+;			band_additions	
+;			snow_line
+;	
+;		parameters:
+;			proportion				- re: multi_texture - proportion of low res texture applied
+;			climate name			- climate identifier
+;			name					- identifier and texture name
+;			low detail name			- low detail texture name
+;			game type				- battlefield game type
+;			winter game type		- battlefield game type for winter conditions
+;			min height				- minimum valid height in metres above sea level
+;			max height				- maximum valid height in metres above sea level
+;			probability weight		- chance of fractal spawning relative to weights of other types
+;			cohesion				- increase applied to probability weight with each fractal parent of same type
+;			map type				- 
+;			height					- height in metres above sea level
+;
+;	-------------------------------------------------------------------------
+;
+;	valid game types:
+;	-------------------------------------------------------------------------
+;
+;		grass_short		
+;		grass_long		
+;		sand			
+;		rock			
+;		forest_sparse	
+;		forest_dense	
+;		scrub_sparse	
+;		scrub_dense		
+;		swamp			
+;		mud				
+;		mud_road		
+;		stone_road					
+;		water			
+;		ice				
+;		snow			
+;	-------------------------------------------------------------------------
+;
+;	valid map types:
+;	-------------------------------------------------------------------------
+;
+;		fertile_low
+;		fertile_medium
+;		fertile_high
+;		wilderness
+;		mountains_high
+;		mountains_low
+;		hills
+;		forest_dense
+;		forest_sparse
+;		swamp
+;		ocean
+;		sea_deep
+;		sea_shallow
+;		beach
+;	-------------------------------------------------------------------------
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+multi_texture	0.40
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+test_climate
+{
+	types
+	{
+		sand		sand
+		mud			mud
+		grass		grass_short
+		grass1		grass_short
+		rock		rock
+		forest		forest_dense
+		shrub_base	scrub_dense
+	}
+
+	bands
+	{
+		sand		MIN			15.0	1.0		1.0
+		mud			15.0		MAX		0.25	0.5
+		;grass		15.0		MAX		1.0		1.0
+		;grass1		15.0		MAX		1.0		1.0
+		shrub_base	15.0		MAX		0.5		1.0
+		rock		500			MAX		0.5		0.5
+		rock		1000		MAX		0.5		0.5
+		forest		15.0		MAX		0.25	0.5
+	}
+
+	band_additions fertile_low
+	{
+		grass		15.0		MAX		0.5		1.0
+		grass1		15.0		MAX		0.5		1.0
+	}
+
+	band_additions fertile_medium
+	{
+		grass		15.0		MAX		1.0		1.0
+		grass1		15.0		MAX		1.0		1.0
+	}
+
+	band_additions fertile_high
+	{
+		grass		15.0		MAX		2.0		1.0
+		grass1		15.0		MAX		2.0		1.0
+	}
+
+	band_additions forest_dense	
+	{
+		grass		15.0		MAX		1.0		1.0
+		grass1		15.0		MAX		1.0		1.0
+		forest		15.0		MAX		2.0		1.0
+	}
+
+	band_additions forest_sparse	
+	{
+		grass		15.0		MAX		1.0		1.0
+		grass1		15.0		MAX		1.0		1.0
+		forest		15.0		MAX		1.0		1.0
+	}
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+sandy_desert
+{
+	types
+	{
+		caked_sand	sand
+		sand		sand
+		sand_blown	sand
+		rock		rock
+		
+	}
+
+	bands
+	{
+		caked_sand		MIN		MAX		0.5		1.0
+		sand			MIN		MAX		1.0		1.0
+		sand_blown		MIN		MAX		1.0		1.0
+		rock			1000	MAX		1.0		1.0
+	}
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+rocky_desert
+{
+	types
+	{
+		pebble	rock
+		rock	rock
+		sand	sand
+	}
+
+	bands
+	{
+		pebble		MIN		MAX		1.0		1.0
+		rock		MIN		MAX		1.0		1.0
+		sand		MIN		MAX		1.0		1.0
+	}
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;mediterranean
+;{
+;}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+temperate_grassland_fertile
+{
+	snow_line	1000	
+
+	types
+	{
+		grass		grass_short
+		grass1		grass_long
+		mud			mud
+		rock		rock
+		sand		sand
+		forest		forest_dense
+		shrub_base	scrub_dense
+	}
+
+	bands
+	{
+		sand		MIN		20.0	1.0		5.0
+		grass		10.0	MAX		1.0		1.0
+		grass1		10.0	MAX		0.2		0.5
+		mud			10.0	MAX		0.25	0.6
+		forest		20.0	MAX		0.5		1.0
+		shrub_base	20.0	MAX		0.5		1.0
+		rock		1000	MAX		1.0		1.0
+	}
+
+	band_additions forest_dense	
+	{
+		forest		20.0	MAX		2.0		1.0
+	}
+
+	band_additions forest_sparse	
+	{
+		forest		20.0	MAX		1.0		1.0
+	}
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	
+temperate_grassland_infertile
+{
+	snow_line	1000	
+
+	types
+	{
+		grass		grass_short
+		grass1		grass_long
+		mud			mud
+		rock		rock
+		sand		sand
+		forest		forest_dense
+		shrub_base	scrub_dense
+	}	
+
+	bands
+	{
+		sand		MIN		20.0	1.0		5.0
+		grass		10.0	MAX		1.0		1.0
+		grass1		10.0	MAX		0.2		0.5
+		mud			10.0	MAX		0.25	0.4
+		forest		20.0	MAX		0.5		1.0
+		shrub_base	20.0	MAX		0.5		1.0
+		rock		1000	MAX		1.0		1.0
+	}
+
+	band_additions forest_dense	
+	{
+		forest		20.0	MAX		2.0		1.0
+	}
+
+	band_additions forest_sparse	
+	{
+		forest		20.0	MAX		1.0		1.0
+	}
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	
+temperate_forest_open
+{
+	snow_line	1000	
+
+	types
+	{
+		grass		grass_short
+		grass1		grass_long
+		rock		rock
+		mud			mud
+		sand		sand
+		forest		forest_dense
+		shrub_base	scrub_dense
+	}
+
+	bands
+	{
+		sand		MIN		20.0	1.0		5.0
+		mud			10.0	MAX		0.25	0.2
+		grass		10.0	MAX		1.0		1.0
+		grass1		10.0	MAX		0.2		0.6
+		mud			10.0	MAX		0.25	0.3
+		forest		20.0	MAX		0.5		1.0
+		shrub_base	20.0	MAX		0.5		1.0
+		rock		1000	MAX		1.0		1.0
+	}
+
+	band_additions forest_dense	
+	{
+		forest		20.0	MAX		2.0		1.0
+	}
+
+	band_additions forest_sparse	
+	{
+		forest		20.0	MAX		1.0		1.0
+	}
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	
+temperate_forest_deep
+{
+	types
+	{
+		grass		grass_short
+		grass1		grass_long
+		mud			mud
+		rock		rock
+		sand		sand
+		forest		forest_dense
+		shrub_base	scrub_dense
+	}
+
+	bands
+	{
+		sand		MIN		20.0	1.0		5.0
+		grass		10.0	MAX		1.0		1.0
+		grass1		10.0	MAX		0.2		0.4
+		mud			10.0	MAX		0.25	0.6
+		forest		20.0	MAX		0.5		1.0
+		shrub_base	20.0	MAX		0.5		1.0
+		rock		1000	MAX		1.0		1.0
+	}
+
+	band_additions forest_dense	
+	{
+		forest		20.0	MAX		2.0		1.0
+	}
+
+	band_additions forest_sparse	
+	{
+		forest		20.0	MAX		1.0		1.0
+	}
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	
+swamp
+{
+	types
+	{
+		grass		grass_short
+		sand		sand
+		mud			mud
+		swamp		swamp
+	}
+
+	bands
+	{
+		sand		MIN		20.0	1.0		5.0
+		grass		10.0	MAX		0.5		1.0
+		mud			10.0	MAX		0.25	1.0
+		swamp		10.0	MAX		1.0		1.0
+	}
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	
+highland
+{
+	snow_line	1000	
+
+	types
+	{
+		grass		grass_short
+		grass1		grass_long
+		rock		rock
+		sand		sand
+		mud			mud
+		forest		forest_dense
+		shrub_base	scrub_dense
+	}
+
+	bands
+	{
+		sand		MIN		20.0	1.0		5.0
+		mud			MIN		MAX		0.25	0.5
+		grass		10.0	MAX		1.0		1.0
+		grass1		10.0	MAX		0.4		0.4
+		shrub_base	20.0	MAX		0.5		1.0
+		rock		1000	MAX		1.0		1.0
+		forest		20.0	MAX		0.5		1.0
+	}
+
+	band_additions forest_dense	
+	{
+		forest		20.0	MAX		2.0		1.0
+	}
+
+	band_additions forest_sparse	
+	{
+		forest		20.0	MAX		1.0		1.0
+	}
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	
+alpine
+{
+	snow_line	1000	
+
+	types
+	{
+		grass		grass_short
+		grass1		grass_long
+		sand		sand
+		rock		rock
+		mud			mud
+		forest		forest_dense
+		shrub_base	scrub_dense
+                
+	}
+
+	bands
+	{
+		sand		MIN		20.0	1.0		5.0
+		mud			10.0	MAX		0.25	0.5
+		grass		10.0	MAX		1.0		1.0
+		grass1		10.0	MAX		0.7		0.7
+		rock		500		MAX		1.0		1.0
+		forest		20.0	MAX		0.5		1.0
+		shrub_base	20.0	MAX		0.5		1.0
+	}
+
+	band_additions forest_dense	
+	{
+		forest		20.0	MAX		2.0		1.0
+	}
+
+	band_additions forest_sparse	
+	{
+		forest		20.0	MAX		1.0		1.0
+	}
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	
+sub_arctic
+{
+	snow_line	1000	
+
+	types
+	{
+		grass		grass_short
+		grass1		grass_long
+		rock		rock
+		sand		sand
+		mud			mud
+		pebble		rock
+		forest		forest_dense
+		shrub_base	scrub_dense
+	}
+
+	bands
+	{
+		sand		MIN		20.0	1.0		5.0
+		pebble		MIN		MAX		0.25	1.0
+		mud			10.0	MAX		0.25	0.4
+		grass		10.0	MAX		1.0		1.0
+		grass1		10.0	MAX		0.2		0.5
+		rock		1000	MAX		1.0		1.0
+		forest		20.0	MAX		0.5		1.0
+		shrub_base	20.0	MAX		0.5		1.0
+	}
+
+	band_additions forest_dense	
+	{
+		forest		20.0	MAX		2.0		1.0
+	}
+
+	band_additions forest_sparse	
+	{
+		forest		20.0	MAX		1.0		1.0
+	}
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	
+;volcanic
+;{
+;}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+semi_arid
+{
+	types
+	{
+		grass		grass_short
+		grass1		grass_long
+		sand		sand
+		mud			mud
+		pebble		rock
+		forest		forest_dense
+		shrub_base	scrub_dense
+	}
+
+	bands
+	{
+		sand		MIN		20.0	1.0		5.0
+		pebble		MIN		MAX		0.25	1.0
+		grass		10.0	MAX		1.0		1.0
+		grass1		10.0	MAX		0.2		0.4
+		mud			10.0	MAX		0.25	0.3
+		shrub_base	20.0	MAX		0.5		1.0
+		forest		20.0	MAX		0.5		1.0
+	}
+
+	band_additions forest_dense	
+	{
+		forest		20.0	MAX		2.0		1.0
+	}
+
+	band_additions forest_sparse	
+	{
+		forest		20.0	MAX		1.0		1.0
+	}
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

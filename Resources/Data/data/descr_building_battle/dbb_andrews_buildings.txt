@@ -1,0 +1,1252 @@
+	baggage_train_cart
+	{
+		stat_cat tiny_wooden
+		localised_name baggage_train
+		level
+		{
+			min_health 0
+			battle_stats
+			item		baggage_train_cart
+			physical_info	info_cart.cas
+		}
+	}
+
+
+	cavalry_barracks
+	{
+		stat_cat small_stone
+		localised_name cavalry_barracks
+		level
+		{
+			min_health 1
+			battle_stats
+			item		cavalry_barracks
+			physical_info	info_cavalry_barracks.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		cavalry_barracks_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+
+	eastern_cavalry_barracks
+	{
+		stat_cat small_stone
+		localised_name eastern_cavalry_barracks
+		level
+		{
+			min_health 1
+			battle_stats
+			item		eastern_cavalry_barracks
+			physical_info	info_eastern_cavalry_barracks.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		eastern_cavalry_barracks_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+	eastern_temple_complex
+	{
+		stat_cat large_stone
+		localised_name temple_complex
+		level
+		{
+			min_health 1
+			battle_stats
+			item		eastern_temple_complex
+			physical_info	info_eastern_temple_complex.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_160x128
+			physical_info	info_roman_rubble_160x128.cas
+		}
+	}
+
+;;; no longer used
+	eastern_hippodrome
+	{
+		stat_cat large_stone
+		localised_name eastern_hippodrome
+		level
+		{
+			min_health 1
+			battle_stats
+			item		eastern_hippodrome
+			physical_info	info_eastern_hippodrome.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_112x64
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+
+	egyptian_cavalry_barracks
+	{
+		stat_cat large_stone
+		localised_name egyptian_cavalry_barracks
+		level
+		{
+			min_health 1
+			battle_stats
+			item		egyptian_cavalry_barracks
+			physical_info	info_egyptian_cavalry_barracks.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		egyptian_cavalry_barracks_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+	
+
+	egyptian_governors_palace
+	{
+		stat_cat large_stone
+		localised_name egyptian_governors_palace
+		level
+		{
+			min_health 1
+			battle_stats
+			item		egyptian_governors_palace
+			physical_info	info_egyptian_governors_palace.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_160x128
+			physical_info	info_roman_rubble_160x128.cas
+		}
+	}
+
+;;; no longer used
+	egyptian_hippodrome
+	{
+		stat_cat large_stone
+		localised_name egyptian_hippodrome
+		level
+		{
+			min_health 1
+			battle_stats
+			item		egyptian_hippodrome
+			physical_info	info_egyptian_hippodrome.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_112x64
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+;;; don't think this is being used
+	egyptian_shrine_andrews
+	{
+		stat_cat small_stone
+		localised_name egyptian_shrine
+		level
+		{
+			min_health 0
+			battle_stats
+			item		egyptian_shrine_andrews
+			physical_info	info_egyptian_shrine_andrews.cas
+		}
+	}
+	
+	egyptian_temple
+	{
+		stat_cat medium_stone
+		localised_name egyptian_temple
+		level
+		{
+			min_health 1
+			battle_stats
+			item		egyptian_temple
+			physical_info	info_egyptian_temple.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		egyptian_temple_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+
+
+	forum
+	{
+		stat_cat medium_stone
+		localised_name forum
+		level
+		{
+			min_health 1
+			battle_stats
+			item		forum
+			physical_info	info_forum.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		forum_rubble
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+
+	great_forum_with_curia
+	{
+		stat_cat large_stone
+		localised_name great_forum
+		level
+		{
+			min_health 1
+			battle_stats
+			item		great_forum_with_curia
+			physical_info	info_great_forum_with_curia.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_160x128
+			physical_info	info_roman_rubble_160x128.cas
+		}
+	}
+
+	greek_great_agora
+	{
+		stat_cat large_stone
+		localised_name greek_great_agora
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_great_agora
+			physical_info	greek_great_agora_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_160x128
+			physical_info	info_roman_rubble_160x128.cas
+		}
+	}
+
+
+	greek_governors_palace
+	{
+		stat_cat large_stone
+		localised_name greek_governors_palace
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_governors_palace
+			physical_info	greek_governors_palace_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_governors_palace_rubble
+			physical_info	info_roman_rubble_160x128.cas
+		}
+	}
+
+;; greek agora uses this greek_large_marketplace model
+	greek_large_marketplace
+	{
+		stat_cat large_wooden
+		localised_name greek_large_marketplace
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_large_marketplace
+			physical_info	info_greek_large_marketplace.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_large_marketplace_rubble
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+
+	greek_marketplace
+	{
+		stat_cat large_wooden
+		localised_name greek_marketplace
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_marketplace
+			physical_info	greek_market_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_48x32
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+
+	greek_merchants_quarter
+	{
+		stat_cat large_wooden
+		localised_name greek_merchants_quarter
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_merchants_quarter
+			physical_info	info_greek_merchants_quarter.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_merchants_quarter_rubble
+			physical_info	info_roman_rubble_160x128.cas
+		}
+	}
+
+;; greek pantheion uses the Temple To Artemis model for the moment.
+
+	greek_pantheion
+	{
+		stat_cat large_stone
+		localised_name greek_pantheion
+		level
+		{
+			min_health 1
+			battle_stats
+			item		temple_to_artemis
+			physical_info	info_temple_to_artemis.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_160x128
+			physical_info	info_roman_rubble_160x128.cas
+		}
+	}
+
+;; not sure if this should be indestructable or not...
+	greek_pantheion_plinth
+	{
+		stat_cat indestructable
+		localised_name greek_pantheion
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_pantheion_plinth
+			physical_info	info_greek_pantheion_plinth.cas
+		}
+		;transition default_large_stone
+		;level
+		;{
+		;	min_health 0
+		;	battle_stats
+		;	item		roman_rubble_160x128
+		;	physical_info	info_roman_rubble_160x128.cas
+		;}
+	}
+	
+
+	greek_pro-consuls_palace
+	{
+		stat_cat large_stone
+		localised_name greek_pro-consuls_palace
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_pro-consuls_palace
+			physical_info	info_greek_pro-consuls_palace.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_256x192
+			physical_info	info_roman_rubble_256x192.cas
+		}
+	}
+
+
+	pantheon
+	{
+		stat_cat large_stone
+		localised_name pantheon
+		level
+		{
+			min_health 1
+			battle_stats
+			item		pantheon
+			physical_info	info_pantheon.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pantheon_rubble
+			physical_info	info_roman_rubble_160x128.cas
+		}
+	}
+
+	
+	plaza_eastern_32x32m
+	{
+		stat_cat indestructable
+		localised_name plaza
+		level
+		{
+			min_health 0
+			battle_stats
+			item		plaza_eastern_32x32m
+			physical_info	info_plaza_eastern_32x32m.cas
+		}
+	}
+
+	
+	plaza_eastern_64x64m
+	{
+		stat_cat indestructable
+		localised_name plaza
+		unselectable
+		level
+		{
+			min_health 0
+			battle_stats
+			item		plaza_eastern_64x64m
+			physical_info	info_plaza_eastern_64x64m.cas
+		}
+	}
+
+
+	plaza_eastern_128x128m
+	{
+		stat_cat indestructable
+		localised_name plaza
+		level
+		{
+			min_health 0
+			battle_stats
+			item		plaza_eastern_128x128m
+			physical_info	info_plaza_eastern_128x128m.cas
+		}
+	}
+
+
+	plaza_eastern_192x192m
+	{
+		stat_cat indestructable
+		localised_name plaza
+		level
+		{
+			min_health 0
+			battle_stats
+			item		plaza_eastern_192x192m
+			physical_info	info_plaza_eastern_192x192m.cas
+		}
+	}
+
+	plaza_egyptian_32x32m
+	{
+		stat_cat indestructable
+		localised_name plaza
+		level
+		{
+			min_health 0
+			battle_stats
+			item		plaza_egyptian_32x32m
+			physical_info	info_plaza_egyptian_32x32m.cas
+		}
+	}
+
+
+	plaza_egyptian_64x64m
+	{
+		stat_cat indestructable
+		localised_name plaza
+		level
+		{
+			min_health 0
+			battle_stats
+			item		plaza_egyptian_64x64m
+			physical_info	info_plaza_egyptian_64x64m.cas
+		}
+	}
+
+
+	plaza_egyptian_128x128m
+	{
+		stat_cat indestructable
+		localised_name plaza
+		level
+		{
+			min_health 0
+			battle_stats
+			item		plaza_egyptian_128x128m
+			physical_info	info_plaza_egyptian_128x128m.cas
+		}
+	}
+
+
+	plaza_egyptian_192x192m
+	{
+		stat_cat indestructable
+		localised_name plaza
+		level
+		{
+			min_health 0
+			battle_stats
+			item		plaza_egyptian_192x192m
+			physical_info	info_plaza_egyptian_192x192m.cas
+		}
+	}
+
+
+	plaza_greek_32x32m
+	{
+		stat_cat indestructable
+		localised_name plaza
+		level
+		{
+			min_health 0
+			battle_stats
+			item		plaza_greek_32x32m
+			physical_info	info_plaza_greek_32x32m.cas
+		}
+	}
+
+	plaza_greek_64x64m
+	{
+		stat_cat indestructable
+		localised_name plaza
+		level
+		{
+			min_health 0
+			battle_stats
+			item		plaza_greek_64x64m
+			physical_info	info_plaza_greek_64x64m.cas
+		}
+	}
+
+
+	plaza_greek_128x128m
+	{
+		stat_cat indestructable
+		localised_name plaza
+		level
+		{
+			min_health 0
+			battle_stats
+			item		plaza_greek_128x128m
+			physical_info	info_plaza_greek_128x128m.cas
+		}
+	}
+
+
+	plaza_greek_192x192m
+	{
+		stat_cat indestructable
+		localised_name plaza
+		level
+		{
+			min_health 0
+			battle_stats
+			item		plaza_greek_192x192m
+			physical_info	info_plaza_greek_192x192m.cas
+		}
+	}
+
+
+	plaza_roman_32x32m
+	{
+		stat_cat indestructable
+		localised_name plaza
+		level
+		{
+			min_health 0
+			battle_stats
+			item		plaza_roman_32x32m
+			physical_info	info_plaza_roman_32x32m.cas
+		}
+	}
+
+
+	
+	plaza_roman_64x64m
+	{
+		stat_cat indestructable
+		localised_name plaza
+		level
+		{
+			min_health 0
+			battle_stats
+			item		plaza_roman_64x64m
+			physical_info	info_plaza_roman_64x64m.cas
+		}
+	}
+
+	
+	plaza_roman_128x128m
+	{
+		stat_cat indestructable
+		localised_name plaza
+		level
+		{
+			min_health 0
+			battle_stats
+			item		plaza_roman_128x128m
+			physical_info	info_plaza_roman_128x128m.cas
+		}
+	}
+
+
+	plaza_roman_192x192m
+	{
+		stat_cat indestructable
+		localised_name plaza
+		level
+		{
+			min_health 0
+			battle_stats
+			item		plaza_roman_192x192m
+			physical_info	info_plaza_roman_192x192m.cas
+		}
+	}
+
+;;; no longer used
+	roman_ambient_market
+	{
+		stat_cat small_wooden
+		localised_name ambient
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_ambient_market
+			physical_info	info_roman_ambient_market.cas
+		}
+	}
+
+	roman_governors_palace
+	{
+		stat_cat medium_stone
+		localised_name roman_governors_palace
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_governors_palace
+			physical_info	info_roman_governors_palace.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_160x128
+			physical_info	info_roman_rubble_160x128.cas
+		}
+	}
+
+	roman_marketplace
+	{
+		stat_cat medium_wooden
+		localised_name roman_marketplace
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_marketplace
+			physical_info	info_roman_marketplace.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_marketplace_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+
+	roman_pro-consuls_palace
+	{
+		stat_cat large_stone
+		localised_name roman_pro-consuls_palace
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_pro-consuls_palace
+			physical_info	info_roman_pro-consuls_palace.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_pro-consuls_palace_rubble
+			physical_info	info_roman_rubble_256x192.cas
+		}
+	}
+
+
+	roman_trader
+	{
+		stat_cat medium_wooden
+		localised_name roman_trader
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_trader
+			physical_info	info_roman_trader.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_trader_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+; ******************** second-pass buildings
+
+	roman_blacksmith
+	{
+		stat_cat small_wooden
+		localised_name roman_blacksmith
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_blacksmith
+			physical_info	info_roman_blacksmith.cas
+			spot_fx		roman_blacksmith_fx.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_blacksmith_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+
+
+	roman_armourer
+	{
+		stat_cat medium_wooden
+		localised_name roman_armourer
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_armourer
+			physical_info	info_roman_armourer.cas
+			spot_fx		roman_armourer_fx.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_48x32
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+	roman_foundry
+	{
+		stat_cat medium_wooden
+		localised_name roman_foundry
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_foundry
+			physical_info	info_roman_foundry.cas
+			spot_fx		roman_foundry_fx.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_foundry_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+	eastern_armourer
+	{
+		stat_cat medium_wooden
+		localised_name eastern_armourer
+		level
+		{
+			min_health 1
+			battle_stats
+			item		eastern_armourer
+			physical_info	info_eastern_armourer.cas
+			spot_fx		spot_fx_eastern_armourer.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		eastern_armourer_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+	
+	eastern_foundry
+	{
+		stat_cat medium_wooden
+		localised_name eastern_foundry
+		level
+		{
+			min_health 1
+			battle_stats
+			item		eastern_foundry
+			physical_info	info_eastern_foundry.cas
+			spot_fx		spot_fx_eastern_foundry.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		eastern_foundry_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+	egyptian_armourer
+	{
+		stat_cat medium_wooden
+		localised_name eastern_armourer
+		level
+		{
+			min_health 1
+			battle_stats
+			item		egyptian_armourer
+			physical_info	info_eastern_armourer.cas
+			spot_fx		spot_fx_eastern_armourer.cas
+
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		egyptian_armourer_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+	
+	egyptian_foundry
+	{
+		stat_cat medium_wooden
+		localised_name eastern_foundry
+		level
+		{
+			min_health 1
+			battle_stats
+			item		egyptian_foundry
+			physical_info	info_eastern_foundry.cas
+			spot_fx		spot_fx_eastern_foundry.cas
+
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_48x32
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+	egyptian_blacksmith
+	{
+		stat_cat medium_wooden
+		localised_name eastern_blacksmith
+		level
+		{
+			min_health 1
+			battle_stats
+			item		egyptian_blacksmith
+			physical_info	info_eastern_blacksmith.cas
+			spot_fx		spot_fx_eastern_blacksmith.cas
+
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		egyptian_blacksmith_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+	barbarian_blacksmith
+	{
+		stat_cat medium_wooden
+		localised_name barbarian_blacksmith
+		level
+		{
+			min_health 1
+			battle_stats
+			item		barbarian_blacksmith
+			physical_info	info_barbarian_blacksmith.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barbarian_blacksmith_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+	barbarian_armourer
+	{
+		stat_cat medium_wooden
+		localised_name barbarian_armourer
+		level
+		{
+			min_health 1
+			battle_stats
+			item		barbarian_armourer
+			physical_info	info_barbarian_armourer.cas
+			spot_fx		barbarian_armourer_spot_fx.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_48x32
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+	eastern_trader
+	{
+		stat_cat medium_wooden
+		localised_name eastern_trader
+		level
+		{
+			min_health 1
+			battle_stats
+			item		eastern_trader
+			physical_info	info_eastern_trader.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_48x32
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+
+	elite_cavalry_barracks_eastern
+	{
+		stat_cat medium_wooden
+		localised_name elite_cavalry_stables
+		level
+		{
+			min_health 1
+			battle_stats
+			item		elite_cavalry_barracks_eastern
+			physical_info	info_elite_cavalry_barracks_eastern.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		elite_cavalry_barracks_eastern_rubble
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+	elite_cavalry_barracks_egyptian
+	{
+		stat_cat medium_wooden
+		localised_name elite_cavalry_stables
+		level
+		{
+			min_health 1
+			battle_stats
+			item		elite_cavalry_barracks_egyptian
+			physical_info	info_elite_cavalry_barracks_eastern.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		elite_cavalry_barracks_egyptian_rubble
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+	elite_cavalry_barracks_greek
+	{
+		stat_cat medium_wooden
+		localised_name elite_cavalry_stables
+		level
+		{
+			min_health 1
+			battle_stats
+			item		elite_cavalry_barracks_greek
+			physical_info	info_elite_cavalry_barracks_greek.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_112x64
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+	
+	urban_barracks_roman
+	{
+		stat_cat medium_wooden
+		localised_name urban_barracks_roman
+		level
+		{
+			min_health 1
+			battle_stats
+			item		urban_barracks_roman urban_barracks_roman_props
+			physical_info	info_urban_barracks_roman.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		urban_barracks_roman_rubble
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+	urban_barracks_egyptian
+	{
+		stat_cat medium_wooden
+		localised_name urban_barracks_egyptian
+		level
+		{
+			min_health 1
+			battle_stats
+			item		urban_barracks_egyptian
+			physical_info	info_urban_barracks_egyptian.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_112x64
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+	urban_barracks_eastern
+	{
+		stat_cat medium_wooden
+		localised_name urban_barracks_eastern
+		level
+		{
+			min_health 1
+			battle_stats
+			item		urban_barracks_eastern
+			physical_info	info_urban_barracks_eastern.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_112x64
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+	royal_cavalry_stables_greek
+	{
+		stat_cat medium_wooden
+		localised_name royal_cavalry_stables
+		level
+		{
+			min_health 1
+			battle_stats
+			item		royal_cavalry_stables_greek
+			physical_info	info_royal_cavalry_stables_greek.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_256x96
+			physical_info	info_roman_rubble_256x96.cas
+		}
+	}
+
+	royal_cavalry_stables_eastern
+	{
+		stat_cat medium_wooden
+		localised_name royal_cavalry_stables
+		level
+		{
+			min_health 1
+			battle_stats
+			item		royal_cavalry_stables_eastern
+			physical_info	info_royal_cavalry_stables_eastern.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		royal_cavalry_stables_eastern_rubble
+			physical_info	info_roman_rubble_256x96.cas
+		}
+	}
+
+
+	egyptian_camel_stables
+	{
+		stat_cat medium_stone
+		localised_name camel_stables
+		level
+		{
+			min_health 1
+			battle_stats
+			item		egyptian_camel_stables
+			physical_info	info_camel_stables.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		egyptian_camel_stables_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+	barbarian_long_house2
+	{	
+		stat_cat medium_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		barbarian_long_house2
+			physical_info	info_barbarian_long_house2.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barbarian_long_house2_rubble
+			physical_info	info_barbarian_long_house2.cas
+		}
+	}
+
+	barbarian_hall_large2
+	{	
+		stat_cat medium_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		barbarian_hall_large2
+			physical_info	info_barbarian_hall_large2.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barbarian_long_house2_rubble
+			physical_info	info_barbarian_long_house2.cas
+		}
+	}
+
+
+
+
+

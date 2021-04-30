@@ -1,0 +1,32 @@
+;
+; Smoke
+;
+smoke_colour 		   = 50, 50, 50
+smoke_alpha_max        = 90
+smoke_age_range		   = 1.0, 10.0
+smoke_vel_range        = 2.0, 4.0
+smoke_size_range	   = 1.0, 3.0
+smoke_grow_range	   = 2.0, 3.0
+smoke_back_front_ratio = 5.0
+smoke_height_offset    = 5.0
+smoke_time   		   = 100
+smoke_budget 		   = 200
+nominal_tri_count	   = 500
+
+;
+; Fire
+;
+fire_height_scale_range			= 1.0, 1.0 ;0.1, 1.5
+fire_height_scale_time_range	= 0.05, 1.0
+fire_intensity_scale_range		= 0.2, 1.0
+fire_max_per_building			= 500
+fire_grow_time_range			= 0.3, 10.0
+fire_initial_size_range		    = 0.25, 0.5 ;5.0, 8.0
+fire_new_probability			= 0.1
+fire_max_height_radius_ratio    = 10 ;0.6 ;.0
+fire_max_level					= 3.0
+
+;
+; Misc
+;
+split_area	= 15.0

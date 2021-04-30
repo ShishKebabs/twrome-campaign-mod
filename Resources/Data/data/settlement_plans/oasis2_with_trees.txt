@@ -1,0 +1,15 @@
+plan
+
+{
+	floor	oasis2_underlay.cas	oasis2_overlay.cas
+	borders	border_limits_64m_diameter.CAS
+
+	oasis2_water,		0,	0,	0,	0
+	tree_A,			30.69,	-3.38,	0.00,	2.43
+	tree_A,			28.95,	-39.10,	0.00,	2.51
+	tree_A,			55.42,	-15.00,	0.00,	2.65
+	tree_A,			-36.74,	16.32,	0.00,	2.32
+	tree_A,			-2.84,	70.80,	0.00,	2.47
+	tree_A,			-50.23,	34.56,	0.00,	2.24
+	tree_A,			-50.23,	13.77,	0.00,	2.23
+}

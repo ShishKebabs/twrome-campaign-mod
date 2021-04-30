@@ -1,0 +1,303 @@
+plan
+
+{
+target rectangle 	x -24 z 24 rot 0 width 32 height 32
+floor		roman_town_underlay.cas roman_town_overlay.CAS
+ground_types	roman_town_ground.tga -288 -288 288 288
+street_plan	pathfinding_roman_town.cas
+borders
+	{
+
+gateway,	224,	0,	90,	0.50
+gateway,	-224,	0,	-90,	0.50
+gateway,	0,	-224,	0,	0.50
+gateway,	0,	224,	180,	0.50
+
+tower_external_corner_link,	-224,	-224,	0,	0.50
+tower_external_corner_link,	-224,	224,	-90,	0.50
+tower_external_corner_link,	224,	224,	180,	0.50
+tower_external_corner_link,	224,	-224,	90,	0.50
+
+tower_straight,	-128,	-224,	0,	0.50
+tower_straight,	128,	-224,	0,	0.50
+tower_straight,	224,	128,	90,	0.50
+tower_straight,	-128,	224,	-180,	0.50
+tower_straight,	-224,	-128,	-90,	0.50
+tower_straight,	-224,	128,	-90,	0.50
+tower_straight,	128,	224,	-180,	0.50
+tower_straight,	224,	-128,	90,	0.50
+
+straight_link,	-96,	-224,	0,	0.50
+straight_link,	-160,	-224,	0,	0.50
+straight_link,	160,	-224,	0,	0.50
+straight_link,	96,	-224,	0,	0.50
+straight_link,	224,	160,	90,	0.50
+straight_link,	224,	96,	90,	0.50
+straight_link,	-160,	224,	-180,	0.50
+straight_link,	-96,	224,	-180,	0.50
+straight_link,	-224,	-160,	-90,	0.50
+straight_link,	-224,	-96,	-90,	0.50
+straight_link,	-224,	96,	-90,	0.50
+straight_link,	-224,	160,	-90,	0.50
+straight_link,	96,	224,	-180,	0.50
+straight_link,	160,	224,	-180,	0.50
+straight_link,	224,	-96,	90,	0.50
+straight_link,	224,	-160,	90,	0.50
+
+straight,	-192,	-224,	0,	0.50
+straight,	-64,	-224,	0,	0.50
+straight,	192,	-224,	0,	0.50
+straight,	64,	-224,	0,	0.50
+straight,	224,	192,	90,	0.50
+straight,	224,	64,	90,	0.50
+straight,	-192,	224,	-180,	0.50
+straight,	-64,	224,	-180,	0.50
+straight,	-224,	-192,	-90,	0.50
+straight,	-224,	-64,	-90,	0.50
+straight,	-224,	64,	-90,	0.50
+straight,	-224,	192,	-90,	0.50
+straight,	64,	224,	-180,	0.50
+straight,	192,	224,	-180,	0.50
+straight,	224,	-64,	90,	0.50
+straight,	224,	-192,	90,	0.50
+
+
+	}
+
+; road joiners
+
+gateway_slot_into_roman_town,	256,	0,	0,	0
+gateway_slot_into_roman_town,	0,	256,	90,	0
+gateway_slot_into_roman_town,	-256,	0,	180,	0
+gateway_slot_into_roman_town,	0,	-256,	-90,	0
+
+
+; COLLISION OBJECTS
+
+roman_town_tenament_collision,	0,	0,	0,	0
+
+; SLOTS
+
+
+
+slot_48x32_religious,	-32.00,	-24.00,	180.00,	0.50
+slot_48x32_market,	56.00,	-24.00,	180,	0.50
+slot_48x32_barracks,	-72.00,	32.00,	-90.00,	0.50
+slot_48x32_core_building,	114.00,	52.00,	-90.00,	0.50
+slot_plaza_roman_32x32m,	-24.00,	24.00,	0.00,	0.50
+
+
+; AMBIENT
+
+
+
+
+insula_town_A,	-81.98,	-51.40,	180.00,	0.50
+insula_town_A,	-81.60,	74.50,	180.00,	0.50
+insula_town_A,	-22.02,	110.81,	-90.00,	0.50
+insula_town_A,	-135.42,	109.42,	-85,	0.5
+
+insula_town_B,	-15.49,	-137.07,	0.00,	0.50
+insula_town_B,	-15.46,	-55.82,	0.00,	0.50
+insula_town_B,	-177.23,	101.83,	0.00,	0.50
+insula_town_B,	-111.06,	-76.77,	0.00,	0.50
+insula_town_B,	-24.66,	49.89,	-92.55,	0.50
+insula_town_B,	-81.64,	111.37,	-90.00,	0.50
+
+public_gardens_group,	133.65,	134.99,	-90.00,	0.5
+
+town_post_house,	20.32,	-45.38,	-90.00,	0.50
+
+tree_box,	176.08,	-89.60,	90.00,	0.50
+
+posthouse,	21.02,	-151.38,	-90.00,	0.50
+
+praetorium,	169.47,	121.89,	90.00,	0.50
+
+officers_town_house,	18.90,	-18.22,	-90.00,	0.50
+officers_town_house,	153.309,	17.861,	0,	0.5
+officers_town_house,	-112.557,	102,	80,	0.5
+
+roman_ambush_building,	21.82,	-88.99,	-90.00,	0.50
+
+roman_statue,	-37.34,	-167.82,-89.00,	0.50
+roman_statue,	-84.82,	59.01,	-94.00,	0.30
+roman_statue,	-66.23,	-57.87,	91.00,	0.30
+
+
+roman_tenamentA1_group,	42.27,	141.44,	0.00,	0.500
+roman_tenamentA2_group,	-50.56,	149.73,	-90.00,	0.500
+roman_tenamentA3_group,	-141.44,	149.27,	90.00,	0.500
+roman_tenamentA3_group,	-140.27,	50.56,	-180.00,	0.500
+roman_tenamentA3_group,	-149.27,	-49.44,	-180.00,	0.500
+roman_tenamentA1_group,	44.25,	50.84,	0.00,	0.500
+roman_tenamentA2_group,	-53.73,	-104.56,	0.00,	0.500
+roman_tenamentA3_group,	76.56,	-85.73,	90.00,	0.500
+roman_tenamentA3_group,	-146.73,	-142.56,	0.00,	0.500
+
+roman_tenamentB1,	-72.16,	-23.75,	0.00,	0.500
+roman_tenamentB2,	88.23,	-167.01,	0.00,	0.500
+roman_tenamentB3,	152.88,	-98.70,	-180.00,	0.500
+roman_tenamentB4,	-25.28,	-166.93,	90.00,	0.500
+roman_tenamentB5,	167.824,	71.365,	0,	0.5
+
+roman_tenamentC1,	136.00,	168.00,	0.00,	0.500
+roman_tenamentC2,	166.00,	-40.00,	-90.00,	0.500
+roman_tenamentC3,	153.56,	-150.34,	-90.00,	0.500
+roman_tenamentC4,	-40.00,	72.00,	0.00,	0.500
+
+roman_tenamentD1,	-13.62,	-106.87,	0.00,	0.50
+roman_tenamentD2,	-108.23,	-126.35,	0.00,	0.50
+roman_tenamentD3,	-37.09,	-45.16,	90.00,	0.50
+roman_tenamentD4,	-108.87,	-32.07,	0.00,	0.50
+roman_tenamentD5,	-179.43,	23.80,	0.00,	0.50
+roman_tenamentD1,	-47.23,	24.07,	-10.00,	0.50
+roman_tenamentD2,	-96.22,	166.82,	0.00,	0.50
+roman_tenamentD3,	-96.22,	132.66,	0.00,	0.50
+roman_tenamentD4,	-178.74,	54.13,	-5.00,	0.50
+roman_tenamentD5,	142.89,	-63.48,	0.00,	0.50
+roman_tenamentD1,	167.18,	-77.76,	-90.00,	0.50
+roman_tenamentD2,	103.10,	-140.79,	-90.00,	0.50
+roman_tenamentD3,	114.62,	-168.02,	180.00,	0.50
+roman_tenamentD4,	178.21,	-166.41,	0.00,	0.50
+roman_tenamentD5,	176.87,	-135.29,	5.00,	0.50
+roman_tenamentD1,	169.52,	26.44,	0.00,	0.50
+roman_tenamentD2,	178.98,	29.08,	0.00,	0.50
+roman_tenamentD3,	110.28,	134.50,	0.00,	0.50
+roman_tenamentD4,	122.17,	109.64,	90.00,	0.50
+roman_tenamentD5,	177.43,	167.33,	0.00,	0.50
+roman_tenamentD1,	63.89,	-45.56,	90.00,	0.50
+roman_tenamentD2,	-51.14,	108.51,	-90.00,	0.50
+roman_tenamentD3,	39.85,	-178.73,	-90.00,	0.50
+roman_tenamentD4,	50.83,	-151.82,	180.00,	0.50
+
+roman_tenamentE1,	-14.32,	-76.19,	-173.31,	0
+roman_tenamentE2,	-14.07,	-86.81,	176.69,	0
+roman_tenamentE1,	-109.45,	-54.53,	-88.31,	0
+roman_tenamentE2,	-109.31,	-12.11,	-178.31,	0
+roman_tenamentE1,	-47.71,	49.21,	-88.31,	0
+roman_tenamentE2,	-178.70,	75.46,	-88.31,	0
+roman_tenamentE1,	175.83,	-112.87,	-93.31,	0
+roman_tenamentE2,	78.90,	-141.16,	-178.31,	0
+roman_tenamentE1,	13.67,	-176.51,	96.69,	0
+roman_tenamentE2,	154.479,	34.675,	-3.308,	0.5
+roman_tenamentE1,	154.612,	48.753,	-158.308,	0.5
+
+
+
+;tree_B,	-106.62,	-140.6,	0.00,	1.00
+tree_B,	-145.63,	-75.09,		0.00,	1.00
+;tree_B,	-149.94,	151.54,		90.00,	1.00
+tree_B,	-154.33,	108.67,		90.00,	1.00
+tree_B,	-154.33,	98.30,		90.00,	1.00
+tree_B,	-166.61,	-25.70,		90.00,	1.00
+tree_B,	-178.06,	-96.51,		0.00,	1.00
+tree_B,	-28.05,		156.43,		0.00,	1.00
+tree_B,	-42.27,		-152.33,	0.00,	1.00
+tree_B,	-49.79,		-55.44,		0.00,	1.00
+tree_B,	146.03,		111.10,		90.00,	1.00
+tree_B,	156.46,		145.75,		0.00,	1.00
+tree_B,	167.10,		145.68,		0.00,	1.00
+tree_B,	176.08,		-89.60,		90.00,	1.00
+tree_B,	40.73,		-45.25,		90.00,	1.00
+tree_B,	41.26,		-168.67,	0.00,	1.00
+;tree_B,	93.07,		-144.77,	90.00,	1.00
+
+tree_C,	-108.67,	-96.03,	-180.00,	1.00
+;tree_C,	-135.83,	24.24,	-180.00,	1.00
+tree_C,	-149.41,	138.54,	-180.00,	1.00
+tree_C,	-65.25,	-80.64,	-180.00,	1.00
+tree_C,	115.40,	-148.62,	-180.00,	1.00
+tree_C,	174.81,	-100.86,	-180.00,	1.00
+;tree_C,	30.41,	134.78,	-180.00,	1.00
+;tree_C,	35.08,	46.44,	-180.00,	1.00
+tree_C,	40.78,	-142.82,	-180.00,	1.00
+tree_C,	69.79,	90.48,	-180.00,	1.00
+
+;trees around governors house
+tree_C,		106,	20,	85,	1.0
+tree_C,		106,	84,	50,	1.0
+tree_C,		122,	20,	-70,	1.0
+tree_C,		122,	84,	-10,	1.0
+tree_C,		138,	20,	140,	1.0
+tree_C,		138,	36,	20,	1.0
+tree_C,		138,	52,	80,	1.0
+tree_C,		138,	68,	160,	1.0
+tree_C,		138,	84,	-120,	1.0
+tree_C,		90,	20,	-50,	1.0
+tree_C,		90,	36,	180,	1.0
+tree_C,		90,	52,	135,	1.0	
+tree_C,		90,	68,	0,	1.0
+tree_C,		90,	84,	90,	1.0
+
+
+;tree_E,	-151.35,	-128.65,	0.00,	1.00
+tree_E,	-29.62,	-55.23,	0.00,	1.00
+tree_E,	156.49,	-48.81,	90.00,	1.00
+tree_E,	169.26,	46.91,	90.00,	1.00
+tree_E,	177.46,	145.68,	0.00,	1.00
+tree_E,	21.86,	-169.61,	90.00,	1.00
+tree_E,	69.81,	-89.96,	0.00,	1.00
+;tree_E,	70.07,	176.66,	90.00,	1.00
+
+;tree_box,	-106.62,	-140.6,	0.00,	0.50
+tree_box,	-108.67,	-96.03,	90.00,	0.50
+;tree_box,	-135.83,	24.24,	90.00,	0.50
+tree_box,	-145.63,	-75.09,	0.00,	0.50
+tree_box,	-149.41,	138.54,	90.00,	0.50
+;tree_box,	-149.94,	151.54,	90.00,	0.50
+;tree_box,	-151.35,	-128.65,	0.00,	0.50
+tree_box,	-154.33,	108.67,	90.00,	0.50
+tree_box,	-154.33,	98.30,	90.00,	0.50
+tree_box,	-166.61,	-25.70,	90.00,	0.50
+tree_box,	-178.06,	-96.51,	0.00,	0.50
+tree_box,	-28.05,	156.43,	0.00,	0.50
+tree_box,	-29.81,	-55.26,	0.00,	0.50
+tree_box,	-42.27,	-152.33,	0.00,	0.50
+tree_box,	-49.79,	-55.44,	0.00,	0.50
+tree_box,	-65.25,	-80.64,	0.00,	0.50
+tree_box,	115.40,	-148.62,	90.00,	0.50
+tree_box,	146.03,	111.10,	90.00,	0.50
+tree_box,	156.46,	145.75,	0.00,	0.50
+tree_box,	156.49,	-48.81,	90.00,	0.50
+tree_box,	167.10,	145.68,	0.00,	0.50
+tree_box,	169.26,	46.91,	90.00,	0.50
+tree_box,	174.81,	-100.86,	90.00,	0.50
+tree_box,	177.46,	145.68,	0.00,	0.50
+tree_box,	21.86,	-169.61,	90.00,	0.50
+;tree_box,	30.41,	134.78,	0.00,	0.50
+;tree_box,	35.08,	46.44,	90.00,	0.50
+tree_box,	40.73,	-45.25,	90.00,	0.50
+tree_box,	40.78,	-142.82,	90.00,	0.50
+tree_box,	41.26,	-168.67,	0.00,	0.50
+tree_box,	69.79,	90.48,	90.00,	0.50
+tree_box,	69.81,	-89.96,	0.00,	0.50
+;tree_box,	70.07,	176.66,	90.00,	0.50
+;tree_box,	93.07,	-144.77,	90.00,	0.50
+
+
+; tree boxes around governors house
+tree_box,		90,	84,	0,	0.50
+tree_box,		90,	68,	0,	0.50
+tree_box,		90,	52,	0,	0.50	
+tree_box,		90,	36,	0,	0.50
+tree_box,		90,	20,	0,	0.50
+tree_box,		106,	20,	0,	0.50
+tree_box,		122,	20,	0,	0.50
+tree_box,		138,	20,	0,	0.50
+tree_box,		138,	36,	0,	0.50
+tree_box,		138,	52,	0,	0.50
+tree_box,		138,	68,	0,	0.50
+tree_box,		138,	84,	0,	0.50
+tree_box,		122,	84,	0,	0.50
+tree_box,		106,	84,	0,	0.50
+
+
+}
+
+
+
+
+
+
+

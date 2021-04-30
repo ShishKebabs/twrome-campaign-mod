@@ -1,0 +1,658 @@
+; ********************* egyptian ******************************************************************************
+
+
+type			academy_egyptian
+lod
+max_distance	200
+model_rigid		academy_egyptian_high.cas
+lod
+max_distance	4000
+model_rigid		academy_egyptian_med.cas
+;lod
+;max_distance	4000
+;model_rigid		academy_egyptian_low.cas
+
+
+
+type			base_academy_egyptian
+lod
+max_distance	4000
+model_rigid		base_academy_egyptian.cas
+
+
+
+
+type			base_egyptian_awesome_temple
+lod
+max_distance	4000
+model_rigid		base_egyptian_awesome_temple.cas
+
+
+
+type			camel_stables
+lod
+max_distance		300
+model_rigid		camel_stables_high.cas
+lod
+max_distance		4000
+model_rigid		camel_stables_low.cas
+
+
+
+
+type			camp_cloth_curtain
+lod
+max_distance	100
+model_rigid		camp_cloth_curtain_high.cas
+lod
+max_distance	200
+model_rigid		camp_cloth_curtain_med.cas
+lod
+max_distance	4000
+model_rigid		camp_cloth_curtain_low.cas
+
+
+
+
+type			city_barracks_egyptian
+lod
+max_distance	200
+model_rigid		city_barracks_egyptian_high.cas
+lod
+max_distance	1000
+model_rigid		city_barracks_egyptian_low.cas
+
+
+
+type			cow_stall
+lod
+max_distance		4000
+model_rigid		cow_stall_high.cas
+
+
+
+type			ditch_bridge
+lod
+max_distance		200
+model_rigid		ditch_bridge_high.cas
+lod
+max_distance		400
+model_rigid		ditch_bridge_low.cas
+
+
+
+type			egyptian_ambush_building
+lod
+max_distance	200
+model_rigid		egyptian_ambush_building_high.cas
+lod
+max_distance	4000
+model_rigid		egyptian_ambush_building_low.cas
+
+
+
+type			egyptian_apartment_block
+lod
+max_distance	200
+model_rigid		egyptian_apartment_block_high.cas
+lod
+max_distance	300
+model_rigid		egyptian_apartment_block_med.cas
+lod
+max_distance	600
+model_rigid		egyptian_apartment_block_low.cas
+lod
+max_distance	4000
+model_rigid		egyptian_apartment_block_basespec.cas
+
+
+
+type			egyptian_arch
+lod
+max_distance	4000
+model_rigid		egyptian_arch_high.cas
+
+
+
+
+type			egyptian_temple_city
+lod
+max_distance	300
+model_rigid		egyptian_temple_city_high.cas
+lod
+max_distance	700
+model_rigid		egyptian_temple_city_med.cas
+lod
+max_distance	4000
+model_rigid		egyptian_temple_city_low.cas
+
+
+
+
+type			egyptian_awesome_temple
+lod
+max_distance	300
+model_rigid		egyptian_awesome_temple_high.cas
+lod
+max_distance	700
+model_rigid		egyptian_awesome_temple_med.cas
+lod
+max_distance	4000
+model_rigid		egyptian_awesome_temple_low.cas
+
+
+
+
+type			egyptian_box_building
+lod
+max_distance	4000
+model_rigid		egyptian_box_building_low.cas
+
+
+
+type			egyptian_causeway
+lod
+max_distance	4000
+model_rigid		egyptian_causeway_high.cas
+
+
+
+
+
+type			egyptian_causeway_endcap
+lod
+max_distance	4000
+model_rigid		egyptian_causeway_endcap_high.cas
+
+
+
+
+type			egyptian_crop_field
+lod
+max_distance		4000
+model_rigid		egyptian_crop_field.cas
+
+
+
+type			egyptian_eastern_closed_tent
+lod
+max_distance	200
+model_rigid		egyptian_eastern_closed_tent_high.cas
+lod
+max_distance	400
+model_rigid		egyptian_eastern_closed_tent_med.cas
+lod
+max_distance	4000
+model_rigid		egyptian_eastern_closed_tent_low.cas
+
+
+
+type			egyptian_eastern_open_tent
+lod
+max_distance		200
+model_rigid		egyptian_eastern_open_tent_high.cas
+lod
+max_distance		400
+model_rigid		egyptian_eastern_open_tent_med.cas
+lod
+max_distance		4000
+model_rigid		egyptian_eastern_open_tent_low.cas
+
+
+
+
+type			egyptian_eastern_standalone_watchtower
+lod
+max_distance	4000
+model_rigid		egyptian_eastern_standalone_watchtower_high.cas
+
+
+
+
+type			egyptian_farm_granary
+lod
+max_distance		200
+model_rigid		egyptian_farm_granary_high.cas
+lod
+max_distance		4000
+model_rigid		egyptian_farm_granary_low.cas
+
+
+
+type			egyptian_governors_villa
+lod
+max_distance	200
+model_rigid		egyptian_governors_villa_high.cas
+lod
+max_distance	300
+model_rigid		egyptian_governors_villa_low.cas
+lod
+max_distance	4000
+model_rigid		egyptian_governors_villa_very_low.cas
+
+
+
+
+type			egyptian_grain_threshing_pit
+lod
+max_distance		200
+model_rigid		egyptian_grain_threshing_pit_high.cas
+lod
+max_distance		4000
+model_rigid		egyptian_grain_threshing_pit_low.cas
+
+
+
+
+type			egyptian_granary
+lod
+max_distance		200
+model_rigid		egyptian_granary_high.cas
+lod
+max_distance		300
+model_rigid		egyptian_granary_low.cas
+lod
+max_distance		4000
+model_rigid		egyptian_granary_very_low.cas
+
+
+
+type			egyptian_haystack
+lod
+max_distance		200
+model_rigid		egyptian_haystack_high.cas
+lod
+max_distance		4000
+model_rigid		egyptian_haystack_low.cas
+
+
+
+type			egyptian_huge_city_steps
+lod
+max_distance	4000
+model_rigid		egyptian_huge_city_steps_high.cas
+
+
+
+
+type			egyptian_imperial_palace
+lod
+max_distance	300
+model_rigid		egyptian_imperial_palace_high.cas
+lod
+max_distance	500
+model_rigid		egyptian_imperial_palace_med.cas
+lod
+max_distance	4000
+model_rigid		egyptian_imperial_palace_low.cas
+
+
+
+
+type			egyptian_king_statue
+lod
+max_distance	200
+model_rigid		egyptian_king_statue_high.cas
+lod
+max_distance	400
+model_rigid		egyptian_king_statue_med.cas
+lod
+max_distance	4000
+model_rigid		egyptian_king_statue_low.cas
+
+
+
+
+type			egyptian_lake
+lod
+max_distance	4000
+model_rigid		egyptian_lake_high.cas
+
+
+
+
+type			egyptian_large_marketplace
+lod
+max_distance	300
+model_rigid		egyptian_large_marketplace_high.cas
+lod
+max_distance	4000
+model_rigid		egyptian_large_marketplace_low.cas
+
+
+
+
+
+type			egyptian_marketplace
+lod
+max_distance	200
+model_rigid		egyptian_marketplace_high.cas
+lod
+max_distance	300
+model_rigid		egyptian_marketplace_med.cas
+lod
+max_distance	4000
+model_rigid		egyptian_marketplace_low.cas
+
+
+
+
+type			egyptian_obelisk
+lod
+max_distance	4000
+model_rigid		egyptian_obelisk_high.cas
+
+
+
+type			egyptian_rich_house_A
+lod
+max_distance	200
+model_rigid		egyptian_rich_house_A_high.cas
+lod
+max_distance	4000
+model_rigid		egyptian_rich_house_A_low.cas
+
+
+
+
+type			egyptian_rock-cut_temple
+lod
+max_distance	4000
+model_rigid		egyptian_rock-cut_temple_high.cas
+
+
+
+
+type			egyptian_sacred_lake
+lod
+max_distance	4000
+model_rigid		egyptian_sacred_lake_high.cas
+
+
+
+
+type			egyptian_storage_building
+lod
+max_distance		200
+model_rigid		egyptian_storage_building_high.cas
+lod
+max_distance		4000
+model_rigid		egyptian_storage_building_low.cas
+
+
+
+
+type			egyptian_trader
+lod
+max_distance	200
+model_rigid		egyptian_trader_high.cas
+lod
+max_distance	4000
+model_rigid		egyptian_trader_low.cas
+
+
+
+type			egyptian_underground_tomb
+lod
+max_distance	4000
+model_rigid		egyptian_underground_tomb_high.cas
+
+
+
+type			egyptian_village_house_large
+lod
+max_distance		200
+model_rigid		egyptian_village_house_large_high.cas
+lod
+max_distance		300
+model_rigid		egyptian_village_house_large_med.cas
+lod
+max_distance		500
+model_rigid		egyptian_village_house_large_low.cas
+lod
+max_distance		4000
+model_rigid		egyptian_village_house_large_very_low.cas
+
+
+
+type			egyptian_village_house_small
+lod
+max_distance		200
+model_rigid		egyptian_village_house_small_high.cas
+lod
+max_distance		4000
+model_rigid		egyptian_village_house_small_low.cas
+
+
+
+
+type			egyptian_village_house_with_door_large
+lod
+max_distance		200
+model_rigid		egyptian_village_house_with_door_large_high.cas
+lod
+max_distance		300
+model_rigid		egyptian_village_house_with_door_large_med.cas
+lod
+max_distance		500
+model_rigid		egyptian_village_house_with_door_large_low.cas
+lod
+max_distance		4000
+model_rigid		egyptian_village_house_with_door_large_very_low.cas
+
+
+
+type			egyptian_well
+lod
+max_distance		200
+model_rigid		egyptian_well_high.cas
+lod
+max_distance		300
+model_rigid		egyptian_well_med.cas
+lod
+max_distance		4000
+model_rigid		egyptian_well_low.cas
+
+
+
+
+type			extras_egyptian_huge_city
+lod
+max_distance	4000
+model_rigid		extras_egyptian_huge_city.cas
+
+
+
+
+type			limestone_boulders
+lod
+max_distance	4000
+model_rigid		limestone_boulders_high.cas
+
+
+
+
+type			ludus_magnus_egyptian
+lod
+max_distance	200
+model_rigid		ludus_magnus_egyptian_high.cas
+lod
+max_distance	4000
+model_rigid		ludus_magnus_egyptian_med.cas
+
+
+
+
+type			mastaba
+lod
+max_distance	4000
+model_rigid		mastaba_high.cas
+
+
+
+type			meroitic_pyramid_large
+lod
+max_distance	150
+model_rigid		meroitic_pyramid_large_high.cas
+lod
+max_distance	4000
+model_rigid		meroitic_pyramid_large_low.cas
+
+
+
+type			meroitic_pyramid_small
+lod
+max_distance	150
+model_rigid		meroitic_pyramid_small_high.cas
+lod
+max_distance	4000
+model_rigid		meroitic_pyramid_small_low.cas
+
+
+
+type			meroitic_pyramid_very_large
+lod
+max_distance	200
+model_rigid		meroitic_pyramid_very_large_high.cas
+lod
+max_distance	4000
+model_rigid		meroitic_pyramid_very_large_low.cas
+
+
+
+type			meroitic_pyramid_very_small
+lod
+max_distance	100
+model_rigid		meroitic_pyramid_very_small_high.cas
+lod
+max_distance	4000
+model_rigid		meroitic_pyramid_very_small_low.cas
+
+
+
+
+type			militia_barracks_egyptian
+lod
+max_distance	200
+model_rigid		militia_barracks_egyptian_high.cas
+lod
+max_distance	300
+model_rigid		militia_barracks_egyptian_med.cas
+lod
+max_distance	500
+model_rigid		militia_barracks_egyptian_low.cas
+lod
+max_distance	4000
+model_rigid		militia_barracks_egyptian_very_low.cas
+
+
+
+
+type			pyramid_of_khafre
+lod
+max_distance	4000
+model_rigid		pyramid_of_khafre_high.cas
+
+
+
+type			pyramid_of_khufu
+lod
+max_distance	4000
+model_rigid		pyramid_of_khufu_high.cas
+
+
+
+
+type			pyramid_of_menkaure
+lod
+max_distance	4000
+model_rigid		pyramid_of_menkaure_high.cas
+
+
+
+type			scriptorium_egyptian
+lod
+max_distance	200
+model_rigid		scriptorium_egyptian_high.cas
+lod
+max_distance	4000
+model_rigid		scriptorium_egyptian_med.cas
+
+
+
+type			shaduf
+lod
+max_distance		200
+model_rigid		shaduf_high.cas
+lod
+max_distance		4000
+model_rigid		shaduf_low.cas
+
+
+
+type			small_pyramid
+lod
+max_distance	4000
+model_rigid		small_pyramid.cas
+
+
+
+
+type			small_step_pyramid
+lod
+max_distance	4000
+model_rigid		small_step_pyramid.cas
+
+
+
+
+type			valley_causeway_gateway
+lod
+max_distance  4000
+model_rigid		valley_causeway_gateway_high.cas
+
+
+
+type			valley_causeway_skewed
+lod
+max_distance	4000
+model_rigid		valley_causeway_skewed_high.cas
+
+
+
+type			valley_causeway_skewed_flipped
+lod
+max_distance	4000
+model_rigid		valley_causeway_skewed_flipped_high.cas
+
+
+
+type			valley_causeway_straight
+lod
+max_distance	4000
+model_rigid		valley_causeway_straight_high.cas
+
+
+
+
+type			valley_temple_of_khafre
+lod
+max_distance	4000
+model_rigid		valley_temple_of_khafre_high.cas
+
+
+
+
+type			wine_press
+lod
+max_distance		200
+model_rigid		wine_press_high.cas
+lod
+max_distance		400
+model_rigid		wine_press_med.cas
+lod
+max_distance		4000
+model_rigid		wine_press_low.cas
+
+
+

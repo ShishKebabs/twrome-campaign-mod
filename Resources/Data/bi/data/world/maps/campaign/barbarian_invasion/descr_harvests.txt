@@ -1,0 +1,148 @@
+;
+; Bad harvest events live here.  Harvests are calculated at the end of each summer round.
+; Each entry consists of a year number, a region and/or a faction.
+; In the case of a region, when the year comes around the region will have a bad harvest.
+; In the case of a faction, when the year comes around the faction will have an empire-wide bad harvest.
+; In the case of both, the region will have a bad harvest if it's owned by the faction.
+; If you want anything else, ask Guy
+;
+
+year 369
+region Aquitania
+
+year 369
+region Lugdinensis
+
+year 372
+region Britannia_Inferior
+
+year 372
+region Caledonia
+
+year 374
+region Carthaginiensis
+
+year 378
+region Dacia
+
+year 378
+region Aegyptus
+
+year 381
+region Southern_Italy
+
+year 381
+region Sarmatia
+
+year 387
+region Tribus_Alemanni
+
+year 389
+region Asiana
+
+year 395
+region Southern_Italy
+
+year 400
+region Sicilia
+
+year 404
+region Galatia
+
+year 408
+region Nabataea
+
+year 411
+faction empire_west
+region Narbonensis
+
+year 416
+region Tribus_Frisii
+
+year 416
+region Tribus_Saxones
+
+year 416 
+region Tribus_Burgundii
+
+year 421
+faction empire_west
+region Africa
+
+year 421
+region Mauretania
+
+year 425
+faction empire_west
+region Tribus_Franki
+
+year 426
+region Arabia_Inferior
+
+year 426
+region Nabataea
+
+year 426
+region Phoenicia
+
+year 430
+faction empire_west
+region Sahara
+
+year 436
+faction empire_west
+region Belgica
+
+year 440
+region Illyricum_et_Dalmatia
+
+year 444
+faction empire_west
+region Dacia
+
+year 450
+region Colchis
+
+year 450
+region Tribus_Roxolani
+
+year 453
+faction empire_west
+region Taraconensis
+
+year 459
+faction empire_west
+region Noricum
+
+year 459
+region Raetia
+
+year 464
+region Moesia
+
+year 465
+region Cappadocia
+
+year 470
+region Alpes_Maritimae_et_Cottinae
+
+year 470 
+faction empire_west
+region Northern_Italy
+
+year 470
+faction empire_west
+region Aemilia_et_Liguria
+
+year 470
+faction empire_west
+region Venetia
+
+year 470
+region Tripolitania
+
+year 471
+region Media
+
+year 476
+faction empire_west

@@ -1,0 +1,221 @@
+
+; Model actions
+
+<Action>
+	<Type>idle
+	</Type>
+
+	<Type>man_move
+		<Parameters>pos yrot</Parameters>	
+	</Type>
+
+	<Type>man_move_testudo
+		<Parameters>pos yrot</Parameters>	
+	</Type>
+
+	<Type>man_advance
+		<Parameters>pos yrot</Parameters>	
+	</Type>
+
+	<Type>attack_melee_free
+		<Parameters>obj</Parameters>	
+	</Type>
+
+	<Type>attack_melee_formed
+		<Parameters>pos</Parameters>	
+	</Type>
+
+	<Type>attack_advance_formed
+		<Parameters>pos</Parameters>	
+	</Type>
+
+	<Type>attack_missile
+		<Parameters>pos num_missiles hold_cycles</Parameters>	
+	</Type>
+
+	<Type>man_charge
+		<Parameters>pos</Parameters>	
+	</Type>
+
+	<Type>man_charge_attack
+		<Parameters>obj</Parameters>	
+	</Type>
+
+	<Type>withdraw
+		<Parameters>pos</Parameters>	
+	</Type>
+
+	<Type>flee
+		<Parameters>pos</Parameters>	
+	</Type>
+
+	<Type>die
+	</Type>
+
+	<Type>follow_arc
+		<Parameters>pos radius arc final_yrot clockwise</Parameters>	
+	</Type>
+
+	<Type>follow_bezier_curve
+		<Parameters>bez_curve steps stop_at_target stop_after_target move_fast offset</Parameters>	
+	</Type>
+
+	<Type>mount_charge
+		<Parameters>pos</Parameters>	
+	</Type>
+
+	<Type>mount_elephant_attack_melee_agressive
+		<Parameters>obj</Parameters>
+	</Type>
+
+	<Type>mount_elephant_charge
+		<Parameters>pos</Parameters>	
+	</Type>
+
+	<Type>mounted_charge
+		<Parameters>obj</Parameters>	
+	</Type>
+
+	<Type>mounted_attack_melee_agressive
+		<Parameters>obj</Parameters>	
+	</Type>
+
+	<Type>mounted_attack_melee_passive
+		<Parameters>obj</Parameters>
+	</Type>
+
+	<Type>mounted_attack_melee_skirmish
+		<Parameters>obj</Parameters>	
+	</Type>
+
+	<Type>mounted_attack_melee_defensive
+		<Parameters>obj</Parameters>	
+	</Type>
+
+	<Type>mounted_attack_melee_break_away
+		<Parameters>obj</Parameters>	
+	</Type>
+
+	<Type>mounted_ride_elephant
+	</Type>
+</Action>
+
+
+
+; Unit actions
+
+<Unit order>
+	<Type>change_formation
+		<Parameters>formation_type width</Parameters>	
+	</Type>
+
+	<Type>change_formation_close
+	</Type>
+
+	<Type>change_melee
+		<Parameters>melee_type</Parameters>	
+	</Type>
+
+	<Type>split
+		<Parameters>width</Parameters>	
+	</Type>
+
+	<Type>merge
+		<Parameters>obj</Parameters>	
+	</Type>
+
+	<Type>setup_engines
+		<Parameters>pos</Parameters>	
+	</Type>
+
+	<Type>begin_sapping
+		<Parameters>obj</Parameters>	
+	</Type>
+
+	<Type>hide
+		<Parameters>pos</Parameters>	
+	</Type>
+
+	<Type>move
+		<Parameters>pos yrot</Parameters>	
+	</Type>
+
+	<Type>turn
+		<Parameters>yrot</Parameters>	
+	</Type>
+
+	<Type>attack_unit
+		<Parameters>obj attack_type fast</Parameters>	
+	</Type>
+
+	<Type>attack_building
+		<Parameters>obj</Parameters>	
+	</Type>
+
+	<Type>charge
+		<Parameters>obj</Parameters>	
+	</Type>
+
+	<Type>guard_location
+		<Parameters>pos radius</Parameters>	
+	</Type>
+
+	<Type>guard_building
+		<Parameters>obj</Parameters>	
+	</Type>
+
+	<Type>guard_unit
+		<Parameters>obj</Parameters>	
+	</Type>
+
+	<Type>scout
+		<Parameters>pos radius</Parameters>	
+	</Type>
+
+	<Type>withdraw
+		<Parameters>pos</Parameters>	
+	</Type>
+
+	<Type>feign_rout
+		<Parameters>pos</Parameters>	
+	</Type>
+</Unit order>
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Model supported actions
+;; 
+;; man_move
+;; man_advance
+;; man_charge
+;; flee
+
+
+
+;; Model NOT supported actions
+
+;; idle
+;; man_move_testudo
+;; attack_melee_free
+;; attack_melee_formed
+;; attack_advance_formed
+;; attack_missile
+;; man_charge_attack
+;; withdraw
+;; die
+;; follow_arc
+;; follow_bezier_curve
+;; mount_charge
+;; mount_elephant_attack_melee_agressive
+
+;; mount_elephant_charge
+;; mounted_charge
+;; mounted_attack_melee_agressive
+;; mounted_attack_melee_passive
+;; mounted_attack_melee_skirmish
+;; mounted_attack_melee_defensive
+;; mounted_attack_melee_break_away
+;; mounted_ride_elephant

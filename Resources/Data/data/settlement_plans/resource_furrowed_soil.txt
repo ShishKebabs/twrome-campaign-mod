@@ -1,0 +1,12 @@
+plan
+
+{
+	floor		underlay_furrowed_soil.cas overlay_furrowed_soil.cas
+
+;			x,	y,	rot,	z,
+
+furrowed_soil,		0	0	0	0
+
+
+
+}

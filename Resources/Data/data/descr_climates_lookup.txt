@@ -1,0 +1,13 @@
+test_climate
+sandy_desert
+rocky_desert
+temperate_grassland_fertile
+temperate_grassland_infertile
+temperate_forest_open
+temperate_forest_deep
+swamp
+highland
+alpine
+sub_arctic
+volcanic
+semi_arid

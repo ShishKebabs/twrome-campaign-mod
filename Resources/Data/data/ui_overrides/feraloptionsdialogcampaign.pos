@@ -1,0 +1,715 @@
+{
+	"frames": [
+		{
+			"position": {
+				"x": 910 ,
+				"y": -210
+			},
+			"size": {
+				"width": 1802 ,
+				"height": 200
+			},
+			"collapsed_size": {
+				"width": 1802 ,
+				"height": 140
+			},
+			"align": "C",
+			"corner_avoid" : true,
+			"priority": 5,
+			"fill": "black_curved",
+			"tag":"tooltip"
+		},
+		{
+			"position": {
+				"x": 7 ,
+				"y": -4 ,
+			},
+			"size": {
+				"width": 1256 ,
+				"height": 1034 ,
+			},
+			"align": "TR",
+			"anchor": "TR",
+			"priority": -5,
+			"fill": "black_curved",
+		},
+		{
+			"position": {
+				"x": 291 ,
+				"y": 0
+			},
+			"size": {
+				"width": 1219 ,
+				"height": 860 ,
+			},
+			"align": "C",
+			"anchor": "C",
+			"priority": -2,
+			"fill": "black_curved"
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": -53
+			},
+			"size": {
+				"width": 656,
+				"height": 42
+			},
+			"fill_right":true,
+			"fill_left":true,
+			"align": "C",
+			"anchor": "TC",
+			"priority": -1,
+			"fill": "black_curved"
+		}
+	],
+	"tooltip": {
+		"x": 18 ,
+		"y": 3,
+		"width": 1784 ,
+		"height": 80,
+		"font":"verdana_lrg",
+		"corner_avoid" : true
+		},
+	"tooltip_ticker": {
+		"x": 12 ,
+		"y": 3,
+		"width": 1794 ,
+		"height": 100,
+		"font":"verdana_lrg",
+		"corner_avoid" : true
+		},
+	"list": [
+		{
+			"name":"general_tab",
+			"x": 0,
+			"y": -42,
+			"size": {
+				"width": 72,
+				"height": 72
+			},
+			"anchor":"BC",
+			"align":"C",
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			},
+			"hidden":true
+		},
+		{
+			"name":"audio_tab",
+			"x": 0,
+			"y": -42,
+			"size": {
+				"width": 72,
+				"height": 72
+			},
+			"anchor":"BC",
+			"align":"C",
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			},
+			"hidden":true
+		},
+		{
+			"name": "advisor_dropdown",
+			"x": -728 ,
+			"y": 204 ,
+			"anchor": "TR",
+			"align": "CR"
+		},
+		{
+			"name": "advisor_title",
+			"x": -1183 ,
+			"y": 204 ,
+			"anchor": "TR",
+			"align": "CL",
+			"priority": -1,
+			"font":"verdana_lrg"
+		},
+		{
+			"name": "battle_difficulty_dropdown",
+			"x": -20,
+			"y": 168,
+			"anchor": "TC",
+			"align": "CR",
+			"tags":[
+				"options_game"
+			],
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			},
+			"hidden":true
+		},
+		{
+			"name": "battle_difficulty_title",
+			"x": 30,
+			"y": 168,
+			"size": {
+				"width": 200
+			},
+			"anchor": "TL",
+			"align": "CL",
+			"font":"verdana_lrg",
+			"tags":[
+				"options_game"
+			],
+			"notch_left_move":true,
+			"hidden":true
+		},
+		{
+			"name": "arcade_battles_check",
+			"x": 30,
+			"y": 226,
+			"size": {
+				"width": 300
+			},
+			"scale_width":true,
+			"anchor": "TL",
+			"align": "CL",
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":5,
+    			"bot":20
+			},
+			"font":"verdana_lrg",
+			"notch_left_resize":true,
+			"tags":[
+				"options_game"
+			],
+			"hidden":true
+		},
+		{
+			"name": "micromanage_all_check",
+			"x": 30,
+			"y": 285,
+			"size": {
+				"width": 300
+			},
+			"scale_width":true,
+			"anchor": "TL",
+			"align": "CL",
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":5,
+    			"bot":20
+			},
+			"font":"verdana_lrg",
+			"notch_left_resize":true,
+			"tags":[
+				"options_game"
+			],
+			"hidden":true
+		},
+		{
+			"name": "battle_time_limit_check",
+			"x": 30,
+			"y": 344,
+			"size": {
+				"width": 300
+			},
+			"scale_width":true,
+			"anchor": "TL",
+			"align": "CL",
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":5,
+    			"bot":20
+			},
+			"font":"verdana_lrg",
+			"notch_left_resize":true,
+			"tags":[
+				"options_game"
+			],
+			"hidden":true
+		},
+		{
+			"name": "reset_advise_check",
+			"x": -546 ,
+			"y": 204 ,
+			"anchor":"TR",
+			"align":"CL",
+			"priority": -1,
+			"size": {
+				"width": 300
+			},
+			"scale_width":true,
+			"font":"verdana_lrg"
+		},
+		{
+			"name": "restrict_camera_check",
+			"x": -546 ,
+			"y": 286 ,
+			"anchor":"TR",
+			"align":"CL",
+			"priority": -1,
+			"size": {
+				"width": 300
+			},
+			"scale_width":true,
+			"font":"verdana_lrg"
+		},
+		{
+			"name": "camera_tilt_dropdown",
+			"x": -728 ,
+			"y": 286 ,
+			"anchor": "TR",
+			"align": "CR",
+			"priority": -1
+		},
+		{
+			"name": "camera_tilt_title",
+			"x": -1183 ,
+			"y": 286 ,
+			"anchor": "TR",
+			"align": "CL",
+			"priority": -1,
+			"font":"verdana_lrg"
+		},
+		{
+			"name": "selection_assist_check",
+			"x": 16,
+			"y": 144,
+			"size": {
+				"width": 300
+			},
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			},
+			"anchor": "TC",
+			"scale_width":true,
+			"font":"verdana_lrg",
+			"notch_right_resize":true,
+			"tags":[
+				"options_game"
+			],
+			"hidden": true
+		},
+		{
+			"name": "camera_tilt_inverted_check",
+			"x": 16,
+			"y": 168,
+			"size": {
+				"width": 300
+			},
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			},
+			"anchor": "TC",
+            "align": "CL",
+			"scale_width":true,
+			"font":"verdana_lrg",
+			"notch_right_resize":true,
+			"tags":[
+				"options_game"
+			],
+			"hidden":true
+		},
+		{
+			"name": "sticky_status_info_check",
+			"x": 16,
+			"y": 285,
+			"size": {
+				"width": 300
+			},
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			},
+			"anchor": "TC",
+            "align": "CL",
+			"scale_width":true,
+			"font":"verdana_lrg",
+			"notch_right_resize":true,
+			"tags":[
+				"options_game"
+			],
+			"hidden":true
+		},
+		{
+			"name": "battery_saver_check",
+			"x": 16,
+			"y": 402,
+			"size": {
+				"width": 300
+			},
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			},
+			"anchor": "TC",
+			"align" : "CL",
+			"scale_width":true,
+			"font":"verdana_lrg",
+			"notch_right_resize":true,
+			"tags":[
+				"options_game"
+			],
+			"hidden":true
+		},
+		{
+			"name": "expanding_cardbar_dropdown",
+			"x": -30,
+			"y": 226,
+			"anchor": "TR",
+            "align": "CR",
+			"tags":[
+				"options_game"
+			],
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			},
+			"notch_right_move":true,
+			"hidden":true
+		},
+        {
+            "name": "expanding_cardbar_title",
+            "x": 16,
+            "y": 226,
+			"size": {
+				"width": 200
+			},
+            "anchor": "TC",
+            "align": "CL",
+            "font":"verdana_lrg",
+            "tags":[
+            "options_game"
+            ],
+			"hidden":true
+        },
+		{
+			"name": "folow_ai_characters_check",
+			"x": 16,
+			"y": 328,
+			"size": {
+				"width": 300
+			},
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			},
+			"anchor": "TC",
+			"scale_width":true,
+			"tags":[
+				"options_game"
+			],
+			"notch_right_resize":true,
+			"font":"verdana_lrg",
+			"hidden":true
+		},
+		{
+			"name": "folow_ai_characters_string",
+			"x": 16,
+			"y": 266,
+			"size": {
+				"width": 320
+			},
+			"anchor": "TC",
+			"scale_width":true,
+			"font":"verdana_lrg",
+			"tags":[
+				"options_game"
+			],
+			"hidden":true
+		},
+		{
+			"name": "zoom_speed_title",
+			"x": -364 ,
+			"y": 409 ,
+			"font":"verdana_lrg",
+			"anchor": "TR",
+			"align": "CR",
+			"priority": -2,
+			"size": {
+				"width": 125
+			}
+		},
+		{
+			"name": "zoom_speed_slider",
+			"x": -728 ,
+			"y": 32,
+			"anchor": "TR",
+			"align": "CR",
+			"priority": -2,
+			"size": {
+				"width": 125
+			}
+		},
+		{
+			"name": "rotate_speed_title",
+			"x": -140,
+			"y": 0,
+			"anchor": "C",
+			"align": "C",
+			"priority": -2,
+			"font":"verdana_lrg"
+		},
+		{
+			"name": "rotate_speed_slider",
+			"x": -165,
+			"y": 240,
+			"size": {
+				"width": 125
+			},
+			"anchor": "TC",
+			"font":"verdana_lrg"
+		},
+		{
+			"name": "gesture_reset_button",
+			"x": -230,
+			"y": 320,
+			"align": "C",
+			"anchor": "TC",
+			"tags":[
+				"options_game"
+			],
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			},
+			"hidden":true
+		},
+		{
+			"name": "main_volume_title",
+			"x": -1183 ,
+			"y": 655 ,
+			"anchor": "TR",
+			"align":"CL",
+			"font":"verdana_lrg"
+		},
+		{
+			"name": "main_volume_slider",
+			"x": -910 ,
+			"y": 655 ,
+			"size": {
+				"width": 300
+			},
+			"anchor": "TR",
+			"align":"CL"
+		},
+		{
+			"name": "effects_volume_title",
+			"x": -1183 ,
+			"y": 716 ,
+			"anchor": "TR",
+			"align":"CL",
+			"font":"verdana_lrg"
+		},
+		{
+			"name": "effects_volume_slider",
+			"x": -910 ,
+			"y": 716 ,
+			"size": {
+				"width": 300
+			},
+			"anchor": "TR",
+			"align":"CL"
+		},
+		{
+			"name": "music_volume_title",
+			"x": -1183 ,
+			"y": 778 ,
+			"anchor": "TR",
+			"align":"CL",
+			"font":"verdana_lrg"
+		},
+		{
+			"name": "music_volume_slider",
+			"x": -910 ,
+			"y": 778 ,
+			"size": {
+				"width": 300
+			},
+			"anchor": "TR",
+			"align":"CL"
+		},
+		{
+			"name": "speech_volume_title",
+			"x": -1183 ,
+			"y": 839 ,
+			"anchor": "TR",
+			"align":"CL",
+			"font":"verdana_lrg"
+		},
+		{
+			"name": "speech_volume_slider",
+			"x": -910 ,
+			"y": 839 ,
+			"size": {
+				"width": 300
+			},
+			"anchor": "TR",
+			"align":"CL"
+		},
+		{
+			"name": "subtitles_check",
+			"x": -546 ,
+			"y": 716 ,
+			"size": {
+				"width": 400
+			},
+			"anchor": "TR",
+			"align":"CL",
+			"font":"verdana_lrg"
+		},
+		{
+			"name": "reset_default_button",
+			"x": -455 ,
+			"y": 655 ,
+			"size": {
+				"width": 300
+			},
+			"anchor": "TR",
+			"align":"CL",
+			"font":"verdana_lrg"
+		},
+		{
+			"name": "divider",
+			"x": -1183 ,
+			"y": 552 ,
+			"size": {
+				"width": 300
+			},
+			"anchor": "TR",
+			"fill_right":true
+		},
+		{
+			"name": "title_string",
+			"x": -1183 ,
+			"y": 122 ,
+			"anchor": "TR",
+			"align":"TL",
+			"font_colour":"black"
+		},
+		{
+			"name": "cam_options_string",
+			"x": -1183 ,
+			"y": 583 ,
+			"size": {
+				"width": 170
+			},
+			"anchor": "TR",
+			"align":"TL",
+			"font":"verdana_lrg",
+			"font_colour":"black"
+		},
+		{
+			"name": "ok_button",
+			"x": -54 ,
+			"y": -49 ,
+			"size": {
+				"width": 72,
+				"height": 72
+			},
+			"anchor": "BR",
+			"align":"C"
+		},
+		{
+			"name": "close_button",
+			"x": -273 ,
+			"y": -49 ,
+			"size": {
+				"width": 72,
+				"height": 72
+			},
+			"anchor": "BC",
+			"align": "C"
+		},
+        {
+			"name": "advisor",
+			"x": -100,
+			"y": -100
+		},
+
+		{
+			"name": "ui_scale_string",
+			"x": -1092 ,
+			"y": 400,
+			"anchor": "TR",
+			"priority": 5
+		},
+		{
+			"name": "ui_scale_slider",
+			"x": -1092 ,
+			"y": 430,
+			"size" : {
+				"width"  : 400,
+				"height" : 250
+			},
+			"font_colour": "black",
+			"anchor": "TR",
+			"priority": 5
+		},
+
+
+		{
+			"name": "advisor",
+			"x": -1000,
+			"y": -1000,
+		},
+		{
+			"name": "advisor_manual",
+			"x": -100,
+			"y": -100
+		},
+
+
+		{
+			"name": "advisor_zoom_to",
+			"x": -100,
+			"y": -100
+		},
+		{
+			"name": "advisor_hide_bubble",
+			"x": -100,
+			"y": -100
+		},
+
+		{
+			"name": "advisor_animated_frame",
+			"x": -1000,
+			"y": 56,
+			"size" : {
+				"width"  : 400,
+				"height" : 250
+			},
+			"anchor": "TL",
+			"priority": 50
+		},
+		
+		{
+			"name": "advisor_animated_background_frame_priority",
+			"priority": 40,
+        },
+
+	]
+}

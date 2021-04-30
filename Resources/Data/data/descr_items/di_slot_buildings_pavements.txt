@@ -1,0 +1,282 @@
+;;;;  pavements for slots
+
+
+type			pavement_roman_imperial_palace
+lod
+max_distance		4000
+model_rigid		pavement_roman_imperial_palace.cas
+
+
+
+
+type			pavement_roman_governors_villa
+lod
+max_distance		4000
+model_rigid		pavement_roman_governors_villa.cas
+
+
+
+
+type			pavement_roman_awesome_temple
+lod
+max_distance		4000
+model_rigid		pavement_roman_awesome_temple.cas
+
+
+
+
+type			pavement_bath_house
+lod
+max_distance		4000
+model_rigid		pavement_bath_house.cas
+
+
+
+
+type			pavement_circus_maximus
+lod
+max_distance		4000
+model_rigid		pavement_circus_maximus.cas
+
+
+
+
+type			pavement_city_barracks_roman
+lod
+max_distance		4000
+model_rigid		pavement_city_barracks_roman.cas
+
+
+
+type			pavement_militia_barracks_roman
+lod
+max_distance		4000
+model_rigid		pavement_militia_barracks_roman.cas
+
+
+
+type			pavement_colosseum
+lod
+max_distance		4000
+model_rigid		pavement_colosseum.cas
+
+
+
+
+type			pavement_theatre
+lod
+max_distance		4000
+model_rigid		pavement_theatre.cas
+
+
+
+
+type			pavement_stone_amphitheatre
+lod
+max_distance		4000
+model_rigid		pavement_stone_amphitheatre.cas
+
+
+
+
+type			pavement_scriptorium_roman
+lod
+max_distance		4000
+model_rigid		pavement_scriptorium_roman.cas
+
+
+
+
+type			pavement_urban_amphitheatre
+lod
+max_distance		4000
+model_rigid		pavement_urban_amphitheatre.cas
+
+
+
+
+type			pavement_ludus_magnus_roman
+lod
+max_distance		4000
+model_rigid		pavement_ludus_magnus_roman.cas
+
+
+
+
+type			pavement_hippodrome
+lod
+max_distance		200
+model_rigid		pavement_hippodrome_high.cas
+lod
+max_distance		4000
+model_rigid		pavement_hippodrome_low.cas
+
+
+
+
+type			pavement_academy_roman
+lod
+max_distance		4000
+model_rigid		pavement_academy_roman.cas
+
+
+
+
+type			pavement_stone_stables
+lod
+max_distance		4000
+model_rigid		pavement_stone_stables.cas
+
+
+; ** eastern
+
+type			pavement_academy_eastern
+lod
+max_distance		4000
+model_rigid		pavement_academy_eastern.cas
+
+
+
+; **  egyptian
+
+
+
+type			pavement_egyptian_imperial_palace
+lod
+max_distance		4000
+model_rigid		pavement_egyptian_imperial_palace.cas
+
+
+
+type			pavement_egyptian_trader
+lod
+max_distance		4000
+model_rigid		pavement_egyptian_trader.cas
+
+
+
+type			pavement_egyptian_marketplace
+lod
+max_distance		4000
+model_rigid		pavement_egyptian_marketplace.cas
+
+
+
+type			pavement_egyptian_large_marketplace
+lod
+max_distance		4000
+model_rigid		pavement_egyptian_large_marketplace.cas
+
+
+
+type			pavement_academy_egyptian
+lod
+max_distance		4000
+model_rigid		pavement_academy_egyptian.cas
+
+
+
+type			pavement_egyptian_governors_villa
+lod
+max_distance		4000
+model_rigid		pavement_egyptian_governors_villa.cas
+
+
+
+type			pavement_egyptian_awesome_temple
+lod
+max_distance		4000
+model_rigid		pavement_egyptian_awesome_temple.cas
+
+
+
+type			pavement_camel_stables
+lod
+max_distance		4000
+model_rigid		pavement_camel_stables.cas
+
+
+
+type			pavement_city_barracks_egyptian
+lod
+max_distance		4000
+model_rigid		pavement_city_barracks_egyptian.cas
+
+
+
+type			pavement_militia_barracks_egyptian
+lod
+max_distance		4000
+model_rigid		pavement_militia_barracks_egyptian.cas
+
+
+
+; ** greek
+
+
+
+type			pavement_greek_amphitheatre
+lod
+max_distance		4000
+model_rigid		pavement_greek_amphitheatre.cas
+
+
+
+type			pavement_greek_awesome_temple
+lod
+max_distance		4000
+model_rigid		pavement_greek_awesome_temple.cas
+
+
+
+type			pavement_greek_imperial_palace
+lod
+max_distance		4000
+model_rigid		pavement_greek_imperial_palace.cas
+
+
+
+type			pavement_greek_small_temple
+lod
+max_distance		4000
+model_rigid		pavement_greek_small_temple.cas
+
+
+
+
+; ** new
+
+
+type			pavement_greek_governors_house
+lod
+max_distance		4000
+model_rigid		pavement_greek_governors_house.cas
+
+
+type			pavement_roman_governors_house
+lod
+max_distance		4000
+model_rigid		pavement_roman_governors_house.cas
+
+
+
+type			pavement_great_forum
+lod
+max_distance		4000
+model_rigid		pavement_great_forum.cas
+
+
+
+type			temp_slot_filler_greek_theatre_small
+lod
+max_distance		4000
+model_rigid		temp_slot_filler_greek_theatre_small.cas
+
+
+type			temp_slot_filler_greek_hippodrome
+lod
+max_distance		4000
+model_rigid		temp_slot_filler_greek_hippodrome.cas
+
+
+

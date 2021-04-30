@@ -1,0 +1,62 @@
+script
+	declare_show_me													; This is a show me script
+
+	declare_counter abandon
+
+	monitor_event ScrollClosed ScrollClosed seige_scroll			; Catch the scroll closing
+		set_counter abandon 1
+	end_monitor
+
+	monitor_event AbandonShowMe TrueCondition						; Catch the AbandonShowMe event
+		set_counter abandon 1
+	end_monitor
+
+	monitor_event ScrollAdviceRequested TrueCondition				; Catch the advice being requested again
+		set_counter abandon 1
+	end_monitor
+
+	monitor_conditions I_CompareCounter abandon = 1	
+		ui_flash_stop												; Stop the UI highlighting
+		suspend_unscripted_advice false								; Restore unscripted advice
+		terminate_script											; Shut down the show me script
+	end_monitor	
+
+	dismiss_advice
+	while I_AdvisorVisible
+	end_while
+
+	suspend_unscripted_advice true
+
+	advance_advice_thread Build_Siege_Equipment_1_Thread
+	wait 1
+	ui_flash_start siege_maintain_button
+	wait 19
+	ui_flash_start siege_assault_button
+	wait 2
+	ui_flash_stop
+	while I_AdvisorVisible
+	end_while
+
+	advance_advice_thread Build_Siege_Equipment_2_Thread
+	wait 8
+	ui_flash_start available_siege_equipment_options
+	wait 3
+	ui_flash_start siege_maintain_button
+	wait 2
+	ui_flash_stop
+	while I_AdvisorVisible
+	end_while
+
+	advance_advice_thread Build_Siege_Equipment_4_Thread
+	wait 2
+	ui_flash_start siege_assault_button
+	wait 6
+	ui_flash_start siege_end_button
+	wait 4
+	
+	ui_flash_stop
+	while I_AdvisorVisible
+	end_while
+	
+	suspend_unscripted_advice false
+end_script

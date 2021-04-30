@@ -1,0 +1,99 @@
+
+/* -----------------------------------------------
+   ----------------- Extras Tab ------------------
+  ______        _                    
+ |  ____|      | |                   
+ | |__   __  __| |_  _ __  __ _  ___ 
+ |  __|  \ \/ /| __|| '__|/ _` |/ __|
+ | |____  >  < | |_ | |  | (_| |\__ \
+ |______|/_/\_\ \__||_|   \__,_||___/
+                                     
+                                     
+ -----------------------------------------------*/
+
+#tabContentExtras .item {
+	font-size: 15px;
+	white-space: normal;
+	margin: 0px 10px;
+	margin: 5px 25px;
+}
+
+#tabContentExtras #extrasColumns {
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:flex;
+}
+
+#tabContentExtras #extrasColumns>*
+{
+	width:50%;
+}
+
+#tabContentExtras .extrasSubSection
+{
+	padding: 20px 20px;
+	background: white;
+	border: 2px solid #BDBDBD;
+	margin: 5px;
+	box-sizing:border-box;
+	font-size: 14px;
+	max-width: -webkit-calc(100% - 10px);
+	max-width: calc(100% - 10px);
+}
+
+#tabContentExtras #extrasExtraContentSubSection
+{
+	text-align: center;
+	margin-bottom: 10px;
+	background-color: transparent;
+	border: none;
+	padding: 0px;
+}
+
+/* Prevent irregular and ugly gaps at the start 
+   and end of the tab/subsections from child margins */
+
+#tabContentExtras #extrasColumns>*>.extrasSubSection:first-child
+{
+    margin-top: 0px;
+}
+
+#tabContentExtras #extrasColumns>*>.extrasSubSection:last-child
+{
+    margin-bottom: 0px;
+}
+
+#tabContentExtras .extrasSubSection>*:first-child
+{
+    margin-top: 0px;
+}
+#tabContentExtras .extrasSubSection>*:last-child
+{
+    margin-bottom: 0px;
+}
+
+#tabContentExtras #extrasiCloudSubSection.extrasSubSection
+{
+	margin-top: 10px;
+    background: url('../../images/icloud.png') no-repeat 13px 7px white;
+    background-size: 40px;
+}
+
+/*Prevent the wrapped lines of the label from getting placed under the checkbox*/
+#tabContentExtras .item div input#extra-iCloudSyncing {
+	float: left;
+	margin: 0 0 21px 45px;
+	display: block;
+	top:0px;
+}
+
+#tabContentExtras .item div input#extra-iCloudSyncing + span {
+	-webkit-box-decoration-break: clone;
+	padding-left: 4px;
+	width: auto;
+}
+
+#tabContentExtras .extrasSubSection > p
+{
+	clear:both;
+}

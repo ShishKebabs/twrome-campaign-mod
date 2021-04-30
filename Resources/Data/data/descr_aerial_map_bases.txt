@@ -1,0 +1,315 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;																											
+;
+; roman settlements
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;																											
+
+type		settlement_roman_level_1
+filename	bases/settlements/set_rome_00_underlay.tga	
+range		1.0	
+size		43
+		
+type		settlement_roman_level_2					
+filename	bases/settlements/set_rome_01_underlay.tga				
+range		1.3
+size		43
+
+type		settlement_roman_level_3,							
+filename	bases/settlements/set_rome_02_underlay.tga				
+range		1.3
+size		56
+
+type		settlement_roman_level_4							
+filename	bases/settlements/set_rome_03_underlay.tga				
+range		1.5
+size		64
+
+type		settlement_roman_level_5								
+filename	bases/settlements/set_rome_04_underlay.tga				
+range		1.8
+size		70
+
+type		settlement_roman_level_6								
+filename	bases/settlements/set_rome_05_underlay.tga				
+range		1.9
+size		70
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;																											
+;
+; roman walled settlements
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;																											
+
+type		settlement_roman_walled_level_1	
+filename	bases/settlements/set_rome_00_wall_underlay.tga		
+range		1.0	
+size		43
+
+type		settlement_roman_walled_level_2	
+filename	bases/settlements/set_rome_01_wall_underlay.tga		
+range		1.3
+size		43
+
+type		settlement_roman_walled_level_3	
+filename	bases/settlements/set_rome_02_wall_underlay.tga		
+range		1.3
+size		56
+
+type		settlement_roman_walled_level_4	
+filename	bases/settlements/set_rome_03_wall_underlay.tga		
+range		1.5
+size		64
+
+type		settlement_roman_walled_level_5	
+filename	bases/settlements/set_rome_04_wall_underlay.tga		
+range		1.8
+size		70
+
+type		settlement_roman_walled_level_6	
+filename	bases/settlements/set_rome_05_wall_underlay.tga		
+range		1.9
+size		70
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;																											
+;
+; eastern settlements
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;																											
+																												
+type		settlement_eastern_level_1			
+filename	bases/settlements/set_east_00_underlay.tga		
+range		1.0	
+size		43
+			
+type		settlement_eastern_level_2			
+filename	bases/settlements/set_east_01_underlay.tga		
+range		1.3
+size		43
+		
+type		settlement_eastern_level_3					
+filename	bases/settlements/set_east_02_underlay.tga		
+range		1.3
+size		56
+
+type		settlement_eastern_level_4						
+filename	bases/settlements/set_east_03_underlay.tga		
+range		1.5
+size		64
+
+type		settlement_eastern_level_5					
+filename	bases/settlements/set_east_04_underlay.tga		
+range		1.8
+size		70
+
+type		settlement_eastern_level_6				
+filename	bases/settlements/set_east_05_underlay.tga		
+range		1.9
+size		70
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;																											
+;
+; eastern walled settlements
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;																											
+																												
+type		settlement_eastern_walled_level_1
+filename	bases/settlements/set_east_00_wall_underlay.tga		
+range		1.0	
+size		43
+		
+type		settlement_eastern_walled_level_2
+filename	bases/settlements/set_east_01_wall_underlay.tga		
+range		1.3
+size		43
+
+type		settlement_eastern_walled_level_3
+filename	bases/settlements/set_east_02_wall_underlay.tga		
+range		1.3
+size		56
+
+type		settlement_eastern_walled_level_4	
+filename	bases/settlements/set_east_03_wall_underlay.tga		
+range		1.5
+size		64
+
+type		settlement_eastern_walled_level_5
+filename	bases/settlements/set_east_04_wall_underlay.tga		
+range		1.8
+size		70
+
+type		settlement_eastern_walled_level_6
+filename	bases/settlements/set_east_05_wall_underlay.tga		
+range		1.9
+size		70
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;																											
+;
+; barbarian settlements
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;																											
+																												
+type		settlement_barbarian_level_1		
+filename	bases/settlements/set_barb_00_underlay.tga	
+range		1.0	
+size		42
+		
+type		settlement_barbarian_level_2
+filename	bases/settlements/set_barb_01_underlay.tga		
+range		1.3
+size		58
+			
+type		settlement_barbarian_level_3			
+filename	bases/settlements/set_barb_02_underlay.tga		
+range		1.3
+size		58
+
+type		settlement_barbarian_level_4			
+filename	bases/settlements/set_barb_03_underlay.tga		
+range		1.5
+size		77
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;																											
+;
+; barbarian walled settlements
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;																											
+																												
+type		settlement_barbarian_walled_level_1	
+filename	bases/settlements/set_barb_00_wall_underlay.tga		
+range		1.0
+size		42
+
+type		settlement_barbarian_walled_level_2	
+filename	bases/settlements/set_barb_01_wall_underlay.tga		
+range		1.3
+size		58
+
+type		settlement_barbarian_walled_level_3	
+filename	bases/settlements/set_barb_02_wall_underlay.tga		
+range		1.3
+size		58
+
+type		settlement_barbarian_walled_level_4	
+filename	bases/settlements/set_barb_03_wall_underlay.tga		
+range		1.5
+size		77
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;																											
+;
+; forts
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;																											
+																																																								
+type		fort_roman
+filename	bases/forts/fort_roman_underlay.tga		
+range		1.0			
+size		70
+
+type		fort_eastern			
+filename	bases/forts/fort_eastern_underlay.tga					
+range		1.0
+size		70
+
+type		fort_barbarian																																	
+filename	bases/forts/fort_barb_underlay.tga					
+range		1.0
+size		70
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;																											
+;
+; roman ports
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;																											
+																																																								
+type		port_roman_level_1			
+filename	bases/ports/underlay_village.tga		
+range		1.0			
+size		55
+
+type		port_roman_level_2		
+filename	bases/ports/underlay_default.tga					
+range		1.3
+size		70
+
+type		port_roman_level_3				
+filename	bases/ports/underlay_village.tga					
+range		1.3
+size		55
+
+type		port_roman_level_4				
+filename	bases/ports/underlay_village.tga					
+range		1.5
+size		70
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;																											
+;
+; eastern ports
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;																											
+																															
+type		port_eastern_level_1			
+filename	bases/ports/underlay_village.tga					
+range		1.0
+size		55
+
+type		port_eastern_level_2		
+filename	bases/ports/underlay_default.tga					
+range		1.3
+size		70
+
+type		port_eastern_level_3				
+filename	bases/ports/underlay_village.tga					
+range		1.3
+size		55
+
+type		port_eastern_level_4				
+filename	bases/ports/underlay_village.tga
+range		1.5
+size		70
+		
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;																											
+;
+; barbarian ports
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;																											
+											
+type		port_barbarian_level_1			
+filename	bases/ports/underlay_village.tga					
+range		1.0
+size		55
+
+type		port_barbarian_level_2		
+filename	bases/ports/underlay_default.tga					
+range		1.3
+size		70
+
+type		port_barbarian_level_3				
+filename	bases/ports/underlay_village.tga					
+range		1.3
+size		55
+
+type		port_barbarian_level_4				
+filename	bases/ports/underlay_village.tga
+range		1.5
+size		70
+																				
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;																											
+;
+; watchtowers
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;																											
+
+type		watchtower_roman
+filename	bases/watchtowers/watchtower_roman_underlay.tga
+range		1.0
+size		42
+
+type		watchtower_eastern	
+filename	bases/watchtowers/watchtower_eastern_underlay.tga
+range		1.0
+size		42
+
+type		watchtower_barbarian	
+filename	bases/watchtowers/watchtower_barb_underlay.tga
+range		1.0
+size		42

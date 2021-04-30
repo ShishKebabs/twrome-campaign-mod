@@ -1,0 +1,316 @@
+
+<li 	id="tabButtonModManager"
+		class="tabSelect button flexGrow"
+		data-tab-id="tabContentModManager"
+		data-tab-position="11"
+		data-prohibit-name="ProhibitModManagerPanel">
+		<!-- This icon will do for now -->
+	<img class="unselectedImg" src="images/navicons/modsoff.svg" />
+	<img class="selectedImg"   src="images/navicons/mods.svg"    />
+	<span data-inner-string="localise-Startup.ModManagerTitle">[MISSING] Mod Manager</span>
+</li>
+
+<div 	class="tabbed scrollContainer"
+		id="tabContentModManager">
+	<div id="disableModsHeading" data-visible-name="!ModManagerShowPanel_ModUpload">
+		<div id="DisableModsText">
+			<a data-inner-string="localise-Startup.DisableModsDescription">[MISSING] Disable all mods</a>
+		</div>
+		<input id="DisableAllModsToggle" class="toggle" type="checkbox" data-property-name="DisableAllMods" data-property-type="bool" />
+		<label for="DisableAllModsToggle"></label>
+		<span data-inner-string="localise-GenericUI.Yes"></span>
+		<span data-inner-string="localise-GenericUI.No"></span>
+	</div>
+	<span class="center" id="centerSpan">
+		<div id="modPane" data-visible-name="!ModManagerShowPanel_ModUpload">
+			<div id="modSelector">
+				<div id="modSelectorButtons">
+					<div id="modTypeSelectBox">
+						<select class="selectBox"
+							data-property-type="int,string"
+							data-property-name="ModTypeFilterSelect"
+							data-list-name="ModTypeFilterList">
+						</select>
+					</div>
+					<input id="WorkshopRefresh" class="customButton" type="button" value="" data-property-name="ModManagerRequestRefresh" data-property-type="" />
+				</div>
+				<div id="modListContainer" data-visible-name="ModManagerShowList">
+					<div id="modList">
+						<!-- This will be populated at runtime -->
+					</div>
+					<input id="ShowModUploadPanelButton"
+						class="modDetailsButton customButton"
+						type="button"
+						value="[MISSING] Upload To Workshop"
+						data-value-string="localise-Startup.ModManagerUploadToWorkshop"
+						data-property-name="ModManagerShowUploadPanel"
+						data-property-type=""
+						data-visible-name="ModManagerIsUnpublishedUploadable" />
+						
+					<input id="ShowModUpdatePanelButton"
+						class="modDetailsButton customButton"
+						type="button"
+						value="[MISSING] Upload Update To Workshop"
+						data-value-string="localise-Startup.ModManagerUploadUpdateToWorkshop"
+						data-property-name="ModManagerShowUploadPanel"
+						data-property-type=""
+						data-visible-name="ModManagerIsPublishedUploadable" />
+
+					<input id="OpenInWorkshopButton"
+						class="modDetailsButton customButton"
+						type="button"
+						value="[MISSING] Open In Workshop"
+						data-value-string="localise-Startup.ModManagerOpenWorkshop"
+						data-visible-name="ModManagerIsWorkshopItem"
+						data-property-name="ModManagerOpenInWorkshop"
+						data-property-type="" />
+				</div>
+				<div id="modListLoading" data-visible-name="!ModManagerShowList"></div>
+			</div>
+			<div id="modDetails" data-visible-name="ModManagerShowModDetails">
+				<span id="modDetailsHeading">[MISSING] Heading of currently selected mod</span>
+				<hr id="modDetailsHeadingRule">
+				<div id="modDetailsContents">
+					<div id="modDetailsLeftPanel">
+						<div id="modDetailsScreenshot"></div>
+						<div id="modDetailsCompatibleGameContainer">
+							<span id="modDetailsGameBase" class="modDetailsGame" data-visible-name="ModManagerDetailsSupportsGameBase" data-inner-string="localise-Rome.Startup.ModManagerBaseMod"></span>
+							<span id="modDetailsGameBI" class="modDetailsGame" data-visible-name="ModManagerDetailsSupportsGameBI" data-inner-string="localise-Rome.Startup.ModManagerBIMod"></span>
+							<span id="modDetailsGameAlex" class="modDetailsGame" data-visible-name="ModManagerDetailsSupportsGameAlex" data-inner-string="localise-Rome.Startup.ModManagerAlexMod"></span>
+						</div>
+						<div id="modDetailsTagsContainer">
+							<div><span id="modDetailsNoTags" data-inner-string="localise-Startup.ModManagerNoTags" data-visible-name="!ModManagerDetailsHasTags"></span></div>
+							<span id="modDetailsTagsList" data-visible-name="ModManagerDetailsHasTags"></span>
+						</div>
+						<div id="modDetailsFilesize" data-visible-name="!ModManagerDetailsIsDownloading"></div>
+
+						<div id="modDetailsDownloading" data-visible-name="ModManagerDetailsIsDownloading" data-inner-string="localise-Rome.InGame.ModNotInstalled">[MISSING] This mod is not installed; please ensure its download is complete.</div>
+
+						<div id="modDetailsWarningInformation" data-visible-name="ModManagerDetailsHasWarning">
+							<div id="modDetailsWarningInvalidManifest" data-visible-name="!ModManagerDetailsHasValidManifest" data-inner-string="localise-Rome.InGame.InvalidModManifest">[MISSING] Invalid mod manifest! You must regenerate this mod's manifest in order to use it.</div>
+							<div id="modDetailsWarningIncompatibleGame" data-visible-name="!ModManagerDetailsIsCompatibleWithSelectedGame" data-inner-string="ModManagerDetailsIncompatibleWithGameWarning">[MISSING] The mod creator has marked the current game as incompatible with this mod.</div>
+							<div id="modDetailsWarningConflict" data-visible-name="ModManagerDetailsHasConflictWithEnabledMod" data-inner-string="localise-Startup.ModManagerConflictWithEnabledMod">[MISSING] This mod will conflict with one or more enabled mods.</div>
+						</div>
+						
+						<div id="modDetailsConflictsLabel" data-inner-string="localise-Startup.ModManagerPotentialConflicts" data-visible-name="ModManagerDetailsHasPotentialConflicts">[MISSING] Potential Mod Conflicts:</div>
+						<div id="modDetailsConflicts">
+							<ul id="modDetailsConflictsList" data-property-name="ModManagerDetailsPotentialConflicts" data-property-type="array<string>">
+							</ul>
+						</div>
+						
+					</div>
+					<div id="modDetailsDescription">[MISSING] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nisl dui, malesuada eget eleifend varius, tempor sed nunc. Curabitur elementum tempor quam nec blandit. Etiam tincidunt nunc sed egestas tincidunt. Ut placerat semper rutrum. Curabitur facilisis sollicitudin nulla congue faucibus. Donec consectetur vulputate ligula id vulputate. Mauris eu commodo magna, id rhoncus quam. Sed efficitur ligula et ante auctor, et interdum sapien placerat. Aliquam faucibus auctor orci, tincidunt consectetur elit. Donec euismod enim lacus, et.</div>
+				</div>
+				
+				
+				
+				<div id="modDetailsButtons">
+
+					<!-- ARF 14-Oct-2020: Disabled these buttons for fbug://RHD-7325, but left commented out for now because we might need this functionality in the final product... -->
+
+					<!-- <input id="LowercaseFilesButton" class="modDetailsButton customButton" type="button" value="[MISSING] Lowercase Files" data-value-string="localise-Startup.LowercaseFiles" data-property-name="ModManagerLowercaseFiles" data-property-type="" /> -->
+
+					<!-- <input id="RegenManifestButton" class="modDetailsButton customButton" type="button" value="[MISSING] Regenerate Manifest" data-value-string="localise-Startup.RegenerateManifest" data-property-name="ModManagerRegenManifest" data-property-type="" /> -->
+				</div>
+			</div>
+			<div id="modDetailsLoading" data-visible-name="!ModManagerShowModDetails"></div>
+		</div>
+		<div id="modUploadProgressPanel" data-visible-name="ModManagerShowUploadProgress">
+			<div id=modUploadProgressDescription data-inner-string="ModManagerUploadProgressDescription"></div>
+			<div id=modUploadProgressBarContainer>
+				<progress id="modUploadProgressBar" value="0" max="100"></progress>
+			</div>
+		</div>
+		<div id="modUploadPanel" data-visible-name="ModManagerShowPanel_ModUpload" class="modUploadPane">
+
+			<div id="modUploadHeading">
+				<h4 id="modUploadMainHeadingText" data-inner-string="localise-Startup.ModManagerUploadToWorkshop">[MISSING] Upload To Workshop</h4>
+			</div>
+
+			<div id="modUploadFormPanel">
+
+				<div id="modUploadFormPanelLeft">
+					<h5 class = "subHeading" data-inner-string="localise-Startup.ModManagerFolderLocation">[MISSING] Folder Location</h5>
+
+					<div id="modUploadFolderPathLabel" data-inner-string="ModManagerUploadFolderPath"></div>
+					
+
+					<!--Mod name section-->
+					<h5 class = "subHeading" data-inner-string="localise-Startup.ModManagerModName">[MISSING] Mod Name</h5>
+					<input
+					type="text"
+					id="modUploadModNameTextBox"
+					class = "textBox"
+					spellcheck="false"
+					maxlength="128"
+					data-property-name="ModManagerUploadName"
+					data-property-type="string"
+					required/>
+
+					<div id="modUploadFormDescriptionContainer">
+						<!--mod description section-->
+						<h5 class = "subHeading" data-inner-string="localise-Startup.ModManagerModDescription">[MISSING] Mod Description</h5>
+						<textarea
+							class = "textBox"
+							id="modUploadDescTextBox"
+							data-property-name="ModManagerUploadDesc"
+							data-property-type="string"
+							cols="10"
+							rows="5"
+							maxlength="8000"
+							required></textarea>
+					</div>
+
+					
+				</div>
+
+				<div id="modUploadFormPanelRight">
+
+					<h5 class = "subHeading" data-inner-string="localise-Startup.ModManagerPreviewImageLocation">[MISSING] Preview Image Location</h5>
+					
+					<input    type="text"
+					id="modUploadImgPathTextBox"
+					class = "textBox"
+					spellcheck="false"
+					data-property-name="ModManagerUploadImgPath"
+					data-property-type="string"
+					disabled/>
+					
+					<input
+					id="modUploadImgPathButton"
+					class="modUploadPathButtons"
+					type="button"
+					value="🔍"
+					data-property-name="ModManagerUploadImgButton"
+					data-property-type=""
+					/>
+
+					<!--Mod image-->
+					<div id="modUploadModImgDiv"></div>
+					
+					<!-- Supported Game checkboxes -->
+					<h4 id="modUploadGameCompatTitle" class = "mainHeading" data-inner-string="localise-Startup.ModManagerSupportedGame">[MISSING] Supported Game:</h4>
+					<input
+					type="checkbox"
+					id="modUploadCompatCheck"
+					data-property-name="ModManagerUploadBaseCheckbox"
+					data-property-type="bool"
+					/>
+					<label data-inner-string="localise-Startup.ModManagerBaseMod">[MISSING] Base game</label>
+				
+					<input
+					type="checkbox"
+					id="modUploadCompatCheck"
+					data-property-name="ModManagerUploadBICheckbox"
+					data-property-type="bool"
+					/>
+					<label data-inner-string="localise-Startup.ModManagerBIMod">[MISSING] BI game</label>
+					
+					<input
+					type="checkbox"
+					id="modUploadCompatCheck"
+					data-property-name="ModManagerUploadAlexCheckbox"
+					data-property-type="bool"
+					/>
+					<label data-inner-string="localise-Startup.ModManagerAlexMod">[MISSING] Alex game</label>
+					
+				</div>
+				
+				<div id="modUploadFormVisAndTagsWrapper">
+					<div id="modUploadFormVisibilityContainer">
+						<label data-inner-string="localise-Startup.ModManagerModVisibility">[MISSING] Visibility dropdown</label>
+						
+						<select
+							id="modUploadVisibilityDropDown"
+							class="selectBox"
+							data-list-name="ModManagerUploadVisibilityList"
+							data-property-name="ModManagerUploadVisibilitySelect"
+							data-property-type="int,string">
+							<option value="Public">[MISSING] Public</option>
+							<option value="Friends IDK">[MISSING] Friends Only</option>
+							<option value="Private">[MISSING] Private</option>
+						</select>
+					</div>
+				
+					<div id="modUploadFormTagsContainer">
+						<!--Mod tags section-->
+						<label data-inner-string="localise-Startup.ModManagerModTags">[MISSING] Tags:</label>
+	
+						<select multiple
+							id="modUploadTagDropDown"
+							class="chosen-select"
+							data-property-type="array<int,string>"
+							data-property-name="ModManagerTagMultiSelect"
+							data-list-name="ModManagerTagList"
+							data-multiselect-options="ModManagerTagMultiSelectOptions">
+						</select>
+					</div>
+				</div>
+				<div id="modUpdateNotesContainer" data-visible-name="ModManagerIsPublishedUploadable">
+
+					<h4 id="modUpdateNotesLabel" data-inner-string="localise-Startup.ModManagerUpdateNotes">[MISSING] Update Notes:</h4>
+
+					<textarea
+						class="textBox"
+						id="modUpdateNotesTextBox"
+						data-property-name="ModManagerUploadFormUpdateNotes"
+						data-property-type="string"
+						cols="10"
+						rows="5"
+						required></textarea>
+				</div>
+			</div>
+			
+			<!--Bottom button section-->
+			<div id ="modUploadBottomButtonsDiv" data-visible-name="!ModManagerShowUploadProgress">
+								
+				<input
+				id="HideModUploadPanelButton"
+				class="modDetailsButton customButton"
+				type="button"
+				value="[MISSING] Cancel"
+				data-value-string="localise-Startup.Cancel"
+				data-property-name="ModManagerHideUploadPanel"
+				data-property-type="" />
+				
+				<input
+				id="UploadToWorkshopButton"
+				class="modDetailsButton customButton"
+				type="button"
+				value="[MISSING] Upload To Workshop"
+				data-value-string="localise-Startup.ModManagerUploadToWorkshop"
+				data-property-name="ModManagerUploadToWorkshop"
+				data-property-type="" />
+			</div>
+		</div>
+		
+	</span>
+	<div id="modManagerLinkButtons">
+		
+		<input id="ShowModFolderButton"
+		class="modDetailsButton customButton"
+		type="button"
+		value="[MISSING] Open Mod Folder"
+		data-value-string="localise-Startup.ModManagerOpenModsFolder"
+		data-visible-name="!ModManagerShowPanel_ModUpload"
+		data-property-name="ModManagerOpenModFolder"
+		data-property-type=""
+		/>
+
+		<input id="OpenSteamWorkshopButton"
+		class="modDetailsButton customButton"
+		type="button"
+		value="[MISSING] Open Steam Workshop"
+		data-value-string="localise-Startup.ModManagerOpenGameWorkshop"
+		data-visible-name="!ModManagerShowPanel_ModUpload"
+		data-property-name="ModManagerOpenWorkshopHomePage"
+		data-property-type=""
+		/>
+	</div>
+</div>
+
+<script src="../../3rdParty/Extendible-BBCode-Parser/xbbcode.js"></script>
+<script src="../../../PGOW/Core/feralUIImports/importTabScript.js"></script>
+<script src="tabModManager.js"></script>
+<link rel="stylesheet" type="text/css" href="tabModManager.css" />
+<link rel="stylesheet" type="text/css" href="../../3rdParty/Extendible-BBCode-Parser/xbbcode.css" />

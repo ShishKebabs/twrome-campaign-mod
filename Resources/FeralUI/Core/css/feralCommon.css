@@ -1,0 +1,865 @@
+
+
+body
+{
+	font-family: helvetica, sans-serif;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor:default;
+	padding:0px;
+	margin:0px;
+	width: 930px;
+	height: 640px;
+	position: relative;
+	background: url('../images/bgtexture.png') repeat;
+}
+
+html
+{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: space-around;
+	align-items: center;
+
+	/* 	We now have a case where we can have an odd-sized viewport, Steam BPM fullscreen PGOW. 
+		In that case, we "zoom" the pgow to fit the screen, but we still need to keep the aspect ratio, 
+		so we need borders (only happens for fullscreen, so the borders can look black regardless of the game without it looking weird). 
+		Without this, the background of the body element gets promoted 
+		(ie magically moved to the html element) but setting the background colour is enough to 
+		prevent that thankfully. */
+	background-color:black; 
+}
+
+/* The widths in CFeralTemplateGame::CreateStartupDialog() were never actually applied and 
+   were far too wide to begin with, so these adjustments are added separately as required */
+/* Doug's fix to advanced panel width in FR, avoiding necessity for wider window that caused designs to break */
+
+.langFR #tabContentAdvanced.tabbed span.item {
+	margin: 0 20px;
+}
+
+/*--------*/
+
+.startupVideos
+{
+	opacity:0; 
+	width: 100vw; 
+	height: 100vh;
+	pointer-events:none; 
+	background-color:black;
+	position: absolute;
+	top: 0;
+}
+
+#loadingOverlay
+{
+	z-index: 65535;
+	position:fixed;
+	left: 0vw;
+	width: 100%;
+	top: 0vh;
+	height: 100%;
+	background-color: rgb(0,0,0);
+	opacity:1;
+}
+
+#loadingOverlay.loadingFinished
+{
+	pointer-events:none;
+	opacity:0;
+	-webkit-transition:opacity 1s;
+	transition:opacity 1s;
+}
+
+
+
+
+
+/* ----------------------------------------------- 
+   ----------------- Focus Ring ------------------
+  ______                         _____   _               
+ |  ____|                       |  __ \ (_)              
+ | |__  ___    ___  _   _  ___  | |__) | _  _ __    __ _ 
+ |  __|/ _ \  / __|| | | |/ __| |  _  / | || '_ \  / _` |
+ | |  | (_) || (__ | |_| |\__ \ | | \ \ | || | | || (_| |
+ |_|   \___/  \___| \__,_||___/ |_|  \_\|_||_| |_| \__, |
+                                                    __/ |
+                                                   |___/ 
+ -----------------------------------------------*/
+button:focus,
+input[type=button]:focus
+{
+    outline-offset:-3px;
+}
+
+input[type=checkbox]:focus
+{
+	outline-offset:-2px;
+}
+
+input[type=number]:focus
+{
+	outline-style: none !important;
+}
+
+.selectric-wrapper.selectricFocus:not(.selectric-open) > .selectric
+{
+	outline-width: 5px;
+	outline-style: auto;
+	outline-offset: -2px;
+}
+
+#versionStringList:focus
+{
+	outline-width: 5px;
+	outline-style: auto;
+}
+
+
+
+
+
+/* ----------------------------------------------- 
+   ------------- Scroll with Fading --------------
+   _____                    _  _ 
+  / ____|                  | || |
+ | (___    ___  _ __  ___  | || |
+  \___ \  / __|| '__|/ _ \ | || |
+  ____) || (__ | |  | (_) || || |
+ |_____/  \___||_|   \___/ |_||_|
+                                 
+                                 
+ -----------------------------------------------*/
+ 
+/* ScrollContainers are elements that contain a scrollable element 
+   (preferably exactly 1) and do some clever bluring when it is 
+   scrollable to tell the user that scrolling is available 
+   (extra useful for MacOS when scrollbars default hidden) */
+
+/* :before is the top fade out region, :after is the bottom*/
+.scrollContainer:before,
+.scrollContainer:after
+{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 50px;
+	background: url('../images/bgtexturebottomfade.png') repeat-x transparent;
+	position: absolute;
+	pointer-events: none;
+	left: 0;
+	z-index:21;
+	opacity:1;
+}
+
+/* Vertically flip the top fade out */
+.scrollContainer:before
+{
+	-moz-transform: scaleY(-1);
+	-o-transform: scaleY(-1);
+	-webkit-transform: scaleY(-1);
+	transform: scaleY(-1);
+	filter: FlipV;
+	-ms-filter: "FlipV";
+	top:0px;
+	-webkit-transition: top 0.5s;
+	transition: top 0.5s;
+}
+
+.scrollContainer:after
+{
+	bottom:0px;
+	-webkit-transition: bottom 0.5s;
+	transition: bottom 0.5s;
+}
+
+/* When scrolled to top, the top fade out should shift away
+   somewhat to ensure the content is visible and not faded */
+.scrollContainer.top:before
+{
+	top:-30px;
+}
+
+/* When scrolled to bottom, the bottom fade out should shift 
+   away somewhat to ensure the content is visible and not faded */
+.scrollContainer.bottom:after
+{
+	bottom:-30px;
+}
+
+/* Some (most) tabs are scrollContainers, 
+   but we overlap the fade out region with the footer, 
+   which means we need a slightly different look */
+
+/* Overlap the footer */
+.tabbed.scrollContainer
+{
+	height: 100%;
+}
+/* Add some padding to the bottom of the scrollable element so it's actual 
+   content doesn't overlap the footer after scrolling all the way down */
+.tabbed.scrollContainer>*:after 
+{
+	content:'';
+	opacity:0;
+	font-size:0px;
+	margin-top:0px;
+	margin-bottom:20px;
+	padding-top:0px;
+	padding-bottom:0px;
+	display:block;
+}
+/* When fully scrolled up, don't stick in the padding, since we don't want to 
+   make the region scrollable if it doesn't have to be 
+   (this does assume all regions start off scrolled to the top) */
+.tabbed.scrollContainer.top>*:after 
+{
+	margin-bottom:14px;
+}
+
+.tabbed.scrollContainer.top:before
+{
+	top:-50px;
+}
+/* We can leave this fade out enabled at all times, 
+   since it isn't taking up any space*/
+.tabbed.scrollContainer.bottom:after
+{
+	bottom:0px;
+}
+
+/* Special case for certain tabs (support + extras, currently), 
+   since if they use the space right in the botom-right 
+   corner they'll overlap the play button */
+.canOverlapPlayButton.tabbed.scrollContainer
+{
+	/*Crashes on 10.8. Thankfully it uses this old prefix, so we can skip
+	height:-webkit-calc(100% - 48px); */
+	height:calc(100% - 48px);
+}
+
+.canOverlapPlayButton.tabbed.scrollContainer.bottom:after
+{
+	bottom:-50px;
+}
+.canOverlapPlayButton.tabbed.scrollContainer>*:after
+{
+	margin-bottom:0px;
+}
+.canOverlapPlayButton.tabbed.scrollContainer.top>*:after
+{
+	margin-bottom:0px;
+}
+
+
+
+
+
+/* ----------------------------------------------- 
+   -------------- Custom Checkboxes --------------
+   _____  _                  _     _                 
+  / ____|| |                | |   | |                
+ | |     | |__    ___   ___ | | __| |__    ___ __  __
+ | |     | '_ \  / _ \ / __|| |/ /| '_ \  / _ \\ \/ /
+ | |____ | | | ||  __/| (__ |   < | |_) || (_) |>  < 
+  \_____||_| |_| \___| \___||_|\_\|_.__/  \___//_/\_\
+                                                     
+                                                     
+ -----------------------------------------------*/
+
+input[type=checkbox] {
+	margin: 5px 0 0 5px;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+}
+
+input[type=checkbox]:enabled:hover + label {
+	color: #0071BC;
+	cursor: pointer;
+}
+
+input[type=checkbox] {
+	margin-top: 6px;
+}
+
+input[type=checkbox] + label {
+	padding-left: 10px;
+	margin: -1px 0 0 -10px;
+}
+
+
+input[type=checkbox]
+{
+	-webkit-appearance: none;
+	border-width: 1px;
+	border-style: solid;
+	box-sizing: border-box;
+	border-color: #d9d9d9;
+	border-radius: 4px;
+	background: #fff !important;
+	position: relative;
+	top:2px;
+	-webkit-transition:background-color 0.3s;
+	transition:background-color 0.3s;
+}
+
+
+input[type=checkbox]:enabled:hover
+{
+	background: #F0F0F0 !important;
+}
+
+input[type=checkbox]:disabled
+{
+	opacity: 0.5;
+}
+
+
+
+label.controlDisabled.checkbox>span
+{
+	opacity: 0.5;
+}
+
+/* all checkboxes should be shifted down a bit to match how they
+   look in normal cocoa UIs, and because it just looks better.
+   Probably a mac-only change?s*/
+label > input[type=checkbox]
+{
+    position: relative;
+	top: 2px;
+}
+
+input[type=checkbox]::after
+{
+	content: '';
+	width: 5px;
+	height: 9px;
+	position: absolute;
+	top: 1px;
+	left: 4px;
+	border-bottom: 2px solid transparent;
+	border-right: 2px solid transparent;
+	background: transparent;
+	-webkit-transform: rotate(38deg);
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	box-sizing: border-box;
+}
+
+input[type=checkbox]:checked::after
+{
+	border-bottom: 2px solid #555;
+	border-right: 2px solid #555;
+}
+
+input[type=checkbox]:indeterminate::after
+{
+	-webkit-transform: rotate(0deg);
+	background-color:#555;
+	height: 7px;
+	width: 7px;
+	top: 3px;
+	left: 3px;
+}
+
+
+
+
+
+/* -----------------------------------------------
+   -------------- Custom Selectric ---------------
+   _____        _              _          _       
+  / ____|      | |            | |        (_)      
+ | (___    ___ | |  ___   ___ | |_  _ __  _   ___ 
+  \___ \  / _ \| | / _ \ / __|| __|| '__|| | / __|
+  ____) ||  __/| ||  __/| (__ | |_ | |   | || (__ 
+ |_____/  \___||_| \___| \___| \__||_|   |_| \___|
+                                                  
+                                                  
+ -----------------------------------------------*/
+
+.selectric-wrapper
+{
+	min-width: 150px;
+	position: relative;
+	margin: 0 0 10px;
+	cursor: pointer;
+	margin:5px;
+	display:inline-block;
+
+	  display: inline-block;
+	position: relative;
+	padding: 0;
+	line-height: normal;
+	margin-right: .1em;
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+	overflow: visible;
+}
+.label {
+	line-height: 30px !important;
+	height: 30px !important;
+}
+/* Override with custom scrollbar. Fixes glitchyness with system scrollbar 
+(it would appear to still be visible after select box is closed) */
+.selectric-wrapper .selectric-items::-webkit-scrollbar {
+	width: 16px;
+	border-left: solid 1px #BDBDBD;
+}
+ 
+/* Fix another problem with scrollbars (even custom :/), they'd steal pointer 
+events even when inside a visibility:hidden element, or they themseleves were 
+hidden, or had pointer-events:none. Basically, there was no sweetspot that 
+kept them in the flow but not getting in the way, so just display:none when 
+they're not supposed to be visible :/*/
+.selectric-wrapper:not(.selectric-open) .selectric-items::-webkit-scrollbar {
+	display:none;
+}
+
+.selectric-wrapper .selectric-items::-webkit-scrollbar-track {
+}
+ 
+.selectric-wrapper .selectric-items::-webkit-scrollbar-thumb {
+	background-color: #CCC;
+	border-left: solid 1px #BDBDBD;
+}
+
+html .selectric-wrapper {
+	top:-1px;
+	margin-right: 1px; /*override .1 em which ends up causing half-pixel glitchyness in retina*/
+}
+
+html .selectric {
+	background-color: white;
+}
+
+html .selectric p.label {
+	text-overflow:ellipsis;
+}
+
+html .selectric:hover {
+	border-color: #0071bc;
+}
+
+html .selectricDisabled .selectric:hover {
+	border-color: #DDD;
+}
+
+html .selectric b.button {
+	border-left: 1px solid #BDBDBD;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 30px;
+	height: 30px;
+	color: #BBB;
+	text-align: center;
+	font: 0/0 a;
+}
+
+html .selectricHover .selectric b.button, 
+html .selectricDisabled .selectric b.button, 
+html .selectricDisabled .selectric b.button:after {
+	color: #bbb;
+}
+html .selectric-wrapper.openUpwards .selectric-items
+{
+	top:auto !important;
+	bottom:100% !important;
+}
+
+html .selectric-items li {
+	background-color: white;
+	padding-right: 20px; /*	5px to balance opposite padding and 15px to make
+							right side line up with the main select box label
+							(which is squished up by the rhs button)*/
+}
+
+html .selectric-items {
+	overflow-y: scroll;
+	top: calc(100% - 1px); /*-1px so that the border overlaps with the original
+							 border instead of appearing like a 2px top border */
+}
+
+/* Separator menu items are thin horisontal lines to denote seperation 
+   (think the select menu equivilent to <hr>) */
+.selectric-items li.separator,
+.selectric-items li.separator.disabled
+{
+	height: 5px;
+	min-height: 5px;
+	padding: 0px;
+	background-color: darkgray ;
+	border:none;
+}
+
+/* Title menu items are Textual descriptions of following items. 
+   They can't be selected and aren't "real" items, so disabled look */
+.selectric-items li.selectTitle,
+.selectric-items li.selectTitle.disabled
+{
+	font-size: 1.25em;
+	padding:0;
+	color:white;
+	background-color:darkgrey;
+	border-top-width: 0px;
+}
+
+/* avoid glowy focus ring around the menu sometimes which didn't make much sense. */
+.selectric-items:focus
+{
+	outline: none;
+}
+
+
+
+
+
+/* -----------------------------------------------
+   -------------- Pop-ups / Dialogs --------------
+  _____   _         _                    
+ |  __ \ (_)       | |                   
+ | |  | | _   __ _ | |  ___    __ _  ___ 
+ | |  | || | / _` || | / _ \  / _` |/ __|
+ | |__| || || (_| || || (_) || (_| |\__ \
+ |_____/ |_| \__,_||_| \___/  \__, ||___/
+                               __/ |     
+                              |___/      
+ -----------------------------------------------*/
+
+body .ui-widget-overlay {
+	background: -moz-radial-gradient(center, 
+									 ellipse cover,  
+									 rgba(0,0,0,0.85)   0%, 
+									 rgba(0,0,0,0.6 )  50%, 
+									 rgba(0,0,0,0.85) 100%);
+	background: -webkit-gradient(radial, 
+								 center center, 
+								 0px, 
+								 center center, 
+								 100%, 
+								 color-stop(  0%,rgba(0,0,0,0.85)), 
+								 color-stop( 50%,rgba(0,0,0,0.6 )), 
+								 color-stop(100%,rgba(0,0,0,0.85)));
+	background: -webkit-radial-gradient(center, 
+										ellipse cover,  
+										rgba(0,0,0,0.85)   0%,
+										rgba(0,0,0,0.6 )  50%,
+										rgba(0,0,0,0.85) 100%);
+	background: -o-radial-gradient(center, 
+								   ellipse cover,  
+								   rgba(0,0,0,0.85)   0%,
+								   rgba(0,0,0,0.6 )  50%,
+								   rgba(0,0,0,0.85) 100%);
+	background: -ms-radial-gradient(center, 
+									ellipse cover,  
+									rgba(0,0,0,0.85)   0%,
+									rgba(0,0,0,0.6 )  50%,
+									rgba(0,0,0,0.85) 100%);
+	background: radial-gradient(ellipse at center,  
+								rgba(0,0,0,0.85)   0%,
+								rgba(0,0,0,0.6 )  50%,
+								rgba(0,0,0,0.85) 100%);
+
+	opacity: 1;
+	transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s;
+}
+body .ui-widget-overlay.fadeInOverlay {
+	opacity: 0;
+}
+body .ui-widget-overlay.fadeOutOverlay {
+	opacity: 0;
+	pointer-events:none;
+}
+
+body .ui-dialog {
+	font-family: helvetica, sans-serif;
+	padding: 0;
+	border: none;
+	-webkit-box-shadow: 0 0 30px 5px rgba(0,0,0,.7);
+	box-shadow: 0 0 30px 0 rgba(0,0,0,.7);
+	color: #333;
+	background: white;
+	font-size: 15px;
+}
+
+body .ui-widget-header {
+	background-color: #f37021;
+	background-image: url("../images/orangeBack.png");
+	background-position: bottom;
+	border: none;
+	color: black;
+	
+/* We don't want curved corners at the bottom of the title bar 
+   and the top is already curved by the parent element. 
+   Meanwhile, turning off the curving of this element significantly 
+   reduces the whitening in the corners of the dialogs.
+   Pretty sure that is just caused by a glitch in webkit, 
+   but we kill 2 birds with 1 stone by disabling curved corners */
+	border-radius:0px;
+}
+
+body .ui-dialog label:not(.controlDisabled):hover {
+	color: #0071bc;
+	cursor: pointer;
+}
+
+body .ui-dialog input[type="checkbox"] {
+	width: 15px;
+	height: 15px;
+}
+
+body .ui-dialog .ui-dialog-titlebar-close {
+	right: 5px;
+	top:5px;
+	margin: 0;	
+	border: 1px solid #ff8d00;
+	z-index: 20;
+}
+
+body .ui-dialog .ui-dialog-titlebar-close:after {
+	content: 'x';
+	position: absolute;
+	font-weight: normal;
+	top: 8px;
+	left: 5px;
+	font-size: 17px;
+	line-height: 0;
+}
+
+body .ui-dialog .ui-dialog-titlebar-close span {
+	background: none;
+	
+}
+
+.ui-dialog .ui-dialog-content.dialog.iframe {
+	padding: 0;
+	position: relative;
+}
+
+
+
+div#DocumentationDialog
+{
+	padding-left:0px;
+	padding-right:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+	position:relative;
+	overflow:hidden;
+	font-size: 0px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+@media (max-height: 589px)
+{
+	div#DocumentationDialog
+	{
+		max-height: calc(100px - 45px) !important;
+		min-height: calc(100vh - 45px) !important;
+	}
+}
+
+div#DocumentationDialog>iframe
+{
+	height:100%;
+	width:100%;
+	margin: 0 0 0;
+	border: none;
+	padding: 0; 
+}
+
+.ui-dialog[aria-describedby="DocumentationDialog"]
+{
+	overflow: visible;
+	border-radius: 4px;
+	
+	/*White background can bleed through, so add a couple pixels space to avoid that*/
+	border-top-left-radius: 4px;
+	border-top-right-radius: 6px;
+}
+
+@media (max-height: 589px)
+{
+	.ui-dialog[aria-describedby="DocumentationDialog"]
+	{
+		max-height: 100vh !important;
+	}
+}
+@media (max-width: 879px)
+{
+	.ui-dialog[aria-describedby="DocumentationDialog"]
+	{
+		max-width: 100vw !important;
+	}
+}
+.ui-dialog[aria-describedby="DocumentationDialog"] .ui-dialog-titlebar
+{
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.ui-dialog[aria-describedby="DocumentationDialog"] .ui-dialog-buttonpane
+{
+	position:absolute !important;
+	bottom:0px;
+	right:0px;
+	white-space: nowrap;
+	border-left-width: 1px;
+	border-top-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	/*box-shadow: 0px 0px 10px 0px black;*/
+	pointer-events:none;
+	background-color: rgba(200,200,200,0.5);
+}
+
+.ui-dialog[aria-describedby="DocumentationDialog"] .ui-dialog-buttonpane>.ui-dialog-buttonset>*
+{
+	pointer-events: auto;
+}
+
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset 
+{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+	width: webkit-calc(100% - 9px);
+	width: calc(100% - 9px);
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button {
+	-webkit-box-ordinal-group: 3;
+	-webkit-order:3;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset::after {
+	content:"";
+	-webkit-box-flex: 1;
+	-webkit-flex-grow:1;
+	-webkit-box-ordinal-group: 2;
+	-webkit-order:2;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button.dialogButtonOnLeft {
+	-webkit-box-ordinal-group: 1;
+	-webkit-order:1;
+}
+
+/* enables image links in custom dialogs */
+#CustomAlertDialog a > * {
+	pointer-events: auto;
+}
+
+#AlertIcon {
+	width: 108px;
+	height: 108px;
+	flex-shrink: 0;
+	padding-right: 10px;
+}
+
+#AlertDialog {
+	display: flex;
+	flex-direction: row;
+	padding: 1em 1em;
+}
+
+#AlertBodyContainer {
+	padding: .5em .8em .5em .5em;
+	line-height: 1.3em;
+}
+
+#AlertDialogCheckboxContainer
+{
+	padding-top: 10px;
+}
+
+.AlertDialogTextField
+{
+	padding: .2em .2em .2em .2em;
+}
+
+#AlertDialog.equalButtons + .ui-dialog-buttonpane button {
+	width: 50%;
+	min-height: 4em; /* min-* to allow buttons to expand if text is too long. */
+	font-family: helvetica, sans-serif;
+	margin: .64em 1.5em 3em;
+}
+
+#AlertDialog.equalButtons + .ui-dialog-buttonpane .ui-dialog-buttonset {
+	width: calc(100% - 1.4em);
+	padding-right: 1.4em;
+
+	text-align: center;
+	box-sizing: border-box;
+}
+
+#AlertDialog.equalButtons + .ui-dialog-buttonpane .ui-dialog-buttonset::after {
+	content: none;
+}
+
+#RemoteResourceStatus
+{
+	/* Take this out of normal page flow */
+	position: absolute;
+	
+	display: flex;
+	
+	/* Position it at the bottom, in the center */
+	bottom: 0;
+	left: 15%;
+	width: 70%;
+	
+	/* Make sure it's on top of other items */
+	z-index: 50;
+	
+	background: white;
+	border-style: solid;
+	border-color: silver;
+	border-width: 1px 1px 0 1px;
+	border-radius: 5px 5px 0 0;
+}
+
+#RemoteResourceStatus #RemoteResourceName
+{
+	width: 20%;
+	text-align: center;
+	padding: 0.5em;
+}
+
+#RemoteResourceStatus #RemoteResourceProgressWrapper
+{
+	/* Use smaller text to display the status */
+	text-align: left;
+	font-size: 0.5em;
+	
+	/* Layout vertically, stretching to fill space */
+	display: flex;
+	flex-direction: column;
+	flex-grow: 100;
+	vertical-align: center;
+	
+	padding: 0.5em;
+}
+
+#RemoteResourceStatus #RemoteResourceProgressWrapper progress
+{
+	/* Expand the progress bar to the whole width */
+	width: 100%;
+}

@@ -1,0 +1,48 @@
+{
+	"frames": [
+	
+	],
+	"list": [
+
+
+		{
+			"name":"buildings_list_heading",
+			"x": 18 ,
+			"y": 20,
+			"size": {
+				"width": 1086 ,
+				"height" : 170
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"priority": 1
+		},
+		{
+			"name":"divider",
+			"x": 18 ,
+			"y": 95,
+			"size": {
+				"width": 1086 ,
+				"height" : 20
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"priority": 2
+		},
+		{
+			"name":"buildings_list",
+			"x": 18 ,
+			"y": 120,
+			"size": {
+				"width": 1086 ,
+				"height" : 580
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"font_colour":"dark_brown",
+			"priority": 2
+		},
+		
+
+	]
+}

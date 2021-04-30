@@ -1,0 +1,63 @@
+group base_minerals
+resource iron
+resource lead
+resource copper
+resource tin
+
+group precious_minerals
+resource silver
+resource gold
+
+group all_minerals
+resource iron
+resource lead
+resource copper
+resource tin
+resource silver
+resource gold
+
+group agricultural_goods
+resource wine
+resource grain
+resource olive_oil
+
+group live_goods
+resource slaves
+resource wild_animals
+
+group homewares
+resource pottery
+resource glass
+
+group building_supplies
+resource timber
+resource marble
+
+group fabrics_dyes
+resource silk
+resource textiles
+resource purple_dye
+
+group rarities
+resource amber
+resource silk
+resource purple_dye
+resource incense
+
+group fun
+resource silk
+resource textiles
+resource purple_dye
+resource wine
+
+group healing
+resource amber
+resource incense
+
+group hunting
+resource hides
+resource wild_animals
+
+group one_god
+resource silk
+resource incence

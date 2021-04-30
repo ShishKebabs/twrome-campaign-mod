@@ -1,0 +1,29 @@
+plan
+
+{
+
+floor	underlay_roman_country_villa.cas 	overlay_roman_country_villa.cas
+
+ground_types			ground_roman_country_villa.tga -64 -64 64 64
+	borders	border_limits_64m_diameter.CAS
+
+
+roman_country_villa,		8,	20,	0,	0
+pumpkin_patch,			52,	-48,	0,	0
+pumpkin_patch,			28,	-48,	0,	0
+roman_statue_halfsize,		-9,	16,	90,	-0.5
+tree_B,				56.032,	11.997,	-120,	0
+tree_B,				38,	-26,	0,	0
+tree_C,				-24,	-20,	-10,	0
+tree_C,				-18.75,	-21,	170,	0
+tree_C,				45.25,	-17,	170,	0
+tree_C,				25.25,	47,	170,	0
+tree_C,				-38.75,	51,	170,	0
+tree_C,				-36,	40,	180,	0
+tree_C,				56,	28,	180,	0
+tree_C,				-20,	-16,	180,	0
+tree_E,				52.03,	48.011,	-70,	0
+tree_E,				-11,	-27,	0,	0
+		
+
+	}

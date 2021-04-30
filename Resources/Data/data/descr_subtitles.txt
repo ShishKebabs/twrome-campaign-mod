@@ -1,0 +1,117 @@
+;; This is a database file to match fmvs that require subtitles to the various files used by the subtitle system
+;;
+;; Each record requires 4 keywords:
+;;  - fmv:	   <path>	- The name of the fmv file as passed into game_fmv_handler.set_fmv_options()
+;;  - timings: <path>   - The path to the file with the timings offset.  At the moment the subtitle system reads
+;;						  the .smi file format, but this may change to something a bit more readable
+;;  - text:	   <file>	- The localised text file for all the subtitles.  This file must live in data/text
+;;  - lookup:  <path>	- Path to the lookup file that matches the localised text file.  This is a requirement of
+;;						  the localisation system
+
+
+;; Prologue Intro
+
+fmv:		prologue_640x480_needs_audio.wmv
+timings:	data/text/fmv_timings/prologue_subtitle_timing.txt
+text:		FactionIntroSubTitles.txt
+lookup:		data/FactionIntroSubTitles_lookup.txt
+
+
+;; Barbarian Intro
+
+fmv:		barbarian_intro_1080p.wmv
+timings:	data/text/fmv_timings/barbarian_subtitle_timing.txt
+text:		FactionIntroSubTitles.txt
+lookup:		data/FactionIntroSubTitles_lookup.txt
+
+
+;; Brutii Intro
+
+fmv:		brutii_intro_1080p.wmv
+timings:	data/text/fmv_timings/brutii_subtitle_timing.txt
+text:		FactionIntroSubTitles.txt
+lookup:		data/FactionIntroSubTitles_lookup.txt
+
+
+;; Carthaginian Intro
+
+fmv:		carthage_intro_1080p.wmv
+timings:	data/text/fmv_timings/carthage_subtitle_timing.txt
+text:		FactionIntroSubTitles.txt
+lookup:		data/FactionIntroSubTitles_lookup.txt
+
+
+;; Eastern Intro
+
+fmv:		eastern_intro_1080p.wmv
+timings:	data/text/fmv_timings/eastern_subtitle_timing.txt
+text:		FactionIntroSubTitles.txt
+lookup:		data/FactionIntroSubTitles_lookup.txt
+
+
+;; Egyptian Intro
+
+fmv:		egyptian_intro_1080p.wmv
+timings:	data/text/fmv_timings/egyptian_subtitle_timing.txt
+text:		FactionIntroSubTitles.txt
+lookup:		data/FactionIntroSubTitles_lookup.txt
+
+
+;; Greek Intro
+
+fmv:		greek_intro_1080p.wmv
+timings:	data/text/fmv_timings/greek_subtitle_timing.txt
+text:		FactionIntroSubTitles.txt
+lookup:		data/FactionIntroSubTitles_lookup.txt
+
+
+;; Julii Intro
+
+fmv:		julii_intro_1080p.wmv
+timings:	data/text/fmv_timings/julii_subtitle_timing.txt
+text:		FactionIntroSubTitles.txt
+lookup:		data/FactionIntroSubTitles_lookup.txt
+
+
+;; Scipii Intro
+
+fmv:		scipii_intro_1080p.wmv
+timings:	data/text/fmv_timings/scipii_subtitle_timing.txt
+text:		FactionIntroSubTitles.txt
+lookup:		data/FactionIntroSubTitles_lookup.txt
+
+
+;; Spain Intro
+
+fmv:		spain_intro_1080p.wmv
+timings:	data/text/fmv_timings/spain_subtitle_timing.txt
+text:		FactionIntroSubTitles.txt
+lookup:		data/FactionIntroSubTitles_lookup.txt
+
+;; Thrace Intro
+
+fmv:		thrace_intro_1080p.wmv
+timings:	data/text/fmv_timings/thrace_subtitle_timing.txt
+text:		FactionIntroSubTitles.txt
+lookup:		data/FactionIntroSubTitles_lookup.txt
+
+;; Numidia Intro
+
+fmv:		numidia_intro_1080p.wmv
+timings:	data/text/fmv_timings/numidia_subtitle_timing.txt
+text:		FactionIntroSubTitles.txt
+lookup:		data/FactionIntroSubTitles_lookup.txt
+
+;; Scythia Intro
+
+fmv:		scythia_intro_1080p.wmv
+timings:	data/text/fmv_timings/scythia_subtitle_timing.txt
+text:		FactionIntroSubTitles.txt
+lookup:		data/FactionIntroSubTitles_lookup.txt
+
+;; Armenia Intro
+
+fmv:		armenia_intro_1080p.wmv
+timings:	data/text/fmv_timings/armenia_subtitle_timing.txt
+text:		FactionIntroSubTitles.txt
+lookup:		data/FactionIntroSubTitles_lookup.txt

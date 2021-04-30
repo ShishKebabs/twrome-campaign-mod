@@ -1,0 +1,254 @@
+
+{
+    "frames": [
+
+    ],
+    "list": [
+        {
+            "name": "current_equipment",
+            "x": 364 ,
+            "y": 255,
+            "align": "TC",
+            "font_colour":"black"
+        },
+        {
+            "name": "queue_time_string",
+            "x": 580,
+            "y": 370,
+            "size": {
+                "width": 873 ,
+            },
+            "align": "TL",
+            "font_colour":"dark_brown"
+        },
+
+        {
+            "name": "portrait_frame",
+            "x": 563 ,
+            "y": 125,
+            "size": {
+                "width": 1020 ,
+                "height": 400,
+            },
+            "align": "TC",
+        },
+
+        {
+            "name": "base_frame",
+            "_comment": "this stops tooltips from elements behind the frame to pop up" ,
+            "x": 555 ,
+            "y": 0,
+            "size": {
+                "width": 1109 ,
+                "height": 675,
+            },
+            "align": "TC",
+        },
+
+        {
+            "name": "image",
+            "x": 320 ,
+            "y": 270,
+            "size": {
+                "width": 450 ,
+                "height": 200,
+                "max_height": 240
+            },
+            "align": "TC",
+            "ar_correct_height%": true
+        },
+
+        {
+            "name": "title_string",
+            "x": 562 ,
+            "y": 24,
+            "align": "TC",
+            "font":"cinzel",
+            "font_colour":"dark_brown"
+        },
+        {
+            "name": "defences_string",
+            "x": -18204 ,
+            "y": -1000,
+            "align": "TC",
+            "priority": 1,
+            "font":"verdana_lrg",
+            "font_colour":"dark_brown"
+        },
+        {
+            "name": "equipment_string",
+            "x": 562 ,
+            "y": 150,
+            "align": "TC",
+            "priority": 1,
+            "font":"cinzel",
+            "font_colour":"dark_brown"
+        },
+        {
+            "name": "info_string",
+            "x": 562 ,
+            "y": 85,
+            "size": {
+                "width": 873 ,
+            },
+            "align": "TC",
+            "font":"cinzel_med",
+            "font_colour":"dark_brown",
+            "annotation_id": "Rome.Annotations.siege_1-food"
+        },
+
+        {
+            "name": "select_equipment_string",
+            "x": 562 ,
+            "y": 190,
+            "size": {
+                "width": 873 ,
+            },
+            "align": "TC",
+            "font":"verdana_med",
+            "font_colour":"dark_brown"
+        },
+
+        {
+            "name": "divider",
+            "x": 562 ,
+            "y": 64,
+            "size": {
+                "width": 1020 ,
+                "height": 25,
+            },
+            "align": "TC",
+        },
+
+        {
+            "name": "build_point_string",
+            "x": 580,
+            "y": 240,
+            "size": {
+                "width": 873,
+            },
+            "align": "TL",
+            "font_colour":"dark_brown",
+            "annotation_id": "Rome.Annotations.siege_1-queue"
+        },
+        {
+            "name": "defenses_group",
+            "x": -18204 ,
+            "y": -1000,
+            "align":"TC",
+            "annotation_id": "Rome.Annotations.siege_1-def"
+        },
+        {
+            "name": "equipment_frame",
+            "x": 800 ,
+            "y": 250,
+            "size": {
+                "width": 430 ,
+                "height": 100
+            },
+            "align": "TC",
+            "annotation_id": "Rome.Annotations.siege_1-equip"
+        },
+        {
+            "name": "equipment_build_queue",
+            "x": 800 ,
+            "y": 410,
+            "size": {
+                "width": 450 ,
+                "height": 80
+            },
+            "align": "TC",
+            "annotation_id": "Rome.Annotations.siege_1-queue"
+        },
+        {
+            "name": "equipment_build_queue_slider",
+            "x": -300,
+            "y": -300,
+        },
+        {
+            "name": "end_siege_button",
+            "x": 411 ,
+            "y": 570,
+            "align": "C",
+            "size": {
+                "width":69,
+                "height":69
+            },
+            "annotation_id": "Rome.Annotations.siege_2-lift",
+        },
+        {
+            "name": "assualt_button",
+            "x": 561 ,
+            "y": 570,
+            "align": "C",
+            "size": {
+                "width":69,
+                "height":69
+            },
+            "annotation_id": "Rome.Annotations.siege_2-attack",
+        },
+        {
+            "name": "maintain_siege_button",
+            "x": 711 ,
+            "y": 570,
+            "align": "C",
+            "size": {
+                "width":69,
+                "height":69
+            },
+            "annotation_id": "Rome.Annotations.siege_2-continue",
+        },
+        {
+            "name": "building_name",
+            "x": -765,
+            "y": 310,
+            "align":"C",
+            "size": {
+                "width": 200,
+                "height": 0
+            }
+        },
+        {
+            "name": "building_image",
+            "x": -588,
+            "y": 122
+        },
+        {
+            "name": "building_time",
+            "x": -650,
+            "y": 115
+        },
+        {
+            "name": "building_cost",
+            "x": -600,
+            "y": 115
+        },
+        {
+            "name": "building_upgrades",
+            "x": -500,
+            "y": 315,
+            "size": {
+                "width": 400,
+                "height": 400
+            }
+        },
+        {
+            "name": "building_description",
+            "x": -600,
+            "y": 344,
+            "size": {
+                "width": 350,
+                "height": 252
+            }
+        },
+        {
+            "name": "building_destroy",
+            "x": 840,
+            "y": -645,
+            "size": {
+                "width": 42,
+                "height": 42
+            }
+        },
+    ]
+}

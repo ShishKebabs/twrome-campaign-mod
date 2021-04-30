@@ -1,0 +1,83 @@
+faction alemanni
+model barb_male_peasant_lbc     40
+model barb_female_peasant_lbc   60
+
+faction empire_east
+model roman_male_peasant_lbc             40
+model roman_female_peasant_lbc   60
+
+faction empire_west
+model roman_male_peasant_lbc             40
+model roman_female_peasant_lbc   60
+
+faction franks
+model barb_male_peasant_lbc          40
+model barb_female_peasant_lbc   60
+
+faction huns
+model barb_male_peasant_lbc          40
+model barb_female_peasant_lbc   60
+
+faction sarmatians
+model barb_male_peasant_lbc          40
+model barb_female_peasant_lbc   60
+
+faction sassanids
+model eastern_male_peasant_lbc           40
+model east_female_peasant_lbc   60
+
+faction saxons
+model barb_male_peasant_lbc          40
+model barb_female_peasant_lbc   60
+
+faction vandals
+model barb_male_peasant_lbc          40
+model barb_female_peasant_lbc   60
+
+faction goths
+model barb_male_peasant_lbc          40
+model barb_female_peasant_lbc   60
+
+faction celts
+model barb_male_peasant_lbc          40
+model barb_female_peasant_lbc   60
+
+faction ostrogoths
+model barb_male_peasant_lbc          40
+model barb_female_peasant_lbc   60
+
+faction romano_british
+model roman_male_peasant_lbc             40
+model roman_female_peasant_lbc   60
+
+faction slavs
+model barb_male_peasant_lbc          40
+model barb_female_peasant_lbc   60
+
+faction berbers
+model eastern_male_peasant_lbc           40
+model east_female_peasant_lbc   60
+
+faction slave
+model roman_male_peasant_lbc             40
+model roman_female_peasant_lbc   60
+
+faction empire_east_rebels
+model roman_male_peasant_lbc             40
+model roman_female_peasant_lbc   60
+
+faction empire_west_rebels
+model roman_male_peasant_lbc             40
+model roman_female_peasant_lbc   60
+
+faction roxolani
+model barb_male_peasant_lbc     40
+model barb_female_peasant_lbc   60
+
+faction burgundii
+model barb_male_peasant_lbc     40
+model barb_female_peasant_lbc   60
+
+faction lombardi
+model barb_male_peasant_lbc     40
+model barb_female_peasant_lbc   60

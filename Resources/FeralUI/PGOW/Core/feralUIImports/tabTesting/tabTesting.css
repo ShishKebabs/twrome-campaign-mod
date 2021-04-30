@@ -1,0 +1,146 @@
+
+/* -----------------------------------------------
+   ----------------- Testing Tab -----------------
+  _______          _    _               
+ |__   __|        | |  (_)              
+    | |  ___  ___ | |_  _  _ __    __ _ 
+    | | / _ \/ __|| __|| || '_ \  / _` |
+    | ||  __/\__ \| |_ | || | | || (_| |
+    |_| \___||___/ \__||_||_| |_| \__, |
+                                   __/ |
+                                  |___/ 
+ -----------------------------------------------*/
+
+#ServerOptionsDialogGroup span.label2Line
+{
+	display:-webkit-flex;
+	-webkit-align-items: center;
+}
+
+#ServerOptionsDialogGroup span.label2Line>span
+{
+	display:-webkit-flex;
+	-webkit-flex-direction: column;
+	-webkit-flex-grow: 1;
+	-webkit-justify-content: center;
+}
+
+#ServerOptionsDialogGroup span.label2Line>span>*
+{
+	margin:0px;
+}
+
+#tabContentTesting label {
+	display: inline-block;
+}
+
+#ServerOptionsDialogGroup span.label2Line>span>.tabContentURL
+{
+	font-size: 8pt;
+	padding: 2px 2px 2px 20px;
+	word-wrap: break-word;
+	cursor: text;
+	-webkit-user-select: text;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+}
+
+
+#tabContentTesting .item > div {
+	margin: 10px;
+	text-align: center;
+}
+
+#tabContentTesting .performanceStats {
+	height: 40px;
+}
+
+#tabContentTesting .performanceStats>label
+{
+	margin-right: 0px;
+}
+
+#tabContentTesting div.checkboxList {
+	text-align: left;
+	-moz-column-count: 2;
+	-moz-column-gap: 10px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 10px;
+	column-count: 2;
+	column-gap: 10px;
+	margin: 10px 50px 0;
+	display: block;
+}
+
+#tabContentTesting .checkboxList label {
+	display: block;
+}
+
+#tabContentTesting .checkboxList label:not(.controlDisabled):hover {
+	color: #0071bc;
+	cursor: pointer;
+}
+
+
+#tabContentTesting div.sp-replacer.sp-light {
+	position: relative;
+	top: -1px !important;
+	border: 1px solid #ddd;
+	background: white;
+}
+
+#tabContentTesting .item .checkboxList label[data-visible-name="gameListVisible"]
+{
+	display:-webkit-flex;
+	display:flex;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+#tabContentTesting .item .checkboxList label[data-visible-name="gameListVisible"] > .selectric-wrapper
+{
+	-webkit-flex-grow: 1;
+	flex-grow: 1;
+}
+
+#tabContentTesting input[type="checkbox"][data-property-name="TestingRecordInput"]::after
+{
+	border-radius: 9px;
+	height: 9px;
+	width: 9px;
+	left: 2px;
+	top: 2px;
+	border: none;
+	border-bottom: none;
+	border-right: none;
+	background-color: transparent;
+}
+
+#tabContentTesting input[type="checkbox"][data-property-name="TestingRecordInput"]:checked::after
+{
+	background-color: red;
+}
+
+#ServerOptionsDialog #ServerOptionsDialogGroup > *
+{
+	width: 100%;
+} 
+
+#ServerOptionsDialog .selectric-wrapper 
+{
+	float: right;
+}
+
+#IdxConfigureDialog .flexParent.flexVertical .selectric-wrapper
+{
+	top:0px;
+}
+
+#tabContentAdvanced .verticallySensibleDropDown
+{
+         display:-webkit-flex;
+         -webkit-align-items:center;
+         color: #eee; 
+}

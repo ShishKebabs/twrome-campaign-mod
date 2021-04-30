@@ -1,0 +1,621 @@
+
+<li 	id="tabButtonTesting"
+		class="tabSelect button flexGrow noDisplay"
+		data-tab-id="tabContentTesting"
+		data-tab-position="7"
+		data-visible-name="TestingPanelVisible">
+	<img class="unselectedImg" src="images/navicons/testingoff.svg" />
+	<img class="selectedImg"   src="images/navicons/testing.svg"    />
+	<span data-inner-string="localise-Startup.Testing">Testing</span>
+</li>
+
+<div 	id="tabContentTesting"
+		class="tabbed scrollContainer noDisplay"
+		data-visible-name="TestingPanelVisible">
+	<span class="center">
+		<span class="item">
+			<div data-visible-name="MainIsGoldMaster">
+				<b class="internalPanelWarning" data-inner-string="localise-Startup.InternalPanelWarning">
+					The features on the Testing tab are not officially supported. If you use them, you do so at your own risk.
+				</b>
+			</div>
+			<div>
+				<label class="checkbox noWrap">
+					<input 	type="checkbox"
+							data-property-name="EnableTesterMode"
+							data-property-type="bool"
+							data-enabled-name="EnableTesterModeEnabled"/>
+					<span>Enable Tester Mode</span>
+				</label>
+				<span 	class="visiblePropShouldHide"
+						data-visible-name="TesterModeNeedsRestart"
+						style="color:red">
+					RESTART REQUIRED
+				</span>
+			</div>
+			<div class="performanceStats">
+				<label class="checkbox noWrap">
+					<input 	type="checkbox"
+							data-property-name="regFlag-D3DConfig-ShowFeralGUI"
+							data-property-type="bool" />
+					<span data-inner-string="localise-Startup.ShowPerformance">
+						Show Performance Overlay
+					</span>
+				</label>
+				<label class="checkbox noWrap">
+					<input 	type="checkbox"
+							data-property-name="regFlag-D3DConfig-CompactFeralGUI"
+							data-property-type="bool" />
+					<span data-inner-string="localise-Startup.CompactFeralGUI">
+						Use Compact Overlay
+					</span>
+				</label>
+			</div>
+
+			<div class="flexParent flexWrap flexCenter buttonList">
+				<input 	type="button"
+						class="centered customButton"
+						value="Test Dialogs…"
+						data-value-string="localise-Startup.TestDialogs"
+						data-property-name="TestDialogs"
+						data-property-type="" />
+				<input 	type="button"
+						class="centered customButton"
+						value="Configure Idx"
+						data-value-string="localise-Debug.ConfigureIdx"
+						data-dialog-name="IdxConfigureDialog" />
+				<input 	type="button"
+						class="centered customButton"
+						value="Server Options"
+						data-value-string="localise-Debug.ServerOptions"
+						data-dialog-name="ServerOptionsDialog"/>
+				<input 	type="button"
+						class="centered customButton"
+						value="Analytics Page"
+						data-property-name="TestAnalyticsPage"
+						data-property-type="" />
+			</div>
+
+			<div class="checkboxList">
+
+				<label>
+					<input	type="checkbox"
+							data-enabled-name="!regFlag-appRegKey-PlaybackRecordedInput"
+							data-property-name="TestingRecordInput"
+							data-property-type="bool" />
+					<span>Record input this run</span>
+				</label>
+
+				<label>
+					<input	type="checkbox"
+							data-enabled-name="!TestingRecordInput"
+							data-property-name="regFlag-appRegKey-PlaybackRecordedInput"
+							data-property-type="bool" />
+					<span>Play back recorded input from ~/RecordingLogfile.json</span>
+				</label>
+
+				<label data-visible-name="gameListVisible">
+					<span>Pick game:</span>
+					<select class="selectBox"
+							data-list-name="gameList"
+							data-property-name="gameListSelect"
+							data-property-type="int,string">
+					</select>
+				</label>
+
+				<label>
+					<input 	type="checkbox"
+							data-enabled-name="regFlag-MacDozeConfig-ClearSavesEnabled"
+							data-property-name="regFlag-MacDozeConfig-ClearSavesOnLaunch"
+							data-property-type="bool" />
+					<span>Clear saves</span>
+				</label>
+
+				<label>
+					<!--Disable if clear prefs is set, since that forces equivilent behaviour-->
+					<input 	type="checkbox"
+							data-enabled-name="!regFlag-MacDozeConfig-ClearPreferencesFolderOnLaunch"
+							data-property-name="regFlag-MacDozeConfig-ClearPreferencesOnLaunch"
+							data-property-type="bool" />
+					<span>Clear preferences on launch</span>
+				</label>
+
+				<label>
+					<input 	type="checkbox"
+							data-property-name="regFlag-MacDozeConfig-ClearPreferencesFolderOnLaunch"
+							data-property-type="bool" />
+					<span>Clear preferences folder on launch (will delete saves)</span>
+				</label>
+				<label>
+					<input 	type="checkbox"
+							data-property-name="ClearShaderCaches"
+							data-property-type="bool" />
+					<span>Clear Shader Caches (on next launch)</span>
+				</label>
+				<label>
+					<input 	type="checkbox"
+							data-property-name="regFlag-appRegKey-DisableAutoFeralCrashReport"
+							data-property-type="bool" />
+					<span>Disable automatic crash report submission</span>
+				</label>
+				<label>
+					<input 	type="checkbox"
+							data-property-name="regFlag-D3DConfig-PerformanceStatsMemory"
+							data-property-type="bool" />
+					<span>Show Memory Stats</span>
+				</label>
+				<label>
+					<input 	type="checkbox"
+					data-property-name="regFlag-D3DConfig-PerformanceStatsDraw"
+					data-property-type="bool" />
+					<span>Show Draw Stats</span>
+				</label>
+				<label>
+					<input 	type="checkbox"
+							data-property-name="regFlag-appRegKey-ResetAchievements"
+							data-property-type="bool" />
+					<span>Reset achievements</span>
+				</label>
+				<label data-visible-name="SupportTamperDetection">
+					<input 	type="checkbox"
+							data-property-name="TriggerTamperDetection"
+							data-property-type="bool" />
+					<span>Trigger Tamper Detection</span>
+				</label>
+				<label>
+					<input 	type="checkbox"
+							data-property-name="regFlag-MacDozeConfig-ForceBorderlessWindow"
+							data-property-type="bool" />
+					<span>Force borderless window</span>
+				</label>
+			</div>
+			<div id="pgowTesterList">
+				<label id="PGOWTesterSelector" data-visible-name="PGOWTesterListVisible">
+					<span>PGOWTester:</span>
+					<span>
+						<select class="selectBox openUpwards"
+						data-list-name="PGOWTesterList"
+						data-property-name="PGOWTesterSelect"
+						data-property-type="int,string">
+							<option value="">Test Option</option>
+						</select>
+					</span>
+				</label>
+			</div>
+		</span>
+	</span>
+</div>
+
+<div class="dialogsToAdd">
+	<!-- Dialog -->
+	<div 	id="IdxConfigureDialog"
+			class="dialog"
+			title="Idx Configuration"
+			data-dialog-min-width="720"
+			data-dialog-button-ids="ok"
+			data-dialog-button-strings="localise-Startup.OK"
+			data-dialog-hide-close
+			data-dialog-open-property="IdxConfigure">
+		<div class="flexParent flexSpaceBetween">
+			<span class="flexParent flexVertical flexStart">
+				<label>
+					<input 	type="checkbox"
+							data-property-name="regFlagChk-D3DConfig-NeverOverlayLiterals"
+							data-property-type="bool,bool" />
+					<span>Don't overlay vertex shader literals</span>
+				</label>
+				<label>
+					<input 	type="checkbox"
+							data-property-name="regFlagChk-D3DConfig-D3DSingleBuffered"
+							data-property-type="bool,bool" />
+					<span>Single Buffered</span>
+				</label>
+				<label>
+					<input 	type="checkbox"
+							data-property-name="regFlagChk-D3DConfig-AllowD3D1x"
+							data-property-type="bool,bool" />
+					<span>Allow D3D1x</span>
+				</label>
+				<label>
+					<input 	type="checkbox"
+							data-property-name="regFlagChk-D3DConfig-AllowSM5"
+							data-property-type="bool,bool" />
+					<span>Allow <abbr title="Shader Model 5">SM5</abbr></span>
+				</label>
+			</span>
+			<span class="flexParent flexVertical flexStart">
+				<label>
+					<input 	type="checkbox"
+							data-property-name="regFlagChk-D3DConfig-DisableUBOs"
+							data-property-type="bool,bool" />
+					<span>Disable <abbr title="Uniform Buffer Object">UBO</abbr>s</span>
+				</label>
+				<label>
+					<input 	type="checkbox"
+							data-property-name="regFlagChk-D3DConfig-DisableSSOs"
+							data-property-type="bool,bool" />
+					<span>Disable <abbr title="Single Shader Object">SSO</abbr>s</span>
+				</label>
+				<label>
+					<input 	type="checkbox"
+							data-property-name="regFlagChk-appRegKey-UseGLTexturePools"
+							data-property-type="bool,bool" />
+					<span>Pool Textures</span>
+				</label>
+				<label>
+					<input 	type="checkbox"
+							data-property-name="regFlagChk-appRegKey-UseGLBufferPools"
+							data-property-type="bool,bool" />
+					<span>Pool Buffers</span>
+				</label>
+				<label>
+					<input 	type="checkbox"
+							data-property-name="regFlagChk-appRegKey-UseGLTexturePoolDiscard"
+							data-property-type="bool,bool" />
+					<span>Discard Texture Pool Backing Stores</span>
+				</label>
+				<label>
+					<input 	type="checkbox"
+							data-property-name="regFlagChk-appRegKey-UseGLBufferPoolDiscard"
+							data-property-type="bool,bool" />
+					<span>Discard Buffer Pool Backing Stores</span>
+				</label>
+				<label>
+					<input 	type="checkbox"
+							data-property-name="regFlagChk-D3DConfig-UseMTGL"
+							data-property-type="bool,bool" />
+					<span>Multi-threaded GL</span>
+				</label>
+			</span>
+		</div>
+		<span class="flexParent flexSpaceBetween">
+			<div>
+				<label class="verticallySensibleDropDown">
+					Min VBO Buffer Size to Map:
+					<select class="selectBox openUpwards"
+						data-property-name="VBOMinMemToMapSelect"
+						data-property-type="int,string">
+						<option>
+							Off
+						</option>
+						<option>
+							16384
+						</option>
+						<option>
+							32768
+						</option>
+						<option>
+							65536
+						</option>
+						<option>
+							????
+						</option>
+					</select>
+				</label>
+			</div>
+			<div>
+				<label class="verticallySensibleDropDown">
+					UBO upload strategy:
+					<select class="selectBox openUpwards"
+						data-property-name="UBOUploadStrategySelect"
+						data-property-type="int">
+						<option>
+							Choose Best
+						</option>
+						<option>
+							Orphan + BufferSubData
+						</option>
+						<option>
+							BufferData
+						</option>
+						<option>
+							BufferSubData
+						</option>
+						<option>
+							Map/Unmap
+						</option>
+						<option>
+							None of the above
+						</option>
+					</select>
+				</label>
+			</div>
+			<label class="verticallySensibleDropDown">
+				Renderer:
+				<select class="selectBox openUpwards"
+					data-list-name="RendererList"
+					data-property-name="RendererSelect"
+					data-property-type="int">
+					<option value="Default">
+						Default
+					</option>
+				</select>
+			</label>
+			<label class="verticallySensibleDropDown">
+				Preferred API:
+				<select class="selectBox openUpwards"
+					data-list-name="PreferredAPIList"
+					data-property-name="PreferredAPISelect"
+					data-property-type="int">
+					<option value="Default">
+						Default
+					</option>
+				</select>
+			</label>
+		</span>
+	</div>
+	<!-- End Dialog -->
+
+	<!-- Dialog -->
+	<div 	id="ServerOptionsDialog"
+			class="dialog"
+			title="Server Options"
+			data-dialog-min-width="700"
+			data-dialog-max-height="630"
+			data-dialog-button-ids="ok"
+			data-dialog-button-strings="localise-Startup.OK"
+			data-dialog-hide-close
+			data-dialog-open-property="ServerOptions">
+		<!--<h3><p data-inner-string="GamePadConfigureHeading">Gamepad configuration</p></h3>-->
+
+		<input 	type="button"
+				class="customButton"
+				value="Reset All"
+				data-property-name="ResetAllServerOptions"
+				data-property-type=""/>
+
+		<input 	type="button"
+				class="customButton"
+				value="Apply"
+				data-property-name="ApplyAllServerOptions"
+				data-property-type=""/>
+		<hr />
+
+		<span id="ServerOptionsDialogGroup" class="flexParent flexVertical flexStart">
+			<div 	class="flexParent flexAlignBaseline"
+					data-visible-name="NeedRestartTextVisible">
+				<span data-localise-string="localise-Debug.pgowNeedRestart"
+					  style="color:red">
+					Please restart the game for changes to take effect.
+				</span>
+			</div>
+
+
+			<span class="label2Line">
+				<span>
+					<label>
+						DLC autoupdates:
+					</label>
+					<span data-inner-string="DLCAutoupdateURL" class="tabContentURL">
+						xxx
+					</span>
+				</span>
+				<select class="selectBox"
+						data-list-name="DLCAutoUpdatesList"
+						data-property-name="DLCAutoUpdatesSelect"
+						data-property-type="int">
+					<option value="Default">
+						Default
+					</option>
+				</select>
+			</span>
+			<span class="label2Line">
+				<span>
+					<label>
+						String autoupdates:
+					</label>
+					<span data-inner-string="StringAutoupdateURL" class="tabContentURL">
+						xxx
+					</span>
+				</span>
+				<select class="selectBox"
+						data-list-name="StringsAutoUpdatesList"
+						data-property-name="StringsAutoUpdatesSelect"
+						data-property-type="int">
+					<option value="Default">
+						Default
+					</option>
+				</select>
+			</span>
+			<span class="label2Line">
+				<span>
+					<label>
+						Input Device autoupdates:
+					</label>
+					<span data-inner-string="InputDevicesAutoupdateURL" class="tabContentURL">
+						xxx
+					</span>
+					<span data-inner-string="InputDevicesAutoupdateURLCommon" class="tabContentURL">
+						xxx
+					</span>
+				</span>
+				<select class="selectBox"
+						data-list-name="InputDeviceAutoUpdatesList"
+						data-property-name="InputDeviceAutoUpdatesSelect"
+						data-property-type="int">
+					<option value="Default">
+						Default
+					</option>
+				</select>
+			</span>
+			<span class="label2Line">
+				<span>
+					<label>
+						Shader autoupdates:
+					</label>
+					<span data-inner-string="ShaderAutoupdateURL" class="tabContentURL">
+						xxx
+					</span>
+				</span>
+				<select class="selectBox"
+						data-list-name="ShaderAutoUpdatesList"
+						data-property-name="ShaderAutoUpdatesSelect"
+						data-property-type="int">
+					<option value="Default">
+						Default
+					</option>
+				</select>
+			</span>
+			<span class="label2Line">
+				<span>
+					<label>
+						Specifications autoupdates:
+					</label>
+					<span data-inner-string="SpecificationAutoupdateURL" class="tabContentURL">
+						xxx
+					</span>
+				</span>
+				<select class="selectBox openUpwards"
+						data-list-name="SpecificationUpdateList"
+						data-property-name="SpecificationUpdateSelect"
+						data-property-type="int">
+					<option value="Default">
+						Default
+					</option>
+				</select>
+			</span>
+			<span class="label2Line">
+				<span>
+					<label>
+						DLC store:
+					</label>
+					<span data-inner-string="DLCStoreAutoupdateURL" class="tabContentURL">
+						xxx
+					</span>
+				</span>
+				<select class="selectBox openUpwards"
+						data-list-name="DLCStoreList"
+						data-property-name="DLCStoreSelect"
+						data-property-type="int">
+					<option value="Default">
+						Default
+					</option>
+				</select>
+			</span>
+			<span class="label2Line">
+				<span>
+					<label>
+						Documentation and minisites:
+					</label>
+					<span data-inner-string="DocumentationAutoupdateURL" class="tabContentURL">
+						xxx
+					</span>
+				</span>
+				<select class="selectBox openUpwards"
+						data-list-name="DocumentationAndMinisitesList"
+						data-property-name="DocumentationAndMinisitesSelect"
+						data-property-type="int">
+					<option value="Default">
+						Default
+					</option>
+				</select>
+			</span>
+			<span class="label2Line">
+				<span>
+					<label>
+						FeralNet account server:
+					</label>
+					<span data-inner-string="FeralNetAccountAutoupdateURL" class="tabContentURL">
+						xxx
+					</span>
+				</span>
+				<select class="selectBox openUpwards"
+						data-list-name="FeralNetAccountServerList"
+						data-property-name="FeralNetAccountServerSelect"
+						data-property-type="int">
+					<option value="Default">
+						Default
+					</option>
+				</select>
+			</span>
+
+			<span class="label2Line">
+				<span>
+					<label>
+						News panel URL:
+					</label>
+					<span data-inner-string="NewsURL" class="tabContentURL">
+						xxx
+					</span>
+				</span>
+				<label>
+					<input 	type="checkbox"
+					data-property-name="NewsURLSuffixCheckbox"
+					data-property-type="bool" />
+					<span>Use test suffix</span>
+				</label>
+				<select class="selectBox openUpwards"
+						data-list-name="NewsURLList"
+						data-property-name="NewsURLSelect"
+						data-property-type="int">
+					<option value="Default">
+						Default
+					</option>
+				</select>
+			</span>
+
+		</span>
+	</div>
+	<!-- End Dialog -->
+</div>
+
+<script src="../importTabScript.js"></script>
+<script>
+	startupPropertyLoadTasks.push(initialiseRestartCheck);
+
+	function initialiseRestartCheck()
+	{
+		var propValuesObj =
+			{
+				"regFlag-MacDozeConfig-ClearRegistryOnLaunch": 			{},
+				"regFlag-MacDozeConfig-ClearPreferencesFolderOnLaunch": {},
+				"ClearShaderCaches": 									{},
+				"EnableTesterMode": 									{}
+			};
+		var restartCheckPromiseArray = [];
+
+		var needsRestartCheck = function()
+		{
+			var restartNeeded = false;
+			for (var valueObj in propValuesObj)
+			{
+				if(propValuesObj[valueObj]["currentValue"] !== undefined)
+					restartNeeded = restartNeeded || ( propValuesObj[valueObj].currentValue !=
+						                               propValuesObj[valueObj].initialValue   );
+			}
+
+			setPropertyValue(	"TesterModeNeedsRestart",
+												"bool",
+												[restartNeeded],
+												[]);
+		}
+
+		var updateNeedsRestartState = function(propertyName, typePattern, propValueArray)
+			{
+				if( propValuesObj[propertyName].initialValue === undefined)
+					propValuesObj[propertyName].initialValue = propValueArray[0];
+				propValuesObj[propertyName].currentValue = propValueArray[0];
+
+				needsRestartCheck();
+
+				return true;
+			};
+
+		for (var valueObj in propValuesObj)
+		{
+			restartCheckPromiseArray.push(hookPropertyToFunction(	valueObj,
+																	"bool",
+																	updateNeedsRestartState));
+		}
+
+		restartCheckPromiseArray.push(
+			hookPropertyToFunction(	"TesterModeNeedsRestart",
+									"bool",
+									function(){return true;}));
+
+		return Promise.allFinish(restartCheckPromiseArray);
+	}
+</script>
+<script src='../../3rdParty/spectrum/spectrum.js'></script>
+<link rel='stylesheet' href='../../3rdParty/spectrum/spectrum.css' />
+<link rel="stylesheet" type="text/css" href="tabTesting.css" />

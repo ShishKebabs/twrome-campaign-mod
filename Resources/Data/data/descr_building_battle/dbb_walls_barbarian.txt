@@ -1,0 +1,376 @@
+
+; ***  for generic-wall settlements
+
+	barbarian_town_gateway
+	{
+		full_health 10
+		localised_name gateway
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_wooden_short_gateway
+			physical_info	info_walls/wooden_wall_short_gateway_info.CAS
+		}
+	}
+
+	barbarian_town_wall_straight
+	{
+		full_health 100
+		localised_name wall
+		level
+		{
+			min_health 60
+			battle_stats
+			item		barb_wooden_short_straight
+			physical_info	info_walls/wooden_wall_short_straight_info.CAS
+		}
+		transition ; undamaged to damaged
+		{
+			duration 120
+			physical_switch 30
+			item barb_wooden_short_straight_damaged_static
+			{
+				0 enable
+				120 disable
+			}
+			item barb_wooden_short_straight_damaged_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 30
+			battle_stats
+			item		barb_wooden_short_straight_damaged_static barb_wooden_short_straight_damaged_remains
+			physical_info	info_walls/wooden_wall_short_straight_damaged_info.CAS
+		}
+		transition ; damaged to destroyed
+		{
+			duration 120
+			kill_zone 5 wooden_wall_short_straight_destroyed_kill_zone_05.CAS
+			physical_switch 30
+			item barb_wooden_short_straight_destroyed_static
+			{
+				0 enable
+				120 disable
+			}
+			item barb_wooden_short_straight_destroyed_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_wooden_short_straight_destroyed_static barb_wooden_short_straight_destroyed_remains
+			physical_info	info_walls/wooden_wall_short_straight_destroyed_info.CAS
+		}
+	}
+
+	barbarian_town_wall_joiner_straight
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_wooden_short_joiner_straight
+			physical_info	info_walls/wooden_wall_short_joiner_straight_info.CAS
+		}
+	}
+
+	barbarian_town_wall_watchtower
+	{
+		full_health 10
+		localised_name tower
+		level
+		{
+			min_health 1
+			battle_stats
+			item		barb_wooden_short_watchtower
+			physical_info	info_walls/wooden_wall_short_watchtower_info.CAS
+		}
+		transition ; undamaged to destroyed
+		{
+			duration 120
+			physical_switch 30
+			item barb_wooden_short_watchtower_destroyed_static
+			{
+				0 enable
+				120 disable
+			}
+			item barb_wooden_short_watchtower_destroyed_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_wooden_short_watchtower_destroyed_static barb_wooden_short_watchtower_destroyed_remains
+			physical_info	info_walls/wooden_wall_short_watchtower_destroyed_info.CAS
+		}
+	}
+
+	barbarian_town_wall_joiner_diagonal
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_wooden_short_joiner_diagonal
+			physical_info	info_walls/wooden_wall_short_joiner_diagonal_info.CAS
+		}
+	}
+
+	barbarian_town_wall_joiner_internal_left
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_wooden_short_joiner_internal_left
+			physical_info	info_walls/wooden_wall_short_joiner_internal_left_info.CAS
+		}
+	}
+
+	barbarian_town_wall_joiner_internal_right
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_wooden_short_joiner_internal_right
+			physical_info	info_walls/wooden_wall_short_joiner_internal_right_info.CAS
+		}
+	}
+
+	barbarian_town_wall_joiner_external_right
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_wooden_short_joiner_external_right
+			physical_info	info_walls/wooden_wall_short_joiner_external_right_info.CAS
+		}
+	}
+
+	barbarian_town_wall_joiner_external_left
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_wooden_short_joiner_external_left
+			physical_info	info_walls/wooden_wall_short_joiner_external_left_info.CAS
+		}
+	}
+
+	barbarian_town_wall_internal_corner
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_wooden_short_internal_corner
+			physical_info	info_walls/wooden_wall_short_ic_info.CAS
+		}
+	}
+
+	barbarian_town_wall_external_corner
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_wooden_short_external_corner
+			physical_info	info_walls/wooden_wall_short_ec_info.CAS
+		}
+	}
+
+	barbarian_town_wall_internal_corner_watchtower
+	{
+		full_health 10
+		localised_name tower
+		level
+		{
+			min_health 1
+			battle_stats
+			item		barb_wooden_short_internal_corner_watchtower
+			physical_info	info_walls/wooden_wall_short_ic_watchtower_info.CAS
+		}
+		transition ; undamaged to destroyed
+		{
+			duration 120
+			physical_switch 30
+			item barb_wooden_short_internal_corner_watchtower_destroyed_static
+			{
+				0 enable
+				120 disable
+			}
+			item barb_wooden_short_internal_corner_watchtower_destroyed_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_wooden_short_internal_corner_watchtower_destroyed_static barb_wooden_short_internal_corner_watchtower_destroyed_remains
+			physical_info	info_walls/wooden_wall_short_ic_watchtower_destroyed_info.CAS
+		}
+	}
+
+	barbarian_town_wall_external_corner_watchtower
+	{
+		full_health 10
+		localised_name tower
+		level
+		{
+			min_health 1
+			battle_stats
+			item		barb_wooden_short_external_corner_watchtower
+			physical_info	info_walls/wooden_wall_short_ec_watchtower_info.CAS
+		}
+		transition ; undamaged to destroyed
+		{
+			duration 120
+			physical_switch 30
+			item barb_wooden_short_external_corner_watchtower_destroyed_static
+			{
+				0 enable
+				120 disable
+			}
+			item barb_wooden_short_external_corner_watchtower_destroyed_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_wooden_short_external_corner_watchtower_destroyed_static barb_wooden_short_external_corner_watchtower_destroyed_remains
+			physical_info	info_walls/wooden_wall_short_ec_watchtower_destroyed_info.CAS
+		}
+	}
+
+; ***  for round settlements
+
+
+	barbarian_wooden_town_gateway
+	{
+		full_health 10
+		localised_name gateway
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barbarian_wooden_town_gateway
+			physical_info	info_barbarian_wooden_town_gateway.cas
+		}
+	}
+
+	barbarian_wooden_village_gateway
+	{
+		full_health 10
+		localised_name gateway
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barbarian_wooden_village_gateway
+			physical_info	info_barbarian_wooden_village_gateway.cas
+		}
+	}
+
+	barbarian_wooden_town_watchtower
+	{
+		full_health 10
+		localised_name tower
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barbarian_wooden_town_watchtower
+			physical_info	info_barbarian_wooden_town_watchtower.cas
+		}
+	}
+
+	barbarian_wooden_village_watchtower
+	{
+		full_health 10
+		localised_name tower
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barbarian_wooden_village_watchtower
+			physical_info	info_barbarian_wooden_village_watchtower.cas
+		}
+	}
+
+	barbarian_wooden_town_wall_straight
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barbarian_wooden_town_wall_straight
+			physical_info	info_barbarian_wooden_town_wall_straight.cas
+		}
+	}
+
+	barbarian_wooden_village_wall_straight
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barbarian_wooden_village_wall_straight
+			physical_info	info_barbarian_wooden_village_wall_straight.cas
+		}
+	}

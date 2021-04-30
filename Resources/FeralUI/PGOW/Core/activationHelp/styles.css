@@ -1,0 +1,84 @@
+body {
+	background: url('activationHelpBack.jpg');
+	background-size: 199px auto;
+	margin: 0 auto;
+	padding: 0;
+	max-width: 880px;
+	font-family: Helvetica, sans-serif;
+}
+h1 {
+	margin: 20px 20px 20px 30px;
+	font-size: 30px;
+	color: white;
+}
+h1 img#logo {
+	float: right;
+	width: 100px;
+	height: auto;
+}
+article {
+	margin: 20px 20px 0;
+	background: url('../bgtexture.png');
+	padding: 10px 20px 20px;
+}
+article + a {
+	display: block;
+	color: #ee7b00;
+	text-align: center;
+	padding: 20px;
+	background: url('activationHelpBottom.jpg');
+	background-size: 199px auto;
+	text-decoration: none;
+	font-weight: bold;
+	box-shadow: 0px 0px 5px black;
+}
+article + a:hover {
+	color: white;
+}
+
+article + a:active {
+	color: white;
+	padding: 21px 20px 19px;
+}
+h2 {
+	text-align: center;
+	margin: 0 0 10px;
+	padding-top: 30px;
+	border-bottom: 2px solid #a9a9a9 ;
+}
+h2 em {
+	
+}
+article a {
+	color: #ee7b00;
+}
+article p, article li {
+	line-height: 1.5em;
+}
+#activationHelpKeydemo {
+	width: 70%;
+	text-align: center;
+	background: black;
+	text-transform: uppercase;
+	padding: 10px;
+	margin: 0 auto;
+}
+#activationHelpKeydemo h3 {
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+#activationHelpKeydemo p {
+	background: white;
+	padding: 10px;
+	margin: 10px 0 0;
+	border-radius: 50px;
+	font-size: 18px;
+}
+article img {
+	width: 80%;
+	margin: 10px 10%;
+}
+.question + p {
+	padding-left: 10px;
+}

@@ -1,0 +1,47 @@
+{
+	"frames": [
+		{
+			"name":"bg_frame",
+			"position": {
+				"x": 0,
+				"y": -425
+			},
+			"size": {
+				"width": 550,
+				"height": 950
+			},
+			"priority": -1,
+			"fill": "black_curved",
+			"anchor": "C",
+			"align": "TC",
+		}
+	],
+	"list": [
+		{
+			"name": "title",
+			"x": 0,
+			"y": -400,
+			"size": {
+				"width": 350,
+			},
+			"align": "TC",
+			"anchor": "C",
+			"font_colour":"dark_brown",
+			"font":"cinzel",
+			"priority": 2
+		},
+
+		{
+			"name": "list",
+			"x": 0,
+			"y": -305,
+			"size": {
+				"width" : 450,
+				"height": 450
+			},
+			"align": "TC",
+			"anchor": "C"
+		},
+		
+	]
+}

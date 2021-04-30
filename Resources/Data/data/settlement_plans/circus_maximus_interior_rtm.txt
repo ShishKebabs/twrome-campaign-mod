@@ -1,0 +1,40 @@
+plan
+
+{
+
+floor	underlay_circus_maximus_interior_RTM.cas overlay_circus_maximus_interior_RTM.cas
+
+
+;circus_maximus_interior_RTM,		0,	0,	0,	0
+
+roman_city_skyline,			0,	0,	0,	0
+
+;circus_maximus_RTM_carceres_statues,	-260,	0,	0,	0
+circus_maximus_RTM_carceres_end,	-260,	0,	0,	0
+circus_maximus_RTM_middle_section,	0,	0,	0,	0
+circus_maximus_RTM_rounded_end,		260,	0,	0,	0
+
+theatre,				200,	-200,	-100,	0
+
+roman_awesome_temple_group,		390,	-230,	95,	30
+roman_awesome_temple_group,		-530,	-50,	-55,	0
+
+roman_ambient_market,		-380,	260,	145,	0
+roman_ambient_market,		420,	-40,	55,	0
+
+colosseum,			520,	190,	130,	0
+
+triumphal_arch,			530,	50,	0,	0
+triumphal_arch,			-310,	0,	-15,	0
+
+roman_imperial_palace,			-80,	180,	0,	30
+
+bath_house_group,			-390,	70,	0,	0
+
+insulae_yellow,				300,	-20,	145,	0
+
+insulae_white,				310,	20,	-155,	0
+
+		
+
+	}

@@ -1,0 +1,50 @@
+
+/* -----------------------------------------------
+   ------------------ Debug Tab ------------------
+  _____         _                   
+ |  __ \       | |                  
+ | |  | |  ___ | |__   _   _   __ _ 
+ | |  | | / _ \| '_ \ | | | | / _` |
+ | |__| ||  __/| |_) || |_| || (_| |
+ |_____/  \___||_.__/  \__,_| \__, |
+                               __/ |
+                              |___/ 
+ -----------------------------------------------*/
+
+div#tabContentDebug > span.center > span.item {
+	text-align: left;
+	-moz-column-count: 2;
+	-moz-column-gap: 10px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 10px;
+	column-count: 2;
+	column-gap: 10px;
+	/*The arbitrary 190px appears to have been picked 
+	  because it makes the non-justified text look approximately 
+	  like 2 equal columns at the original design width of 930px. 
+	  *actually* centering looks bad because the left column text 
+	  doesn't reach the middle, so looks off-center */
+	margin: 10px 30px 0 190px;
+	/*this approximates the above number whilst responding to resizing. 
+	  It's still not perfect, but seems to work well for the range or 
+	  widths we're likely to use for now. might need something for larger 
+	  widths when we add the overlay specific denominator is to get the 
+	  exact same look at the design width.*/
+	margin-left:-webkit-calc(100% / 6);
+	margin-left:calc(100% / 6);
+	/*balance out the effect for the right hand side, in padding, 
+	  to not effect the centering. No effect until we get to small 
+	  resolutions or if we get longer checkbox strings*/
+	padding-right: -webkit-calc((100% / 6) - 30px);
+	padding-right: calc((100% / 6) - 30px);
+	display: block;
+}
+
+#tabContentDebug label {
+	display: block;
+}
+
+#tabContentDebug label:not(.controlDisabled):hover {
+	color: #0071bc;
+	cursor: pointer;
+}

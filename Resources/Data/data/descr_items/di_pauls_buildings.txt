@@ -1,0 +1,234 @@
+type			barbarian_marketplace
+lod
+max_distance		200
+model_rigid		barbarian_marketplace_high.cas
+lod
+max_distance		300
+model_rigid		barbarian_marketplace_med.cas
+lod
+max_distance		4000
+model_rigid		barbarian_marketplace_low.cas
+
+
+
+type			barbarian_smiths_workshop
+lod
+max_distance		200
+model_rigid		barbarian_smiths_workshop_very_high.cas
+lod
+max_distance		300
+model_rigid		barbarian_smiths_workshop_med.cas
+lod
+max_distance		500
+model_rigid		barbarian_smiths_workshop_low.cas
+lod
+max_distance		4000
+model_rigid		barbarian_smiths_workshop_very_low.cas
+
+
+
+type			greek_governors_villa
+lod
+max_distance		200
+model_rigid		greek_governors_villa_high.cas
+lod
+max_distance		400
+model_rigid		greek_governors_villa_med.cas
+lod
+max_distance		1000
+model_rigid		greek_governors_villa_low.cas
+
+
+
+type		greek_councillors_chambers
+lod
+max_distance	300
+model_rigid	greek_councillors_chambers_high.cas
+lod
+max_distance	500
+model_rigid	greek_councillors_chambers_med.cas
+lod
+max_distance	1000
+model_rigid	greek_councillors_chambers_low.cas
+
+
+type		greek_royal_palace
+lod
+max_distance	300
+model_rigid	greek_royal_palace_high.cas
+lod
+max_distance	500
+model_rigid	greek_royal_palace_med.cas
+lod
+max_distance	1000
+model_rigid	greek_royal_palace_low.cas
+
+
+
+type			warlords_hold
+lod
+max_distance		200
+model_rigid		warlords_hold_high.cas
+lod
+max_distance		300
+model_rigid		warlords_hold_low.cas
+lod
+max_distance		4000
+model_rigid		warlords_hold_very_low.cas
+
+
+
+type			sacred_grove
+lod
+max_distance		200
+model_rigid		sacred_grove_high.cas
+lod
+max_distance		500
+model_rigid		sacred_grove_low.cas
+lod
+max_distance		4000
+model_rigid		sacred_grove_very_low.cas
+
+
+
+
+type			warriors_hold
+lod
+max_distance		200
+model_rigid		warriors_hold_high.cas
+lod
+max_distance		300
+model_rigid		warriors_hold_med.cas
+lod
+max_distance		1000
+model_rigid		warriors_hold_low.cas
+
+
+
+
+type			sacred_circle
+lod
+max_distance		200
+model_rigid		sacred_circle_high.cas
+lod
+max_distance		500
+model_rigid		sacred_circle_low.cas
+lod
+max_distance		4000
+model_rigid		sacred_circle_very_low.cas
+
+
+
+type			high_kings_hall
+lod
+max_distance		200
+model_rigid		high_kings_hall_high.cas
+lod
+max_distance		300
+model_rigid		high_kings_hall_med.cas
+lod
+max_distance		500
+model_rigid		high_kings_hall_low.cas
+lod
+max_distance		4000
+model_rigid		high_kings_hall_very_low.cas
+
+
+
+type			drinking_hall
+lod
+max_distance		300
+model_rigid		drinking_hall_high.cas
+lod
+max_distance		500
+model_rigid		drinking_hall_low.cas
+lod
+max_distance		4000
+model_rigid		drinking_hall_very_low.cas
+
+type			drinking_hall_rubble
+lod
+max_distance		4000
+model_rigid		barb_musterfield_rubble.CAS
+
+
+type			mead_hall
+lod
+max_distance		300
+model_rigid		mead_hall_high.cas
+lod
+max_distance		500
+model_rigid		mead_hall_low.cas
+lod
+max_distance		4000
+model_rigid		mead_hall_very_low.cas
+
+
+
+
+type			hall_of_heroes
+lod
+max_distance		300
+model_rigid		hall_of_heroes_high.cas
+lod
+max_distance		500
+model_rigid		hall_of_heroes_med.cas
+lod
+max_distance		700
+model_rigid		hall_of_heroes_low.cas
+lod
+max_distance		4000
+model_rigid		hall_of_heroes_very_low.cas
+
+
+
+type			warlords_stable
+lod
+max_distance		200
+model_rigid		warlords_stable_high.cas
+lod
+max_distance		400
+model_rigid		warlords_stable_med.cas
+lod
+max_distance		600
+model_rigid		warlords_stable_low.cas
+lod
+max_distance		4000
+model_rigid		warlords_stable_very_low.cas
+
+
+
+type			barbarian_great_market
+lod
+max_distance		300
+model_rigid		barbarian_great_market_high.cas
+lod
+max_distance		500
+model_rigid		barbarian_great_market_med.cas
+lod
+max_distance		700
+model_rigid		barbarian_great_market_low.cas
+lod
+max_distance		4000
+model_rigid		barbarian_great_market_very_low.cas
+
+
+
+type			sacred_archway
+lod
+max_distance		300
+model_rigid		sacred_archway_high.cas
+lod
+max_distance		500
+model_rigid		sacred_archway_low.cas
+lod
+max_distance		4000
+model_rigid		sacred_archway_very_low.cas
+
+
+
+
+
+
+
+

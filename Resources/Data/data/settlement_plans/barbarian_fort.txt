@@ -1,0 +1,155 @@
+plan
+
+{
+
+floor					underlay_barbarian_fort.cas overlay_barbarian_town.cas
+
+street_plan				pathfinding_barbarian_town.cas
+
+borders
+{
+	gateway,			0,	-160,	0,	48
+	gateway,			0,	160,	180,	48		
+
+	tower_straight,			128,	-128,	45,	48
+	tower_straight,			160,	0,	90,	48
+	tower_straight,			128,	128,	135,	48
+	tower_straight,			-128,	128,	-135,	48
+	tower_straight,			-160,	0,	-90,	48
+	tower_straight,			-128,	-128,	-45,	48
+
+	straight,			64,	160,	180,	48
+	straight,			160,	64,	90,	48
+	straight,			160,	-64,	90,	48
+	straight,			64,	-160,	0,	48
+	straight,			-64,	-160,	0,	48
+	straight,			-160,	-64,	-90,	48
+	straight,			-160,	64,	-90,	48
+	straight,			-64,	160,	180,	48
+
+	external_left_link,		96,	160,	180,	48
+	external_right_link,		160,	96,	90,	48
+	external_left_link,		160,	-96,	90,	48
+	external_right_link,		96,	-160,	0,	48
+	external_left_link,		-96,	-160,	0,	48
+	external_right_link,		-160,	-96,	-90,	48
+	external_left_link,		-160,	96,	-90,	48
+	external_right_link,		-96,	160,	180,	48
+
+	straight_link,			160,	32,	90,	48
+	straight_link,			160,	-32,	90,	48
+	straight_link,			-160,	32,	-90,	48
+	straight_link,			-160,	-32,	-90,	48
+
+}
+
+
+barbarian_hall_large,	-34.67,	30.08,	80,	48
+
+barbarian_long_house,	-23.55,	68.11,	0,	48
+barbarian_long_house,	64.28,	20.48,	-90,	48
+barbarian_long_house,	84.38,	-124.40,	120.50,	48
+barbarian_long_house,	-59.55,	-135.07,	120.50,	48
+barbarian_long_house,	-87.18,	-13.97,	70.50,	48
+barbarian_long_house,	-133.64,	67.20,	-69.50,	48
+barbarian_long_house,	-90.82,	111.35,	10.50,	48
+
+barbarian_round_house_small,	91.57,	22.81,	80.50,	48
+barbarian_round_house_small,	125.66,	64.30,	-69.50,	48
+barbarian_round_house_small,	145.83,	65.29,	20.50,	48
+barbarian_round_house_small,	36.86,	150.94,	-69.50,	48
+barbarian_round_house_small,	35.21,	-151.22,	-149.50,	48
+barbarian_round_house_small,	57.24,	-153.03,	-129.50,	48
+barbarian_round_house_small,	139.61,	-67.70,	-19.50,	48
+barbarian_round_house_small,	-24.21,	-76.53,	70.50,	48
+barbarian_round_house_small,	-77.96,	-47.62,	70.50,	48
+barbarian_round_house_small,	-94.15,	-36.94,	-39.50,	48
+barbarian_round_house_small,	-124.15,	-59.65,	140.50,	48
+barbarian_round_house_small,	-119.61,	108.22,	-39.50,	48
+barbarian_round_house_small,	-155.73,	40.71,	70.50,	48
+barbarian_round_house_small,	-70.98,	83.84,	70.50,	48
+
+generals_stake_fence,	84.65,	-124.52,	-150,	48
+generals_stake_fence,	-30.03,	29.44,	80,	48
+generals_stake_fence,	-134.08,	67.95,	20,	48
+
+pile_of_logs,	21.90,	164.24,	59,	48
+pile_of_logs,	15.01,	-54.15,	-11,	48
+pile_of_logs,	54.80,	-43.78,	69,	48
+pile_of_logs,	-49.58,	-71.42,	109,	48
+pile_of_logs,	85.37,	-60.61,	-161,	48
+pile_of_logs,	15.25,	-149.25,	99,	48
+pile_of_logs,	-19.55,	-126.35,	99,	48
+pile_of_logs,	-19.54,	-139.48,	59,	48
+pile_of_logs,	-35.17,	-126.90,	19,	48
+pile_of_logs,	-111.49,	-13.41,	-11,	48
+pile_of_logs,	-90.28,	-107.67,	-171,	48
+pile_of_logs,	-142.89,	-58.69,	-41,	48
+pile_of_logs,	-153.41,	-64.01,	19,	48
+pile_of_logs,	-125.37,	18.80,	-71,	48
+pile_of_logs,	-137.24,	33.19,	-21,	48
+pile_of_logs,	-60.38,	27.84,	-101,	48
+pile_of_logs,	-103.93,	58.61,	-31,	48
+pile_of_logs,	-134.72,	94.73,	79,	48
+pile_of_logs,	-93.56,	136.56,	9,	48
+
+barbarian_round_house_large,	88.07,	126.20,	-19.50,	48
+barbarian_round_house_large,	107.19,	87.93,	60.50,	48
+barbarian_round_house_large,	137.67,	39.59,	-89.50,	48
+barbarian_round_house_large,	32.70,	72.17,	-99.50,	48
+barbarian_round_house_large,	63.53,	50.48,	-169.50,	48
+barbarian_round_house_large,	149.26,	2.73,	-89.50,	48
+barbarian_round_house_large,	136.77,	-31.79,	-119.50,	48
+barbarian_round_house_large,	-23.33,	103.89,	-79.50,	48
+barbarian_round_house_large,	19.78,	-26.20,	-179.50,	48
+barbarian_round_house_large,	39.14,	-55.81,	-129.50,	48
+barbarian_round_house_large,	88.32,	-83.12,	-149.50,	48
+barbarian_round_house_large,	-28.57,	-103.74,	90.50,	48
+barbarian_round_house_large,	-26.38,	-158.40,	80.50,	48
+barbarian_round_house_large,	-112.03,	-113.41,	140.50,	48
+barbarian_round_house_large,	-151.09,	9.12,	30.50,	48
+barbarian_round_house_large,	-151.29,	-37.02,	120.50,	48
+
+bush_A,	122.73,	-15.95,	0,	48
+bush_A,	124.71,	-60.74,	-20,	48
+bush_A,	11.77,	148.29,	20,	48
+bush_A,	13.85,	158.43,	-50,	48
+bush_A,	19.57,	-44.09,	-50,	48
+bush_A,	50.35,	-96.49,	-20,	48
+bush_A,	39.27,	-100.91,	50,	48
+bush_A,	9.18,	-138.66,	20,	48
+bush_A,	-46.24,	-83.54,	-50,	48
+bush_A,	-58.61,	-84.51,	-110,	48
+bush_A,	-49.80,	-158.69,	50,	48
+bush_A,	-104.58,	-28.23,	-110,	48
+bush_A,	-133.33,	-48.60,	-70,	48
+bush_A,	-105.31,	45.40,	-90,	48
+bush_A,	-86.37,	86.88,	-40,	48
+bush_A,	-44.02,	57.62,	20,	48
+bush_A,	-59.66,	103.61,	50,	48
+
+paddock,	-36.09,	151.92,	0,	48
+paddock,	-105.84,	-83.97,	110,	48
+
+tree_A,	64.48,	79.32,	0,	48
+tree_A,	133.66,	83.83,	-20,	48
+tree_A,	118.48,	112.45,	110,	48
+tree_A,	90.39,	43.42,	-170,	48
+tree_A,	58.98,	152.04,	-20,	48
+tree_A,	47.97,	-24.63,	-170,	48
+tree_A,	18.63,	-69.95,	-170,	48
+tree_A,	110.04,	-103.57,	-40,	48
+tree_A,	126.13,	-88.15,	-80,	48
+tree_A,	113.24,	-71.23,	-40,	48
+tree_A,	154.70,	-48.60,	-40,	48
+tree_A,	21.27,	-163.08,	-100,	48
+tree_A,	-53.01,	-102.28,	-70,	48
+tree_A,	-94.81,	-131.91,	-70,	48
+tree_A,	-137.17,	-75.62,	-90,	48
+tree_A,	-131.16,	-95.32,	-60,	48
+tree_A,	-163.19,	-19.19,	-90,	48
+tree_A,	-106.09,	78.70,	-50,	48
+tree_A,	-66.19,	140.69,	-100,	48
+
+
+}

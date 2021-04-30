@@ -1,0 +1,18 @@
+plan
+
+{
+	floor	small_lake2_underlay.cas	small_lake2_overlay.cas
+
+	ground_types	ground_small_lake_2.tga	-80,	-80,	80,	80
+	borders	border_limits_64m_diameter.CAS
+
+	small_lake2_water,		0,	0,	0,	0
+tree_A,	-29.67,	6.99,	46.00,	0.00
+tree_A,	-40.54,	16.35,	0.00,	0.00
+tree_B,	-48.11,	2.11,	15.00,	0.00
+tree_A,	-41.39,	-24.67,	43.00,	0.00
+tree_A,	45.30,	6.72,	0.00,	0.00
+tree_B,	52.05,	-22.63,	61.00,	0.00
+tree_B,	54.55,	31.31,	3.00,	0.00
+tree_A,	57.57,	-4.59,	83.00,	0.00
+}

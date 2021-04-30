@@ -1,0 +1,13 @@
+script
+	
+	; Stop any other advice triggering
+	suspend_unscripted_advice true
+
+	disable_ui help_dialog_pause_button
+	
+	ui_flash_start feral_help_help_button
+		
+	; Reenable advice
+	suspend_unscripted_advice false
+	
+end_script

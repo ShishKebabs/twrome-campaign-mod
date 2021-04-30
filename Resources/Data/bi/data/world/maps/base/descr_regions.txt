@@ -1,0 +1,725 @@
+;
+; regions list
+;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Caledonia
+	legion: Caledonica
+	Dal_Raida
+	celts
+	Pictii
+	111 111 0
+	slaves
+	5
+	5
+	pagan 90 christianity 10
+Tribus_Saxones
+	legion: Barbaricorum
+	Vicus_Saxones
+	saxons
+	Angles
+	232 41 55
+	timber, slaves, amber
+	5
+	3
+	pagan 100
+Locus_Barbaricum
+	legion: Barbaricorum
+	Campus_Barbaricum
+	vandals
+	Slavs
+	58 177 95
+	gold, slaves
+	5
+	2
+	pagan 100
+Tribus_Alanni
+	legion: Scythica
+	Campus_Alanni
+	huns
+	Alans
+	177 170 58
+	silver, slaves
+	5
+	3
+	pagan 100
+Tribus_Sakae
+	legion: Barbaricorum
+	Campus_Sakae
+	huns
+	Saka
+	58 177 75
+	slaves, camels
+	5
+	6
+	pagan 100
+Hibernia
+	legion: Hibernica
+	Tara
+	celts
+	Scotii
+	212 232 41
+	slaves
+	5
+	3
+	pagan 90 christianity 10
+Britannia_Inferior
+	legion: Victrix
+	Eburacum
+	empire_west
+	Celts
+	232 41 198
+	slaves, lead, britain
+	5
+	5
+	christianity 10 pagan 90
+Locus_Sarmatae
+	legion: Barbaricorum
+	Campus_Sarmatae
+	sarmatians
+	Sarmatians
+	177 255 83
+	slaves
+	5
+	4
+	pagan 100
+Britannia_Superior
+	legion: Britannica
+	Londinium
+	empire_west
+	Britons
+	232 41 46
+	gold, grain, iron, slaves, textiles, tin, lead, britain
+	5
+	8
+	christianity 30 pagan 70
+Tribus_Burgundii
+	legion: Barbaricorum
+	Campus_Burgundii
+	burgundii
+	Burgundii
+	131 33 125
+	silver, timber, iron, slaves, amber
+	5
+	5
+	pagan 100
+Tribus_Vandali
+	legion: Barbaricorum
+	Vicus_Vandali
+	vandals
+	Sarmatians
+	177 58 83
+	timber, slaves
+	5
+	4
+	pagan 100
+Tribus_Frisii
+	legion: Barbaricorum
+	Campus_Frisii
+	saxons
+	Frisii
+	2 0 255
+	iron, slaves, hides
+	5
+	6
+	pagan 100
+Tribus_Chattii
+	legion: Barbaricorum
+	Campus_Chattii
+	franks
+	Chatti
+	232 198 41
+	iron, slaves
+	5
+	4
+	pagan 100
+Tribus_Lombardi
+	legion: Barbaricorum
+	Campus_Lombardi
+	lombardi
+	Lombardi
+	203 41 232
+	grain, iron, slaves, amber
+	5
+	4
+	pagan 100
+Germania_Inferior
+	legion: Minervia
+	Colonia_Agrippina
+	empire_west
+	Batavi
+	41 162 232
+	slaves, textiles
+	5
+	7
+	christianity 30 pagan 70
+Tribus_Franki
+	legion: Barbaricorum
+	Vicus_Franki
+	franks
+	Franki
+	255 150 177
+	iron, slaves, hides
+	5
+	5
+	pagan 100
+Sarmatia
+	legion: Barbaricorum
+	Vicus_Sarmatae
+	sarmatians
+	Sarmatians
+	33 131 116
+	grain, iron, slaves, bosphoran
+	5
+	6
+	pagan 100
+Belgica
+	legion: Gallicana
+	Samarobriva
+	empire_west
+	Belgae
+	232 90 41
+	pottery, slaves, hides
+	5
+	7
+	christianity 25 pagan 75
+Tribus_Marcomanni
+	legion: Barbaricorum
+	Campus_Marcomanni
+	alemanni
+	Marcomanni
+	177 78 58
+	iron, slaves
+	5
+	5
+	pagan 100
+Tribus_Roxolani
+	legion: Scythica
+	Campus_Roxolani
+	roxolani
+	Roxolani
+	131 89 33
+	grain, slaves, bosphoran
+	5
+	5
+	pagan 100
+Germania_Superior
+	legion: Primigenia
+	Augusta_Treverorum
+	empire_west
+	Suebi
+	63 232 41
+	slaves
+	5
+	6
+	christianity 25 pagan 75
+Lugdinensis
+	legion: Flavia_Gallicana
+	Lugdunum
+	empire_west
+	Aedui
+	85 114 141
+	timber, iron, slaves, glass
+	5
+	14
+	christianity 30 pagan 70
+Tribus_Alemanni
+	legion: Barbaricorum
+	Vicus_Alemanni
+	alemanni
+	Alemanni
+	58 150 177
+	iron, slaves
+	5
+	5
+	pagan 100
+Tribus_Quaddi
+	legion: Barbaricorum
+	Campus_Quaddi
+	alemanni
+	Quaddi
+	58 0 177
+	iron, slaves
+	5
+	5
+	pagan 100
+Tribus_Iazyges
+	legion: Barbaricorum
+	Campus_Iazyges
+	sarmatians
+	Iazyges
+	33 100 131
+	gold, iron, slaves
+	5
+	14
+	pagan 100
+Dacia
+	legion: Gemina
+	Colonia_Dacia
+	goths
+	Ostrogoths
+	72 177 58
+	gold, timber, iron, slaves, bosphoran
+	5
+	6
+	pagan 60 christianity 40
+Raetia
+	legion: Concors_Italica
+	Augusta_Vindelicorum
+	empire_west
+	Suebi
+	41 232 225
+	slaves
+	5
+	3
+	christianity 25 pagan 75
+Noricum
+	legion: Pia_Italica
+	Carnuntum
+	empire_west
+	Juthungi
+	230 41 232
+	slaves
+	5
+	4
+	christianity 25 pagan 75
+Pannonia
+	legion: Adiutrix
+	Aquincum
+	empire_west
+	Scordisci
+	131 61 33
+	iron, slaves
+	5
+	3
+	christianity 25 pagan 75
+Aquitania
+	legion: Gallicana
+	Burdigala
+	empire_west
+	Pictones
+	68 232 41
+	iron, wine, slaves, textiles, lead
+	5
+	14
+	christianity 30 pagan 70
+Colchis
+	legion: Apollinaris
+	Kotais
+	empire_east
+	Colchians
+	199 31 143
+	gold, slaves, bosphoran
+	5
+	4
+	christianity 55 zoroastrian 35 pagan 10
+Atropatene
+	legion: Parthica
+	Phraaspa
+	sassanids
+	Parthians
+	61 239 246
+	slaves, sughdian
+	5
+	4
+	zoroastrian 100
+Alpes_Maritimae_et_Cottinae
+	legion: Iulia_Alpina
+	Massilia
+	empire_west
+	Vocontii
+	117 198 13
+	slaves
+	5
+	9
+	christianity 30 pagan 70
+Aemilia_et_Liguria
+	legion: Italica
+	Mediolanium
+	empire_west
+	Ligurians
+	157 13 198
+	pottery, timber, slaves
+	5
+	10
+	christianity 20 pagan 80
+Venetia
+	legion: Italica
+	Ravenna
+	empire_west
+	Veneti
+	13 198 117
+	slaves, glass, textiles
+	5
+	10
+	christianity 45 pagan 55
+Illyricum_et_Dalmatia
+	legion: Illyricorum
+	Salona
+	empire_west
+	Illyrians
+	58 173 177
+	gold, timber, iron, olive_oil, wine, slaves
+	5
+	3
+	christianity 25 pagan 75
+Thracia
+	legion: Claudia_Pia_Fidelis
+	Constantinople
+	empire_east
+	Thracians
+	218 246 61
+	gold, timber, slaves, bosphoran
+	5
+	10
+	christianity 75 pagan 25
+Taraconensis
+	legion: Gemina
+	Tarraco
+	empire_west
+	Basques
+	13 196 198
+	silver, iron, wine, slaves, marble, tin
+	5
+	6
+	christianity 30 pagan 70
+Narbonensis
+	legion: Flavia_Martis
+	Arles
+	empire_west
+	Volcae
+	196 13 198
+	silver, pottery, wine, slaves
+	5
+	8
+	christianity 40 pagan 60
+Armenia
+	legion: Armeniaca
+	Artaxarta
+	sassanids
+	Armenians
+	202 61 17
+	iron, wine, slaves, sughdian
+	5
+	5
+	zoroastrian 100
+Moesia
+	legion: Flavia_Felix
+	Sirmium
+	empire_east
+	Paionians
+	131 33 100
+	slaves
+	5
+	7
+	christianity 50 pagan 50
+Cappadocia
+	legion: Fulminata
+	Caesarea
+	empire_east
+	Cappadocians
+	177 58 148
+	silver, slaves, lead, bosphoran
+	5
+	8
+	christianity 70 pagan 15 zoroastrian 15
+Northern_Italy
+	legion: Italica
+	Rome
+	empire_west
+	Latins
+	52 13 198
+	pottery, iron, slaves, marble, rome
+	5
+	7
+	christianity 75 pagan 25
+Media
+	legion: Parthica
+	Arsakia
+	sassanids
+	Sughdians
+	58 167 177
+	iron, slaves, silk, camels, sughdian
+	5
+	6
+	zoroastrian 100
+Pontus_et_Bithynia
+	legion: Pontica
+	Sinope
+	empire_east
+	Paphlagonians
+	202 156 17
+	timber, iron, wine, slaves, bosphoran
+	5
+	10
+	christianity 70 pagan 30
+Carthaginiensis
+	legion: Hispana
+	Carthago_Nova
+	empire_west
+	Iberians
+	187 198 13
+	silver, pottery, timber, iron, slaves, lead
+	5
+	7
+	christianity 40 pagan 60
+Lusitania
+	legion: Hispana
+	Salamantica
+	empire_west
+	Lusitanians
+	13 198 30
+	slaves
+	5
+	4
+	christianity 30 pagan 70
+Sardinia
+	legion: Sardinica
+	Caralis
+	empire_west
+	Beronicensis
+	198 35 13
+	wine, slaves, lead
+	5
+	5
+	christianity 40 pagan 60
+Macedonia
+	legion: Macedonica
+	Thessalonica
+	empire_east
+	Edones
+	177 58 145
+	gold, timber, slaves
+	5
+	10
+	christianity 75 pagan 25
+Galatia
+	legion: Galatiae
+	Ancyra
+	empire_east
+	Galatians
+	17 165 202
+	slaves, textiles
+	5
+	8
+	christianity 60 pagan 40
+Southern_Italy
+	legion: Italica
+	Tarentum
+	empire_west
+	Latins
+	198 13 174
+	silver, timber, wine, slaves, copper
+	5
+	9
+	christianity 70 pagan 30
+Assyria
+	legion: Parthica
+	Hatra
+	sassanids
+	Kurds
+	244 122 13
+	slaves, textiles, silk, camels, sughdian
+	5
+	8
+	zoroastrian 90 christianity 10
+Baetica
+	legion: Hispana
+	Corduba
+	empire_west
+	Iberians
+	17 13 198
+	gold, olive_oil, wine, slaves
+	5
+	14
+	christianity 45 pagan 55
+Achaea
+	legion: Gemina
+	Athens
+	empire_east
+	Achaeans
+	58 177 106
+	silver, timber, iron, olive_oil, slaves, marble
+	5
+	9
+	christianity 40 pagan 60
+Asiana
+	legion: Asianae
+	Ephesus
+	empire_east
+	Phrygians
+	131 83 77
+	silver, timber, olive_oil, wine, slaves, marble, textiles
+	5
+	12
+	christianity 75 pagan 25
+Cilicia_et_Lycia
+	legion: Isaura
+	Tarsus
+	empire_east
+	Cilicians
+	17 202 52
+	silver, pottery, timber, slaves
+	5
+	10
+	christianity 70 pagan 30
+Babylonia
+	legion: Parthica
+	Ctesiphon
+	sassanids
+	Persians
+	177 58 167
+	iron, slaves, silk, elephants, camels, sughdian
+	5
+	9
+	zoroastrian 100
+Syria_Coele
+	legion: Flavia_Firma
+	Antioch
+	empire_east
+	Syrians
+	13 244 165
+	iron, wine, slaves, textiles, incense, silk, camels
+	5
+	9
+	christianity 85 pagan 5 zoroastrian 10
+Sicilia
+	legion: Siciliae
+	Syracuse
+	empire_west
+	Sicani
+	177 142 58
+	timber, slaves
+	5
+	8
+	christianity 30 pagan 70
+Arabia_Inferior
+	legion: Arabica
+	Dumatha
+	sassanids
+	Nabataeans
+	13 171 244
+	slaves, incense, camels, berber, sughdian
+	5
+	3
+	zoroastrian 50 pagan 15 christianity 35
+Mauretania
+	legion: Mauretanica
+	Tingi
+	berbers
+	Berbers
+	202 126 17
+	timber, slaves, copper, camels, berber
+	5
+	6
+	christianity 100
+Cyprus
+	legion: Cyprica
+	Salamis
+	empire_east
+	Cypriots
+	126 144 111
+	gold, timber, slaves, purple_dye, copper
+	5
+	9
+	christianity 50 pagan 50
+Phoenicia
+	legion: Gallicia
+	Sidon
+	empire_east
+	Palmyrans
+	33 131 128
+	timber, slaves, glass, incense, camels
+	5
+	9
+	christianity 85 pagan 5 zoroastrian 10
+Africa
+	legion: Augusta
+	Carthage
+	empire_west
+	Poeni
+	202 191 17
+	grain, timber, olive_oil, slaves, marble, camels, berber
+	5
+	14
+	christianity 90 pagan 10
+Creta
+	legion: Cretae
+	Kydonia
+	empire_east
+	Cretans
+	193 162 206
+	iron, slaves, purple_dye
+	5
+	7
+	christianity 45 pagan 55
+Palaestina
+	legion: Palaestinae
+	Jerusalem
+	empire_east
+	Judaeans
+	244 13 29
+	olive_oil, wine, slaves, purple_dye, camels, berber
+	5
+	8
+	christianity 95 zoroastrian 5
+Arabia_Superior
+	legion: Ferrata
+	Philadelphaea
+	empire_east
+	Judaeans
+	13 244 160
+	slaves, incense, camels, berber
+	5
+	5
+	christianity 75 pagan 10 zoroastrian 15
+Nabataea
+	legion: Nabatae
+	Petra
+	berbers
+	Nabataeans
+	13 0 244
+	slaves, incense, berber
+	5
+	5
+	christianity 90 zoroastrian 10
+Sahara
+	legion: Africarum
+	Dimmidi
+	berbers
+	Berbers
+	244 13 138
+	slaves, camels, berber
+	5
+	1
+	christianity 100
+Tripolitania
+	legion: Flavia_Salutis
+	Lepcis_Magna
+	empire_west
+	Berbers
+	2 252 0
+	slaves, purple_dye, camels, berber
+	5
+	5
+	christianity 70 pagan 30
+Aegyptus
+	legion: Traiana
+	Alexandria
+	empire_east
+	Moors
+	244 13 214
+	gold, grain, slaves, glass, textiles, purple_dye, incense, camels, berber
+	5
+	12
+	christianity 85 pagan 15
+Cyrenaica
+	legion: Cyrenaica
+	Cyrene
+	empire_east
+	Moors
+	244 171 13
+	timber, slaves, camels, berber
+	5
+	4
+	christianity 70 pagan 30

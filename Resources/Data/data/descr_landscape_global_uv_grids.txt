@@ -1,0 +1,100 @@
+;; Descriptions of what a grid is used for are specific to original rome. 
+;; In Rome HD they are used as they fit best with specific models. 
+;; For compatibility grid from 0 to 4 have been kept in the same order as OG.
+;; After grid 5 (included) those are defined for HD version.
+
+
+grid 0
+{
+	u_scale		1.0
+	v_scale		1.0
+
+	u_offset	0.0
+	v_offset	0.0
+	
+	rotation	0.0
+}	
+
+
+
+
+; The following grid is used by NickT for specifying the tiling of the 
+; floor texture in the roman towns and cities.
+
+grid 1
+{
+	u_scale		8.0
+	v_scale		8.0
+
+	u_offset	0.0
+	v_offset	0.0
+	
+	rotation	0.0
+}	
+
+; The following grid is used for specifying the tiling of the cobbles
+; on the roads.
+
+grid 2
+{
+	u_scale		4.0
+	v_scale		4.0
+
+	u_offset	0.0
+	v_offset	0.0
+	
+	rotation	0.0
+}
+
+; The following grid is used for specifying the tiling of the detail texture
+; on the dirt roads (e.g. barbarian/greek towns/cities, egyptian/eastern towns etc)
+
+grid 3
+{
+	u_scale		8.0
+	v_scale		8.0
+
+	u_offset	0.0
+	v_offset	0.0
+	
+	rotation	0.0
+}
+
+; The following grid is used for specifying the tiling of the detail texture
+; on the muddy overlays in certain settlements (e.g. barbarian towns/cities)
+; Its bigger than the others because the mud texture doesn't tile brilliantly.
+
+grid 4
+{
+	u_scale		16.0
+	v_scale		16.0
+
+	u_offset	0.0
+	v_offset	0.0
+	
+	rotation	0.0
+}
+
+
+grid 5
+{
+	u_scale		3.0
+	v_scale		3.0
+
+	u_offset	0.0
+	v_offset	0.0
+	
+	rotation	0.0
+}
+
+
+grid 6
+{
+	u_scale		2.0
+	v_scale		2.0
+
+	u_offset	0.0
+	v_offset	0.0
+	
+	rotation	0.0
+}

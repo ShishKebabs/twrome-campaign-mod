@@ -1,0 +1,15 @@
+plan
+
+{
+	floor		snowy_ruin_01_underlay.cas snowy_ruin_01_overlay.cas
+
+	ground_types	ground_default_grass.tga	-64,	-64,	64,	64
+	borders	border_limits_64m_diameter.CAS
+
+
+;				x,		y,		rot,	z,
+snowy_ruin_01,			0,		0,		0,	1.756m
+
+
+
+}

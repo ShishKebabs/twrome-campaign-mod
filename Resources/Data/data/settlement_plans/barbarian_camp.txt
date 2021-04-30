@@ -1,0 +1,72 @@
+plan
+
+{
+target rectangle x 0 z 0 rot 0 width 32 height 32
+floor		egyptian_camp_underlay.CAS barb_camp_overlay.CAS
+ground_types	egyptian_camp_ground.tga -160 -160 160 160
+street_plan	egyptian_camp_pathfinding.CAS
+borders		
+
+	{
+
+	;WALLS
+
+gateway,	-0.00,	96.00,	-180,	0.00
+gateway,	-96.00,	0.00,	-90.00,	0.00
+gateway,	96.00,	0.00,	90.00,	0.00
+gateway,	0.00,	-96.00,	0.00,	0.00
+straight,	-96.00,	64.00,	-90.00,	0.00
+straight,	-64.00,	96.00,	180.00,	0.00
+straight,	64.00,	96.00,	180.00,	0.00
+straight,	64.00,	-96.00,	0.00,	0.00
+straight,	-64.00,	-96.00,	0.00,	0.00
+straight,	-96.00,	-64.00,	-90.00,	0.00
+straight,	96.00,	-64.00,	90.00,	0.00
+straight,	96.00,	64.00,	90.00,	0.00
+tower_external_corner_link,	96.00,	-96.00,	90.00,	0.00
+tower_external_corner_link,	-96.00,	-96.00,	0.00,	0.00
+tower_external_corner_link,	96.00,	96.00,	-180.00,	0.00
+tower_external_corner_link,	-96.00,	96.00,	-90.00,	0.00
+
+
+	}
+
+	;BUILDINGS	
+
+
+barb_camp_tent,	-54.76,	-28.42,	0.00,	0
+barb_camp_tent,	-38.24,	-25.11,	0.00,	0
+barb_camp_tentB,	-21.61,	-29.51,	0.00,	0
+barb_camp_tent,	-54.16,	-50.44,	0.00,	0
+barb_camp_tent,	-38.76,	-56.51,	0.00,	0
+barb_camp_tent,	-21.62,	-53.39,	0.00,	0
+barb_camp_tentB,	-55.05,	54.15,	0.00,	0
+barb_camp_tent,	-38.53,	57.46,	0.00,	0
+barb_camp_tent,	-21.90,	53.06,	0.00,	0
+barb_camp_tent,	-21.91,	21.51,	0.00,	0
+barb_camp_tentB,	-39.05,	18.39,	0.00,	0
+barb_camp_tent,	-54.45,	24.47,	0.00,	0
+barb_camp_tent,	26.29,	59.30,	0.00,	0
+barb_camp_tentB,	42.80,	57.46,	0.00,	0
+barb_camp_tent,	59.43,	53.06,	0.00,	0
+barb_camp_tent,	59.42,	20.26,	0.00,	0
+barb_camp_tent,	42.28,	18.02,	0.00,	0
+barb_camp_tentB,	26.88,	24.10,	0.00,	0
+barb_camp_tentB,	26.29,	-29.66,	0.00,	0
+barb_camp_tent,	42.80,	-26.35,	0.00,	0
+barb_camp_tent,	59.43,	-30.75,	0.00,	0
+barb_camp_tentB,	59.42,	-54.63,	0.00,	0
+barb_camp_tent,	42.28,	-57.75,	0.00,	0
+barb_camp_tent,	26.88,	-51.68,	0.00,	0
+barb_camp_tentB,	59.43,	36.81,	0.00,	0
+barb_camp_tent,	26.29,	42.12,	0.00,	0
+barb_camp_tent,	-54.92,	39.15,	0.00,	0
+barb_camp_tent,	-24.06,	37.05,	0.00,	0
+barb_camp_tent,	-39.01,	36.67,	0.00,	0
+
+
+	;COLLISION OBJECTS
+
+barb_camp_collision,	0,	0,	0,	0,
+
+}

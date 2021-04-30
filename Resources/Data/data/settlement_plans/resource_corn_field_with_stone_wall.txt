@@ -1,0 +1,18 @@
+plan
+
+{
+	floor		underlay_hay_field_square.cas overlay_corn_field_square.cas
+
+	ground_types	ground_no_grass.tga	-64,	-64,	64,	64
+
+	borders	border_limits_64m_diameter.CAS
+;			x,	y,	rot,	z,
+
+corn_field_square,	0,	0,	0,	0
+low_stone_wall,		0,	30,	180,	0
+low_stone_wall,		30,	0,	90,	0
+low_stone_wall,		-30,	0,	-90,	0
+low_stone_wall,		0,	-30,	0,	0
+
+
+}

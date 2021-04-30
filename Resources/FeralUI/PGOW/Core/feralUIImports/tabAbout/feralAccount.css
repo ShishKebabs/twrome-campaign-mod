@@ -1,0 +1,279 @@
+/* Fancy Feral Account login form */
+
+/* PLEASE ENSURE ALL BLOCKS IN THIS FILE APPLY TO OR WITHIN AN ELEMENT WITH ID PREFIXED WITH "FeralAccount".
+ * This ensures we don't have to worry about arbitrary css files infringing on eachother. */
+
+
+#feralAccount
+{
+	width: 41.1% !important;
+	display: inline-block;
+	margin-left: 18px !important;
+	position: relative !important;
+}
+
+#FeralAccountFormBusy
+{
+	position: absolute;
+	width: calc(100% - 3px);
+	height: 80%;
+	left: 2px;
+	top: 60px;
+	background-color:
+	rgba(255, 255, 255, 0.8);
+	z-index: 1;
+}
+
+span#FeralAccountBusyThrobber
+{
+	padding: 50% 0 0 100%;
+}
+
+#FeralAccountLoginContainer
+{
+	padding: 0;
+	background-color: #fdfdfd;
+	margin-top: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px 5px 0 0;
+	white-space: initial;
+}
+
+#FeralAccountLoginHeading
+{
+	padding: 9px 0 10px;
+
+	color: #0071bc;
+	border-bottom: 1px solid #ccc;
+
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#FeralAccountLoginMessage
+{
+	margin-top: 5px;
+	margin-bottom: 13px;
+}
+
+#FeralAccountLoginError
+{
+	color: red;
+}
+
+#FeralAccountLoginContent
+{
+	padding: 8px 12px;
+	font-size: 14px;
+	min-height: 193px;
+	max-height: 244px;
+}
+
+#FeralAccountLoginMessage a
+{
+	font-size: 14px;
+	line-height: 21px;
+}
+
+#FeralAccountLoggedInMessage
+{
+	text-align: center;
+}
+
+#FeralAccountFormEmail, 
+#FeralAccountFormPassword
+{
+	width: calc(100% - 17px) !important;
+	height: 30px;
+	font-size: 14px;
+	padding: 2px 1px 0 10px;
+	margin-top: 10px;
+}
+
+#FeralAccountFormLoginButton
+{
+	padding: 9px 10px 11px;
+	margin-top: 6px;
+
+	min-width: 133px;
+	height:39px;
+
+	float: right;
+}
+
+#FeralAccountLoginElements
+{
+	height: 45px;
+}
+
+#FeralAccountLoginRememberMeContainer
+{
+	margin-top: 4px;
+}
+
+#FeralAccountForgotAccountDetailsLink
+{
+	color: #f83;
+	background-color: #fff;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 12px;
+	border: none;
+	padding-left: 0;
+	margin-top: 3px;
+}
+
+#FeralAccountSignUpElements
+{
+	border-top: 1px solid #ccc;
+	padding: 0 12px;
+	height: 50px;
+}
+
+#FeralAccountSignUpPromptText
+{
+	margin: 17px 1px;
+	font-size: 14px;
+}
+
+.langJA #FeralAccountSignUpPromptText
+{
+	font-size: 11px;
+}
+
+#FeralAccountSignUpButton
+{
+	margin: 11px 2px;
+	padding: 6px 10px 10px;
+
+	min-width: 132px;
+	height: 29px;
+
+	float: right;
+}
+
+#FeralAccountForm #FeralAccountFormBusy
+{
+	position: absolute; 
+	width: 100%; 
+	height: 100%; 
+	opacity: 0.8; 
+	top:0px; 
+	left:0px; 
+	background-color: white; 
+	box-sizing: border-box;
+	transition: opacity 0.5s;
+}
+
+#FeralAccountForm #FeralAccountFormBusy.noDisplay
+{
+	display: initial !important;
+	opacity: 0;
+	pointer-events:none;
+}
+
+#FeralAccountLoginBox input
+{
+	display: block !important;
+}
+
+#FeralAccountLoggedInBox
+{
+	text-align: center;
+}
+
+#feralAccount #UserInfo
+{
+	margin: 21px 0 14px;
+}
+
+#feralAccount #UserAvatarContainer
+{
+	display: inline-block;
+	border: solid 1px #ccc;
+	border-radius: 3px;
+	vertical-align: middle;
+	width: 38px;
+	height: 38px;
+	position: relative;
+}
+
+#feralAccount #AvatarImage
+{
+	position: absolute;
+	bottom: 3px;
+	left:3px;
+}
+
+#feralAccount #UserNickname
+{
+	display: inline-block;
+	vertical-align: middle;
+
+	margin-left: 15px;
+
+	color: #0071bc;
+	font-size: 19px;
+	font-weight: bold;
+	text-align: left;
+
+	max-width: 280px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+input#FeralAccountFormEnableAutoLoginCheckbox
+{
+	display: inline-block  !important;
+	margin-right: 5px;
+}
+
+#feralAccount #LoginWelcomeMessage
+{
+	padding: 24px 0 0;
+	line-height: 21px;
+	max-height: 32px;
+}
+
+
+#FeralAccountLogoutButton
+{
+	margin-top: 28px;
+	margin-right: 3px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	padding: 7px 0 8px;
+
+	min-width: 141px;
+}
+
+#FeralAccountViewAccountButton
+{
+	margin-top: 28px;
+	margin-right: 0;
+	margin-bottom: 10px;
+	margin-left: 3px;
+	padding: 7px 0 8px;
+
+	min-width: 140px;
+}
+
+.langRU #FeralAccountViewAccountButton,
+.langDE #FeralAccountViewAccountButton
+{
+    min-width: 200px !important;
+}
+
+.langRU #FeralAccountLogoutButton,
+.langDE #FeralAccountLogoutButton
+{
+    min-width: 120px !important;
+}
+
+.langRU #FeralAccountLogoutButton,
+.langRU #FeralAccountViewAccountButton
+{
+	font-size: small;
+}

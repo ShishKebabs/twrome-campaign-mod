@@ -1,0 +1,2229 @@
+/* -----------------------------------------------
+   ------------ Main FeralNet overlay ------------ */
+
+body
+{
+	font-size: 100%;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+
+	overflow: hidden;
+}
+
+html
+{
+	background-color:transparent;
+}
+
+.feralNetOverlay
+{
+	width: 100%;
+	height: 100%;
+
+	background: none;
+
+	overflow: hidden;
+}
+
+.overlayFrame
+{
+	border-style: none;
+	width: 75%;
+	height: 80%;
+	margin: auto;
+	position: fixed;
+	top: 38px; /*Prevents the overlayFrame from overlapping the tabs*/
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	overflow: hidden;
+}
+
+.ui-icon 
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+ul
+{
+	list-style: none !important;
+	padding-left: 0;
+}
+
+.noDisplay
+{
+	display: none !important;
+}
+
+.scrolledOut
+{
+	visibility: hidden;
+}
+
+.clear:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.notificationSquare
+{
+	background-color: #F15B24;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+.notificationSquare:empty
+{
+	display: none;
+}
+
+/* -----------------------------------------------
+   ------------------- Main tab bar -------------- */
+
+.feralNetHeader
+{
+	display:-webkit-flex;
+	position: fixed;
+	width:100%;
+	z-index: 2;
+	top:-2px; /*Get rid of top border, avoids glitch with border:none*/
+}
+
+.feralNetHeader > .blank
+{
+	-webkit-flex-grow:1;
+}
+
+.mainTab
+{
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	background-color: rgba(255, 255, 255, 0.8);
+
+	border: solid 2px #F05A24;
+	min-width: 220px;
+	width:17%;
+	max-width: 300px;
+	min-height: 34px;
+}
+
+.mainTab:hover, .mainTab.selected
+{
+	background-color: rgba(255, 255, 255, 1);
+	color: #0071BB;
+	cursor: pointer;
+}
+
+.mainTab>.icon
+{
+	height: 24px;
+	width: 24px;
+	position: absolute;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.mainTab>.name
+{
+	margin-left: 35px;
+	margin-right: 35px;
+	text-align: center;
+	-webkit-flex-grow: 1;
+	
+	font-size: 14px;
+	line-height: 16px;
+	max-height: 32px; /*Multiple of line height so impossible to have half-visible lines*/
+	
+	overflow: hidden;
+	text-overflow: ellipsis;
+	/*Magic that will let webkit show ellipsis even after spreading the text across 2 lines*/
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;  
+}
+
+.mainTab>.notificationSquare
+{
+	position: absolute;
+	right: 0px;
+	margin: 5px;
+	padding-left: 3px;
+	padding-right: 3px;
+	width: auto;
+	min-width: 18px; /*18+3+3 = 24, for 24x24 square*/
+}
+
+@media (max-width: 1279px)
+{
+	.mainTab
+	{
+		min-width: 100px;
+		width:-webkit-fit-content;
+		max-width: 25vw;
+	}
+	.mainTab>.name
+	{
+		font-size: 12px;
+		line-height: 14px;
+		max-height: 28px;
+	}
+}
+
+#userTab
+{
+	border-left: none;
+	border-bottom-right-radius: 5px;
+}
+
+#userTab.mainTab>.name
+{
+	margin-left: 38px;
+	margin-right: 5px;
+	text-align: left;
+}
+
+#userTab:hover, #userTab.selected
+{
+	color: inherit;
+	background-color: rgba(255, 255, 255, 0.8);	
+	cursor: default;
+}
+
+#friendsChatTab
+{
+	border-bottom-left-radius: 5px;
+	margin-right: 5px;
+}
+
+#friendsChatTab.disabled
+{
+    opacity: 0.5;
+    
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #1A1A1A;
+    font-weight: normal;
+    
+    cursor: default;
+}
+
+#sharedItemsTab
+{
+	margin-right: 5px;
+}
+
+#achievementsTab
+{
+	border-bottom-right-radius: 5px;
+}
+
+#pendingInvitesTab
+{
+	right:-1px;
+	position: relative;
+	border-bottom-left-radius: 5px;
+	border-right: none;
+
+	background-color: #0071BB;
+	color: white;
+	font-size: 125%;
+	font-weight: bold;
+}
+
+#pendingInvitesTab.disabled, .invite.disabled
+{
+	opacity: 0.5;
+
+	background-color: rgba(255, 255, 255, 0.8);
+	color: #1A1A1A;
+	font-weight: normal;
+
+	cursor: default;
+}
+
+#pendingInvitesTab.disabled>.icon
+{
+	-webkit-filter: invert(0.5);
+	filter: invert(0.5);
+}
+
+#pendingInvitesContent
+{
+	position: absolute;
+	top: calc(100% - 2px);
+	right:-2px;
+	z-index: -1;
+
+	width: 25%;
+	min-width:320px;
+	max-height: 80vh;
+	overflow: auto;
+	background-color: #0071BB;
+	font-weight: normal;
+
+	border: solid 2px #F05A24;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+
+	display: none;
+}
+
+#pendingInvitesList
+{
+	margin: 0;
+}
+
+.feralNetInvite
+{
+	position: relative;
+
+	height: auto;
+
+	background-color: white;
+	color: black;
+
+	margin: 6px;
+	border-radius: 5px;
+}
+
+.feralNetInvite>.icon
+{
+	margin: 6px;
+	float:left;
+}
+
+.feralNetInvite>b>.name
+{
+	line-height: 20px;
+	padding-top: 8px;
+
+	margin-left: 58px;
+	margin-right: 80px;
+	font-size: 90%;
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.feralNetInvite>.description
+{
+	margin-left: 58px;
+	margin-right: 80px;
+	padding-bottom: 8px;
+	font-size: 90%;
+}
+
+.feralNetInvite>.acceptButton
+{
+	position: absolute;
+
+	right: 15px;
+	top: 16px;
+
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+
+	cursor: pointer;
+	pointer-events: auto;
+}
+
+.feralNetInvite>.declineButton
+{
+	position: absolute;
+
+	right: 50px;
+	top: 16px;
+
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+
+	cursor: pointer;
+	pointer-events: auto;
+}
+
+.mainTabsContents
+{
+	position: relative;
+	width: 100%;
+}
+
+.overlayFrame.left
+{
+	opacity: 0;
+	-webkit-transform: translateX(-200%);
+	-webkit-transition: -webkit-transform .75s ease-in-out, opacity .75s ease-out;
+}
+
+.overlayFrame.right
+{
+	opacity: 0;
+	-webkit-transform: translateX(200%);
+	-webkit-transition: -webkit-transform .75s ease-in-out, opacity .75s ease-out;
+}
+
+.overlayFrame.center
+{
+	opacity: 1;
+	-webkit-transform: translateX(0);
+	-webkit-transition: -webkit-transform .75s ease-in-out, opacity .75s ease-out;
+}
+
+#backToGameInset
+{
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+}
+
+#backToGameInset span#backToGameButton
+{
+	display: block;
+	color: #fff;
+	cursor: pointer;
+}
+
+#backToGameInset span#backToGameButton:before
+{
+	content: '\2039\a0';
+}
+
+#backToGameInset span#backToGameSubtitle
+{
+	display: block;
+	font-size: 0.8em;
+	color: #ccc;
+}
+
+#clockInset
+{
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	text-align: right;
+}
+
+#clockInset span.time
+{
+	display: block;
+	color: #fff;
+}
+
+#clockInset span.date
+{
+	display: block;
+	font-size: 0.8em;
+	color: #ccc;
+}
+
+@media (max-height: 500px)
+{
+	#clockInset span.date, #backToGameInset span#backToGameSubtitle
+	{
+		display: none;
+	}
+}
+
+
+/* -----------------------------------------------
+   --------------- Main FeralNet frame ----------- */
+
+.generalOverlay
+{
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+
+	background-color: rgba(40, 25, 0, 0.4);
+	
+	margin: 0;
+	padding: 0;
+
+	display: none;
+}
+
+#FeralNetBrowser
+{
+	padding: 0 0px;
+}
+
+@media (max-height: 720px)
+{
+	#FeralNetBrowser
+	{
+		max-height: calc(100vh - 45px) !important;
+		min-height: calc(100vh - 45px) !important;
+	}
+}
+
+@media (max-width: 1279px)
+{
+	.ui-dialog[aria-describedby="FeralNetBrowser"]
+	{
+		max-height: 100% !important;
+		max-width:  100% !important;
+		top: 0px;
+		left: 0px;
+	}
+}
+
+.browserFrame
+{
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+	position: absolute;
+	top: 0px;
+	left:0px;
+}
+
+.browserFrame > iframe
+{
+	min-height:100%;
+	width:100%;
+	margin: 0 0 0;
+	border: none;
+	padding: 0; 
+}
+
+.feralNetMainFrame
+{
+	font-family: Helvetica;
+	color: #000;
+	margin: auto;
+	overflow: hidden;
+	cursor:default;
+}
+
+.feralNetPanel
+{
+	position: relative;
+
+	height: -webkit-calc(100% - 4px);
+
+	background-color: rgba(255, 255, 255, 0.8);
+
+	border: solid 2px #F05A24;
+	margin: 0;	
+	padding: 0;
+}
+
+.feralNetPanel>h2
+{
+	position: relative;
+
+	height: 41px;
+	width: 100%;
+
+	background-color: white;
+
+	margin: 0;
+	padding: 0;
+}
+
+.feralNetPanel>h2>.title
+{
+	position: relative;
+
+	top: 10px;
+
+	color: #0071BB;
+	font-weight: bold;
+	font-size: 18px;
+
+	display: inline-block;
+}
+
+.feralNetPanel>h2>img
+{
+	position: absolute;
+
+	left: 16px;
+	top: 12px;
+}
+
+.feralNetPanel>.panelContents
+{
+	margin: 5px;
+	margin-top: 0px;
+	height: -webkit-calc(100% - 41px);
+}
+
+.panelContents>input
+{
+	position: absolute;
+
+	bottom: 5px;
+	width: -webkit-calc(100% - 9px);
+	height: 30px;
+
+	font-size: 14px;
+	color: #1A1A1A;
+
+	padding: 10px;
+	margin-top: 7px;
+	border: none;
+	border-radius: 2px;
+}
+
+.panelContents>ul
+{
+	list-style: none !important;
+}
+
+#friendsPanel, #chatPanel
+{
+	float: left;
+}
+
+#friendsPanel
+{
+	width: 35%;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+#friendsPanel>h2
+{
+	border-top-left-radius: 5px;
+}
+
+#chatPanel
+{
+	width: -webkit-calc(65% - 18px);
+	margin-left: 10px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+#chatPanel>h2
+{
+	border-top-right-radius: 5px;
+}
+
+#achievementsPanel>h2, #sharedItemsPanel>h2
+{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+/* -----------------------------------------------
+   --------------- FeralNet friends -------------- */
+
+.panelContents>#numFriendsMessage
+{
+	height: 40px;
+	line-height: 36px;
+
+	margin: 0;
+}
+
+.feralNetFriend
+{
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	position: relative;
+
+	height: 54px;
+	width: -webkit-calc(100% - 2px);
+
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+.feralNetFriend>.icon
+{
+	-webkit-flex-shrink: 0;
+	position: relative;
+	margin: 5px;
+}
+
+.feralNetFriend.blocked>.icon
+{
+	opacity: 0.2;
+}
+.feralNetFriend.blocked .nickname
+{
+	text-decoration: line-through;
+	color: #999;
+}
+
+.feralNetFriend>.statusBlock
+{
+	display: -webkit-inline-flex;
+	-webkit-flex-direction: column;
+	-webkit-flex-grow: 1;
+	position: relative;
+	width: calc(100% - 150px);
+}
+
+.statusBlock>.nickname-container
+{
+	display: block;
+	position: relative;
+	
+	left: -3px;
+	width: calc(100% - 1px);
+	
+	padding-left: 3px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	
+	white-space: nowrap;
+}
+
+.nickname-container.friendsList
+{
+	cursor: pointer;
+}
+
+.nickname-container>.nickname-outer
+{
+	max-width: calc(100% - 10px);
+
+	font-size: 15px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+	overflow: hidden;
+	display: inline-block;
+
+}
+
+.nickname-container.friendsList>.arrow-down 
+{
+	position: relative;
+
+	top: 12px;
+	width: 0;
+	height: 0;
+	
+	margin-left: 1px;
+	
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;	
+	border-top: 5px solid #898989;
+}
+
+.nickname-container.friendsList.showingMenu, .nickname-container.friendsList:hover
+{
+	-webkit-box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.5);
+	background-color: white;
+}
+
+.statusBlock>.status
+{
+	display: block;
+	position: relative;
+	width: 100%;
+
+	font-style: italic;
+	font-size: 12px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+	overflow: hidden;
+}
+
+.status.online
+{
+	color: #009145;
+}
+
+.status.offline
+{
+	color: #989898;
+}
+
+/* Based on Bootstrap's .btn.btn-primary */
+.feralNetFriend>.button
+{
+	position: relative;
+	width: auto;
+	height: 30px;
+	min-width: 60px;
+	-webkit-flex-shrink: 0;
+
+	padding-left: 2px;
+	padding-right: 2px;
+	margin:2px;
+	margin-right:11px;
+
+	font-size: 12px;
+	text-align: center;
+	vertical-align: middle;
+	
+	color: white !important;
+	background-color: #337ab7 !important;
+	cursor: pointer;
+
+	border: 1px solid #D2D2D2;
+	border-radius: 4px;
+
+	display: inline-block;
+}	
+
+.button.invite
+{
+	border: none !important;
+}
+
+.button.disabled
+{
+	padding-left: 0;
+	padding-right: 0;
+	background: none !important;
+	color: #1A1A1A !important;
+	border-color: #D2D2D2 !important;
+	cursor: default;
+}
+
+ul#friendsToInviteList, ul#feralNetFriendsList
+{
+	position: relative;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: white;
+    margin: auto;
+    padding: 0;
+}
+
+ul#friendsToInviteList
+{
+	width: 100%;
+	height: 90%;
+}
+
+ul#feralNetFriendsList
+{
+
+    width: 100%;
+	height: -webkit-calc(100% - 40px - 41px);
+}
+
+ul#friendsToInviteList>li:nth-child(even), ul#feralNetFriendsList>li:nth-child(even)
+{
+    background-color: #f5f5f5;
+}
+
+.addFriendDialog
+{
+	position: absolute;
+
+	bottom: 42px;
+	width: -webkit-calc(100% - 10px);
+	height: 120px;
+
+	text-align: center;
+	background-color: white;
+
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.addFriendDialog>.closeButton
+{
+	position: absolute;
+
+	left: 5px;
+	top: 5px;
+	z-index: 1;
+
+	cursor: pointer;
+}
+
+.addFriendDialog>.header
+{
+	position: absolute;
+
+	width: -webkit-calc(100% - 10px);
+	left: 0;
+
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 50px;
+
+	color: #0071BB;
+
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.addFriendDialog>.description
+{
+	position: absolute;
+
+	height: 70px;
+	width: -webkit-calc(100% - 10px);
+	bottom: 0;
+
+	line-height: 70px;
+	
+	margin: 5px;
+	border: solid 1px #D2D2D2;
+	border-radius: 5px;
+}
+
+.description>span
+{
+	line-height: 1.5rem;
+
+	margin-top: 10px;
+
+	display: inline-block;
+}
+
+#addFriendInput
+{
+	width: -webkit-calc(100% - 10px);
+	padding-right: 20px;
+}
+
+#addFriendPlusDisabled
+{
+	position: absolute;
+
+	bottom: 5px;
+	right: 5px;
+
+	background: white;
+	
+	padding: 8px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+
+	cursor: default;
+}
+
+#addFriendPlusEnabled
+{
+	position: absolute;
+
+	bottom: 5px;
+	right: 5px;
+
+	background: white;
+	
+	padding: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+
+	cursor: pointer;
+}
+
+.contextMenu 
+{
+    position: absolute;
+
+    z-index: 1000;
+
+    background: #FFF;
+    color: #0071BB;
+
+    overflow: hidden;
+    white-space: nowrap;
+
+    border: solid 1px #D2D2D2;
+    border-top: none;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -webkit-box-shadow: 0px 4px 3px rgba(0,0,0,0.5);
+    
+    min-width: -webkit-fit-content;
+    
+    display: none;
+}
+
+.contextMenu li 
+{
+    padding: 8px;
+
+    border-top: solid 1px #D2D2D2;
+
+    cursor: pointer;
+}
+
+.contextMenu li:hover 
+{
+    background-color: #DEF;
+}
+
+/* -----------------------------------------------
+   --------------------- Chat -------------------- */	 
+
+
+#chatsContainer
+{
+	min-width: 100%;
+	min-height: 85%;
+}
+
+#noChatsMessage
+{
+	text-align: center;
+	margin: 32.5% auto;
+	width: 9rem;
+	font-size: 1.5#0071BB
+
+}
+
+.chatBox
+{
+	overflow-y: scroll;
+    background-color: white;
+	margin-top: 2px;
+	padding: 0;
+	width: 100%;
+	height: -webkit-calc(100% - 38px);
+}
+
+.sentMessage
+{
+	text-align: right;
+	color: blue;
+}
+
+.receivedMessage
+{
+	text-align: left;
+	color: orange;
+}
+
+.sentMessage, .receivedMessage
+{
+	margin: 4%;
+}
+
+.sentMessage>span, .receivedMessage>span
+{
+	display: block;
+}
+
+.status
+{
+	color: grey;
+}
+
+.message
+{
+	margin-top: 1.5%;
+	word-wrap: break-word;
+}
+
+.chatError
+{
+	color: #FF0000;
+	font-size: 13px;
+
+	border: 1px solid #FF0000;
+	border-radius: 3px;
+	padding: 10px;
+
+	margin: 10px;
+}
+
+#chatPanel>.panelContents
+{
+	box-sizing: border-box;
+	width: 67%;
+	margin:0px;
+	padding-top:5px;
+	padding-left:5px;
+	padding-bottom:5px;
+	
+	float: left;
+}
+
+#tabList
+{
+	height: -webkit-calc(100% - 82px);
+	box-sizing: border-box;
+	width: 33%;
+
+	margin: 0;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 8px;
+
+	overflow-y: auto;
+	overflow-x: none;
+
+	float: left;
+}
+
+#tabList>.tab
+{
+	position: relative;
+
+	width: 97%;
+	height: 42px;
+
+	background-color: rgba(255, 255, 255, 0.7);
+
+  	margin-top: 5px;
+  	border-radius: 5px;
+
+	cursor: pointer;
+	
+	border: solid 2px transparent;   
+}
+
+#tabList>.tab.selectedTab
+{
+	border: solid 2px #F05A24;    
+	border-radius: 5px;
+	background-color: white;
+	cursor: -webkit-grab;
+}
+
+.selectedTab:before 
+{
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 0 5px 5px;
+	border-color: #F05A24 transparent;
+	display: block;
+	width: 0;
+	z-index: 0;
+	left: -9px;
+	top: 45%;
+	-webkit-transform: rotate(-90deg);
+}
+
+#tabList>.tab:active,
+#tabList>.tab.selectedTab:active
+{
+	cursor: -webkit-grabbing;
+}
+
+.tab>.content>.icon
+{
+	position: absolute;
+
+	top: 10px;
+	left: 10px;
+
+	margin: 0 !important;
+}
+
+.tab>.content>.name-outer
+{
+	position: absolute;
+
+
+	max-width: calc(100% - 70px);
+	top: 12px;
+	left:35px;
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+
+	display: inline-block;
+}
+
+.tab>.content>.notificationSquare
+{
+	position: absolute;
+
+	top: 10px;
+	right: 10px;
+	width: initial;
+	padding: 0 4px;
+	min-width: 16px;
+	height: 24px;
+
+	background-color: #F15B24;
+
+	line-height: 24px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+
+	border-radius: 5px;
+
+	display: inline-block;
+}
+
+.tab>.content>.closeButton
+{
+	position: absolute;
+
+	top: 10px;
+	right: 10px;
+
+	text-align: center;
+
+	display: none;
+}
+
+.tab:hover>.content>.notificationSquare, .ui-sortable-helper>.content>.notificationSquare
+{
+	display: none !important;
+}
+
+.tab:hover>.content>.closeButton, .ui-sortable-helper>.content>.closeButton
+{
+	display: inline-block !important;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+/* -----------------------------------------------
+   ---------------- Notifications ---------------- */
+
+#notificationStack
+{
+	position: absolute;
+
+	bottom: 0;
+	right: 0;
+	margin: 0;
+}
+
+.notificationsOverlay
+{
+	/*This will move it out of the dom flow, ensuring we don't get horrible things like the page scrolling 
+	horizontally to focus the intentionally hidden notification that is offscreen to the right.*/
+	position: fixed;
+	/*Now its not part of the dom, it need to be explicitly sized so its child knows where to go*/
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	/*Now it takes up the whole screen, it needs to allow mouse input to pass through. */
+	pointer-events: none;
+	
+	z-index: 2;
+
+	background-color: rgba(0, 0, 0, 0);	
+}
+
+.feralNetNotification
+{	
+	width: 305px;
+	
+	background-color: rgba(255, 255, 255, 0.8);
+    
+    border: 1px solid black;
+    margin-bottom: 10px;
+    
+    -webkit-transition: -webkit-transform 0.7s;
+    transition: transform 0.7s;
+}
+
+.feralNetNotification.feralNetPendingNotification
+{	
+    -webkit-transform: translateX(500px);
+    transform: translateX(500px);
+}
+
+.feralNetNotification:not(.feralNetPendingNotification):not(.feralNetEndingNotification)
+{	
+	-webkit-transform: translateX(-10px);
+	transform: translateX(-10px);
+}
+
+.feralNetNotification.feralNetEndingNotification
+{	
+	-webkit-transform: translateX(500px);
+	transform: translateX(500px);
+}
+
+.feralNetNotification>.content
+{
+	min-height: 54px;
+
+	padding: 10px;
+	border: 3px solid #F05A24;
+}
+
+.content>.icon
+{
+	margin: -5px 10px -5px -5px;
+
+	display: block;
+	float: left;
+}
+
+.feralNetNotification>.content>.title
+{
+	width: 210px;
+
+	font-size: 15px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+	margin-bottom: 5px;
+
+	display: inline-block;
+}
+
+.feralNetNotification>.content>.description
+{
+	width: 210px;
+
+	font-size: 14px;
+	color:	#1A1A1A;
+
+	overflow: hidden;
+
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+}
+
+/* -----------------------------------------------
+   ----------------- Achievements ---------------- */	
+#achievementsPanel
+{
+	position: relative;
+
+	overflow: hidden;
+
+	border-radius: 5px;
+}
+
+#achievementSearch
+{
+	position: absolute;
+
+	background-image: url(../images/search.svg);
+	background-position: calc(100% - 3px);
+	background-size: 15px 15px;
+	background-repeat: no-repeat;
+
+	height: 28px;
+	width: 20%;
+	left: calc(42px + 3%);
+	top: 6px;
+
+	color: #333333;
+	font-size: 13px;
+
+	padding: 5px;
+	padding-right: 20px;
+	border-radius: 3px;
+	border: solid 1px #D2D2D2;
+}
+
+#achievementsPanel>.panelContents::-webkit-scrollbar 
+{ 
+	width: 12px; 
+}
+
+#achievementsPanel>.panelContents::-webkit-scrollbar-track 
+{ 
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	border-radius: 10px; 
+}
+
+#achievementsPanel>.panelContents::-webkit-scrollbar-thumb 
+{
+	border-radius: 10px; 
+	background: rgba(255,255,255,0.3); 
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+} 
+
+#achievementsPanel>.panelContents::-webkit-scrollbar-thumb:window-inactive 
+{
+	background: rgba(255,255,255,0.15); 
+}
+
+#achievementsPanel>.panelContents
+{
+	overflow-y: auto;
+	overflow-x: hidden;
+
+	
+	margin-right: 0px;
+	padding-right: 5px;
+}
+
+#achievementsPanel>.panelContents>.scrollRegion
+{
+	/* Disabled for fbug://BIO2HD-568. Revert if this affects other games. */
+	/*-webkit-transform: translateZ(1px);*/
+}
+
+.achievementsSection
+{
+	display: -webkit-inline-flex;
+	position: relative;
+	height: 41px;
+	width: -webkit-calc(100% - 20px);
+	
+	margin: 10px;
+	border: solid 1px #D2D2D2;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+
+	background-color: #F1F1F1;
+	text-align: center;
+}
+
+.achievementsSection>.label
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	
+	font-size: 16px;
+	line-height: 41px;
+	color: black;
+	font-weight: bold;
+}
+
+/*Within a flexbox, the following on 2 elements either side of a shrink-wrapped element 
+will center the shrinkwrapped element, unless either of the sides is too big. 
+This is basically the only way to do this in css, but works well.
+In this case, the label element above will be centered, unless the sorting select box is too big, 
+in which case it gets pushed left to prevent overlapping.*/
+.achievementsSection>.blank,
+.achievementsSection>.orderBy
+{
+	-webkit-flex-grow: 1;
+	-webkit-flex-basis: 0;
+	min-width: -webkit-fit-content;
+	text-align:right;
+}
+
+.achievementsSection>.orderBy>.orderByLabel
+{
+	font-size: 13px;
+	line-height: 41px;
+	color: #4D4D4D;
+}
+
+.achievementsSection>.orderBy>.selectBox
+{
+	height: 28px;
+	width: 200px;
+	
+	margin-top: 0px;
+	margin-bottom: 4px;
+	margin-right: 5px;
+	border-radius: 3px;
+	border-color: #D2D2D2;
+}
+
+.achievementPanel
+{
+	position: relative;
+	display: inline-block;
+	float: left;
+
+	height: 76px;
+	width: -webkit-calc(50% - 22px);
+
+	margin: 10px;
+	border: solid 1px #F05A24;
+}
+
+.achievementPanel .icon
+{
+	position: absolute;
+
+	left: 0;
+	top: 0;
+	margin: 5px;
+
+	z-index: 3;
+	
+	background-color: #aaa;
+	width: 64px;
+	height: 64px;
+	line-height: 64px;
+	text-align: center;
+	
+	font-size: 2em;
+	color: #555;
+}
+
+.achievementPanel.locked .icon, 
+.achievementPanel.locked .name, 
+.achievementPanel.locked .description
+{
+	opacity: 0.5;
+}
+
+.achievementPanel .achievementPanelText
+{
+	position: absolute;
+	display: block;
+	left: 75px;
+	width:calc(100% - 75px);
+	top:0px;
+	height: 100%;
+}
+
+.achievementPanel .name
+{
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	
+	min-height: 23px;
+	margin-top: 1px;
+	
+	font-size: 14px;
+	line-height: 15px;
+	font-weight: bold;
+}
+
+.achievementPanel .description
+{
+	font-size: 13px;
+}
+
+.unlockBubble
+{
+	position: absolute;
+	z-index: 4;
+
+	width: 94%;
+	top: 105%;
+	left:-1px;
+
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 2%;
+	padding-bottom: 1.5%;
+
+	background: #FFFFFF;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: solid 1px #F05A24 ;
+
+	display: none;
+	pointer-events: none;
+}
+
+.achievementPanel:hover>.unlockBubble 
+{
+	display: inline-block;
+}
+
+.unlockBubble:after 
+{
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 0 10px 15px;
+	border-color: #FFFFFF transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+	top: -15px;
+	left: 45%;
+}
+
+.unlockBubble:before 
+{
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 0 10px 15px;
+	border-color: #F05A24 transparent;
+	display: block;
+	width: 0;
+	z-index: 0;
+	top: -16px;
+	left: 45%;
+}
+
+.progressBar
+{
+	position: absolute;
+	top:0px;
+	left:0px;
+	height: 100%;
+	width: 100%;
+
+	z-index: -1;
+}
+
+.progressBar>.unlockedPercent
+{
+	position: absolute;
+
+	left: 0;
+	height: 100%;
+	width: 0%;
+	z-index: 1;
+
+	opacity: 0.1;
+	background-color: #0071BB;
+
+	display: inline-block;
+}
+
+.progressBar>.separator
+{
+	position: absolute;
+
+	height: 100%;
+	width: 2px;
+	z-index: 2;
+
+	opacity: 0.2;
+	background-color: white;
+
+	display: inline-block;
+}
+
+.progressBar>.lockedPercent
+{
+	position: absolute;
+
+	right: 0;
+	height: 100%;
+	z-index: 1;
+
+	opacity: 0.1;
+	background-color: #F05A24;
+
+	display: inline-block;
+}
+
+.progressBar>.base
+{
+	width: 100%;
+	height: 100%;
+
+	background-color: white;
+
+	display: inline-block;
+}
+
+.achievementPanel .progressCount
+{
+	float:right;
+	margin-top: 5px;
+	margin-right: 5px;
+
+	font-weight: bold;
+	font-size: 13px;
+	color: #333333;
+}
+
+@media (max-width: 959px)
+{
+	.achievementPanel .name
+	{
+		margin-top: 3px;
+		line-height: 13px;
+		font-size: 12px;
+	}
+
+	.achievementPanel .description
+	{
+		font-size: 10px;
+	}
+}
+/* -----------------------------------------------
+ ------------------ Shared Items------------------ */
+#sharedItemsPanel
+{
+	position: relative;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+#sharedItemsSearch
+{
+	float: right;
+	
+	background-image: url(../images/search.svg);
+	background-position: calc(100% - 3px);
+	background-size: 15px 15px;
+	background-repeat: no-repeat;
+	
+	height: 28px;
+	width: 100%;
+	
+	color: #333333;
+	font-size: 13px;
+	
+	padding: 5px;
+	padding-right: 20px;
+	border-radius: 3px;
+	border: solid 1px #D2D2D2;
+}
+
+.sharedItem
+{
+	border-bottom: 1px solid black;
+	height: calc(100% / 6 - 1px);
+	overflow: hidden;
+	position: relative;
+	background-color: rgba(255,255,255,0.8);
+	cursor: pointer;
+}
+.sharedItem .preview
+{
+	background-position: center center;
+	background-size: cover;
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+.sharedItem .content
+{
+	margin-left: 5px;
+	float: left;
+	width: calc(80% - 5px);
+	height: 100%;
+}
+.sharedItem .tags
+{
+	position: absolute;
+	bottom: 0;
+}
+#sharedItemsPanel .tags span
+{
+	background-color: #999;
+	font-size: small;
+	border-radius: 6px;
+	padding: 4px;
+	display: inline-block;
+	margin-bottom: 9px;
+}
+
+.sharedItem h2
+{
+	font-size: medium;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.sharedItem .subscription
+{
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+}
+#sharedItemsPanel a.button
+{
+	color: #0071BB;
+	padding: 6px;
+	font-size: 12px;
+	line-height: 18px;
+	white-space: nowrap;
+	overflow: hidden;
+	display: inline-block;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	text-decoration: none;
+	-webkit-transition: background-color .2s ease-in-out;
+	margin-bottom: 5px;
+}
+#sharedItemsPanel a.button:hover
+{
+	background-color: #ddd;
+}
+#sharedItemsPanel a.button.current
+{
+	background-color: #ddd;
+	-webkit-transition: none;
+}
+#sharedItemsPanel a.button.noclick
+{
+	cursor: default;
+	background-color: #ddd;
+	-webkit-transition: none;
+}
+.sharedItem .rating
+{
+	margin-bottom: 5px;
+}
+@media screen and (max-height: 600px) {
+	.sharedItem .rating
+	{
+		position: absolute;
+		top: 5px;
+		right: 5px;
+	}
+}
+@media screen and (max-height: 495px) {
+	.sharedItem .rating
+	{
+		display: none;
+	}
+	.sharedItem .subscription
+	{
+		height: 40px;
+		line-height: 40px;
+		bottom: calc(50% - 19px) !important;
+	}
+}
+@media screen and (max-height: 430px) {
+	.sharedItem .tags
+	{
+		display: none;
+	}
+	.sharedItem h2
+	{
+		position: absolute;
+		top: calc(50% - 9px);
+		height: 18px;
+		line-height: 18px;
+		margin: 0;
+	}
+}
+#sharedItemsPanel #singleItem
+{
+	z-index: 1;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.8);
+
+}
+#sharedItemsPanel span.star
+{
+	display: inline-block;
+	height: 18px;
+	width: 18px;
+	background-size: contain;
+}
+#sharedItemsPanel span.star.empty
+{
+	background-image: url(../images/star-empty.svg);
+}
+#sharedItemsPanel span.star.half
+{
+	background-image: url(../images/star-half.svg);
+}
+#sharedItemsPanel span.star.full
+{
+	background-image: url(../images/star-full.svg);
+}
+#sharedItemsPanel #singleItem>div
+{
+	margin: auto;
+	width: 90%;
+	height: 90%;
+	background-color: #fff;
+	position: relative;
+	top: 5%;
+	cursor: default;
+	border-radius: 5px;
+}
+#sharedItemsPanel #singleItem .preview
+{
+	background-size: cover;
+	background-position: center center;
+	width: 150px;
+	height: 150px;
+	margin: 0 auto 10px auto;
+}
+#sharedItemsPanel #singleItem .preview.empty
+{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 4px solid #ccc;
+    position: relative;
+}
+#sharedItemsPanel #singleItem div.preview.empty::before,
+#sharedItemsPanel #singleItem div.preview.empty::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px; /* cross thickness */
+    background-color: #ccc;
+}
+
+#sharedItemsPanel #singleItem div.preview.empty::before {
+    transform: rotate(45deg);
+}
+
+#sharedItemsPanel #singleItem div.preview.empty::after {
+    transform: rotate(-45deg);
+}
+#sharedItemsPanel #singleItem>div #singleItemContent
+{
+	padding: 20px;
+}
+#sharedItemsPanel #itemsList #loading
+{
+	text-align: center;
+	position: relative;
+	height: 50px;
+	line-height: 50px;
+	top: calc(50% - 25px);
+}
+#singleItemDescriptionHolder
+{
+	float: left;
+	width: calc(100% - 200px - 10px);
+	margin-right: 10px;
+	position: relative;
+	min-height: 50%;
+	height: calc(100% - 3.2em);
+	display: flex;
+	flex-direction: column;
+}
+#singleItemTitle>input
+{
+	font-size: 1em;
+	font-weight: bold;
+}
+#singleItemDescription
+{
+	display: flex;
+	flex-grow: 1;
+}
+#singleItemDescription>textarea
+{
+	font-size: 1em;
+	width: 100%;
+}
+#singleItemRightColumn
+{
+	float: right;
+	width: 200px;
+}
+#singleItemOwnerPanel, #singleItemEditPanel
+{
+	float: right;
+}
+#sharedItemsPanel #itemInfoHeading
+{
+	font-weight: bold;
+}
+#sharedItemsPanel #singleItemVisibility
+{
+	float: right;
+	margin-top: 25px
+}
+#sharedItemsPanel #singleItemPrivateMessage
+{
+	width: 100%;
+	border: 2px solid #900;
+	font-weight: bold;
+	padding: 3px;
+}
+#sharedItemsPanel #singleItemDescriptionWrapper
+{
+	height: calc(100% - 240px);
+	position: relative;
+}
+#sharedItemsPanel .singleItemRightColumnItem
+{
+	text-align: center; margin-bottom: 10px;
+}
+#sharedItemsPanel #singleItemToolbar
+{
+	position: absolute; bottom: 20px; width: calc(100% - 40px);
+}
+#sharedItemsPanel #singleItemBackButtonHolder
+{
+	float: left;
+}
+#sharedItemsPanel #controlsPanel
+{
+	height: 41px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#sharedItemsPanel #itemsWrapper
+{
+	height: calc(100% - 3 * 41px);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#sharedItemsPanel #itemsList
+{
+	border: 1px solid black;
+	height: calc(100% - 2px);
+	background: rgba(0,0,0,0.2);
+}
+#sharedItemsPanel #paginationHolder
+{
+	position: absolute;
+	bottom: 0;
+	width: calc(100% - 20px);
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 41px;
+	line-height: 41px;
+}
+#sharedItemsPanel #buttonsHolder
+{
+	float: right;
+}
+
+/* ------------------------------------------------
+   -------------- Dialog overrides ------------- */
+
+.ui-dialog-titlebar
+{
+	background: white !important;
+	color: #0071BB !important;
+	text-align: center !important;
+
+	cursor: default !important;
+
+	font-size: 18px !important;
+	font-weight: bold !important;
+	height: 44px !important;
+	line-height: 44px !important;
+
+	border-bottom: solid 1px #D2D2D2 !important;
+
+	padding: 0 !important;
+	margin-left: 10px !important;
+	margin-right: 10px !important;
+}
+
+
+.ui-dialog-title
+{
+	width: 100% !important;
+
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+#ConnectionLostDialog.ui-dialog-content
+{
+	text-align: center !important;
+	color: #1A1A1A !important;
+	font-size: 14px !important;
+
+	margin-bottom: 14px !important;
+	margin-left: 20px !important;
+	margin-right: 20px !important;
+}
+
+#reconnectTimer
+{
+	font-size: 22px;
+	line-height: 40px;
+}
+
+#reconnectButton
+{
+	font-size: 15px;
+	color: #4D4D4D;
+	background-color: #E5E5E5;
+
+	border: solid 1px #B2B2B2;
+}
+
+#reconnectButton.disabled
+{
+	opacity: 0.5;
+	
+	background-color: rgba(255, 255, 255, 0.8);
+	
+	cursor: default;
+}
+
+/* ------------------------------------------------
+   -------------- Selectric overrides ------------- */
+.selectric
+{
+	background: white !important; 
+}
+
+.selectric .label
+{
+  color: #0071BB !important;
+}
+
+.selectric .button
+{
+	border-left: 1px solid #D2D2D2 !important;
+}
+
+.selectric-items
+{
+	background: white !important;
+	-webkit-box-shadow: 0 0 0 0 !important;
+  	box-shadow: 0 0 0 0 !important;
+}
+
+.selectric-items ul
+{
+	border-radius: 5px;
+}
+
+.selectric-items li 
+{
+  color: #0071BB !important;
+  background: white !important;
+}
+
+
+
+
+
+@media (max-width: 959px)
+{
+	.tab > .content > .name-outer
+	{
+		left:26px;
+		max-width: calc(100% - 44px);
+		margin-top: 4px;
+		font-size: 8px;
+	}
+	
+	.tab > .content > .name-outer > .name
+	{
+		font-size: 12px;
+	}
+	
+	.tab > .content > .icon
+	{
+		left:2px;
+	}
+
+	.tab > .content > .notificationsquare
+	{
+		right:2px;
+		font-size: 12px;
+		padding: 0 2px;
+		min-width: 12px;
+		height: 16px;
+		line-height: 16px;
+		top:14px;
+	}
+
+	.tab > .content > .closebutton
+	{
+		right:2px;
+	}
+	
+	.nickname-container>.nickname-outer
+	{
+		font-size: 8px;
+	}
+	
+	.nickname-container>.nickname-outer>.nickname
+	{
+		font-size: 15px;
+	}
+	
+	#feralNetFriendsList .feralnetfriend > .button
+	{
+		border-top-left-radius: 0px !important;
+		border-top-right-radius: 0px !important;
+		border-bottom-right-radius: 0px !important;
+		border-bottom-left-radius: 0px !important;
+		height: 100%;
+
+		border-style: none !important;
+		margin-right: -2px;
+		background-image: url("../images/head-chat.svg") !important;
+		background-position: center !important;
+		background-repeat: no-repeat !important;
+		background-color: transparent !important;
+		width:30px;
+		min-width:30px;
+		margin-right:2px;
+		color: transparent !important;
+	}
+
+	#feralNetFriendsList .feralnetfriend > .button.disabled
+	{
+		background-image: url("../images/chatting.svg") !important;
+		opacity:.60;/*Doug felt chatting.svg turned out a bit dark, this lightens it.*/
+	}
+}
+
+@media (max-width: 1279px)
+{
+	.overlayFrame
+	{
+		width:calc(100% - 10px);
+	}
+}
+/* ------------------------------------------------
+ ------ Limit the size on larger resolutions ------ */
+@media (min-width: 2000px){
+        .overlayFrame{
+            width: 1600px;
+            height: 900px;
+        }
+}
+
+#OfflineOverlay {
+    position: absolute;
+    z-index: 1001;
+    width: 360px;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: #FFFFFF;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 50px black;
+    text-align: center;
+    font-size: 14px;
+}
+
+#OfflineOverlayBackground {
+    left: -1px;
+    top: -1px;
+    width: 101%;
+    height: 101%;
+    background-color: rgb(0, 0, 0);
+    z-index: 1000;
+    position: absolute;
+    opacity: 0.5;
+}
+
+#OfflineOverlay>h2 {
+    position: relative;
+    height: 41px;
+    width: 100%;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    border-bottom: solid 1px #CCCCCC;
+}
+
+#OfflineOverlay>h2>.title {
+    position: relative;
+    top: 10px;
+    color: #0071BB;
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-block;
+}
+
+#OfflineOverlay>.content {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}

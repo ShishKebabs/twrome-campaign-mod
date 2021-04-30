@@ -1,0 +1,157 @@
+<link rel="import" href="feralUIImports/tabRomeDLC/tabRomeDLC.html" />
+<link rel="import" href="feralUIImports/tabModManager/tabModManager.html" />
+
+<h1 id="mainAppTitle">
+	<span class="rtw-title">Total War™: ROME REMASTERED</span>
+	<span class="rtwbi-title">Total War™: ROME REMASTERED <strong>Barbarian Invasion</strong></span>
+	<span class="rtwalex-title">Total War™: ROME REMASTERED <strong>Alexander</strong></span>
+</h1>
+
+
+<span id="SelectGame" data-inner-string="localise-Startup.SelectGame">Select Game:</span>
+
+<div class="playOption selectedGame" data-game-pos="0" data-game-id="rome">
+	<h1 class="mainAppName">
+		Total War™: ROME REMASTERED
+
+	</h1>
+	
+	<img 	src="../../../GameIcon.icns"
+	data-srcset-string="MainAppIconSet"
+	class="tabSharedGameIconMirage viewed gameIconImg"
+	alt="" />
+	
+</div>
+
+<div class="playOption selectedGame" data-game-pos="1" data-game-id="rome_bi">
+	<h1 class="mainAppName">
+		Total War™: ROME REMASTERED <strong>Barbarian Invasion</strong>
+
+	</h1>
+	
+	<img 	src="../../../GameIcon.icns"
+	data-srcset-string="MainAppIconSet"
+	class="tabSharedGameIconMirage viewed gameIconImg"
+	alt="" />
+</div>
+
+<div class="playOption selectedGame" data-game-pos="2" data-game-id="rome_alex">
+	<h1 class="mainAppName">
+		Total War™: ROME REMASTERED <strong>Alexander</strong>
+	</h1>
+	
+	<img 	src="../../../GameIcon.icns"
+	data-srcset-string="MainAppIconSet"
+	class="tabSharedGameIconMirage viewed gameIconImg"
+	alt="" />
+</div>
+
+
+<!-- Test Panel checkboxes  -->
+<label id="TestVideos">
+	<input 	type="checkbox"
+	data-property-name="regFlag-appRegKey-TestVideos"
+	data-property-type="bool" />
+	<span>Test Videos</span>
+</label>
+
+<label id="NoSound">
+	<input 	type="checkbox"
+	data-property-name="regFlag-appRegKey-NoSound"
+	data-property-type="bool" />
+	<span data-inner-string="localise-Rome.Startup.SilentMode">Disable All Sounds</span>
+</label>
+
+<label id="NoMovies">
+	<input 	type="checkbox"
+	data-property-name="regFlag-appRegKey-NoMovies"
+	data-property-type="bool" />
+	<span data-inner-string="localise-Rome.Startup.NoMovies">Disable All Movies</span>
+</label>
+
+<label id="TexClientStorage">
+	<input 	type="checkbox"
+	data-property-name="regFlag-appRegKey-TexClientStorage"
+	data-property-type="bool" />
+	<span>Enable Client Texture Storage</span>
+</label>
+
+<label id="AssetLoggingEnabled">
+	<input type="checkbox"
+	data-property-name="regFlag-appRegKey-AssetLoggingEnabled"
+	data-property-type="bool" />
+	<span>Enable logging asset errors</span>
+</label>
+
+<label id="AssetUsageLoggingEnabled">
+	<input type="checkbox"
+	data-property-name="regFlag-appRegKey-AssetUsageLoggingEnabled"
+	data-property-type="bool" />
+	<span>Enable asset usage logging</span>
+</label>
+
+<!-- GGA 20-Feb-2020 UI sprites logging  -->
+<label id="AssetSpritesLoggingEnabled">
+	<input type="checkbox"
+	data-property-name="regFlag-appRegKey-AssetSpritesLoggingEnabled"
+	data-property-type="bool" />
+	<span>Enable sprites logging</span>
+</label>
+
+<label id="ForceManifestGeneration">
+	<input 	type="checkbox"
+	data-property-name="regFlag-appRegKey-ForceManifestGeneration"
+	data-property-type="bool" />
+	<span>Force Manifest (Re)Generation</span>
+</label>
+
+
+<!-- Advanced Panel checkboxes  -->
+<label id="RomeShell">
+	<input 	type="checkbox"
+	data-property-name="regFlag-appRegKey-EnableRomeShell"
+	data-property-type="bool" />
+	<span data-inner-string="localise-Rome.Startup.EnableConsoleCheckbox">
+		Enable RomeShell
+	</span>
+</label>
+
+<label id="UnlockFactions">
+	<input 	type="checkbox"
+	data-property-name="regFlag-appRegKey-UnlockAllFactions"
+	data-property-type="bool" />
+	<span data-inner-string="localise-Rome.Startup.UnlockAllFactions">
+		Unlock All Factions (Base Game Only)
+	</span>
+</label>
+
+<label id="EnableFeralUI">
+	<input 	type="checkbox"
+	data-property-name="regFlag-appRegKey-EnableFeralUI"
+	data-property-type="bool" />
+	<span>Enable the Feral UI modifications</span>
+</label>
+
+<label id="DisableMinimiseOnAltTab">
+	<input 	type="checkbox"
+	data-property-name="regFlag-appRegKey-DisableMinimiseOnDeactivation"
+	data-property-type="bool" />
+	<span data-inner-string="localise-Startup.DisableMinimiseOnAltTab">
+		Disable minimising on Alt + Tab (Windowed/Borderless Only)
+	</span>
+</label>
+
+<label id="ShowModConflictAlert">
+	<input 	type="checkbox"
+	data-property-name="regFlag-appRegKey-ShowModConflictAlert"
+	data-property-type="bool" />
+	<span data-inner-string="localise-Rome.Startup.ShowModConflictAlert">
+		Show Mod Conflict Alert
+	</span>
+</label>
+
+
+
+<script type="text/javascript" src="../PGOW/Core/feralUIImports/importPlayOptions.js"></script>
+<script src="game.js"></script>
+<link rel='stylesheet' href='game.css' />

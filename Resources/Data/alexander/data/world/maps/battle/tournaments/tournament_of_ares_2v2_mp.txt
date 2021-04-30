@@ -1,0 +1,5 @@
+tournament_name	tournament_of_ares_2v2
+
+custom/Issus_MP_2v2
+custom/Gaugamela_MP_2v2
+custom/Hydaspes_MP_2v2

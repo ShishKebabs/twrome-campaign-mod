@@ -1,0 +1,425 @@
+{
+    "frames": [
+
+    ],
+    "list": [
+        {
+            "name": "tutorial_hd_frame_a",
+            "x" : -70,
+            "y" : -50,
+            "size": {
+                "width"  : 498
+            },
+            "anchor" : "TL",
+            "align"  : "TL",
+        },
+        {
+            "name": "tutorial_hd_frame_a_title",
+            "x" : 56,
+            "y" : 88,
+            "size" : {
+                "width"  : 240
+            },
+            "font" : "verdana_sml_bold",
+            "font_colour" : "dark_brown",
+            "anchor" : "TL",
+            "align"  : "TC"
+        },
+        {
+            "name": "tutorial_hd_frame_a_body",
+            "x" : 56,
+            "y" : 88,
+            "size" : {
+                "width"  : 280
+            },
+            "font" : "feral_sml_med",
+            "font_colour" : "dark_brown",
+            "anchor" : "TL",
+            "align"  : "TC"
+        },
+        {
+            "name": "tutorial_hd_frame_a_button",
+            "x" : 56,
+            "y" : 88,
+            "size" : {
+                "width"  : 60,
+                "height" : 60
+            },
+            "anchor" : "TL",
+        },
+        {
+            "name": "tutorial_hd_frame_a_replay",
+            "x" : 0,
+            "y" : 0,
+            "size" : {
+                "width"  : 80,
+                "height" : 80
+            },
+            "anchor" : "TL",
+        },
+        {
+            "name": "tutorial_hd_frame_b",
+            "x" : -70,
+            "y" : -50,
+            "size": {
+                "width"  : 498
+            },
+            "anchor" : "TL",
+            "align"  : "TL"
+        },
+        {
+            "name" : "tutorial_hd_frame_b_title",
+            "x" : 56,
+            "y" : 90,
+            "size" : {
+                "width"  : 240
+            },
+            "font" : "verdana_sml_bold",
+            "font_colour" : "dark_brown",
+            "anchor" : "TL",
+            "align"  : "TC"
+        },
+        {
+            "name" : "tutorial_hd_frame_b_body",
+            "x" : 56,
+            "y" : 90,
+            "size" : {
+                "width"  : 280
+            },
+            "font" : "feral_sml_med",
+            "font_colour" : "dark_brown",
+            "anchor" : "TL",
+            "align"  : "TC"
+        },
+        {
+            "name" : "tutorial_hd_frame_b_command",
+            "x" : 56,
+            "y" : 90,
+            "size" : {
+                "width"  : 280
+            },
+            "font" : "verdana_sml_bold",
+            "font_colour" : "dark_brown",
+            "anchor" : "TL",
+            "align"  : "TC"
+        },
+        {
+            "name": "tutorial_hd_frame_b_replay",
+            "x" : 0,
+            "y" : 0,
+            "size" : {
+                "width"  : 80,
+                "height" : 80
+            },
+            "anchor" : "TL",
+        },
+        {
+            "name": "tutorial_hd_right_frame",
+            "x" : 75,
+            "y" : -50,
+            "size": {
+                "width"  : 498
+            },
+            "fill" : "black_curved",
+            "anchor" : "TR",
+            "align"  : "TR"
+        },
+        {
+            "name" : "tutorial_hd_right_frame_body",
+            "x" : -345,
+            "y" : 104,
+            "size" : {
+                "width"  : 310
+            },
+            "font" : "feral_sml_med",
+            "font_colour" : "dark_brown",
+            "anchor" : "TR",
+            "align"  : "TL"
+        },
+        {
+            "name" : "tutorial_hd_right_frame_list",
+            "x" : -350,
+            "y" : 104,
+			"size": {
+				"width" : 315,
+				"height": 300
+			},
+            "anchor" : "TR",
+            "align"  : "TL"
+        },
+        {
+            "name" : "tutorial_hd_right_frame_extra",
+            "x" : -345,
+            "y" : 104,
+            "size" : {
+                "width"  : 310
+            },
+            "font" : "verdana_sml",
+            "font_colour" : "dark_brown",
+            "anchor" : "TR",
+            "align"  : "TL"
+        },
+        {
+            "name": "tutorial_hd_frame_c",
+            "x" : -50,
+            "y" : -50,
+            "size": {
+                "width"  : 478
+            },
+            "fill" : "black_curved",
+            "anchor" : "TL",
+            "align"  : "TL"
+        },
+        {
+            "name" : "tutorial_hd_frame_c_title",
+            "x" : 56,
+            "y" : 68,
+            "size" : {
+                "width"  : 240
+            },
+            "font" : "verdana_med",
+            "font_colour" : "dark_brown",
+            "anchor" : "TL",
+            "align"  : "TC"
+        },
+        {
+            "name" : "tutorial_hd_frame_c_body",
+            "x" : 56,
+            "y" : 68,
+            "size" : {
+                "width"  : 280
+            },
+            "font" : "feral_sml_med",
+            "font_colour" : "black",
+            "anchor" : "TL",
+            "align"  : "TC"
+        },
+        {
+            "name" : "tutorial_hd_frame_c_section",
+            "x" : 56,
+            "y" : 68,
+            "size" : {
+                "width"  : 280
+            },
+            "font" : "verdana_med",
+            "font_colour" : "own_faction_blue",
+            "anchor" : "TL",
+            "align"  : "TC"
+        },
+        {
+            "name": "tutorial_hd_frame_c_indicator",
+            "x": 210,
+            "y" : 68,
+            "size": {
+                "width" : 240
+            },
+            "anchor" : "TL",
+            "align": "TC"
+        },
+        {
+            "name": "tutorial_hd_frame_c_left",
+            "x" : 56,
+            "y" : 68,
+            "anchor" : "TL"
+        },
+        {
+            "name": "tutorial_hd_frame_c_right",
+            "x" : 56,
+            "y" : 68,
+            "anchor" : "B"
+        },
+        {
+            "name": "tutorial_hd_hover_frame",
+            "size": {
+                "width"  : 230
+            },
+            "fill" : "black_curved",
+            "anchor" : "B",
+            "align"  : "BC"
+        },
+        {
+            "name": "tutorial_hd_hover_frame_title",
+            "size" : {
+                "width"  : 200
+            },
+            "font" : "feral_sml_med",
+            "font_colour" : "dark_brown",
+            "anchor" : "B",
+            "align"  : "BC"
+        },
+        {
+            "name": "tutorial_hd_hover_frame_body",
+            "size" : {
+                "width"  : 200
+            },
+            "font" : "verdana_sml",
+            "font_colour" : "dark_brown",
+            "anchor" : "B",
+            "align"  : "BC"
+        },
+        {
+            "name": "tutorial_hd_hover_frame_button",
+            "size" : {
+                "width"  : 40,
+                "height" : 40
+            },
+            "anchor" : "TL",
+        },
+        {
+            "name": "tutorial_hd_frame_d",
+            "x" : -70,
+            "y" : -50,
+            "size": {
+                "width"  : 498
+            },
+            "fill" : "black_curved",
+            "anchor" : "TL",
+            "align"  : "TL"
+        },
+        {
+            "name": "tutorial_hd_frame_d_title",
+            "x" : 56,
+            "y" : 88,
+            "size" : {
+                "width"  : 240
+            },
+            "font" : "verdana_sml_bold",
+            "font_colour" : "dark_brown",
+            "anchor" : "TL",
+            "align"  : "TC"
+        },
+        {
+            "name": "tutorial_hd_frame_d_body",
+            "x" : 56,
+            "y" : 88,
+            "size" : {
+                "width"  : 280
+            },
+            "font" : "feral_sml_med",
+            "font_colour" : "dark_brown",
+            "anchor" : "TL",
+            "align"  : "TC"
+        },
+        {
+            "name": "tutorial_hd_frame_d_button",
+            "x" : 56,
+            "y" : 88,
+            "size" : {
+                "width"  : 60,
+                "height" : 60
+            },
+            "anchor" : "TL",
+        },
+        {
+            "name": "tutorial_hd_frame_d_replay",
+            "x" : 0,
+            "y" : 0,
+            "size" : {
+                "width"  : 80,
+                "height" : 80
+            },
+            "anchor" : "TL",
+        },
+        {
+            "name": "tutorial_hd_frame_e",
+            "x" : -70,
+            "y" : -50,
+            "size": {
+                "width"  : 498
+            },
+            "fill" : "black_curved",
+            "anchor" : "TL",
+            "align"  : "TL"
+        },
+        {
+            "name" : "tutorial_hd_frame_e_title",
+            "x" : 56,
+            "y" : 88,
+            "size" : {
+                "width"  : 280
+            },
+            "font" : "verdana_sml_bold",
+            "font_colour" : "dark_brown",
+            "anchor" : "TL",
+            "align"  : "TC"
+        },
+        {
+            "name" : "tutorial_hd_frame_e_body",
+            "x" : 56,
+            "y" : 88,
+            "size" : {
+                "width"  : 280
+            },
+            "font" : "feral_sml_med",
+            "font_colour" : "dark_brown",
+            "anchor" : "TL",
+            "align"  : "TC"
+        },
+        {
+            "name" : "tutorial_hd_frame_e_section",
+            "x" : 56,
+            "y" : 88,
+            "size" : {
+                "width"  : 280
+            },
+            "font" : "verdana_sml_bold",
+            "font_colour" : "dark_brown",
+            "anchor" : "TL",
+            "align"  : "TC"
+        },
+        {
+            "name": "tutorial_hd_frame_e_indicator",
+            "x": 210,
+            "y" : 88,
+            "size": {
+                "width" : 240
+            },
+            "anchor" : "TL",
+            "align": "TC"
+        },
+        {
+            "name": "tutorial_hd_frame_e_left",
+            "x" : 56,
+            "y" : 88,
+            "anchor" : "TL"
+        },
+        {
+            "name": "tutorial_hd_frame_e_right",
+            "x" : 56,
+            "y" : 88,
+            "anchor" : "B"
+        },
+        {
+            "name" : "tutorial_hd_frame_e_command",
+            "x" : 56,
+            "y" : 88,
+            "size" : {
+                "width"  : 280
+            },
+            "font" : "verdana_sml_bold",
+            "font_colour" : "dark_brown",
+            "anchor" : "TL",
+            "align"  : "TC"
+        },
+        {
+            "name": "tutorial_hd_frame_e_button",
+            "x" : 56,
+            "y" : 88,
+            "size" : {
+                "width"  : 60,
+                "height" : 60
+            },
+            "anchor" : "TL",
+        },
+        {
+            "name": "tutorial_hd_frame_e_replay",
+            "x" : 0,
+            "y" : 0,
+            "size" : {
+                "width"  : 80,
+                "height" : 80
+            },
+            "anchor" : "TL",
+        },
+    ]
+}

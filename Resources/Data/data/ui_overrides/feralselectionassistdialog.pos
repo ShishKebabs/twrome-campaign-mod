@@ -1,0 +1,70 @@
+{
+	"tooltip": {
+		"x": 140,
+		"y": 4,
+		"width": 350,
+		"height": 68
+	},
+	"frames": [
+		{
+			"position": {
+				"x": 236,
+				"y": 134
+			},
+			"size": {
+				"width":  528,
+				"height": 400
+			},
+			"priority": -1,
+			"fill": "black_curved"
+		},
+		{
+			"position": {
+				"x": 244,
+				"y": 400
+			},
+			"size": {
+				"width": 514,
+				"height": 48
+			},
+			"priority": -1,
+			"fill": "black_curved"
+		}
+	],
+	"list": [
+		{
+			"name": "title",
+			"x": 512,
+			"y": 160,
+			"align": "C"
+		},
+		{
+			"name": "button_grid",
+			"x": 328,
+			"y": 218,
+			"size": {
+				"width": 340, 
+				"height": 120
+			}
+		},
+		{
+			"name": "disable_string",
+			"x": 252,
+			"y": 408,
+			"size": {
+				"width": 440,
+				"height": 100
+			}
+		},
+		{
+			"name": "disable_check",
+			"x": 718,
+			"y": 420
+		},
+		{
+			"name": "close_button",
+			"x": 488,
+			"y": 492
+		}
+	]
+}

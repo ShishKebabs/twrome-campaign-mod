@@ -1,0 +1,836 @@
+	plaza_barbarian_128x128m
+	{
+		stat_cat indestructable
+		localised_name plaza
+		level
+		{
+			min_health 0
+			battle_stats
+			item		plaza_barbarian_128x128m
+			physical_info	info_plaza_barbarian_128x128m.cas
+		}
+	}
+
+	plaza_barbarian_64x64m
+	{
+		stat_cat indestructable 
+		localised_name plaza
+		level
+		{
+			min_health 0
+			battle_stats
+			item		plaza_barbarian_64x64m
+			physical_info	info_plaza_barbarian_64x64m.cas
+		}
+	}
+
+	plaza_barbarian_32x32m
+	{
+		stat_cat indestructable 
+		localised_name plaza
+		level
+		{
+			min_health 0
+			battle_stats
+			item		plaza_barbarian_32x32m
+			physical_info	info_plaza_barbarian_32x32m.cas
+		}
+	}
+
+;; Barbarian shrine rubble updated for RomeHD.
+
+	barbarian_shrine
+	{
+		stat_cat small_stone
+		localised_name shrine
+		level
+		{
+			min_health 1
+			battle_stats
+			item		barbarian_shrine
+			physical_info	info_barbarian_shrine.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barbarian_shrine_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+
+	barbarian_stables
+	{
+		stat_cat small_wooden
+		localised_name stables
+		level
+		{
+			min_health 1
+			battle_stats
+			item		barbarian_stables
+			physical_info	info_barbarian_stables.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barbarian_stables_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+
+	barbarian_trader
+	{
+		stat_cat tiny_wooden
+		localised_name trader
+		level
+		{
+			min_health 1
+			battle_stats
+			item		barbarian_trader
+			physical_info	info_barbarian_trader.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_48x32
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+	
+;; should really use 15x22 rubble, but that size isn't available yet, so using 14x15 instead.
+
+	barbarian_hall_large
+	{
+		stat_cat medium_wooden
+		localised_name hall_large
+		level
+		{
+			min_health 1
+			battle_stats
+			item		barbarian_hall_large
+			physical_info	info_barbarian_hall_large.cas
+		}
+
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_rubble_hall_large
+			physical_info	info_barb_rubble_hall_large.cas
+		}
+	}
+
+	barbarian_lith
+	{
+		stat_cat medium_wooden
+		localised_name lith
+		level
+		{
+			min_health 1
+			battle_stats
+			item		barbarian_lith
+			physical_info	info_barbarian_lith.cas
+		}
+		transition default_small_wooden
+		level
+		{
+			min_health 0
+			battle_stats
+			item		none
+			physical_info	none
+		}
+	}
+
+
+;; really wants rubble 14x19
+	barbarian_long_house
+	{
+		stat_cat small_wooden 
+		localised_name long_house
+		level
+		{
+			min_health 1
+			battle_stats
+			item		barbarian_long_house
+			physical_info	info_barbarian_long_house.cas
+		}
+		transition default_small_wooden
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barbarian_long_house_rubble
+			physical_info	info_barb_rubble_long_house.cas
+		}
+	}
+
+
+	barbarian_park_building
+	{
+		stat_cat small_stone
+		localised_name park_building
+		level
+		{
+			min_health 1
+			battle_stats
+			item		barbarian_park_building
+			physical_info	info_barbarian_park_building.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_17x13
+			physical_info	info_roman_rubble_17x13.cas
+		}
+	}
+
+
+	barbarian_round_house_large
+	{
+		stat_cat tiny_wooden
+		localised_name hut
+		level
+		{
+			min_health 1
+			battle_stats
+			item		barbarian_round_house_large
+			physical_info	info_barbarian_round_house_large.cas
+		}
+		transition default_small_wooden
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_7_radius
+			physical_info	info_roman_rubble_7_radius.cas
+		}
+	}
+
+	barbarian_round_house_small
+	{
+		stat_cat tiny_wooden
+		localised_name hut
+		level
+		{
+			min_health 1
+			battle_stats
+			item		barbarian_round_house_small
+			physical_info	info_barbarian_round_house_small.cas
+		}
+		transition default_small_wooden
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_rubble_5_radius
+			physical_info	info_barb_rubble_5_radius.cas
+		}
+	}
+
+
+
+	barbarian_standalone_watchtower
+	{
+		stat_cat indestructable
+		localised_name watchtower
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barbarian_standalone_watchtower
+			physical_info	info_barbarian_standalone_watchtower.cas
+		}
+	}
+
+
+	barbarian_tent
+	{
+		stat_cat tiny_wooden 
+		localised_name none
+		level
+		{
+			min_health 1
+			battle_stats
+			item		barbarian_tent
+			physical_info	info_barbarian_tent.cas
+		}
+		transition default_small_wooden
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barbarian_tent_rubble
+			physical_info	info_barbarian_tent.cas
+		}
+	}
+
+	henge
+	{
+		stat_cat indestructable
+		localised_name henge
+		level
+		{
+			min_health 1
+			battle_stats
+			item		henge
+			physical_info	info_henge.cas
+		}
+		transition default_small_wooden
+		level
+		{
+			min_health 0
+			battle_stats
+			item		none
+			physical_info	none
+		}
+	}
+
+	henge_half_built
+	{
+		stat_cat indestructable
+		localised_name henge
+		level
+		{
+			min_health 1
+			battle_stats
+			item		henge_half_built
+			physical_info	info_henge_half_built.cas
+		}
+		transition default_small_wooden
+		level
+		{
+			min_health 0
+			battle_stats
+			item		none
+			physical_info	none
+		}
+	}
+
+
+	paddock
+	{
+		stat_cat small_wooden
+		localised_name paddock
+		no_shadow
+		level
+		{
+			min_health 1
+			battle_stats
+			item		paddock
+			physical_info	info_paddock.cas
+		}
+		transition default_small_wooden
+		level
+		{
+			min_health 0
+			battle_stats
+			item		paddock_rubble
+			physical_info	info_paddock.cas
+		}
+	}
+
+	standing_stones
+	{
+		stat_cat small_stone
+		localised_name standing_stones
+		level
+		{
+			min_health 1
+			battle_stats
+			item		standing_stones
+			physical_info	info_standing_stones.cas
+		}
+		transition default_small_wooden
+		level
+		{
+			min_health 0
+			battle_stats
+			item		none
+			physical_info	none
+		}
+	}
+
+
+		barbarian_marketplace
+	{
+		stat_cat tiny_wooden
+		localised_name marketplace
+		level
+		{
+			min_health 1
+			battle_stats
+			item		barbarian_marketplace
+			physical_info	info_barbarian_marketplace.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_48x32
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+	barbarian_smiths_workshop
+	{
+		stat_cat medium_wooden
+		localised_name smiths_workshop
+		level
+		{
+			min_health 1
+			battle_stats
+			item		barbarian_smiths_workshop
+			physical_info	info_barbarian_smiths_workshop.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_48x32
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+	warlords_hold
+	{
+		stat_cat large_wooden
+		localised_name warlords_hold
+		level
+		{
+			min_health 1
+			battle_stats
+			item		warlords_hold
+			physical_info	info_warlords_hold.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_112x64
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+;; Sacred groove rubble updated for RomeHD.
+
+	sacred_grove
+	{
+		stat_cat small_stone 
+		localised_name sacred_grove
+		level
+		{
+			min_health 1
+			battle_stats
+			item		sacred_grove
+			physical_info	info_sacred_grove.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		sacred_grove_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+;; Sacred circle rubble updated for RomeHD.
+
+	sacred_circle
+	{
+		stat_cat small_stone
+		localised_name sacred_circle
+		level
+		{
+			min_health 1
+			battle_stats
+			item		sacred_circle
+			physical_info	info_sacred_circle.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		sacred_circle_rubble
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+	warriors_hold
+	{
+		stat_cat large_wooden
+		localised_name warriors_hold
+		level
+		{
+			min_health 1
+			battle_stats
+			item		warriors_hold
+			physical_info	info_warriors_hold.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_48x32
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+	high_kings_hall
+	{
+		stat_cat large_wooden 
+		localised_name high_kings_hall
+		level
+		{
+			min_health 1
+			battle_stats
+			item		high_kings_hall
+			physical_info	info_high_kings_hall.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_160x128
+			physical_info	info_roman_rubble_160x128.cas
+		}
+	}
+
+;; drinking hall is now known as Muster Field in the tech-tree.
+
+	drinking_hall
+	{
+		stat_cat medium_wooden 
+		localised_name drinking_hall
+		level
+		{
+			min_health 1
+			battle_stats
+			item		drinking_hall
+			physical_info	info_drinking_hall.cas
+		}
+		transition default_small_wooden
+		level
+		{
+			min_health 0
+			battle_stats
+			item		drinking_hall_rubble
+			physical_info	barb_musterfield_rubble_info.CAS
+		}
+	}
+
+;; mead hall is now known as Meeting Hall in the tech-tree.
+
+	mead_hall
+	{
+		stat_cat medium_wooden
+		localised_name mead_hall
+		level
+		{
+			min_health 1
+			battle_stats
+			item		mead_hall
+			physical_info	info_mead_hall.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_48x32
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+	hall_of_heroes
+	{
+		stat_cat large_wooden
+		localised_name hall_of_heroes
+		level
+		{
+			min_health 1
+			battle_stats
+			item		hall_of_heroes
+			physical_info	info_hall_of_heroes.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		hall_of_heroes_rubble
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+	
+	warlords_stable
+	{
+		stat_cat medium_wooden
+		localised_name warlords_stable
+		level
+		{
+			min_health 1
+			battle_stats
+			item		warlords_stable
+			physical_info	info_warlords_stable.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_48x32
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+	
+	barbarian_great_market
+	{
+		stat_cat small_wooden
+		localised_name great_market
+		level
+		{
+			min_health 1
+			battle_stats
+			item		barbarian_great_market
+			physical_info	info_barbarian_great_market.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_112x64
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+
+	sacred_archway
+	{
+		stat_cat tiny_stone 
+		localised_name sacred_archway
+		level
+		{
+			min_health 1
+			battle_stats
+			item		sacred_archway
+			physical_info	info_sacred_archway.cas
+		}
+		transition default_small_wooden
+		level
+		{
+			min_health 0
+			battle_stats
+			item		none
+			physical_info	none
+		}
+	}
+
+
+;;;;;;;;;;;;;;;;;	barb village buildings
+
+	
+		barb_village_fences
+	{
+		stat_cat  indestructable  
+		localised_name none
+		no_shadow
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_village_fences
+			physical_info	barb_village_fences_info.cas
+		}
+	}
+
+	
+;;;;;;;;;;;;;;;;;	barb camp buildings	
+	
+
+	
+		barb_camp_tent
+	{
+		stat_cat tiny_wooden  
+		localised_name none
+		level
+		{
+			min_health 1
+			battle_stats
+			item		barb_camp_tent
+			physical_info	barb_camp_tent_info.cas
+		}
+		transition default_small_wooden
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_camp_tent_rubble
+			physical_info	barb_camp_tent_info.cas
+		}
+	}
+
+
+	
+		barb_camp_tentB
+	{
+		stat_cat tiny_wooden  
+		localised_name none
+		level
+		{
+			min_health 1
+			battle_stats
+			item		barb_camp_tentB
+			physical_info	barb_camp_tent_info.cas
+		}
+		transition default_small_wooden
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_camp_tentb_rubble
+			physical_info	barb_camp_tent_info.cas
+		}
+	}	
+
+;;;;;;;;;;;;;;;;;	barb town buildings
+
+		barb_town_collision
+	{
+		stat_cat indestructable 
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	barb_town_collision_info.cas
+		}
+	}	
+
+		barb_fenceA
+	{
+		stat_cat indestructable 
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_fenceA
+			physical_info	info_barb_fenceA.cas
+		}
+	}	
+
+		barb_fenceB
+	{
+		stat_cat indestructable 
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_fenceB
+			physical_info	info_barb_fenceB.cas
+		}
+	}	
+
+		barb_fenceC
+	{
+		stat_cat indestructable 
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_fenceC
+			physical_info	info_barb_fenceC.cas
+		}
+	}	
+
+		barb_town_compoundA
+	{
+		stat_cat indestructable 
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_town_compoundA
+			physical_info	barb_town_compoundA_info.CAS
+		}
+	}	
+
+		barb_town_compoundB
+	{
+		stat_cat indestructable 
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_town_compoundB
+			physical_info	barb_town_compoundB_info.CAS
+		}
+	}	
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;barb large town
+
+		barb_large_town_fenceA
+	{
+		stat_cat indestructable 
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_large_town_fenceA
+			physical_info	barb_large_town_fenceA_info.cas
+		}
+	}
+
+		barb_large_town_fenceB
+	{
+		stat_cat indestructable 
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_large_town_fenceB
+			physical_info	barb_large_town_fenceB_info.cas
+		}
+	}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;barb camp
+
+		barb_camp_collision
+	{
+		stat_cat indestructable 
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	barb_camp_collision_info.cas
+		}
+	}

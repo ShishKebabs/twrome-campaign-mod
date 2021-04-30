@@ -1,0 +1,498 @@
+plan
+
+{
+
+; z=-4 to move white flag outside the rock
+target rectangle x 0 z -4 rot 0 width 32 height 32
+floor		barbarian_city_underlay.CAS barbarian_city_overlay.CAS
+ground_types	barb_city_ground.tga -416 -416 416 416
+street_plan	barb_city_pathfinding.CAS
+
+borders
+	{
+
+diagonal_link,	288,	288,	135,	0
+
+external_left_link,	352,	-288,	90,	0
+external_left_link,	352,	32,	90,	0
+external_left_link,	224,	352,	180,	0
+external_left_link,	-352,	32,	-90,	0
+external_left_link,	-288,	-352,	0,	0
+
+external_right_link,	288,	-352,	0,	0
+external_right_link,	352,	-224,	90,	0
+external_right_link,	352,	224,	90,	0
+external_right_link,	-224,	352,	180,	0
+external_right_link,	-352,	224,	-90,	0
+external_right_link,	-352,	-288,	-90,	0
+
+gateway,	-0,	352,	180,	0
+gateway,	-352,	-192,	-90,	0
+gateway,	352,	128,	90,	0
+gateway,	64,	-352,	0,	0
+
+internal_left_link,	288,	-160,	90,	0
+internal_left_link,	-288,	288,	180,	0
+internal_left_link,	-288,	160,	-90,	0
+
+internal_right_link,	288,	-32,	90,	0
+internal_right_link,	-288,	96,	-90,	0
+
+straight,	-0,	-352,	0,	0
+straight,	256,	-352,	0,	0
+straight,	352,	-256,	90,	0
+straight,	288,	-128,	90,	0
+straight,	320,	0,	45,	0
+straight,	352,	64,	90,	0
+straight,	352,	192,	90,	0
+straight,	256,	320,	135,	0
+straight,	192,	352,	180,	0
+straight,	64,	352,	180,	0
+straight,	-64,	352,	180,	0
+straight,	-192,	352,	180,	0
+straight,	-320,	288,	180,	0
+straight,	-352,	256,	-90,	0
+straight,	-288,	128,	-90,	0
+straight,	-352,	-0,	-90,	0
+straight,	-352,	-128,	-90,	0
+straight,	-352,	-256,	-90,	0
+straight,	-256,	-352,	0,	0
+straight,	-128,	-352,	0,	0
+straight,	128,	-352,	0,	0
+
+straight_link,	160,	-352,	0,	0
+straight_link,	288,	-96,	90,	0
+straight_link,	160,	352,	180,	0
+straight_link,	96,	352,	180,	0
+straight_link,	-96,	352,	180,	0
+straight_link,	-160,	352,	180,	0
+straight_link,	-352,	-32,	-90,	0
+straight_link,	-352,	-96,	-90,	0
+straight_link,	-224,	-352,	0,	0
+straight_link,	-160,	-352,	0,	0
+straight_link,	-96,	-352,	0,	0
+straight_link,	-32,	-352,	0,	0
+straight_link,	224,	-352,	0,	0
+
+tower_external_corner_link,	-352,	288,	-90,	0
+
+tower_straight,	-64,	-352,	0,	0
+tower_straight,	-192,	-352,	0,	0
+tower_straight,	-320,	-320,	-45,	0
+tower_straight,	320,	-320,	45,	0
+tower_straight,	-320,	192,	-45,	0
+tower_straight,	-128,	352,	180,	0
+tower_straight,	128,	352,	180,	0
+tower_straight,	320,	256,	135,	0
+tower_straight,	320,	-192,	135,	0
+tower_straight,	-352,	-64,	-90,	0
+tower_straight,	288,	-64,	90,	0
+tower_straight,	-256,	320,	-135,	0
+tower_straight,	-320,	64,	-135,	0
+tower_straight,	192,	-352,	0,	0
+
+
+	}
+
+
+; ROAD JOINERS
+
+gateway_slot_into_flat_town,	0,	384,	90,	0
+gateway_slot_into_flat_town,	384,	128,	0,	0
+gateway_slot_into_flat_town,	64,	-384,	-90,	0
+gateway_slot_into_flat_town,	-384,	-192,	180,	0
+
+
+
+; COLLISION
+
+barbarian_city_collision,	0,	0,	0,	0
+
+
+; SLOTS
+
+slot_plaza_barbarian_32x32m,	0,	0,	0,	16
+slot_112x64_market,	74.81,	74.57,	-45,	16
+slot_112x64_religious,	52.422,	-38.121,	-89,	16
+slot_160x128_core_building,	-204.38,	-211.41,	-45,	-0
+slot_112x64_barracks,	-66.315,	-48.319,	178,	16
+slot_48x32_smith,	-262.992,	-271.057,	-45,	0
+slot_48x32_equestrian,	129.207,	-6.994,	85,	16
+slot_112x64_taverns,	-269.79,	-45.96,	-90,	0
+slot_112x64_missiles,	30.39,	271.48,	-180,	0
+
+
+
+; BUILDINGS
+
+barb_town_compoundA,	-83.05,	-266.98,	-88.61,	0
+barb_town_compoundA,	260.95,	103.63,	-88.61,	0
+barb_town_compoundA,	226.955,	-93.452,	166.39,	0
+barb_town_compoundA,	260.965,	-251.432,	54,	0
+barb_town_compoundA,	-69.236,	50.252,	76,	16
+
+barb_town_compoundB,	265.30,	54.35,	105,	0
+barb_town_compoundB,	-228.76,	114.91,	-160,	0
+barb_town_compoundB,	-269.75,	-120.94,	140,	0
+barb_town_compoundB,	185.047,	-278.735,	143,	0
+barb_town_compoundB,	-46.705,	108.443,	-83,	16
+barb_town_compoundB,	-39.967,	-106.521,	153,	16
+
+barb_large_town_fenceA,	123.43,	-227.79,	-5.41,	0
+barb_large_town_fenceA,	-164.37,	238.76,	179.59,	0
+
+
+barb_large_town_fenceB,	184.74,	212.96,	179.59,	0
+
+
+barbarian_long_house,	100.55,	271.44,	-32,	0
+barbarian_long_house,	244.12,	118.96,	-92,	0
+barbarian_long_house,	275.23,	126.70,	-92,	0
+barbarian_long_house,	296.90,	89.62,	173,	0
+barbarian_long_house,	131.204,	-271.074,	108,	0
+barbarian_long_house,	-58.89,	-284.24,	83,	0
+barbarian_long_house,	-47.91,	-254.05,	178,	0
+barbarian_long_house,	-76.251,	258.817,	103,	0
+barbarian_long_house,	251.171,	-254.314,	137,	0
+barbarian_long_house,	180.672,	215.94,	118,	0
+barbarian_long_house,	260.11,		197.845,	-142,	0
+barbarian_long_house,	243.663,	-109.869,	-167,	0
+barbarian_long_house,	217.785,	-81.592,	63,	0
+barbarian_long_house,	239.502,	1.187,		-92,	0
+barbarian_long_house,	18.069,		-183.265,	-81.5,	8
+barbarian_long_house,	-87.932,	105.413,	-34,	16
+barbarian_long_house,	31.644,		182.26,		82,	8
+barbarian_long_house,	-268.617,	48.873,		-66,	0
+barbarian_long_house,	-169.747,	163.595,	-47,	0
+barbarian_long_house,	180.046,	40.486,		13,	8
+barbarian_long_house,	118.722,	140.856,	-128,	8
+barbarian_long_house,	142.08,		-206.058,	-75,	0
+barbarian_long_house,	93.486,		-44.059,	-23,	16
+barbarian_long_house,	234.111,	-290.639,	-105,	0
+barbarian_long_house,	34.647,		-106.706,	-81,	16
+barbarian_long_house,	28.889,		128.197,	90,	16
+barbarian_long_house,	-56.775,	57.854,		-10,	16
+barbarian_long_house,	-132.448,	-10.109,	-176,	16
+barbarian_long_house,	-77.684,	-93.227,	-112,	16
+barbarian_long_house,	93.345,		-262.809,	-161,	0
+barbarian_long_house,	-226.224,	-70.139,	15,	0
+barbarian_long_house,	200.823,	109.345,	-152,	0
+barbarian_long_house,	-289.186,	-162.668,	168,	0
+barbarian_long_house,	-180.498,	-134.547,	38,	0
+barbarian_long_house,	75.747,		-164.606,	-153.5,	8
+barbarian_long_house,	160.156,	-99.583,	59.5,	8
+barbarian_long_house,	-281.307,	223.045,	-148,	0
+
+barbarian_long_house2,	22.913,		62.492,		-15,	16
+barbarian_long_house2,	-50.998,	-124.304,	66,	16
+barbarian_long_house2,	-40.428,	34.509,		123,	16
+barbarian_long_house2,	-72.737,	67.946,		162,	16
+barbarian_long_house2,	265.04,	61.504,	-107,	0
+barbarian_long_house2,	55.37,	-280.37,	83,	0
+barbarian_long_house2,	-285.76,	-122.58,	-62,	0
+barbarian_long_house2,	-251.35,	221.49,	-37,	0
+barbarian_long_house2,	-236.09,	96.22,	8,	0
+barbarian_long_house2,	-91.55,	295.31,	-87,	0
+barbarian_long_house2,	219.131,	149.115,	103,	0
+barbarian_long_house2,	175.741,	263.023,	-102,	0
+barbarian_long_house2,	247.781,	-85.17,		163,	0
+barbarian_long_house2,	-100.196,	-251.249,	-80,	0
+barbarian_long_house2,	172.912,	-297.502,	65,	0
+barbarian_long_house2,	245.162,	-215.195,	-63,	0
+barbarian_long_house2,	32.949,		-240.242,	-60,	0
+barbarian_long_house2,	-174.077,	219.737,	118,	0
+barbarian_long_house2,	-195.73,	273.218,	-47,	0
+
+barbarian_hall_large,	127.036,	272.538,	5.5,	0
+barbarian_hall_large,	211.637,	207.21,		10.5,	0
+barbarian_hall_large,	248.78,		17.098,		60.5,	0
+barbarian_hall_large,	236.589,	-131.516,	-120,	0
+barbarian_hall_large,	27.091,		32.52,		108.5,	16
+barbarian_hall_large,	168.801,	73.254,		-159,	8
+barbarian_hall_large,	-110.159,	205.516,	-58.5,	0
+barbarian_hall_large,	202.651,	-271.142,	-84.5,	0
+barbarian_hall_large,	274.15,		-273.898,	140.5,	0
+barbarian_hall_large,	76.054,		224.167,	68.5,	0
+barbarian_hall_large,	98.674,		-151.585,	32.5,	8
+barbarian_hall_large,	-169.466,	287.767,	25.5,	0
+
+barbarian_hall_large2,	163.25,	-247.08,	-149.50,	0
+barbarian_hall_large2,	-124.27,	287.39,	0.50,	0
+barbarian_hall_large2,	203.90,	261.44,	0.50,	0
+barbarian_hall_large2,	248.534,	154.257,	175.5,	0
+barbarian_hall_large2,	234.241,	-59.635,	5,	0
+barbarian_hall_large2,	-114.741,	148.07,	126,	8
+barbarian_hall_large2,	-29.449,	97.569,		-114.5,	16
+barbarian_hall_large2,	-97.169,	39.395,		152.5,	16
+barbarian_hall_large2,	-23.134,	-97.512,	-71.5,	16
+barbarian_hall_large2,	-209.307,	231.212,	137.5,	0
+
+barbarian_round_house_large,	182.22,	182.16,	119,	0
+barbarian_round_house_large,	150.67,	205.33,	119,	0
+barbarian_round_house_large,	297.04,	112.21,	-86,	0
+barbarian_round_house_large,	-229.57,	187.20,	139,	0
+barbarian_round_house_large,	-222.87,	137.73,	34,	0
+barbarian_round_house_large,	280.91,	51.51,	-86,	0
+barbarian_round_house_large,	85.442,	-283.907,	-131,	0
+barbarian_round_house_large,	208.58,	-219.174,	-151,	0
+barbarian_round_house_large,	-101.27,	-278.84,	174,	0
+barbarian_round_house_large,	-251.53,	-116.18,	-16,	0
+barbarian_round_house_large,	115.95,	223.354,	149,	0
+barbarian_round_house_large,	231.842,	210.748,	19,	0
+barbarian_round_house_large,	230.993,	33.251,		-96,	0
+barbarian_round_house_large,	149.329,	262.55,		4,	0
+barbarian_round_house_large,	120.373,	-140.69,	35,	8
+barbarian_round_house_large,	-42.296,	-179.962,	-104,	8
+barbarian_round_house_large,	-23.738,	73.077,		-115,	16
+barbarian_round_house_large,	-61.434,	174.317,	163,	8
+barbarian_round_house_large,	-235.138,	18.806,		79,	0
+barbarian_round_house_large,	184.301,	12.945,		5,	8
+barbarian_round_house_large,	60.996,		174.258,	161,	8
+barbarian_round_house_large,	54.601,		28.652,		-167,	16
+barbarian_round_house_large,	-223.096,	-297.312,	10,	0
+barbarian_round_house_large,	-67.045,	-242.789,	12,	0
+barbarian_round_house_large,	103.75,		-230.647,	120,	0
+barbarian_round_house_large,	165.433,	-280.587,	67,	0
+barbarian_round_house_large,	93.507,		-65.872,	162,	16
+barbarian_round_house_large,	211.393,	-302.22,	-15,	0
+barbarian_round_house_large,	278.526,	-245.545,	27,	0
+barbarian_round_house_large,	266.253,	-230.428,	-83,	0
+barbarian_round_house_large,	-64.6,		117.722,	120,	16
+barbarian_round_house_large,	-97.436,	80.918,		44,	16
+barbarian_round_house_large,	-62.064,	31.038,		156,	16
+barbarian_round_house_large,	-51.937,	-105.399,	56,	16
+barbarian_round_house_large,	-104.73,	-87.564,	-11,	16
+barbarian_round_house_large,	-149.701,	-294.553,	19,	0
+barbarian_round_house_large,	-152.092,	177.888,	32,	0
+barbarian_round_house_large,	186.16,		139.541,	-145,	0
+barbarian_round_house_large,	-204.528,	-82.115,	-154,	0
+barbarian_round_house_large,	-157.361,	-154.88,	45,	0
+barbarian_round_house_large,	-269.985,	238.369,	-167,	0
+barbarian_round_house_large,	-232.109,	244.163,	98,	0
+barbarian_round_house_large,	-135.746,	127.154,	-132,	8
+
+barbarian_round_house_small,	271.61,	149.26,	-144.50,	0
+barbarian_round_house_small,	216.37,	238.53,	-69.50,	0
+barbarian_round_house_small,	219.967,	-204.985,	-69.50,	0
+barbarian_round_house_small,	185.863,	-176.891,	-69.50,	0
+barbarian_round_house_small,	-62.402,	287.341,	-69.50,	0
+barbarian_round_house_small,	205.984,	160.086,	140.5,	0
+barbarian_round_house_small,	247.041,	39.687,		110.5,	0
+barbarian_round_house_small,	222.326,	55.811,		-119.5,	0
+barbarian_round_house_small,	226.169,	-99.419,	5.5,	0
+barbarian_round_house_small,	220.217,	-60.144,	-14.5,	0
+barbarian_round_house_small,	67.881,		-220.55,	106,	0
+barbarian_round_house_small,	-20.913,	-178.385,	84,	8
+barbarian_round_house_small,	103.155,	156.172,	140.5,	8
+barbarian_round_house_small,	-82.257,	170.306,	-155.5,	8
+barbarian_round_house_small,	-77.302,	-264.819,	106,	0
+barbarian_round_house_small,	-14.42,		232.194,	88.5,	0
+barbarian_round_house_small,	134.45,		-302.699,	106,	0
+barbarian_round_house_small,	146.994,	-295.222,	-34,	0
+barbarian_round_house_small,	228.155,	-232.764,	67.5,	0
+barbarian_round_house_small,	-18.328,	138.125,	-174,	16
+barbarian_round_house_small,	-56.604,	103.746,	154,	16
+barbarian_round_house_small,	-29.093,	54.988,		-71,	16
+barbarian_round_house_small,	-242.917,	-299.106,	-27,	0
+barbarian_round_house_small,	-117.417,	-298.182,	28,	0
+barbarian_round_house_small,	-228.109,	-48.138,	-173,	0
+barbarian_round_house_small,	-231.268,	-12.611,	5,	0
+barbarian_round_house_small,	-81.859,	217.253,	22.5,	0
+barbarian_round_house_small,	-96.377,	-212.724,	106,	0
+barbarian_round_house_small,	-255.507,	17.271,		95,	0
+barbarian_round_house_small,	-201.203,	197.342,	-69.5,	0
+barbarian_round_house_small,	-249.544,	198.458,	111.5,	0
+barbarian_round_house_small,	-136.287,	262.339,	97.5,	0
+
+paddock,	-133.605,	-10.153,	153,	16
+paddock,	-270.896,	242.7,		100,	0
+paddock,	-292.562,	-161.624,	162,	0
+paddock,	-79.782,	-95.212,	-120,	16
+paddock,	232.913,	-294.473,	-127,	0
+paddock,	141.062,	-300.71,	-72,	0
+paddock,	28.303,		130.106,	127,	16
+paddock,	-148.333,	-298.771,	-72,	0
+
+pile_of_logs,	170.23,	185.79,	-121,	0
+pile_of_logs,	283.59,	115.40,	34,	0
+pile_of_logs,	275.98,	163.55,	174,	0
+
+
+pumpkin_patch,	-271.979,	-136.657,	-52,	0
+pumpkin_patch,	22.581,		-261.755,	98,	0
+pumpkin_patch,	114.524,	-253.55,	112,	0
+pumpkin_patch,	222.846,	-247.672,	68,	0
+pumpkin_patch,	228.417,	102.334,	98,	0
+pumpkin_patch,	-138.04,	-172.064,	134,	0
+
+bush_A,	204.74,	233.02,	177.50,	0
+bush_A,	102.62,	238.96,	177.50,	0
+bush_A,	159.30,	199.67,	177.50,	0
+bush_A,	226.32,	221.96,	177.50,	0
+bush_A,	-215.97,	205.92,	177.50,	0
+bush_A,	-233.05,	117.54,	177.50,	0
+bush_A,	-259.832,	-107.74,	177.50,	0
+bush_A,	-123.25,	-277.69,	177.50,	0
+bush_A,	23.63,	-278.04,	177.50,	0
+bush_A,	193.14,	-214.64,	177.50,	0
+bush_A,	197.31,	-192.26,	177.50,	0
+bush_A,	249.98,	90.49,	177.50,	0
+bush_A,	296.87,	127.20,	177.50,	0
+bush_A,	264.814,	98.181,	177.50,	0
+bush_A,	-126.67,	254.33,	177.50,	0
+
+stove,		70,	-263,	0,	0
+stove,		261,	43,	0,	0
+stove,		243,	185,	0,	0
+stove,		-90,	275,	0,	0
+stove,		-222,	115,	0,	0
+
+
+;;;;;;;;;;;;
+
+tree_A,	291.83,	145.08,	-180,	0
+tree_A,	268.785,	84.056,	-180,	0
+tree_A,	-150.936,	256.143,	177.50,	0
+tree_A,	103.53,	13.29,	0,	16
+tree_A,	102.96,	-18.24,	0,	16
+tree_A,	-132.285,	-34.442,	0,	16
+tree_A,	-73.392,	298.507,	177.50,	0
+tree_A,	241.772,	54.158,	-180,	0
+tree_A,	85.01,	-239.35,	-91,	0
+tree_A,	-233.165,	70.233,	164,	0
+tree_A,	-46.56,	-270.79,	87,	0
+tree_A,	-123.932,	-191.008,	175,	0
+tree_A,	-215.99,	-91.62,	175,	0
+tree_A,	210,	129.77,	-180,	0
+tree_A,	-191.625,	208.941,	-158,	0
+tree_A,	-126.964,	249.149,	177.50,	0
+tree_A,	292.035,	-276.274,	136,	0
+tree_A,	135.96,	-245.71,	-91,	0
+tree_A,	161.39,	-218.20,	-117.50,	0
+tree_A,	162.158,	228.434,	-100,	0
+tree_A,	208.843,	-97.687,	-180,	0
+tree_A,	140.244,	-114.331,	-130,	8
+tree_A,	212.901,	-127.599,	-150,	0
+tree_A,	-74.637,	-142.68,	0,	12
+tree_A,	-28.366,	-186.789,	175,	8
+tree_A,	-55.284,	-153.079,	77,	12
+tree_A,	45.06,		-200.351,	-130,	6
+tree_A,	-54.311,	-205.595,	-130,	3
+tree_A,	152.538,	109.332,	-130,	8
+tree_A,	83.877,		169.031,	151,	8
+tree_A,	132.879,	39.87,		106,	16
+tree_A,	-105.89,	58.363,		0,	16
+tree_A,	-231.357,	-287.172,	175,	0
+tree_A,	15.01,	-228.042,	-80,	0
+tree_A,	-22.212,	-136.283,	-9,	16
+tree_A,	-227.847,	-30.899,	-80,	0
+tree_A,	-88.898,	156.088,	-80,	8
+tree_A,	5.664,	229.185,	-80,	0
+tree_A,	-301.928,	-110.772,	175,	0
+tree_A,	-265.463,	208.012,	-30.5,	0
+
+tree_B,	70.87,	24.25,	0,	16
+tree_B,	-133.04,	37.90,	0,	16
+tree_B,	18,	-115.27,	0,	16
+tree_B,	125.99,	-39.38,	0,	16
+tree_B,	129.86,	24.69,	0,	16
+tree_B,	-149.60,	304.79,	177.50,	0
+tree_B,	-141.73,	293.35,	177.50,	0
+tree_B,	-141.095,	241.002,	177.50,	0
+tree_B,	-202.223,	216.331,	177.50,	0
+tree_B,	-109.575,	301.484,	177.50,	0
+tree_B,	93.61,	281.81,	-180,	0
+tree_B,	227.247,	68.509,	-115.50,	0
+tree_B,	102.11,	233.15,	-152,	0
+tree_B,	274.78,	184.23,	-180,	0
+tree_B,	51.42,	233.68,	-116,	0
+tree_B,	239.38,	68.51,	43,	0
+tree_B,	40.61,	-260.33,	-122,	0
+tree_B,	18.62,	-277.38,	-122,	0
+tree_B,	-126.09,	-307.24,	144.50,	0
+tree_B,	111.27,	246.73,	-120,	0
+tree_B,	269.14,	22.37,	-124.50,	0
+tree_B,	108.378,	-182.763,	-124.50,	3.14
+tree_B,	-77.908,	-290.408,	144.50,	0
+tree_B,	-233.05,	168.27,	139.50,	0
+tree_B,	-230.165,	4.975,	-180,	0
+tree_B,	-304.62,	-68.66,	-90.50,	0
+tree_B,	-299.27,	-224.76,	-90.50,	0
+tree_B,	-114.85,	-2.42,	0,	16
+tree_B,	-23.74,	-114.93,	0,	16
+tree_B,	17.15,	110.64,	0,	16
+tree_B,	-24.22,	-70.52,	0,	16
+tree_B,	-79.287,	-239.751,	144.50,	0
+tree_B,	267.54,	-260.08,	-124.50,	0
+tree_B,	263.97,	-291.70,	-131.50,	0
+tree_B,	-242.91,	136.10,	165,	0
+tree_B,	-208.372,	129.572,	165,	0
+tree_B,	-300.494,	-124.205,	-90.50,	0
+tree_B,	-82.36,	-285.71,	144.50,	0
+tree_B,	-107.11,	-200.07,	144.50,	0
+tree_B,	-118.23,	-243.36,	144.50,	0
+tree_B,	-307.59,	-202.55,	0.50,	0
+tree_B,	-273.32,	-239.09,	0.50,	0
+tree_B,	-232.69,	-105.64,	-90.50,	0
+tree_B,	-262.77,	-140.38,	0.50,	0
+tree_B,	-191.80,	-111.70,	-106.50,	0
+tree_B,	217.57,	267.94,	-180,	0
+tree_B,	192.096,	201.455,	-180,	0
+tree_B,	16.535,	233.37,	-180,	0
+tree_B,	-224.052,	256.158,	177.50,	0
+tree_B,	-294.54,	241.29,	177.50,	0
+tree_B,	-184.062,	287.449,	177.50,	0
+tree_B,	143.58,	277.42,	-152,	0
+tree_B,	242.48,	90.61,	-180,	0
+tree_B,	240,	133.29,	-180,	0
+tree_B,	225.99,	227.95,	-180,	0
+tree_B,	73.16,	-231.10,	-124.50,	0
+tree_B,	121.80,	-287.93,	90.50,	0
+tree_B,	186.75,	-204.62,	-122,	0
+tree_B,	165.61,	-190.92,	-122,	0
+tree_B,	209.88,	-175.81,	-122,	0
+tree_B,	-31.551,	138.551,	86,	16
+
+tree_E,	-137.67,	304.27,	177.50,	0
+tree_E,	-25.41,	117.88,	0,	16
+tree_E,	-128.246,	27.693,	0,	16
+tree_E,	118.20,	24.69,	0,	16
+tree_E,	-161.43,	254.38,	177.50,	0
+tree_E,	92.79,	293.84,	-180,	0
+tree_E,	213.03,	115.97,	-112.50,	0
+tree_E,	96.23,	245.45,	-152,	0
+tree_E,	-140.38,	-283.25,	144.50,	0
+tree_E,	167.37,	201.27,	-120,	0
+tree_E,	281.71,	36.04,	-124.50,	0
+tree_E,	198.85,	-164.01,	-124.50,	0
+tree_E,	147.431,	-154.263,	-124.50,	2.097
+tree_E,	-225.29,	161.71,	-131.50,	0
+tree_E,	-299.27,	-239.50,	-90.50,	0
+tree_E,	-165.50,	-296.77,	0.50,	0
+tree_E,	-35.15,	-128.27,	-19.50,	16
+tree_E,	-41.316,	-238.89,	144.50,	0
+tree_E,	-213.11,	111.50,	165,	0
+tree_E,	-271.98,	-109.811,	-90.50,	0
+tree_E,	-92.53,	-228.96,	144.50,	0
+tree_E,	-247.351,	-129.795,	0.50,	0
+tree_E,	-201.09,	-100.35,	-106.50,	0
+tree_E,	196.97,	149.64,	-180,	0
+tree_E,	188.39,	-240.88,	-122,	0
+tree_E,	246.13,	211.03,	-180,	0
+tree_E,	170.56,	280.48,	-116,	0
+tree_E,	-197.02,	306.66,	177.50,	0
+tree_E,	-215.97,	264.48,	177.50,	0
+tree_E,	-107.03,	249.126,	177.50,	0
+tree_E,	27.52,	228.66,	178.50,	0
+tree_E,	86.469,	155.879,	0,	8
+tree_E,	-69.552,	99.1,	0,	16
+
+tree_F,	127.554,	-170.291,	147.50,	2
+tree_F,	-121.62,	-267.656,	175,	0
+tree_F,	-64.745,	222.937,	-170,	0
+tree_F,	53.02,	-253.61,	-70,	0
+tree_F,	14.509,	-210.155,	-124,	4
+tree_F,	-17.143,	210.289,	147.5,	2
+tree_F,	-137.097,	191.584,	90,	0
+tree_F,	-196.555,	127.169,	-127,	0
+	}

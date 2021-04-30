@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
+	 height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<g id="Layer_3" display="none">
+</g>
+<g id="Layer_2">
+</g>
+<g id="Layer_1">
+</g>
+<g id="Language_specific">
+	<g>
+		<g>
+			<g>
+				<defs>
+					<path id="SVGID_889_" d="M-32.865,1.559c-1.953,0-3.533,1.582-3.533,3.527v21.828c0,1.951,1.58,3.527,3.533,3.527h23.734
+						c1.951,0,3.531-1.576,3.531-3.527V5.086c0-1.945-1.58-3.527-3.531-3.527H-32.865z"/>
+				</defs>
+				<clipPath id="SVGID_2_">
+					<use xlink:href="#SVGID_889_"  overflow="visible"/>
+				</clipPath>
+				
+					<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-1106.2437" y1="-624.0684" x2="-1104.504" y2="-624.0684" gradientTransform="matrix(5.8606 19.1691 19.1691 -5.8606 18419.959 17547.5664)">
+					<stop  offset="0" style="stop-color:#FFFFFF"/>
+					<stop  offset="1" style="stop-color:#D0D0D0"/>
+				</linearGradient>
+				<polygon clip-path="url(#SVGID_2_)" fill="url(#SVGID_3_)" points="-8.229,-7.037 2.494,27.973 -33.768,39.039 -44.488,4.027 
+									"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<g>
+				<defs>
+					<path id="SVGID_895_" d="M4.135,1.559c-1.953,0-3.533,1.582-3.533,3.527v21.828c0,1.951,1.58,3.527,3.533,3.527h23.734
+						c1.951,0,3.531-1.576,3.531-3.527V5.086c0-1.945-1.58-3.527-3.531-3.527H4.135z"/>
+				</defs>
+				<clipPath id="SVGID_5_">
+					<use xlink:href="#SVGID_895_"  overflow="visible"/>
+				</clipPath>
+				
+					<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="-1105.7041" y1="-622.3027" x2="-1103.964" y2="-622.3027" gradientTransform="matrix(5.8606 19.1691 19.1691 -5.8606 18419.959 17547.5664)">
+					<stop  offset="0" style="stop-color:#FFFFFF"/>
+					<stop  offset="1" style="stop-color:#D0D0D0"/>
+				</linearGradient>
+				<polygon clip-path="url(#SVGID_5_)" fill="url(#SVGID_6_)" points="28.771,-7.037 39.494,27.973 3.232,39.039 -7.488,4.027 				
+					"/>
+			</g>
+			<path fill="none" stroke="#5C5C5C" stroke-width="0.4351" stroke-linejoin="round" d="M31.402,26.914
+				c0,1.953-1.582,3.527-3.531,3.527H4.135c-1.951,0-3.537-1.574-3.537-3.527V5.086c0-1.945,1.586-3.527,3.537-3.527h23.736
+				c1.949,0,3.531,1.582,3.531,3.527V26.914z"/>
+			<g>
+				<defs>
+					<path id="SVGID_898_" d="M4.23,2.57c-1.459,0-2.646,1.188-2.646,2.648v21.568c0,1.455,1.188,2.641,2.646,2.641h23.541
+						c1.463,0,2.648-1.186,2.648-2.641V5.219c0-1.461-1.186-2.648-2.648-2.648H4.23z"/>
+				</defs>
+				<clipPath id="SVGID_8_">
+					<use xlink:href="#SVGID_898_"  overflow="visible"/>
+				</clipPath>
+				
+					<linearGradient id="SVGID_9_" gradientUnits="userSpaceOnUse" x1="-1107.1782" y1="-592.1611" x2="-1105.4395" y2="-592.1611" gradientTransform="matrix(0 15.4443 15.4443 0 9161.5293 17102.168)">
+					<stop  offset="0" style="stop-color:#FFFFFF"/>
+					<stop  offset="1" style="stop-color:#F3F3F3"/>
+				</linearGradient>
+				<rect x="1.584" y="2.57" clip-path="url(#SVGID_8_)" fill="url(#SVGID_9_)" width="28.836" height="26.857"/>
+			</g>
+			<path fill="none" stroke="#FAFAFA" stroke-width="0.4351" stroke-linejoin="round" d="M30.42,26.787
+				c0,1.455-1.189,2.643-2.648,2.643H4.229c-1.457,0-2.648-1.188-2.648-2.643V5.219c0-1.463,1.191-2.646,2.648-2.646h23.543
+				c1.459,0,2.648,1.184,2.648,2.646V26.787z"/>
+		</g>
+		<g>
+			<path d="M13.506,20.145c0,0.385-0.225,0.625-0.586,0.625c-0.357,0-0.582-0.24-0.582-0.625v-8.297
+				c0-0.465,0.156-0.689,0.531-0.689c0.346,0,0.504,0.145,0.82,0.609l4.781,6.865h0.025v-6.854c0-0.383,0.229-0.621,0.586-0.621
+				s0.584,0.238,0.584,0.621v8.299c0,0.465-0.16,0.691-0.533,0.691c-0.346,0-0.502-0.148-0.82-0.611l-4.781-6.865h-0.025V20.145z
+				 M15.258,9.033c0.609,0,0.943,0.266,1.459,0.266c0.371,0,0.52-0.266,0.826-0.266c0.197,0,0.438,0.24,0.438,0.518
+				c0,0.412-0.494,0.838-1.234,0.838c-0.611,0-0.941-0.266-1.461-0.266c-0.371,0-0.518,0.266-0.824,0.266
+				c-0.199,0-0.438-0.24-0.438-0.52C14.023,9.459,14.516,9.033,15.258,9.033"/>
+		</g>
+	</g>
+</g>
+<g id="Layer_5">
+</g>
+</svg>

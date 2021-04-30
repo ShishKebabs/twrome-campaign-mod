@@ -1,0 +1,8 @@
+script
+	highlight_recruitment_item
+	
+	while I_AdvisorVisible
+	end_while
+	
+	highlight_recruitment_item false
+end_script

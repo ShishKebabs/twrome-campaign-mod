@@ -1,0 +1,74 @@
+{
+	"tooltip": {
+		"x": -1000,
+		"y": -1000
+	},
+	"tooltip_ticker": {
+		"x": -1000,
+		"y": -1000
+	},
+	"list": [
+		{
+			"name": "position_indicator",
+			"x": 0,
+			"y": -30,
+			"align": "C",
+			"anchor": "BC"
+		},
+		{
+			"name": "controls_frame",
+			"x": -218,
+			"y": 120,
+			"size": {
+				"width": 130,
+				"height": 130
+			},
+			"anchor": "BR"
+		},
+		{
+			"name": "previous_button",
+			"x": -360,
+			"y": 70,
+			"size": {
+				"width": 45,
+				"height": 60
+			},
+			"anchor": "BR",
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			}
+		},
+		{
+			"name": "next_button",
+			"x": -260,
+			"y": 100,
+			"size": {
+				"width": 45,
+				"height": 60
+			},
+			"anchor": "BR",
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			}
+		},
+		{
+			"name": "close_button",
+			"x": -180,
+			"y": 84,
+			"priority": 1,
+			"anchor": "BR",
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			}
+		}
+	]
+}

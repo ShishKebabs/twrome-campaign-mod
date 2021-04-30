@@ -1,0 +1,414 @@
+plan
+
+{
+target rectangle 		x 40 z 40 rot 0 width 64 height 64
+floor			roman_large_town_underlay.cas roman_large_town_overlay.cas
+ground_types		roman_large_town_ground.tga -352 -352 352 352
+street_plan 		pathfinding_roman_large_town.cas
+
+
+borders
+	{
+		; WALLS
+		tower_straight,		128,	-288,	0,	0.500
+		gateway,			-0,	288,	-180,	0.500
+		gateway,			288,	0,	90,	0.500
+		gateway,			-288,	0,	-90,	0.500
+		gateway,			0,	-288,	0,	0.500
+		straight_link,		224,	288,	-180,	0.500
+		tower_external_corner_link,	-288,	288,	-90,	0.500
+		straight_link,		-96,	288,	-180,	0.500
+		straight_link,		-224,	288,	-180,	0.500
+		straight_link,		96,	288,	-180,	0.500
+		straight_link,		160,	288,	-180,	0.500
+		straight_link,		-160,	288,	-180,	0.500
+		straight,			64,	288,	-180,	0.500
+		straight,			-64,	288,	-180,	0.500
+		tower_straight,		-128,	288,	-180,	0.500
+		straight,			-192,	288,	-180,	0.500
+		tower_straight,		128,	288,	-180,	0.500
+		straight,			192,	288,	-180,	0.500
+		straight,			256,	288,	-180,	0.500
+		straight,			-256,	288,	-180,	0.500
+		tower_external_corner_link,	288,	288,	-180,	0.500
+		straight,			288,	256,	90,	0.500
+		straight,			288,	-64,	90,	0.500
+		tower_straight,		288,	-128,	90,	0.500
+		straight,			288,	-192,	90,	0.500
+		straight,			288,	64,	90,	0.500
+		straight_link,		288,	-224,	90,	0.500
+		tower_external_corner_link,	288,	-288,	90,	0.500
+		straight,			288,	-256,	90,	0.500
+		straight_link,		288,	224,	90,	0.500
+		straight,			288,	192,	90,	0.500
+		tower_straight,		288,	128,	90,	0.500
+		straight_link,		288,	-96,	90,	0.500
+		straight_link,		288,	-160,	90,	0.500
+		straight_link,		288,	96,	90,	0.500
+		straight_link,		288,	160,	90,	0.500
+		straight,			-288,	64,	-90,	0.500
+		straight,			-288,	-64,	-90,	0.500
+		straight,			-288,	256,	-90,	0.500
+		tower_straight,		-288,	-128,	-90,	0.500
+		straight,			-288,	-192,	-90,	0.500
+		straight,			-288,	128,	-90,	0.500
+		straight,			-288,	192,	-90,	0.500
+		straight_link,		-288,	-224,	-90,	0.500
+		straight,			-288,	-256,	-90,	0.500
+		tower_external_corner_link,	-288,	-288,	0,	0.500
+		straight_link,		-288,	96,	-90,	0.500
+		straight_link,		-288,	-96,	-90,	0.500
+		straight_link,		-288,	224,	-90,	0.500
+		straight_link,		-288,	-160,	-90,	0.500
+		straight_link,		-288,	160,	-90,	0.500
+		straight_link,		96,	-288,	0,	0.500
+		straight,			256,	-288,	0,	0.500
+		straight,			-256,	-288,	0,	0.500
+		straight_link,		224,	-288,	0,	0.500
+		straight_link,		-224,	-288,	0,	0.500
+		straight,			-192,	-288,	0,	0.500
+		straight_link,		-160,	-288,	0,	0.500
+		tower_straight,		-128,	-288,	0,	0.500
+		straight_link,		-96,	-288,	0,	0.500
+		straight,			192,	-288,	0,	0.500
+		straight_link,		160,	-288,	0,	0.500
+		straight,			-64,	-288,	0,	0.500
+		straight,			64,	-288,	0,	0.500
+
+	}
+
+; road joiners
+
+gateway_slot_into_roman_town,	320,	0,	0,	0
+gateway_slot_into_roman_town,	0,	320,	90,	0
+gateway_slot_into_roman_town,	-320,	0,	180,	0
+gateway_slot_into_roman_town,	0,	-320,	-90,	0
+
+
+slot_48x32_religious,	39.00,	137.00,	180.00,	0.50
+slot_48x32_equestrian,	-31.00,	-23.00,	180.00,	0.50
+slot_48x32_market,	127.22,	-94.96,	0.00,	0.50
+slot_48x32_barracks,	-31.00,	23.00,	0.00,	0.50
+slot_112x64_core_building,	63.00,	-40.00,	180,	0.50
+slot_plaza_roman_64x64m,	40.00,	40.00,	0.00,	0.5
+slot_48x32_missiles,		88,	-192,	-90,	0.5
+slot_48x32_health,		-149,	-27,	180,	0.5
+slot_48x32_smith,		164,	32,	-90,	0.5
+
+; COLLISION
+
+roman_large_town_tenament_collision,	0,	0,	0,	0
+
+; AMBIENT
+
+
+
+
+roman_tenamentA1_group,	147.67,	108.14,	-90.00,	0.50
+roman_tenamentA2_group,	211.01,	186.16,	175.00,	0.50
+roman_tenamentA3_group,	207.95,	-39.62,	-90.00,	0.50
+roman_tenamentA3_group,	207.44,	-215.27,	-90.00,	0.50
+roman_tenamentA3_group,	-214.66,	-50.02,	0.00,	0.50
+roman_tenamentA1_group,	50.82,	-115.57,	-90.00,	0.50
+roman_tenamentA2_group,	-110.52,	213.61,	-90.00,	0.50
+roman_tenamentA3_group,	44.42,	213.61,	-90.00,	0.50
+roman_tenamentA3_group,	-110.54,	115.95,	-90.00,	0.50
+roman_tenamentA3_group,	-99.75,	43.16,	-90.00,	0.50
+roman_tenamentA1_group,	-43.33,	-206.26,	0.00,	0.50
+roman_tenamentA2_group,	-43.81,	-119.32,	0.00,	0.50
+roman_tenamentA3_group,	-115.22,	-154.68,	0.00,	0.50
+roman_tenamentA3_group,	-206.21,	-212.72,	-90.00,	0.50
+roman_tenamentA3_group,	141.03,	204.17,	0.00,	0.50
+
+roman_tenamentB1,	-226.96,	24.56,	0.00,	0.50
+roman_tenamentB2,	32.04,	103.42,	0.00,	0.50
+roman_tenamentB3,	-95.50,	-25.75,	90.00,	0.50
+roman_tenamentB4,	-30.26,	-56.19,	0.00,	0.50
+roman_tenamentB5,	-95.17,	-93.83,	0.00,	0.50
+roman_tenamentB1,	26.00,	-167.52,	0.00,	0.50
+roman_tenamentB2,	122.08,	-197.68,	0.00,	0.50
+roman_tenamentB3,	193.39,	-160.47,	0.00,	0.50
+roman_tenamentB4,	232.45,	-100.06,	0.00,	0.50
+
+roman_tenamentC1,	234.00,	-146.92,	90.00,	0.50
+roman_tenamentC2,	191.42,	-108.33,	95.00,	0.50
+roman_tenamentC3,	-190.99,	-121.32,	-90.00,	0.50
+roman_tenamentC4,	135.99,	-39.76,	90.00,	0.50
+roman_tenamentC5,	113.76,	37.28,	0.00,	0.50
+roman_tenamentC1,	-25.98,	71.72,	90.00,	0.50
+roman_tenamentC2,	-47.95,	215.05,	95.00,	0.50
+roman_tenamentC3,	-14.54,	212.35,	90.00,	0.50
+roman_tenamentC4,	214.95,	37.28,	0.00,	0.50
+roman_tenamentC5,	-174.25,	25.83,	180.00,	0.50
+roman_tenamentC1,	-232.41,	-121.32,	-90.00,	0.50
+roman_tenamentC2,	-129.14,	-230.50,	180.00,	0.50
+roman_tenamentC3,	25.95,	-215.01,	90.00,	0.50
+roman_tenamentC4,	-216.00,	87.00,	180.00,	0.50
+roman_tenamentC5,	103.92,	-231.79,	180.00,	0.50
+roman_tenamentC1,	226.61,	107.84,	85.00,	0.50
+
+roman_tenamentD1,	191.61,	232.57,	95.00,	0.50
+roman_tenamentD2,	48.85,	-230.76,	0.00,	0.50
+roman_tenamentD3,	48.85,	-167.28,	0.00,	0.50
+roman_tenamentD4,	-191.79,	50.42,	90.00,	0.50
+roman_tenamentD5,	145.40,	-201.05,	0.00,	0.50
+roman_tenamentD1,	-96.66,	-47.18,	-90.00,	0.50
+roman_tenamentD2,	-75.49,	-25.33,	0.00,	0.50
+roman_tenamentD3,	-49.28,	56.00,	0.00,	0.50
+roman_tenamentD4,	-52.53,	108.64,	90.00,	0.50
+roman_tenamentD5,	78.49,	25.32,	0.00,	0.50
+roman_tenamentD1,	78.49,	56.84,	0.00,	0.50
+roman_tenamentD2,	135.40,	-74.19,	90.00,	0.50
+roman_tenamentD3,	-171.10,	-137.83,	0.00,	0.50
+roman_tenamentD4,	97.77,	-99.27,	0.00,	0.50
+roman_tenamentD5,	77.71,	-77.35,	90.00,	0.50
+roman_tenamentD1,	24.96,	-77.88,	90.00,	0.50
+roman_tenamentD2,	107.67,	-135.31,	0.00,	0.50
+roman_tenamentD3,	-86.10,	-229.47,	20.00,	0.50
+roman_tenamentD4,	-92.95,	-202.44,	90.00,	0.50
+roman_tenamentD5,	-199.96,	-172.74,	90.00,	0.50
+roman_tenamentD1,	123.40,	156.86,	95.00,	0.50
+roman_tenamentD2,	201.20,	91.07,	0.00,	0.50
+
+roman_tenamentE1,	188.63,	242.32,	91.69,	0.50
+roman_tenamentE2,	243.25,	231.55,	1.69,	0.50
+roman_tenamentE1,	54.64,	113.09,	91.69,	0.50
+roman_tenamentE2,	81.15,	91.13,	1.69,	0.50
+roman_tenamentE1,	81.15,	80.36,	1.69,	0.50
+roman_tenamentE2,	-16.86,	108.41,	-178.31,	0.50
+roman_tenamentE1,	-29.92,	108.41,	-178.31,	0.50
+roman_tenamentE2,	-115.40,	-16.73,	91.69,	0.50
+roman_tenamentE1,	-211.74,	-144.57,	91.69,	0.50
+roman_tenamentE2,	-76.49,	-48.12,	91.69,	0.50
+roman_tenamentE1,	-116.43,	-36.39,	91.69,	0.50
+roman_tenamentE2,	49.69,	-77.93,	-173.31,	0.50
+roman_tenamentE1,	97.82,	-125.78,	91.69,	0.50
+roman_tenamentE2,	97.82,	-143.47,	91.69,	0.50
+roman_tenamentE1,	115.15,	146.06,	1.69,	0.50
+
+washing_line,	-126.34,	-114.04,	-90.00,	0.50
+washing_line,	-55.69,	-165.78,	-90.00,	0.50
+
+public_gardens_group,	-189.31,	161.03,	0.00,	0.50
+
+roman_statue,	-220.01,	117.53,	180.00,	0.50
+
+domus,	-230.00,	218.00,	-90.00,	0.50
+
+town_post_house,	-178.91,	235.66,	90.00,	0.50
+
+praetorium,	-234.00,	171.00,	90.00,	0.50
+praetorium,	-183.25,	125.15,	-90.00,	0.50
+
+roman_ambush_building,	74.96,	122.72,	90.00,	0.50
+
+officers_town_house,	-175.61,	211.18,	0.00,	0.50
+officers_town_house,	-203.38,	240.80,	0.00,	0.50
+officers_town_house,	-240.00,	111.22,	0.00,	0.50
+officers_house,	-175.57,	96.97,	180.00,	0.50
+officers_house,	-175.00,	80.00,	-90.00,	0.50
+
+hospital,	-234.37,	142.68,	180.00,	0.50
+hospital,	-180.51,	189.82,	180.00,	0.50
+
+insula_town_A,	47.43,	-200.50,	0.00,	0.50
+insula_town_A,	143.44,	-233.63,	0.00,	0.50
+insula_town_A,	-233.87,	-174.36,	90.00,	0.50
+insula_town_A,	-225.70,	48.80,	90.00,	0.50
+insula_town_A,	231.50,	16.37,	-90.00,	0.50
+insula_town_A,	132.25,	15.10,	-90.00,	0.50
+insulae_white,	60.55,	80.41,	-90.00,	0.50
+insulae_white,	206.29,	243.75,	90.00,	0.50
+
+insula_town_B,	30.89,	79.28,	90.00,	0.50
+insula_town_B,	103.25,	13.97,	90.00,	0.50
+insula_town_B,	201.54,	14.61,	90.00,	0.50
+insula_town_B,	-165.40,	-173.17,	-90.00,	0.50
+insulae_yellow,	-157.23,	49.98,	-90.00,	0.50
+insulae_yellow,	234.05,	242.97,	-90.00,	0.50
+
+roman_statue,	-55.74,	90.09,	180.00,	0.50
+roman_statue,	-155.95,	-206.25,	180.00,	0.50
+roman_statue,	201.81,	114.63,	180.00,	0.50
+roman_statue,	210.68,	-79.95,	115.00,	0.50
+roman_statue,	165.51,	151.66,	-65.00,	0.50
+
+tree_A,	-143.16,	174.11,	0.00,	1.00
+tree_A,	-104.92,	174.11,	0.00,	1.00
+tree_A,	-69.40,	174.11,	0.00,	1.00
+tree_A,	-57.74,	132.60,	0.00,	1.00
+tree_A,	180.85,	242.21,	0.00,	1.00
+tree_A,	134.36,	146.81,	0.00,	1.00
+tree_A,	171.77,	-71.67,	0.00,	1.00
+tree_A,	122.53,	-196.50,	0.00,	1.00
+tree_A,	-92.75,	-241.15,	0.00,	1.00
+tree_A,	-226.76,	-24.68,	0.00,	1.00
+tree_A,	-54.88,	-93.08,	0.00,	1.00
+tree_A,	-42.12,	-74.83,	0.00,	1.00
+tree_A,	16.63,	-145.03,	0.00,	1.00
+tree_A,	105.83,	-75.83,	0.00,	1.00
+tree_A,	-185.79,	-85.71,	0.00,	1.00
+tree_A,	240.48,	-78.17,	0.00,	1.00
+tree_A,	-204.64,	194.53,	0.00,	1.00
+tree_A,	-242.07,	124.29,	0.00,	1.00
+tree_A,	-212.29,	164.17,	0.00,	1.00
+tree_A,	-210.97,	135.47,	0.00,	1.00
+tree_A,	-204.59,	110.84,	0.00,	1.00
+tree_A,	-203.59,	223.34,	0.00,	1.00
+tree_A,	-156.849,	-188.237,	0,	1.0
+
+tree_box,	-143.16,	174.11,	0.00,	0.50
+tree_box,	-104.92,	174.11,	0.00,	0.50
+tree_box,	-69.40,	174.11,	0.00,	0.50
+tree_box,	-57.74,	132.60,	0.00,	0.50
+tree_box,	240.48,	-78.17,	0.00,	0.50
+tree_box,	-185.79,	-85.71,	0.00,	0.50
+tree_box,	105.83,	-75.83,	0.00,	0.50
+tree_box,	16.63,	-145.03,	0.00,	0.50
+tree_box,	-54.88,	-93.08,	0.00,	0.50
+tree_box,	-42.12,	-74.83,	0.00,	0.50
+tree_box,	-226.76,	-24.68,	0.00,	0.50
+tree_box,	-92.75,	-241.15,	0.00,	0.50
+tree_box,	-156.85,	-188.24,	0.00,	0.50
+tree_box,	122.53,	-196.50,	0.00,	0.50
+tree_box,	171.77,	-71.67,	0.00,	0.50
+tree_box,	134.36,	146.81,	0.00,	0.50
+tree_box,	97.92,	-78.24,	0.00,	0.50
+tree_box,	114.26,	-75.33,	0.00,	0.50
+tree_box,	180.85,	242.21,	0.00,	0.50
+tree_box,	-204.64,	194.53,	0.00,	0.50
+tree_box,	-242.07,	124.29,	0.00,	0.50
+tree_box,	-212.29,	164.17,	0.00,	0.50
+tree_box,	-210.97,	135.47,	0.00,	0.50
+tree_box,	-204.59,	110.84,	0.00,	0.50
+tree_box,	-203.59,	223.34,	0.00,	0.50
+
+;ROME HD
+
+
+;Props Entries
+
+;prop_tree_01,		-61.71,	-276.18,	310,	0.5
+;prop_bush_02,		-152.81,	-276.73,	206,	0.5
+;prop_tree_02,		-259.23,	-275.63,	30,	0.5
+;prop_tree_01,		-275.38,	-252.92,	221,	0.5
+;prop_tree_02,		-277.56,	-170.03,	125,	0.5
+;prop_bush_01,		-275.20,	-88.08,	107,	0.5
+;prop_tree_02,		-277.56,	67.53,	206,	0.5
+;prop_bush_01,		-275.99,	148.68,	327,	0.5
+;prop_bush_01,		-274.41,	227.87,	347,	0.5
+;prop_bush_02,		-236.20,	275.93,	168,	0.5
+;prop_tree_02,		-109.74,	278.69,	48,	0.5
+;prop_bush_01,		76.60,	277.51,	336,	0.5
+;prop_tree_01,		194.00,	279.09,	224,	0.5
+;prop_bush_02,		275.16,	235.36,	145,	0.5
+;prop_tree_01,		275.16,	89.99,	321,	0.5
+;prop_tree_01,		273.98,	-92.02,	76,	0.5
+;prop_tree_01,		277.13,	-178.69,	107,	0.5
+;prop_tree_01,		220.40,	-275.61,	262,	0.5
+;prop_tree_01,		108.12,	-276.00,	244,	0.5
+;prop_tree_02,		150.75,	-177.21,	89,	0.5
+;prop_tree_01,		169.36,	-177.17,	285,	0.5
+;prop_tree_02,		110.85,	-169.22,	247,	0.5
+;prop_tree_01,		170.15,	-109.88,	164,	0.5
+;prop_tree_02,		-9.14,	-9.13,	173,	0.5
+;prop_bush_02,		-9.25,	9.48,	107,	0.5
+;prop_bush_02,		9.31,	-9.45,	40,	0.5
+;prop_bush_02,		9.20,	9.27,	52,	0.5
+;prop_tree_02,		17.10,	150.77,	205,	0.5
+;prop_tree_02,		146.09,	158.03,	245,	0.5
+;prop_tree_02,		-49.25,	169.25,	94,	0.5
+;prop_bush_02,		164.69,	150.09,	105,	0.5
+;prop_bush_01,		202.72,	135.05,	170,	0.5
+;prop_tree_01,		196.70,	120.27,	272,	0.5
+;prop_bush_01,		-189.99,	207.41,	77,	0.5
+;wagon_1,		215.65,	-177.35,	72,	0.5
+;wagon_barrels,		216.90,	-119.29,	90,	0.5
+;wagon_chest_bags,		206.98,	-78.88,	260,	0.5
+;wagon_1,		116.87,	-68.72,	31,	0.5
+;wagon_1,		53.27,	87.54,	0,	0.5
+;wagon_barrels,		141.51,	144.23,	0,	0.5
+;wagon_crates,		-239.13,	129.28,	-180,	0.5
+;wagon_1,		-65.38,	80.34,	-53,	0.5
+;wagon_1,		-44.81,	102.31,	-193,	0.5
+;wagon_crates,		-73.37,	-74.18,	-357,	0.5
+;wagon_1,		-47.12,	-72.84,	-273,	0.5
+;wagon_2,		-103.93,	-211.76,	-371,	0.5
+;chest_02,		212.77,	-176.56,	90,	0.5
+;boxes_and_crates_04,		211.66,	-179.46,	115,	0.5
+;chest_01,		216.28,	-168.88,	90,	0.5
+;log_pile_04,		211.57,	-174.18,	90,	0.5
+;log_pile_04,		213.87,	-173.53,	57,	0.5
+;chest_01,		214.37,	-164.21,	34,	0.5
+;chest_02,		214.02,	-121.52,	75,	0.5
+;chest_02,		216.54,	-124.35,	107,	0.5
+;boxes_and_crates_03,		214.58,	-112.64,	61,	0.5
+;boxes_and_crates_04,		214.00,	-118.13,	90,	0.5
+;boxes_and_crates_01,		209.54,	-80.78,	279,	0.5
+;log_pile_03,		210.42,	-77.25,	234,	0.5
+;boxes_and_crates_02,		213.99,	-76.71,	265,	0.5
+;boxes_and_crates_03,		214.10,	-85.30,	265,	0.5
+;log_pile_03,		211.63,	-86.99,	311,	0.5
+;log_pile_04,		207.42,	-92.76,	224,	0.5
+;log_pile_03,		111.07,	-70.61,	-12,	0.5
+;chest_02,		118.73,	-71.61,	28,	0.5
+;log_pile_03,		111.86,	-67.81,	30,	0.5
+;chest_01,		118.44,	-60.75,	44,	0.5
+;barrels,		118.74,	-63.87,	15,	0.5
+;log_pile_03,		118.81,	-57.76,	77,	0.5
+;chest_01,		61.29,	86.93,	-23,	0.5
+;log_pile_03,		58.73,	87.00,	0,	0.5
+;boxes_and_crates_03,		49.39,	90.43,	0,	0.5
+;barrels,		59.96,	89.48,	-15,	0.5
+;chest_02,		64.19,	86.71,	89,	0.5
+;log_pile_03,		62.98,	89.44,	20,	0.5
+;boxes_and_crates_04,		138.82,	147.64,	20,	0.5
+;boxes_and_crates_01,		136.23,	142.31,	0,	0.5
+;boxes_and_crates_04,		133.34,	142.31,	-10,	0.5
+;log_pile_04,		146.45,	142.61,	-21,	0.5
+;log_pile_03,		141.14,	147.61,	0,	0.5
+;barrels,		146.61,	145.27,	0,	0.5
+;chest_02,		-237.19,	125.79,	-113,	0.5
+;chest_02,		-233.81,	129.79,	-73,	0.5
+;boxes_and_crates_02,		-230.49,	129.90,	-79,	0.5
+;chest_01,		-233.73,	126.89,	-50,	0.5
+;chest_02,		-237.34,	122.55,	-83,	0.5
+;boxes_and_crates_04,		-230.77,	118.60,	-78,	0.5
+;boxes_and_crates_01,		-61.27,	81.09,	-85,	0.5
+;chest_02,		-63.42,	83.21,	-46,	0.5
+;log_pile_04,		-55.69,	74.00,	-73,	0.5
+;boxes_and_crates_02,		-58.88,	79.97,	-46,	0.5
+;log_pile_04,		-60.53,	77.59,	-28,	0.5
+;boxes_and_crates_02,		-55.66,	71.06,	-99,	0.5
+;boxes_and_crates_04,		-47.04,	98.61,	-217,	0.5
+;boxes_and_crates_04,		-43.81,	99.12,	-171,	0.5
+;boxes_and_crates_02,		-50.04,	93.21,	-207,	0.5
+;boxes_and_crates_02,		-50.04,	99.15,	-207,	0.5
+;chest_02,		-50.47,	102.93,	-144,	0.5
+;chest_01,		-54.13,	100.19,	-142,	0.5
+;chest_02,		-50.66,	-71.97,	-252,	0.5
+;boxes_and_crates_04,		-50.99,	-75.00,	-268,	0.5
+;chest_02,		-53.58,	-73.25,	-268,	0.5
+;boxes_and_crates_01,		-62.80,	-75.38,	-268,	0.5
+;boxes_and_crates_04,		-59.94,	-75.26,	-314,	0.5
+;chest_02,		-47.56,	-63.46,	-234,	0.5
+
+
+;Market Entries
+
+;market_stall_01,		209.18,	114.64,	204,	0.5
+;market_stall_01,		192.32,	137.44,	290,	0.5
+;market_stall_01,		209.61,	141.36,	184,	0.5
+;market_stall_03,		167.31,	160.37,	328,	0.5
+;market_stall_02,		157.08,	160.83,	93,	0.5
+;market_stall_01,		-215.75,	172.34,	155,	0.5
+;wagon_stall,		-212.59,	184.61,	89,	0.5
+;market_stall_02,		-187.08,	216.50,	299,	0.5
+;wagon_stall,		-208.52,	209.57,	72,	0.5
+;wagon_stall,		-226.14,	106.16,	174,	0.5
+;market_stall_02,		-214.39,	105.70,	224,	0.5
+;market_stall_03,		-159.02,	-210.25,	52,	0.5
+;market_stall_02,		-112.47,	-200.90,	315,	0.5
+
+
+	}

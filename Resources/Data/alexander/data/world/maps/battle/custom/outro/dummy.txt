@@ -1,0 +1,6 @@
+list_title OUTRO
+
+;; JNF 2021-04-21 - Words cannot express the contempt I have for the alexander expansion right now,
+;; why were we passing the file name without localising??? I scream at god yet he does not answer
+;; DSM 25-Apr-2021 - Changed the string to OUTRO to localise it using battle_descriptions.txt
+;; Life is good again

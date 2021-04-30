@@ -1,0 +1,1332 @@
+/* -----------------------------------------------
+   --------------- Navigation Tabs ---------------
+  _   _                _                _    _               
+ | \ | |              (_)              | |  (_)              
+ |  \| |  __ _ __   __ _   __ _   __ _ | |_  _   ___   _ __  
+ | . ` | / _` |\ \ / /| | / _` | / _` || __|| | / _ \ | '_ \ 
+ | |\  || (_| | \ V / | || (_| || (_| || |_ | || (_) || | | |
+ |_| \_| \__,_|  \_/  |_| \__, | \__,_| \__||_| \___/ |_| |_|
+                           __/ |                             
+                          |___/                              
+   -----------------------------------------------*/
+
+#tabbar 
+{
+	list-style: none;
+	margin: 0;
+	padding: 0 3px 0 4px;
+	background-color: #f37021;
+	background-image: url("../../../Core/images/orangeBack.png");
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+	height:61px;
+	text-align: center;
+	
+/*	-webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);*/
+
+	z-index: 2;
+	position: relative;
+}
+
+#tabbar li.tabSelect
+{
+	position:relative;
+
+	text-decoration: none;
+/* 
+	display: inline-block;
+ */
+	padding: 5px 5px 0;
+	margin: 6px 3px;
+	line-height: 15px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ee7b00;
+	text-transform: uppercase;
+    cursor: pointer;
+    background: white;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+    -webkit-box-flex: 1;  /* Safari <6.1 */
+    -webkit-flex: 1;  /* Safari 6.1+ */
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#tabbar li.tabSelect:hover abbr, 
+#tabbar li.selectedTabButton abbr
+{
+	border-color: #0071bc;
+}
+
+#tabbar li.tabSelect:hover, 
+#tabbar li.selectedTabButton 
+{
+	color: #0071bc;
+}
+
+#tabbar li.tabSelect img
+{
+	position: absolute;
+	top:3px;
+	/* Should be 50% - 25px, but that seems to give 
+	   less good results than this... ¯\_(ツ)_/¯ */
+	left:-webkit-calc(50% - 24px);
+	left:calc(50% - 24px);
+	margin-left:auto;
+	margin-right:auto;
+	opacity:0;
+	-webkit-transition:opacity 0.2s;
+	transition:opacity 0.2s;
+}
+
+#tabbar li.tabSelect.selectedTabButton img.selectedImg
+{
+	opacity:1;
+}
+#tabbar li.tabSelect:not(.selectedTabButton) img.unselectedImg
+{
+	opacity:1;
+}
+
+#tabbar li.tabSelect span
+{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	position:absolute;
+	bottom:1px;
+	width:100%;
+	left:0px;
+}
+
+
+
+
+
+/* ----------------------------------------------- 
+   ---------- Playbox / game selection -----------
+  _____   _                _                 
+ |  __ \ | |              | |                
+ | |__) || |  __ _  _   _ | |__    ___ __  __
+ |  ___/ | | / _` || | | || '_ \  / _ \\ \/ /
+ | |     | || (_| || |_| || |_) || (_) |>  < 
+ |_|     |_| \__,_| \__, ||_.__/  \___//_/\_\
+                     __/ |                   
+                    |___/                    
+ -----------------------------------------------*/
+
+#playBox
+{
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:flex;
+	overflow-x:auto;
+/*	z-index:2;
+	position: relative;*/
+}
+
+#playBox>.playOption {
+	height: 108px;
+    margin: 5px;
+	padding: 10px;
+	display: table;
+	/*position: relative;*/
+	width:-webkit-calc(50% - 10px);
+	width:calc(50% - 10px);
+	box-sizing:border-box;
+	border-style:solid;
+	border-color:transparent;
+	border-color:#bdbdbd;
+	-webkit-filter: grayscale(100%);
+	        filter: grayscale(100%);
+	-webkit-transition: all .3s ease-out;        
+			transition: all .3s ease-out;
+	/* Fixes glitch in webkit on retina displays. See: 
+	http://stackoverflow.com/questions/13347947/css-filter-on-retina-display-fuzzy-images*/
+	-webkit-transform: translateZ(0);
+}
+
+#playBox>.playOption:hover {
+	-webkit-filter: grayscale(0%);
+	        filter: grayscale(0%);
+}
+
+
+#playBox>.playOption:first-child:last-child 
+{
+	width:-webkit-calc(100% - 10px);
+	width:calc(100% - 10px);
+}
+
+#playBox>.playOption.selectedGame
+{
+	border-color:#ee7b00;
+	-webkit-filter: none;
+	        filter: none;
+}
+
+#playBox>.playOption:not(.selectedGame)
+{
+	cursor: pointer;
+}
+
+#playBox>.playOption img.gameIconImg {
+	width: 108px;
+	height: 108px;
+	float: left;
+}
+
+
+#playBox>.playOption>.mainAppName {
+	height: 108px;
+	display: inline;
+	vertical-align: middle;
+	font-size: 28px;
+	font-style: italic;
+	color: #0071bc;
+	width: 600px;
+	padding: 0 34px 0 23px;
+	line-height: 385%;
+}
+
+#playBox>.playOption>.mainAppName>.sizeLimited {
+	/*100px works well with this font size - you don't get a half-cut line*/
+	max-height: 100px;
+	/* For browsers that don't support the funky ellipsis trick below*/
+	display: block;
+	/*All of the following are needed to allow an ellipsis to
+	  appear if the text extends beyond 3 rows and it will only 
+	  work in webkit browsers and it will probably break at some
+	  point, since it relies on ye olde pre-spec-change flexbox*/
+	text-overflow: ellipsis;
+	overflow: hidden;
+	-webkit-line-clamp: 3;  
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	/* Due to overflow hidden and italic, we can 
+	   get a little cut off if we don't do this */
+	padding-right: 2px;
+}
+
+
+
+
+
+/* ----------------------------------------------- 
+   ------------------- TabView -------------------
+  _______      _  __      __ _                 
+ |__   __|    | | \ \    / /(_)                
+    | |  __ _ | |__\ \  / /  _   ___ __      __
+    | | / _` || '_ \\ \/ /  | | / _ \\ \ /\ / /
+    | || (_| || |_) |\  /   | ||  __/ \ V  V / 
+    |_| \__,_||_.__/  \/    |_| \___|  \_/\_/  
+                                               
+                                               
+ -----------------------------------------------*/
+ 
+.tabView
+{
+	margin: 0;
+	position: absolute;
+	z-index: 1;
+	right:0;
+	top: 61px;
+	bottom:0;
+	left:0%;
+	color: #333333;
+	-webkit-font-smoothing: antialiased;
+	position: absolute;
+	top:204px;
+	left:0px;
+	/* height:1000px; */
+	bottom:50px;
+	right:0px;
+	height:-webkit-calc(100% - 224px);
+	height:calc(100% - 224px);
+	width:100%;
+	box-sizing:border-box;
+	overflow:hidden;
+}
+
+.tabbed
+{
+	overflow: hidden;
+	position:absolute;
+	width:100%;
+	height: 100%;
+	box-sizing:border-box;
+}
+
+
+
+.center
+{
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	white-space: nowrap;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 100%;
+}
+.center .center {
+	height: auto;
+	margin-top: 0;
+}
+
+
+
+
+.item
+{
+	padding:10px;
+	text-align:left;
+	display:block;
+	min-width: 100px;
+	position:relative;
+	background-clip:border-box;
+	font-size: 15px;
+}
+
+
+.item p
+{
+	white-space: normal;
+}
+
+
+
+#tabView,
+#footer {
+	text-shadow: 1px 1px 2px white, -1px 1px 2px white,  1px -1px 2px white, -1px -1px 2px white, 
+				 3px 3px 5px white, -3px 3px 5px white,  3px -3px 5px white, -3px -3px 5px white, 
+				 4px 0px 7px white,  0px 4px 7px white, -4px  0px 7px white,  0px -4px 7px white, 
+				 4px 4px 7px white, -4px 4px 7px white,  4px -4px 7px white, -4px -4px 7px white;
+}
+
+#tabView .ui-dialog,
+#tabView #keyEntry,
+#tabView .extrasSubSection,
+#tabView .supportSubSection,
+#tabView .selectric-wrapper,
+#tabView input,
+#tabView .dlcpanel,
+#footer  #launchOptionsTip,
+#feralAccount
+{
+	text-shadow: none;
+}
+
+
+
+
+
+/* -----------------------------------------------
+   ---------- Game specific backgrounds ----------
+   _____                             _____                     _   __  _       
+  / ____|                           / ____|                   (_) / _|(_)      
+ | |  __   __ _  _ __ ___    ___   | (___   _ __    ___   ___  _ | |_  _   ___ 
+ | | |_ | / _` || '_ ` _ \  / _ \   \___ \ | '_ \  / _ \ / __|| ||  _|| | / __|
+ | |__| || (_| || | | | | ||  __/   ____) || |_) ||  __/| (__ | || |  | || (__ 
+  \_____| \__,_||_| |_| |_| \___|  |_____/ | .__/  \___| \___||_||_|  |_| \___|
+                                           | |                                 
+                                           |_|                                 
+                                                           
+ -----------------------------------------------*/
+
+#playBoxParent
+{
+	position: relative;
+	background: url('../../../GamePGOW/images/gameskinPlayBox.png') top right no-repeat;
+	background-size: 930px 144px;
+}
+
+#playBoxParent:before
+{
+	content:"";
+	display:block;
+	position: absolute;
+	width:100%;
+	height:35px;
+	z-index: -1;
+	top:0px;
+	-moz-transform: scaleY(-1);
+	-o-transform: scaleY(-1);
+	-webkit-transform: scaleY(-1);
+	transform: scaleY(-1);
+	filter: FlipV;
+	-ms-filter: "FlipV";
+}
+
+#tabView:before
+{
+	content:"";
+	display:block;
+	position: absolute;
+	width:100%;
+	height:35px;
+	z-index: -1;
+	top:0px;
+	-moz-transform: scaleY(-1);
+	-o-transform: scaleY(-1);
+	-webkit-transform: scaleY(-1);
+	transform: scaleY(-1);
+	filter: FlipV;
+	-ms-filter: "FlipV";
+}
+#tabView:after
+{
+	background: url('../../../GamePGOW/images/gameskinTab.png') center center no-repeat;
+	background-size: contain;
+	content:"";
+	display:block;
+	position: absolute;
+	width:100%;
+	height:calc(100% - 48px);
+	z-index: -2;
+	top:0px;
+}
+/* Used for the CalendarBackgroundImage */
+#tabView > img
+{
+	position: absolute;
+	width: 100%;
+	top: 0px;
+}
+
+
+
+
+
+/* -----------------------------------------------
+   -------------- Product Key Input ---------------
+  _____                  _               _     _  __            
+ |  __ \                | |             | |   | |/ /            
+ | |__) |_ __  ___    __| | _   _   ___ | |_  | ' /  ___  _   _ 
+ |  ___/| '__|/ _ \  / _` || | | | / __|| __| |  <  / _ \| | | |
+ | |    | |  | (_) || (_| || |_| || (__ | |_  | . \|  __/| |_| |
+ |_|    |_|   \___/  \__,_| \__,_| \___| \__| |_|\_\\___| \__, |
+                                                           __/ |
+                                                          |___/ 
+ -----------------------------------------------*/
+
+#keyEntry {
+	border: 2px solid #BDBDBD;
+	padding: 20px;
+	margin: 0 65px;
+	background: rgba(255,255,255,1)
+}
+
+.productKeyEntry {
+	padding: 0;
+	margin-top: 35px;
+	text-align: center;
+	clear: both;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items:center;
+	align-items:center;
+	-webkit-box-pack: center;
+	-webkit-justify-content:center;
+	justify-content:center;
+}
+
+.productKeyEntry input + span {
+	color: #a5a5a5;
+	min-width:15px;
+}
+
+input[type=text].productKeyInput:disabled
+{
+	-webkit-text-fill-color:inherit;
+	opacity: 1;
+}
+
+input.productKeyInput
+{
+	width:80px;
+	min-width: 50px;
+	height: 30px;
+	text-align:center; 
+	font-family: helvetica, sans-serif;
+	-webkit-ime-mode: disabled;
+	ime-mode: disabled;
+}
+
+input.productKeyInput[readonly]
+{
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.0);
+    outline: none;
+    background-color:transparent;
+    
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+
+   /*
+     Introduced in IE 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+   -ms-user-select: none;
+   user-select: none;
+}
+
+
+
+
+
+/* -----------------------------------------------
+   ------------ Documentation Buttons ------------
+  _____                    
+ |  __ \                   
+ | |  | |  ___    ___  ___ 
+ | |  | | / _ \  / __|/ __|
+ | |__| || (_) || (__ \__ \
+ |_____/  \___/  \___||___/
+                           
+                           
+ -----------------------------------------------*/
+
+#tabView .center .item input.docsbutton {
+	display: inline-block;
+	width: 132px;
+	height: 132px;
+	-webkit-transition: all .3s linear;
+			transition: all .3s linear;
+	padding: 97px 10px 0px 10px;
+	white-space: normal;
+	margin: 5px 5px 2px;
+	cursor: pointer;
+}
+
+.langRU #tabView .center .item input.docsbutton,
+.langJA #tabView .center .item input.docsbutton
+{
+	width: 170px;
+	height: 140px;
+	padding: 105px 5px 0px 5px;
+    background-size: cover;
+}
+
+#tabView .center .item input.manualbutton {
+	background: url('../images/manual.svg') center top no-repeat #fdfdfd;
+}
+
+#tabView .center .item input.faqsbutton {
+	background: url('../images/faqs.svg') center top no-repeat #fdfdfd;
+}
+
+#tabView .center .item input.readmebutton {
+	background: url('../images/readme.svg') center top no-repeat #fdfdfd;
+}
+
+#tabView .center .item input.creditsbutton {
+	background: url('../images/credits.svg') center top no-repeat #fdfdfd;
+}
+
+#tabView .center .item input.privacybutton {
+	background: url('../images/privacy.svg') center top no-repeat #fdfdfd;
+}
+
+#tabContentAbout {
+	/* We usually have performance issues with this tab, so add an optimisation hint */
+	will-change: transform, opacity;
+}
+
+
+
+
+
+/* -----------------------------------------------
+   ------------------- Footer --------------------
+  ______             _              
+ |  ____|           | |             
+ | |__  ___    ___  | |_  ___  _ __ 
+ |  __|/ _ \  / _ \ | __|/ _ \| '__|
+ | |  | (_) || (_) || |_|  __/| |   
+ |_|   \___/  \___/  \__|\___||_|   
+                                    
+                                    
+ -----------------------------------------------*/
+
+#footer
+{
+	position: absolute;
+	bottom:0px;
+	width:100%;
+	left:0px;
+	padding:10px;
+	box-sizing:border-box;
+/*	border-radius: 7px 7px 0px 0px;
+	border-width: 1px 1px 0;
+	border-color: #d6d6d6;
+	border-style: solid;
+	background: white;*/
+	z-index: 2;
+	font-size: 13px;
+	text-align: center;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:flex;
+	-webkit-box-align: end;
+	-webkit-align-items:flex-end;
+	align-items:flex-end;
+	-webkit-box-pack:end;
+	pointer-events:none;
+}
+
+#footer > *
+{
+	pointer-events:auto;
+}
+
+#footer .floatleft {
+	
+}
+
+#footer input, 
+#footer label 
+{
+	cursor: pointer;
+	margin: 0;
+}
+
+#footer input {
+	background-color: white;
+}
+
+#footer label {
+	color: #676767;
+	padding: 5px;
+}
+
+#footer input#main-quitButton 
+{
+	-webkit-flex-shrink:0;
+	flex-shrink:0;
+	margin-bottom:2px;
+}
+
+#footer input#main-quitButton:active {
+	top: 0px;
+}
+
+#footer input#keepShownButton[type=checkbox] {
+	width: 15px;
+	height: 15px;
+	top:1px;
+}
+
+#alwaysShowContainer {
+	position: relative;
+	padding: 6px 11px 3px 22px;
+	margin-bottom:4px;
+	min-width:150px;
+}
+
+#footer input#keepShownButton[type=checkbox] ~ span#launchOptionsTip {
+	width:360px;
+	position: absolute;
+	bottom: 30px;
+	left: 14px;
+	background: url('../images/black.png') repeat; 
+	color: #eee;
+	padding: 10px;
+	background-size: auto 100%;
+	border-radius: 5px;
+	font-size: 13px;
+	line-height: 17px;
+	z-index: 20;
+	text-align: left;
+	-webkit-transition: all linear .8s ;
+	transition: all linear .8s ;
+	opacity: 1;
+	text-decoration: none;
+}
+
+#footer input#keepShownButton[type=checkbox] ~ span#launchOptionsTip:after {
+	content: 'x';
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	border-radius: 100px;
+	background: white;
+	color: black;
+	height: 5px;
+	width: 9px;
+	text-align: center;
+	line-height: 0;
+	padding: 4px 0 0 0;
+	border: 1px solid white;
+	font-size: 12px;
+}
+
+
+#footer input#keepShownButton[type=checkbox] ~ span#launchOptionsTip:before {
+	content: url('../images/arrow.png');
+	position: absolute;
+	bottom: -13px;
+	left: 3px;
+	z-index: 19;
+}
+
+#footer input#keepShownButton[type=checkbox]:not(:checked) ~ span#launchOptionsTip {
+	opacity: 1;
+	z-index: 20;
+	pointer-events: auto;
+	cursor: pointer;
+}
+
+#footer input#keepShownButton[type=checkbox]:checked ~ span#launchOptionsTip, 
+#footer input#keepShownButton[type=checkbox]:not(:checked) ~ span#launchOptionsTip.off {
+	opacity: 0;
+	z-index: 0;
+	pointer-events: none;
+}
+
+#footer input#keepShownButton + label {
+	margin: 0 0 0 -15px; 
+	padding: 0 0 0 17px;
+	position: relative;
+	top: -1px;
+}
+
+#footer input#keepShownButton:hover + label {
+	color: #0071bc;
+	cursor: pointer;
+}
+
+
+
+#footer span.mainButtons {
+	vertical-align: bottom;
+	width: auto;
+	bottom: 10px;
+	right: 10px;
+	-webkit-flex-shrink:0;
+	flex-shrink:0;
+}
+
+#footer span.mainButtons input {
+	background: url('../images/arrow.svg') no-repeat 100px center #fdfdfd;
+    background-position-x: -webkit-calc(100% - 15px);
+    background-position-x: calc(100% - 15px);
+	font: italic bold 24px/18px sans-serif;
+	text-transform: uppercase;
+	text-align: left;
+	height: 58px;
+	padding: 20px 35px 20px 15px;
+	background-size: auto 19px;
+	width:auto;
+}
+
+#footer span.mainButtons input:hover, 
+span.mainButtons input:active 
+{
+	background: url('../images/arrow.svg') no-repeat 100px center white;
+    background-position-x: -webkit-calc(100% - 15px);
+    background-position-x: calc(100% - 15px);
+	padding: 20px 35px 20px 15px;
+	background-size: auto 19px;
+}
+
+#footer .verticalRule
+{
+	width:0px;
+	height:20px;
+	border-left: 2px #676767 solid;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:4px;
+}
+
+#footer #versionStringList {
+	display: -webkit-box;
+	font-weight: normal;
+	font-style: normal;
+	color: #676767;
+	white-space: nowrap;
+	background: transparent;
+	font-family:Sans-serif;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none; 
+	border: none;
+	font-size: inherit;
+	text-decoration: inherit;
+	margin:0px;
+	margin-right: 10px;
+	outline: none;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	margin-bottom: 2px;
+	padding: 5px 11px 6px;
+	border-radius: 0;
+	-webkit-box-align:end;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow:1;
+	-webkit-flex-basis: 150px;
+	flex-grow:1;
+	flex-basis: 150px;
+	/* min-width must also be set, or chromium will use the width of the select element, which is often too wide */
+	min-width: 150px;
+}
+
+#footer #versionStringList option {
+	text-align: center;
+	font-weight: normal;
+	font-style: normal;
+	white-space: nowrap;
+}
+
+#footer #versionStringList:focus {
+	background: transparent !important;
+}
+
+
+
+
+
+/* -----------------------------------------------
+   ---------- Not yet sorted / Unsorted ----------
+  _    _                           _             _ 
+ | |  | |                         | |           | |
+ | |  | | _ __   ___   ___   _ __ | |_  ___   __| |
+ | |  | || '_ \ / __| / _ \ | '__|| __|/ _ \ / _` |
+ | |__| || | | |\__ \| (_) || |   | |_|  __/| (_| |
+  \____/ |_| |_||___/ \___/ |_|    \__|\___| \__,_|
+                                                   
+                                                   
+ -----------------------------------------------*/
+
+label:not(.controlDisabled)
+{
+	-webkit-transition:color 0.1s;
+	transition:color 0.1s;
+	color:#333333;
+}
+
+label:not(.controlDisabled):hover
+{
+	color: #0071bc;
+	cursor: pointer;
+}
+
+div#tabContentActivation.tabbed h3, 
+div#tabContentAbout.tabbed h3, 
+.supportSubSection h3, 
+div#tabContentVideo h3 {
+	text-align: center;
+	margin: 0 0 10px;
+	text-transform: uppercase;
+	font-size: 14px;
+	float: left;
+}
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+	border-top-left-radius: 5px;
+}
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+	border-top-right-radius: 5px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+	border-bottom-left-radius: 5px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+	border-bottom-right-radius: 5px;
+}
+
+.throbber
+{
+	display: inline-block;
+	width:32px;
+	height:32px;
+	background-image: url("../images/ajax-loader.gif");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.navigation a:hover 
+{
+	background: #00b7f5;
+}
+
+.stretchButton1
+{
+	width:300px;
+	width:-webkit-calc(100% - 10px);
+	width:calc(100% - 10px);
+	margin:5px;
+	display: table-cell;
+	text-align:center;
+}
+.stretchButton2
+{
+	left:auto;
+	right:auto;
+	position: relative;
+	width:150px;
+	width:-webkit-calc(50% - 10px);
+	width:calc(50% - 10px);
+	margin:5px;
+	display: table-cell;
+	text-align:center;
+}
+.centered
+{
+	position: relative;
+}
+.centered2
+{
+	position: relative;
+}
+
+.stretchedCell
+{
+	width:100%;
+}
+
+
+.stretchedInCell
+{
+	width:-webkit-calc(100% - 6px);
+	width:calc(100% - 6px);
+}
+
+
+
+.stretchedSelectBox
+{
+	width:-webkit-calc(100% - 10px);
+	width:calc(100% - 10px);
+}
+
+
+label.noWrap
+{
+	white-space: nowrap;
+}
+
+
+.tabbed.selected
+{
+	left:0%;
+	opacity: 1;
+	-webkit-transition:all 0.5s, opacity 0.5s;
+	transition:all 0.5s, opacity 0.5s;
+}
+
+.notransparent
+{
+}
+
+.tabbed:not(.selected)
+{
+	opacity: 0;
+	-webkit-transition:all 1s, opacity 1s;
+	transition:all 1s, opacity 1s;
+}
+
+.tabbed.left:not(.selected)
+{
+	left:-200%;
+}
+
+.tabbed.right:not(.selected)
+{
+	left:200%;
+}
+
+.customSelect 
+{
+	box-sizing:border-box;
+	background-color: white;
+	padding: 6px 10px;
+	border: 4px solid #b7bfcf;
+	background: url("../images/select-box-bg.gif") right center;
+	border-radius: 10px;
+}
+
+.customSelect.customSelectHover 
+{
+	border-color: #aeb7c9;
+	box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px;
+}
+
+.customSelect.customSelectFocus 
+{
+	border-color: #996633;
+}
+
+.customSelect.customSelectOpen 
+{
+	border-color: #5d5074;
+	background: url("../images/select-box-bg-on.gif") right center;
+}
+
+.flexParent
+{
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:flex;
+}
+
+.flexParent>*
+{
+}
+
+.flexSpace
+{
+	-webkit-box-flex: 1;
+	-webkit-flex-grow:1;
+	flex-grow:1;
+}
+
+.flexGrow
+{
+	-webkit-box-flex: 1;
+	-webkit-flex-grow:1;
+	flex-grow:1;
+}
+
+.flexWrap
+{
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.flexCenter
+{
+	-webkit-box-pack: center;
+	-webkit-justify-content:center;
+	justify-content:center;
+}
+
+.flexSpaceBetween
+{
+	-webkit-box-pack: justify;
+	-webkit-justify-content:space-between;
+	justify-content:space-between;
+}
+
+.flexAlignBaseline
+{
+	-webkit-box-align: center;
+	-webkit-align-items:baseline;
+	align-items:baseline;
+}
+
+.flexAlignCenter
+{
+	-webkit-box-align: center;
+	-webkit-align-items:center;
+	align-items:center;
+}
+
+.flexStart
+{
+	-webkit-box-align: start;
+	-webkit-align-items:flex-start;
+	align-items:flex-start;
+}
+
+.flexVertical
+{
+	-webkit-box-orient: vertical;
+	-webkit-flex-direction:column;
+	flex-direction:column;
+}
+
+.flexUnshrinkable
+{
+	-webkit-flex-shrink:0;
+	flex-shrink:0;
+}
+
+.flexParent.flexAlignBaseline>input[type=text],
+.flexParent.flexAlignBaseline>input[type=password]
+{
+	-webkit-align-self:center;
+	align-self:center;
+}
+
+input[type=text],
+input[type=password]
+{
+	font-size: medium;
+}
+
+.heightTransition
+{
+	-webkit-transition:height 1s;
+	transition:height 1s;
+}
+
+.table
+{
+	display: table;
+}
+.tableRow
+{
+	display: table-row;
+}
+.tableColumn
+{
+	display: table-cell;
+	vertical-align: middle;
+	padding:5px;
+}
+.smallText
+{
+    font-size: small !important;
+}
+
+.textCenter
+{
+	text-align:center;
+}
+
+textarea
+{
+	min-height:200px;
+}
+
+/* Prevent image dragging/rightclick menu */
+img
+{
+	pointer-events: none;
+}
+
+/* disabled elements don't need right click, and some of them are modified 
+   to look like normal elements, so the odd right click is confusing. */
+input:disabled
+{
+	pointer-events: none;
+}
+
+/* Avoid annoying bug where click-hold-dragging across a button 
+   (without going outside it), then releasing, doesn't trigger a 
+   click if you crossed the internal boundary of the span. 
+   Easy to do that by accident, so lets let it work by having all  
+   clicks go through the button, as if the span wasn't there. */
+button>span.ui-button-text
+{
+	pointer-events: none;
+}
+
+
+
+input {
+	font-family: helvetica, sans-serif !important;
+}
+
+input[type=button], 
+body .ui-dialog input[type=button], 
+body .ui-dialog .ui-dialog-buttonset button {
+	background-color: #fdfdfd;
+	color: #0071bc;
+	border: 1px solid #d9d9d9;
+	border-bottom: 2px solid #d1d1d1;
+	position: relative;
+	font-size: 14px;
+	-webkit-transition: all .3s linear;
+			transition: all .3s linear;
+	background-image: none;
+	cursor: pointer;
+}
+
+input[type=button]:hover, 
+body .ui-dialog input[type=button]:hover, 
+body .ui-dialog .ui-dialog-buttonset button:hover {
+	background-color: white;
+	border-color: #b2b2b2;
+	border-bottom: 2px solid #989898;
+	background-image: none;
+	cursor: pointer;
+	
+}
+
+input[type=button]:active, 
+body .ui-dialog input[type=button]:active, 
+body .ui-dialog .ui-dialog-buttonset button:active {
+	background-color: #e5e5e5;
+	background-image: none;
+	cursor: pointer;
+	color: #6c6c6c;
+}
+
+label
+{
+	position: relative;
+	margin-right:8px;
+	margin-top:4px;
+	margin-left:0px;
+
+}
+
+label>span
+{
+	white-space:normal;
+}
+
+.floatright
+{
+	float:right;
+}
+.floatleft
+{
+	float:left;
+}
+
+.clearBoth
+{
+	clear:both;
+}
+
+.noDisplay:not(.visiblePropShouldHide),
+.noDisplayTransient
+{
+	display:none !important;
+}
+
+/*Special case this as otherwise it makes the checkbox jump around*/
+.visiblePropShouldHide.noDisplay 
+{
+	visibility: hidden;
+}
+
+.noTransition
+{
+	-webkit-transition:none !important;
+	transition:none !important;
+}
+
+abbr
+{
+	/* Webkit in 10.11 doesn't support dotted underline. */
+	/*text-decoration: underline;
+	text-decoration: underline dotted;*/
+
+	text-decoration: none;
+	border-bottom: 1px dotted #ee7b00;
+	line-height: 0.9;
+	display: inline-block;
+}
+
+/* SteamOS has a bug with CEF where the cursor is not updated if there is not any
+   other redraw on the screen. As a workaround we add an invisible spinning div
+   that allows the mouse to work correctly also there. */
+.steamOSHack
+{
+	position: absolute;
+	border: solid rgba(0, 0, 0, 0);
+	-webkit-animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin
+{
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+/* Reducing the button and font size in RU and JA
+ to stop them sorting below the fold with the new panel*/
+.langRU input[type=button],
+.langJA input[type=button]
+{
+	font-size: 12px;
+}
+
+.langRU #tabView .center .item input.docsbutton,
+.langJA #tabView .center .item input.docsbutton
+{
+	width: 150px !important; /* Important as feralUI.css comes after this bit */
+	margin: 5px 2px !important; /* Important to overload the inline style */
+}
+
+
+input[type=number]::-webkit-outer-spin-button, 
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #898989;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #898989;
+    height: 16px;
+    width: 16px;
+    background: white;
+    border-radius: 50%;
+    margin-top: -4px;
+}
+
+.greyButton
+{
+	border-radius: 3px !important;
+	border: 1px solid #d9d9d9 !important;
+	font-weight: normal !important;
+	color: #555 !important;
+	background-color: #eee !important;
+}
+
+.blueButton
+{
+	color: #fdfdfd !important;
+	background-color: #0071bc !important;
+	border-radius: 3px !important;
+	border: 1px solid #d9d9d9 !important;
+}
+
+/*We don't want to see this broken, despite no testing/design effort, so just mark it all important*/
+.internalPanelWarning
+{
+	white-space: normal !important;
+	color: red !important;
+	background: white !important;
+	margin: 0px 5px !important;
+	padding: 5px !important;
+	border-radius: 5px !important;
+	text-align: center !important;
+	display: inline-block !important;
+}
+

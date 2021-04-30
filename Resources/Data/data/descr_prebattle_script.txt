@@ -1,0 +1,242 @@
+;;Prebattle scripts - added for HD, previously hardcoded
+;;If multiple scripts are valid for a battle, one will be selected at random
+;;To play a line simply do 'line "LINE_ID"'
+;;Line IDs and such are controlled in the sound descrs
+;;Note that if you are successfully ambushed you won't ever have a speech
+
+;;If you need help with this ask Jenni, it took me 3 days to make this dammit
+
+;; line types in the base game as of 02/02/2021:
+
+;; "Trait opening/middle/closer" - bits that can be defined by a general's traits
+;; "Oneliner" - does what is says on the tin, it's a single line that works by itself
+;; "Enemy" - say something about the main enemy, depending on relationship
+;; "Enemy allies" - say something about enemy allies, depends on relationship
+;; "Enemy no allies" - laugh about the enemy having no friends
+;; "Our allies" - say something about our allies
+;; "Battle context" - say something about what this battle means, i.e. are we recovering an
+;;                    eagle, committing 25% of our total forces, defending our last city?
+;; "Battle type" - talk about the type of battle, i.e. siege, river crossing, ambush
+;; "Numbers" - talk about the sizes of the armies relative to eachother
+;; "Strength" - talk about the relative strengths of the armies
+;; "Terrain" - talk about any terrain features in our or the enemy's deployment zones
+;; "Troop comparison" - anything specific about the units, i.e do we have a lot of horses?
+;; "Previous Record" - how well have we done against this faction in the past?
+;; "Omens" - what does the oracle say?
+;; "Reinforcements" - are reinforcements on their way?
+
+;; THE COMMA AFTER THE line NAME IS VERY IMPORTANT, IF SOMETHING ISN'T WORKING CHECK THAT FIRST
+
+;; line options:
+
+;; weight - simple weighting, only of use inside random_selections
+;; chance - the chance that the line will be used
+;;          (n.b. inside a random_selection this is if the line will be considered AT ALL,
+;;           not the chance that it will be used in any given choice)
+;; exclusive - indicates that if this line is used it shouldn't be repeated after this point
+;; force_cheer - force this line to be followed by a cheer
+
+;; logical operations:
+
+;; random_selection [min, max] - choose a random amount from the selection between max and min
+;; if [valid, chance] - used to check if a line is valid and play a set of lines as appropriate
+
+;; note that max and min units are based on the total number of troops on both sides
+
+;; TESTING NOTE: this is read when loading into a battle, if you make a change and then restart the
+;; battle then any changes will be applied immediately.
+
+;;;;;;;;;;;;;;;;;;;; EXAMPLE SCRIPT ;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;script Example
+;;validity:
+;;  min_units 20 ;;must have at least 20 units
+;;
+;;  ;;there must be at least 2 allies on both sides
+;;  valid_lines "Our allies" 2
+;;  valid_lines "Enemy allies" 2
+;;lines:
+;;  line "Trait opener", force_cheer
+;;
+;;  random_selection min 1 max 3
+;;    line "Our allies"
+;;  end
+;;
+;;  line "Enemy"
+;;  if valid "Enemy allies"
+;;    random_selection min 1 max 3
+;;      line "Enemy allies"
+;;    end
+;;  else
+;;    line "Enemy no allies"
+;;  end
+;;
+;;  if "Trait middle"
+;;    line "Trait middle", force_cheer
+;;  else
+;;    line "Omens", exclusive force_cheer
+;;  end
+;;
+;;  random_selection min 2 max 5
+;;    line "Battle context"
+;;    line "Battle type"
+;;    line "Strength"
+;;    line "Terrain"
+;;    line "Troop comparison", weight 3
+;;    line "Previous Record", weight 5
+;;    line "Omens"
+;;  end
+;;
+;;  if valid "Our allies"
+;;  else
+;;    line "Reinforcements"
+;;  end
+;;
+;;  line "Trait closer", force_cheer
+;;end
+
+;;include this at the start to disable loading the script from lower mods/the base game
+exclude_lower
+
+;;;;;;;;;;;;;;;;;;;; NONROMAN ;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; JNF 2021-04-17 - Non romans only have two types of lines, so they should always use them
+
+script NonRoman
+validity:
+  ;; between 0 and 0 roman-triggered dummy lines are valid (we aren't roman)
+  valid_lines "roman dummy trigger", 0 0
+lines:
+  line "Trait opener", force_cheer
+  line "Trait closer", force_cheer
+end
+
+;;;;;;;;;;;;;;;;;;;; ONELINER ;;;;;;;;;;;;;;;;;;;;;;;;
+
+script OneLiner
+validity:
+  max_units 5
+  ;;we are roman
+  valid_lines "roman dummy trigger", 1
+lines:
+  ;;Oneliner is a single line for small battles.
+  line "Oneliner", force_cheer
+end
+
+;;;;;;;;;;;;;;;;;;;; SHORT ;;;;;;;;;;;;;;;;;;;;;;;;
+
+script Short
+validity:
+  min_units 6 
+  max_units 11
+  ;;we are roman
+  valid_lines "roman dummy trigger", 1
+lines:
+  line "Enemy"
+  line "Trait closer", force_cheer
+end
+
+;;;;;;;;;;;;;;;;;;;; MEDIUM ;;;;;;;;;;;;;;;;;;;;;;;;
+
+script Medium
+validity:
+  min_units 12
+  max_units 17
+  ;;we are roman
+  valid_lines "roman dummy trigger", 1
+lines:
+  line "Omens"
+  line "Our allies"
+
+  line "Enemy"
+
+  line "Battle type"
+  line "Previous Record"
+
+  line "Trait closer", force_cheer
+end
+
+;;;;;;;;;;;;;;;;;;;; LONG ;;;;;;;;;;;;;;;;;;;;;;;;
+
+script Long
+validity:
+  min_units 18
+  ;;we are roman
+  valid_lines "roman dummy trigger", 1
+lines:
+  line "Trait opener", chance 0.75
+
+  ;; used to be that ALLIES and ENEMY_ALLIES would only talk about the first of each,
+  ;; this has been changed and it now picks allies at random. Maybe we should see if
+  ;; we can talk about more of them?
+  line "Our allies", chance 0.75
+
+  line "Enemy"
+
+  ;; check if a line exists for enemy allies, if not, play the line for no allies
+  if chance 0.75
+    if valid "Enemy allies"
+      line "Enemy allies"
+    else
+      line "Enemy no allies"
+    end
+  end
+
+  ;; 75% chance of talking about the strategic situation, 50% chance of cheering after
+  if chance 0.75
+    if chance 0.5
+      line "Battle context", force_cheer
+    else
+      line "Battle context"
+    end
+  end
+
+  line "Battle type"
+  line "Numbers"
+  line "Strength"
+
+  ;; okay, so this next bit I've changed slightly because it seems sort of convoluted and doesn't
+  ;; seem to make much logical sense. I've tweaked it into a format that makes a bit more sense
+  ;; uncomment the following lines if you want to strictly follow the original game
+
+  ;; if valid "Terrain"
+  ;;   line "Terrain"
+  ;;   if valid "Troop comparison"
+  ;;     line "Troop comparison"
+  ;;   else
+  ;;     line "Previous Record"
+  ;;   end
+  ;; else
+  ;;   line "Troop comparison"
+  ;;   line "Previous Record"
+  ;; end
+
+  random_selection min 2 max 2
+    line "Terrain", exclusive weight 2
+    line "Previous Record", exclusive
+    line "Troop comparison", exclusive weight 2
+  end
+
+  ;; END OF ALTERED CODE
+
+  ;; see above with battle context
+  if chance 0.75
+    if chance 0.5
+      line "Trait middle", force_cheer
+    else
+      line "Trait middle"
+    end
+  end
+
+  line "Omens", chance 0.5
+
+  ;; test if a line exists for allies
+  if valid "Our allies"
+    ;;do nothing if one exists
+  else
+    ;;if one didn't exist (i.e. we have no allies) talk about reinforcements
+    line "Reinforcements"
+  end
+
+  line "Trait closer", force_cheer
+end

@@ -1,0 +1,38 @@
+plan
+
+{
+
+floor	underlay_oasis.cas overlay_oasis.cas
+	borders	border_limits_64m_diameter.CAS
+
+
+tree_A,		13,	83,	0,	0
+
+tree_B,		16,	60,	0,	0
+
+tree_C,		-18,	83,	0,	0
+
+tree_E,		-25,	60,	0,	0
+
+tree_A,		-17,	-7,	-85,	0
+tree_A,		13,	-77,	-175,	0
+
+tree_E,		15,	30,	-130,	0
+tree_E,		-25,	-70,	130,	0
+
+tree_B,		-14,	-20,	130,	0
+tree_B,		16,	-50,	-125,	0
+tree_B,		-4,	-80,	-155,	0
+tree_B,		26,	20,	-55,	0
+
+tree_C,		-18,	13,	-175,	0
+tree_C,		-28,	-57,	70,	0
+tree_C,		2,	-87,	50,	0
+tree_C,		22,	-57,	0,	0
+tree_C,		22,	3,	60,	0
+tree_C,		22,	83,	-70,	0
+
+oasis_vegetation,	0,	0,	0,	0
+
+
+	}

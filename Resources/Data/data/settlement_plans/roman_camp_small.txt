@@ -1,0 +1,157 @@
+plan
+
+	{
+
+
+		
+floor 			underlay_roman_camp_small.cas		overlay_roman_camp_small.cas
+
+street_plan		pathfinding_roman_camp_small.cas
+
+borders			borders_roman_camp_small.cas
+
+
+generals_stake_fence,	0.00,	40.00,	0.00,	-1.00
+
+pile_of_logs,	10.00,	30.00,	-55.00,	0.00
+pile_of_logs,	-12.00,	32.00,	0.00,	0.00
+
+stake_palisade_straight,	-72.00,	-80.00,	0.00,	0.00
+stake_palisade_straight,	-56.00,	-80.00,	0.00,	0.00
+stake_palisade_straight,	-40.00,	-80.00,	0.00,	0.00
+stake_palisade_straight,	56.00,	-80.00,	0.00,	0.00
+stake_palisade_straight,	72.00,	-80.00,	0.00,	0.00
+stake_palisade_straight,	40.00,	-80.00,	0.00,	0.00
+stake_palisade_straight,	-80.00,	72.00,	-90.00,	0.00
+stake_palisade_straight,	-80.00,	56.00,	-90.00,	0.00
+stake_palisade_straight,	-80.00,	40.00,	-90.00,	0.00
+stake_palisade_straight,	-80.00,	-56.00,	-90.00,	0.00
+stake_palisade_straight,	-80.00,	-72.00,	-90.00,	0.00
+stake_palisade_straight,	-80.00,	-40.00,	-90.00,	0.00
+stake_palisade_straight,	72.00,	80.00,	-180.00,	0.00
+stake_palisade_straight,	56.00,	80.00,	-180.00,	0.00
+stake_palisade_straight,	40.00,	80.00,	-180.00,	0.00
+stake_palisade_straight,	-56.00,	80.00,	-180.00,	0.00
+stake_palisade_straight,	-72.00,	80.00,	-180.00,	0.00
+stake_palisade_straight,	-40.00,	80.00,	-180.00,	0.00
+stake_palisade_straight,	80.00,	-72.00,	90.00,	0.00
+stake_palisade_straight,	80.00,	-56.00,	90.00,	0.00
+stake_palisade_straight,	80.00,	-40.00,	90.00,	0.00
+stake_palisade_straight,	80.00,	56.00,	90.00,	0.00
+stake_palisade_straight,	80.00,	72.00,	90.00,	0.00
+stake_palisade_straight,	80.00,	40.00,	90.00,	0.00
+
+stake_palisade_gateway,	-80.00,	0.00,	-90.00,	0.00
+stake_palisade_gateway,	0.00,	80.00,	-180.00,	0.00
+stake_palisade_gateway,	80.00,	0.00,	90.00,	0.00
+stake_palisade_gateway,	0.00,	-80.00,	0.00,	0.00
+
+stake_palisade_corner,	-80.00,	80.00,	-90.00,	0.00
+stake_palisade_corner,	80.00,	80.00,	-180.00,	0.00
+stake_palisade_corner,	80.00,	-80.00,	90.00,	0.00
+stake_palisade_corner,	-80.00,	-80.00,	0.00,	0.00
+
+centurions_tent,	-44.00,	-52.00,	90.00,	0.00
+centurions_tent,	44.00,	-52.00,	-90.00,	0.00
+centurions_tent,	20.00,	-52.00,	90.00,	0.00
+centurions_tent,	12.00,	-52.00,	-90.00,	0.00
+centurions_tent,	44.00,	52.00,	-90.00,	0.00
+
+generals_side_tent,	-11.00,	41.00,	90.00,	0.00
+generals_side_tent,	11.00,	41.00,	-90.00,	0.00
+
+generals_tent,	0.00,	51.00,	0.00,	0.00
+
+legionary_tent_both_flaps_closed,	-44.00,	-44.00,	90.00,	0.00
+legionary_tent_both_flaps_closed,	20.00,	-44.00,	90.00,	0.00
+legionary_tent_both_flaps_closed,	12.00,	-12.00,	-90.00,	0.00
+legionary_tent_both_flaps_closed,	12.00,	-44.00,	-90.00,	0.00
+legionary_tent_both_flaps_closed,	44.00,	-12.00,	-90.00,	0.00
+legionary_tent_both_flaps_closed,	44.00,	-44.00,	-90.00,	0.00
+legionary_tent_both_flaps_closed,	44.00,	44.00,	-90.00,	0.00
+
+legionary_tent_both_flaps_open,	-44.00,	-36.00,	90.00,	0.00
+legionary_tent_both_flaps_open,	-44.00,	-12.00,	90.00,	0.00
+legionary_tent_both_flaps_open,	12.00,	-28.00,	-90.00,	0.00
+legionary_tent_both_flaps_open,	20.00,	-12.00,	90.00,	0.00
+legionary_tent_both_flaps_open,	20.00,	-36.00,	90.00,	0.00
+legionary_tent_both_flaps_open,	44.00,	-28.00,	-90.00,	0.00
+legionary_tent_both_flaps_open,	44.00,	12.00,	-90.00,	0.00
+legionary_tent_both_flaps_open,	44.00,	36.00,	-90.00,	0.00
+
+legionary_tent_left_flap_open,	-44.00,	-28.00,	90.00,	0.00
+legionary_tent_left_flap_open,	20.00,	-28.00,	90.00,	0.00
+legionary_tent_left_flap_open,	12.00,	-36.00,	-90.00,	0.00
+legionary_tent_left_flap_open,	44.00,	-36.00,	-90.00,	0.00
+legionary_tent_left_flap_open,	44.00,	28.00,	-90.00,	0.00
+
+legionary_tent_right_flap_open,	-44.00,	-20.00,	90.00,	0.00
+legionary_tent_right_flap_open,	20.00,	-20.00,	90.00,	0.00
+legionary_tent_right_flap_open,	44.00,	-20.00,	-90.00,	0.00
+legionary_tent_right_flap_open,	12.00,	-20.00,	-90.00,	0.00
+legionary_tent_right_flap_open,	44.00,	20.00,	-90.00,	0.00
+
+stove,	0.00,	40.00,	0.00,	0.00
+
+;;;;;legion_flag,	4.00,	46.00,	0.00,	0.00
+
+;;;;;legion_standard,	-4.00,	46.00,	0.00,	0.00
+
+centurions_tent,	-12.00,	-52.00,	90.00,	0.00
+
+legionary_tent_both_flaps_closed,	-12.00,	-44.00,	90.00,	0.00
+
+legionary_tent_right_flap_open,	-12.00,	-20.00,	90.00,	0.00
+
+legionary_tent_both_flaps_open,	-12.00,	-36.00,	90.00,	0.00
+legionary_tent_both_flaps_open,	-12.00,	-12.00,	90.00,	0.00
+
+legionary_tent_left_flap_open,	-12.00,	-28.00,	90.00,	0.00
+
+legionary_tent_right_flap_open,	-20.00,	-20.00,	-90.00,	0.00
+
+centurions_tent,	-20.00,	-52.00,	-90.00,	0.00
+
+legionary_tent_both_flaps_closed,	-20.00,	-12.00,	-90.00,	0.00
+legionary_tent_both_flaps_closed,	-20.00,	-44.00,	-90.00,	0.00
+
+legionary_tent_both_flaps_open,	-20.00,	-28.00,	-90.00,	0.00
+
+legionary_tent_left_flap_open,	-20.00,	-36.00,	-90.00,	0.00
+legionary_tent_left_flap_open,	-44.00,	36.00,	90.00,	0.00
+
+centurions_tent,	-44.00,	52.00,	90.00,	0.00
+
+legionary_tent_both_flaps_closed,	-44.00,	12.00,	90.00,	0.00
+
+legionary_tent_right_flap_open,	-44.00,	20.00,	90.00,	0.00
+
+legionary_tent_both_flaps_closed,	-44.00,	44.00,	90.00,	0.00
+
+legionary_tent_both_flaps_open,	-44.00,	28.00,	90.00,	0.00
+
+legionary_tent_right_flap_open,	20.00,	20.00,	90.00,	0.00
+
+centurions_tent,	20.00,	52.00,	90.00,	0.00
+
+legionary_tent_left_flap_open,	20.00,	36.00,	90.00,	0.00
+
+legionary_tent_both_flaps_closed,	20.00,	44.00,	90.00,	0.00
+
+legionary_tent_both_flaps_open,	20.00,	28.00,	90.00,	0.00
+
+legionary_tent_both_flaps_closed,	20.00,	12.00,	90.00,	0.00
+legionary_tent_both_flaps_closed,	-20.00,	44.00,	-90.00,	0.00
+
+legionary_tent_both_flaps_open,	-20.00,	12.00,	-90.00,	0.00
+
+centurions_tent,	-20.00,	52.00,	-90.00,	0.00
+
+legionary_tent_both_flaps_open,	-20.00,	36.00,	-90.00,	0.00
+
+legionary_tent_left_flap_open,	-20.00,	28.00,	-90.00,	0.00
+
+legionary_tent_right_flap_open,	-20.00,	20.00,	-90.00,	0.00
+
+	
+	}

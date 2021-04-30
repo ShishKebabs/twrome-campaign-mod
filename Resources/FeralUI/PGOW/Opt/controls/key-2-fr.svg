@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<g id="Layer_3" display="none">
+</g>
+<g id="Layer_2">
+</g>
+<g id="Layer_1_1_">
+</g>
+<g id="Language_specific">
+	<g>
+		<g>
+			<g>
+				<g>
+					<defs>
+						<path id="SVGID_1_" d="M4.135,1.559c-1.953,0-3.533,1.582-3.533,3.527v21.828c0,1.951,1.58,3.527,3.533,3.527h23.734
+							c1.951,0,3.531-1.576,3.531-3.527V5.086c0-1.945-1.58-3.527-3.531-3.527H4.135z"/>
+					</defs>
+					<clipPath id="SVGID_2_">
+						<use xlink:href="#SVGID_1_"  overflow="visible"/>
+					</clipPath>
+					
+						<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-1004.0542" y1="728.6426" x2="-1002.3136" y2="728.6426" gradientTransform="matrix(5.8606 19.1691 -19.1691 5.8606 19862.6855 14975.8066)">
+						<stop  offset="0" style="stop-color:#FFFFFF"/>
+						<stop  offset="1" style="stop-color:#D0D0D0"/>
+					</linearGradient>
+					<polygon clip-path="url(#SVGID_2_)" fill="url(#SVGID_3_)" points="28.771,-7.037 39.494,27.973 3.232,39.039 -7.488,4.027 
+											"/>
+				</g>
+			</g>
+			<path fill="none" stroke="#5C5C5C" stroke-width="0.4351" stroke-linejoin="round" d="M31.402,26.914
+				c0,1.953-1.582,3.527-3.531,3.527H4.135c-1.951,0-3.537-1.574-3.537-3.527V5.086c0-1.945,1.586-3.527,3.537-3.527h23.736
+				c1.949,0,3.531,1.582,3.531,3.527V26.914z"/>
+			<g>
+				<g>
+					<defs>
+						<path id="SVGID_4_" d="M4.23,2.57c-1.459,0-2.646,1.188-2.646,2.648v21.568c0,1.455,1.188,2.641,2.646,2.641h23.542
+							c1.463,0,2.647-1.186,2.647-2.641V5.219c0-1.461-1.187-2.648-2.647-2.648L4.23,2.57L4.23,2.57z"/>
+					</defs>
+					<clipPath id="SVGID_5_">
+						<use xlink:href="#SVGID_4_"  overflow="visible"/>
+					</clipPath>
+					
+						<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="-1000.4873" y1="690.4395" x2="-998.7485" y2="690.4395" gradientTransform="matrix(0 15.4443 -15.4443 0 10679.3496 15454.4062)">
+						<stop  offset="0" style="stop-color:#FFFFFF"/>
+						<stop  offset="1" style="stop-color:#F3F3F3"/>
+					</linearGradient>
+					<rect x="1.584" y="2.57" clip-path="url(#SVGID_5_)" fill="url(#SVGID_6_)" width="28.836" height="26.857"/>
+				</g>
+			</g>
+			<path fill="none" stroke="#FAFAFA" stroke-width="0.4351" stroke-linejoin="round" d="M30.42,26.787
+				c0,1.455-1.189,2.643-2.648,2.643H4.229c-1.457,0-2.648-1.188-2.648-2.643V5.219c0-1.463,1.191-2.646,2.648-2.646h23.542
+				c1.459,0,2.648,1.184,2.648,2.646V26.787z"/>
+		</g>
+		<g enable-background="new    ">
+			<path d="M14.527,23.966c0,1.021,0.651,1.819,1.763,1.819c1.314,0,1.651-0.809,2.022-0.809c0.18,0,0.359,0.157,0.359,0.438
+				c0,0.482-1.225,1.224-2.393,1.224c-1.909,0-2.74-1.472-2.74-3.055c0-1.617,1.011-3.055,2.684-3.055
+				c1.628,0,2.572,1.472,2.572,2.909c0,0.348-0.123,0.527-0.551,0.527H14.527z M17.807,23.225c0-0.854-0.494-1.842-1.583-1.842
+				c-1.224-0.045-1.662,0.933-1.696,1.842H17.807z M15.729,19.653c-0.191,0.078-0.281,0.102-0.382,0.102
+				c-0.292,0-0.427-0.304-0.427-0.473c0-0.135,0.079-0.291,0.393-0.415l1.292-0.528c0.19-0.078,0.28-0.101,0.381-0.101
+				c0.293,0,0.428,0.304,0.428,0.472c0,0.135-0.079,0.292-0.394,0.416L15.729,19.653z"/>
+		</g>
+		<g enable-background="new    ">
+			<path d="M18.149,12.4c0.235,0,0.427,0.191,0.427,0.427s-0.191,0.427-0.427,0.427h-3.875c-0.416,0-0.539-0.236-0.539-0.404
+				c0-0.123,0.045-0.213,0.213-0.449l2.763-3.695c0.337-0.438,0.584-0.932,0.584-1.414c0-0.73-0.55-1.247-1.269-1.247
+				c-0.955,0-1.46,0.809-1.46,1.808c0,0.349-0.225,0.449-0.438,0.449c-0.314,0-0.483-0.19-0.483-0.605
+				c0-1.326,0.898-2.505,2.549-2.505c1.325,0,2.156,0.954,2.156,1.987c0,0.461-0.033,0.978-0.551,1.651L15.117,12.4H18.149z"/>
+		</g>
+	</g>
+</g>
+<g id="Layer_5">
+</g>
+</svg>

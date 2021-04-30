@@ -1,0 +1,13 @@
+; descr_simple_skeleton.txt
+
+type tree_A_deciduous_summer
+anim idle data/animations/elephant/F_elephant_idle.cas
+
+type tree_A_oak_summer
+anim idle data/animations/elephant/F_elephant_idle.cas
+
+type tree_A_palm
+anim idle data/animations/elephant/F_elephant_idle.cas
+
+
+

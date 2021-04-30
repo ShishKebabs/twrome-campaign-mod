@@ -1,0 +1,67 @@
+plan
+
+{
+target rectangle x 0 z 0 rot 0 width 32 height 32
+floor		egyptian_camp_underlay.CAS egyptian_camp_overlay.CAS
+ground_types	egyptian_camp_ground.tga -160 -160 160 160
+street_plan	egyptian_camp_pathfinding.CAS
+borders		
+
+	{
+
+	;WALLS
+
+gateway,	-0.00,	96.00,	-180,	0.00
+gateway,	-96.00,	0.00,	-90.00,	0.00
+gateway,	96.00,	0.00,	90.00,	0.00
+gateway,	0.00,	-96.00,	0.00,	0.00
+straight,	-96.00,	64.00,	-90.00,	0.00
+straight,	-64.00,	96.00,	180.00,	0.00
+straight,	64.00,	96.00,	180.00,	0.00
+straight,	64.00,	-96.00,	0.00,	0.00
+straight,	-64.00,	-96.00,	0.00,	0.00
+straight,	-96.00,	-64.00,	-90.00,	0.00
+straight,	96.00,	-64.00,	90.00,	0.00
+straight,	96.00,	64.00,	90.00,	0.00
+tower_external_corner_link,	96.00,	-96.00,	90.00,	0.00
+tower_external_corner_link,	-96.00,	-96.00,	0.00,	0.00
+tower_external_corner_link,	96.00,	96.00,	-180.00,	0.00
+tower_external_corner_link,	-96.00,	96.00,	-90.00,	0.00
+
+
+	}
+
+	;BUILDINGS	
+
+egyptian_eastern_closed_tent,	22.08,	22.91,	-85.47,	0
+egyptian_eastern_open_tent,		-32.50,	-29.03,	1.46,	0
+egyptian_eastern_closed_tent,	25.79,	-30.72,	-130.83,	0
+egyptian_eastern_open_tent,		-54.56,	-35.56,	88.34,	0
+egyptian_eastern_closed_tent,	28.20,	-56.25,	0.23,	0
+egyptian_eastern_closed_tent,	28.58,	60.83,	-4.75,	0
+egyptian_eastern_closed_tent,	61.22,	22.28,	-92.66,	0
+egyptian_eastern_closed_tent,	-22.09,	30.51,	-94.41,	0
+egyptian_eastern_closed_tent,	-54.79,	32.85,	-99.75,	0
+egyptian_eastern_closed_tent,	-39.02,	43.86,	-0.97,	0
+egyptian_eastern_open_tent,		59.44,	-32.92,	-91.85,	0
+egyptian_eastern_open_tent,		-39.91,	17.02,	-0.26,	0
+egyptian_eastern_open_tent,		-46.59,	-56.04,	177.42,	0
+egyptian_eastern_closed_tent,	-23.65,	-49.56,	-95.83,	0
+egyptian_eastern_open_tent,		43.07,	-34.46,	-96.85,	0
+egyptian_eastern_closed_tent,	54.90,	-56.25,	0.23,	0
+egyptian_eastern_open_tent,		-47.49,	56.64,	-0.26,	0
+egyptian_eastern_closed_tent,	-24.71,	54.41,	-59.41,	0
+egyptian_eastern_open_tent,		40.20,	16.37,	1.46,	0
+egyptian_eastern_open_tent,		52.33,	59.26,	1.46,	0
+egyptian_eastern_open_tent,		28.41,	43.73,	1.46,	0
+egyptian_eastern_closed_tent,	54.92,	40.91,	-142.66,	0
+
+
+	;COLLISION OBJECTS
+
+egyptian_camp_collisionA,	0,	0,	0,	0,
+egyptian_camp_collisionB,	0,	0,	0,	0,
+egyptian_camp_collisionC,	0,	0,	0,	0,
+egyptian_camp_collisionD,	0,	0,	0,	0,
+
+}

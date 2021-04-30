@@ -1,0 +1,270 @@
+; ****  new tree types
+
+
+
+	tree_A_palm
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		tree_A_palm
+			physical_info	info_tree_A.cas
+		}
+	}
+	tree_A_deciduous_summer
+	{
+		stat_cat small_wooden
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		tree_A_deciduous_summer
+			physical_info	info_tree_A.cas
+		}
+	}
+
+	tree_A_deciduous_winter
+	{
+		stat_cat small_wooden
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		tree_A_deciduous_winter
+			physical_info	info_tree_A.cas
+		}
+	}
+
+	tree_B_palm
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		tree_B_palm
+			physical_info	info_tree_B.cas
+		}
+	}
+
+	tree_B_deciduous_summer
+	{
+		stat_cat small_wooden
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		tree_B_deciduous_summer
+			physical_info	info_tree_B.cas
+		}
+	}
+
+	tree_B_deciduous_winter
+	{
+		stat_cat small_wooden
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		tree_B_deciduous_winter
+			physical_info	info_tree_B.cas
+		}
+	}
+
+
+	tree_C_palm
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		tree_C_palm
+			physical_info	info_tree_C.cas
+		}
+	}
+
+	tree_C_conifer_summer
+	{
+		stat_cat small_wooden
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		tree_C_conifer_summer
+			physical_info	info_tree_C.cas
+		}
+	}
+
+
+	tree_C_conifer_winter
+	{
+		stat_cat small_wooden
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		tree_C_conifer_winter
+			physical_info	info_tree_C.cas
+		}
+	}
+
+	tree_E_palm
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		tree_E_palm
+			physical_info	info_tree_E.cas
+		}
+	}
+
+	tree_E_deciduous_summer
+	{
+		stat_cat small_wooden
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		tree_E_deciduous_summer
+			physical_info	info_tree_E.cas
+		}
+	}
+
+	tree_E_deciduous_winter
+	{
+		stat_cat small_wooden
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		tree_E_deciduous_winter
+			physical_info	info_tree_E.cas
+		}
+	}
+
+
+	tree_F_deciduous_summer
+	{
+		stat_cat small_wooden
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		tree_F_deciduous_summer
+			physical_info	info_tree_F.cas
+		}
+	}
+
+	tree_F_deciduous_winter
+	{
+		stat_cat small_wooden
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		tree_F_deciduous_winter
+			physical_info	info_tree_F.cas
+		}
+	}
+
+
+	tree_F_palm
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		tree_F_palm
+			physical_info	info_tree_F.cas
+		}
+	}
+
+	bush_A_deciduous_summer
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		bush_A_deciduous_summer
+			physical_info	none
+		}
+	}
+
+	bush_A_palm
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		bush_A_palm
+			physical_info	none
+		}
+	}
+
+	grass_A
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		grass_A
+			physical_info	none
+		}
+	}
+
+	
+	palm_vegetation_A
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		palm_vegetation_A
+			physical_info	none
+		}
+	}
+
+	oasis_vegetation
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		oasis_vegetation
+			physical_info	none
+		}
+	}
+
+
+

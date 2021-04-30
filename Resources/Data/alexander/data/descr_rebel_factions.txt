@@ -1,0 +1,1222 @@
+rebel_type			Brigantes	//Britons
+category			peasant_revolt
+chance				0					
+description			Brigantes
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb chariot heavy slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+
+rebel_type			Trinovantes	//Britons
+category			peasant_revolt
+chance				0					
+description			Trinovantes
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb chariot heavy slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+
+rebel_type 			Suebi		//Germans
+category			peasant_revolt
+chance				3					
+description			Suebi
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+					
+rebel_type 			Saxones		//Germans
+category			peasant_revolt
+chance				3					
+description			Saxones
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+					
+rebel_type 			Gepids		//Germans
+category			peasant_revolt
+chance				3					
+description			Gepids
+unit				barbarian naked fanatics
+unit				barbarian peasants
+unit				barbarian peasants
+unit				rebel barbarian warband
+unit				rebel barbarian cavalry
+unit				barbarian rebel general
+					
+rebel_type 			Amazons		//Scythians
+category			peasant_revolt 
+chance				6					
+description			Amazons
+;;;		REMOVED FOR ALEXANDER		unit				rebel amazon chariots						
+;;;		REMOVED FOR ALEXANDER		unit				eastern rebel general
+unit				barbarian peasants
+					
+rebel_type 			Saka		// Scythians
+category			peasant_revolt 
+chance				0					
+description			Saka
+unit				barbarian naked fanatics
+unit				barbarian peasants
+unit				barbarian peasants
+unit				rebel barbarian warband
+unit				rebel barbarian cavalry
+unit				barbarian rebel general
+					
+rebel_type 			Hibernians	//Britons
+category			peasant_revolt 
+chance				0					
+description			Hibernians
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb druids slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+					
+rebel_type 			Alans		//Scythians
+category			peasant_revolt 
+chance				0					
+description			Alans
+unit				hyrcanian cavalry
+unit				kardakes
+unit				rebel persian infantry
+unit				persian peltast
+unit				persian peltast
+unit				generic rebel general
+					
+rebel_type 			Silures		//Britons
+category			peasant_revolt 
+chance				6					
+description			Silures	
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb druids slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+					
+rebel_type 			Goths		//Germans
+category			peasant_revolt 
+chance				3					
+description			Goths
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+					
+rebel_type 			Sarmatians	//Scythians
+category			peasant_revolt 
+chance				0					
+description			Sarmatians
+unit				barbarian naked fanatics
+unit				barbarian peasants
+unit				barbarian peasants
+unit				rebel barbarian warband
+unit				rebel barbarian cavalry
+unit				barbarian rebel general
+					
+rebel_type 			Iceni		//Britons
+category			peasant_revolt 
+chance				6					
+description			Iceni	
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb chariot heavy slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+					
+rebel_type 			Batavi		//Germans
+category			peasant_revolt 
+chance				3					
+description			Batavi	
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+					
+rebel_type 			Chatti		//Germans
+category			peasant_revolt 
+chance				3					
+description			Chatti
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+					
+rebel_type 			Venedae		//dacians
+category			peasant_revolt 
+chance				0					
+description			Venedae
+unit				barbarian naked fanatics
+unit				barbarian peasants
+unit				barbarian peasants
+unit				rebel barbarian warband
+unit				rebel barbarian cavalry
+unit				barbarian rebel general
+					
+rebel_type 			Marcomanni	//germans
+category			peasant_revolt 
+chance				3					
+description			Marcomanni
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+					
+rebel_type 			Belgae		//Britons
+category			peasant_revolt 
+chance				0					
+description			Belgae
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb druids slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+					
+rebel_type 			Maeotae 	//Scythians
+category			peasant_revolt 
+chance				3					
+description			Maeotae
+unit				hyrcanian cavalry
+unit				kardakes
+unit				rebel persian infantry
+unit				persian peltast
+unit				persian peltast
+unit				generic rebel general
+					
+rebel_type 			Alamanni	//germans
+category			peasant_revolt 
+chance				3					
+description			Alamanni
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+
+rebel_type 			Carnutes		//gauls
+category			peasant_revolt 
+chance				0					
+description			Carnutes
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb druids slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb noble cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+					
+rebel_type 			Veneti		//gauls
+category			peasant_revolt 
+chance				0					
+description			Veneti
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+					
+rebel_type 			Sequani		//gauls
+category			peasant_revolt 
+chance				0					
+description			Sequani
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb druids slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+
+rebel_type 			Nervii		//gauls
+category			peasant_revolt 
+chance				0					
+description			Nervii
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb druids slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+
+;rebel_type 			Belgae		//gauls
+;category			peasant_revolt 
+;chance				0					
+;description			Belgae
+;unit				barb peasant slave
+;unit				barb infantry slave
+;unit				barb naked fanatics slave
+;unit				barb druids slave
+;unit				barbarian rebel general
+
+rebel_type 			Arverni		//gauls
+category			peasant_revolt 
+chance				0					
+description			Arverni
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+
+rebel_type 			Bituriges		//gauls
+category			peasant_revolt 
+chance				0					
+description			Bituriges
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb druids slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+
+rebel_type 			Ausci		//gauls
+category			peasant_revolt 
+chance				0					
+description			Ausci
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+
+rebel_type 			Allobroges		//gauls
+category			peasant_revolt 
+chance				0					
+description			Allobroges
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+
+rebel_type 			Seduni		//gauls
+category			peasant_revolt 
+chance				0					
+description			Seduni
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+
+rebel_type 			Tectosages		//gauls
+category			peasant_revolt 
+chance				0					
+description			Tectosages
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+
+rebel_type 			Treveri		//germans
+category			peasant_revolt 
+chance				0					
+description			Treveri
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+					
+rebel_type 			Boii		//gauls
+category			peasant_revolt 
+chance				0					
+description			Boii
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+					
+rebel_type 			Roxolani	//scythia
+category			peasant_revolt 
+chance				0					
+description			Roxolani
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb archer slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb horse archers slave
+;;;		REMOVED FOR ALEXANDER		unit				barb horse archers slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+					
+rebel_type 			Iazyges		// dacia
+category			peasant_revolt 
+chance				0					
+description			Iazyges
+unit				barbarian naked fanatics
+unit				barbarian peasants
+unit				barbarian peasants
+unit				rebel barbarian warband
+unit				rebel barbarian cavalry
+unit				barbarian rebel general
+					
+rebel_type 			Senones		//gauls
+category			peasant_revolt 
+chance				0					
+description			Senones
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb druids slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb noble cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+					
+rebel_type 			Carpi		//dacia
+category			peasant_revolt 
+chance				0					
+description			Carpi
+unit				barbarian naked fanatics
+unit				barbarian peasants
+unit				barbarian peasants
+unit				rebel barbarian warband
+unit				rebel barbarian cavalry
+unit				barbarian rebel general
+					
+rebel_type 			Helvetii	//gauls
+category			peasant_revolt 
+chance				0					
+description			Helvetii
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+					
+rebel_type 			Troglodytae	//thrace
+category			peasant_revolt 
+chance				0					
+description			Troglodytae
+;;;		REMOVED FOR ALEXANDER		unit				merc thracian
+;;;		REMOVED FOR ALEXANDER		unit				barb horse archers slave
+;;;		REMOVED FOR ALEXANDER		unit				greek peasant
+;;;		REMOVED FOR ALEXANDER		unit				greek peltast
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+
+rebel_type 			Scordisci	//dacia
+category			peasant_revolt 
+chance				0					
+description			Scordisci
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb archer slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+						
+rebel_type 			Bosphorans	//macedon
+category			peasant_revolt 
+chance				0					
+description			Bosphorans
+unit				hyrcanian cavalry
+unit				kardakes
+unit				rebel persian infantry
+unit				persian peltast
+unit				persian peltast
+unit				generic rebel general
+					
+rebel_type 			Pictones	//gauls
+category			peasant_revolt 
+chance				0					
+description			Pictones
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+					
+rebel_type 			Aedui		//gauls
+category			peasant_revolt 
+chance				0					
+description			Aedui
+unit				hyrcanian cavalry
+unit				kardakes
+unit				rebel persian infantry
+unit				persian peltast
+unit				persian peltast
+unit				generic rebel general
+					
+rebel_type 			Colchians	//Armenia
+category			peasant_revolt 
+chance				0					
+description			Colchians
+unit				hyrcanian cavalry
+unit				kardakes
+unit				rebel persian infantry
+unit				persian peltast
+unit				persian peltast
+unit				generic rebel general
+					
+rebel_type 			Medes		//Parthians
+category			peasant_revolt 
+chance				0					
+description			Medes
+unit				hyrcanian cavalry
+unit				kardakes
+unit				rebel persian infantry
+unit				persian peltast
+unit				persian peltast
+unit				generic rebel general
+					
+rebel_type 			Insubres	//gauls
+category			peasant_revolt 
+chance				0					
+description			Insubres
+unit				hyrcanian cavalry
+unit				kardakes
+unit				rebel persian infantry
+unit				persian peltast
+unit				persian peltast
+unit				generic rebel general
+
+;Duplicates of veneti. Can't remove as it breaks the save game
+rebel_type 			VenetiII		//gauls
+category			peasant_revolt 
+chance				0					
+description			Veneti
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+									
+rebel_type 			Vocontii	//gauls
+category			peasant_revolt 
+chance				0					
+description			Vocontii
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+					
+rebel_type 			Breuci		//illyria
+category			peasant_revolt 
+chance				0					
+description			Breuci
+;;;		REMOVED FOR ALEXANDER		unit				barb infantry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barb archer slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+					
+					
+rebel_type 			Odrysae		//thrace
+category			peasant_revolt 
+chance				3					
+description			Odrysae
+;;;		REMOVED FOR ALEXANDER		unit				merc thracian
+;;;		REMOVED FOR ALEXANDER		unit				greek cavalry
+;;;		REMOVED FOR ALEXANDER		unit				greek peasant
+;;;		REMOVED FOR ALEXANDER		unit				greek peltast
+;;;		REMOVED FOR ALEXANDER		unit				merc bastarnae	
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+					
+rebel_type 			Iberians	//Spain
+category			peasant_revolt 
+chance				3					
+description			Iberians
+;;;		REMOVED FOR ALEXANDER		unit				carthaginian peasant
+;;;		REMOVED FOR ALEXANDER		unit				carthaginian peltast
+;;;		REMOVED FOR ALEXANDER		unit				carthaginian infantry
+;;;		REMOVED FOR ALEXANDER		unit				carthaginian infantry
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				merc spanish infantry
+;;;		REMOVED FOR ALEXANDER		unit				merc balearic slingers
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+					
+rebel_type 			Delmatae		//illyria
+category			peasant_revolt 
+chance				0					
+description			Delmatae
+;;;		REMOVED FOR ALEXANDER		unit				greek peasant
+;;;		REMOVED FOR ALEXANDER		unit				greek peltast
+;;;		REMOVED FOR ALEXANDER		unit				greek hoplite militia
+;;;		REMOVED FOR ALEXANDER		unit				generic rebel general
+unit				barbarian peasants
+					
+rebel_type 			Volcae		//gauls
+category			peasant_revolt 
+chance				0					
+description			Volcae
+unit				hyrcanian cavalry
+unit				kardakes
+unit				rebel persian infantry
+unit				persian peltast
+unit				persian peltast
+unit				generic rebel general
+					
+rebel_type 			Ligurians	//gauls
+category			peasant_revolt 
+chance				0					
+description			Ligurians
+unit				hyrcanian cavalry
+unit				kardakes
+unit				rebel persian infantry
+unit				persian peltast
+unit				persian peltast
+unit				generic rebel general
+					
+rebel_type 			Paphlagonians	//Pontus
+category			peasant_revolt 
+chance				0					
+description			Paphlagonians
+;;;		REMOVED FOR ALEXANDER		unit				east peasant
+;;;		REMOVED FOR ALEXANDER		unit				east peasant
+;;;		REMOVED FOR ALEXANDER		unit				east archer
+;;;		REMOVED FOR ALEXANDER		unit				east archer
+;;;		REMOVED FOR ALEXANDER		unit				east infantry
+;;;		REMOVED FOR ALEXANDER		unit				east infantry
+;;;		REMOVED FOR ALEXANDER		unit				east heavy cavalry
+;;;		REMOVED FOR ALEXANDER		unit				eastern rebel general
+unit				barbarian peasants
+					
+rebel_type 			Paionians	//Macedon
+category			peasant_revolt 
+chance				0					
+description			Paionians
+unit				hyrcanian cavalry
+unit				kardakes
+unit				rebel persian infantry
+unit				persian peltast
+unit				persian peltast
+unit				generic rebel general					
+					
+rebel_type 			Etruscans	//romans
+category			peasant_revolt 
+chance				0					
+description			Etruscans
+;;;		REMOVED FOR ALEXANDER		unit				roman peasant
+;;;		REMOVED FOR ALEXANDER		unit				roman velite
+;;;		REMOVED FOR ALEXANDER		unit				roman city militia
+;;;		REMOVED FOR ALEXANDER		unit				roman city militia
+;;;		REMOVED FOR ALEXANDER		unit				roman hastati
+;;;		REMOVED FOR ALEXANDER		unit				roman hastati
+;;;		REMOVED FOR ALEXANDER		unit				roman light cavalry
+;;;		REMOVED FOR ALEXANDER		unit				generic rebel general
+unit				barbarian peasants					
+					
+					
+rebel_type 			Umbrians	//romans
+category			peasant_revolt 
+chance				0					
+description			Umbrians
+;;;		REMOVED FOR ALEXANDER		unit				roman peasant
+;;;		REMOVED FOR ALEXANDER		unit				roman velite
+;;;		REMOVED FOR ALEXANDER		unit				roman city militia
+;;;		REMOVED FOR ALEXANDER		unit				roman hastati
+;;;		REMOVED FOR ALEXANDER		unit				roman light cavalry
+;;;		REMOVED FOR ALEXANDER		unit				generic rebel general
+unit				barbarian peasants					
+					
+rebel_type 			Beronicensis	//carthage
+category			peasant_revolt 
+chance				0					
+description			Beronicensis
+;;;		REMOVED FOR ALEXANDER		unit				carthaginian peasant
+;;;		REMOVED FOR ALEXANDER		unit				carthaginian peltast
+;;;		REMOVED FOR ALEXANDER		unit				carthaginian peltast
+;;;		REMOVED FOR ALEXANDER		unit				carthaginian city militia
+;;;		REMOVED FOR ALEXANDER		unit				merc balearic slingers
+;;;		REMOVED FOR ALEXANDER		unit				generic rebel general
+unit				barbarian peasants					
+					
+rebel_type 			Latins		//Romans
+category			peasant_revolt 
+chance				0					
+description			Latins
+;;;		REMOVED FOR ALEXANDER		unit				roman peasant
+;;;		REMOVED FOR ALEXANDER		unit				roman velite
+;;;		REMOVED FOR ALEXANDER		unit				roman city militia
+;;;		REMOVED FOR ALEXANDER		unit				roman hastati
+;;;		REMOVED FOR ALEXANDER		unit				roman hastati
+;;;		REMOVED FOR ALEXANDER		unit				roman light cavalry
+;;;		REMOVED FOR ALEXANDER		unit				generic rebel general
+unit				barbarian peasants					
+					
+rebel_type 			Edones		//Macedon
+category			peasant_revolt 
+chance				0					
+description			Edones
+unit				hyrcanian cavalry
+unit				kardakes
+unit				rebel persian infantry
+unit				persian peltast
+unit				persian peltast
+unit				generic rebel general					
+					
+rebel_type 			Sithones	//Macedon
+category			peasant_revolt 
+chance				0					
+description			Sithones
+unit				hyrcanian cavalry
+unit				kardakes
+unit				rebel persian infantry
+unit				persian peltast
+unit				persian peltast
+unit				generic rebel general					
+					
+rebel_type 			Bithynians	//Macedon
+category			peasant_revolt 
+chance				0					
+description			Bithynians
+unit				hyrcanian cavalry
+unit				kardakes
+unit				rebel persian infantry
+unit				persian peltast
+unit				persian peltast
+unit				generic rebel general					
+					
+rebel_type 			Galatians	//Gauls
+category			peasant_revolt 
+chance				0					
+description			Galatians
+;;;		REMOVED FOR ALEXANDER		unit				barb peasant slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb naked fanatics slave
+;;;		REMOVED FOR ALEXANDER		unit				barb cavalry slave
+;;;		REMOVED FOR ALEXANDER		unit				barbarian rebel general
+unit				barbarian peasants
+					
+rebel_type 			Cappadocians	//Pontus
+category			peasant_revolt 
+chance				0					
+description			Cappadocians
+unit				hyrcanian cavalry
+unit				kardakes
+unit				rebel persian infantry
+unit				persian peltast
+unit				persian peltast
+unit				generic rebel general
+					
+rebel_type 			Epirots		//Macedon
+category			peasant_revolt 
+chance				0					
+description			Epirots
+;;;		REMOVED FOR ALEXANDER		unit				greek peasant
+;;;		REMOVED FOR ALEXANDER		unit				greek peltast
+;;;		REMOVED FOR ALEXANDER		unit				greek heavy peltast
+;;;		REMOVED FOR ALEXANDER		unit				greek hoplite militia
+;;;		REMOVED FOR ALEXANDER		unit				greek cavalry
+;;;		REMOVED FOR ALEXANDER		unit				merc illyrian	
+;;;		REMOVED FOR ALEXANDER		unit				generic rebel general
+unit				barbarian peasants					
+					
+rebel_type 			Calabrians	//romans_brutii
+category			peasant_revolt 
+chance				0					
+description			Calabrians
+;;;		REMOVED FOR ALEXANDER		unit				roman peasant
+;;;		REMOVED FOR ALEXANDER		unit				roman velite
+;;;		REMOVED FOR ALEXANDER		unit				roman city militia
+;;;		REMOVED FOR ALEXANDER		unit				roman hastati
+;;;		REMOVED FOR ALEXANDER		unit				roman light cavalry
+;;;		REMOVED FOR ALEXANDER		unit				merc samnite
+;;;		REMOVED FOR ALEXANDER		unit				greek hoplite militia
+;;;		REMOVED FOR ALEXANDER		unit				greek hoplite
+;;;		REMOVED FOR ALEXANDER		unit				greek cavalry
+;;;		REMOVED FOR ALEXANDER		unit				generic rebel general
+unit				barbarian peasants					
+					
+rebel_type 			Campanians 	//romans_scipii
+category			peasant_revolt 
+chance				0					
+description			Campanians
+;;;		REMOVED FOR ALEXANDER		unit				roman peasant
+;;;		REMOVED FOR ALEXANDER		unit				roman velite
+;;;		REMOVED FOR ALEXANDER		unit				roman city militia
+;;;		REMOVED FOR ALEXANDER		unit				roman city militia
+;;;		REMOVED FOR ALEXANDER		unit				roman hastati
+;;;		REMOVED FOR ALEXANDER		unit				roman light cavalry
+;;;		REMOVED FOR ALEXANDER		unit				merc samnite
+;;;		REMOVED FOR ALEXANDER		unit				generic rebel general
+unit				barbarian peasants					
+					
+rebel_type 			Syrians		//Seleucid
+category			peasant_revolt 
+chance				0					
+description			Syrians
+unit				hyrcanian cavalry
+unit				kardakes
+unit				rebel persian infantry
+unit				persian peltast
+unit				persian peltast
+unit				generic rebel general
+					
+rebel_type 			Lesbians	//Macedon
+category			peasant_revolt 
+chance				0					
+description			Lesbians
+;;;		REMOVED FOR ALEXANDER		unit				greek peasant
+;;;		REMOVED FOR ALEXANDER		unit				greek peltast
+;;;		REMOVED FOR ALEXANDER		unit				greek heavy peltast
+;;;		REMOVED FOR ALEXANDER		unit				greek hoplite militia
+;;;		REMOVED FOR ALEXANDER		unit				greek hoplite
+;;;		REMOVED FOR ALEXANDER		unit				greek cavalry
+;;;		REMOVED FOR ALEXANDER		unit				greek medium cavalry
+;;;		REMOVED FOR ALEXANDER		unit				generic rebel general
+unit				barbarian peasants					
+						
+					
+rebel_type 			Cilicians	//Seleucid
+category			peasant_revolt 
+chance				6					
+description			Cilicians
+;;;		REMOVED FOR ALEXANDER		unit				merc cilician pirate
+;;;		REMOVED FOR ALEXANDER		unit				generic rebel general
+unit				barbarian peasants					
+						
+					
+rebel_type 			Thessalians	//Macedon
+category			peasant_revolt 
+chance				0					
+description			Thessalians
+unit				rebel allied cavalry
+unit				auxiliary thracian cavalry
+unit				cretan archers
+unit				rebel greek mercenary infantry
+unit				rebel greek mercenary infantry
+unit				rebel hoplites
+unit				javelin skirmishers
+unit				generic rebel general					
+						
+					
+rebel_type 			Lucanians	//romans_brutii
+category			peasant_revolt 
+chance				3					
+description			Lucanians
+;;;		REMOVED FOR ALEXANDER		unit				roman peasant
+;;;		REMOVED FOR ALEXANDER		unit				roman velite
+;;;		REMOVED FOR ALEXANDER		unit				roman city militia
+;;;		REMOVED FOR ALEXANDER		unit				merc samnite
+;;;		REMOVED FOR ALEXANDER		unit				merc samnite
+;;;		REMOVED FOR ALEXANDER		unit				generic rebel general
+unit				barbarian peasants					
+					
+rebel_type 			Ionians		//seleucids
+category			peasant_revolt 
+chance				0					
+description			Ionians
+unit				hyrcanian cavalry
+unit				kardakes
+unit				rebel persian infantry
+unit				persian peltast
+unit				persian peltast
+unit				generic rebel general					
+					
+rebel_type 			Aetolians	//Macedon
+category			peasant_revolt 
+chance				0					
+description			Aetolians
+;;;		REMOVED FOR ALEXANDER		unit				greek peasant
+;;;		REMOVED FOR ALEXANDER		unit				greek peltast
+;;;		REMOVED FOR ALEXANDER		unit				greek peltast
+;;;		REMOVED FOR ALEXANDER		unit				greek heavy peltast
+;;;		REMOVED FOR ALEXANDER		unit				greek heavy peltast
+;;;		REMOVED FOR ALEXANDER		unit				greek cavalry
+;;;		REMOVED FOR ALEXANDER		unit				generic rebel general
+unit				barbarian peasants					
+					
+rebel_type 			Athenians	//Macedon
+category			peasant_revolt 
+chance				0					
+description			Athenians
+unit				rebel allied cavalry
+unit				auxiliary thracian cavalry
+unit				cretan archers
+unit				rebel greek mercenary infantry
+unit				rebel greek mercenary infantry
+unit				rebel hoplites
+unit				javelin skirmishers
+unit				generic rebel general					
+					
+rebel_type 			Elamites	//Parthia
+category			peasant_revolt 
+chance				0					
+description			Elamites
+unit				hyrcanian cavalry
+unit				kardakes
+unit				rebel persian infantry
+unit				persian peltast
+unit				persian peltast
+unit				generic rebel general
+					
+rebel_type 			Achaeans	//Macedon
+category			peasant_revolt 
+chance				0					
+description			Achaeans
+unit				hyrcanian cavalry
+unit				kardakes
+unit				rebel persian infantry
+unit				persian peltast
+unit				persian peltast
+unit				generic rebel general					
+					
+rebel_type 			Lycians		//Macedon
+category			peasant_revolt 
+chance				0					
+description			Lycians
+;;;		REMOVED FOR ALEXANDER		unit				greek peasant
+;;;		REMOVED FOR ALEXANDER		unit				greek peltast
+;;;		REMOVED FOR ALEXANDER		unit				greek heavy peltast
+;;;		REMOVED FOR ALEXANDER		unit				greek hoplite militia
+;;;		REMOVED FOR ALEXANDER		unit				merc cilician pirate
+;;;		REMOVED FOR ALEXANDER		unit				generic rebel general
+unit				barbarian peasants					
+					
+rebel_type 			Sicani		//Carthage
+category			peasant_revolt 
+chance				0					
+description			Sicani
+;;;		REMOVED FOR ALEXANDER		unit				carthaginian peasant
+;;;		REMOVED FOR ALEXANDER		unit				carthaginian peltast
+;;;		REMOVED FOR ALEXANDER		unit				carthaginian city militia
+;;;		REMOVED FOR ALEXANDER		unit				carthaginian infantry
+;;;		REMOVED FOR ALEXANDER		unit				carthaginian cavalry
+;;;		REMOVED FOR ALEXANDER		unit				generic rebel general
+unit				barbarian peasants					
+					
+rebel_type 			Moors		//numidia
+category			peasant_revolt 
+chance				0					
+description			Moors
+;;;		REMOVED FOR ALEXANDER		unit				carthaginian peasant
+;;;		REMOVED FOR ALEXANDER		unit				numidian javelinmen
+;;;		REMOVED FOR ALEXANDER		unit				numidian cavalry
+;;;		REMOVED FOR ALEXANDER		unit				generic rebel general
+unit				barbarian peasants					
+					
+rebel_type 			Palmyrans	//armenia
+category			peasant_revolt 
+chance				0					
+description			Palmyrans
+unit				hyrcanian cavalry
+unit				kardakes
+unit				rebel persian infantry
+unit				persian peltast
+unit				persian peltast
+unit				generic rebel general
+					
+rebel_type 			Cypriots	//Macedon
+category			peasant_revolt 
+chance				0					
+description			Cypriots
+;;;		REMOVED FOR ALEXANDER		unit				greek peasant
+;;;		REMOVED FOR ALEXANDER		unit				greek peltast
+;;;		REMOVED FOR ALEXANDER		unit				greek heavy peltast
+;;;		REMOVED FOR ALEXANDER		unit				greek hoplite militia
+;;;		REMOVED FOR ALEXANDER		unit				greek hoplite
+;;;		REMOVED FOR ALEXANDER		unit				merc cilician pirate
+;;;		REMOVED FOR ALEXANDER		unit				generic rebel general
+unit				barbarian peasants					
+					
+rebel_type 			Phoenicians	//seleucids
+category			peasant_revolt 
+chance				0					
+description			Phoenicians
+unit				hyrcanian cavalry
+unit				kardakes
+unit				rebel persian infantry
+unit				persian peltast
+unit				persian peltast
+unit				generic rebel general
+					
+rebel_type 			Syracusans	//Macedon
+category			peasant_revolt 
+chance				0					
+description			Syracusans
+;;;		REMOVED FOR ALEXANDER		unit				greek peasant
+;;;		REMOVED FOR ALEXANDER		unit				greek peltast
+;;;		REMOVED FOR ALEXANDER		unit				greek heavy peltast
+;;;		REMOVED FOR ALEXANDER		unit				greek hoplite militia
+;;;		REMOVED FOR ALEXANDER		unit				greek hoplite militia
+;;;		REMOVED FOR ALEXANDER		unit				greek hoplite
+;;;		REMOVED FOR ALEXANDER		unit				greek cavalry
+;;;		REMOVED FOR ALEXANDER		unit				greek medium cavalry
+;;;		REMOVED FOR ALEXANDER		unit				generic rebel general
+unit				barbarian peasants					
+					
+rebel_type 			Helots		//Macedon
+category			peasant_revolt 
+chance				0					
+description			Helots
+;;;		REMOVED FOR ALEXANDER		unit				greek peasant
+;;;		REMOVED FOR ALEXANDER		unit				greek peasant
+;;;		REMOVED FOR ALEXANDER		unit				greek peasant
+;;;		REMOVED FOR ALEXANDER		unit				greek peltast
+;;;		REMOVED FOR ALEXANDER		unit				greek hoplite militia
+;;;		REMOVED FOR ALEXANDER		unit				generic rebel general
+unit				barbarian peasants					
+					
+rebel_type 			Poeni		//Carthage
+category			peasant_revolt 
+chance				0					
+description			Poeni
+;;;		REMOVED FOR ALEXANDER		unit				carthaginian peasant
+;;;		REMOVED FOR ALEXANDER		unit				carthaginian peltast
+;;;		REMOVED FOR ALEXANDER		unit				carthaginian city militia
+;;;		REMOVED FOR ALEXANDER		unit				carthaginian infantry
+;;;		REMOVED FOR ALEXANDER		unit				carthaginian cavalry
+;;;		REMOVED FOR ALEXANDER		unit				generic rebel general
+unit				barbarian peasants					
+					
+rebel_type 			Rhodians	//Macedon
+category			peasant_revolt 
+chance				0					
+description			Rhodians
+;;;		REMOVED FOR ALEXANDER		unit				greek peasant
+;;;		REMOVED FOR ALEXANDER		unit				greek heavy peltast
+;;;		REMOVED FOR ALEXANDER		unit				greek hoplite militia
+;;;		REMOVED FOR ALEXANDER		unit				greek hoplite militia
+;;;		REMOVED FOR ALEXANDER		unit				merc rhodian slingers
+;;;		REMOVED FOR ALEXANDER		unit				generic rebel general
+unit				barbarian peasants					
+					
+rebel_type 			Nabataeans	//parthia
+category			peasant_revolt 
+chance				3					
+description			Nabataeans
+unit				hyrcanian cavalry
+unit				kardakes
+unit				rebel persian infantry
+unit				persian peltast
+unit				persian peltast
+unit				generic rebel general
+					
+rebel_type 			Cretans		//macedon
+category			peasant_revolt 
+chance				0					
+description			Cretans
+;;;		REMOVED FOR ALEXANDER		unit				greek peasant
+;;;		REMOVED FOR ALEXANDER		unit				greek peltast
+;;;		REMOVED FOR ALEXANDER		unit				greek hoplite militia
+;;;		REMOVED FOR ALEXANDER		unit				greek hoplite
+;;;		REMOVED FOR ALEXANDER		unit				merc cretan archers
+;;;		REMOVED FOR ALEXANDER		unit				merc cretan archers
+;;;		REMOVED FOR ALEXANDER		unit				merc cilician pirate
+;;;		REMOVED FOR ALEXANDER		unit				generic rebel general
+unit				barbarian peasants					
+					
+rebel_type 			Judaeans	//parthia
+category			peasant_revolt 
+chance				6					
+description			Judaeans
+unit				hyrcanian cavalry
+unit				kardakes
+unit				rebel persian infantry
+unit				persian peltast
+unit				persian peltast
+unit				generic rebel general
+					
+rebel_type 			Gaetuli		//Numidia
+category			peasant_revolt 
+chance				3					
+description			Gaetuli
+unit				hyrcanian cavalry
+unit				kardakes
+unit				rebel persian infantry
+unit				persian peltast
+unit				persian peltast
+unit				generic rebel general					
+					
+rebel_type 			Libyans		//Macedon
+category			peasant_revolt 
+chance				0					
+description			Libyans
+unit				hyrcanian cavalry
+unit				kardakes
+unit				rebel persian infantry
+unit				persian peltast
+unit				persian peltast
+unit				generic rebel general					
+					
+rebel_type 			Illyrians		//macedonia
+category			peasant_revolt 
+chance				3				
+description			Illyrians
+;;;		REMOVED FOR ALEXANDER		unit				greek peasant
+;;;		REMOVED FOR ALEXANDER		unit				greek peasant
+;;;		REMOVED FOR ALEXANDER		unit				greek peltast
+;;;		REMOVED FOR ALEXANDER		unit				greek cavalry
+;;;		REMOVED FOR ALEXANDER		unit				merc illyrian	
+;;;		REMOVED FOR ALEXANDER		unit				merc illyrian	
+;;;		REMOVED FOR ALEXANDER		unit				generic rebel general
+unit				barbarian peasants					
+					
+;;;;;;;;;;;;		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;				
+;non region			based
+;;;;;;;;;;;;		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+					
+;;;		REMOVED CATEGORY FOR ALEXANDER		rebel_type			gladiator_uprising
+;;;		REMOVED CATEGORY FOR ALEXANDER		category			gladiator_revolt
+;;;		REMOVED CATEGORY FOR ALEXANDER		chance				100
+;;;		REMOVED CATEGORY FOR ALEXANDER		description			gladiator_uprising
+;;;		REMOVED FOR ALEXANDER		unit				roman peasant		
+;;;		REMOVED FOR ALEXANDER		unit				roman peasant		
+;;;		REMOVED FOR ALEXANDER		unit				roman velite gladiator	
+;;;		REMOVED FOR ALEXANDER		unit				roman samnite gladiator	
+;;;		REMOVED CATEGORY FOR ALEXANDER		unit				roman mirmillo gladiator
+					
+rebel_type			brigands
+category			brigands
+chance				50
+description			brigands
+;;;		REMOVED FOR ALEXANDER		unit				merc peltast		
+;;;		REMOVED FOR ALEXANDER		unit				merc illyrian	
+;;;		REMOVED FOR ALEXANDER		unit				merc samnite
+;;;		REMOVED FOR ALEXANDER		unit				merc thracian		
+;;;		REMOVED FOR ALEXANDER		unit				merc bastarnae	
+;;;		REMOVED FOR ALEXANDER		unit				merc sarmatian cavalry
+;;;		REMOVED FOR ALEXANDER		unit				merc horse archers
+;;;		REMOVED FOR ALEXANDER		unit				merc spanish infantry
+;;;		REMOVED FOR ALEXANDER		unit				merc eastern infantry
+;;;		REMOVED FOR ALEXANDER		unit				merc rhodian slingers
+;;;		REMOVED FOR ALEXANDER		unit				merc cretan archers
+;;;		REMOVED FOR ALEXANDER		unit				merc greek hoplites
+;;;		REMOVED FOR ALEXANDER		unit				merc libyan infantry
+;;;		REMOVED FOR ALEXANDER		unit				merc numidian cavalry
+;;;		REMOVED FOR ALEXANDER		unit				merc arab cavalry
+;;;		REMOVED FOR ALEXANDER		unit				merc bedouin
+;;;		REMOVED FOR ALEXANDER		unit				merc bedouin archers
+;;;		REMOVED FOR ALEXANDER		unit				merc balearic slingers
+;;;		REMOVED FOR ALEXANDER		unit				merc barbarian infantry
+;;;		REMOVED FOR ALEXANDER		unit				merc barbarian cavalry
+unit				barbarian peasants		
+					
+rebel_type			pirates
+category			pirates
+chance				50
+description			pirates
+unit				naval pirate ships		
+					
+					

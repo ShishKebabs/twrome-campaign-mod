@@ -1,0 +1,3 @@
+;all buildings have been moved to dbb_barbarian_buildings.txt
+
+

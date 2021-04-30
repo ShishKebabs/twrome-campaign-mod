@@ -1,0 +1,35 @@
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+area_type_selection_template_file_list
+
+	set_directory	data/terrain/area_type_selection_templates
+
+	template_page1.tga
+
+end_area_type_selection_template_file_list
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+define_ground_type grass
+
+	tessellation	sand, rock
+
+	mutation		grass	10
+	mutation		sand	1
+	mutation		rock	1
+
+end_define_ground_type
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+define_ground_type swamp
+
+	tessellation	grass
+
+	mutation		swamp	10
+	mutation		grass	1
+
+end_define_ground_type
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

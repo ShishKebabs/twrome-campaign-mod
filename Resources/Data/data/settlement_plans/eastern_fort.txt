@@ -1,0 +1,172 @@
+plan
+
+{
+
+floor      underlay_eastern_fort.cas   overlay_eastern_fort.cas
+
+street_plan	pathfinding_eastern_fort.cas
+
+borders
+
+{
+straight,	-64.00,	-160.00,	0.00,	0.00
+straight,	64.00,	-160.00,	0.00,	0.00
+straight,	-160.00,	-64.00,	-90.00,	0.00
+straight,	-160.00,	64.00,	-90.00,	0.00
+straight,	64.00,	160.00,	-180.00,	0.00
+straight,	-64.00,	160.00,	-180.00,	0.00
+straight,	160.00,	-64.00,	90.00,	0.00
+straight,	160.00,	64.00,	90.00,	0.00
+
+external_left_link,	-96.00,	-160.00,	0.00,	0.00
+external_left_link,	-160.00,	96.00,	-90.00,	0.00
+external_left_link,	96.00,	160.00,	-180.00,	0.00
+external_left_link,	160.00,	-96.00,	90.00,	0.00
+
+external_right_link,	96.00,	-160.00,	0.00,	0.00
+external_right_link,	-160.00,	-96.00,	-90.00,	0.00
+external_right_link,	-96.00,	160.00,	-180.00,	0.00
+external_right_link,	160.00,	96.00,	90.00,	0.00
+
+tower_straight,	-128.00,	-128.00,	-45.00,	0.00
+tower_straight,	128.00,	128.00,	135.00,	0.00
+tower_straight,	128.00,	-128.00,	45.00,	0.00
+tower_straight,	-128.00,	128.00,	-135.00,	0.00
+
+gateway,	0.00,	-160.00,	0.00,	0.00
+gateway,	-0.00,	160.00,	-180.00,	0.00
+gateway,	160.00,	0.00,	90.00,	0.00
+gateway,	-160.00,	0.00,	-90.00,	0.00
+
+}
+
+
+camp_cloth_curtain,	-8.31,	-34.80,	-40.00,	0.00
+camp_cloth_curtain,	-32.83,	-14.23,	-75.00,	0.00
+camp_cloth_curtain,	-41.11,	16.68,	-145.00,	0.00
+camp_cloth_curtain,	-14.90,	35.04,	-175.00,	0.00
+camp_cloth_curtain,	16.98,	37.82,	145.00,	0.00
+camp_cloth_curtain,	43.20,	19.47,	80.00,	0.00
+camp_cloth_curtain,	37.64,	-12.04,	40.00,	0.00
+
+
+
+eastern_rich_house_A,	0.00,	0.00,	0.00,	0.00
+
+eastern_poor_house_D,	-54.00,	-116.00,	0.00,	0.00
+eastern_poor_house_D,	-116.00,	-10.00,	-90.00,	0.00
+
+eastern_workshop,	94.00,	-92.00,	45.00,	0.00
+eastern_workshop,	60.00,	102.00,	-90.00,	0.00
+
+egyptian_eastern_open_tent,	108.00,	-52.00,	0.00,	0.00
+egyptian_eastern_open_tent,	76.00,	58.00,	90.00,	0.00
+
+egyptian_storage_building,	104.00,	84.00,	135.00,	0.00
+egyptian_storage_building,	92.00,	96.00,	135.00,	0.00
+egyptian_storage_building,	-50.00,	110.00,	-180.00,	0.00
+egyptian_storage_building,	50.00,	-110.00,	0.00,	0.00
+egyptian_storage_building,	-94.93,	98.21,	-35.00,	0.00
+egyptian_storage_building,	-101.05,	-97.52,	-150.00,	0.00
+egyptian_storage_building,	-26.00,	-70.00,	90.00,	0.00
+egyptian_storage_building,	-26.00,	-86.00,	90.00,	0.00
+egyptian_storage_building,	-26.00,	-102.00,	90.00,	0.00
+egyptian_storage_building,	-26.00,	-118.00,	90.00,	0.00
+egyptian_storage_building,	26.00,	-118.00,	-90.00,	0.00
+egyptian_storage_building,	26.00,	-102.00,	-90.00,	0.00
+egyptian_storage_building,	26.00,	-86.00,	-90.00,	0.00
+egyptian_storage_building,	26.00,	-70.00,	-90.00,	0.00
+egyptian_storage_building,	104.00,	-26.00,	-180.00,	0.00
+egyptian_storage_building,	88.00,	-26.00,	-180.00,	0.00
+egyptian_storage_building,	72.00,	-26.00,	-180.00,	0.00
+egyptian_storage_building,	120.00,	-26.00,	-180.00,	0.00
+egyptian_storage_building,	88.00,	26.00,	0.00,	0.00
+egyptian_storage_building,	104.00,	26.00,	0.00,	0.00
+egyptian_storage_building,	120.00,	26.00,	0.00,	0.00
+egyptian_storage_building,	72.00,	26.00,	0.00,	0.00
+egyptian_storage_building,	26.00,	102.00,	-90.00,	0.00
+egyptian_storage_building,	26.00,	86.00,	-90.00,	0.00
+egyptian_storage_building,	26.00,	118.00,	-90.00,	0.00
+egyptian_storage_building,	-26.00,	86.00,	90.00,	0.00
+egyptian_storage_building,	-26.00,	102.00,	90.00,	0.00
+egyptian_storage_building,	-26.00,	118.00,	90.00,	0.00
+egyptian_storage_building,	-26.00,	70.00,	90.00,	0.00
+egyptian_storage_building,	-68.64,	79.80,	-35.00,	0.00
+egyptian_storage_building,	-55.53,	70.63,	-35.00,	0.00
+egyptian_storage_building,	-81.75,	88.98,	-35.00,	0.00
+egyptian_storage_building,	-85.36,	28.03,	145.00,	0.00
+egyptian_storage_building,	-98.47,	37.21,	145.00,	0.00
+egyptian_storage_building,	-111.57,	46.38,	145.00,	0.00
+egyptian_storage_building,	-72.25,	18.85,	145.00,	0.00
+egyptian_storage_building,	-99.33,	-36.48,	30.00,	0.00
+egyptian_storage_building,	-85.48,	-28.48,	30.00,	0.00
+egyptian_storage_building,	-71.62,	-20.48,	30.00,	0.00
+egyptian_storage_building,	-113.19,	-44.48,	30.00,	0.00
+egyptian_storage_building,	-59.48,	-73.52,	-150.00,	0.00
+egyptian_storage_building,	-73.33,	-81.52,	-150.00,	0.00
+egyptian_storage_building,	-87.19,	-89.52,	-150.00,	0.00
+
+egyptian_village_house_large,	122.00,	-70.00,	90.00,	0.00
+egyptian_village_house_large,	64.00,	-120.00,	0.00,	0.00
+egyptian_village_house_large,	76.00,	-120.00,	0.00,	0.00
+egyptian_village_house_large,	-74.00,	-122.00,	0.00,	0.00
+egyptian_village_house_large,	-40.00,	-52.00,	-180.00,	0.00
+egyptian_village_house_large,	-52.00,	-56.00,	-150.00,	0.00
+egyptian_village_house_large,	-28.00,	-54.00,	160.00,	0.00
+egyptian_village_house_large,	-74.00,	-112.00,	0.00,	0.00
+egyptian_village_house_large,	26.00,	-58.00,	-180.00,	0.00
+egyptian_village_house_large,	66.00,	-56.00,	-130.00,	0.00
+egyptian_village_house_large,	48.00,	70.00,	0.00,	0.00
+egyptian_village_house_large,	-34.00,	56.00,	25.00,	0.00
+egyptian_village_house_large,	-122.00,	8.00,	-90.00,	0.00
+egyptian_village_house_large,	-122.00,	18.00,	-90.00,	0.00
+egyptian_village_house_large,	-122.00,	28.00,	-90.00,	0.00
+egyptian_village_house_large,	-62.00,	10.00,	90.00,	0.00
+egyptian_village_house_large,	-62.00,	0.00,	90.00,	0.00
+egyptian_village_house_large,	120.00,	48.00,	90.00,	0.00
+egyptian_village_house_large,	120.00,	58.00,	90.00,	0.00
+egyptian_village_house_large,	120.00,	68.00,	90.00,	0.00
+egyptian_village_house_large,	120.00,	78.00,	90.00,	0.00
+
+cart_B,	-85.99,	-116.68,	-140.00,	0.00
+cart_B,	34.54,	-57.59,	100.00,	0.00
+cart_B,	61.07,	73.60,	-80.00,	0.00
+cart_B,	-34.35,	-20.31,	-140.00,	0.00
+cart_B,	-23.87,	58.27,	80.00,	0.00
+
+
+
+tree_A,	84.00,	-52.00,	0.00,	0.00
+tree_A,	104.00,	60.00,	-145.00,	0.00
+tree_A,	-88.00,	0.00,	100.00,	0.00
+
+tree_C,	-124.00,	50.00,	-180.00,	0.00
+tree_C,	-62.00,	-10.00,	-180.00,	0.00
+tree_C,	-46.00,	-68.00,	-180.00,	0.00
+tree_C,	48.00,	-58.00,	-180.00,	0.00
+tree_C,	42.00,	-20.00,	-180.00,	0.00
+tree_C,	28.00,	-28.00,	-180.00,	0.00
+tree_C,	92.00,	64.00,	-180.00,	0.00
+tree_C,	34.00,	72.00,	-180.00,	0.00
+tree_C,	-66.00,	104.00,	-180.00,	0.00
+tree_C,	-86.00,	116.00,	-180.00,	0.00
+
+tree_E,	-102.00,	10.00,	-140.00,	0.00
+tree_E,	34.00,	38.00,	-120.00,	0.00
+tree_E,	-52.00,	-96.00,	145.00,	0.00
+tree_E,	50.00,	-86.00,	15.00,	0.00
+tree_E,	20.00,	72.00,	80.00,	0.00
+tree_E,	-48.00,	54.00,	-115.00,	0.00
+tree_E,	-64.00,	120.00,	0.00,	0.00
+
+tree_B,	-122.00,	-60.00,	0.00,	0.00
+tree_B,	50.00,	-70.00,	0.00,	0.00
+tree_B,	94.00,	50.00,	85.00,	0.00
+tree_B,	86.00,	114.00,	-145.00,	0.00
+tree_B,	-78.00,	114.00,	105.00,	0.00
+tree_B,	-120.00,	62.00,	-40.00,	0.00
+
+tree_F,	70.00,	-70.00,	-40.00,	0.00
+
+
+}

@@ -1,0 +1,2455 @@
+script
+
+		; *********************************************************************************************
+		;	Battle of the Hydaspes
+		; *********************************************************************************************
+		
+		
+			prepare_for_battle		; This must be *BEFORE* defining labels
+		
+		
+			;	label_unit ALLIANCE ARMY UNIT
+		
+			;	ALLIANCE 0		====================================================================
+
+
+
+			label_unit 0 0 0	Alexander
+			label_unit 0 0 1	companion_cavalry_1
+			label_unit 0 0 2	scyth_mount_archers
+			label_unit 0 0 3	javelin_skirmishers
+			label_unit 0 0 4	hypaspists_1		
+			label_unit 0 0 5	hypaspists_2		
+			label_unit 0 0 6	phalangists_1	
+			label_unit 0 0 7	phalangists_2		
+			label_unit 0 0 8	mardian_archers		
+			label_unit 0 0 9	companion_cavalry_2
+			label_unit 0 0 10	phalangists_3	
+			label_unit 0 0 11	phalangists_4	
+			label_unit 0 0 12	allied_cavalry	
+			label_unit 0 0 13	phalangists_5	
+			label_unit 0 0 14	phalangists_6	
+			label_unit 0 0 15	hypaspists_3
+
+
+			;	ALLIANCE 1		=====================================================================
+
+
+			label_unit 1 0 0	Porus
+			label_unit 1 0 1	Indian_Elephants_1
+			label_unit 1 0 2	Indian_Elephants_2
+			label_unit 1 0 3	Indian_Spearmen_1
+			label_unit 1 0 4        Indian_Spearmen_2
+			label_unit 1 0 5        Indian_Chariots_1
+			label_unit 1 0 6        Indian_Chariots_2
+			label_unit 1 0 7        Indian_Lt_Cav_1
+			label_unit 1 0 8        Indian_Lt_Cav_2
+			label_unit 1 0 9        Indian_Fem_Arch_1
+			label_unit 1 0 10	Indian_Javelin_Men
+			label_unit 1 0 11       Indian_Med_Cavalry
+			label_unit 1 0 12       Indian_Longbowmen
+			label_unit 1 0 13       Indian_Spearmen_3
+			label_unit 1 0 14       Indian_Spearmen_4
+			label_unit 1 0 15       Indian_Spearmen_5
+			label_unit 1 0 16       Indian_Spearmen_6
+			label_unit 1 0 17       Indian_Spearmen_7
+			label_unit 1 0 18       Indian_Slingers
+			label_unit 1 0 19       Indian_Fem_Arch_2
+
+
+			label_unit 1 1 0	Indian_Porus_son
+			label_unit 1 1 1	Indian_son_med_cav_1
+			label_unit 1 1 2	Indian_son_med_cav_2
+			label_unit 1 1 3	Indian_son_chariots_1
+			label_unit 1 1 4        Indian_son_chariots_2
+
+
+
+
+
+
+		; *********************************************************************************************
+		;	COUNTERS
+		; *********************************************************************************************
+
+			declare_counter battle_start
+			declare_counter intro_sequence		;	Kicks off intro sequence
+			declare_counter player_not_escape
+			declare_counter defend_rear_of_ford_points
+			declare_counter Macedons_crossing_ford
+			declare_counter rear_ford_points_release
+			declare_counter num_mac_crossed_ford
+			declare_counter release_unit_count
+			declare_counter main_army_is_forming
+			declare_counter no_of_main_army_units_routing
+			declare_counter rear_guard_used
+			declare_counter mac_outflank
+			declare_counter Macedons_crossed_ford
+			declare_counter num_back_over_ford
+			declare_counter already_grouped
+			declare_counter Macedons_crossed_ford_tag
+			declare_counter main_army_is_formed
+			declare_counter main_army_form_up
+			declare_counter Porus_son_attack
+			declare_counter spearmen_ford
+			declare_counter macedon_cross_middle_ford
+			declare_counter macedon_cross_north_ford
+
+			declare_counter bolster_indian_army
+
+
+
+		;-----------------------------------------------------------------------------------------------------------
+		;-----------------------------------------------------------------------------------------------------------
+		;			OPEN SCRIPT SECTION
+		;-----------------------------------------------------------------------------------------------------------
+		;-----------------------------------------------------------------------------------------------------------
+		
+			camera_default_mode_set tw
+		
+			disable_cursor						;prevent the player clicking
+			suspend_unscripted_advice true
+			disable_shortcuts true		
+			disable_entire_ui
+			inhibit_camera_input true
+
+
+	
+			set_counter intro_sequence 1	;	kicks off intro sequence
+		
+			while ! I_BattleStarted					; battle_wait FOR DEPLOYMENT
+			end_while
+		
+			hide_ui
+		
+		 	camera_restrictions_set off
+		
+		
+			;-----------------------------------------------------------------------------------------------------------
+			;-----------------------------------------------------------------------------------------------------------
+			;-----------------------------------------------------------------------------------------------------------
+			;-----------------------------------------------------------------------------------------------------------
+			;		ESCAPE KEY HANDLER
+			;-----------------------------------------------------------------------------------------------------------
+			;-----------------------------------------------------------------------------------------------------------
+			;-----------------------------------------------------------------------------------------------------------
+			;-----------------------------------------------------------------------------------------------------------
+				steal_esc_key
+		
+				;	Allows user to skip intro and jump straight to the battle by pressing the ESC key.
+				monitor_event EscPressed TrueCondition
+					set_counter battle_start 1
+		
+;pause_battle
+
+;;;	OLD		  			unit_immediate_place
+		
+					terminate_monitor
+				end_monitor
+			;-----------------------------------------------------------------------------------------------------------
+		
+		
+		
+			;**********************************************************************************************************
+			;**********************************************************************************************************
+			;************************************** BATTLE MONITORS ***************************************************
+			;**********************************************************************************************************
+			;**********************************************************************************************************
+
+
+
+
+				label_location 372.322, 638.230 track_player_start 
+				label_location 202.863, 579.932 track_player_end 
+
+				label_location	696.7, 29.84	Alexfordstart
+				label_location	535.2, 97.6	Alexfordend
+
+				label_location	838.46, -492.231 outflank_start
+				label_location	191.976, -191.714 outflank_end
+
+				label_location	101.425, -348.1	BigHillTrigger_start
+				label_location	-773.69, -532.73 BigHillTrigger_end
+
+				label_location 186.922, 322.032 middle_ford_start
+				label_location	150.103, 443.435 middle_ford_end
+
+
+				label_location 57.578, 624.409 north_ford_start
+				label_location	26.286, 694.209 north_ford_end
+
+
+
+;-------------------------------------------------------------------------------------------------
+;------ COUNT NUMBER OF MACEDONIANS THAT HAVE CROSSED THE FORD -----------------------------------
+;-------------------------------------------------------------------------------------------------
+		monitor_conditions I_UnitDistanceFromLine Alexander Alexfordstart Alexfordend < 3
+	;		pause_battle
+			inc_counter num_mac_crossed_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine companion_cavalry_1 Alexfordstart Alexfordend < 3
+	;		pause_battle
+			inc_counter num_mac_crossed_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine scyth_mount_archers Alexfordstart Alexfordend < 3
+	;		pause_battle
+			inc_counter num_mac_crossed_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine javelin_skirmishers Alexfordstart Alexfordend < 3
+	;		pause_battle
+			inc_counter num_mac_crossed_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine hypaspists_1 Alexfordstart Alexfordend < 3
+	;		pause_battle
+			inc_counter num_mac_crossed_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine hypaspists_2 Alexfordstart Alexfordend < 3
+	;		pause_battle
+			inc_counter num_mac_crossed_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine phalangists_1	Alexfordstart Alexfordend < 3
+	;		pause_battle
+			inc_counter num_mac_crossed_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine phalangists_2 Alexfordstart Alexfordend < 3
+	;		pause_battle
+			inc_counter num_mac_crossed_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine mardian_archers	 Alexfordstart Alexfordend < 3
+	;		pause_battle
+			inc_counter num_mac_crossed_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine companion_cavalry_2 Alexfordstart Alexfordend < 3
+	;		pause_battle
+			inc_counter num_mac_crossed_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine phalangists_3 Alexfordstart Alexfordend < 3
+	;		pause_battle
+			inc_counter num_mac_crossed_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine phalangists_4	Alexfordstart Alexfordend < 3
+	;		pause_battle
+			inc_counter num_mac_crossed_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine allied_cavalry Alexfordstart Alexfordend < 3
+	;		pause_battle
+			inc_counter num_mac_crossed_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine phalangists_5 Alexfordstart Alexfordend < 3
+	;		pause_battle
+			inc_counter num_mac_crossed_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine phalangists_6 Alexfordstart Alexfordend < 3
+	;		pause_battle
+			inc_counter num_mac_crossed_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine hypaspists_3 Alexfordstart Alexfordend < 3
+	;		pause_battle
+			inc_counter num_mac_crossed_ford 1
+		terminate_monitor
+		end_monitor
+
+
+
+
+
+
+;-------------------------------------------------------------------------------------------------
+;-------------------------------------------------------------------------------------------------
+;-------------------------------------------------------------------------------------------------
+;-------------------------------------------------------------------------------------------------
+;-------------------------------------------------------------------------------------------------
+;-------------------------------------------------------------------------------------------------
+;------ WAIT FOR 5 MACEDONIANS TO CROSS FORD AND THEN ACTIVATE PORUS' SON ATTACK ------------------
+;-------------------------------------------------------------------------------------------------
+;-------------------------------------------------------------------------------------------------
+;-------------------------------------------------------------------------------------------------
+;-------------------------------------------------------------------------------------------------
+;-------------------------------------------------------------------------------------------------
+;-------------------------------------------------------------------------------------------------
+
+
+		monitor_conditions I_CompareCounter Porus_son_attack = 1
+			define_unit_group Porus_son Indian_Porus_son Indian_son_med_cav_1 Indian_son_med_cav_2 Indian_son_chariots_1 Indian_son_chariots_2
+			battle_wait 1
+			unit_group_order_move_formed Porus_son 553, 8 run
+			
+			set_counter main_army_is_forming 1
+
+	;		battle_wait 100
+	;		unit_group_enable_automation Porus_son true
+
+	;		undefine_unit_group Porus_son
+	;		unit_order_attack_closest_unit Indian_Porus_son 180 run
+	;		unit_order_attack_closest_unit Indian_son_med_cav_1 180 run
+	;		unit_order_attack_closest_unit Indian_son_med_cav_2 180 run
+	;		unit_order_attack_closest_unit Indian_son_chariots_1 180 run
+	;		unit_order_attack_closest_unit Indian_son_chariots_2 180 run
+
+
+	;		battle_wait 20
+	;		release_unit Indian_Porus_son
+	;		release_unit Indian_son_med_cav_1
+	;		release_unit Indian_son_med_cav_2
+	;		release_unit Indian_son_chariots_1
+	;		release_unit Indian_son_chariots_2
+
+
+		terminate_monitor
+		end_monitor
+
+
+;-------------------------------------------------------------------------------------------------
+;------ RELEASE PORUS SON UNITS WHEN ENEMY NEAR --------------------------------------------------
+;-------------------------------------------------------------------------------------------------
+
+		monitor_conditions I_UnitEnemyUnitInRadius Indian_Porus_son 80
+		and I_UnitDistanceFromPosition  Indian_Porus_son 553, 8 < 100
+			unit_order_attack_closest_unit Indian_Porus_son 180 run
+;			battle_wait 2
+;			release_unit Indian_Porus_son
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitEnemyUnitInRadius Indian_son_med_cav_1 80
+		and I_UnitDistanceFromPosition  Indian_son_med_cav_1 553, 8 < 100
+			unit_order_attack_closest_unit Indian_son_med_cav_1 180 run
+;			battle_wait 2
+;			release_unit Indian_son_med_cav_1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitEnemyUnitInRadius Indian_son_med_cav_2 80
+		and I_UnitDistanceFromPosition  Indian_son_med_cav_2 553, 8 < 100
+			unit_order_attack_closest_unit Indian_son_med_cav_2 180 run
+;			battle_wait 2
+;			release_unit Indian_son_med_cav_2
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitEnemyUnitInRadius Indian_son_chariots_1 80
+		and I_UnitDistanceFromPosition  Indian_son_chariots_1 553, 8 < 100
+			unit_order_attack_closest_unit Indian_son_chariots_1 180 run
+;			battle_wait 2
+;			release_unit Indian_son_chariots_1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitEnemyUnitInRadius Indian_son_chariots_2 80
+		and I_UnitDistanceFromPosition  Indian_son_chariots_2 553, 8 < 100
+			unit_order_attack_closest_unit Indian_son_chariots_2 180 run
+;			battle_wait 2
+;			release_unit Indian_son_chariots_2
+		terminate_monitor
+		end_monitor
+
+
+
+
+;------ ONCE PORUS' SONS' UNITS ARE IN MELEE, RELEASE TO AI ------------------------
+
+
+		monitor_conditions I_IsUnitEngaged Indian_Porus_son
+			release_unit Indian_Porus_son
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_IsUnitEngaged Indian_son_med_cav_1
+			release_unit Indian_son_med_cav_1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_IsUnitEngaged Indian_son_med_cav_2
+			release_unit Indian_son_med_cav_2
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_IsUnitEngaged Indian_son_chariots_1
+			release_unit Indian_son_chariots_1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_IsUnitEngaged Indian_son_chariots_2
+			release_unit Indian_son_chariots_2
+		terminate_monitor
+		end_monitor
+
+
+
+;------ WHEN ROUTING KEEP ROUTING --------------------------------------------------
+
+		monitor_conditions I_IsUnitRouting Indian_Porus_son
+			unit_set_morale Indian_Porus_son routing
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_IsUnitRouting Indian_son_med_cav_1
+			unit_set_morale Indian_son_med_cav_1 routing
+		terminate_monitor
+		end_monitor
+
+
+		monitor_conditions I_IsUnitRouting Indian_son_med_cav_2
+			unit_set_morale Indian_son_med_cav_2 routing
+		terminate_monitor
+		end_monitor
+
+
+		monitor_conditions I_IsUnitRouting Indian_son_chariots_1
+			unit_set_morale Indian_son_chariots_1 routing
+		terminate_monitor
+		end_monitor
+
+
+		monitor_conditions I_IsUnitRouting Indian_son_chariots_2
+			unit_set_morale Indian_son_chariots_2 routing
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_IsUnitRouting Indian_Lt_Cav_2
+			unit_set_morale Indian_Lt_Cav_2 routing
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_IsUnitRouting Indian_Javelin_Men
+			unit_set_morale Indian_Javelin_Men routing
+		terminate_monitor
+		end_monitor
+
+
+;------ IGNORE HORSE ARCHERS UNLESS --------------------------------------------------
+;		monitor_conditions I_IsUnitEngaged scyth_mount_archers
+;			release_unit Indian_Porus_son
+;			release_unit Indian_son_med_cav_1
+;			release_unit Indian_son_med_cav_2
+;			release_unit Indian_son_chariots_1
+;			release_unit Indian_son_chariots_2
+;		terminate_monitor
+;		end_monitor
+
+
+
+;------ RELEASE PORUS SCOUTS WHEN ENEMY NEAR --------------------------------------------------
+		monitor_conditions I_UnitEnemyUnitInRadius Indian_Lt_Cav_2 120
+			unit_order_attack_closest_unit Indian_Lt_Cav_2 180 run
+;			battle_wait 2
+;			release_unit Indian_Lt_Cav_2
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitEnemyUnitInRadius Indian_Javelin_Men 120
+			unit_order_attack_closest_unit Indian_Javelin_Men 180 run
+;			battle_wait 2
+;			release_unit Indian_Javelin_Men
+		terminate_monitor
+		end_monitor
+
+
+
+
+
+
+
+
+;-------------------------------------------------------------------------------------------------
+;-------------------------------------------------------------------------------------------------
+;-------------------------------------------------------------------------------------------------
+;-------------------------------------------------------------------------------------------------
+;-------------------------------------------------------------------------------------------------
+;------ FORM INDIAN ARMY AS NUMBER OF MACEDONIANS CROSS FORD -------------------------------------
+;-------------------------------------------------------------------------------------------------
+;-------------------------------------------------------------------------------------------------
+;-------------------------------------------------------------------------------------------------
+;-------------------------------------------------------------------------------------------------
+;-------------------------------------------------------------------------------------------------
+
+
+		monitor_conditions I_CompareCounter num_mac_crossed_ford = 1;
+			unit_order_move Indian_Lt_Cav_2 511.175, -17.99 run
+			unit_order_move_to_orientation Indian_Elephants_2 195.259792, 215.561584, 10, 120.899048 run
+
+			unit_order_move Indian_Javelin_Men 503.226, 21.82 run
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_CompareCounter num_mac_crossed_ford = 2
+			unit_order_move_to_orientation Indian_Elephants_1 159.687616, 155.945744, 10, 120.899048 run
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_CompareCounter num_mac_crossed_ford = 3
+			unit_order_move_to_orientation Indian_Chariots_1 220.823088, 270.884032, 7, 121.04736 run
+
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_CompareCounter num_mac_crossed_ford = 4
+			unit_order_move_to_orientation Indian_Chariots_2 122.18792, 87.26968, 7, 121.261592 run
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_CompareCounter num_mac_crossed_ford = 5
+			unit_order_move_to_orientation Porus 129.504792, 206.222544, 7, 119.992672
+		;camera_position_at_bookmark 6; show ford
+		
+			unit_order_move_to_orientation Indian_Lt_Cav_1 188.18904, 287.11616, 25, 121.591176 run
+	;	set_counter main_army_is_forming 1
+		set_counter Porus_son_attack 1
+		set_counter Macedons_crossed_ford_tag 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_CompareCounter num_mac_crossed_ford = 6
+			unit_order_move_to_orientation Indian_Med_Cavalry 86.39468, 106.405976, 25, 120.899048 run
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_CompareCounter num_mac_crossed_ford = 7
+			unit_order_move_to_orientation Indian_Spearmen_6 145.020016, 190.140784, 43, 121.591176 run
+			unit_order_move_to_orientation Indian_Spearmen_7 172.453488, 233.687232, 47, 121.777952 run
+			unit_order_move_to_orientation Indian_Spearmen_3 121.217112, 151.884592, 43.8, 121.591176 run
+
+		terminate_monitor
+		end_monitor
+
+
+		monitor_conditions I_CompareCounter num_mac_crossed_ford = 10
+			release_unit Indian_Med_Cavalry
+			release_unit Indian_Fem_Arch_1
+		terminate_monitor
+		end_monitor
+
+
+
+
+		monitor_conditions I_CompareCounter num_mac_crossed_ford = 11
+			release_unit Indian_Spearmen_7
+			release_unit Indian_Slingers
+		terminate_monitor
+		end_monitor
+
+
+		monitor_conditions I_CompareCounter num_mac_crossed_ford = 12
+			release_unit Indian_Spearmen_1
+			release_unit Indian_Spearmen_4
+		terminate_monitor
+		end_monitor
+
+
+
+		monitor_conditions I_CompareCounter num_mac_crossed_ford = 13
+			release_unit Indian_Spearmen_2
+			release_unit Indian_Spearmen_3
+		terminate_monitor
+		end_monitor
+
+
+
+
+
+
+
+
+
+
+
+
+;----------------------------------------------------------------------------------------------------------------
+;------------ ONCE 8 MACEDONS HAVE CROSSED THE FORD, THE MAIN ARMY GROUP IS FORMED ---------
+;-------------------------------------------------------------------------------------------------
+
+;-------- FORM GROUP WHEN PORUS REACHES NEW START POSITION ------------------------------
+
+		monitor_conditions I_UnitDistanceFromPosition Porus 117 237 < 30
+		and I_CompareCounter main_army_is_forming = 1
+
+			;camera_zoom_to_unit Porus
+			;pause_battle
+			define_unit_group indian_main_army Porus Indian_Elephants_1 Indian_Elephants_2 Indian_Chariots_1 Indian_Chariots_2 Indian_Lt_Cav_1 Indian_Lt_Cav_2 Indian_Med_Cavalry Indian_Spearmen_3 Indian_Spearmen_6 Indian_Spearmen_7 
+			unit_group_order_relative_move_formed indian_main_army 0 500
+				;unit_group_set_guard_mode indian_main_army off
+			set_counter main_army_is_formed 1
+			set_counter main_army_is_forming 0
+			terminate_monitor
+			end_monitor
+
+;-------------------------------------------------------------------------------------------------
+;------ COUNT NUMBER OF MACEDONIANS RETREATING BACK ACROSS THE FORD ------------------------------
+;-------------------------------------------------------------------------------------------------
+
+;		monitor_conditions I_CompareCounter Macedons_crossed_ford = 1
+;			pause_battle
+;				label_location	624.532 348.912	Back_behind_ford_end
+;				label_location	562.176 225.788 Back_behind_ford_start
+;			set_counter enable_autom_indian_army 1
+;		terminate_monitor
+;		end_monitor
+;
+;
+;		monitor_conditions I_CompareCounter enable_autom_indian_army = 1
+;		and I_CompareCounter num_back_over_ford = 3
+;		undefine_unit_group indian_main_army
+;		define_unit_group indian_main_army Porus Indian_Elephants_1 Indian_Elephants_2 Indian_Chariots_1 Indian_Chariots_2 Indian_Lt_Cav_1 Indian_Lt_Cav_2 Indian_Med_Cavalry Indian_Spearmen_3 Indian_Spearmen_6 Indian_Spearmen_7 
+;		unit_group_enable_automation indian_main_army true
+;		terminate_monitor
+;		end_monitor
+
+;---------------------------------------------------------------
+
+		monitor_conditions I_CompareCounter Macedons_crossed_ford_tag = 1
+;			pause_battle
+	;			label_location	524.753 258.11 Back_behind_ford_start
+	;			label_location	592.756 348.152 Back_behind_ford_end
+			set_counter num_back_over_ford 0
+			set_counter Macedons_crossed_ford 1
+;			set_counter enable_autom_indian_army 1
+		terminate_monitor
+		end_monitor
+
+
+;---------------------------------------------------------------
+		monitor_conditions I_CompareCounter Macedons_crossed_ford = 1
+;		and I_UnitDistanceFromLine Alexander Back_behind_ford_start Back_behind_ford_end < 3
+		and I_UnitDistanceFromPosition Alexander 550 312 < 30
+			inc_counter num_back_over_ford 1
+;camera_zoom_to_unit Alexander
+;camera_position_at_bookmark 5
+;pause_battle
+		;	inc_counter num_back_over_ford 1
+		terminate_monitor
+		end_monitor
+
+	;	monitor_conditions I_UnitDistanceFromLine companion_cavalry_1 Back_behind_ford_start Back_behind_ford_end < 3
+		monitor_conditions I_CompareCounter Macedons_crossed_ford = 1
+		and I_UnitDistanceFromPosition companion_cavalry_1 550 312 < 30
+			;pause_battle
+			set_counter num_back_over_ford 1
+;camera_zoom_to_unit companion_cavalry_1
+;camera_position_at_bookmark 5
+;pause_battle
+		terminate_monitor
+		end_monitor
+
+;		monitor_conditions I_UnitDistanceFromLine scyth_mount_archers Back_behind_ford_start Back_behind_ford_end < 3
+		monitor_conditions I_CompareCounter Macedons_crossed_ford = 1
+		and I_UnitDistanceFromPosition scyth_mount_archers 550 312 < 30
+			;pause_battle
+			set_counter num_back_over_ford 1
+;camera_zoom_to_unit scyth_mount_archers
+;camera_position_at_bookmark 5
+;pause_battle
+		terminate_monitor
+		end_monitor
+
+;		monitor_conditions I_UnitDistanceFromLine javelin_skirmishers Back_behind_ford_start Back_behind_ford_end < 3
+		monitor_conditions I_CompareCounter Macedons_crossed_ford = 1
+		and I_UnitDistanceFromPosition javelin_skirmishers 550 312 < 30
+
+			;pause_battle
+			set_counter num_back_over_ford 1
+;camera_zoom_to_unit javelin_skirmishers
+;camera_position_at_bookmark 5
+;pause_battle
+		terminate_monitor
+		end_monitor
+
+;		monitor_conditions I_UnitDistanceFromLine hypaspists_1 Back_behind_ford_start Back_behind_ford_end < 3
+		monitor_conditions I_CompareCounter Macedons_crossed_ford = 1
+		and I_UnitDistanceFromPosition hypaspists_1 550 312 < 30
+
+			;pause_battle
+			inc_counter num_back_over_ford 1
+;camera_zoom_to_unit hypaspists_1
+;camera_position_at_bookmark 5
+;pause_battle
+		terminate_monitor
+		end_monitor
+
+;		monitor_conditions I_UnitDistanceFromLine hypaspists_2 Back_behind_ford_start Back_behind_ford_end < 3
+		monitor_conditions I_CompareCounter Macedons_crossed_ford = 1
+		and I_UnitDistanceFromPosition hypaspists_2 550 312 < 30
+
+			;pause_battle
+			inc_counter num_back_over_ford 1
+;camera_zoom_to_unit hypaspists_2
+;pause_battle
+		terminate_monitor
+		end_monitor
+
+;		monitor_conditions I_UnitDistanceFromLine phalangists_1	Back_behind_ford_start Back_behind_ford_end < 3
+		monitor_conditions I_CompareCounter Macedons_crossed_ford = 1
+		and I_UnitDistanceFromPosition phalangists_1 550 312 < 30
+
+			;pause_battle
+			inc_counter num_back_over_ford 1
+;camera_zoom_to_unit phalangists_1
+camera_position_at_bookmark 5
+;pause_battle
+		terminate_monitor
+		end_monitor
+
+;		monitor_conditions I_UnitDistanceFromLine phalangists_2 Back_behind_ford_start Back_behind_ford_end < 3
+		monitor_conditions I_CompareCounter Macedons_crossed_ford = 1
+		and I_UnitDistanceFromPosition phalangists_2 550 312 < 30
+
+			inc_counter num_back_over_ford 1
+camera_zoom_to_unit phalangists_2
+;camera_position_at_bookmark 5
+;pause_battle
+		terminate_monitor
+		end_monitor
+
+;		monitor_conditions I_UnitDistanceFromLine mardian_archers Back_behind_ford_start Back_behind_ford_end < 3
+		monitor_conditions I_CompareCounter Macedons_crossed_ford = 1
+		and I_UnitDistanceFromPosition mardian_archers 550 312 < 30
+camera_zoom_to_unit mardian_archers
+;camera_position_at_bookmark 5
+;pause_battle
+			inc_counter num_back_over_ford 1
+		terminate_monitor
+		end_monitor
+
+;		monitor_conditions I_UnitDistanceFromLine companion_cavalry_2 Back_behind_ford_start Back_behind_ford_end < 3
+		monitor_conditions I_CompareCounter Macedons_crossed_ford = 1
+		and I_UnitDistanceFromPosition companion_cavalry_2 550 312 < 30
+;camera_zoom_to_unit companion_cavalry_2
+;camera_position_at_bookmark 5
+;pause_battle
+			inc_counter num_back_over_ford 1
+		terminate_monitor
+		end_monitor
+
+;		monitor_conditions I_UnitDistanceFromLine phalangists_3 Back_behind_ford_start Back_behind_ford_end < 3
+		monitor_conditions I_CompareCounter Macedons_crossed_ford = 1
+		and I_UnitDistanceFromPosition phalangists_3 550 312 < 30
+			;pause_battle
+			inc_counter num_back_over_ford 1
+;camera_zoom_to_unit phalangists_3
+;camera_position_at_bookmark 5
+;pause_battle
+		terminate_monitor
+		end_monitor
+
+;	monitor_conditions I_UnitDistanceFromLine phalangists_4	Back_behind_ford_start Back_behind_ford_end < 3
+		monitor_conditions I_CompareCounter Macedons_crossed_ford = 1
+		and I_UnitDistanceFromPosition phalangists_4 550 312 < 30
+
+			;pause_battle
+			inc_counter num_back_over_ford 1
+camera_zoom_to_unit phalangists_4
+;camera_position_at_bookmark 5
+;pause_battle
+		terminate_monitor
+		end_monitor
+
+;		monitor_conditions I_UnitDistanceFromLine allied_cavalry Back_behind_ford_start Back_behind_ford_end < 3
+		monitor_conditions I_CompareCounter Macedons_crossed_ford = 1
+		and I_UnitDistanceFromPosition allied_cavalry 550 312 < 30
+
+			inc_counter num_back_over_ford 1
+camera_zoom_to_unit allied_cavalry
+;camera_position_at_bookmark 5
+;pause_battle
+		terminate_monitor
+		end_monitor
+
+;		monitor_conditions I_UnitDistanceFromLine phalangists_5 Back_behind_ford_start Back_behind_ford_end < 3
+		monitor_conditions I_CompareCounter Macedons_crossed_ford = 1
+		and I_UnitDistanceFromPosition phalangists_5 550 312 < 30
+
+			inc_counter num_back_over_ford 1
+camera_zoom_to_unit phalangists_5
+;camera_position_at_bookmark 5
+;pause_battle
+		terminate_monitor
+		end_monitor
+
+;		monitor_conditions I_UnitDistanceFromLine phalangists_6 Back_behind_ford_start Back_behind_ford_end < 3
+		monitor_conditions I_CompareCounter Macedons_crossed_ford = 1
+		and I_UnitDistanceFromPosition phalangists_6 550 312 < 30
+
+			inc_counter num_back_over_ford 1
+camera_zoom_to_unit phalangists_6
+;camera_position_at_bookmark 5
+;pause_battle
+
+		terminate_monitor
+		end_monitor
+
+;		monitor_conditions I_UnitDistanceFromLine hypaspists_3 Back_behind_ford_start Back_behind_ford_end < 3
+		monitor_conditions I_CompareCounter Macedons_crossed_ford = 1
+		and I_UnitDistanceFromPosition hypaspists_3 550 312 < 30
+
+			inc_counter num_back_over_ford 1
+;camera_zoom_to_unit hypaspists_3
+camera_position_at_bookmark 5
+;pause_battle
+		terminate_monitor
+		end_monitor
+
+
+;-------------------------------------------------------------------------------------------------
+;----- IF 3 MACEDONS RETREAT BACK ACROSS FORD THEN RELEASE INDIAN MAIN ARMY GROUP TO AI ----------
+;-------------------------------------------------------------------------------------------------
+;		monitor_conditions I_CompareCounter num_back_over_ford = 1
+;		and I_CompareCounter main_army_is_formed = 1
+;					;release_unit Porus
+;					;release_unit Indian_Elephants_1
+;					;release_unit Indian_Elephants_2
+;					;release_unit Indian_Chariots_1 
+;					;release_unit Indian_Chariots_2 
+;					;release_unit Indian_Lt_Cav_1 
+;					;release_unit Indian_Med_Cavalry 
+;					;release_unit Indian_Spearmen_3 
+;					;release_unit Indian_Spearmen_6
+;					;release_unit Indian_Spearmen_7
+;			camera_zoom_to_unit Indian_Elephants_2
+;					;set_counter already_grouped 1
+;			set_counter main_army_is_forming 0
+;			undefine_unit_group indian_main_army
+;			define_unit_group indian_main_army Porus Indian_Elephants_1 Indian_Elephants_2 Indian_Chariots_1 Indian_Chariots_2 Indian_Lt_Cav_1 Indian_Lt_Cav_2 Indian_Med_Cavalry Indian_Spearmen_3 Indian_Spearmen_6 Indian_Spearmen_7 
+;			unit_group_enable_automation indian_main_army true
+;		terminate_monitor
+;		end_monitor
+;
+;
+;----------------------------------------------------------------------
+;		monitor_conditions I_CompareCounter num_back_over_ford = 1
+;		and I_CompareCounter main_army_is_formed = 0
+;			define_unit_group indian_main_army Porus Indian_Elephants_1 Indian_Elephants_2 Indian_Chariots_1 Indian_Chariots_2 Indian_Lt_Cav_1 Indian_Lt_Cav_2 Indian_Med_Cavalry Indian_Spearmen_3 Indian_Spearmen_6 Indian_Spearmen_7 
+;			unit_group_enable_automation indian_main_army true
+;		terminate_monitor
+;		end_monitor
+
+
+;-------------------------------------------------------------------------------------------------
+;----- IF 4 MACEDONS RETREAT BACK ACROSS FORD THEN FORM UP IN ORIGINAL POSITIONS -----------------
+;-------------------------------------------------------------------------------------------------
+		monitor_conditions I_CompareCounter num_back_over_ford = 10
+		and I_CompareCounter main_army_is_formed = 1
+					;release_unit Porus
+					;release_unit Indian_Elephants_1
+					;release_unit Indian_Elephants_2
+					;release_unit Indian_Chariots_1 
+					;release_unit Indian_Chariots_2 
+					;release_unit Indian_Lt_Cav_1 
+					;release_unit Indian_Med_Cavalry 
+					;release_unit Indian_Spearmen_3 
+					;release_unit Indian_Spearmen_6
+					;release_unit Indian_Spearmen_7
+			camera_zoom_to_unit Indian_Elephants_2
+					;set_counter already_grouped 1
+			set_counter main_army_is_forming 0
+			undefine_unit_group indian_main_army
+			define_unit_group indian_main_army Porus Indian_Elephants_1 Indian_Elephants_2 Indian_Chariots_1 Indian_Chariots_2 Indian_Lt_Cav_1 Indian_Lt_Cav_2 Indian_Med_Cavalry Indian_Spearmen_3 Indian_Spearmen_6 Indian_Spearmen_7 
+	;camera_position_at_bookmark 6; show ford
+	;pause_battle
+			unit_group_enable_automation indian_main_army true
+		terminate_monitor
+		end_monitor
+
+
+;----------------------------------------------------------------------
+		monitor_conditions I_CompareCounter num_back_over_ford = 10
+		and I_CompareCounter main_army_is_formed = 0
+			define_unit_group indian_main_army Porus Indian_Elephants_1 Indian_Elephants_2 Indian_Chariots_1 Indian_Chariots_2 Indian_Lt_Cav_1 Indian_Lt_Cav_2 Indian_Med_Cavalry Indian_Spearmen_3 Indian_Spearmen_6 Indian_Spearmen_7 
+	;camera_position_at_bookmark 6; show ford
+	;pause_battle
+			unit_group_enable_automation indian_main_army true
+		terminate_monitor
+		end_monitor
+
+
+
+
+;-------------------------------------------------------------------------------------------------
+;------ BIG HILL TRIGGER (defending rear of ford points from flanking) -------------------------------------------------------
+;-------------------------------------------------------------------------------------------------
+;		monitor_conditions I_UnitDistanceFromLine Alexander BigHillTrigger_start BigHillTrigger_end < 3
+;	;		pause_battle
+;			set_counter defend_rear_of_ford_points 1
+;		terminate_monitor
+;		end_monitor
+;
+;
+;		monitor_conditions I_CompareCounter defend_rear_of_ford_points = 1
+;		and I_CompareCounter rear_guard_used = 0
+;	;		pause_battle
+;			battle_wait 1
+;	;		pause_battle
+;			unit_order_move Indian_Spearmen_1 -288.536 391.17 run
+;			unit_order_move Indian_Spearmen_5 -32.93 128.128 run
+;		;	battle_wait 100
+;		;	release_unit Indian_Spearmen_1
+;		;	release_unit Indian_Spearmen_5
+;		terminate_monitor
+;		end_monitor
+;
+
+;-------------------------------------------------------------------------------------------------
+;------ COUNT NUMBER OF MACEDONIANS THAT HAVE CROSSED THE OUTFLANK LINE --------------------------
+;-------------------------------------------------------------------------------------------------
+
+
+		monitor_conditions I_UnitDistanceFromLine Alexander outflank_start outflank_end < 3
+	;		pause_battle
+			inc_counter mac_outflank 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine companion_cavalry_1 outflank_start outflank_end < 3
+	;		pause_battle
+			inc_counter mac_outflank 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine scyth_mount_archers outflank_start outflank_end < 3
+	;		pause_battle
+			inc_counter mac_outflank 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine javelin_skirmishers outflank_start outflank_end < 3
+	;		pause_battle
+			inc_counter mac_outflank 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine hypaspists_1 outflank_start outflank_end < 3
+	;		pause_battle
+			inc_counter mac_outflank 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine hypaspists_2 outflank_start outflank_end < 3
+	;		pause_battle
+			inc_counter mac_outflank 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine phalangists_1	outflank_start outflank_end < 3
+	;		pause_battle
+			inc_counter mac_outflank 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine phalangists_2 outflank_start outflank_end < 3
+	;		pause_battle
+			inc_counter mac_outflank 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine mardian_archers outflank_start outflank_end < 3
+	;		pause_battle
+			inc_counter mac_outflank 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine companion_cavalry_2 outflank_start outflank_end < 3
+	;		pause_battle
+			inc_counter mac_outflank 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine phalangists_3 outflank_start outflank_end < 3
+	;		pause_battle
+			inc_counter mac_outflank 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine phalangists_4	outflank_start outflank_end < 3
+	;		pause_battle
+			inc_counter mac_outflank 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine allied_cavalry outflank_start outflank_end < 3
+	;		pause_battle
+			inc_counter mac_outflank 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine phalangists_5 outflank_start outflank_end < 3
+	;		pause_battle
+			inc_counter mac_outflank 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine phalangists_6 outflank_start outflank_end < 3
+	;		pause_battle
+			inc_counter mac_outflank 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine hypaspists_3 outflank_start outflank_end < 3
+	;		pause_battle
+			inc_counter mac_outflank 1
+		terminate_monitor
+		end_monitor
+
+
+;-------------------------------------------------------------------------------------------------
+;------ PREVENT MAIN ARMY FROM BEING OUTFLANKED --------------------------------------------------
+;-------------------------------------------------------------------------------------------------
+
+		monitor_conditions I_CompareCounter mac_outflank = 5
+			undefine_unit_group indian_main_army
+			define_unit_group indian_main_army Porus Indian_Elephants_1 Indian_Elephants_2 Indian_Chariots_1 Indian_Chariots_2 Indian_Lt_Cav_1 Indian_Lt_Cav_2 Indian_Med_Cavalry Indian_Spearmen_3 Indian_Spearmen_6 Indian_Spearmen_7 
+
+;pause_battle
+;pause_battle
+;pause_battle
+;pause_battle
+;pause_battle
+;pause_battle
+;pause_battle
+;pause_battle
+;pause_battle
+
+release_unit Indian_Spearmen_1
+release_unit Indian_Spearmen_2
+release_unit Indian_Fem_Arch_1
+release_unit Indian_Med_Cavalry
+release_unit Indian_Longbowmen
+release_unit Indian_Spearmen_4
+release_unit Indian_Spearmen_5
+release_unit Indian_Slingers
+release_unit Indian_Fem_Arch_2
+
+
+;			label_unit 1 0 3	Indian_Spearmen_1
+;			label_unit 1 0 4        Indian_Spearmen_2
+;			label_unit 1 0 9        Indian_Fem_Arch_1
+;			label_unit 1 0 11       Indian_Med_Cavalry
+;			label_unit 1 0 12       Indian_Longbowmen
+;			label_unit 1 0 14       Indian_Spearmen_4
+;			label_unit 1 0 15       Indian_Spearmen_5
+;			label_unit 1 0 18       Indian_Slingers
+;			label_unit 1 0 19       Indian_Fem_Arch_2
+
+
+			unit_group_enable_automation indian_main_army true
+		terminate_monitor
+		end_monitor
+
+;-------------------------------------------------------------------------------------------------
+;------ ALL INDIAN UNITS IN MAIN ARMY RELEASE TO AI WHEN MACEDONIAN UNIT IS NEAR -------------------------------------------------------
+;-------------------------------------------------------------------------------------------------
+
+		monitor_conditions I_UnitEnemyUnitInRadius Porus 100
+		and I_CompareCounter main_army_is_formed = 1
+			release_unit Porus
+		inc_counter release_unit_count 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitEnemyUnitInRadius Indian_Elephants_2 80
+		and I_CompareCounter main_army_is_formed = 1
+
+			release_unit Indian_Elephants_2
+		inc_counter release_unit_count 1
+;unit_set_fire_at_will_mode Indian_Elephants_2 off
+unit_order_attack_closest_unit Indian_Elephants_2 180 run
+			battle_wait 8
+			release_unit Indian_Elephants_2
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitEnemyUnitInRadius Indian_Elephants_1 80
+		and I_CompareCounter main_army_is_formed = 1
+			release_unit Indian_Elephants_1
+		inc_counter release_unit_count 1
+;unit_set_fire_at_will_mode Indian_Elephants_1 off
+unit_order_attack_closest_unit Indian_Elephants_1 180 run
+			battle_wait 8
+			release_unit Indian_Elephants_1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitEnemyUnitInRadius Indian_Chariots_1 120
+		and I_CompareCounter main_army_is_formed = 1
+		unit_order_attack_closest_unit Indian_Chariots_1 180
+		inc_counter release_unit_count 1
+			battle_wait 8
+			release_unit Indian_Chariots_1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitEnemyUnitInRadius Indian_Chariots_2 120
+		and I_CompareCounter main_army_is_formed = 1
+		unit_order_attack_closest_unit Indian_Chariots_2 180
+		inc_counter release_unit_count 1
+			battle_wait 8
+			release_unit Indian_Chariots_2
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitEnemyUnitInRadius Indian_Lt_Cav_1 60
+		and I_CompareCounter main_army_is_formed = 1
+		unit_order_attack_closest_unit Indian_Lt_Cav_1 180
+		inc_counter release_unit_count 1
+			battle_wait 8
+			release_unit Indian_Lt_Cav_1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitEnemyUnitInRadius Indian_Spearmen_3 100
+		and I_CompareCounter main_army_is_formed = 1
+			release_unit Indian_Spearmen_3 180
+			inc_counter release_unit_count 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitEnemyUnitInRadius Indian_Spearmen_6 100
+		and I_CompareCounter main_army_is_formed = 1
+			release_unit Indian_Spearmen_6 180
+			inc_counter release_unit_count 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitEnemyUnitInRadius Indian_Spearmen_7 100
+		and I_CompareCounter main_army_is_formed = 1
+			release_unit Indian_Spearmen_7 180
+			inc_counter release_unit_count 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitEnemyUnitInRadius Indian_Med_Cavalry 80
+		and I_CompareCounter main_army_is_formed = 1
+			release_unit Indian_Med_Cavalry 180
+			inc_counter release_unit_count 1
+		terminate_monitor
+		end_monitor
+
+
+;-------- RELEASE MAIN ARMY UNITS TO AI ONCE IN MELEE ---------------------------------------
+		monitor_conditions I_IsUnitEngaged Porus
+			release_unit Porus
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_IsUnitEngaged Indian_Elephants_1
+			release_unit Indian_Elephants_1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_IsUnitEngaged Indian_Elephants_2
+			release_unit Indian_Elephants_2
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_IsUnitEngaged Indian_Chariots_1
+			release_unit Indian_Chariots_1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_IsUnitEngaged Indian_Chariots_2
+			release_unit Indian_Chariots_2
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_IsUnitEngaged Indian_Lt_Cav_1
+			release_unit Indian_Lt_Cav_1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_IsUnitEngaged Indian_Med_Cavalry
+			release_unit Indian_Med_Cavalry
+		terminate_monitor
+		end_monitor
+
+
+		monitor_conditions I_IsUnitEngaged Indian_Spearmen_3
+			release_unit Indian_Spearmen_3
+		terminate_monitor
+		end_monitor
+
+
+		monitor_conditions I_IsUnitEngaged  Indian_Spearmen_6
+			release_unit  Indian_Spearmen_6
+		terminate_monitor
+		end_monitor
+
+
+		monitor_conditions I_IsUnitEngaged Indian_Spearmen_7
+			release_unit Indian_Spearmen_7
+		terminate_monitor
+		end_monitor
+
+
+;-------STALLING FORCE ---------------------------------------------------------------------------------------
+		monitor_conditions I_UnitEnemyUnitInRadius Indian_Lt_Cav_2 120
+		and I_CompareCounter main_army_is_formed = 1
+	;		pause_battle
+		unit_order_attack_closest_unit Indian_Lt_Cav_2 179 run
+			battle_wait 8
+			release_unit Indian_Lt_Cav_2
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitEnemyUnitInRadius Indian_Javelin_Men 100
+		and I_CompareCounter main_army_is_formed = 1
+	;		pause_battle
+		unit_order_attack_closest_unit Indian_Javelin_Men 179 run
+		battle_wait 8
+			release_unit Indian_Javelin_Men
+		terminate_monitor
+		end_monitor
+
+
+;--------------------------------------------------------------------------------------------------------------
+;--IF MORE THAN 5 UNITS IN THE MAIN ARMY HAVE BEEN RELEASED IN BATTLE THEN ENABLE AUTOMATION ON WHOLE GROUP ---
+;  AND RELEASE REMAINING UNITS TO AI
+;--------------------------------------------------------------------------------------------------------------
+		monitor_conditions I_CompareCounter release_unit_count = 8
+	undefine_unit_group indian_main_army
+	define_unit_group indian_main_army Porus Indian_Elephants_1 Indian_Elephants_2 Indian_Chariots_1 Indian_Chariots_2 Indian_Lt_Cav_1 Indian_Lt_Cav_2 Indian_Med_Cavalry Indian_Spearmen_3 Indian_Spearmen_6 Indian_Spearmen_7 
+;pause_battle
+		unit_group_enable_automation indian_main_army true
+
+release_unit Indian_Javelin_Men
+release_unit Indian_Spearmen_1
+release_unit Indian_Spearmen_2
+release_unit Indian_Fem_Arch_1
+release_unit Indian_Fem_Arch_2
+release_unit Indian_Longbowmen
+release_unit Indian_Spearmen_4
+release_unit Indian_Spearmen_5
+release_unit Indian_Slingers
+
+		terminate_monitor
+		end_monitor
+
+
+
+
+
+
+
+
+
+
+;-----------------------------------------------------------------------------------------------------
+;---- COUNT NUMBER OF INDIAN UNITS IN MAIN ARMY THAT ARE ROUTING -------------------------------------
+;-----------------------------------------------------------------------------------------------------
+
+
+		monitor_conditions I_IsUnitRouting Porus
+	;	pause_battle
+		inc_counter no_of_main_army_units_routing 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_IsUnitRouting Indian_Elephants_1
+	;	pause_battle
+		inc_counter no_of_main_army_units_routing 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_IsUnitRouting Indian_Elephants_2
+	;	pause_battle
+		inc_counter no_of_main_army_units_routing 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_IsUnitRouting Indian_Chariots_1
+	;	pause_battle
+		inc_counter no_of_main_army_units_routing 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_IsUnitRouting Indian_Chariots_2
+	;	pause_battle
+		inc_counter no_of_main_army_units_routing 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_IsUnitRouting Indian_Lt_Cav_1
+	;	pause_battle
+		inc_counter no_of_main_army_units_routing 1
+		terminate_monitor
+		end_monitor
+
+	;	monitor_conditions I_IsUnitRouting Indian_Lt_Cav_2
+	;	pause_battle
+	;	inc_counter no_of_main_army_units_routing 1
+	;	terminate_monitor
+	;	end_monitor
+
+		monitor_conditions I_IsUnitRouting Indian_Med_Cavalry
+	;	pause_battle
+		inc_counter no_of_main_army_units_routing 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_IsUnitRouting Indian_Spearmen_3
+	;	pause_battle
+		inc_counter no_of_main_army_units_routing 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_IsUnitRouting Indian_Spearmen_6
+	;	pause_battle
+		inc_counter no_of_main_army_units_routing 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_IsUnitRouting Indian_Spearmen_7
+	;	pause_battle
+		inc_counter no_of_main_army_units_routing 1
+		terminate_monitor
+		end_monitor
+
+
+;-----------------------------------------------------------------------------------------------------
+;---- RELEASE UNUSED RE-INFORCEMENTS FROM FORDS TO BOLSTER MAIN ARMY AS INDIAN UNITS ROUT ------------
+;-----------------------------------------------------------------------------------------------------
+	;	monitor_conditions I_CompareCounter no_of_main_army_units_routing = 2
+	;	and I_CompareCounter main_army_is_formed = 1
+	;	set_counter rear_guard_used 1
+	;	unit_order_move Indian_Spearmen_1 96.014, 188.499 run
+	;	unit_order_move Indian_Spearmen_5 134.664, 244.032 run
+	;	battle_wait 50
+	;	release_unit Indian_Spearmen_1
+	;	release_unit Indian_Spearmen_5
+	;	terminate_monitor
+	;	end_monitor
+
+
+;-----------------------------------------------------------------------------------------------------
+;------- NORTH FORD GUARD ----------------------------------------------------------------------------
+;-----------------------------------------------------------------------------------------------------
+		monitor_conditions I_UnitEnemyUnitInRadius Indian_Fem_Arch_1 10
+			release_unit Indian_Fem_Arch_1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitEnemyUnitInRadius Indian_Longbowmen 10
+			release_unit Indian_Longbowmen
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitEnemyUnitInRadius Indian_Spearmen_1 30
+			unit_taunt Indian_Spearmen_1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitEnemyUnitInRadius Indian_Spearmen_2 50
+			unit_taunt Indian_Spearmen_2
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_IsUnitEngaged Indian_Spearmen_1
+			release_unit Indian_Spearmen_1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_IsUnitEngaged Indian_Spearmen_2
+			release_unit Indian_Spearmen_2
+		terminate_monitor
+		end_monitor
+
+
+
+
+
+
+;------------------------------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------------------------------
+;-------- IF PLAYER CHARGES MIDDLE FORD EN MASSE ------------------------------------------------------------
+;------------------------------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------------------------------
+
+
+;------ COUNT PLAYER UNITS THAT HAVE CROSSED THE MIDDLE FORD ------------------------------------------------
+
+		monitor_conditions I_UnitDistanceFromLine Alexander middle_ford_start middle_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_middle_ford 1
+		terminate_monitor
+		end_monitor
+
+	monitor_conditions I_UnitDistanceFromLine companion_cavalry_1 middle_ford_start middle_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_middle_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine scyth_mount_archers middle_ford_start middle_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_middle_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine javelin_skirmishers middle_ford_start middle_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_middle_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine hypaspists_1 middle_ford_start middle_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_middle_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine hypaspists_2 middle_ford_start middle_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_middle_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine phalangists_1 middle_ford_start middle_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_middle_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine phalangists_2 middle_ford_start middle_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_middle_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine mardian_archers middle_ford_start middle_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_middle_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine companion_cavalry_2 middle_ford_start middle_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_middle_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine phalangists_3 middle_ford_start middle_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_middle_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine phalangists_4 middle_ford_start middle_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_middle_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine allied_cavalry middle_ford_start middle_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_middle_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine phalangists_5 middle_ford_start middle_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_middle_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine phalangists_6 middle_ford_start middle_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_middle_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine hypaspists_3 middle_ford_start middle_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_middle_ford 1
+		terminate_monitor
+		end_monitor
+
+
+;------ IF MORE THAN 7 PLAYER UNITS HAVE CROSSED THE MIDDLE FORD THEN RELEASE ALL UNITS TO AI --------------
+
+		monitor_conditions I_CompareCounter macedon_cross_middle_ford = 7
+		and I_CompareCounter main_army_is_formed = 0
+
+			set_counter bolster_indian_army 1
+
+			release_unit Porus
+			release_unit Indian_Elephants_1
+			release_unit Indian_Elephants_2
+			release_unit Indian_Spearmen_1
+			release_unit Indian_Spearmen_2
+			release_unit Indian_Chariots_1
+			release_unit Indian_Chariots_2
+			release_unit Indian_Lt_Cav_1
+			release_unit Indian_Lt_Cav_2
+			release_unit Indian_Fem_Arch_1
+			release_unit Indian_Javelin_Men
+			release_unit Indian_Med_Cavalry
+			release_unit Indian_Longbowmen
+			release_unit Indian_Spearmen_3
+			release_unit Indian_Spearmen_4
+			release_unit Indian_Spearmen_5
+			release_unit Indian_Spearmen_6
+			release_unit Indian_Spearmen_7
+			release_unit Indian_Slingers
+			release_unit Indian_Fem_Arch_2
+
+			release_unit Indian_Porus_son
+			release_unit Indian_son_med_cav_1
+			release_unit Indian_son_med_cav_2
+			release_unit Indian_son_chariots_1
+			release_unit Indian_son_chariots_2
+
+		terminate_monitor
+		end_monitor
+
+
+
+
+;------------------------------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------------------------------
+;-------- IF PLAYER CHARGES NORTH FORD EN MASSE ------------------------------------------------------------
+;------------------------------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------------------------------
+
+
+;------ COUNT PLAYER UNITS THAT HAVE CROSSED THE NORTH FORD ------------------------------------------------
+
+		monitor_conditions I_UnitDistanceFromLine Alexander north_ford_start north_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_north_ford 1
+		terminate_monitor
+		end_monitor
+
+	monitor_conditions I_UnitDistanceFromLine companion_cavalry_1 north_ford_start north_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_north_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine scyth_mount_archers north_ford_start north_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_north_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine javelin_skirmishers north_ford_start north_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_north_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine hypaspists_1 north_ford_start north_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_north_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine hypaspists_2 north_ford_start north_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_north_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine phalangists_1 north_ford_start north_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_north_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine phalangists_2 north_ford_start north_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_north_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine mardian_archers north_ford_start north_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_north_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine companion_cavalry_2 north_ford_start north_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_north_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine phalangists_3 north_ford_start north_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_north_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine phalangists_4 north_ford_start north_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_north_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine allied_cavalry north_ford_start north_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_north_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine phalangists_5 north_ford_start north_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_north_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine phalangists_6 north_ford_start north_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_north_ford 1
+		terminate_monitor
+		end_monitor
+
+		monitor_conditions I_UnitDistanceFromLine hypaspists_3 north_ford_start north_ford_end < 20
+	;pause_battle
+		inc_counter macedon_cross_north_ford 1
+		terminate_monitor
+		end_monitor
+
+
+;------ IF MORE THAN 7 PLAYER UNITS HAVE CROSSED THE NORTH FORD THEN RELEASE ALL UNITS TO AI --------------
+
+		monitor_conditions I_CompareCounter macedon_cross_north_ford = 7
+		and I_CompareCounter main_army_is_formed = 0
+
+			set_counter bolster_indian_army 1
+
+			release_unit Porus
+			release_unit Indian_Elephants_1
+			release_unit Indian_Elephants_2
+			release_unit Indian_Spearmen_1
+			release_unit Indian_Spearmen_2
+			release_unit Indian_Chariots_1
+			release_unit Indian_Chariots_2
+			release_unit Indian_Lt_Cav_1
+			release_unit Indian_Lt_Cav_2
+			release_unit Indian_Fem_Arch_1
+			release_unit Indian_Javelin_Men
+			release_unit Indian_Med_Cavalry
+			release_unit Indian_Longbowmen
+			release_unit Indian_Spearmen_3
+			release_unit Indian_Spearmen_4
+			release_unit Indian_Spearmen_5
+			release_unit Indian_Spearmen_6
+			release_unit Indian_Spearmen_7
+			release_unit Indian_Slingers
+			release_unit Indian_Fem_Arch_2
+
+			release_unit Indian_Porus_son
+			release_unit Indian_son_med_cav_1
+			release_unit Indian_son_med_cav_2
+			release_unit Indian_son_chariots_1
+			release_unit Indian_son_chariots_2
+
+		terminate_monitor
+		end_monitor
+
+
+
+
+
+;-------------- BOLSTER INDIAN ARMY -----------------------------------------------------------------------
+
+		monitor_conditions I_CompareCounter bolster_indian_army = 1
+		and I_CompareCounter main_army_is_formed = 0
+
+
+unit_set_morale Porus high
+unit_set_weapon_upgrade Porus 3
+unit_set_armour_upgrade Porus 3
+unit_set_experience Porus 9
+
+unit_set_morale Indian_Elephants_1 high
+unit_set_weapon_upgrade Indian_Elephants_1 3
+unit_set_armour_upgrade Indian_Elephants_1 3
+unit_set_experience Indian_Elephants_1 9
+
+unit_set_morale Indian_Elephants_2 high
+unit_set_weapon_upgrade Indian_Elephants_2 3
+unit_set_armour_upgrade Indian_Elephants_2 3
+unit_set_experience Indian_Elephants_2 9
+
+unit_set_morale Indian_Spearmen_1 high
+unit_set_weapon_upgrade Indian_Spearmen_1 3
+unit_set_armour_upgrade Indian_Spearmen_1 3
+unit_set_experience Indian_Spearmen_1 9
+
+unit_set_morale Indian_Spearmen_2 high
+unit_set_weapon_upgrade Indian_Spearmen_2 3
+unit_set_armour_upgrade Indian_Spearmen_2 3
+unit_set_experience Indian_Spearmen_2 9
+
+unit_set_morale Indian_Chariots_1 high
+unit_set_weapon_upgrade Indian_Chariots_1 3
+unit_set_armour_upgrade Indian_Chariots_1 3
+unit_set_experience Indian_Chariots_1 9
+
+unit_set_morale Indian_Chariots_2 high
+unit_set_weapon_upgrade Indian_Chariots_2 3
+unit_set_armour_upgrade Indian_Chariots_2 3
+unit_set_experience Indian_Chariots_2 9
+
+unit_set_morale  Indian_Lt_Cav_1 high
+unit_set_weapon_upgrade  Indian_Lt_Cav_1 3
+unit_set_armour_upgrade  Indian_Lt_Cav_1 3
+unit_set_experience  Indian_Lt_Cav_1 9
+
+unit_set_morale Indian_Lt_Cav_2 high
+unit_set_weapon_upgrade Indian_Lt_Cav_2 3
+unit_set_armour_upgrade Indian_Lt_Cav_2 3
+unit_set_experience Indian_Lt_Cav_2 9
+
+unit_set_morale Indian_Fem_Arch_1 high
+unit_set_weapon_upgrade Indian_Fem_Arch_1 3
+unit_set_armour_upgrade Indian_Fem_Arch_1 3
+unit_set_experience Indian_Fem_Arch_1 9
+
+unit_set_morale Indian_Javelin_Men high
+unit_set_weapon_upgrade Indian_Javelin_Men 3
+unit_set_armour_upgrade Indian_Javelin_Men 3
+unit_set_experience Indian_Javelin_Men 9
+
+unit_set_morale Indian_Med_Cavalry high
+unit_set_weapon_upgrade Indian_Med_Cavalry 3
+unit_set_armour_upgrade Indian_Med_Cavalry 3
+unit_set_experience Indian_Med_Cavalry 9
+
+unit_set_morale Indian_Longbowmen high
+unit_set_weapon_upgrade Indian_Longbowmen 3
+unit_set_armour_upgrade Indian_Longbowmen 3
+unit_set_experience Indian_Longbowmen 9
+
+unit_set_morale Indian_Spearmen_3 high
+unit_set_weapon_upgrade Indian_Spearmen_3 3
+unit_set_armour_upgrade Indian_Spearmen_3 3
+unit_set_experience Indian_Spearmen_3 9
+
+unit_set_morale Indian_Spearmen_4 high
+unit_set_weapon_upgrade Indian_Spearmen_4 3
+unit_set_armour_upgrade Indian_Spearmen_4 3
+unit_set_experience Indian_Spearmen_4 9
+
+unit_set_morale Indian_Spearmen_5 high
+unit_set_weapon_upgrade Indian_Spearmen_5 3
+unit_set_armour_upgrade Indian_Spearmen_5 3
+unit_set_experience Indian_Spearmen_5 9
+
+unit_set_morale Indian_Spearmen_6 high
+unit_set_weapon_upgrade Indian_Spearmen_6 3
+unit_set_armour_upgrade Indian_Spearmen_6 3
+unit_set_experience Indian_Spearmen_6 9
+
+unit_set_morale Indian_Spearmen_7 high
+unit_set_weapon_upgrade Indian_Spearmen_7 3
+unit_set_armour_upgrade Indian_Spearmen_7 3
+unit_set_experience Indian_Spearmen_7 9
+
+unit_set_morale Indian_Slingers high
+unit_set_weapon_upgrade Indian_Slingers 3
+unit_set_armour_upgrade Indian_Slingers 3
+unit_set_experience Indian_Slingers 9
+
+unit_set_morale Indian_Fem_Arch_2 high
+unit_set_weapon_upgrade Indian_Fem_Arch_2 3
+unit_set_armour_upgrade Indian_Fem_Arch_2 3
+unit_set_experience Indian_Fem_Arch_2 9
+
+unit_set_morale Indian_Porus_son high
+unit_set_weapon_upgrade Indian_Porus_son 3
+unit_set_armour_upgrade Indian_Porus_son 3
+unit_set_experience Indian_Porus_son 9
+
+unit_set_morale Indian_son_med_cav_1 high
+unit_set_weapon_upgrade Indian_son_med_cav_1 3
+unit_set_armour_upgrade Indian_son_med_cav_1 3
+unit_set_experience Indian_son_med_cav_1 9
+
+unit_set_morale Indian_son_med_cav_2 high
+unit_set_weapon_upgrade Indian_son_med_cav_2 3
+unit_set_armour_upgrade Indian_son_med_cav_2 3
+unit_set_experience Indian_son_med_cav_2 9
+
+unit_set_morale Indian_son_chariots_1 high
+unit_set_weapon_upgrade Indian_son_chariots_1 3
+unit_set_armour_upgrade Indian_son_chariots_1 3
+unit_set_experience Indian_son_chariots_1 9
+
+unit_set_morale Indian_son_chariots_2 high
+unit_set_weapon_upgrade Indian_son_chariots_2 3
+unit_set_armour_upgrade Indian_son_chariots_2 3
+unit_set_experience Indian_son_chariots_2 9
+
+		terminate_monitor
+		end_monitor
+
+
+
+
+;---- FOLLOW ENEMY PHALANGISTS IF THEY MOVE AWAY FROM FORD CROSSINGS ---------------------------------------
+
+;		monitor_conditions I_UnitDistanceFromPosition phalangists_5 213 709 > 40
+;		and I_CompareCounter spearmen_ford = 0
+;		unit_order_move Indian_Spearmen_1 105 421 run
+;		set_counter spearmen_ford 1
+;		end_monitor
+;
+;		monitor_conditions I_UnitDistanceFromPosition phalangists_5 213 709 < 40
+;		and I_CompareCounter spearmen_ford = 1
+;		unit_order_move Indian_Spearmen_1 40.028 690.523 run
+;		set_counter spearmen_ford 0
+;		end_monitor
+;
+;		monitor_conditions I_UnitDistanceFromPosition Indian_Spearmen_1 105 421 < 7
+;		and I_CompareCounter spearmen_ford = 1
+;		unit_order_turn Indian_Spearmen_1 75		
+;		end_monitor
+;
+;		monitor_conditions I_UnitDistanceFromPosition Indian_Spearmen_1 40.028 690.523 < 7
+;		and I_CompareCounter spearmen_ford = 0
+;		unit_order_turn Indian_Spearmen_1 69		
+;		end_monitor
+
+;		monitor_conditions I_UnitDistanceFromLine phalangists_5 track_player_start track_player_end > 1
+;		and I_CompareCounter spearmen_ford = 0
+;		unit_order_move Indian_Spearmen_1 105 421 run
+;		set_counter spearmen_ford 1
+;		end_monitor
+;	
+;
+;		monitor_conditions I_UnitDistanceFromLine phalangists_5 track_player_start track_player_end < 1
+;		and I_CompareCounter spearmen_ford = 1
+;		unit_order_move Indian_Spearmen_1 40.028 690.523 run
+;		set_counter spearmen_ford 0
+;		end_monitor
+
+;		monitor_conditions I_UnitDistanceFromPosition phalangists_5 220 406 < 40
+	;	terminate_monitor
+;		end_monitor
+
+;phalangists_6	
+
+;unit_use_special_ability barb_archers
+
+;I_IsUnitEngaged
+;unit_taunt
+;unit_use_special_ability
+;unit_set_guard_mode
+;			label_unit 1 0 3	
+;			label_unit 1 0 4       
+;			label_unit 1 0 9        
+;			label_unit 1 0 12       
+;			label_unit 1 0 13       Indian_Spearmen_3
+;			label_unit 1 0 14       Indian_Spearmen_4
+;			label_unit 1 0 15       Indian_Spearmen_5
+;			label_unit 1 0 16       Indian_Spearmen_6
+;			label_unit 1 0 17       Indian_Spearmen_7
+;			label_unit 1 0 18       Indian_Slingers
+;			label_unit 1 0 19       Indian_Fem_Arch_2
+
+;------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			; *********************************************************************************************
+			;	Start of battle - BATTLESTART MONITOR	(Transfer control to player)
+			;	Start of battle - BATTLESTART MONITOR	(Transfer control to player)
+			;	Start of battle - BATTLESTART MONITOR	(Transfer control to player)
+			;	Start of battle - BATTLESTART MONITOR	(Transfer control to player)
+			;	Start of battle - BATTLESTART MONITOR	(Transfer control to player)
+			;	Start of battle - BATTLESTART MONITOR	(Transfer control to player)
+			;	Start of battle - BATTLESTART MONITOR	(Transfer control to player)
+			;	Start of battle - BATTLESTART MONITOR	(Transfer control to player)
+			;	Start of battle - BATTLESTART MONITOR	(Transfer control to player)
+			; *********************************************************************************************
+		
+			monitor_conditions I_CompareCounter battle_start = 1
+
+				hiding_enabled_set true
+		
+				steal_esc_key off
+
+			; *********************************************************************************************
+			;	Stop the intro narration
+			; *********************************************************************************************
+
+			stop_sound_event HYDASPES_SPEECH_01
+			stop_sound_event HYDASPES_SPEECH_02
+			stop_sound_event HYDASPES_SPEECH_03
+			stop_sound_event HYDASPES_SPEECH_04
+			stop_sound_event HYDASPES_SPEECH_05
+			stop_sound_event HYDASPES_SPEECH_06
+			stop_sound_event HYDASPES_SPEECH_07
+			stop_sound_event HYDASPES_SPEECH_08
+			stop_sound_event HYDASPES_SPEECH_09
+			stop_sound_event HYDASPES_SPEECH_10
+			stop_sound_event HYDASPES_SPEECH_11
+			stop_sound_event HYDASPES_SPEECH_12
+			stop_sound_event HYDASPES_SPEECH_13
+		;	stop_sound_event HYDASPES_SPEECH_14
+
+
+			set_camera_bookmark 1, 571.96, 274.068, 246.724 579.682, 271.77, 240.907
+			set_camera_bookmark 2, 219.363, 307.401, 803.662 219.26, 306.936, 802.783
+
+			camera_position_at_bookmark 1
+
+			battle_wait 0.1
+
+			camera_zoom_to_bookmark 2 90
+
+
+
+;*******************************************BATTLE HERE*************************************************
+
+
+
+
+
+
+unit_immediate_place Alexander, 491.846624, 416.805536, 140.998528, 29.5, 19
+unit_immediate_place companion_cavalry_1, 507.0824, 439.717152, 139.998784, 23.64, 16
+unit_immediate_place scyth_mount_archers, 472.2088, 331.108128, 136.999504, 31.14, 11
+unit_immediate_place javelin_skirmishers, 486.257888, 346.36, 143.997808, 14.000002, 12
+unit_immediate_place hypaspists_1, 515.325248, 353.21104, 139.998784, 11.8, 11
+unit_immediate_place hypaspists_2, 530.380928, 362.25824, 138.999024, 11.8, 11
+unit_immediate_place phalangists_1, 525.193184, 376.480928, 138.999024, 13.8, 13
+unit_immediate_place phalangists_2, 361.364608, 469.832672, -118.998408, 17.8, 17
+unit_immediate_place mardian_archers, 395.218176, 519.756096, -133.000488, 42.4, 27
+unit_immediate_place companion_cavalry_2, 458.651328, 405.992128, 138.999024, 29.64, 20 
+unit_immediate_place phalangists_3, 510.408032, 367.290176, 136.999504, 15.8, 15
+unit_immediate_place phalangists_4, 351.340896, 488.027168, -124.002688, 14.8, 14
+unit_immediate_place allied_cavalry, 247.562384, 652.310848, -100.997304, 25.14, 17
+unit_immediate_place phalangists_5, 212.3636, 695.564352, -97.99804, 12.8, 12
+unit_immediate_place phalangists_6, 208.803408, 709.962432, -108.001096, 11.8, 11
+unit_immediate_place hypaspists_3, 542.495552, 374.176992, 136.999504, 12.8, 12
+unit_immediate_place Porus, 49.253072, 436.715136, 91.999512, 31.0, 5
+unit_immediate_place Indian_Elephants_1, 54.08004, 389.391328, 73.998408, 66.0, 10
+unit_immediate_place Indian_Elephants_2, 15.750984, 586.694528, 34.00268, 52.0, 8
+unit_immediate_place Indian_Spearmen_1, 40.057604, 690.54176, 68.999632, 51.8, 52
+unit_immediate_place Indian_Spearmen_2, 46.316992, 692.379904, 69.999392, 51.8, 52
+unit_immediate_place Indian_Chariots_1, 104.928168, 328.404288, 41.000976, 31.0, 5
+unit_immediate_place Indian_Chariots_2, -54.925616, 622.010816, 67.000116, 52.0, 8
+unit_immediate_place Indian_Lt_Cav_1, 88.137264, 432.577024, 80.00244, 32.64, 22
+unit_immediate_place Indian_Lt_Cav_2, 100.400928, 393.489376, 72.998656, 29.64, 20
+unit_immediate_place Indian_Fem_Arch_1, 27.108656, 681.322816, 67.99988, 45.2, 37
+unit_immediate_place Indian_Javelin_Men, 153.276448, 343.01088, 45.0, 35.600004, 30
+unit_immediate_place Indian_Med_Cavalry, -59.340128, 671.997568, 69.999392, 31.14, 21
+unit_immediate_place Indian_Longbowmen, 1.900461, 674.670912, 65.000612, 53.600004, 44
+unit_immediate_place Indian_Spearmen_3, 151.994544, 376.847232, 65.000612, 17.8, 18
+unit_immediate_place Indian_Spearmen_4, 161.504032, 419.768896, 67.000116, 63.8, 64
+unit_immediate_place Indian_Spearmen_5, 155.659744, 411.105312, 67.000116, 53.8, 54
+unit_immediate_place Indian_Spearmen_6, 145.523392, 393.695968, 69.999392, 17.8, 18
+unit_immediate_place Indian_Spearmen_7, 139.691824, 413.005632, 71.998904, 18.8, 19
+unit_immediate_place Indian_Slingers, 173.6616, 353.758624, 42.000732, 40.8, 26
+unit_immediate_place Indian_Fem_Arch_2, 137.750464, 467.74304, 90.0, 42.8, 35
+unit_immediate_place Indian_Porus_son, 85.386368, -423.985536, 38.001708, 32.5, 21
+unit_immediate_place Indian_son_med_cav_1, 68.08392, -402.85632, 46.999512, 26.64, 18
+unit_immediate_place Indian_son_med_cav_2, 115.434144, -444.375232, 49.99878, 28.14, 19
+unit_immediate_place Indian_son_chariots_1, 33.229344, -377.352896, 47.999268, 31.0, 5
+unit_immediate_place Indian_son_chariots_2, 129.781264, -475.157088, 44.00024, 31.0, 5
+
+
+
+			battle_wait 10
+
+				show_ui
+		
+				enable_cursor						;enable player to click
+				disable_shortcuts false	
+				inhibit_camera_input false			;	Permit user to move camera.
+				enable_entire_ui
+		
+;				camera_restrictions_set on
+				camera_default_mode_set user_pref
+	
+;				set_music_state battle battle		;tension, mobilize, battle
+
+	
+		;	suspend_unscripted_advice false
+
+		
+	;		steal_esc_key off
+
+
+pause_battle
+
+
+
+
+
+
+;unit_order_attack_unit IndianFemArch2 hypaspists_3 run
+;unit_order_attack_unit IndianSpearmen4 hypaspists_3 run
+;unit_order_attack_unit IndianSpearmen5 hypaspists_3 run
+;unit_order_attack_unit Indian_Spearmen_3 hypaspists_3 run
+
+
+unit_set_fire_at_will_mode Indian_Elephants_1 on
+unit_set_fire_at_will_mode Indian_Elephants_2 on
+unit_set_fire_at_will_mode Indian_Chariots_1 on
+unit_set_fire_at_will_mode Indian_Chariots_2 on
+unit_set_fire_at_will_mode Indian_Lt_Cav_1 on
+unit_set_fire_at_will_mode Indian_Lt_Cav_2 on
+unit_set_fire_at_will_mode Indian_Fem_Arch_1 on
+unit_set_fire_at_will_mode Indian_Fem_Arch_2 on
+unit_set_fire_at_will_mode Indian_Javelin_Men on
+unit_set_fire_at_will_mode Indian_Longbowmen on
+unit_set_fire_at_will_mode Indian_Slingers on
+
+;unit_use_special_ability Indian_Fem_Arch_1
+;unit_use_special_ability Indian_Fem_Arch_2
+;unit_use_special_ability Indian_Longbowmen
+
+
+;set_camera_bookmark 2, 587.981, 266.186, 416.274 578.533, 262.435, 415.71
+;set_camera_bookmark 3, 451.604, 313.284, 656.911 448.846, 310.038, 647.686
+;set_camera_bookmark 4, 387.812, 279.535, 471.59 394.321, 275.891, 464.678
+;set_camera_bookmark 5, 667.497, 275.994, 318.637 660.916, 271.425, 313.436
+;set_camera_bookmark 6, 711.255, 232.876, 65.5955 702.931, 229.431, 68.9856; ford
+
+
+
+
+
+			terminate_monitor
+			end_monitor	
+		
+		
+			; *********************************************************************************************
+			; ********************* END OF BATTLE START MONITOR *******************************************
+			; *********************************************************************************************
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			; *********************************************************************************************
+			; *********************************************************************************************
+			;			Intro sequence - INTRO MONITOR
+			;			Intro sequence - INTRO MONITOR
+			;			Intro sequence - INTRO MONITOR
+			;			Intro sequence - INTRO MONITOR
+			;			Intro sequence - INTRO MONITOR
+			;			Intro sequence - INTRO MONITOR
+			;			Intro sequence - INTRO MONITOR
+			;			Intro sequence - INTRO MONITOR
+			;			Intro sequence - INTRO MONITOR
+			; *********************************************************************************************
+			; *********************************************************************************************
+		
+		
+			monitor_conditions I_CompareCounter intro_sequence = 1
+		
+		
+		
+				; *********************************************************************************************
+				;	Start sequence
+				; *********************************************************************************************
+		
+	;		set_music_state custom  		MUSIC_CAMPAIGN_VICTORY		;;;		GameWin-Barbarian.mp3
+	
+
+
+				disable_shortcuts true
+				inhibit_camera_input true			;	Permit user to move camera.
+				disable_entire_ui
+				disable_cursor
+		
+				battle_default_camera
+		
+		 		camera_restrictions_set off
+		
+				hide_ui
+		
+;				; this will tell music tracker to play the specified custom music event
+;			set_music_state battle tension  	;tension, mobilize, battle
+;		
+;		
+;				hiding_enabled_set true
+;		
+;				while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+;				end_while									; PLAYER CAN ESCAPE
+;		
+;
+
+
+			set_camera_bookmark 1, 138.206, 273.739, 456.469 147.617, 271.215, 454.551
+			set_camera_bookmark 2, 151.172, 271.182, 557.664 159.306, 268.658, 562.773
+			set_camera_bookmark 3, 436.669, 211.358, 803.377 446.323, 211.285, 805.952
+			set_camera_bookmark 4, 485.616, 211.581, 817.49 475.639, 211.847, 818.134
+			set_camera_bookmark 5, 472.146, 217.959, 820.609 478.272, 212.793, 815.175
+			set_camera_bookmark 6, 475.893, 214.219, 771.733 476.514, 214.041, 772.495
+			set_camera_bookmark 7, 490.379, 214.022, 777.715 491, 213.844, 778.478
+			set_camera_bookmark 8, 545.028, 214.498, 798.113 536.517, 213.383, 793.114
+			set_camera_bookmark 9, 458.896, 221.251, 833.788 451.851, 220.136, 826.874
+			set_camera_bookmark 10, 174.216, 257.89, 703.405 168.798, 254.677, 695.872
+			set_camera_bookmark 11, 31.8193, 217.685, 585.042 31.2714, 219.029, 575.118
+			set_camera_bookmark 12, 72.158, 258.079, 758.516 70.4398, 254.648, 749.106
+			set_camera_bookmark 13, 374.66, 271.854, 200.584 384.035, 269.824, 197.951
+			set_camera_bookmark 14, 172.589, 250.139, 757.345 174.883, 246.95, 747.986
+			set_camera_bookmark 15, 334.861, 226.111, 550.649 334.801, 223.716, 541.083
+			set_camera_bookmark 16, 457.146, 215.229, 386.424 457.843, 215.098, 385.719
+			set_camera_bookmark 17, 494.496, 213.28, 410.927 494.025, 213.149, 410.055
+			set_camera_bookmark 18, 428.178, 219.77, 287.052 419.581, 219.761, 281.949
+			set_camera_bookmark 19, 539.804, 248.437, 416.855 535.576, 246.036, 408.05
+			set_camera_bookmark 20, 571.96, 274.068, 246.724 579.682, 271.77, 240.907
+			set_camera_bookmark 21, 272.496, 302.976, 794.842 270.344, 299.436, 785.555
+
+
+			camera_position_at_bookmark 1
+
+play_sound_event	HYDASPES_SPEECH_01 tag = HYDASPES_SPEECH_01
+
+			battle_wait 5
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+
+
+
+			camera_zoom_to_bookmark 2 15
+
+
+unit_order_move_relative Alexander 0 100
+unit_order_move_relative companion_cavalry_1 0 100
+unit_order_move_relative scyth_mount_archers 0 100
+unit_order_move_relative javelin_skirmishers 0 100
+unit_order_move_relative hypaspists_1 0 100		
+unit_order_move_relative hypaspists_2 0 100		
+unit_order_move_relative phalangists_1 0 100	
+unit_order_move_relative phalangists_2 0 100		
+unit_order_move_relative mardian_archers 0 100		
+unit_order_move_relative companion_cavalry_2 0 100
+unit_order_move_relative phalangists_3 0 100	
+unit_order_move_relative phalangists_4 0 100	
+unit_order_move_relative allied_cavalry 0 100	
+unit_order_move_relative phalangists_5 0 100	
+unit_order_move_relative phalangists_6 0 100	
+unit_order_move_relative hypaspists_3 0 100
+
+			battle_wait 5
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+play_sound_event	HYDASPES_SPEECH_02 tag = HYDASPES_SPEECH_02
+
+			battle_wait 2
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+			camera_position_at_bookmark 3
+
+
+			battle_wait 3
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+			camera_position_at_bookmark 4
+
+			battle_wait 3
+
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+			camera_position_at_bookmark 5
+
+
+			battle_wait 4
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+			camera_position_at_bookmark 6
+
+play_sound_event	HYDASPES_SPEECH_03 tag = HYDASPES_SPEECH_03	; new recruits
+
+
+			battle_wait 3
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+			camera_zoom_to_bookmark 7 1
+
+			battle_wait 5
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+			camera_position_at_bookmark 8
+
+
+			battle_wait 3
+
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+			camera_zoom_to_bookmark 9 20
+
+			battle_wait 3
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+play_sound_event	HYDASPES_SPEECH_04 tag = HYDASPES_SPEECH_04
+
+			battle_wait 2
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+			camera_zoom_to_bookmark 10 50
+
+			battle_wait 2
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+play_sound_event	HYDASPES_SPEECH_05 tag = HYDASPES_SPEECH_05
+
+			battle_wait 6
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+			camera_position_at_bookmark 11
+
+play_sound_event	HYDASPES_SPEECH_06 tag = HYDASPES_SPEECH_06	; war elephants
+
+			battle_wait 3
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+			camera_zoom_to_bookmark 12 30
+
+			battle_wait 3
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+play_sound_event	HYDASPES_SPEECH_07 tag = HYDASPES_SPEECH_07
+
+			battle_wait 7
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+			camera_zoom_to_bookmark 13 120
+
+play_sound_event	HYDASPES_SPEECH_08 tag = HYDASPES_SPEECH_08	; but several days ago
+
+			battle_wait 4
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+			unit_order_move Indian_Lt_Cav_2 535.2, 97.6 run
+
+			battle_wait 4
+
+play_sound_event	HYDASPES_SPEECH_09 tag = HYDASPES_SPEECH_09	; and Alexander has a plan
+
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+
+unit_immediate_place Alexander 335.893, 513.450, -123, 32.070
+unit_immediate_place companion_cavalry_1 382.776, 493.001, -125, 38.977
+unit_immediate_place scyth_mount_archers 462.088, 417.378, 137, 31.224
+unit_immediate_place javelin_skirmishers 415.329, 459.487, 144, 14.235
+unit_immediate_place hypaspists_1 424.019, 451.554, 140, 12.751
+unit_immediate_place hypaspists_2 440.732, 458.793, 139, 12.547 
+unit_immediate_place phalangists_1 443.446, 486.840, 139, 14.686
+unit_immediate_place phalangists_2 368.155, 480.794, -119, 17.998
+unit_immediate_place mardian_archers 401.265, 524.770, -133, 42.438
+unit_immediate_place companion_cavalry_2 483.068, 440.897, 139, 30.368
+unit_immediate_place phalangists_3 429.617, 473.456, 137, 15.844
+unit_immediate_place phalangists_4 357.331, 499.379, -124, 15.465
+unit_immediate_place allied_cavalry 254.106, 674.062, -101, 26.358
+unit_immediate_place phalangists_5 220.894, 697.186, -98, 13.008
+unit_immediate_place phalangists_6 216.600, 713.118, -108, 12.321
+unit_immediate_place hypaspists_3 453.113, 470.927, 137, 13.721
+
+unit_order_move_relative Alexander 0 100
+unit_order_move_relative companion_cavalry_1 0 100
+unit_order_move_relative scyth_mount_archers 0 100
+unit_order_move_relative javelin_skirmishers 0 100
+unit_order_move_relative hypaspists_1 0 100		
+unit_order_move_relative hypaspists_2 0 100		
+unit_order_move_relative phalangists_1 0 100	
+unit_order_move_relative phalangists_2 0 100		
+unit_order_move_relative mardian_archers 0 100		
+unit_order_move_relative companion_cavalry_2 0 100
+unit_order_move_relative phalangists_3 0 100	
+unit_order_move_relative phalangists_4 0 100	
+unit_order_move_relative allied_cavalry 0 100	
+unit_order_move_relative phalangists_5 0 100	
+unit_order_move_relative phalangists_6 0 100	
+unit_order_move_relative hypaspists_3 0 100
+
+
+			camera_position_at_bookmark 14
+
+			battle_wait 3
+
+play_sound_event	HYDASPES_SPEECH_10 tag = HYDASPES_SPEECH_10	; he camps his main army
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+			camera_zoom_to_bookmark 15 60
+
+			battle_wait 6
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+play_sound_event	HYDASPES_SPEECH_11 tag = HYDASPES_SPEECH_11	;and then spends four weeks
+
+			camera_position_at_bookmark 17
+
+unit_order_move_relative companion_cavalry_2 0 100 run
+unit_order_move_relative scyth_mount_archers 0 100 run
+
+			battle_wait 4
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+			camera_zoom_to_bookmark 18 60
+
+			battle_wait 3
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+play_sound_event	HYDASPES_SPEECH_12 tag = HYDASPES_SPEECH_12	;as expected
+
+			battle_wait 2
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+			camera_position_at_bookmark 19
+
+			battle_wait 4
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+unit_order_move_relative companion_cavalry_2 0 -100 run
+unit_order_move_relative scyth_mount_archers 0 -100 run
+
+			battle_wait 5
+
+
+play_sound_event	HYDASPES_SPEECH_13 tag = HYDASPES_SPEECH_13	;but then grow complacent
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+unit_order_move_relative Indian_Lt_Cav_2 0 -100 run
+
+			battle_wait 6
+
+play_sound_event	HYDASPES_SPEECH_14 tag = HYDASPES_SPEECH_14	; Alexander is now ready
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while					; PLAYER CAN ESCAPE
+
+
+				set_counter player_not_escape 1	  
+				set_counter battle_start 1	  
+
+
+	
+			terminate_monitor
+			end_monitor
+		
+		
+		
+			; *********************************************************************************************
+			; ********************* END OF INTRO SEQUENCE MONITOR *****************************************
+			; *********************************************************************************************
+		
+
+	while I_InBattle
+	end_while
+
+end_script
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

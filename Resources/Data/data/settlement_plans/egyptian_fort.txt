@@ -1,0 +1,124 @@
+plan
+
+{
+
+floor      underlay_egyptian_fort.cas overlay_egyptian_fort.cas
+
+street_plan		pathfinding_egyptian_fort.cas
+
+borders
+               {
+		gateway,	-96,	0,	-90,	0
+		gateway,	96,	0,	90,	0
+		gateway,	0,	-160,	0,	0
+
+		straight,	96,	-128,	90,	0
+		straight,	96,	64,	90,	0
+		straight,	-96,	-128,	-90,	0
+		straight,	-96,	64,	-90,	0
+		straight,	64,	96,	-180,	0
+		straight,	-64,	96,	-180,	0
+
+		straight_link,	-96,	-96,	-90,	0
+		straight_link,	96,	-96,	90,	0
+		straight_link,	32,	96,	180,	0
+		straight_link,	-32,	96,	180,	0
+
+		tower_straight,	96,	-64,	90,	0
+		tower_straight,	-96,	-64,	-90,	0
+		tower_straight,	0,	96,	180,	0
+		tower_straight,	-64,	-160,	0,	0
+		tower_straight,	64,	-160,	0,	0
+
+		tower_external_corner_link,	-96,	-160,	0,	0
+		tower_external_corner_link,	96,	-160,	90,	0
+		tower_external_corner_link,	96,	96,	-180,	0
+		tower_external_corner_link,	-96,	96,	-90,	0
+
+   		}
+
+
+; road joiners
+
+; must be called one of the following..
+
+;slot_road_joiner_no_road_into_roman_town
+;slot_road_joiner_muddy_path_into_roman_town
+;slot_road_joiner_paved_road_into_roman_town
+
+slot_road_joiner_no_road_into_roman_town,	128,	0,	0,	0
+slot_road_joiner_no_road_into_roman_town,	-128,	0,	180,	0
+slot_road_joiner_no_road_into_roman_town,	0,	-192,	-90,	0
+
+
+
+
+cow_stall,	28,	-88,	-90,	0
+cow_stall,	28,	-78,	-90,	0
+
+egyptian_apartment_block,	-56,	-14,	90,	0
+egyptian_apartment_block,	-44,	-14,	90,	0
+
+egyptian_farm_granary,	58,	-16,	180,	0
+egyptian_farm_granary,	50,	-16,	180,	0
+egyptian_farm_granary,	36,	-112,	180,	0
+egyptian_farm_granary,	36,	-102,	180,	0
+
+egyptian_grain_threshing_pit,	18,	-86,	0,	0
+
+egyptian_granary ,	-58,	20,	0,	0
+egyptian_granary ,	-40,	20,	0,	0
+egyptian_granary ,	32,	-124,	0,	0
+
+egyptian_haystack,	-26.01,	-83.94,	0,	0
+
+egyptian_storage_building ,	-60,	54,	0,	0
+egyptian_storage_building ,	-46,	54,	0,	0
+egyptian_storage_building ,	-32,	54,	0,	0
+egyptian_storage_building ,	-52,	-84,	90,	0
+egyptian_storage_building ,	-52,	-70,	90,	0
+egyptian_storage_building ,	-52,	-56,	90,	0
+egyptian_storage_building ,	-52,	-42,	90,	0
+egyptian_storage_building ,	-52,	-28,	90,	0
+egyptian_storage_building ,	52,	-30,	-90,	0
+egyptian_storage_building ,	52,	-44,	-90,	0
+egyptian_storage_building ,	52,	-58,	-90,	0
+egyptian_storage_building ,	52,	-72,	-90,	0
+egyptian_storage_building ,	52,	-86,	-90,	0
+egyptian_storage_building ,	54,	22,	-90,	0
+egyptian_storage_building ,	-42,	-108,	90,	0
+egyptian_storage_building ,	-42,	-122,	90,	0
+
+egyptian_village_house_large ,	-26,	-26,	90,	0
+egyptian_village_house_large ,	-26,	-34,	90,	0
+egyptian_village_house_large ,	-26,	-42,	90,	0
+egyptian_village_house_large ,	-26,	-50,	90,	0
+egyptian_village_house_large ,	41.25,	-17,	180,	0
+egyptian_village_house_large ,	33.25,	-17,	180,	0
+egyptian_village_house_large ,	27.25,	-35,	-90,	0
+egyptian_village_house_large ,	27.25,	-27,	-90,	0
+egyptian_village_house_large ,	26,	-112,	-90,	0
+egyptian_village_house_large ,	26,	-104,	-90,	0
+
+egyptian_village_house_small ,	28,	-68,	-90,	0
+egyptian_village_house_small ,	28,	-60,	-90,	0
+egyptian_village_house_small ,	28,	-52,	-90,	0
+egyptian_village_house_small ,	28,	-44,	-90,	0
+
+mastaba,	52,	62,	90,	0
+mastaba,	52,	50,	90,	0
+mastaba,	52,	38,	90,	0
+mastaba,	-26,	-66,	180,	0
+mastaba,	16,	-68,	0,	0
+mastaba,	16,	-46,	0,	0
+mastaba,	16,	-24,	0,	0
+mastaba,	54,	-124,	90,	0
+mastaba,	54,	-112,	90,	0
+mastaba,	54,	-100,	90,	0
+mastaba,	-60,	-116,	0,	0
+
+small_pyramid,	2,	52,	0,	0
+
+
+
+}

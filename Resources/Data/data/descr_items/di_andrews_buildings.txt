@@ -1,0 +1,770 @@
+type			baggage_train_cart
+lod
+max_distance	100
+model_rigid		cart750.cas
+lod
+max_distance	300
+model_rigid		cart350.cas
+lod
+max_distance	500
+model_rigid		cart150.cas
+lod
+max_distance	1000
+model_rigid		cart50.cas
+
+
+
+
+type		roman_trader
+lod
+max_distance	200
+model_rigid	roman_trader_high.cas
+lod
+max_distance	4000
+model_rigid	roman_trader_low.cas
+
+
+
+
+type		roman_blacksmith
+lod
+max_distance	200
+model_rigid	roman_blacksmith_high.cas
+lod
+max_distance	300
+model_rigid	roman_blacksmith_med.cas
+lod
+max_distance	4000
+model_rigid	roman_blacksmith_low.cas
+
+
+
+
+type		cavalry_barracks
+lod
+max_distance	200
+model_rigid	cavalry_barracks_high.cas
+lod
+max_distance	300
+model_rigid	cavalry_barracks_med.cas
+lod
+max_distance	4000
+model_rigid	cavalry_barracks_low.cas
+
+
+
+
+type		roman_marketplace
+lod
+max_distance	200
+model_rigid	roman_marketplace_high.cas
+lod
+max_distance	300
+model_rigid	roman_marketplace_med.cas
+lod
+max_distance	4000
+model_rigid	roman_marketplace_low.cas
+
+
+
+
+type		great_forum_with_curia
+lod
+max_distance	200
+model_rigid	great_forum_with_curia_high.cas
+lod
+max_distance	300
+model_rigid	great_forum_with_curia_med.cas
+lod
+max_distance	500
+model_rigid	great_forum_with_curia_low.cas
+lod
+max_distance	4000
+model_rigid	great_forum_with_curia_very_low.cas
+
+
+
+
+type		barbarian_shrine
+lod
+max_distance	200
+model_rigid	barbarian_shrine_high.cas
+lod
+max_distance	400
+model_rigid	barbarian_shrine_med.cas
+lod
+max_distance	1000
+model_rigid	barbarian_shrine_low.cas
+
+
+
+
+type		pantheon
+lod
+max_distance	200
+model_rigid	pantheon_high.cas
+lod
+max_distance	500
+model_rigid	pantheon_med.cas
+lod
+max_distance	4000
+model_rigid	pantheon_low.cas
+
+type		roman_pro-consuls_palace
+lod
+max_distance	300
+model_rigid	roman_pro-consuls_palace_high.cas
+lod
+max_distance	600
+model_rigid	roman_pro-consuls_palace_med.cas
+lod
+max_distance	1200
+model_rigid	roman_pro-consuls_palace_low.cas
+
+type		barbarian_trader
+lod
+max_distance	200
+model_rigid	barbarian_trader_high.cas
+lod
+max_distance	400
+model_rigid	barbarian_trader_med.cas
+lod
+max_distance	600
+model_rigid	barbarian_trader_low.cas
+lod
+max_distance	1000
+model_rigid	barbarian_trader_very_low.cas
+
+
+
+
+type		greek_pro-consuls_palace
+lod
+max_distance	300
+model_rigid	greek_pro-consuls_palace_high.cas
+lod
+max_distance	500
+model_rigid	greek_pro-consuls_palace_med.cas
+lod
+max_distance	800
+model_rigid	greek_pro-consuls_palace_low.cas
+lod
+max_distance	4000
+model_rigid	greek_pro-consuls_palace_very_low.cas
+
+
+type		greek_great_agora
+lod
+max_distance	200
+model_rigid	greek_great_agora_high.cas
+lod
+max_distance	400
+model_rigid	greek_great_agora_med.cas
+lod
+max_distance	600
+model_rigid	greek_great_agora_low.cas
+lod
+max_distance	1000
+model_rigid	greek_great_agora_very_low.cas
+
+
+
+
+type		greek_merchants_quarter
+lod
+max_distance	200
+model_rigid	greek_merchants_quarter_high.cas
+lod
+max_distance	300
+model_rigid	greek_merchants_quarter_med.cas
+lod
+max_distance	4000
+model_rigid	greek_merchants_quarter_low.cas
+
+
+
+
+type		plaza_egyptian_192x192m
+lod
+max_distance	4000
+model_rigid	plaza_egyptian_192x192m.cas
+
+
+
+
+type		greek_large_marketplace
+lod
+max_distance	300
+model_rigid	greek_large_marketplace_high.cas
+lod
+max_distance	500
+model_rigid	greek_large_marketplace_med.cas
+lod
+max_distance	4000
+model_rigid	greek_large_marketplace_low.cas
+
+
+
+
+type		greek_marketplace
+lod
+max_distance	200
+model_rigid	greek_market_high.cas
+lod
+max_distance	400
+model_rigid	greek_market_med.cas
+lod
+max_distance	600
+model_rigid	greek_market_low.cas
+lod
+max_distance	4000
+model_rigid	greek_market_lowest.cas
+
+
+
+type		greek_pantheion_plinth
+lod
+max_distance	1000
+model_rigid	greek_pantheion_plinth_high.cas
+
+
+
+
+type		eastern_hippodrome
+lod
+max_distance	4000
+model_rigid	eastern_hippodrome_high.cas
+
+
+
+
+type		eastern_cavalry_barracks
+lod
+max_distance	4000
+model_rigid	eastern_cavalry_barracks_high.cas
+
+
+
+
+type		egyptian_hippodrome
+lod
+max_distance	4000
+model_rigid	egyptian_hippodrome_high.cas
+
+
+
+
+type		egyptian_cavalry_barracks
+lod
+max_distance	4000
+model_rigid	egyptian_cavalry_barracks_high.cas
+
+
+
+
+type		egyptian_shrine_andrews
+lod
+max_distance	200
+model_rigid	egyptian_shrine_andrews_high.cas
+lod
+max_distance	4000
+model_rigid	egyptian_shrine_andrews_low.cas
+
+
+
+
+type		roman_ambient_market
+lod
+max_distance	200
+model_rigid	roman_ambient_market_high.cas
+lod
+max_distance	300
+model_rigid	roman_ambient_market_med.cas
+lod
+max_distance	500
+model_rigid	roman_ambient_market_low.cas
+lod
+max_distance	4000
+model_rigid	roman_ambient_market_very_low.cas
+
+
+
+
+type		plaza_greek_192x192m
+lod
+max_distance	4000
+model_rigid	plaza_greek_192x192m.cas
+
+
+
+
+type		plaza_eastern_192x192m
+lod
+max_distance	4000
+model_rigid	plaza_eastern_192x192m.cas
+
+
+
+
+type			plaza_roman_192x192m
+lod
+max_distance		4000
+model_rigid		plaza_roman_192x192m.cas
+
+
+
+
+
+type		forum
+lod
+max_distance	200
+model_rigid	forum_high.cas
+lod
+max_distance	300
+model_rigid	forum_med.cas
+lod
+max_distance	4000
+model_rigid	forum_low.cas
+
+
+
+
+type			plaza_roman_128x128m
+lod
+max_distance		4000
+model_rigid		plaza_roman_128x128m.cas
+
+
+
+
+type			plaza_greek_128x128m
+lod
+max_distance		4000
+model_rigid		plaza_greek_128x128m.cas
+
+
+
+
+type			plaza_egyptian_128x128m
+lod
+max_distance		4000
+model_rigid		plaza_egyptian_128x128m.cas
+
+
+
+
+type			plaza_eastern_128x128m
+lod
+max_distance		4000
+model_rigid		plaza_eastern_128x128m.cas
+
+
+
+
+type			plaza_roman_64x64m
+lod
+max_distance		4000
+model_rigid		plaza_roman_64x64m.cas
+
+
+
+
+type			plaza_greek_64x64m
+lod
+max_distance		4000
+model_rigid		plaza_greek_64x64m.cas
+
+
+
+
+type			plaza_egyptian_64x64m
+lod
+max_distance		4000
+model_rigid		plaza_egyptian_64x64m.cas
+
+
+
+
+type			plaza_eastern_64x64m
+lod
+max_distance		4000
+model_rigid		plaza_eastern_64x64m.cas
+
+
+
+
+type			plaza_eastern_32x32m
+lod
+max_distance		4000
+model_rigid		plaza_eastern_32x32m.cas
+
+
+
+
+type			plaza_egyptian_32x32m
+lod
+max_distance		4000
+model_rigid		plaza_egyptian_32x32m.cas
+
+
+
+
+type			plaza_greek_32x32m
+lod
+max_distance		4000
+model_rigid		plaza_greek_32x32m.cas
+
+
+
+
+type			plaza_roman_32x32m
+lod
+max_distance		4000
+model_rigid		plaza_roman_32x32m.cas
+
+
+
+
+type			roman_governors_palace
+lod
+max_distance		300
+model_rigid		roman_governors_palace_high.cas
+lod
+max_distance		500
+model_rigid		roman_governors_palace_med.cas
+lod
+max_distance		4000
+model_rigid		roman_governors_palace_low.cas
+
+
+
+
+type			greek_governors_palace
+lod
+max_distance		300
+model_rigid		greek_governors_palace_high.cas
+lod
+max_distance		500
+model_rigid		greek_governors_palace_med.cas
+lod
+max_distance		1000
+model_rigid		greek_governors_palace_low.cas
+
+
+
+
+type			barbarian_stables
+lod
+max_distance		200
+model_rigid		barbarian_stables_high.cas
+lod
+max_distance		400
+model_rigid		barbarian_stables_med.cas
+lod
+max_distance		1000
+model_rigid		barbarian_stables_low.cas
+
+
+
+type			egyptian_governors_palace
+lod
+max_distance		300
+model_rigid		egyptian_governors_palace_high.cas
+lod
+max_distance		500
+model_rigid		egyptian_governors_palace_med.cas
+lod
+max_distance		800
+model_rigid		egyptian_governors_palace_low.cas
+lod
+max_distance		4000
+model_rigid		egyptian_governors_palace_very_low.cas
+
+
+
+type			egyptian_temple
+lod
+max_distance		4000
+model_rigid		egyptian_temple_high.cas
+
+
+; ********* second-pass buildings
+
+
+type		roman_armourer
+lod
+max_distance	200
+model_rigid	roman_armourer_high.cas
+lod
+max_distance	300
+model_rigid	roman_armourer_med.cas
+lod
+max_distance	4000
+model_rigid	roman_armourer_low.cas
+
+
+
+type		roman_foundry
+lod
+max_distance	200
+model_rigid	roman_foundry_high.cas
+lod
+max_distance	300
+model_rigid	roman_foundry_med.cas
+lod
+max_distance	4000
+model_rigid	roman_foundry_low.cas
+
+
+
+type		eastern_armourer
+lod
+max_distance	200
+model_rigid	eastern_armourer_high.cas
+lod
+max_distance	300
+model_rigid	eastern_armourer_med.cas
+lod
+max_distance	4000
+model_rigid	eastern_armourer_low.cas
+
+
+
+type		eastern_foundry
+lod
+max_distance	200
+model_rigid	eastern_foundry_high.cas
+lod
+max_distance	300
+model_rigid	eastern_foundry_med.cas
+lod
+max_distance	4000
+model_rigid	eastern_foundry_low.cas
+
+
+type		egyptian_blacksmith
+lod
+max_distance	200
+model_rigid	egyptian_blacksmith_high.cas
+lod
+max_distance	300
+model_rigid	egyptian_blacksmith_med.cas
+lod
+max_distance	4000
+model_rigid	egyptian_blacksmith_low.cas
+
+
+type		egyptian_armourer
+lod
+max_distance	200
+model_rigid	egyptian_armourer_high.cas
+lod
+max_distance	300
+model_rigid	egyptian_armourer_med.cas
+lod
+max_distance	4000
+model_rigid	egyptian_armourer_low.cas
+
+
+
+type		egyptian_foundry
+lod
+max_distance	200
+model_rigid	egyptian_foundry_high.cas
+lod
+max_distance	300
+model_rigid	egyptian_foundry_med.cas
+lod
+max_distance	4000
+model_rigid	egyptian_foundry_low.cas
+
+
+type		barbarian_blacksmith
+lod
+max_distance	200
+model_rigid	barbarian_blacksmith_very_high.cas
+lod
+max_distance	300
+model_rigid	barbarian_blacksmith_high.cas
+lod
+max_distance	500
+model_rigid	barbarian_blacksmith_low.cas
+lod
+max_distance	4000
+model_rigid	barbarian_blacksmith_very_low.cas
+
+
+type		barbarian_armourer
+lod
+max_distance	200
+model_rigid	barbarian_armourer_very_high.cas
+lod
+max_distance	300
+model_rigid	barbarian_armourer_med.cas
+lod
+max_distance	500
+model_rigid	barbarian_armourer_low.cas
+lod
+max_distance	4000
+model_rigid	barbarian_armourer_very_low.cas
+
+
+type		eastern_trader
+lod
+max_distance	200
+model_rigid	eastern_trader_high.cas
+lod
+max_distance	300
+model_rigid	eastern_trader_med.cas
+lod
+max_distance	500
+model_rigid	eastern_trader_low.cas
+lod
+max_distance	4000
+model_rigid	eastern_trader_lowest.cas
+
+
+
+type		elite_cavalry_barracks_eastern
+lod
+max_distance	200
+model_rigid	elite_cavalry_barracks_eastern_high.cas
+lod
+max_distance	300
+model_rigid	elite_cavalry_barracks_eastern_med.cas
+lod
+max_distance	4000
+model_rigid	elite_cavalry_barracks_eastern_low.cas
+
+
+type		elite_cavalry_barracks_egyptian
+lod
+max_distance	200
+model_rigid	elite_cavalry_barracks_egyptian_high.cas
+lod
+max_distance	300
+model_rigid	elite_cavalry_barracks_egyptian_med.cas
+lod
+max_distance	4000
+model_rigid	elite_cavalry_barracks_egyptian_low.cas
+
+
+type		elite_cavalry_barracks_greek
+lod
+max_distance	200
+model_rigid	elite_cavalry_barracks_greek_high.cas
+lod
+max_distance	4000
+model_rigid	elite_cavalry_barracks_greek_low.cas
+
+
+type		urban_barracks_roman
+lod
+max_distance	200
+model_rigid	urban_barracks_roman_high.cas
+lod
+max_distance	4000
+model_rigid	urban_barracks_roman_low.cas
+
+
+type		urban_barracks_roman_props
+lod
+max_distance	200
+model_rigid	urban_barracks_roman_props_high.cas
+
+
+type		urban_barracks_egyptian
+lod
+max_distance	200
+model_rigid	urban_barracks_egyptian_high.cas
+lod
+max_distance	300
+model_rigid	urban_barracks_egyptian_med.cas
+lod
+max_distance	4000
+model_rigid	urban_barracks_egyptian_low.cas
+
+
+type		urban_barracks_eastern
+lod
+max_distance	200
+model_rigid	urban_barracks_eastern_high.cas
+lod
+max_distance	300
+model_rigid	urban_barracks_eastern_med.cas
+lod
+max_distance	4000
+model_rigid	urban_barracks_eastern_low.cas
+
+
+type		royal_cavalry_stables_greek
+lod
+max_distance	200
+model_rigid	royal_cavalry_stables_greek_high.cas
+lod
+max_distance	4000
+model_rigid	royal_cavalry_stables_greek_low.cas
+
+
+type		royal_cavalry_stables_eastern
+lod
+max_distance	200
+model_rigid	royal_cavalry_stables_eastern_high.cas
+lod
+max_distance	4000
+model_rigid	royal_cavalry_stables_eastern_low.cas
+
+
+
+
+type		eastern_temple_complex
+lod
+max_distance	300
+model_rigid	eastern_temple_complex_high.cas
+lod
+max_distance	1000
+model_rigid	eastern_temple_complex_low.cas
+
+
+type			egyptian_camel_stables
+lod
+max_distance		300
+model_rigid		egyptian_camel_stables_high.cas
+lod
+max_distance		4000
+model_rigid		egyptian_camel_stables_low.cas
+
+
+
+type			barbarian_long_house2
+lod
+max_distance		200
+model_rigid		barbarian_long_house2_high.cas
+lod
+max_distance		400
+model_rigid		barbarian_long_house2_med.cas
+lod
+max_distance		600
+model_rigid		barbarian_long_house2_low.cas
+lod
+max_distance		1000
+model_rigid		barbarian_long_house2_very_low.cas
+
+
+type			barbarian_hall_large2
+lod
+max_distance		200
+model_rigid		barbarian_hall_large2_high.cas
+lod
+max_distance		400
+model_rigid		barbarian_hall_large2_med.cas
+lod
+max_distance		600
+model_rigid		barbarian_hall_large2_low.cas
+lod
+max_distance		1000
+model_rigid		barbarian_hall_large2_very_low.cas
+
+
+
+

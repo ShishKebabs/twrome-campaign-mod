@@ -1,0 +1,15 @@
+plan
+
+{
+
+floor	underlay_watchtower_roman_greek.cas overlay_watchtower_roman_greek.cas
+	borders	border_limits_64m_diameter.CAS
+
+roman_greek_standalone_watchtower,		0,	0,	0,	3
+cart_B,						-7,	6,	25,	3
+crates,						-6,	-6,	0,	3
+crates,						5,	3,	0,	3
+pile_of_logs,					6,	-6,	-60,	3
+pile_of_logs,					2,	7,	75,	3
+
+	}

@@ -1,0 +1,18 @@
+script
+
+	dismiss_advice
+	suspend_unscripted_advice true
+	while I_AdvisorVisible
+	end_while
+
+	advance_advice_thread Art_Of_Horde_Show_Me_1_Thread
+	while I_AdvisorVisible
+	end_while
+
+	advance_advice_thread Art_Of_Horde_Show_Me_2_Thread
+	while I_AdvisorVisible
+	end_while
+
+	suspend_unscripted_advice false
+
+end_script

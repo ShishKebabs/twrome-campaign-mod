@@ -1,0 +1,809 @@
+script
+
+		; *********************************************************************************************
+		;	CHALONS
+		; *********************************************************************************************
+		
+		
+			prepare_for_battle		; This must be *BEFORE* defining labels
+		
+		
+			;	label_unit ALLIANCE ARMY UNIT
+		
+			;	ALLIANCE 0		====================================================================
+
+
+			label_unit 0 0 0	PLYR_ATTILA000
+			label_unit 0 0 1	PLYR_STEPPE_SPEARMEN_HUN001
+			label_unit 0 0 2	PLYR_STEPPE_SPEARMEN_HUN002
+			label_unit 0 0 3	PLYR_STEPPE_SWORDSMEN_HUN003
+			label_unit 0 0 4	PLYR_STEPPE_SWORDSMEN_HUN004
+			label_unit 0 0 5	PLYR_STEPPE_HEAVY_SPEARMEN_HUN005
+			label_unit 0 0 6	PLYR_HUNNIC_HEAVY_CAVALRY006
+			label_unit 0 0 7	PLYR_HUNNIC_HEAVY_CAVALRY007
+			label_unit 0 0 8	PLYR_HUNNIC_HEAVY_CAVALRY008
+			label_unit 0 0 9	PLYR_HUNNIC_LANCERS009
+			label_unit 0 0 10	PLYR_TRIBAL_CAVALRY0010
+			label_unit 0 0 11	PLYR_HUNNIC_ARCHERS0011
+			label_unit 0 0 12	PLYR_TRIBAL_CAVALRY0012
+			label_unit 0 0 13	PLYR_HUNNIC_ELITE_WARRIORS0013
+			label_unit 0 0 14	PLYR_HUNNIC_ELITE_WARRIORS0014
+			label_unit 0 0 15	PLYR_HUNNIC_ELITE_WARRIORS0015
+
+			;	ALLIANCE 1		=====================================================================
+
+
+			label_unit 1 0 0	AI_GOTH_WARLORDS100
+			label_unit 1 0 1	AI_GOTHIC_WARRIOR_NOBLES101
+			label_unit 1 0 2	AI_GOTHIC_HORSE_ARCHERS102
+			label_unit 1 0 3	AI_GOTHIC_SPEARMEN103
+
+
+			label_unit 1 1 0	AI_IMPERIAL_GERMAN_BODYGUARD110
+			label_unit 1 1 1	AI_LIMITANEI111
+			label_unit 1 1 2	AI_FOEDERATI_INFANTRY112
+			label_unit 1 1 3	AI_FOEDERATI_INFANTRY113
+			label_unit 1 1 4	AI_COMITATENSES114
+			label_unit 1 1 5	AI_COMITATENSES115
+			label_unit 1 1 6   	AI_COMITATENSES116
+			label_unit 1 1 7	AI_AUXILIA_PALATINII117
+			label_unit 1 1 8	AI_MERC_GOLDEN_BAND118
+			label_unit 1 1 9	AI_SCHOLAE_PALATINAE119
+			label_unit 1 1 10	AI_SCHOLAE_PALATINAE1110
+			label_unit 1 1 11	AI_FOEDERATI_CAVALRY1111
+			label_unit 1 1 12	AI_FOEDERATI_CAVALRY1112
+			label_unit 1 1 13	AI_MERC_ALAN_HORSE_ARCHERS1113
+			label_unit 1 1 14	AI_ROMAN_PRIEST1114
+			label_unit 1 1 15	AI_MERC_ALAN_NOBLE_CAVALRY1115
+			label_unit 1 1 16  	AI_LIMITANEI1116
+			label_unit 1 1 17  	AI_BALLISTA_CARRIAGE1117
+
+
+		; *********************************************************************************************
+		;	COUNTERS
+		; *********************************************************************************************
+		
+			declare_counter battle_start
+			declare_counter intro_sequence		;	Kicks off intro sequence
+			declare_counter player_not_escape
+		
+		;-----------------------------------------------------------------------------------------------------------
+		;-----------------------------------------------------------------------------------------------------------
+		;			OPEN SCRIPT SECTION
+		;-----------------------------------------------------------------------------------------------------------
+		;-----------------------------------------------------------------------------------------------------------
+		
+			camera_default_mode_set tw
+		
+			disable_cursor						;prevent the player clicking
+			suspend_unscripted_advice true
+		;	disable_shortcuts true		
+		;	disable_entire_ui
+			inhibit_camera_input true
+
+
+
+
+	
+		
+			set_counter intro_sequence 1	;	kicks off intro sequence
+		
+			while ! I_BattleStarted					; battle_wait FOR DEPLOYMENT
+			end_while
+		
+			hide_ui
+		
+		 	camera_restrictions_set off
+		
+		
+			;-----------------------------------------------------------------------------------------------------------
+			;-----------------------------------------------------------------------------------------------------------
+			;-----------------------------------------------------------------------------------------------------------
+			;-----------------------------------------------------------------------------------------------------------
+			;		ESCAPE KEY HANDLER
+			;-----------------------------------------------------------------------------------------------------------
+			;-----------------------------------------------------------------------------------------------------------
+			;-----------------------------------------------------------------------------------------------------------
+			;-----------------------------------------------------------------------------------------------------------
+				steal_esc_key
+		
+				;	Allows user to skip intro and jump straight to the battle by pressing the ESC key.
+				monitor_event EscPressed TrueCondition
+					set_counter battle_start 1
+		
+;pause_battle
+
+;;;	OLD		  			unit_immediate_place
+		
+					terminate_monitor
+				end_monitor
+			;-----------------------------------------------------------------------------------------------------------
+		
+		
+		
+			;**********************************************************************************************************
+			;**********************************************************************************************************
+			;************************************** BATTLE MONITORS ***************************************************
+			;**********************************************************************************************************
+			;**********************************************************************************************************
+
+
+
+;         **************************** TEST FOR PERCENTAGE OF ROMAN ARMY KILLED AND FINISH BATTLE ********
+			monitor_conditions I_PercentageOfArmyKilled 1 1 > 95
+			and I_PercentageOfArmyKilled 1 1 < 90
+;			monitor_conditions I_PercentageUnitKilled AI_IMPERIAL_GERMAN_BODYGUARD110 > 80
+
+				unit_set_morale AI_IMPERIAL_GERMAN_BODYGUARD110 routing
+				unit_set_morale AI_LIMITANEI111 routing
+				unit_set_morale AI_FOEDERATI_INFANTRY112 routing
+				unit_set_morale AI_FOEDERATI_INFANTRY113 routing
+				unit_set_morale AI_COMITATENSES114 routing
+				unit_set_morale AI_COMITATENSES115 routing
+				unit_set_morale AI_COMITATENSES116 routing
+				unit_set_morale AI_AUXILIA_PALATINII117 routing
+				unit_set_morale AI_MERC_GOLDEN_BAND118 routing
+				unit_set_morale AI_SCHOLAE_PALATINAE119 routing
+				unit_set_morale AI_SCHOLAE_PALATINAE1110 routing
+				unit_set_morale AI_FOEDERATI_CAVALRY1111 routing
+				unit_set_morale AI_FOEDERATI_CAVALRY1112 routing
+				unit_set_morale AI_MERC_ALAN_HORSE_ARCHERS1113 routing
+				unit_set_morale AI_ROMAN_PRIEST1114 routing
+				unit_set_morale AI_MERC_ALAN_NOBLE_CAVALRY1115 routing
+				unit_set_morale AI_LIMITANEI1116 routing
+				unit_set_morale AI_BALLISTA_CARRIAGE1117 routing
+
+				unit_set_morale AI_GOTH_WARLORDS100 routing
+				unit_set_morale AI_GOTHIC_WARRIOR_NOBLES101 routing
+				unit_set_morale AI_GOTHIC_HORSE_ARCHERS102 routing
+				unit_set_morale AI_GOTHIC_SPEARMEN103 routing
+
+				battle_wait 15
+
+			terminate_monitor
+			end_monitor	
+
+
+
+
+
+		
+			; *********************************************************************************************
+			;	Start of battle - BATTLESTART MONITOR	(Transfer control to player)
+			;	Start of battle - BATTLESTART MONITOR	(Transfer control to player)
+			;	Start of battle - BATTLESTART MONITOR	(Transfer control to player)
+			;	Start of battle - BATTLESTART MONITOR	(Transfer control to player)
+			;	Start of battle - BATTLESTART MONITOR	(Transfer control to player)
+			;	Start of battle - BATTLESTART MONITOR	(Transfer control to player)
+			;	Start of battle - BATTLESTART MONITOR	(Transfer control to player)
+			;	Start of battle - BATTLESTART MONITOR	(Transfer control to player)
+			;	Start of battle - BATTLESTART MONITOR	(Transfer control to player)
+			; *********************************************************************************************
+		
+			monitor_conditions I_CompareCounter battle_start = 1
+		
+;;;	OLD		;;;UNNECESSARY		if I_CompareCounter player_not_escape = 0
+		
+
+
+
+			; *********************************************************************************************
+			;	Stop the intro narration
+			; *********************************************************************************************
+
+
+			stop_sound_event Chalons_01_tag
+			stop_sound_event Chalons_02_tag
+			stop_sound_event Chalons_03_tag
+			stop_sound_event Chalons_04_tag
+			stop_sound_event Chalons_05_tag
+			stop_sound_event Chalons_06_tag
+			stop_sound_event Chalons_07_tag
+			stop_sound_event Chalons_08_tag
+			stop_sound_event Chalons_09_tag
+			stop_sound_event Chalons_10_tag
+			stop_sound_event Chalons_11_tag
+			stop_sound_event Chalons_12_tag
+			stop_sound_event Chalons_13_tag
+			stop_sound_event Chalons_14_tag
+			stop_sound_event Chalons_15_tag
+			stop_sound_event Chalons_16_tag
+			stop_sound_event Chalons_17_tag
+			stop_sound_event Chalons_18_tag
+
+
+
+
+
+
+			undefine_unit_group HUN_ARMY
+			undefine_unit_group ROMAN_ARMY
+			undefine_unit_group GOTH_ARMY
+
+
+unit_immediate_place PLYR_ATTILA000 40.293, -397.090, -7
+unit_immediate_place PLYR_STEPPE_SPEARMEN_HUN001 -5.752, -373.469, -10
+unit_immediate_place PLYR_STEPPE_SPEARMEN_HUN002 77.536, -365.093, -7
+unit_immediate_place PLYR_STEPPE_SWORDSMEN_HUN003 16.752, -370.383, -10	
+unit_immediate_place PLYR_STEPPE_SWORDSMEN_HUN004 56.758, -366.913, -5	
+unit_immediate_place PLYR_STEPPE_HEAVY_SPEARMEN_HUN005 35.327, -368.218, -8	
+unit_immediate_place PLYR_HUNNIC_HEAVY_CAVALRY006 -265.216, -394.800, -5	
+unit_immediate_place PLYR_HUNNIC_HEAVY_CAVALRY007 -37.374, -342.860, -5	
+unit_immediate_place PLYR_HUNNIC_HEAVY_CAVALRY008 105.273, -324.983, -9		
+unit_immediate_place PLYR_HUNNIC_LANCERS009 -300.565, -401.123, -5	
+unit_immediate_place PLYR_TRIBAL_CAVALRY0010 -307.863, -375.630, -7	
+unit_immediate_place PLYR_HUNNIC_ARCHERS0011 -92.957, -308.623, -5	
+unit_immediate_place PLYR_TRIBAL_CAVALRY0012 -275.835, -367.979, -8	
+unit_immediate_place PLYR_HUNNIC_ELITE_WARRIORS0013 143.016, -285.309, -3		
+unit_immediate_place PLYR_HUNNIC_ELITE_WARRIORS0014 178.647, -284.133, -1
+unit_immediate_place PLYR_HUNNIC_ELITE_WARRIORS0015 -122.766, -314.355, -4
+
+unit_immediate_place AI_GOTH_WARLORDS100 -186.124, 99.882, 153
+unit_immediate_place AI_GOTHIC_WARRIOR_NOBLES101 -169.241, 74.288, 157
+unit_immediate_place AI_GOTHIC_HORSE_ARCHERS102 -224.872, 42.687, 155
+unit_immediate_place AI_GOTHIC_SPEARMEN103 -192.281, 47.348, 157
+
+
+unit_immediate_place AI_IMPERIAL_GERMAN_BODYGUARD110 57.264, 69.931, 172
+unit_immediate_place AI_LIMITANEI111 64.496, 53.336, 167 
+unit_immediate_place AI_FOEDERATI_INFANTRY112 13.419, 29.322, 156
+unit_immediate_place AI_FOEDERATI_INFANTRY113 126.953, 36.162, 174
+unit_immediate_place AI_COMITATENSES114 96.150, 57.794, 172
+unit_immediate_place AI_COMITATENSES115 103.648, 33.250, 173
+unit_immediate_place AI_COMITATENSES116 72.850, 30.638, 167
+unit_immediate_place AI_AUXILIA_PALATINII117 -0.768, 23.907, 157
+unit_immediate_place AI_MERC_GOLDEN_BAND118 47.815, 26.664, 161
+unit_immediate_place AI_SCHOLAE_PALATINAE119 195.383, 100.721, 177
+unit_immediate_place AI_SCHOLAE_PALATINAE1110 170.076, 99.256, -177
+unit_immediate_place AI_FOEDERATI_CAVALRY1111 -28.172, 78.117, 156
+unit_immediate_place AI_FOEDERATI_CAVALRY1112 -53.038, 66.646, 155
+unit_immediate_place AI_MERC_ALAN_HORSE_ARCHERS1113 -76.818, 56.229, 152
+unit_immediate_place AI_ROMAN_PRIEST1114 75.694, 76.693, 168
+unit_immediate_place AI_MERC_ALAN_NOBLE_CAVALRY1115 147.498, 100.412, -177
+unit_immediate_place AI_LIMITANEI1116 39.716, 49.875, 164
+unit_immediate_place AI_BALLISTA_CARRIAGE1117 -61.798, 116.105, 165
+
+
+
+
+		
+		
+					hiding_enabled_set true
+		
+					steal_esc_key off
+
+		set_camera_bookmark 16,	708.394, 305.894, -560.234 701.105, 305.484, -567.019	; start cam 1
+		set_camera_bookmark 17,	511.579, 235.424, -375.687 505.398, 233.783, -367.953	; start cam 2
+		set_camera_bookmark 18,	50.2956, 208.207, -432.592 50.1922, 204.642, -423.466	; start cam 3
+
+
+			camera_position_at_bookmark 16		; BATTLE START POS
+
+
+
+;			camera_zoom_to_bookmark 17 60		; BATTLE START POS
+
+	
+	
+					; *********************************************************************************************
+					;	Teleport units into position ready for battle.
+					; *********************************************************************************************
+
+
+
+
+
+	
+		release_unit PLYR_ATTILA000
+		release_unit PLYR_STEPPE_SPEARMEN_HUN001
+		release_unit PLYR_STEPPE_SPEARMEN_HUN002
+		release_unit PLYR_STEPPE_SWORDSMEN_HUN003
+		release_unit PLYR_STEPPE_SWORDSMEN_HUN004
+		release_unit PLYR_STEPPE_HEAVY_SPEARMEN_HUN005
+		release_unit PLYR_HUNNIC_HEAVY_CAVALRY006
+		release_unit PLYR_HUNNIC_HEAVY_CAVALRY007
+		release_unit PLYR_HUNNIC_HEAVY_CAVALRY008
+		release_unit PLYR_HUNNIC_LANCERS009
+		release_unit PLYR_TRIBAL_CAVALRY0010
+		release_unit PLYR_HUNNIC_ARCHERS0011
+		release_unit PLYR_TRIBAL_CAVALRY0012
+		release_unit PLYR_HUNNIC_ELITE_WARRIORS0013
+		release_unit PLYR_HUNNIC_ELITE_WARRIORS0014
+		release_unit PLYR_HUNNIC_ELITE_WARRIORS0015
+
+	
+		release_unit AI_GOTH_WARLORDS100
+		release_unit AI_GOTHIC_WARRIOR_NOBLES101
+		release_unit AI_GOTHIC_HORSE_ARCHERS102
+		release_unit AI_GOTHIC_SPEARMEN103
+
+
+		release_unit AI_IMPERIAL_GERMAN_BODYGUARD110
+		release_unit AI_LIMITANEI111
+		release_unit AI_FOEDERATI_INFANTRY112
+		release_unit AI_FOEDERATI_INFANTRY113
+		release_unit AI_COMITATENSES114
+		release_unit AI_COMITATENSES115
+		release_unit AI_COMITATENSES116
+		release_unit AI_AUXILIA_PALATINII117
+		release_unit AI_MERC_GOLDEN_BAND118
+		release_unit AI_SCHOLAE_PALATINAE119
+		release_unit AI_SCHOLAE_PALATINAE1110
+		release_unit AI_FOEDERATI_CAVALRY1111
+		release_unit AI_FOEDERATI_CAVALRY1112
+		release_unit AI_MERC_ALAN_HORSE_ARCHERS1113
+		release_unit AI_ROMAN_PRIEST1114
+		release_unit AI_MERC_ALAN_NOBLE_CAVALRY1115
+		release_unit AI_LIMITANEI1116
+		release_unit AI_BALLISTA_CARRIAGE1117
+
+
+				battle_wait 1
+
+			camera_zoom_to_bookmark 18 120		; BATTLE START POS
+
+				battle_wait 9
+
+
+
+
+
+;;;	OLD		  			unit_immediate_place
+;;; OLD				battle_wait 7
+		
+		
+				show_ui
+		
+				enable_cursor						;enable player to click
+				disable_shortcuts false	
+				inhibit_camera_input false			;	Permit user to move camera.
+				enable_entire_ui
+		
+				camera_restrictions_set on
+				camera_default_mode_set user_pref
+		
+
+;>>>>>>>>>>>>>>>>
+		;	# 78
+		set_camera_bookmark 18,	50.2956, 208.207, -432.592 50.1922, 204.642, -423.466	; start cam 3
+		camera_position_at_bookmark 18
+
+
+
+		;=======================================================================
+		; FERAL_PORT LKB, 15-Nov-2016 -- camera_position_at_bookmark alters the
+		;		current default camera mode to one not supported by iOS.
+		;		Make sure we are in a supported camera mode.
+		;-----------------------------------------------------------------------
+		camera_default_mode_set user_pref
+		
+		
+		;=======================================================================
+		; FERAL_PORT LKB, 14-Mar-2017 -- Turn off camera restrictions as 
+		; 		requested in fbug://RTW-3411.  
+		;-----------------------------------------------------------------------
+		camera_restrictions_set off
+;<<<<<<<<<<<<<<<<
+
+
+		pause_battle
+		suspend_unscripted_advice false
+
+		
+		;		steal_esc_key off
+		
+		
+					; *********************************************************************************************
+					;	Stop the intro narration
+					; *********************************************************************************************
+		
+;;; OLD					stop_sound_event
+
+;;;	OLD				suspend_unscripted_advice true
+		
+		
+		
+				;--------------------------------- attack orders -------------------------------
+				;	unit_order_attack_unit AI PLAYER_UNITS run etc.
+		
+		
+				set_music_state battle battle
+		
+		
+		
+		
+		
+		
+			terminate_monitor
+			end_monitor	
+		
+		
+			; *********************************************************************************************
+			; ********************* END OF BATTLE START MONITOR *******************************************
+			; *********************************************************************************************
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			; *********************************************************************************************
+			; *********************************************************************************************
+			;			Intro sequence - INTRO MONITOR
+			;			Intro sequence - INTRO MONITOR
+			;			Intro sequence - INTRO MONITOR
+			;			Intro sequence - INTRO MONITOR
+			;			Intro sequence - INTRO MONITOR
+			;			Intro sequence - INTRO MONITOR
+			;			Intro sequence - INTRO MONITOR
+			;			Intro sequence - INTRO MONITOR
+			;			Intro sequence - INTRO MONITOR
+			; *********************************************************************************************
+			; *********************************************************************************************
+		
+		
+			monitor_conditions I_CompareCounter intro_sequence = 1
+		
+		
+		
+				; *********************************************************************************************
+				;	Start sequence
+				; *********************************************************************************************
+		
+		
+		
+				battle_default_camera
+		
+		 		camera_restrictions_set off
+		
+				hide_ui
+		
+				; this will jam the music manager and prevent it from playing anything
+				set_music_state custom FORCED_SILENCE
+		
+		
+				hiding_enabled_set true
+		
+				while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+				end_while									; PLAYER CAN ESCAPE
+		
+
+
+	define_unit_group HUN_ARMY PLYR_ATTILA000 PLYR_STEPPE_SPEARMEN_HUN001 PLYR_STEPPE_SPEARMEN_HUN002 PLYR_STEPPE_SWORDSMEN_HUN003 PLYR_STEPPE_SWORDSMEN_HUN004 PLYR_STEPPE_HEAVY_SPEARMEN_HUN005 PLYR_HUNNIC_HEAVY_CAVALRY006 PLYR_HUNNIC_HEAVY_CAVALRY007 PLYR_HUNNIC_HEAVY_CAVALRY008	PLYR_HUNNIC_LANCERS009	PLYR_TRIBAL_CAVALRY0010	PLYR_HUNNIC_ARCHERS0011 PLYR_TRIBAL_CAVALRY0012	PLYR_HUNNIC_ELITE_WARRIORS0013	PLYR_HUNNIC_ELITE_WARRIORS0014	PLYR_HUNNIC_ELITE_WARRIORS0015
+
+	define_unit_group ROMAN_ARMY AI_IMPERIAL_GERMAN_BODYGUARD110 AI_LIMITANEI111 AI_FOEDERATI_INFANTRY112 AI_FOEDERATI_INFANTRY113 AI_COMITATENSES114 AI_COMITATENSES115 AI_COMITATENSES116 AI_AUXILIA_PALATINII117 AI_MERC_GOLDEN_BAND118 AI_SCHOLAE_PALATINAE119 AI_SCHOLAE_PALATINAE1110 AI_FOEDERATI_CAVALRY1111 AI_FOEDERATI_CAVALRY1112 AI_MERC_ALAN_HORSE_ARCHERS1113 AI_ROMAN_PRIEST1114 AI_MERC_ALAN_NOBLE_CAVALRY1115 AI_LIMITANEI1116
+
+	define_unit_group GOTH_ARMY AI_GOTH_WARLORDS100 AI_GOTHIC_WARRIOR_NOBLES101 AI_GOTHIC_HORSE_ARCHERS102 AI_GOTHIC_SPEARMEN103
+
+
+
+
+
+
+
+		
+				set_camera_bookmark 1,	-662.436, 234.434, -631.687 -672.035, 237.579, -629.835
+				set_camera_bookmark 2,	-635.443, 232.809, -715.496 -628.206, 230.96, -709.205
+				set_camera_bookmark 3,	-527.441, 212.064, -692.539 -526.519, 211.931, -692.176
+				set_camera_bookmark 4,	-389.036, 250.024, -701.463 -388.26, 249.891, -700.846
+				set_camera_bookmark 5,	61.9544, 172.726, 74.1712 61.0151, 173.152, 64.2314
+				set_camera_bookmark 6,	62.6629, 173.126, 60.0186 53.346, 173.277, 63.606
+				set_camera_bookmark 7,	100.527, 179.838, 38.4266 90.9003, 178.633, 41.0925
+				set_camera_bookmark 8,	201.924, 175.403, 79.2674 192.992, 174.417, 83.4192
+				set_camera_bookmark 9,	114.25, 174.226, -1.89095 106.179, 175.077, 4.01191
+				set_camera_bookmark 10,	-86.6882, 172.321, 93.2406 -77.6486, 171.954, 89.1093
+				set_camera_bookmark 11,	-201.38, 173.018, 37.8833 -203.959, 172.31, 47.541
+				set_camera_bookmark 12,	-188.327, 170.694, 92.4675 -182.562, 169.86, 84.4998
+				set_camera_bookmark 13,	-379.074, 212.768, -752.959 -374.745, 211.934, -744.129 ;	back to Attila	
+				set_camera_bookmark 14,	170.134, 204.097, -353.748 170.576, 203.968, -352.86
+				set_camera_bookmark 15,	40.051, 204.097, -335.868 39.1159, 203.968, -335.537
+
+
+
+				camera_position_at_bookmark 1		: HUN OVER HILL
+
+
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+					battle_wait 2
+
+		play_sound_event	CHALONS_SPEECH_01		tag = Chalons_01_tag			;   01	Chalons.
+
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+					battle_wait 2
+
+		play_sound_event	CHALONS_SPEECH_02		tag = Chalons_02_tag			;   02	Gaul.
+
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+
+					battle_wait 2
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+		play_sound_event	CHALONS_SPEECH_03		tag = Chalons_03_tag			;   03	451 A.D.
+	
+	
+				unit_group_order_relative_move_unformed HUN_ARMY 150 300 run
+
+					battle_wait 4
+
+		set_music_state custom  CHALONS_MUSIC_INTRO
+
+		play_sound_event	CHALONS_SPEECH_04		tag = Chalons_04_tag			;   04	Attila the Hun, the "Scourge of God", and his rampaging horde ride to battle once more.
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+					battle_wait 7
+		play_sound_event	CHALONS_SPEECH_05		tag = Chalons_05_tag			;   05	A burning swathe of destruction and misery is left in Attila's wake.
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+
+					battle_wait 5
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+				camera_position_at_bookmark 2		;HUN DISTANCE SIDE
+
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+
+					battle_wait 1
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+		play_sound_event	CHALONS_SPEECH_06		tag = Chalons_06_tag			;   06	Ahead lies the soft heartland of the Western Roman Empire, ripe for plunder.
+
+					battle_wait 3
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+
+				camera_zoom_to_bookmark 3 10		; PAN TO ATTILA OVER HUN ARMY
+ 
+ 	
+					battle_wait 3
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+
+		play_sound_event	CHALONS_SPEECH_07		tag = Chalons_07_tag			;   07	The whole of western Europe is at his mercy.
+	
+
+					battle_wait 2
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+				camera_zoom_to_bookmark 4 90
+
+					; Play the new special music once the romans & goths come into view
+					set_music_state custom  		CHALONS_MUSIC
+
+
+					battle_wait 3
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+
+
+				unit_group_order_relative_move_unformed ROMAN_ARMY 0 300
+
+
+				camera_position_at_bookmark 5
+
+		play_sound_event	CHALONS_SPEECH_08		tag = Chalons_08_tag			;   08	But "the last true Roman" and defender of Roman civilisation bars Attila's path.
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+
+	
+					battle_wait 3
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+				camera_position_at_bookmark 6
+
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+
+					battle_wait 3
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+				camera_zoom_to_bookmark 7 17
+
+
+ 					play_sound_event	CHALONS_SPEECH_09		tag = Chalons_09_tag			;   09	Flavius Aetius commands a formidable Roman force.
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+
+					battle_wait 4
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+				camera_position_at_bookmark 8		; CAVALRY
+
+  					play_sound_event	CHALONS_SPEECH_10		tag = Chalons_10_tag			;   10	A host of heavy cavalry prepares to strike hard,
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+
+					battle_wait 5
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+				camera_position_at_bookmark 9		; INFANTRY
+
+					play_sound_event	CHALONS_SPEECH_11		tag = Chalons_11_tag			;   11	while heavy infantry provides the backbone to his army,
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+
+					battle_wait 5
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+				unit_order_move_relative AI_BALLISTA_CARRIAGE1117 0 300 run
+
+					battle_wait 1
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+				camera_position_at_bookmark 10		; CHARIOT BALLISTAE
+
+					play_sound_event	CHALONS_SPEECH_12		tag = Chalons_12_tag			;   12	and carriage ballistae prepare to strike from a distance.
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+
+					battle_wait 4
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+					unit_taunt AI_GOTHIC_SPEARMEN103
+
+					battle_wait 2
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+				camera_position_at_bookmark 11		; TAUNTING SPEARMEN
+
+					battle_wait 2
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+				unit_group_order_relative_move_unformed GOTH_ARMY 0 300
+
+					battle_wait 3
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+					play_sound_event	CHALONS_SPEECH_13		tag = Chalons_13_tag			;   13	Rome's Visigothic allies, commanded by King Theoderic stand ready to join battle.
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+					battle_wait 1
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+				camera_position_at_bookmark 12		; GOTH GENERAL
+
+					battle_wait 3
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+				unit_group_order_relative_move_unformed HUN_ARMY 100 600 run
+	
+					battle_wait 3
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+				camera_position_at_bookmark 13		;BACK TO ATTILA
+
+
+					play_sound_event	CHALONS_SPEECH_14		tag = Chalons_14_tag			;   14	Attila is expert in the ways of war.
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+
+					battle_wait 7
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+				camera_zoom_to_bookmark 14		; LOOK AT HILL
+
+					play_sound_event	CHALONS_SPEECH_15		tag = Chalons_15_tag			;   15	He knows the value of high ground to an army.
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+
+
+					battle_wait 3
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+
+;unit_immediate_place PLYR_ATTILA000 40.293, -497.090, -7
+;unit_immediate_place PLYR_STEPPE_SPEARMEN_HUN001 -5.752, -473.469, -10
+;unit_immediate_place PLYR_STEPPE_SPEARMEN_HUN002 77.536, -465.093, -7
+;unit_immediate_place PLYR_STEPPE_SWORDSMEN_HUN003 16.752, -470.383, -10	
+;unit_immediate_place PLYR_STEPPE_SWORDSMEN_HUN004 56.758, -466.913, -5	
+;unit_immediate_place PLYR_STEPPE_HEAVY_SPEARMEN_HUN005 35.327, -468.218, -8	
+;unit_immediate_place PLYR_HUNNIC_HEAVY_CAVALRY006 -265.216, -494.800, -5	
+;unit_immediate_place PLYR_HUNNIC_HEAVY_CAVALRY007 -37.374, -442.860, -5	
+;unit_immediate_place PLYR_HUNNIC_HEAVY_CAVALRY008 105.273, -424.983, -9		
+;unit_immediate_place PLYR_HUNNIC_LANCERS009 -300.565, -501.123, -5	
+;unit_immediate_place PLYR_TRIBAL_CAVALRY0010 -307.863, -475.630, -7	
+;unit_immediate_place PLYR_HUNNIC_ARCHERS0011 -92.957, -408.623, -5	
+;unit_immediate_place PLYR_TRIBAL_CAVALRY0012 -275.835, -467.979, -8	
+;unit_immediate_place PLYR_HUNNIC_ELITE_WARRIORS0013 143.016, -385.309, -3		
+;unit_immediate_place PLYR_HUNNIC_ELITE_WARRIORS0014 178.647, -384.133, -1
+;unit_immediate_place PLYR_HUNNIC_ELITE_WARRIORS0015 -122.766, -414.355, -4
+
+
+;				unit_group_order_relative_move_unformed HUN_ARMY -150 0 run
+
+					battle_wait 3
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+				camera_zoom_to_bookmark 15		; LOOK AT FOREST
+
+					play_sound_event	CHALONS_SPEECH_16		tag = Chalons_16_tag			;   16	Every wood is a place from which to release his hidden troops in ambush.
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+
+					battle_wait 6
+					while I_CompareCounter battle_start = 1		; PLAYER CAN ESCAPE
+					end_while									; PLAYER CAN ESCAPE
+
+					play_sound_event	CHALONS_SPEECH_17		tag = Chalons_17_tag			;   17	The storm crows circle overhead. The hour has come.
+
+					battle_wait	6 ; FERAL_PORT: ZIR 2019-May-7 Wait for the sound to finish before allowing the battle to start
+
+					
+		
+		
+			
+		
+		
+				set_counter player_not_escape 1	  
+				set_counter battle_start 1	  
+		
+			terminate_monitor
+			end_monitor
+		
+		
+		
+			; *********************************************************************************************
+			; ********************* END OF INTRO SEQUENCE MONITOR *****************************************
+			; *********************************************************************************************
+		
+
+	while I_InBattle
+	end_while
+
+end_script
+
+

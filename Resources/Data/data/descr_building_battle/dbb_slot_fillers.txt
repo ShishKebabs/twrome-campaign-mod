@@ -1,0 +1,384 @@
+; *** new parkland-style slot fillers
+
+
+
+; ** inner walls
+
+
+	slot_filler_inner_wall_48x32_roman
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_inner_wall_48x32_roman
+			physical_info	none
+		}
+	}
+
+	slot_filler_inner_wall_112x64_roman
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_inner_wall_112x64_roman
+			physical_info	none
+		}
+	}
+
+	slot_filler_inner_wall_160x128_roman
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_inner_wall_160x128_roman
+			physical_info	none
+		}
+	}
+
+	slot_filler_inner_wall_48x32_egyptian
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_inner_wall_48x32_egyptian
+			physical_info	none
+		}
+	}
+
+	slot_filler_inner_wall_112x64_egyptian
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_inner_wall_112x64_egyptian
+			physical_info	none
+		}
+	}
+
+	slot_filler_inner_wall_160x128_egyptian
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_inner_wall_160x128_egyptian
+			physical_info	none
+		}
+	}
+
+	slot_filler_inner_wall_48x32_barbarian
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_inner_wall_48x32_barbarian
+			physical_info	none
+		}
+	}
+
+	slot_filler_inner_wall_112x64_barbarian
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_inner_wall_112x64_barbarian
+			physical_info	none
+		}
+	}
+
+	slot_filler_inner_wall_160x128_barbarian
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_inner_wall_160x128_barbarian
+			physical_info	none
+		}
+	}
+
+
+; *** outer walls
+
+
+	slot_filler_outer_wall_48x32_roman
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_outer_wall_48x32_roman
+			physical_info	info_slot_filler_outer_wall_48x32_roman.cas
+		}
+	}	
+
+	slot_filler_outer_wall_112x64_roman
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_outer_wall_112x64_roman
+			physical_info	info_slot_filler_outer_wall_112x64_roman.cas
+		}
+	}
+
+	slot_filler_outer_wall_160x128_roman
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_outer_wall_160x128_roman
+			physical_info	info_slot_filler_outer_wall_160x128_roman.cas
+		}
+	}
+
+	slot_filler_outer_wall_256x192_roman
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_outer_wall_256x192_roman
+			physical_info	info_slot_filler_outer_wall_256x192_roman.cas
+		}
+	}
+
+	slot_filler_outer_wall_256x96_roman
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_outer_wall_256x96_roman
+			physical_info	info_slot_filler_outer_wall_256x96_roman.cas
+		}
+	}
+;
+
+
+	slot_filler_outer_wall_48x32_egyptian
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_outer_wall_48x32_egyptian
+			physical_info	info_slot_filler_outer_wall_48x32_roman.cas
+		}
+	}	
+
+; btw the egyptian models are just referencing the white roman models at the moment, but egyptian-specific ones could be added later.
+
+	slot_filler_outer_wall_112x64_egyptian
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_outer_wall_112x64_egyptian
+			physical_info	info_slot_filler_outer_wall_112x64_roman.cas
+		}
+	}
+
+	slot_filler_outer_wall_160x128_egyptian
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_outer_wall_160x128_egyptian
+			physical_info	info_slot_filler_outer_wall_160x128_roman.cas
+		}
+	}
+
+	slot_filler_outer_wall_256x192_egyptian
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_outer_wall_256x192_egyptian
+			physical_info	info_slot_filler_outer_wall_256x192_roman.cas
+		}
+	}
+
+	slot_filler_outer_wall_256x96_egyptian
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_outer_wall_256x96_egyptian
+			physical_info	info_slot_filler_outer_wall_256x96_roman.cas
+		}
+	}
+
+;
+
+	slot_filler_outer_wall_48x32_barbarian
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_outer_wall_48x32_barbarian
+			physical_info	info_slot_filler_outer_wall_48x32_roman.cas
+		}
+	}	
+
+	slot_filler_outer_wall_112x64_barbarian
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_outer_wall_112x64_barbarian
+			physical_info	info_slot_filler_outer_wall_112x64_roman.cas
+		}
+	}
+
+	slot_filler_outer_wall_160x128_barbarian
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_outer_wall_160x128_barbarian
+			physical_info	info_slot_filler_outer_wall_160x128_roman.cas
+		}
+	}
+
+	slot_filler_outer_wall_256x192_barbarian
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_outer_wall_256x192_barbarian
+			physical_info	info_slot_filler_outer_wall_256x192_roman.cas
+		}
+	}
+
+	slot_filler_outer_wall_256x96_barbarian
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_outer_wall_256x96_barbarian
+			physical_info	info_slot_filler_outer_wall_256x96_roman.cas
+		}
+	}
+
+
+; **** flowers
+	
+
+	slot_empty_112x64_flowers
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_empty_112x64_flowers
+			physical_info	none
+		}
+	}
+
+	slot_filler_112x64_160x128_flowers
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_112x64_160x128_flowers
+			physical_info	none
+		}
+	}
+
+	slot_filler_160x128_256x192_flowers
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_160x128_256x192_flowers
+			physical_info	none
+		}
+	}
+
+	slot_filler_112x64_256x96_flowers
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		slot_filler_112x64_256x96_flowers
+			physical_info	none
+		}
+	}

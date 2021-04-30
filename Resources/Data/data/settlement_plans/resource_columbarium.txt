@@ -1,0 +1,55 @@
+plan
+
+{
+	floor		columbarium_underlay.cas columbarium_overlay.cas
+
+	ground_types	ground_no_grass.tga	-64,	-64,	64,	64
+	borders	border_limits_64m_diameter.CAS
+
+;			x,	y,	rot,	z,
+
+columbarium,		0	0	0	0
+
+roman_tombstone_A,	-16.00,	-18.00,	10.00,	0.00
+roman_tombstone_A,	-26.00,	-26.00,	0.00,	0.00
+roman_tombstone_A,	-21.00,	28.00,	175.00,	0.00
+roman_tombstone_A,	12.00,	18.00,	105.00,	0.00
+roman_tombstone_A,	13.00,	-9.00,	85.00,	0.00
+roman_tombstone_A,	28.00,	10.00,	95.00,	0.00
+roman_tombstone_A,	27.00,	-27.00,	65.00,	0.00
+
+roman_sarcophagus,	-21.00,	-14.00,	-30.00,	0.00
+roman_sarcophagus,	-14.00,	-1.00,	70.00,	0.00
+roman_sarcophagus,	-25.00,	13.00,	65.00,	0.00
+roman_sarcophagus,	-11.00,	29.00,	160.00,	0.00
+roman_sarcophagus,	4.00,	20.00,	-75.00,	0.00
+roman_sarcophagus,	25.00,	20.00,	30.00,	0.00
+roman_sarcophagus,	17.00,	6.00,	-60.00,	0.00
+roman_sarcophagus,	24.00,	-8.00,	85.00,	0.00
+roman_sarcophagus,	22.00,	-24.00,	20.00,	0.00
+
+roman_tombstone_B,	-17.00,	-12.00,	165.00,	0.00
+roman_tombstone_B,	-26.00,	-4.00,	25.00,	0.00
+roman_tombstone_B,	-16.00,	7.00,	-65.00,	0.00
+roman_tombstone_B,	-23.00,	20.00,	-80.00,	0.00
+roman_tombstone_B,	1.00,	28.00,	175.00,	0.00
+roman_tombstone_B,	19.00,	15.00,	-15.00,	0.00
+roman_tombstone_B,	18.00,	-6.00,	-20.00,	0.00
+roman_tombstone_B,	27.00,	-16.00,	85.00,	0.00
+roman_tombstone_B,	15.00,	-28.00,	-25.00,	0.00
+
+roman_pyramid_tomb,	-12.00,	-13.00,	20.00,	0.00
+roman_pyramid_tomb,	-26.00,	5.00,	-45.00,	0.00
+roman_pyramid_tomb,	-14.00,	19.00,	5.00,	0.00
+roman_pyramid_tomb,	18.00,	25.00,	80.00,	0.00
+roman_pyramid_tomb,	26.00,	1.00,	130.00,	0.00
+roman_pyramid_tomb,	16.00,	-18.00,	-30.00,	0.00
+
+
+
+
+
+
+
+
+}

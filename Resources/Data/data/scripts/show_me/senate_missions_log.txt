@@ -1,0 +1,61 @@
+script
+	declare_show_me							; This is a show me script
+
+	declare_counter abandon
+
+	monitor_event AbandonShowMe TrueCondition							;Catch the AbandonShowMe event
+		set_counter abandon 1
+	end_monitor
+
+	monitor_event ScrollAdviceRequested TrueCondition					;Catch the advice being requested again
+		set_counter abandon 1
+	end_monitor
+
+	monitor_conditions I_CompareCounter abandon = 1	
+		ui_flash_stop						; Stop the UI highlighting
+		enable_entire_ui
+		suspend_unscripted_advice false		; Restore unscripted advice
+		terminate_script					; Shut down the show me script
+	end_monitor	
+
+	suspend_unscripted_advice true
+	dismiss_advice
+	disable_entire_ui
+	ui_flash_start faction_button
+	wait 3
+	
+enable_ui faction_button
+	select_ui_element faction_button
+	simulate_mouse_click lclick_down
+	simulate_mouse_click lclick_up
+	ui_flash_stop
+
+disable_ui faction_button
+
+	ui_flash_start combined_scroll_senate_tab
+	wait 3
+	
+enable_ui combined_scroll_senate_tab
+disable_ui combined_scroll_diplomacy_tab
+disable_ui combined_scroll_finances_tab
+disable_ui combined_scroll_faction_tab
+	select_ui_element combined_scroll_senate_tab
+	simulate_mouse_click lclick_down
+	simulate_mouse_click lclick_up
+	ui_flash_stop
+disable_ui combined_scroll_senate_tab
+
+	ui_flash_start senate_scroll_missions_tab
+	wait 3
+
+enable_ui senate_scroll_missions_tab
+disable_ui senate_scroll_policy_tab
+disable_ui senate_scroll_senate_floor_tab
+	select_ui_element senate_scroll_missions_tab
+	simulate_mouse_click lclick_down
+	simulate_mouse_click lclick_up
+	ui_flash_stop
+disable_ui senate_scroll_missions_tab
+	enable_entire_ui
+	suspend_unscripted_advice false
+end_script

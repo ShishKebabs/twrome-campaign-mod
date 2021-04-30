@@ -1,0 +1,961 @@
+; eastern town walls
+
+type			eastern_town_wall_straight
+lod
+max_distance	200
+model_rigid		models_walls/eastern_town_wall_straight_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_wall_straight_low.cas
+
+
+type			eastern_town_external_corner_watchtower
+lod
+max_distance	200
+model_rigid		models_walls/eastern_town_external_corner_watchtower_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_external_corner_watchtower_low.cas
+
+
+
+type			eastern_town_internal_corner_watchtower
+lod
+max_distance	200
+model_rigid		models_walls/eastern_town_internal_corner_watchtower_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_internal_corner_watchtower_low.cas
+
+
+
+
+type			eastern_town_wall_watchtower
+lod
+max_distance	200
+model_rigid		models_walls/eastern_town_wall_watchtower_high.cas
+;lod
+;max_distance	300
+;model_rigid		models_walls/eastern_town_wall_watchtower_med.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_wall_watchtower_low.cas
+
+;;++++++ EASTERN TOWN GATE  +++++++++++
+
+type			eastern_town_gateway
+lod
+max_distance	200
+model_rigid		models_walls/eastern_town_gateway_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_gateway_low.cas
+
+type			eastern_town_gateway_collapse
+lod
+max_distance	200
+model_rigid		models_walls/eastern_town_gateway_collapse.cas
+
+type			eastern_town_gateway_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_town_gateway_collapse_anim.cas
+
+type			eastern_town_gateway_collapse_remains
+lod
+max_distance	200
+model_rigid		models_walls/eastern_town_gateway_collapse_remains.cas
+
+;;+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+type			eastern_town_wall_joiner_straight
+lod
+max_distance	200
+model_rigid		models_walls/eastern_town_wall_joiner_straight_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_wall_joiner_straight_low.cas
+
+
+
+type			eastern_town_wall_joiner_diagonal
+lod
+max_distance	200
+model_rigid		models_walls/eastern_town_wall_joiner_diagonal_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_wall_joiner_diagonal_low.cas
+
+
+
+type			eastern_town_wall_external_corner
+lod
+max_distance	200
+model_rigid		models_walls/eastern_town_wall_external_corner_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_wall_external_corner_low.cas
+
+
+
+type			eastern_town_wall_joiner_external_right
+lod
+max_distance	200
+model_rigid		models_walls/eastern_town_wall_joiner_external_right_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_wall_joiner_external_right_low.cas
+
+
+
+type			eastern_town_wall_joiner_external_left
+lod
+max_distance	200
+model_rigid		models_walls/eastern_town_wall_joiner_external_left_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_wall_joiner_external_left_low.cas
+
+
+
+type			eastern_town_wall_internal_corner
+lod
+max_distance	200
+model_rigid		models_walls/eastern_town_wall_internal_corner_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_wall_internal_corner_low.cas
+
+
+
+type			eastern_town_wall_joiner_internal_right
+lod
+max_distance	200
+model_rigid		models_walls/eastern_town_wall_joiner_internal_right_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_wall_joiner_internal_right_low.cas
+
+
+
+type			eastern_town_wall_joiner_internal_left
+lod
+max_distance	200
+model_rigid		models_walls/eastern_town_wall_joiner_internal_left_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_wall_joiner_internal_left_low.cas
+
+
+type			eastern_town_wall_small_damage
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_wall_small_damage.cas
+
+type			eastern_town_wall_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_town_wall_small_damage_anim.cas
+
+type			eastern_town_wall_small_damage_remains
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_wall_small_damage_remains.cas
+
+type			eastern_town_wall_more_damage
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_wall_more_damage.cas
+
+type			eastern_town_wall_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_town_wall_more_damage_anim.cas
+
+type			eastern_town_wall_more_damage_remains
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_wall_more_damage_remains.cas
+
+type			eastern_town_wall_platform_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_wall_platform_collapse.cas
+
+type			eastern_town_wall_platform_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_town_wall_platform_collapse_anim.cas
+
+type			eastern_town_wall_platform_collapse_remains
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_wall_platform_collapse_remains.cas
+
+type			eastern_town_wall_major_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_wall_major_collapse.cas
+
+type			eastern_town_wall_major_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_town_wall_major_collapse_anim.cas
+
+type			eastern_town_wall_major_collapse_remains
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_wall_major_collapse_remains.cas
+
+type			eastern_town_wall_final_major_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_wall_final_major_collapse.cas
+
+type			eastern_town_wall_final_major_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_town_wall_final_major_collapse_anim.cas
+
+type			eastern_town_wall_final_major_collapse_remains
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_wall_final_major_collapse_remains.cas
+
+
+type			eastern_town_tower_small_damage
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_tower_small_damage.cas
+
+type			eastern_town_tower_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_town_tower_small_damage_anim.cas
+
+type			eastern_town_tower_more_damage
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_tower_more_damage.cas
+
+type			eastern_town_tower_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_town_tower_more_damage_anim.cas
+
+type			eastern_town_tower_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_tower_collapse.cas
+
+type			eastern_town_tower_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_town_tower_collapse_anim.cas
+
+
+
+type			eastern_town_tower_ec_small_damage
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_tower_ec_small_damage.cas
+
+type			eastern_town_tower_ec_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_town_tower_ec_small_damage_anim.cas
+
+type			eastern_town_tower_ec_more_damage
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_tower_ec_more_damage.cas
+
+type			eastern_town_tower_ec_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_town_tower_ec_more_damage_anim.cas
+
+type			eastern_town_tower_ec_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_tower_ec_collapse.cas
+
+type			eastern_town_tower_ec_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_town_tower_ec_collapse_anim.cas
+
+type			eastern_town_tower_ic_small_damage
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_tower_ic_small_damage.cas
+
+type			eastern_town_tower_ic_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_town_tower_ic_small_damage_anim.cas
+
+type			eastern_town_tower_ic_more_damage
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_tower_ic_more_damage.cas
+
+type			eastern_town_tower_ic_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_town_tower_ic_more_damage_anim.cas
+
+type			eastern_town_tower_ic_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_town_tower_ic_collapse.cas
+
+type			eastern_town_tower_ic_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_town_tower_ic_collapse_anim.cas
+
+
+
+
+; **********************     eastern city walls
+
+
+
+type			eastern_city_wall_straight
+lod
+max_distance	200
+model_rigid		models_walls/eastern_city_wall_straight_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_wall_straight_low.cas
+
+
+
+
+type			eastern_city_external_corner_watchtower
+lod
+max_distance	200
+model_rigid		models_walls/eastern_city_external_corner_watchtower_high.CAS
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_external_corner_watchtower_low.CAS
+
+
+
+type			eastern_city_internal_corner_watchtower
+lod
+max_distance	200
+model_rigid		models_walls/eastern_city_internal_corner_watchtower_high.CAS
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_internal_corner_watchtower_low.CAS
+
+
+
+
+type			eastern_city_wall_watchtower
+lod
+max_distance	200
+model_rigid		models_walls/eastern_city_wall_watchtower_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_wall_watchtower_low.cas
+
+;++++++++++++  EASTERN CITY GATE  ++++++++++++++++++++
+
+type			eastern_city_gateway
+lod
+max_distance	300
+model_rigid		models_walls/eastern_city_gateway_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_gateway_low.cas
+
+type			eastern_city_gateway_collapse
+lod
+max_distance	200
+model_rigid		models_walls/eastern_city_gateway_collapse.cas
+
+type			eastern_city_gateway_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_city_gateway_collapse_anim.cas
+
+type			eastern_city_gateway_collapse_remains
+lod
+max_distance	200
+model_rigid		models_walls/eastern_city_gateway_collapse_remains.cas
+
+;++++++++++++++++++++++++++++++++++++++++++++++++++
+
+type			eastern_city_wall_joiner_straight
+lod
+max_distance	200
+model_rigid		models_walls/eastern_city_wall_joiner_straight_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_wall_joiner_straight_low.cas
+
+
+
+type			eastern_city_wall_joiner_diagonal
+lod
+max_distance	200
+model_rigid		models_walls/eastern_city_wall_joiner_diagonal_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_wall_joiner_diagonal_low.cas
+
+
+
+type			eastern_city_wall_external_corner
+lod
+max_distance	200
+model_rigid		models_walls/eastern_city_wall_external_corner_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_wall_external_corner_low.cas
+
+
+
+type			eastern_city_wall_joiner_external_right
+lod
+max_distance	200
+model_rigid		models_walls/eastern_city_wall_joiner_external_right_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_wall_joiner_external_right_low.cas
+
+
+
+type			eastern_city_wall_joiner_external_left
+lod
+max_distance	200
+model_rigid		models_walls/eastern_city_wall_joiner_external_left_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_wall_joiner_external_left_low.cas
+
+
+
+type			eastern_city_wall_internal_corner
+lod
+max_distance	200
+model_rigid		models_walls/eastern_city_wall_internal_corner_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_wall_internal_corner_low.cas
+
+
+
+type			eastern_city_wall_joiner_internal_right
+lod
+max_distance	200
+model_rigid		models_walls/eastern_city_wall_joiner_internal_right_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_wall_joiner_internal_right_low.cas
+
+
+
+type			eastern_city_wall_joiner_internal_left
+lod
+max_distance	200
+model_rigid		models_walls/eastern_city_wall_joiner_internal_left_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_wall_joiner_internal_left_low.cas
+
+
+type			eastern_city_wall_small_damage
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_wall_small_damage.cas
+
+type			eastern_city_wall_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_city_wall_small_damage_anim.cas
+
+type			eastern_city_wall_small_damage_remains
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_wall_small_damage_remains.cas
+
+type			eastern_city_wall_more_damage
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_wall_more_damage.cas
+
+type			eastern_city_wall_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_city_wall_more_damage_anim.cas
+
+type			eastern_city_wall_more_damage_remains
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_wall_more_damage_remains.cas
+
+type			eastern_city_wall_platform_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_wall_platform_collapse.cas
+
+type			eastern_city_wall_platform_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_city_wall_platform_collapse_anim.cas
+
+type			eastern_city_wall_platform_collapse_remains
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_wall_platform_collapse_remains.cas
+
+type			eastern_city_wall_major_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_wall_major_collapse.cas
+
+type			eastern_city_wall_major_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_city_wall_major_collapse_anim.cas
+
+type			eastern_city_wall_major_collapse_remains
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_wall_major_collapse_remains.cas
+
+type			eastern_city_wall_final_major_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_wall_final_major_collapse.cas
+
+type			eastern_city_wall_final_major_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_city_wall_final_major_collapse_anim.cas
+
+type			eastern_city_wall_final_major_collapse_remains
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_wall_final_major_collapse_remains.cas
+
+
+type			eastern_city_tower_small_damage
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_tower_small_damage.cas
+
+type			eastern_city_tower_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_city_tower_small_damage_anim.cas
+
+type			eastern_city_tower_more_damage
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_tower_more_damage.cas
+
+type			eastern_city_tower_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_city_tower_more_damage_anim.cas
+
+type			eastern_city_tower_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_tower_collapse.cas
+
+type			eastern_city_tower_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_city_tower_collapse_anim.cas
+
+
+
+type			eastern_city_tower_ec_small_damage
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_tower_ec_small_damage.cas
+
+type			eastern_city_tower_ec_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_city_tower_ec_small_damage_anim.cas
+
+type			eastern_city_tower_ec_more_damage
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_tower_ec_more_damage.cas
+
+type			eastern_city_tower_ec_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_city_tower_ec_more_damage_anim.cas
+
+type			eastern_city_tower_ec_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_tower_ec_collapse.cas
+
+type			eastern_city_tower_ec_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_city_tower_ec_collapse_anim.cas
+
+type			eastern_city_tower_ic_small_damage
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_tower_ic_small_damage.cas
+
+type			eastern_city_tower_ic_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_city_tower_ic_small_damage_anim.cas
+
+type			eastern_city_tower_ic_more_damage
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_tower_ic_more_damage.cas
+
+type			eastern_city_tower_ic_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_city_tower_ic_more_damage_anim.cas
+
+type			eastern_city_tower_ic_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_city_tower_ic_collapse.cas
+
+type			eastern_city_tower_ic_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_city_tower_ic_collapse_anim.cas
+
+
+
+; ********************      eastern huge city walls
+
+
+
+
+type			eastern_huge_city_wall_straight
+lod
+max_distance	200
+model_rigid		models_walls/eastern_huge_city_wall_straight_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_wall_straight_low.cas
+
+
+
+
+type			eastern_huge_city_external_corner_watchtower
+lod
+max_distance	200
+model_rigid		models_walls/eastern_huge_city_external_corner_watchtower_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_external_corner_watchtower_low.cas
+
+
+
+type			eastern_huge_city_internal_corner_watchtower
+lod
+max_distance	200
+model_rigid		models_walls/eastern_huge_city_internal_corner_watchtower_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_internal_corner_watchtower_low.cas
+
+
+
+
+type			eastern_huge_city_wall_watchtower
+lod
+max_distance	200
+model_rigid		models_walls/eastern_huge_city_wall_watchtower_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_wall_watchtower_low.cas
+
+;++++++++++++++  EASTERN HUGE CITY GATEWAY  ++++++++++++++++
+
+type			eastern_huge_city_gateway
+lod
+max_distance	200
+model_rigid		models_walls/eastern_huge_city_gateway_high.cas
+;lod
+;max_distance	300
+;model_rigid		models_walls/eastern_huge_city_gateway_med.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_gateway_low.cas
+
+type			eastern_huge_city_gateway_collapse
+lod
+max_distance	200
+model_rigid		models_walls/eastern_huge_city_gateway_collapse.cas
+
+type			eastern_huge_city_gateway_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_huge_city_gateway_collapse_anim.cas
+
+type			eastern_huge_city_gateway_collapse_remains
+lod
+max_distance	200
+model_rigid		models_walls/eastern_huge_city_gateway_collapse_remains.cas
+
+;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+type			eastern_huge_city_wall_joiner_straight
+lod
+max_distance	200
+model_rigid		models_walls/eastern_huge_city_wall_joiner_straight_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_wall_joiner_straight_low.cas
+
+
+
+type			eastern_huge_city_wall_joiner_diagonal
+lod
+max_distance	200
+model_rigid		models_walls/eastern_huge_city_wall_joiner_diagonal_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_wall_joiner_diagonal_low.cas
+
+
+
+type			eastern_huge_city_wall_external_corner
+lod
+max_distance	200
+model_rigid		models_walls/eastern_huge_city_wall_external_corner_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_wall_external_corner_low.cas
+
+
+
+type			eastern_huge_city_wall_joiner_external_right
+lod
+max_distance	200
+model_rigid		models_walls/eastern_huge_city_wall_joiner_external_right_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_wall_joiner_external_right_low.cas
+
+
+
+type			eastern_huge_city_wall_joiner_external_left
+lod
+max_distance	200
+model_rigid		models_walls/eastern_huge_city_wall_joiner_external_left_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_wall_joiner_external_left_low.cas
+
+
+
+type			eastern_huge_city_wall_internal_corner
+lod
+max_distance	200
+model_rigid		models_walls/eastern_huge_city_wall_internal_corner_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_wall_internal_corner_low.cas
+
+
+
+type			eastern_huge_city_wall_joiner_internal_right
+lod
+max_distance	200
+model_rigid		models_walls/eastern_huge_city_wall_joiner_internal_right_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_wall_joiner_internal_right_low.cas
+
+
+
+type			eastern_huge_city_wall_joiner_internal_left
+lod
+max_distance	200
+model_rigid		models_walls/eastern_huge_city_wall_joiner_internal_left_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_wall_joiner_internal_left_low.cas
+
+
+type			eastern_huge_city_wall_small_damage
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_wall_small_damage.cas
+
+type			eastern_huge_city_wall_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_huge_city_wall_small_damage_anim.cas
+
+type			eastern_huge_city_wall_small_damage_remains
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_wall_small_damage_remains.cas
+
+type			eastern_huge_city_wall_more_damage
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_wall_more_damage.cas
+
+type			eastern_huge_city_wall_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_huge_city_wall_more_damage_anim.cas
+
+type			eastern_huge_city_wall_more_damage_remains
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_wall_more_damage_remains.cas
+
+type			eastern_huge_city_wall_platform_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_wall_platform_collapse.cas
+
+type			eastern_huge_city_wall_platform_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_huge_city_wall_platform_collapse_anim.cas
+
+type			eastern_huge_city_wall_platform_collapse_remains
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_wall_platform_collapse_remains.cas
+
+type			eastern_huge_city_wall_major_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_wall_major_collapse.cas
+
+type			eastern_huge_city_wall_major_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_huge_city_wall_major_collapse_anim.cas
+
+type			eastern_huge_city_wall_major_collapse_remains
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_wall_major_collapse_remains.cas
+
+type			eastern_huge_city_wall_final_major_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_wall_final_major_collapse.cas
+
+type			eastern_huge_city_wall_final_major_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_huge_city_wall_final_major_collapse_anim.cas ; !!!
+
+type			eastern_huge_city_wall_final_major_collapse_remains
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_wall_final_major_collapse_remains.cas
+
+
+type			eastern_huge_city_tower_small_damage
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_tower_small_damage.cas
+
+type			eastern_huge_city_tower_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_huge_city_tower_small_damage_anim.cas
+
+type			eastern_huge_city_tower_more_damage
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_tower_more_damage.cas
+
+type			eastern_huge_city_tower_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_huge_city_tower_more_damage_anim.cas
+
+type			eastern_huge_city_tower_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_tower_collapse.cas
+
+type			eastern_huge_city_tower_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_huge_city_tower_collapse_anim.cas
+
+
+
+type			eastern_huge_city_tower_ec_small_damage
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_tower_ec_small_damage.cas
+
+type			eastern_huge_city_tower_ec_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_huge_city_tower_ec_small_damage_anim.cas
+
+type			eastern_huge_city_tower_ec_more_damage
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_tower_ec_more_damage.cas
+
+type			eastern_huge_city_tower_ec_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_huge_city_tower_ec_more_damage_anim.cas
+
+type			eastern_huge_city_tower_ec_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_tower_ec_collapse.cas
+
+type			eastern_huge_city_tower_ec_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_huge_city_tower_ec_collapse_anim.cas
+
+type			eastern_huge_city_tower_ic_small_damage
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_tower_ic_small_damage.cas
+
+type			eastern_huge_city_tower_ic_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_huge_city_tower_ic_small_damage_anim.cas
+
+type			eastern_huge_city_tower_ic_more_damage
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_tower_ic_more_damage.cas
+
+type			eastern_huge_city_tower_ic_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_huge_city_tower_ic_more_damage_anim.cas
+
+type			eastern_huge_city_tower_ic_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/eastern_huge_city_tower_ic_collapse.cas
+
+type			eastern_huge_city_tower_ic_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/eastern_huge_city_tower_ic_collapse_anim.cas

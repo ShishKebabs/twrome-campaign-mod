@@ -1,0 +1,196 @@
+script
+	declare_show_me															;This is a show me script
+	
+	declare_counter abandon													;Track abandon events
+
+	suspend_unscripted_advice true											;Don't display any advice that isn't part of this show me script
+
+	monitor_event ScrollClosed ScrollClosed own_settlement_info_scroll		;Catch the scroll closing
+		set_counter abandon 1
+	end_monitor
+
+	monitor_event AbandonShowMe TrueCondition								;Catch the AbandonShowMe event
+		set_counter abandon 1
+	end_monitor
+
+	monitor_event SettlementScrollAdviceRequested TrueCondition				;Catch the advice being requested again
+		set_counter abandon 1
+	end_monitor
+
+	monitor_conditions I_CompareCounter abandon = 1							;Catch the show me being abandoned for whatever reason
+		ui_flash_stop														;Stop the UI highlighting
+		suspend_unscripted_advice false										;Restore unscripted advice
+		terminate_script													;All done
+	end_monitor
+
+	dismiss_advice															;Gets rid of settlement help intro advice
+	while I_AdvisorVisible													;While the advisor is on screen...
+	end_while
+
+	;disable_ui show_construction_advice_button
+	;disable_ui building_browser_button
+	;disable_ui garrison_info_zoom_to_button
+	;disable_ui settlement_stats_button
+
+
+;governor's panel
+	advance_advice_thread Settlement_Help_Governors_Panel_Alternative_Thread	;Display governor's panel advice
+	ui_flash_start own_settlement_governor_info_panel
+														
+	while I_AdvisorVisible										;Keep UI highlighting and advice on screen until dismissed by player
+	end_while
+
+;stats panel
+	select_ui_element settlement_info_construction_tab					;Select the construction tab to ensure that the show me is running in the correct view
+	simulate_mouse_click lclick_up								;Click the repair mode tab
+
+disable_ui settlement_info_retrain_tab
+disable_ui settlement_info_recruitment_tab
+disable_ui settlement_info_repair_tab	
+
+	advance_advice_thread Settlement_Help_Stats_Intro_Thread				;Display settlement stats panel advice
+	while I_AdvisorVisible													;Keep advice on screen until dismissed by player
+	end_while
+
+	advance_advice_thread Settlement_Help_Advanced_Stats_Intro_Thread 		;Display intro to advanced settlement stats advice
+disable_ui settlement_stats_button	
+	ui_flash_start settlement_stats_button									;Highlight the settlement details button
+	while I_AdvisorVisible													;Keep advice on screen until dismissed by player
+	end_while
+
+
+;icons and policies
+	advance_advice_thread Settlement_Help_Icons_Thread						;Display settlement status icons advice
+
+	ui_flash_start settlement_status_icons_group							;Highlight the settlement status icons
+	enable_ui settlement_state_icon_revolting
+	wait 2
+
+	disable_ui settlement_state_icon_revolting
+	enable_ui settlement_state_icon_under_siege
+	wait 2
+
+	disable_ui settlement_state_icon_under_siege
+	enable_ui settlement_state_icon_plague
+	wait 2
+
+	disable_ui settlement_state_icon_plague
+	wait 2
+
+	while I_AdvisorVisible													;Keep UI highlighting and advice on screen until dismissed by player
+	end_while
+
+	ui_flash_stop															;Stop the UI highlighting
+
+	advance_advice_thread Settlement_Help_Policies_Automanaged_Alternative_Thread ;Display taxation policy advice
+	ui_flash_start governor_policy_inc_gadget							;Highlight the arrow button for increasing taxation level
+	wait 2												;Pause for 1 second
+
+	ui_flash_start governor_policy_dec_gadget							;Jump to highlighting the arrow button for decreasing taxation level
+	wait 2
+
+	ui_flash_stop										;Stop the UI highlighting
+	while I_AdvisorVisible										;Keep UI highlighting and advice on screen until dismissed by player
+	end_while
+	
+;construction
+	advance_advice_thread Settlement_Help_Construction_Basics_Thread 			;Display construction queue advice
+	ui_flash_start available_construction_options						;Highlight the building list
+	while I_AdvisorVisible										;Keep UI highlighting and advice on screen until dismissed by player
+	end_while
+
+	ui_flash_stop											;Stop the UI highlighting
+	advance_advice_thread Settlement_Help_Construction_Detail_Alternative_Thread  ;Display building repair advice
+	ui_flash_start settlement_info_repair_tab							;Highlight the repair tab
+	
+enable_ui settlement_info_repair_tab
+	select_ui_element settlement_info_repair_tab						;Select the repair mode tab
+	simulate_mouse_click lclick_up								;Click the repair mode tab
+	wait 3												;Pause for 3 seconds so the player can view the building repair list
+	
+	select_ui_element settlement_info_repair_tab						;Select the repair mode tab
+	simulate_mouse_click lclick_up								;Click the repair mode tab
+	while I_AdvisorVisible										;Keep UI highlighting and advice on screen until dismissed by player
+	end_while
+disable_ui settlement_info_repair_tab
+
+	advance_advice_thread Settlement_Help_Building_Browser_Intro_Thread 		;Display intro to building browser advice
+disable_ui building_browser_button	
+	ui_flash_start building_browser_button							;Highlight the building browser button
+	while I_AdvisorVisible										;Keep UI highlighting and advice on screen until dismissed by the player
+	end_while
+	
+	ui_flash_stop											;Stop the UI highlighting
+
+	advance_advice_thread Settlement_Help_Construction_Advice_Thread 			;Display request advice button thread
+disable_ui show_construction_advice_button	
+	ui_flash_start show_construction_advice_button						;Highlight the request advice button
+	while I_AdvisorVisible										;Keep UI highlighting and advice on screen until dismissed by the player
+	end_while
+
+	ui_flash_stop											;Stop the UI highlighting
+
+;recruitment
+	advance_advice_thread Settlement_Help_Recruitment_Basics_Thread 			;Display basic recruitment advice
+	ui_flash_start settlement_info_recruitment_tab						;Highlight the recruitment tab
+	wait 2												;Pause for 2 seconds
+
+enable_ui settlement_info_recruitment_tab
+	select_ui_element settlement_info_recruitment_tab					;Select the recruitment tab
+	simulate_mouse_click lclick_up								;Click the recruitment tab
+disable_ui settlement_info_recruitment_tab
+	
+	ui_flash_start available_training_options							;Highlight the recruitment list
+	while I_AdvisorVisible										;Keep the UI highlighting and advice on screen until dismissed by the player
+	end_while
+
+	ui_flash_stop											;Stop the UI highlighting
+	
+	advance_advice_thread Settlement_Help_Retraining_Alternative_Thread		;Display unit retraining advice
+	ui_flash_start settlement_info_retrain_tab						;Highlight the retrain tab
+
+enable_ui settlement_info_retrain_tab
+	select_ui_element settlement_info_retrain_tab						;Select the retrain tab
+	simulate_mouse_click lclick_up								;Click the retrain tab
+disable_ui settlement_info_retrain_tab	
+	
+	while I_AdvisorVisible										;Keep the UI highlighting and advice on screen until dismissed by the player
+	end_while
+
+	ui_flash_stop											;Stop the UI highlighting
+enable_ui settlement_info_construction_tab
+select_ui_element settlement_info_construction_tab
+simulate_mouse_click lclick_up
+
+	advance_advice_thread Settlement_Help_Recruitment_Advice_Thread 			;Display request advice button thread
+disable_ui show_construction_advice_button	
+	ui_flash_start show_construction_advice_button						;Highlight the request advice button
+	while I_AdvisorVisible										;Keep the UI highlighting and advice on screen until dismissed by the player
+	end_while
+
+	ui_flash_stop											;Stop the UI highlighting
+
+;centre map, exit
+	advance_advice_thread Settlement_Help_Centre_Map_Thread				;Display centre map advice
+disable_ui garrison_info_zoom_to_button	
+	ui_flash_start garrison_info_zoom_to_button							;Highlight the centre map button
+	while I_AdvisorVisible										;Keep UI highlighted and advice on screen until dismissed by the player
+	end_while
+
+	ui_flash_stop											;Stop the UI highlighting
+
+	advance_advice_thread Settlement_Help_Exit_Scroll_Thread				;Display scroll exit advice
+	while I_AdvisorVisible										;Keep UI highlighted and advice on screen until dismissed by the player
+	end_while
+
+	disable_ui settlement_status_icons_group
+	enable_ui settlement_info_recruitment_tab
+	enable_ui settlement_info_repair_tab
+	enable_ui settlement_info_retrain_tab
+	;enable_ui show_construction_advice_button
+	;enable_ui building_browser_button
+	;enable_ui garrison_info_zoom_to_button
+	;enable_ui settlement_stats_button
+
+	suspend_unscripted_advice false								;Restore unscripted advice
+end_script

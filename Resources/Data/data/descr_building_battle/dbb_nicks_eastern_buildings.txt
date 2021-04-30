@@ -1,0 +1,822 @@
+
+
+;; eastern Ludus Magna uses this academy model
+
+	academy_eastern
+	{
+		stat_cat medium_stone
+		localised_name academy
+		level
+		{
+			min_health 1
+			battle_stats
+			item		academy_eastern
+			physical_info	info_academy_eastern.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_112x64
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+
+	base_academy_eastern
+	{
+		stat_cat medium_stone
+		localised_name academy
+		level
+		{
+			min_health 0
+			battle_stats
+			item		base_academy_eastern
+			physical_info	none
+		}
+	}
+
+
+	city_barracks_eastern
+	{
+		stat_cat medium_stone
+		localised_name city_barracks
+		level
+		{
+			min_health 1
+			battle_stats
+			item		city_barracks_eastern
+			physical_info	info_city_barracks_eastern.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		city_barracks_eastern_rubble
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+
+	eastern_park_building
+	{
+		stat_cat small_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		eastern_park_building
+			physical_info	info_eastern_park_building.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_17x13
+			physical_info	info_roman_rubble_17x13.cas
+		}
+	}
+
+	eastern_great_forum
+	{
+		stat_cat large_stone
+		localised_name grand_bazaar
+		level
+		{
+			min_health 1
+			battle_stats
+			item		eastern_great_forum
+			physical_info	info_eastern_great_forum.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		eastern_great_forum_rubble
+			physical_info	info_roman_rubble_160x128.cas
+		}
+	}
+
+
+	eastern_park_pillar
+	{
+		stat_cat indestructable
+		localised_name ambient
+		level
+		{
+			min_health 0
+			battle_stats
+			item		eastern_park_pillar
+			physical_info	info_eastern_park_pillar.cas
+		}
+	}
+
+
+
+;;; eastern scriptorium uses this ludus_magnus_eastern model
+	ludus_magnus_eastern
+	{
+		stat_cat large_stone
+		localised_name ludus_magna
+		level
+		{
+			min_health 1
+			battle_stats
+			item		ludus_magnus_eastern
+			physical_info	info_ludus_magnus_eastern.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_48x32
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+
+	militia_barracks_eastern
+	{
+		stat_cat large_stone
+		localised_name militia_barracks
+		level
+		{
+			min_health 1
+			battle_stats
+			item		militia_barracks_eastern
+			physical_info	info_militia_barracks_eastern.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		militia_barracks_eastern_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+;;; eastern academy uses this scriptorium_eastern model.
+	scriptorium_eastern
+	{
+		stat_cat large_stone
+		localised_name scriptorium
+		level
+		{
+			min_health 1
+			battle_stats
+			item		scriptorium_eastern
+			physical_info	info_scriptorium_eastern.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_48x32
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+	
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;; FAST DRAW AMBIENT BUILDINGS ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;	
+	
+	east_tenamentA
+	{
+		stat_cat large_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		east_tenamentA east_tenament_A_props_big east_tenament_A_props_medium east_tenament_A_props_small
+			physical_info	east_tenamentA_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		eastern_rubble_tenamentA 
+			physical_info	info_eastern_rubble_tenamentA.cas
+		}
+	}
+	east_tenamentB
+	{
+		stat_cat small_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		east_tenamentB east_tenamentB_props
+			physical_info	east_tenamentB_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		eastern_rubble_tenamentB
+			physical_info	info_eastern_rubble_tenamentB.cas
+		}
+	}
+	east_tenamentC
+	{
+		stat_cat medium_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		east_tenamentC east_tenament_C_props_big east_tenament_C_props_medium east_tenament_C_props_small
+			physical_info	east_tenamentC_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		eastern_rubble_tenamentC
+			physical_info	info_eastern_rubble_tenamentC.cas
+		}
+	}
+	
+	east_tenamentD
+	{
+		stat_cat medium_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		east_tenamentD east_tenament_D_props_big east_tenament_D_props_medium east_tenament_D_props_small
+			physical_info	east_tenamentD_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		eastern_rubble_tenamentD
+			physical_info	info_eastern_rubble_tenamentD.cas
+		}
+	}
+		
+	egyptian_tenamentA
+	{
+		stat_cat large_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		egyptian_tenamentA egyptian_tenament_A_props_big egyptian_tenament_A_props_medium egyptian_tenament_A_props_small
+			physical_info	egyptian_tenamentA_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		eastern_rubble_tenamentA
+			physical_info	info_eastern_rubble_tenamentA.cas
+		}
+	}
+	egyptian_tenamentB
+	{
+		stat_cat small_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		egyptian_tenamentB egyptian_tenamentB_props
+			physical_info	east_tenamentB_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		eastern_rubble_tenamentB
+			physical_info	info_eastern_rubble_tenamentB.cas
+		}
+	}
+	egyptian_tenamentC
+	{
+		stat_cat medium_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		egyptian_tenamentC egyptian_tenament_C_props_big egyptian_tenament_C_props_medium egyptian_tenament_C_props_small
+			physical_info	east_tenamentC_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		eastern_rubble_tenamentC
+			physical_info	info_eastern_rubble_tenamentC.cas
+		}
+	}
+	
+	egyptian_tenamentD
+	{
+		stat_cat medium_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		egyptian_tenamentD egyptian_tenament_D_props_big egyptian_tenament_D_props_medium egyptian_tenament_D_props_small
+			physical_info	east_tenamentD_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		eastern_rubble_tenamentD
+			physical_info	info_eastern_rubble_tenamentD.cas
+		}
+	}
+
+;;;;;;;;;;;;;;;;;;;;Eastern_village_buildings
+
+	egyptian_village_compound_wall
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		egyptian_village_compound_wall
+			physical_info	egyptian_village_compound_wall_info.CAS
+		}
+	}
+
+		
+;;;;;;;;;;;;;;;;;;;;Eastern_city_buildings
+
+	eastern_city_collision_tenamentsA
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_city_collision_tenamentsA.CAS
+		}
+	}
+
+	eastern_city_collision_tenamentsB
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_city_collision_tenamentsB.CAS
+		}
+	}
+
+	eastern_city_collision_tenamentsC
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_city_collision_tenamentsC.CAS
+		}
+	}
+
+	eastern_city_collision_tenamentsD
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_city_collision_tenamentsD.CAS
+		}
+	}
+
+	eastern_city_collision_tenamentsE
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_city_collision_tenamentsE.CAS
+		}
+	}
+
+	
+;;;;;;;;;;;;;;;;Eastern Town Buildings
+
+	eastern_town_collision_tenamentsA
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_town_collision_tenamentsA.CAS
+		}
+	}
+
+	eastern_town_collision_tenamentsB
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_town_collision_tenamentsB.CAS
+		}
+	}
+
+	eastern_town_collision_tenamentsC
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_town_collision_tenamentsC.CAS
+		}
+	}
+
+	eastern_town_collision_tenamentsD
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_town_collision_tenamentsD.CAS
+		}
+	}
+
+;;;;;;;;;;;;;;;;Eastern LARGE Town Buildings
+
+	eastern_large_town_collision_tenamentsA
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_large_town_collision_tenamentsA.CAS
+		}
+	}
+
+	eastern_large_town_collision_tenamentsB
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_large_town_collision_tenamentsB.CAS
+		}
+	}
+
+	eastern_large_town_collision_tenamentsC
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_large_town_collision_tenamentsC.CAS
+		}
+	}
+
+	eastern_large_town_collision_tenamentsD
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_large_town_collision_tenamentsD.CAS
+		}
+	}
+
+	eastern_large_town_collision_tenamentsE
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_large_town_collision_tenamentsE.CAS
+		}
+	}
+
+;;;;;;;;;;;;;;;;Eastern huge city Buildings
+
+	eastern_huge_city_collision_tenamentA
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_huge_city_collision_tenamentA.CAS
+		}
+	}
+
+
+	eastern_huge_city_collision_tenamentB
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_huge_city_collision_tenamentB.CAS
+		}
+	}
+
+	eastern_huge_city_collision_tenamentC
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_huge_city_collision_tenamentC.CAS
+		}
+	}
+
+	eastern_huge_city_collision_tenamentD
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_huge_city_collision_tenamentD.CAS
+		}
+	}
+
+	eastern_huge_city_collision_tenamentE
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_huge_city_collision_tenamentE.CAS
+		}
+	}
+
+	eastern_huge_city_collision_tenamentF
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_huge_city_collision_tenamentF.CAS
+		}
+	}
+
+	eastern_huge_city_collision_tenamentG
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_huge_city_collision_tenamentG.CAS
+		}
+	}
+
+;;;;;;;;;;;;;;;;;;;;Egyptian fort/camp buildings
+
+	egyptian_camp_collisionA
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	egyptian_camp_collisionA_info.CAS
+		}
+	}
+
+	egyptian_camp_collisionB
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	egyptian_camp_collisionB_info.CAS
+		}
+	}
+	egyptian_camp_collisionC
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	egyptian_camp_collisionC_info.CAS
+		}
+	}
+	egyptian_camp_collisionD
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	egyptian_camp_collisionD_info.CAS
+		}
+	}
+
+;;;;;;;;;;;;;;;;Eastern large city Buildings
+
+	eastern_large_city_collision_tenamentA
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_large_city_collision_tenamentA.CAS
+		}
+	}
+
+	eastern_large_city_collision_tenamentB
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_large_city_collision_tenamentB.CAS
+		}
+	}
+
+	eastern_large_city_collision_tenamentC
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_large_city_collision_tenamentC.CAS
+		}
+	}
+
+	eastern_large_city_collision_tenamentD
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_large_city_collision_tenamentD.CAS
+		}
+	}
+
+	eastern_large_city_collision_tenamentE
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_large_city_collision_tenamentE.CAS
+		}
+	}
+
+	eastern_large_city_collision_tenamentF
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_large_city_collision_tenamentF.CAS
+		}
+	}
+
+	eastern_large_city_collision_tenamentG
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_large_city_collision_tenamentG.CAS
+		}
+	}
+
+	eastern_large_city_collision_tenamentH
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_large_city_collision_tenamentH.CAS
+		}
+	}
+
+	eastern_large_city_collision_tenamentI
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_large_city_collision_tenamentI.CAS
+		}
+	}

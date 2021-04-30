@@ -1,0 +1,181 @@
+type						alemanni_admiral
+skeleton					strat_navy
+male
+pbr_texture	data/models_strat/textures/boat_02_pbr.tga
+texture	alemanni, 			data/models_strat/textures/boat_02_bi_alemanni.tga
+texture burgundii,	data/models_strat/textures/boat_02_bi_burgundii.tga
+texture lombardi,	data/models_strat/textures/boat_02_bi_lombardi.tga
+model_flexi					data/models_strat/boat_02.cas, max
+no_variation model_flexi					data/models_strat/boat_02.cas, max
+
+type						empire_east_admiral
+skeleton					strat_navy
+male
+pbr_texture	empire_east,	data/models_strat/textures/boat_04_pbr.tga
+texture	empire_east, 		data/models_strat/textures/boat_04_bi_empire_east.tga
+model_flexi					data/models_strat/boat_04.cas, max
+no_variation model_flexi					data/models_strat/boat_04.cas, max
+
+type						empire_west_admiral
+skeleton					strat_navy
+male
+pbr_texture	empire_west,	data/models_strat/textures/boat_04_pbr.tga
+texture	empire_west, 		data/models_strat/textures/boat_04_bi_empire_west.tga
+model_flexi					data/models_strat/boat_04.cas, max
+no_variation model_flexi					data/models_strat/boat_04.cas, max
+
+type						empire_east_rebels_admiral
+skeleton					strat_navy
+male
+pbr_texture	empire_east_rebels,	data/models_strat/textures/boat_04_pbr.tga
+texture	empire_east_rebels, data/models_strat/textures/boat_04_bi_east_rebels.tga
+model_flexi					data/models_strat/boat_04.cas, max
+no_variation model_flexi					data/models_strat/boat_04.cas, max
+
+type						empire_west_rebels_admiral
+skeleton					strat_navy
+male
+pbr_texture	empire_west_rebels,	data/models_strat/textures/boat_04_pbr.tga
+texture	empire_west_rebels, data/models_strat/textures/boat_04_bi_west_rebels.tga
+model_flexi					data/models_strat/boat_04.cas, max
+no_variation model_flexi					data/models_strat/boat_04.cas, max
+
+type						franks_admiral
+skeleton					strat_navy
+male
+pbr_texture	franks,	data/models_strat/textures/boat_02_pbr.tga
+texture	franks, 			data/models_strat/textures/boat_02_bi_franks.tga
+model_flexi					data/models_strat/boat_02.cas, max
+no_variation model_flexi					data/models_strat/boat_02.cas, max
+
+type						huns_admiral
+skeleton					strat_navy
+male
+pbr_texture	huns,	data/models_strat/textures/boat_03_pbr.tga
+texture	huns, 				data/models_strat/textures/boat_03_bi_huns.tga
+model_flexi					data/models_strat/boat_03.cas, max
+no_variation model_flexi					data/models_strat/boat_03.cas, max
+
+type						saxons_admiral
+skeleton					strat_navy
+male
+pbr_texture	saxons,	data/models_strat/textures/boat_02_pbr.tga
+texture	saxons, 			data/models_strat/textures/boat_02_bi_saxons.tga
+model_flexi					data/models_strat/boat_02.cas, max
+no_variation model_flexi					data/models_strat/boat_02.cas, max
+
+type						vandals_admiral
+skeleton					strat_navy
+male
+pbr_texture	vandals,	data/models_strat/textures/boat_03_pbr.tga
+texture	vandals, 			data/models_strat/textures/boat_03_bi_vandals.tga
+model_flexi					data/models_strat/boat_03.cas, max
+no_variation model_flexi					data/models_strat/boat_03.cas, max
+
+type						sarmatians_admiral
+skeleton					strat_navy
+male
+pbr_texture	sarmatians,	data/models_strat/textures/boat_03_pbr.tga
+texture	sarmatians,			data/models_strat/textures/boat_03_bi_sarmatians.tga
+pbr_texture	roxolani,		data/models_strat/textures/boat_03_pbr.tga
+texture	roxolani,			data/models_strat/textures/boat_03_bi_roxolani.tga
+model_flexi	sarmatians,		data/models_strat/boat_03.cas, max
+model_flexi	roxolani,		data/models_strat/boat_03.cas, max
+no_variation model_flexi	sarmatians,		data/models_strat/boat_03.cas, max
+no_variation model_flexi	roxolani,		data/models_strat/boat_03.cas, max
+
+type						sassanids_admiral
+skeleton					strat_navy
+male
+pbr_texture	sassanids,	data/models_strat/textures/boat_01_pbr.tga
+texture	sassanids, 			data/models_strat/textures/boat_01_bi_sassanids.tga
+model_flexi					data/models_strat/boat_01.cas, max
+no_variation model_flexi					data/models_strat/boat_01.cas, max
+
+type						goths_admiral
+skeleton					strat_navy
+male
+pbr_texture	goths,	data/models_strat/textures/boat_03_pbr.tga
+texture	goths, 				data/models_strat/textures/boat_03_bi_goths.tga
+model_flexi					data/models_strat/boat_03.cas, max
+no_variation model_flexi					data/models_strat/boat_03.cas, max
+
+type						celts_admiral
+skeleton					strat_navy
+male
+pbr_texture	celts,	data/models_strat/textures/boat_02_pbr.tga
+texture	celts, 				data/models_strat/textures/boat_02_bi_celts.tga
+model_flexi					data/models_strat/boat_02.cas, max
+no_variation model_flexi					data/models_strat/boat_02.cas, max
+
+type						ostrogoths_admiral
+skeleton					strat_navy
+male
+pbr_texture	ostrogoths,	data/models_strat/textures/boat_03_pbr.tga
+texture	ostrogoths, 		data/models_strat/textures/boat_03_bi_ostrogoths.tga
+model_flexi					data/models_strat/boat_03.cas, max
+no_variation model_flexi					data/models_strat/boat_03.cas, max
+
+type						romano_british_admiral
+skeleton					strat_navy
+male
+pbr_texture	romano_british,	data/models_strat/textures/boat_04_pbr.tga
+texture	romano_british,		data/models_strat/textures/boat_04_bi_romano_british.tga
+model_flexi					data/models_strat/boat_04.cas, max
+no_variation model_flexi					data/models_strat/boat_04.cas, max
+
+type						slavs_admiral
+skeleton					strat_navy
+male
+pbr_texture	slavs,	data/models_strat/textures/boat_03_pbr.tga
+texture	slavs, 				data/models_strat/textures/boat_03_bi_slavs.tga
+model_flexi					data/models_strat/boat_03.cas, max
+no_variation model_flexi					data/models_strat/boat_03.cas, max
+
+type						moors_admiral
+skeleton					strat_navy
+male
+pbr_texture	moors,	data/models_strat/textures/boat_01_pbr.tga
+texture	moors, 				data/models_strat/textures/boat_01_bi_moors.tga
+model_flexi					data/models_strat/boat_01.cas, max
+no_variation model_flexi					data/models_strat/boat_01.cas, max
+
+type						berbers_admiral
+skeleton					strat_navy
+male
+pbr_texture	berbers,	data/models_strat/textures/boat_01_pbr.tga
+texture	berbers, 			data/models_strat/textures/boat_01_bi_berbers.tga
+model_flexi					data/models_strat/boat_01.cas, max
+no_variation model_flexi					data/models_strat/boat_01.cas, max
+
+type						slave_admiral
+skeleton					strat_navy
+male
+pbr_texture	slave,	data/models_strat/textures/boat_05_pbr.tga
+texture	slave, 				data/models_strat/textures/boat_05_bi_rebels.tga
+model_flexi					data/models_strat/boat_05.cas, max
+no_variation model_flexi					data/models_strat/boat_05.cas, max
+
+type						burgundii_admiral
+skeleton					strat_navy
+male
+pbr_texture	burgundii,	data/models_strat/textures/boat_02_pbr.tga
+texture	burgundii, 			data/models_strat/textures/boat_02_bi_burgundii.tga
+model_flexi					data/models_strat/boat_02.cas, max
+no_variation model_flexi					data/models_strat/boat_02.cas, max
+
+type						lombardi_admiral
+skeleton					strat_navy
+male
+pbr_texture	lombardi,	data/models_strat/textures/boat_02_pbr.tga
+texture	lombardi, 			data/models_strat/textures/boat_02_bi_lombardi.tga
+model_flexi					data/models_strat/boat_02.cas, max
+no_variation model_flexi					data/models_strat/boat_02.cas, max
+
+type						roxolani_admiral
+skeleton					strat_navy
+male
+pbr_texture	roxolani,		data/models_strat/textures/boat_04_pbr.tga
+texture	roxolani,			data/models_strat/textures/boat_04_bi_roxolani.tga
+model_flexi					data/models_strat/boat_04.cas, max
+no_variation model_flexi	data/models_strat/boat_04.cas, max

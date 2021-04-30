@@ -1,0 +1,101 @@
+{
+    "frames": [
+        {
+            "position": {
+                "x": 364,
+                "y": 0
+            },
+            "size": {
+                "width": 480
+            },
+            "priority": -5,
+            "fill": "invisible",
+            "ignore_scale": true
+        },
+        {
+            "position": {
+                "x": 0 ,
+                "y": 0 ,
+            },
+            "size": {
+                "width": 506 ,
+                "height": 343 ,
+            },
+            "priority": -1,
+            "fill": "decorated",
+            "align": "C",
+            "anchor": "C",
+            "ignore_scale": true
+        }
+    ],
+    "list": [
+        {
+            "name": "main_panel",
+            "x": 0,
+            "y": 0,
+            "size": {
+                "width": 506 ,
+                "height": 343 ,
+            },
+            "priority": -1,
+            "align": "C",
+            "anchor": "C",
+            "ignore_scale": true
+        },
+        {
+            "name": "eagle_header",
+            "y": -207,
+            "size": {
+                "height": 133,
+                "width": 160
+            },
+            "align": "C",
+            "anchor": "C",
+            "ignore_scale": true
+        },
+        {
+            "name": "text_block",
+            "x": 0 ,
+            "y": -29.7,
+            "align": "C",
+            "anchor": "C",
+            "size" : {
+                "width": 236.6 ,
+            },
+            "ignore_scale": true
+        },
+        {
+            "name": "accept_button",
+            "x": -106,
+            "y": 76,
+            "size": {
+                "width": 72,
+                "height": 72
+            },
+            "align": "C",
+            "anchor": "C",
+            "ignore_scale": true
+        },
+        {
+            "name": "cancel_button",
+            "x": 106,
+            "y": 76,
+            "size": {
+                "width": 72,
+                "height": 72
+            },
+            "align": "C",
+            "anchor": "C",
+            "ignore_scale": true
+        },
+        {
+            "name": "advisor",
+            "x": -100,
+            "y": -100
+        },
+        {
+            "name" : "radar",
+            "priority" : -1
+        }
+    ]
+}

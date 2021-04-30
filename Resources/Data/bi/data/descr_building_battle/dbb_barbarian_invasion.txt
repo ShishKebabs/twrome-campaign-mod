@@ -1,0 +1,842 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;								:
+;	buildings for the barbarian invasion add-on.		:
+;								;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;								:
+;	tech tree buildings					:
+;								;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	BI_roman_governors_palace
+	{
+		stat_cat medium_stone
+		localised_name roman_governors_palace
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_roman_governors_palace
+			physical_info	info_roman_governors_palace.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_160x128
+			physical_info	info_roman_rubble_160x128.cas
+		}
+	}
+
+	BI_barb_pagan_religion_lvl_1
+	{
+		stat_cat medium_stone_nonflammable
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_barb_pagan_religion_lvl_1
+			physical_info	../../../bi/data/models_building/info/BI_barb_pagan_religion_lvl_1_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_barb_pagan_religion_lvl_1_rubble
+			physical_info	../../../bi/data/models_building/info/BI_barb_pagan_religion_lvl_1_rubble_info.CAS
+		}
+	}
+
+	BI_barb_pagan_religion_lvl_2
+	{
+		stat_cat medium_stone_nonflammable
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_barb_pagan_religion_lvl_2
+			physical_info	../../../bi/data/models_building/info/BI_barb_pagan_religion_lvl_2_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_barb_pagan_religion_lvl_2_rubble
+			physical_info	../../../bi/data/models_building/info/BI_barb_pagan_religion_lvl_2_rubble_info.CAS
+		}
+	}
+
+	BI_barb_pagan_religion_lvl_3
+	{
+		stat_cat medium_stone_nonflammable
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_barb_pagan_religion_lvl_3
+			physical_info	../../../bi/data/models_building/info/BI_barb_pagan_religion_lvl_3_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_barb_pagan_religion_lvl_3_rubble
+			physical_info	../../../bi/data/models_building/info/BI_barb_pagan_religion_lvl_3_rubble_info.CAS
+		}
+	}
+
+	BI_barb_stables_lvl_4
+	{
+		stat_cat large_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_barb_stables_lvl_4
+			physical_info	../../../bi/data/models_building/info/BI_barb_stables_lvl_4_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_barb_stables_lvl_4_rubble
+			physical_info	../../../bi/data/models_building/info/BI_barb_stables_lvl_4_rubble_info.CAS
+		}
+	}
+
+	BI_barb_stables_lvl_5
+	{
+		stat_cat large_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_barb_stables_lvl_5
+			physical_info	../../../bi/data/models_building/info/BI_barb_stables_lvl_5_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_barb_stables_lvl_5_rubble
+			physical_info	../../../bi/data/models_building/info/BI_barb_stables_lvl_5_rubble_info.CAS
+		}
+	}
+
+
+	BI_siege_engineer_barbarian
+	{
+		stat_cat medium_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_catapult_range_barbarian ; seige engineer model is too big for slot.
+			physical_info	../../../bi/data/models_building/info/BI_barb_missiles_lvl_4_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_catapult_range_barbarian_rubble
+			physical_info	../../../bi/data/models_building/info/BI_barb_missiles_lvl_4_rubble_info.CAS
+		}
+	}
+
+	BI_catapult_range_barbarian
+	{
+		stat_cat large_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_catapult_range_barbarian
+			physical_info	../../../bi/data/models_building/info/BI_barb_missiles_lvl_4_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_catapult_range_barbarian_rubble
+			physical_info	../../../bi/data/models_building/info/BI_barb_missiles_lvl_4_rubble_info.CAS
+		}
+	}
+
+	BI_barbarian_great_forum
+	{
+		stat_cat large_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_barbarian_great_forum
+			physical_info	../../../bi/data/models_building/info/BI_barb_trade_lvl_5_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_barbarian_great_forum_rubble
+			physical_info	../../../bi/data/models_building/info/BI_barb_trade_lvl_5_rubble_info.CAS
+		}
+	}
+	
+	BI_barbarian_foundry
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_barbarian_foundry
+			physical_info	../../../bi/data/models_building/info/BI_smith_lvl_5_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_barbarian_foundry_rubble
+			physical_info	../../../bi/data/models_building/info/BI_smith_lvl_5_rubble_info.CAS
+		}
+	}
+
+
+	BI_barb_christian_academic_lvl_3
+	{
+		stat_cat small_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_barb_christian_academic_lvl_3
+			physical_info	../../../bi/data/models_building/info/BI_barb_christian_academic_lvl_3_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_barb_christian_academic_lvl_3_rubble
+			physical_info	../../../bi/data/models_building/info/BI_barb_christian_academic_rubble_info.CAS
+		}
+	}
+
+	BI_barb_christian_academic_lvl_4
+	{
+		stat_cat medium_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_barb_christian_academic_lvl_4
+			physical_info	../../../bi/data/models_building/info/BI_barb_christian_academic_lvl_4_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_barb_christian_academic_lvl_4_rubble
+			physical_info	../../../bi/data/models_building/info/BI_barb_christian_academic_rubble_info.CAS
+		}
+	}
+
+	BI_barb_christian_academic_lvl_5
+	{
+		stat_cat large_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_barb_christian_academic_lvl_5
+			physical_info	../../../bi/data/models_building/info/BI_barb_christian_academic_lvl_5_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_barb_christian_academic_lvl_5_rubble
+			physical_info	../../../bi/data/models_building/info/BI_barb_christian_academic_rubble_info.CAS
+		}
+	}
+
+	BI_barb_barracks_lvl_4
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_barb_barracks_lvl_4
+			physical_info	../../../bi/data/models_building/info/BI_barb_barracks_lvl_4_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_barb_barracks_lvl_4_rubble
+			physical_info	../../../bi/data/models_building/info/BI_barb_barracks_lvl_4_rubble_info.CAS
+		}
+	}
+
+
+	BI_barb_barracks_lvl_5
+	{
+		stat_cat large_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_barb_barracks_lvl_5
+			physical_info	../../../bi/data/models_building/info/BI_barb_barracks_lvl_5_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_barb_barracks_lvl_5_rubble
+			physical_info	../../../bi/data/models_building/info/BI_barb_barracks_lvl_5_rubble_info.CAS
+		}
+	}
+
+	BI_government_lvl_4
+	{
+		stat_cat large_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_government_lvl_4
+			physical_info	../../../bi/data/models_building/info/BI_barb_government_lvl_4_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_government_lvl_4_rubble
+			physical_info	../../../bi/data/models_building/info/BI_barb_government_lvl_4_rubble_info.CAS
+		}
+	}
+
+	BI_government_lvl_5
+	{
+		stat_cat large_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_government_lvl_5
+			physical_info	../../../bi/data/models_building/info/BI_barb_government_lvl_5_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_government_lvl_5_rubble
+			physical_info	../../../bi/data/models_building/info/BI_barb_government_lvl_5_rubble_info.CAS
+		}
+	}
+
+
+	BI_christian_shrine
+	{
+		stat_cat tiny_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_barb_religious_lvl_1
+			physical_info	../../../bi/data/models_building/info/BI_barb_religious_lvl_1_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_barb_religious_lvl_1_rubble
+			physical_info	../../../bi/data/models_building/info/BI_barb_religious_lvl_1_rubble_info.CAS
+		}
+	}
+
+
+	BI_christian_chapel
+	{
+		stat_cat small_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_barb_religious_lvl_2
+			physical_info	../../../bi/data/models_building/info/BI_barb_religious_lvl_2_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_barb_religious_lvl_2_rubble
+			physical_info	../../../bi/data/models_building/info/BI_barb_religious_lvl_2_rubble_info.CAS
+		}
+	}
+
+
+	BI_christian_church
+	{
+		stat_cat medium_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_barb_religious_lvl_3
+			physical_info	../../../bi/data/models_building/info/BI_barb_religious_lvl_3_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_barb_religious_lvl_3_rubble
+			physical_info	../../../bi/data/models_building/info/BI_barb_religious_lvl_3_rubble_info.CAS
+		}
+	}
+
+
+	BI_christian_cathedral
+	{
+		stat_cat medium_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_barb_religious_lvl_4
+			physical_info	../../../bi/data/models_building/info/BI_barb_religious_lvl_4_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_barb_religious_lvl_4_rubble
+			physical_info	../../../bi/data/models_building/info/BI_barb_religious_lvl_4_rubble_info.CAS
+		}
+	}
+
+	BI_christian_basilica
+	{
+		stat_cat large_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_barb_religious_lvl_5
+			physical_info	../../../bi/data/models_building/info/BI_barb_religious_lvl_5_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_barb_religious_lvl_5_rubble
+			physical_info	../../../bi/data/models_building/info/BI_barb_religious_lvl_5_rubble_info.CAS
+		}
+	}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;								:
+;	AMBIENT BUILDINGS
+;								;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	BI_barn
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_barn
+			physical_info	../../../bi/data/models_building/info/BI_barn_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_barn_rubble
+			physical_info	../../../bi/data/models_building/info/BI_barn_info.cas
+		}
+	}
+
+	BI_cider_house
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_cider_house
+			physical_info	../../../bi/data/models_building/info/BI_cider_house_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_cider_house_rubble
+			physical_info	../../../bi/data/models_building/info/BI_cider_house_info.cas
+		}
+	}
+
+	BI_fence_gate
+	{
+		stat_cat indestructable
+		localised_name ambient
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_fence_gate
+			physical_info	../../../bi/data/models_building/info/BI_fence_gate_info.cas
+		}
+
+	}
+	BI_fence_gate_wood
+	{
+		stat_cat indestructable
+		localised_name ambient
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_fence_gate_wood
+			physical_info	../../../bi/data/models_building/info/BI_fence_gate_info.cas
+		}
+	}
+	BI_fence_L_shape
+	{
+		stat_cat indestructable
+		localised_name ambient
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_fence_L_shape
+			physical_info	../../../bi/data/models_building/info/BI_fence_L_shape_info.CAS
+		}
+	}
+	BI_fence_L_shape_wood
+	{
+		stat_cat indestructable
+		localised_name ambient
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_fence_L_shape_wood
+			physical_info	../../../bi/data/models_building/info/BI_fence_L_shape_info.CAS
+		}
+	}
+	BI_fence_straight
+	{
+		stat_cat indestructable
+		localised_name ambient
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_fence_straight
+			physical_info	../../../bi/data/models_building/info/BI_fence_straight_info.CAS
+		}
+	}
+	BI_fence_straight_wood
+	{
+		stat_cat indestructable
+		localised_name ambient
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_fence_straight_wood
+			physical_info	../../../bi/data/models_building/info/BI_fence_straight_info.CAS
+		}
+	}
+	BI_house_half_wood
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_house_half_wood
+			physical_info	../../../bi/data/models_building/info/BI_house_half_wood_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_house_half_wood_rubble
+			physical_info	../../../bi/data/models_building/info/BI_house_half_wood_info.cas
+		}
+	}
+
+	BI_houseA
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_houseA
+			physical_info	../../../bi/data/models_building/info/BI_houseA_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_houseA_rubble
+			physical_info	../../../bi/data/models_building/info/BI_houseA_info.cas
+		}
+	}
+
+	BI_houseB
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_houseB
+			physical_info	../../../bi/data/models_building/info/BI_houseB_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_houseB_rubble
+			physical_info	../../../bi/data/models_building/info/BI_houseB_info.cas
+		}
+	}
+
+	BI_houseC
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_houseC
+			physical_info	../../../bi/data/models_building/info/BI_houseC_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_houseC_rubble
+			physical_info	../../../bi/data/models_building/info/BI_houseC_info.cas
+		}
+	}
+
+	BI_houseD
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_houseD
+			physical_info	../../../bi/data/models_building/info/BI_houseD_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_houseD_rubble
+			physical_info	../../../bi/data/models_building/info/BI_houseD_info.cas
+		}
+	}
+
+	BI_menhir
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_menhir
+			physical_info	../../../bi/data/models_building/info/BI_menhir_info.cas
+		}
+
+	}
+
+	BI_oast
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		BI_oast
+			physical_info	../../../bi/data/models_building/info/BI_oast_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_oast_rubble
+			physical_info	../../../bi/data/models_building/info/BI_oast_info.cas
+		}
+	}
+        BI_street_lamp
+	{
+		stat_cat indestructable
+		localised_name ambient
+		level
+		{
+			min_health 0
+			battle_stats
+			item		BI_street_lamp
+			physical_info	../../../bi/data/models_building/info/BI_street_lamp_info.cas
+                        spot_fx		spot_fx_BI_street_lamp.CAS
+		}
+
+	}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;								
+;	Dummy collisions are used to surround set groups (A-F) of ambient buildings
+;								
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	dummy_collision_planA
+	{
+		stat_cat medium_wooden
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	../../../bi/data/models_building/info/dummy_collision_planA_info.cas
+		}
+	}
+
+	dummy_collision_planB
+	{
+		stat_cat medium_wooden
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	../../../bi/data/models_building/info/dummy_collision_planB_info.cas
+		}
+
+	}
+	dummy_collision_planC
+	{
+		stat_cat medium_wooden
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	../../../bi/data/models_building/info/dummy_collision_planC_info.cas
+		}
+
+	}
+	dummy_collision_planD
+	{
+		stat_cat medium_wooden
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	../../../bi/data/models_building/info/dummy_collision_planD_info.cas
+		}
+
+	}
+	dummy_collision_planE
+	{
+		stat_cat medium_wooden
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	../../../bi/data/models_building/info/dummy_collision_planE_info.cas
+		}
+
+	}
+	dummy_collision_planF
+	{
+		stat_cat medium_wooden
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	../../../bi/data/models_building/info/dummy_collision_planF_info.cas
+		}
+	}
+
+
+
+

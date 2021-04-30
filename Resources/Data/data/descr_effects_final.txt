@@ -1,0 +1,6 @@
+descr_arrow_trail_effects_final.txt
+descr_burning_men_effect_final.txt
+descr_surface_fire.txt
+descr_burning_oil_effect.txt
+descr_burning_building.txt
+descr_building_effects.txt

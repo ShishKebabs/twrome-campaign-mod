@@ -1,0 +1,17 @@
+script
+	
+	; Stop any other advice triggering
+	suspend_unscripted_advice true
+	
+	disable_ui help_dialog_pause_button
+
+	ui_flash_stop ; stop flash that 02 started
+	
+	ui_flash_start tooltip
+	
+	;advance_advice_thread Feral_Game_Start_Thread no_dismiss ; Show 03
+	
+	; Reenable advice
+	suspend_unscripted_advice false
+	
+end_script

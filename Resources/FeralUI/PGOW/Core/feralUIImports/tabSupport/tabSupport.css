@@ -1,0 +1,287 @@
+
+/* -----------------------------------------------
+   ----------------- Support Tab -----------------
+   _____                                    _   
+  / ____|                                  | |  
+ | (___   _   _  _ __   _ __    ___   _ __ | |_ 
+  \___ \ | | | || '_ \ | '_ \  / _ \ | '__|| __|
+  ____) || |_| || |_) || |_) || (_) || |   | |_ 
+ |_____/  \__,_|| .__/ | .__/  \___/ |_|    \__|
+                | |    | |                      
+                |_|    |_|                      
+ -----------------------------------------------*/
+
+#tabContentSupport .item {
+	margin: 5px 30px;
+}
+
+#tabContentSupport #supportFAQs {
+	min-height: 100px;
+	padding-bottom: 15px;
+	height: auto;
+	border-bottom: 2px solid #898989;
+}
+
+#tabContentSupport #supportFAQs:after
+{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+.langFR #tabContentSupport #supportFAQs, 
+.langDE #tabContentSupport #supportFAQs, 
+.langES #tabContentSupport #supportFAQs {
+	min-height: 80px;
+	padding-bottom: 10px;
+}
+
+#tabContentSupport div#supportFAQs>p:first-of-type
+{
+	margin-top:0px;
+}
+#tabContentSupport div#supportFAQs>p:last-child
+{
+	margin-bottom:0px;
+}
+
+#tabContentSupport #supportFAQs p {
+	max-width: 700px;
+	width:auto;
+	padding-top: 5px;
+}
+
+.langFR #tabContentSupport #supportFAQs p, 
+.langDE #tabContentSupport #supportFAQs p, 
+.langES #tabContentSupport #supportFAQs p  {
+	padding-top: 0;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+#tabContentSupport #supportFAQButton.faqsbutton {
+	float: right;
+	height: 100px;
+	width: 100px;
+	background-size: 98px;
+	padding-top: 78px;
+	font-size: 15px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.langRU #tabContentSupport #supportFAQButton.faqsbutton,
+.langJA #tabContentSupport #supportFAQButton.faqsbutton
+{
+	padding-top: 70px;
+	height: 109px;
+	width: 175px !important;
+	margin: 16px 10px 0px !important; /* Important to overload inline style */
+	background-size: contain !important;
+}
+
+#tabContentSupport div.splitBoxSection
+{
+	position: relative;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:flex;
+}
+
+#tabContentSupport div.supportSubSection {
+	width: 50%;
+	margin: 10px 0 0 10px;
+	float: left;
+	min-height: 119px;
+	height: auto;
+	padding: 20px 20px 10px;
+	background: white;
+	border: 2px solid #BDBDBD;
+	font-size: 14px;
+}
+
+#tabContentSupport div.supportSubSection:first-child {
+	margin-left: 0;
+}
+
+#tabContentSupport div.supportSubSection#supportVerifyIntegrity {
+	/* There is no icon to use yet, disable to avoid errors (fbug://DOW3-830) */
+	/* background: url('../../images/data.svg') no-repeat 21px 20px white; */
+	background-size: auto 16px;
+}
+
+#tabContentSupport div.supportSubSection#supportContact {
+	background: url('../../images/contact.svg') no-repeat 21px 20px white;
+	background-size: auto 16px;
+}
+
+#tabContentSupport div.supportSubSection#supportUpdates {
+	background: url('../../images/update.svg') no-repeat 22px 21px white;
+	background-size: auto 14px;
+}
+
+#tabContentSupport div.supportSubSection#supportUsage {
+	background: url('../../images/usage.svg') no-repeat 22px 21px white;
+	background-size: auto 14px;
+}
+
+#tabContentSupport div.supportSubSection#sendCrashReports {
+	/* There is no specific background image for this yet! */
+	background: url('../../images/usage.svg') no-repeat 22px 21px white;
+	background-size: auto 14px;
+}
+
+/* Prevent irregular and ugly gaps at the start and 
+   end of the subsections from child margins */
+
+#tabContentSupport .supportSubSection>*:first-child
+{
+    padding-top: 0px;
+    margin-top: 0px;
+}
+#tabContentSupport .supportSubSection>*:last-child
+{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.langFR #tabContentSupport div#splitBoxSection>div, 
+.langDE #tabContentSupport div#splitBoxSection>div, 
+.langES #tabContentSupport div#splitBoxSection>div {
+	margin-top: 10px;
+}
+
+#tabContentSupport .supportSubSection h3 {
+	float:left;
+	text-align: left;
+	white-space: normal;
+	margin-left: 25px;
+}
+/*
+#tabContentSupport .supportSubSection h3 + p {
+	margin-left: 45px;
+}
+*/
+#tabContentSupport div#supportUpdates p {
+	padding-bottom: 0;
+	margin-bottom: 10px;
+}
+
+#tabContentSupport #verifyIntegrityButton,
+#tabContentSupport #reportButtons {
+	position: relative;
+	text-align: center;
+	white-space: normal;
+}
+
+#supportVerifyIntegrity p[data-inner-string=VerifyIntegrityProgressHeader] {
+	clear:both;
+	margin-bottom: 0px;
+}
+
+#supportVerifyIntegrity #verifyIntegrityProgressBar {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+}
+
+#supportVerifyIntegrity #verifyIntegrityProgressBar progress {
+	width: 100%;
+	flex: 1;
+	line-height: 0px;
+	font-size: 0px;
+}
+
+#supportVerifyIntegrity #verifyIntegrityProgressBar input {
+	/* There is no icon to use yet, disable to avoid errors (fbug://DOW3-830) */
+	/* background: url('../../images/cancel.svg') !important; */
+	margin: 0px;
+	margin-left: 3px;
+	padding: 0px;
+	width: 13px;
+	height: 13px;
+	border: none !important;
+}
+
+#supportVerifyIntegrity p[data-inner-string=VerifyIntegrityProgressText] {
+	margin-top: 0px;
+	font-size: 10px;
+	max-width: 204px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/*This has a long email address we would prefer to split 
+  than have spill out all over the place*/
+#tabContentSupport #supportContact>p
+{
+	word-wrap:break-word;
+	/*Prevents (at least some of the) jumping around when Generate Report is pressed and the text changes.*/
+	min-height: 32px;
+}
+
+#tabContentSupport #genReportThrobberSpace {
+	position: absolute;
+	left: 5px;
+	min-width: 32px;
+}
+
+#tabContentSupport #genReportThrobber
+{
+	float:right;
+}
+
+
+
+
+#tabContentSupport input[type="button"].privacyPolicyButton {
+	float: right;
+	font-size: 12px;
+	margin-top: 1px;
+}
+
+#tabContentSupport div#supportUpdates>p[data-inner-string=LastUpdatedText] {
+	text-align: right;
+	float:right;
+	margin-top: 0px;
+}
+
+#tabContentSupport div.supportSubSection>p:first-of-type:not([data-inner-string=LastUpdatedText]),
+#tabContentSupport div.supportSubSection>p[data-inner-string=LastUpdatedText]+p
+{
+	clear:both;
+}
+
+#tabContentSupport .supportButtonDiv
+{
+	display: inline-block;
+}
+
+#tabContentSupport div#bottomButtonsDiv
+{
+	width: 100%;
+	text-align: center;
+}
+
+/* On some screens in russian the button drops slightly below the fold
+	So reduce the virtical margin */
+.langRU #tabContentSupport div input[data-property-name=OpenPreferences],
+.langRU #tabContentSupport div input[data-property-name=OpenLicensingInfomation]
+{
+	margin:  5px;
+}
+
+.langEN #tabContentSupport div input[data-property-name=OpenPreferences],
+.langEN #tabContentSupport div input[data-property-name=OpenLicensingInfomation]
+{
+	width: 197px;
+}
+
+#tabContentSupport div input[data-property-name=OpenPreferences],
+#tabContentSupport div input[data-property-name=OpenLicensingInfomation]
+{
+	width: auto;
+	margin:  15px auto 0;
+}

@@ -1,0 +1,481 @@
+; grass descriptions for the different climates
+; spacing is the density of the grass
+; present_in_winter is true for warmer climates that dont cover the terrain in snow
+; the height of each grass type is an average and varies by 25%
+; the different grass types are drawn as strips on the texture page
+; so only a vertical start and end texture coord is required for each grass type
+; density is between 0-100
+; falloff is how early the grass fades out, higher the falloff the earlier the fade
+; colour is added to the ground colour to make the grass colour
+; correction is not used currently
+
+; valid climates types are
+;	sandy_desert
+;	rocky_desert
+;	temperate_grassland_fertile
+;	temperate_grassland_infertile
+;	temperate_forest_open
+;	temperate_forest_deep
+;	swamp
+;	highland
+;	alpine
+;	sub_arctic
+;	semi_arid
+
+; valid ground types are
+;	-grass_short,
+;	-grass_long,
+;	-sand,
+;	-rock,
+;	-forest_dense,
+;	-scrub_dense,
+;   -swamp,
+;	-mud,
+;	-mud_road,
+;	-stone_road,
+;	-water,
+;	-ice,
+;	-snow,
+;	-wood,
+;   -dirt,
+
+climate test_climate
+{
+	texture					data/textures/#grass.tga
+	spacing					0.5	
+	present_in_winter		true
+
+	ground_type grass_short
+	{
+		avg_height			0.5			
+		width				1.2				
+		density				40
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				2.0
+		colour				0,0,0
+		correction			0.1
+	}
+
+	ground_type grass_long
+	{
+		avg_height			1.5			
+		width				1.0				
+		density				50
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				1.0
+		colour				0,0,0
+		correction			0.1
+	}
+
+	ground_type scrub_dense
+	{
+		avg_height			1.5			
+		width				1.0				
+		density				6
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				1.0
+		colour				0,0,0
+		correction			0.1
+	}
+
+	ground_type forest_dense
+	{
+		avg_height			0.5			
+		width				2.0				
+		density				40
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				1.5
+		colour				0,0,0
+		correction			0.1
+	}
+}
+
+climate temperate_grassland_fertile
+{
+	texture					data/textures/#grass.tga
+	spacing					0.5	
+	present_in_winter		false
+
+	ground_type grass_short
+	{
+		avg_height			0.75			
+		width				1.2				
+		density				60
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				2.0
+		colour				0,0,0
+		correction			0.1
+	}
+
+	ground_type grass_long
+	{
+		avg_height			1.5			
+		width				1.0				
+		density				70
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				1.0
+		colour				0,0,0
+		correction			0.1
+	}
+
+	ground_type scrub_dense
+	{
+		avg_height			1.25			
+		width				1.0				
+		density				30
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				1.0
+		colour				0,0,0
+		correction			0.1
+	}
+
+	ground_type forest_dense
+	{
+		avg_height			0.75			
+		width				2.0				
+		density				40
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				1.5
+		colour				0,0,0
+		correction			0.1
+	}
+}
+
+
+climate temperate_grassland_infertile
+{
+	texture					data/textures/#grass.tga
+	spacing					0.5	
+	present_in_winter		false
+
+	ground_type grass_short
+	{
+		avg_height			0.5			
+		width				1.2				
+		density				40
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				2.0
+		colour				0,0,0
+		correction			0.1
+	}
+
+	ground_type grass_long
+	{
+		avg_height			1.5			
+		width				1.0				
+		density				50
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				1.0
+		colour				0,0,0
+		correction			0.1
+	}
+
+	ground_type scrub_dense
+	{
+		avg_height			1.5			
+		width				1.0				
+		density				6
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				1.0
+		colour				0,0,0
+		correction			0.1
+	}
+
+	ground_type forest_dense
+	{
+		avg_height			0.5			
+		width				2.0				
+		density				40
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				1.5
+		colour				0,0,0
+		correction			0.1
+	}
+}
+
+climate temperate_forest_open
+{
+	texture					data/textures/#grass.tga
+	spacing					0.5	
+	present_in_winter		true
+
+	ground_type grass_short
+	{
+		avg_height			0.5			
+		width				1.2				
+		density				40
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				2.0
+		colour				0,0,0
+		correction			0.1
+	}
+
+	ground_type grass_long
+	{
+		avg_height			1.5			
+		width				1.0				
+		density				50
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				1.0
+		colour				0,0,0
+		correction			0.1
+	}
+
+	ground_type scrub_dense
+	{
+		avg_height			1.5			
+		width				1.0				
+		density				6
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				1.0
+		colour				0,0,0
+		correction			0.1
+	}
+
+	ground_type forest_dense
+	{
+		avg_height			0.5			
+		width				2.0				
+		density				40
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				1.5
+		colour				0,0,0
+		correction			0.1
+	}
+}
+
+climate temperate_forest_deep
+{
+	texture					data/textures/#grass.tga
+	spacing					0.5	
+	present_in_winter		true
+
+	ground_type grass_short
+	{
+		avg_height			0.5			
+		width				1.2				
+		density				40
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				2.0
+		colour				0,0,0
+		correction			0.1
+	}
+
+	ground_type grass_long
+	{
+		avg_height			1.5			
+		width				1.0				
+		density				50
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				1.0
+		colour				0,0,0
+		correction			0.1
+	}
+
+	ground_type scrub_dense
+	{
+		avg_height			1.5			
+		width				1.0				
+		density				6
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				1.0
+		colour				0,0,0
+		correction			0.1
+	}
+
+	ground_type forest_dense
+	{
+		avg_height			0.5			
+		width				2.0				
+		density				40
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				1.5
+		colour				0,0,0
+		correction			0.1
+	}
+}
+
+climate highland
+{
+	texture					data/textures/#grass.tga
+	spacing					0.5	
+	present_in_winter		true
+
+	ground_type grass_short
+	{
+		avg_height			0.5			
+		width				1.2				
+		density				40
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				2.0
+		colour				0,0,0
+		correction			0.1
+	}
+
+	ground_type grass_long
+	{
+		avg_height			1.5			
+		width				1.0				
+		density				50
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				1.0
+		colour				0,0,0
+		correction			0.1
+	}
+
+	ground_type scrub_dense
+	{
+		avg_height			1.5			
+		width				1.0				
+		density				6
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				1.0
+		colour				0,0,0
+		correction			0.1
+	}
+
+	ground_type forest_dense
+	{
+		avg_height			0.5			
+		width				2.0				
+		density				40
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				1.5
+		colour				0,0,0
+		correction			0.1
+	}
+}
+
+climate alpine
+{
+	texture					data/textures/#grass.tga
+	spacing					0.5	
+	present_in_winter		true
+
+	ground_type grass_short
+	{
+		avg_height			0.5			
+		width				1.2				
+		density				40
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				2.0
+		colour				0,0,0
+		correction			0.1
+	}
+
+	ground_type grass_long
+	{
+		avg_height			1.5			
+		width				1.0				
+		density				50
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				1.0
+		colour				0,0,0
+		correction			0.1
+	}
+
+	ground_type scrub_dense
+	{
+		avg_height			1.5			
+		width				1.0				
+		density				6
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				1.0
+		colour				0,0,0
+		correction			0.1
+	}
+
+	ground_type forest_dense
+	{
+		avg_height			0.5			
+		width				2.0				
+		density				40
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				1.5
+		colour				0,0,0
+		correction			0.1
+	}
+}
+
+climate sub_arctic
+{
+	texture					data/textures/#grass.tga
+	spacing					0.5	
+	present_in_winter		true
+
+	ground_type grass_short
+	{
+		avg_height			0.5			
+		width				1.2				
+		density				40
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				2.0
+		colour				0,0,0
+		correction			0.1
+	}
+
+	ground_type grass_long
+	{
+		avg_height			1.5			
+		width				1.0				
+		density				50
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				1.0
+		colour				0,0,0
+		correction			0.1
+	}
+
+	ground_type scrub_dense
+	{
+		avg_height			1.5			
+		width				1.0				
+		density				6
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				1.0
+		colour				0,0,0
+		correction			0.1
+	}
+
+	ground_type forest_dense
+	{
+		avg_height			0.5			
+		width				2.0				
+		density				40
+		tex_v1				0.0			
+		tex_v2				0.25			
+		falloff				1.5
+		colour				0,0,0
+		correction			0.1
+	}
+}

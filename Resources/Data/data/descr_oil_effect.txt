@@ -1,0 +1,13 @@
+model_file 			data/models_building/models_spot/boiling_oil.cas
+envmap_tex 			data/textures/oil_envmap.dds ; checker_tex.tga ;data/textures/envmap.tga
+spurt_length		0.75			; length of time to bbring spurt in and out.
+effect_length   	2.0				; length of time to play main main 
+contact_pos_offset	0  -12 -5		; offset in world units to ground contact position
+envmap_blend		0.75 			; blend factor between envmap and texture
+smoke_colour	    75 75 75	 	; red green blue 
+anim_speed_mul		6				; Play the anim at this times normal speed
+tex_scroll_speed	4				; Units to scroll the texture per update.
+
+effect_contact_pos_offset	-1  -12  -2		; offset in world units to ground contact position
+effect_name			burning_oil_set
+impact_effect_name  burning_oil_steam_set

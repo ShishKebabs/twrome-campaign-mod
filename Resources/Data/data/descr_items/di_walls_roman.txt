@@ -1,0 +1,1099 @@
+; ************************** roman town walls
+
+
+
+
+type			roman_town_wall_straight
+lod
+max_distance	200
+model_rigid		models_walls/roman_town_wall_straight_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_wall_straight_low.cas
+
+
+
+type			roman_town_wall_straight_dmg
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_wall_straight_dmg_high.cas
+
+
+
+type			roman_town_wall_straight_dmg_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_town_wall_straight_dmg_anim_high.cas
+
+
+
+type			roman_town_wall_straight_dmg_rbl
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_wall_straight_dmg_rbl_high.cas
+
+
+
+type			roman_town_wall_straight_dst
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_wall_straight_dst_high.cas
+
+
+
+type			roman_town_wall_straight_dst_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_town_wall_straight_dst_anim_high.cas
+
+
+
+type			roman_town_wall_straight_dst_rbl
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_wall_straight_dst_rbl_high.cas
+
+
+
+
+
+
+type			roman_town_external_corner_watchtower
+lod
+max_distance	200
+model_rigid		models_walls/roman_town_external_corner_watchtower_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_external_corner_watchtower_low.cas
+
+
+
+type			roman_town_internal_corner_watchtower
+lod
+max_distance	200
+model_rigid		models_walls/roman_town_internal_corner_watchtower_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_internal_corner_watchtower_low.cas
+
+
+
+
+type			roman_town_wall_watchtower
+lod
+max_distance	200
+model_rigid		models_walls/roman_town_wall_watchtower_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_wall_watchtower_low.cas
+
+
+;;;++++++	ROMAN TOWN GATE	;;;;;;;;;;;;;;;;;;;;;;;
+type			roman_town_gateway
+lod
+max_distance	200
+model_rigid		models_walls/roman_town_gateway_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_gateway_low.cas
+
+type			roman_town_gateway_collapse
+lod
+max_distance	200
+model_rigid		models_walls/roman_town_gateway_collapse.cas
+
+type			roman_town_gateway_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_town_gateway_collapse_anim.cas
+
+type			roman_town_gateway_collapse_remains
+lod
+max_distance	200
+model_rigid		models_walls/roman_town_gateway_collapse_remains.cas
+
+;;;;++++++++++++++++++++++++++++++++++++++++++++++
+
+
+type			roman_town_wall_joiner_straight
+lod
+max_distance	200
+model_rigid		models_walls/roman_town_wall_joiner_straight_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_wall_joiner_straight_low.cas
+
+
+
+type			roman_town_wall_joiner_diagonal
+lod
+max_distance	200
+model_rigid		models_walls/roman_town_wall_joiner_diagonal_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_wall_joiner_diagonal_low.cas
+
+
+
+type			roman_town_wall_external_corner
+lod
+max_distance	200
+model_rigid		models_walls/roman_town_wall_external_corner_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_wall_external_corner_low.cas
+
+
+
+type			roman_town_wall_joiner_external_right
+lod
+max_distance	200
+model_rigid		models_walls/roman_town_wall_joiner_external_right_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_wall_joiner_external_right_low.cas
+
+
+
+type			roman_town_wall_joiner_external_left
+lod
+max_distance	200
+model_rigid		models_walls/roman_town_wall_joiner_external_left_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_wall_joiner_external_left_low.cas
+
+
+
+type			roman_town_wall_internal_corner
+lod
+max_distance	200
+model_rigid		models_walls/roman_town_wall_internal_corner_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_wall_internal_corner_low.cas
+
+
+
+type			roman_town_wall_joiner_internal_right
+lod
+max_distance	200
+model_rigid		models_walls/roman_town_wall_joiner_internal_right_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_wall_joiner_internal_right_low.cas
+
+
+
+type			roman_town_wall_joiner_internal_left
+lod
+max_distance	200
+model_rigid		models_walls/roman_town_wall_joiner_internal_left_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_wall_joiner_internal_left_low.cas
+
+
+type			roman_town_wall_small_damage
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_wall_small_damage.cas
+
+type			roman_town_wall_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_town_wall_small_damage_anim.cas
+
+type			roman_town_wall_small_damage_remains
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_wall_small_damage_remains.cas
+
+type			roman_town_wall_more_damage
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_wall_more_damage.cas
+
+type			roman_town_wall_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_town_wall_more_damage_anim.cas
+
+type			roman_town_wall_more_damage_remains
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_wall_more_damage_remains.cas
+
+type			roman_town_wall_platform_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_wall_platform_collapse.cas
+
+type			roman_town_wall_platform_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_town_wall_platform_collapse_anim.cas
+
+type			roman_town_wall_platform_collapse_remains
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_wall_platform_collapse_remains.cas
+
+type			roman_town_wall_major_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_wall_major_collapse.cas
+
+type			roman_town_wall_major_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_town_wall_major_collapse_anim.cas
+
+type			roman_town_wall_major_collapse_remains
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_wall_major_collapse_remains.cas
+
+type			roman_town_wall_final_major_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_wall_final_major_collapse.cas
+
+type			roman_town_wall_final_major_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_town_wall_final_major_collapse_anim.cas
+
+type			roman_town_wall_final_major_collapse_remains
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_wall_final_major_collapse_remains.cas
+
+
+type			roman_town_tower_small_damage
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_tower_small_damage.cas
+
+type			roman_town_tower_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_town_tower_small_damage_anim.cas
+
+type			roman_town_tower_more_damage
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_tower_more_damage.cas
+
+type			roman_town_tower_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_town_tower_more_damage_anim.cas
+
+type			roman_town_tower_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_tower_collapse.cas
+
+type			roman_town_tower_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_town_tower_collapse_anim.cas
+
+
+
+type			roman_town_tower_ec_small_damage
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_tower_ec_small_damage.cas
+
+type			roman_town_tower_ec_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_town_tower_ec_small_damage_anim.cas
+
+type			roman_town_tower_ec_more_damage
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_tower_ec_more_damage.cas
+
+type			roman_town_tower_ec_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_town_tower_ec_more_damage_anim.cas
+
+type			roman_town_tower_ec_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_tower_ec_collapse.cas
+
+type			roman_town_tower_ec_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_town_tower_ec_collapse_anim.cas
+
+type			roman_town_tower_ic_small_damage
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_tower_ic_small_damage.cas
+
+type			roman_town_tower_ic_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_town_tower_ic_small_damage_anim.cas
+
+type			roman_town_tower_ic_more_damage
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_tower_ic_more_damage.cas
+
+type			roman_town_tower_ic_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_town_tower_ic_more_damage_anim.cas
+
+type			roman_town_tower_ic_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/roman_town_tower_ic_collapse.cas
+
+type			roman_town_tower_ic_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_town_tower_ic_collapse_anim.cas
+
+
+
+
+
+; **********************     roman city walls
+
+
+
+type			roman_city_wall_straight
+lod
+max_distance	200
+model_rigid		models_walls/roman_city_wall_straight_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_wall_straight_low.cas
+
+
+
+
+type			roman_city_external_corner_watchtower
+lod
+max_distance	200
+model_rigid		models_walls/roman_city_external_corner_watchtower_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_external_corner_watchtower_low.cas
+
+
+
+type			roman_city_internal_corner_watchtower
+lod
+max_distance	200
+model_rigid		models_walls/roman_city_internal_corner_watchtower_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_internal_corner_watchtower_low.cas
+
+
+
+
+type			roman_city_wall_watchtower
+lod
+max_distance	200
+model_rigid		models_walls/roman_city_wall_watchtower_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_wall_watchtower_low.cas
+
+;;;;++++++++++++++  ROMAN CITY GATEWAY ++++++++
+
+type			roman_city_gateway
+lod
+max_distance	200
+model_rigid		models_walls/roman_city_gateway_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_gateway_low.cas
+
+type			roman_city_gateway_collapse
+lod
+max_distance	200
+model_rigid		models_walls/roman_city_gateway_collapse.cas
+
+type			roman_city_gateway_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_city_gateway_collapse_anim.cas
+
+type			roman_city_gateway_collapse_remains
+lod
+max_distance	200
+model_rigid		models_walls/roman_city_gateway_collapse_remains.cas
+
+;;;;++++++++++++++++++++++++++++++++++++++++++++++
+
+type			roman_city_wall_joiner_straight
+lod
+max_distance	200
+model_rigid		models_walls/roman_city_wall_joiner_straight_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_wall_joiner_straight_low.cas
+
+
+
+type			roman_city_wall_joiner_diagonal
+lod
+max_distance	200
+model_rigid		models_walls/roman_city_wall_joiner_diagonal_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_wall_joiner_diagonal_low.cas
+
+
+
+type			roman_city_wall_external_corner
+lod
+max_distance	200
+model_rigid		models_walls/roman_city_wall_external_corner_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_wall_external_corner_low.cas
+
+
+
+type			roman_city_wall_joiner_external_right
+lod
+max_distance	200
+model_rigid		models_walls/roman_city_wall_joiner_external_right_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_wall_joiner_external_right_low.cas
+
+
+
+type			roman_city_wall_joiner_external_left
+lod
+max_distance	200
+model_rigid		models_walls/roman_city_wall_joiner_external_left_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_wall_joiner_external_left_low.cas
+
+
+
+type			roman_city_wall_internal_corner
+lod
+max_distance	200
+model_rigid		models_walls/roman_city_wall_internal_corner_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_wall_internal_corner_low.cas
+
+
+
+type			roman_city_wall_joiner_internal_right
+lod
+max_distance	200
+model_rigid		models_walls/roman_city_wall_joiner_internal_right_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_wall_joiner_internal_right_low.cas
+
+
+
+type			roman_city_wall_joiner_internal_left
+lod
+max_distance	200
+model_rigid		models_walls/roman_city_wall_joiner_internal_left_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_wall_joiner_internal_left_low.cas
+
+
+type			roman_city_wall_small_damage
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_wall_small_damage.cas
+
+type			roman_city_wall_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_city_wall_small_damage_anim.cas
+
+type			roman_city_wall_small_damage_remains
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_wall_small_damage_remains.cas
+
+type			roman_city_wall_more_damage
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_wall_more_damage.cas
+
+type			roman_city_wall_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_city_wall_more_damage_anim.cas
+
+type			roman_city_wall_more_damage_remains
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_wall_more_damage_remains.cas
+
+type			roman_city_wall_platform_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_wall_platform_collapse.cas
+
+type			roman_city_wall_platform_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_city_wall_platform_collapse_anim.cas
+
+type			roman_city_wall_platform_collapse_remains
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_wall_platform_collapse_remains.cas
+
+type			roman_city_wall_major_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_wall_major_collapse.cas
+
+type			roman_city_wall_major_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_city_wall_major_collapse_anim.cas
+
+type			roman_city_wall_major_collapse_remains
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_wall_major_collapse_remains.cas
+
+type			roman_city_wall_final_major_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_wall_final_major_collapse.cas
+
+type			roman_city_wall_final_major_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_city_wall_final_major_collapse_anim.cas
+
+type			roman_city_wall_final_major_collapse_remains
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_wall_final_major_collapse_remains.cas
+
+
+type			roman_city_tower_small_damage
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_tower_small_damage.cas
+
+type			roman_city_tower_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_city_tower_small_damage_anim.cas
+
+type			roman_city_tower_more_damage
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_tower_more_damage.cas
+
+type			roman_city_tower_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_city_tower_more_damage_anim.cas
+
+type			roman_city_tower_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_tower_collapse.cas
+
+type			roman_city_tower_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_city_tower_collapse_anim.cas
+
+
+
+type			roman_city_tower_ec_small_damage
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_tower_ec_small_damage.cas
+
+type			roman_city_tower_ec_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_city_tower_ec_small_damage_anim.cas
+
+type			roman_city_tower_ec_more_damage
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_tower_ec_more_damage.cas
+
+type			roman_city_tower_ec_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_city_tower_ec_more_damage_anim.cas
+
+type			roman_city_tower_ec_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_tower_ec_collapse.cas
+
+type			roman_city_tower_ec_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_city_tower_ec_collapse_anim.cas
+
+type			roman_city_tower_ic_small_damage
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_tower_ic_small_damage.cas
+
+type			roman_city_tower_ic_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_city_tower_ic_small_damage_anim.cas
+
+type			roman_city_tower_ic_more_damage
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_tower_ic_more_damage.cas
+
+type			roman_city_tower_ic_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_city_tower_ic_more_damage_anim.cas
+
+type			roman_city_tower_ic_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/roman_city_tower_ic_collapse.cas
+
+type			roman_city_tower_ic_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_city_tower_ic_collapse_anim.cas
+
+
+
+; ********************      roman huge city walls
+
+
+
+
+type			roman_huge_city_wall_straight
+lod
+max_distance	200
+model_rigid		models_walls/roman_huge_city_wall_straight_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_wall_straight_low.cas
+
+
+
+
+type			roman_huge_city_external_corner_watchtower
+lod
+max_distance	200
+model_rigid		models_walls/roman_huge_city_external_corner_watchtower_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_external_corner_watchtower_low.cas
+
+
+
+type			roman_huge_city_internal_corner_watchtower
+lod
+max_distance	200
+model_rigid		models_walls/roman_huge_city_internal_corner_watchtower_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_internal_corner_watchtower_low.cas
+
+
+
+
+type			roman_huge_city_wall_watchtower
+lod
+max_distance	200
+model_rigid		models_walls/roman_huge_city_wall_watchtower_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_wall_watchtower_low.cas
+
+;;+++++++++++	ROMAN HUGE CITY GATEWAY    +++++++++++++++++++
+
+type			roman_huge_city_gateway
+lod
+max_distance	200
+model_rigid		models_walls/roman_huge_city_gateway_high.cas
+; lod
+; max_distance	300
+; model_rigid		models_walls/roman_huge_city_gateway_med.cas
+lod
+max_distance	400
+model_rigid		models_walls/roman_huge_city_gateway_low.cas
+
+
+type			roman_huge_city_gateway_small_damage
+lod
+max_distance	200
+model_rigid		models_walls/roman_huge_city_gateway_small_damage.cas
+
+type			roman_huge_city_gateway_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_huge_city_gateway_small_damage_anim.cas
+
+
+type			roman_huge_city_gateway_more_damage
+lod
+max_distance	200
+model_rigid		models_walls/roman_huge_city_gateway_more_damage.cas
+
+type			roman_huge_city_gateway_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_huge_city_gateway_more_damage_anim.cas
+
+
+type			roman_huge_city_gateway_collapse
+lod
+max_distance	200
+model_rigid		models_walls/roman_huge_city_gateway_collapse.cas
+
+type			roman_huge_city_gateway_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_huge_city_gateway_collapse_anim.cas
+
+type			roman_huge_city_gateway_collapse_remains
+lod
+max_distance	200
+model_rigid		models_walls/roman_huge_city_gateway_collapse_remains.cas
+
+;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+type			roman_huge_city_wall_joiner_straight
+lod
+max_distance	200
+model_rigid		models_walls/roman_huge_city_wall_joiner_straight_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_wall_joiner_straight_low.cas
+
+
+
+type			roman_huge_city_wall_joiner_diagonal
+lod
+max_distance	200
+model_rigid		models_walls/roman_huge_city_wall_joiner_diagonal_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_wall_joiner_diagonal_low.cas
+
+
+
+type			roman_huge_city_wall_external_corner
+lod
+max_distance	200
+model_rigid		models_walls/roman_huge_city_wall_external_corner_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_wall_external_corner_low.cas
+
+
+
+type			roman_huge_city_wall_joiner_external_right
+lod
+max_distance	200
+model_rigid		models_walls/roman_huge_city_wall_joiner_external_right_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_wall_joiner_external_right_low.cas
+
+
+
+type			roman_huge_city_wall_joiner_external_left
+lod
+max_distance	200
+model_rigid		models_walls/roman_huge_city_wall_joiner_external_left_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_wall_joiner_external_left_low.cas
+
+
+
+type			roman_huge_city_wall_internal_corner
+lod
+max_distance	200
+model_rigid		models_walls/roman_huge_city_wall_internal_corner_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_wall_internal_corner_low.cas
+
+
+
+type			roman_huge_city_wall_joiner_internal_right
+lod
+max_distance	200
+model_rigid		models_walls/roman_huge_city_wall_joiner_internal_right_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_wall_joiner_internal_right_low.cas
+
+
+
+type			roman_huge_city_wall_joiner_internal_left
+lod
+max_distance	200
+model_rigid		models_walls/roman_huge_city_wall_joiner_internal_left_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_wall_joiner_internal_left_low.cas
+
+
+type			roman_huge_city_wall_small_damage
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_wall_small_damage.cas
+
+type			roman_huge_city_wall_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_huge_city_wall_small_damage_anim.cas
+
+type			roman_huge_city_wall_small_damage_remains
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_wall_small_damage_remains.cas
+
+type			roman_huge_city_wall_more_damage
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_wall_more_damage.cas
+
+type			roman_huge_city_wall_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_huge_city_wall_more_damage_anim.cas
+
+type			roman_huge_city_wall_more_damage_remains
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_wall_more_damage_remains.cas
+
+type			roman_huge_city_wall_platform_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_wall_platform_collapse.cas
+
+type			roman_huge_city_wall_platform_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_huge_city_wall_platform_collapse_anim.cas
+
+type			roman_huge_city_wall_platform_collapse_remains
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_wall_platform_collapse_remains.cas
+
+type			roman_huge_city_wall_major_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_wall_major_collapse.cas
+
+type			roman_huge_city_wall_major_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_huge_city_wall_major_collapse_anim.cas
+
+type			roman_huge_city_wall_major_collapse_remains
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_wall_major_collapse_remains.cas
+
+type			roman_huge_city_wall_final_major_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_wall_final_major_collapse.cas
+
+type			roman_huge_city_wall_final_major_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_huge_city_wall_final_major_collapse_anim.cas
+
+type			roman_huge_city_wall_final_major_collapse_remains
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_wall_final_major_collapse_remains.cas
+
+
+type			roman_huge_city_tower_small_damage
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_tower_small_damage.cas
+
+type			roman_huge_city_tower_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_huge_city_tower_small_damage_anim.cas
+
+type			roman_huge_city_tower_more_damage
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_tower_more_damage.cas
+
+type			roman_huge_city_tower_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_huge_city_tower_more_damage_anim.cas
+
+type			roman_huge_city_tower_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_tower_collapse.cas
+
+type			roman_huge_city_tower_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_huge_city_tower_collapse_anim.cas
+
+
+
+type			roman_huge_city_tower_ec_small_damage
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_tower_ec_small_damage.cas
+
+type			roman_huge_city_tower_ec_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_huge_city_tower_ec_small_damage_anim.cas
+
+type			roman_huge_city_tower_ec_more_damage
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_tower_ec_more_damage.cas
+
+type			roman_huge_city_tower_ec_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_huge_city_tower_ec_more_damage_anim.cas
+
+type			roman_huge_city_tower_ec_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_tower_ec_collapse.cas
+
+type			roman_huge_city_tower_ec_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_huge_city_tower_ec_collapse_anim.cas
+
+type			roman_huge_city_tower_ic_small_damage
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_tower_ic_small_damage.cas
+
+type			roman_huge_city_tower_ic_small_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_huge_city_tower_ic_small_damage_anim.cas
+
+type			roman_huge_city_tower_ic_more_damage
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_tower_ic_more_damage.cas
+
+type			roman_huge_city_tower_ic_more_damage_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_huge_city_tower_ic_more_damage_anim.cas
+
+type			roman_huge_city_tower_ic_collapse
+lod
+max_distance	4000
+model_rigid		models_walls/roman_huge_city_tower_ic_collapse.cas
+
+type			roman_huge_city_tower_ic_collapse_anim
+lod
+max_distance	4000
+model_anim		models_walls/roman_huge_city_tower_ic_collapse_anim.cas
+
+
+
+; roman marching camp walls
+
+type			stake_palisade_gateway
+lod
+max_distance	100
+model_rigid		stake_palisade_gateway_high.cas
+lod
+max_distance	200
+model_rigid		stake_palisade_gateway_med.cas
+lod
+max_distance	4000
+model_rigid		stake_palisade_gateway_low.cas
+
+
+
+type			stake_palisade_straight
+lod
+max_distance	100
+model_rigid		stake_palisade_straight_high.cas
+lod
+max_distance	200
+model_rigid		stake_palisade_straight_med.cas
+lod
+max_distance	4000
+model_rigid		stake_palisade_straight_low.cas
+
+
+
+type			stake_palisade_corner
+lod
+max_distance	100
+model_rigid		stake_palisade_corner_high.cas
+lod
+max_distance	200
+model_rigid		stake_palisade_corner_med.cas
+lod
+max_distance	4000
+model_rigid		stake_palisade_corner_low.cas
+
+
+
+
+; roman village walls
+
+
+type			village_wall_straight
+lod
+max_distance	4000
+model_rigid		village_wall_straight_high.cas
+
+
+type			village_wall_angled
+lod
+max_distance	4000
+model_rigid		village_wall_angled_high.cas
+
+
+type			village_wall_gateway
+lod
+max_distance	4000
+model_rigid		village_wall_gateway_high.cas
+
+
+

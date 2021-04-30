@@ -1,0 +1,11 @@
+plan
+
+{
+
+	floor	abandoned_house_2_underlay.CAS	abandoned_house_2_overlay.CAS
+
+	ground_types	ground_default_grass.tga	-64,	-64,	64,	64
+	borders	border_limits_64m_diameter.CAS	
+	abandoned_house_2,		0,	0,	0,	0
+
+}

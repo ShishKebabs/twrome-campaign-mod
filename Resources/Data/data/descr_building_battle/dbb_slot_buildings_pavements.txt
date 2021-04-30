@@ -1,0 +1,488 @@
+	pavement_roman_imperial_palace
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_roman_imperial_palace
+			physical_info	none
+		}
+	}
+
+	pavement_roman_governors_villa
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_roman_governors_villa
+			physical_info	none
+		}
+	}
+
+	pavement_roman_awesome_temple
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_roman_awesome_temple
+			physical_info	none
+		}
+	}
+
+	pavement_bath_house
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_bath_house
+			physical_info	none
+		}
+	}
+
+	pavement_circus_maximus
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_circus_maximus
+			physical_info	none
+		}
+	}
+
+	pavement_city_barracks_roman
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_city_barracks_roman
+			physical_info	none
+		}
+	}
+
+	pavement_militia_barracks_roman
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_militia_barracks_roman
+			physical_info	none
+		}
+	}
+
+	pavement_colosseum
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_colosseum
+			physical_info	none
+		}
+	}
+
+	pavement_theatre
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_theatre
+			physical_info	none
+		}
+	}
+
+	
+
+	pavement_stone_amphitheatre
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_stone_amphitheatre
+			physical_info	none
+		}
+	}
+
+	pavement_urban_amphitheatre
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_urban_amphitheatre
+			physical_info	none
+		}
+	}
+
+	pavement_scriptorium_roman
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_scriptorium_roman
+			physical_info	none
+		}
+	}
+
+	pavement_ludus_magnus_roman
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_ludus_magnus_roman
+			physical_info	none
+		}
+	}
+
+	pavement_hippodrome
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_hippodrome
+			physical_info	none
+		}
+	}
+
+	pavement_academy_roman
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_academy_roman
+			physical_info	none
+		}
+	}
+
+	pavement_stone_stables
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_stone_stables
+			physical_info	none
+		}
+	}
+
+
+; **  eastern
+
+	pavement_academy_eastern
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_academy_eastern
+			physical_info	none
+		}
+	}
+
+; **  egyptian
+
+
+	pavement_academy_egyptian
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_academy_egyptian
+			physical_info	none
+		}
+	}
+
+	pavement_camel_stables
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_camel_stables
+			physical_info	none
+		}
+	}
+
+	pavement_city_barracks_egyptian
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_city_barracks_egyptian
+			physical_info	none
+		}
+	}
+
+	pavement_egyptian_marketplace
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_egyptian_marketplace
+			physical_info	none
+		}
+	}
+
+
+	pavement_egyptian_awesome_temple
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_egyptian_awesome_temple
+			physical_info	none
+		}
+	}
+
+	pavement_egyptian_governors_villa
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_egyptian_governors_villa
+			physical_info	none
+		}
+	}
+
+	pavement_egyptian_imperial_palace
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_egyptian_imperial_palace
+			physical_info	none
+		}
+	}
+
+	pavement_egyptian_large_marketplace
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_egyptian_large_marketplace
+			physical_info	none
+		}
+	}
+
+	pavement_egyptian_trader
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_egyptian_trader
+			physical_info	none
+		}
+	}
+
+	pavement_militia_barracks_egyptian
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_militia_barracks_egyptian
+			physical_info	none
+		}
+	}
+
+	
+
+
+; ** greek
+
+
+	pavement_greek_amphitheatre
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_greek_amphitheatre
+			physical_info	none
+		}
+	}
+
+	pavement_greek_awesome_temple
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_greek_awesome_temple
+			physical_info	none
+		}
+	}
+
+	pavement_greek_imperial_palace
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_greek_imperial_palace
+			physical_info	none
+		}
+	}
+
+	pavement_greek_small_temple
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_greek_small_temple
+			physical_info	none
+		}
+	}
+
+
+; ** new
+	
+	pavement_greek_governors_house
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_greek_governors_house
+			physical_info	none
+		}
+	}
+	
+	pavement_roman_governors_house
+	{
+	
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_roman_governors_house
+			physical_info	none
+		}
+	}
+		
+	pavement_great_forum
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_great_forum
+			physical_info	none
+		}
+	}
+
+	temp_slot_filler_greek_theatre_small
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		temp_slot_filler_greek_theatre_small
+			physical_info	none
+		}
+	}
+
+	temp_slot_filler_greek_hippodrome
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		temp_slot_filler_greek_hippodrome
+			physical_info	none
+		}
+	}
+
+

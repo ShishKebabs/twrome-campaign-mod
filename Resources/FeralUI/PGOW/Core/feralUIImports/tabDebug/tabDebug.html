@@ -1,0 +1,101 @@
+
+<li 	id="tabButtonDebug"
+		class="tabSelect button flexGrow noDisplay"
+		data-tab-id="tabContentDebug"
+		data-tab-position="8"
+		data-visible-name="DebugPanelVisible">
+	<img class="unselectedImg" src="images/navicons/debugoff.svg" />
+	<img class="selectedImg"   src="images/navicons/debug.svg"    />
+	<span data-inner-string="localise-Startup.Debug">Debug</span>
+</li>
+
+
+
+<div 	id="tabContentDebug" 
+		class="tabbed scrollContainer noDisplay" 
+		data-visible-name="DebugPanelVisible">
+	<span class="center">
+		<div data-visible-name="MainIsGoldMaster">
+			<b class="internalPanelWarning" data-inner-string="localise-Startup.InternalPanelWarning">
+				The features on the Testing tab are not officially supported. If you use them, you do so at your own risk.
+			</b>
+		</div>
+		<span class="item flexParent flexVertical">
+			<label data-visible-name="WeShowFullscreen">
+				<input 	type="checkbox" 
+						data-property-name="regFlag-appRegKey-FullScreen" 
+						data-property-type="bool" />
+				<span data-inner-string="localise-Startup.FullScreen">Full Screen</span>
+			</label>
+			<label data-visible-name="WeShowBlankAllScreen">
+				<input 	type="checkbox" 
+						data-property-name="regFlag-appRegKey-ShowDesktopOnOtherDisplays" 
+						data-property-type="bool" />
+				<span>Show desktop on other displays</span>
+			</label>
+			<label>
+				<input 	type="checkbox" 
+						data-property-name="regFlag-appRegKey-HideViewPreferencesButton" 
+						data-property-type="bool" />
+				<span>Hide 'Open Preferences Folder' button</span>
+			</label>
+			<label>
+				<input 	type="checkbox" 
+						data-property-name="regFlag-appRegKey-RestoreResOnSuspend" 
+						data-property-type="bool" />
+				<span>Restore resolution on suspend</span>
+			</label>
+			<label>
+				<input 	type="checkbox" 
+						data-property-name="regFlag-appRegKey-RestoreMouseOnSuspend" 
+						data-property-type="bool" />
+				<span>Restore mouse on suspend</span>
+			</label>
+			<label>
+				<input 	type="checkbox" 
+						data-property-name="regFlag-appRegKey-ShowAssertAlerts" 
+						data-property-type="bool" />
+				<span>Show assert alerts [debug builds only]</span>
+			</label>
+			<label>
+				<input 	type="checkbox" 
+						data-property-name="regFlag-DDrawConfig-DisableMouseClamping"
+						data-property-type="bool" />
+				<span>Disable mouse clamping</span>
+			</label>
+			<label>
+				<input 	type="checkbox" 
+						data-property-name="regFlag-appRegKey-AllowPausing" 
+						data-property-type="bool" />
+				<span>Allow pausing</span>
+			</label>
+			<label>
+				<input 	type="checkbox" 
+						data-property-name="regFlag-appRegKey-PauseOnSuspend" 
+						data-property-type="bool" />
+				<span>Pause on suspend</span>
+			</label>
+			<label>
+				<input 	type="checkbox" 
+						data-property-name="regFlag-appRegKey-PauseTimersOnPause" 
+						data-property-type="bool" />
+				<span>Pause timers on pause</span>
+			</label>
+			<label>
+				<input 	type="checkbox" 
+						data-property-name="regFlag-appRegKey-PauseSoundOnPause" 
+						data-property-type="bool" />
+				<span>Pause sound on pause</span>
+			</label>
+			<label>
+				<input 	type="checkbox" 
+						data-property-name="regFlag-appRegKey-PauseMoviesOnPause" 
+						data-property-type="bool" />
+				<span>Pause movies on pause</span>
+			</label>
+		</span>
+	</span>
+</div>
+
+<script src="../importTabScript.js"></script>
+<link rel="stylesheet" type="text/css" href="tabDebug.css" />

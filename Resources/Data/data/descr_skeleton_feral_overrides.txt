@@ -1,0 +1,864 @@
+type		fs_hc_swordsman
+
+anim    stand_turn_ccw_1				data/animations/extra/horse_rider/rider_turn_left_standing.anim;
+anim    stand_turn_ccw_2				data/animations/extra/horse_rider/rider_turn_left_rear.anim;
+anim    stand_turn_cw_1					data/animations/extra/horse_rider/rider_turn_right_standing.anim;
+anim    stand_turn_cw_2					data/animations/extra/horse_rider/rider_turn_right_rear.anim;
+anim		stand_to_walk 	 				data/animations/extra/horse_rider/rider_horse_stand_to_walk.anim;
+anim		stand_to_run  	 				data/animations/extra/horse_rider/rider_horse_stand_to_canter.anim;
+anim		stand_to_charge  				data/animations/extra/horse_rider/rider_horse_stand_to_gallop.anim;
+anim		walk						 				data/animations/extra/horse_rider/rider_horse_walk.anim;
+anim		walk_to_stand		 				data/animations/extra/horse_rider/rider_horse_walk_to_stand.anim;
+anim		walk_to_run			 				data/animations/extra/horse_rider/rider_horse_walk_to_canter.anim;
+anim		run							 				data/animations/extra/horse_rider/rider_horse_canter.anim;
+anim		fast_run  							data/animations/extra/horse_rider/rider_horse_canter_1250cm_sec.anim;
+anim		heavy_run								data/animations/extra/horse_rider/rider_fs_cataphract_horse_run.anim;
+anim		run_to_stand		 				data/animations/extra/horse_rider/rider_horse_canter_to_stand.anim;
+anim		run_to_walk			 				data/animations/extra/horse_rider/rider_horse_canter_to_walk.anim;
+anim		run_to_charge		 				data/animations/extra/horse_rider/rider_horse_canter_to_gallop.anim;
+anim    charge					 				data/animations/extra/horse_rider/rider_horse_gallop.anim;
+anim		refuse					 				data/animations/extra/horse_rider/rider_horse_refuse.anim;
+anim		shuffle_forward	 				data/animations/extra/horse_rider/rider_horse_shuffle_forwards.anim;
+anim		shuffle_back		 				data/animations/extra/horse_rider/rider_horse_shuffle_backwards.anim;
+anim		shuffle_left		 				data/animations/extra/horse_rider/rider_horse_shuffle_left.anim;
+anim		shuffle_right		 				data/animations/extra/horse_rider/rider_horse_shuffle_right.anim;
+anim		swim						 				data/animations/extra/horse_rider/rider_horse_swim.anim;
+anim		idle_to_swim						data/animations/extra/horse_rider/rider_horse_swim_stand_to_swim.anim;
+anim		swim_to_idle						data/animations/extra/horse_rider/rider_horse_swim_to_stand.anim;
+anim		swim_idle								data/animations/extra/horse_rider/rider_horse_swim_treadwater.anim;
+anim		swim_shuffle_forwards		data/animations/extra/horse_rider/rider_horse_swim_shuffle_forward.anim;
+anim		swim_shuffle_backwards	data/animations/extra/horse_rider/rider_horse_swim_shuffle_backwards.anim;
+anim		swim_shuffle_left				data/animations/extra/horse_rider/rider_horse_swim_shuffle_left.anim;
+anim		swim_shuffle_right			data/animations/extra/horse_rider/rider_horse_swim_shuffle_right.anim;
+anim		horseman_rear			data/animations/extra/horse_rider/rider_horse_rear.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/horse_rider/mount_rider_death_variant_fall_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/horse_rider/mount_rider_death_variant_fall_02.anim;
+anim		die_falling_end_var_01				data/animations/extra/horse_rider/mount_rider_death_variant_land_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/horse_rider/mount_rider_death_variant_land_02.anim;
+anim		die_falling_cycle_galloping			data/animations/extra/horse_rider/mount_rider_galloping_death_variant_fall_01.anim;
+anim		die_falling_end_galloping			data/animations/extra/horse_rider/mount_rider_galloping_death_variant_land_01.anim;
+; Camel animations
+anim		camel_rider_stand_to_walk			data/animations/extra/camel_rider/camel_rider_stand_to_walk.anim;
+anim		camel_rider_stand_to_run			data/animations/extra/camel_rider/camel_rider_stand_to_run.anim;
+anim		camel_rider_stand_to_charge		data/animations/extra/camel_rider/camel_rider_stand_to_gallop.anim;
+anim		camel_rider_walk							data/animations/extra/camel_rider/camel_rider_walk.anim;
+anim		camel_rider_walk_to_stand			data/animations/extra/camel_rider/camel_rider_walk_to_stand.anim;
+anim		camel_rider_walk_to_run				data/animations/extra/camel_rider/camel_rider_walk_to_run.anim;
+anim		camel_rider_run								data/animations/extra/camel_rider/camel_rider_canter.anim;
+anim		camel_rider_run_to_stand			data/animations/extra/camel_rider/camel_rider_canter_to_stand.anim;
+anim		camel_rider_run_to_walk				data/animations/extra/camel_rider/camel_rider_canter_to_walk.anim;
+anim		camel_rider_run_to_charge			data/animations/extra/camel_rider/camel_rider_canter_to_gallop.anim;
+anim		camel_rider_shuffle_back			data/animations/extra/camel_rider/camel_rider_shuffle_backwards.anim;
+anim		camel_rider_shuffle_forward		data/animations/extra/camel_rider/camel_rider_shuffle_forwards.anim;
+anim		camel_rider_charge						data/animations/extra/camel_rider/camel_rider_gallop.anim;
+anim		camel_rider_turn_ccw					data/animations/extra/camel_rider/camel_rider_turn_left.anim;
+anim		camel_rider_turn_cw						data/animations/extra/camel_rider/camel_rider_turn_right.anim;
+
+
+type		fs_hc_archer
+
+anim    stand_turn_ccw_1							data/animations/extra/horse_rider/rider_turn_left_standing.anim;
+anim    stand_turn_ccw_2							data/animations/extra/horse_rider/rider_turn_left_rear.anim;
+anim    stand_turn_cw_1								data/animations/extra/horse_rider/rider_turn_right_standing.anim;
+anim    stand_turn_cw_2								data/animations/extra/horse_rider/rider_turn_right_rear.anim;
+anim		stand_to_walk 	 							data/animations/extra/horse_rider/rider_horse_stand_to_walk.anim;
+anim		stand_to_run  	 				data/animations/extra/horse_rider/rider_horse_stand_to_canter.anim;
+anim		stand_to_charge  							data/animations/extra/horse_rider/rider_horse_stand_to_gallop.anim;
+anim		walk						 							data/animations/extra/horse_rider/rider_horse_walk.anim;
+anim		walk_to_stand		 							data/animations/extra/horse_rider/rider_horse_walk_to_stand.anim;
+anim		walk_to_run			 							data/animations/extra/horse_rider/rider_horse_walk_to_canter.anim;
+anim		run							 							data/animations/extra/horse_rider/rider_horse_canter.anim;
+anim		fast_run  										data/animations/extra/horse_rider/rider_horse_canter_1250cm_sec.anim;
+anim		heavy_run											data/animations/extra/horse_rider/rider_fs_cataphract_horse_run.anim;
+anim		run_to_stand		 							data/animations/extra/horse_rider/rider_horse_canter_to_stand.anim;
+anim		run_to_walk			 							data/animations/extra/horse_rider/rider_horse_canter_to_walk.anim;
+anim		run_to_charge		 							data/animations/extra/horse_rider/rider_horse_canter_to_gallop.anim;
+anim    charge					 							data/animations/extra/horse_rider/rider_horse_gallop.anim;
+anim		refuse					 							data/animations/extra/horse_rider/rider_horse_refuse.anim;
+anim		shuffle_forward	 							data/animations/extra/horse_rider/rider_horse_shuffle_forwards.anim;
+anim		shuffle_back		 							data/animations/extra/horse_rider/rider_horse_shuffle_backwards.anim;
+anim		shuffle_left		 							data/animations/extra/horse_rider/rider_horse_shuffle_left.anim;
+anim		shuffle_right		 							data/animations/extra/horse_rider/rider_horse_shuffle_right.anim;
+anim		swim						 							data/animations/extra/horse_rider/rider_horse_swim.anim;
+anim		idle_to_swim									data/animations/extra/horse_rider/rider_horse_swim_stand_to_swim.anim;
+anim		swim_to_idle									data/animations/extra/horse_rider/rider_horse_swim_to_stand.anim;
+anim		swim_idle											data/animations/extra/horse_rider/rider_horse_swim_treadwater.anim;
+anim		swim_shuffle_forwards					data/animations/extra/horse_rider/rider_horse_swim_shuffle_forward.anim;
+anim		swim_shuffle_backwards				data/animations/extra/horse_rider/rider_horse_swim_shuffle_backwards.anim;
+anim		swim_shuffle_left							data/animations/extra/horse_rider/rider_horse_swim_shuffle_left.anim;
+anim		swim_shuffle_right						data/animations/extra/horse_rider/rider_horse_swim_shuffle_right.anim;
+anim		horseman_rear						data/animations/extra/horse_rider/rider_horse_rear.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/horse_rider/mount_rider_death_variant_fall_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/horse_rider/mount_rider_death_variant_fall_02.anim;
+anim		die_falling_end_var_01				data/animations/extra/horse_rider/mount_rider_death_variant_land_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/horse_rider/mount_rider_death_variant_land_02.anim;
+anim		die_falling_cycle_galloping			data/animations/extra/horse_rider/mount_rider_galloping_death_variant_fall_01.anim;
+anim		die_falling_end_galloping			data/animations/extra/horse_rider/mount_rider_galloping_death_variant_land_01.anim;
+; Camel animations
+anim		camel_rider_stand_to_walk			data/animations/extra/camel_rider/camel_rider_stand_to_walk.anim;
+anim		camel_rider_stand_to_run			data/animations/extra/camel_rider/camel_rider_stand_to_run.anim;
+anim		camel_rider_stand_to_charge		data/animations/extra/camel_rider/camel_rider_stand_to_gallop.anim;
+anim		camel_rider_walk							data/animations/extra/camel_rider/camel_rider_walk.anim;
+anim		camel_rider_walk_to_stand			data/animations/extra/camel_rider/camel_rider_walk_to_stand.anim;
+anim		camel_rider_walk_to_run				data/animations/extra/camel_rider/camel_rider_walk_to_run.anim;
+anim		camel_rider_run								data/animations/extra/camel_rider/camel_rider_canter.anim;
+anim		camel_rider_run_to_stand			data/animations/extra/camel_rider/camel_rider_canter_to_stand.anim;
+anim		camel_rider_run_to_walk				data/animations/extra/camel_rider/camel_rider_canter_to_walk.anim;
+anim		camel_rider_run_to_charge			data/animations/extra/camel_rider/camel_rider_canter_to_gallop.anim;
+anim		camel_rider_shuffle_back			data/animations/extra/camel_rider/camel_rider_shuffle_backwards.anim;
+anim		camel_rider_shuffle_forward		data/animations/extra/camel_rider/camel_rider_shuffle_forwards.anim;
+anim		camel_rider_charge						data/animations/extra/camel_rider/camel_rider_gallop.anim;
+anim		camel_rider_turn_ccw					data/animations/extra/camel_rider/camel_rider_turn_left.anim;
+anim		camel_rider_turn_cw						data/animations/extra/camel_rider/camel_rider_turn_right.anim;
+
+
+type		fs_hc_javelinman
+
+anim    stand_turn_ccw_1				data/animations/extra/horse_rider/rider_turn_left_standing.anim;
+anim    stand_turn_ccw_2				data/animations/extra/horse_rider/rider_turn_left_rear.anim;
+anim    stand_turn_cw_1					data/animations/extra/horse_rider/rider_turn_right_standing.anim;
+anim    stand_turn_cw_2					data/animations/extra/horse_rider/rider_turn_right_rear.anim;
+anim		stand_to_walk 	 				data/animations/extra/horse_rider/rider_horse_stand_to_walk.anim;
+anim		stand_to_run  	 				data/animations/extra/horse_rider/rider_horse_stand_to_canter.anim;
+anim		stand_to_charge  				data/animations/extra/horse_rider/rider_horse_stand_to_gallop.anim;
+anim		walk						 				data/animations/extra/horse_rider/rider_horse_walk.anim;
+anim		walk_to_stand		 				data/animations/extra/horse_rider/rider_horse_walk_to_stand.anim;
+anim		walk_to_run			 				data/animations/extra/horse_rider/rider_horse_walk_to_canter.anim;
+anim		run							 				data/animations/extra/horse_rider/rider_horse_canter.anim;
+anim		fast_run  							data/animations/extra/horse_rider/rider_horse_canter_1250cm_sec.anim;
+anim		heavy_run								data/animations/extra/horse_rider/rider_fs_cataphract_horse_run.anim;
+anim		run_to_stand		 				data/animations/extra/horse_rider/rider_horse_canter_to_stand.anim;
+anim		run_to_walk			 				data/animations/extra/horse_rider/rider_horse_canter_to_walk.anim;
+anim		run_to_charge		 				data/animations/extra/horse_rider/rider_horse_canter_to_gallop.anim;
+anim    charge					 				data/animations/extra/horse_rider/rider_horse_gallop.anim;
+anim		refuse					 				data/animations/extra/horse_rider/rider_horse_refuse.anim;
+anim		shuffle_forward	 				data/animations/extra/horse_rider/rider_horse_shuffle_forwards.anim;
+anim		shuffle_back		 				data/animations/extra/horse_rider/rider_horse_shuffle_backwards.anim;
+anim		shuffle_left		 				data/animations/extra/horse_rider/rider_horse_shuffle_left.anim;
+anim		shuffle_right		 				data/animations/extra/horse_rider/rider_horse_shuffle_right.anim;
+anim		swim						 				data/animations/extra/horse_rider/rider_horse_swim.anim;
+anim		idle_to_swim						data/animations/extra/horse_rider/rider_horse_swim_stand_to_swim.anim;
+anim		swim_to_idle						data/animations/extra/horse_rider/rider_horse_swim_to_stand.anim;
+anim		swim_idle								data/animations/extra/horse_rider/rider_horse_swim_treadwater.anim;
+anim		swim_shuffle_forwards		data/animations/extra/horse_rider/rider_horse_swim_shuffle_forward.anim;
+anim		swim_shuffle_backwards	data/animations/extra/horse_rider/rider_horse_swim_shuffle_backwards.anim;
+anim		swim_shuffle_left				data/animations/extra/horse_rider/rider_horse_swim_shuffle_left.anim;
+anim		swim_shuffle_right			data/animations/extra/horse_rider/rider_horse_swim_shuffle_right.anim;
+anim		horseman_rear			data/animations/extra/horse_rider/rider_horse_rear.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/horse_rider/mount_rider_death_variant_fall_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/horse_rider/mount_rider_death_variant_fall_02.anim;
+anim		die_falling_end_var_01				data/animations/extra/horse_rider/mount_rider_death_variant_land_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/horse_rider/mount_rider_death_variant_land_02.anim;
+anim		die_falling_cycle_galloping			data/animations/extra/horse_rider/mount_rider_galloping_death_variant_fall_01.anim;
+anim		die_falling_end_galloping			data/animations/extra/horse_rider/mount_rider_galloping_death_variant_land_01.anim;
+; Camel animations
+anim		camel_rider_stand_to_walk			data/animations/extra/camel_rider/camel_rider_stand_to_walk.anim;
+anim		camel_rider_stand_to_run			data/animations/extra/camel_rider/camel_rider_stand_to_run.anim;
+anim		camel_rider_stand_to_charge		data/animations/extra/camel_rider/camel_rider_stand_to_gallop.anim;
+anim		camel_rider_walk							data/animations/extra/camel_rider/camel_rider_walk.anim;
+anim		camel_rider_walk_to_stand			data/animations/extra/camel_rider/camel_rider_walk_to_stand.anim;
+anim		camel_rider_walk_to_run				data/animations/extra/camel_rider/camel_rider_walk_to_run.anim;
+anim		camel_rider_run								data/animations/extra/camel_rider/camel_rider_canter.anim;
+anim		camel_rider_run_to_stand			data/animations/extra/camel_rider/camel_rider_canter_to_stand.anim;
+anim		camel_rider_run_to_walk				data/animations/extra/camel_rider/camel_rider_canter_to_walk.anim;
+anim		camel_rider_run_to_charge			data/animations/extra/camel_rider/camel_rider_canter_to_gallop.anim;
+anim		camel_rider_shuffle_back			data/animations/extra/camel_rider/camel_rider_shuffle_backwards.anim;
+anim		camel_rider_shuffle_forward		data/animations/extra/camel_rider/camel_rider_shuffle_forwards.anim;
+anim		camel_rider_charge						data/animations/extra/camel_rider/camel_rider_gallop.anim;
+anim		camel_rider_turn_ccw					data/animations/extra/camel_rider/camel_rider_turn_left.anim;
+anim		camel_rider_turn_cw						data/animations/extra/camel_rider/camel_rider_turn_right.anim;
+
+
+type		fs_hc_spearman
+
+anim    stand_turn_ccw_1				data/animations/extra/horse_rider/rider_turn_left_standing.anim;
+anim    stand_turn_ccw_2				data/animations/extra/horse_rider/rider_turn_left_rear.anim;
+anim    stand_turn_cw_1					data/animations/extra/horse_rider/rider_turn_right_standing.anim;
+anim    stand_turn_cw_2					data/animations/extra/horse_rider/rider_turn_right_rear.anim;
+anim		stand_to_walk 	 				data/animations/extra/horse_rider/rider_horse_stand_to_walk.anim;
+anim		stand_to_run  	 				data/animations/extra/horse_rider/rider_horse_stand_to_canter.anim;
+anim		stand_to_charge  				data/animations/extra/horse_rider/rider_horse_stand_to_gallop.anim;
+anim		walk						 				data/animations/extra/horse_rider/rider_horse_walk.anim;
+anim		walk_to_stand		 				data/animations/extra/horse_rider/rider_horse_walk_to_stand.anim;
+anim		walk_to_run			 				data/animations/extra/horse_rider/rider_horse_walk_to_canter.anim;
+anim		run							 				data/animations/extra/horse_rider/rider_horse_canter.anim;
+anim		fast_run  							data/animations/extra/horse_rider/rider_horse_canter_1250cm_sec.anim;
+anim		heavy_run								data/animations/extra/horse_rider/rider_fs_cataphract_horse_run.anim;
+anim		run_to_stand		 				data/animations/extra/horse_rider/rider_horse_canter_to_stand.anim;
+anim		run_to_walk			 				data/animations/extra/horse_rider/rider_horse_canter_to_walk.anim;
+anim		run_to_charge		 				data/animations/extra/horse_rider/rider_horse_canter_to_gallop.anim;
+anim    charge					 				data/animations/extra/horse_rider/rider_horse_gallop.anim;
+anim		refuse					 				data/animations/extra/horse_rider/rider_horse_refuse.anim;
+anim		shuffle_forward	 				data/animations/extra/horse_rider/rider_horse_shuffle_forwards.anim;
+anim		shuffle_back		 				data/animations/extra/horse_rider/rider_horse_shuffle_backwards.anim;
+anim		shuffle_left		 				data/animations/extra/horse_rider/rider_horse_shuffle_left.anim;
+anim		shuffle_right		 				data/animations/extra/horse_rider/rider_horse_shuffle_right.anim;
+anim		swim						 				data/animations/extra/horse_rider/rider_horse_swim.anim;
+anim		idle_to_swim						data/animations/extra/horse_rider/rider_horse_swim_stand_to_swim.anim;
+anim		swim_to_idle						data/animations/extra/horse_rider/rider_horse_swim_to_stand.anim;
+anim		swim_idle								data/animations/extra/horse_rider/rider_horse_swim_treadwater.anim;
+anim		swim_shuffle_forwards		data/animations/extra/horse_rider/rider_horse_swim_shuffle_forward.anim;
+anim		swim_shuffle_backwards	data/animations/extra/horse_rider/rider_horse_swim_shuffle_backwards.anim;
+anim		swim_shuffle_left				data/animations/extra/horse_rider/rider_horse_swim_shuffle_left.anim;
+anim		horseman_rear			data/animations/extra/horse_rider/rider_horse_rear.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/horse_rider/mount_rider_death_variant_fall_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/horse_rider/mount_rider_death_variant_fall_02.anim;
+anim		die_falling_end_var_01				data/animations/extra/horse_rider/mount_rider_death_variant_land_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/horse_rider/mount_rider_death_variant_land_02.anim;
+anim		die_falling_cycle_galloping			data/animations/extra/horse_rider/mount_rider_galloping_death_variant_fall_01.anim;
+anim		die_falling_end_galloping			data/animations/extra/horse_rider/mount_rider_galloping_death_variant_land_01.anim;
+; Camel animations
+anim		camel_rider_stand_to_walk			data/animations/extra/camel_rider/camel_rider_stand_to_walk.anim;
+anim		camel_rider_stand_to_run			data/animations/extra/camel_rider/camel_rider_stand_to_run.anim;
+anim		camel_rider_stand_to_charge		data/animations/extra/camel_rider/camel_rider_stand_to_gallop.anim;
+anim		camel_rider_walk							data/animations/extra/camel_rider/camel_rider_walk.anim;
+anim		camel_rider_walk_to_stand			data/animations/extra/camel_rider/camel_rider_walk_to_stand.anim;
+anim		camel_rider_walk_to_run				data/animations/extra/camel_rider/camel_rider_walk_to_run.anim;
+anim		camel_rider_run								data/animations/extra/camel_rider/camel_rider_canter.anim;
+anim		camel_rider_run_to_stand			data/animations/extra/camel_rider/camel_rider_canter_to_stand.anim;
+anim		camel_rider_run_to_walk				data/animations/extra/camel_rider/camel_rider_canter_to_walk.anim;
+anim		camel_rider_run_to_charge			data/animations/extra/camel_rider/camel_rider_canter_to_gallop.anim;
+anim		camel_rider_shuffle_back			data/animations/extra/camel_rider/camel_rider_shuffle_backwards.anim;
+anim		camel_rider_shuffle_forward		data/animations/extra/camel_rider/camel_rider_shuffle_forwards.anim;
+anim		camel_rider_charge						data/animations/extra/camel_rider/camel_rider_gallop.anim;
+anim		camel_rider_turn_ccw					data/animations/extra/camel_rider/camel_rider_turn_left.anim;
+anim		camel_rider_turn_cw						data/animations/extra/camel_rider/camel_rider_turn_right.anim;
+
+
+type		fs_forest_elephant_rider
+
+anim		walk							data/animations/extra/elephant_rider/elephant_rider_walk.anim;
+anim		walk_to_run						data/animations/extra/elephant_rider/elephant_rider_walk_to_run.anim;
+anim		run								data/animations/extra/elephant_rider/elephant_rider_run.anim;
+anim		run_to_walk 					data/animations/extra/elephant_rider/elephant_rider_run_to_walk.anim;
+anim		run_to_charge					data/animations/extra/elephant_rider/elephant_rider_run_to_charge.anim;
+anim		charge							data/animations/extra/elephant_rider/elephant_rider_charge.anim;
+anim		charge_attack					data/animations/extra/elephant_rider/elephant_rider_charge_tusk.anim;
+anim		stand_to_charge					data/animations/extra/elephant_rider/elephant_rider_stand_to_charge.anim;
+anim		stand_to_charge					data/animations/extra/elephant_rider/elephant_rider_stand_to_charge.anim;
+anim		stand_turn_cw_1					data/animations/extra/elephant_rider/elephant_rider_turn_right.anim;
+anim		stand_turn_ccw_1				data/animations/extra/elephant_rider/elephant_rider_turn_left.anim;
+anim		attack_mid_low_1				data/animations/extra/elephant_rider/elephant_rider_stomp.anim;
+anim		attack_mid_centre_1				data/animations/extra/elephant_rider/elephant_rider_stand_tusk.anim;
+anim		attack_mid_high_1				data/animations/extra/elephant_rider/elephant_rider_headbutt.anim;
+
+
+type		fs_big_elephant_rider
+
+anim		walk							data/animations/extra/elephant_rider/elephant_rider_walk.anim;
+anim		walk_to_run						data/animations/extra/elephant_rider/elephant_rider_walk_to_run.anim;
+anim		run								data/animations/extra/elephant_rider/elephant_rider_run.anim;
+anim		run_to_walk 					data/animations/extra/elephant_rider/elephant_rider_run_to_walk.anim;
+anim		run_to_charge					data/animations/extra/elephant_rider/elephant_rider_run_to_charge.anim;
+anim		charge							data/animations/extra/elephant_rider/elephant_rider_charge.anim;
+anim		charge_attack					data/animations/extra/elephant_rider/elephant_rider_charge_tusk.anim;
+anim		stand_to_charge					data/animations/extra/elephant_rider/elephant_rider_stand_to_charge.anim;
+anim		stand_to_charge					data/animations/extra/elephant_rider/elephant_rider_stand_to_charge.anim;
+anim		stand_turn_cw_1					data/animations/extra/elephant_rider/elephant_rider_turn_right.anim;
+anim		stand_turn_ccw_1				data/animations/extra/elephant_rider/elephant_rider_turn_left.anim;
+anim		attack_mid_low_1				data/animations/extra/elephant_rider/elephant_rider_stomp.anim;
+anim		attack_mid_centre_1				data/animations/extra/elephant_rider/elephant_rider_stand_tusk.anim;
+anim		attack_mid_high_1				data/animations/extra/elephant_rider/elephant_rider_headbutt.anim;
+
+
+type		fs_camel
+
+anim		attack_mid_centre_1				data/animations/camel/Camel_Idle.CAS;
+
+
+type		fs_2handed
+
+anim		stand							data/animations/extra/two_handed/2hsog_01 stand idle.anim;
+anim		idle_1						   	data/animations/extra/two_handed/2hsog_01 stand idle 01.anim;
+anim		idle_2							data/animations/extra/two_handed/2hsog_01 stand idle 02.anim;
+anim		idle_3						  	data/animations/extra/two_handed/2hsog_01 stand idle 03.anim;
+anim		idle_4						  	data/animations/extra/two_handed/2hsog_01 stand idle 04.anim;
+anim		idle_5						  	data/animations/extra/two_handed/2hsog_01 stand idle 05.anim;
+anim		idle_6						  	data/animations/extra/two_handed/2hsog_01 stand idle 06.anim;
+anim		idle_7						  	data/animations/extra/two_handed/2hsog_01 stand idle 07.anim;
+anim		idle_8						  	data/animations/extra/two_handed/2hsog_01 stand idle 08.anim;
+anim		idle_9						  	data/animations/extra/two_handed/2hsog_01 stand idle 09.anim;
+anim		stand_turn_cw_1					data/animations/extra/two_handed/2hsog_08 standing turn 90 right.anim;
+anim		stand_turn_ccw_1				data/animations/extra/two_handed/2hsog_09 standing turn 90 left.anim;
+anim		stand_to_ready					data/animations/extra/two_handed/2hsog_35 stand idle to stand ready.anim;
+anim		stand_to_walk					data/animations/extra/two_handed/2hsog_36 stand idle to march.anim;
+anim		stand_to_run					data/animations/extra/two_handed/2hsog_37 stand to run.anim;
+anim		walk_to_stand					data/animations/extra/two_handed/2hsog_38 march to stand.anim;
+anim		run_to_stand					data/animations/extra/two_handed/2hsog_41 run to stand.anim;
+anim		ready_to_stand					data/animations/extra/two_handed/2hsog_50 stand ready to stand.anim;
+anim		taunt_1							data/animations/extra/two_handed/2hsog_59_04 taunt 1.anim;
+anim		taunt_2							data/animations/extra/two_handed/2hsog_59_04 taunt 1.anim;
+anim		taunt_3							data/animations/extra/two_handed/2hsog_59_05 taunt 2.anim;
+anim		stand_to_hide					data/animations/extra/two_handed/2hsog_85 stand to hide.anim;
+anim		hide_to_stand					data/animations/extra/two_handed/2hsog_87 hide to stand.anim;
+anim		exhausted_run					data/animations/extra/exhausted/2hsstandard/2hs_exhausted_run.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/2hsstandard/2hs_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/2hsstandard/2hs_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/2hsstandard/2hs_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/2hsstandard/2hs_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/2hsstandard/2hs_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/2hsstandard/2hs_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/2hsstandard/2hs_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/2hsstandard/2hs_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/2hsstandard/2hs_stand_to_exhausted_run.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/2hsstandard/2hs_stand_to_exhausted_walk.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/2hsstandard/2hs_exhausted_charge.anim;
+anim		exhausted_to_normal_walk		data/animations/extra/exhausted/2hsstandard/2hs_exhausted_walk_to_normal_walk.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/extra_flails/flail_cycle_variant_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/extra_flails/flail_cycle_variant_02.anim;
+anim		die_falling_cycle_var_03			data/animations/extra/extra_flails/flail_cycle_variant_03.anim;
+anim		die_falling_end_var_01				data/animations/extra/extra_flails/flail_land_variant_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/extra_flails/flail_land_variant_02.anim;
+anim		die_falling_end_var_03				data/animations/extra/extra_flails/flail_land_variant_03.anim;
+
+
+type		fs_slow_2handed
+
+anim		stand							data/animations/extra/two_handed/2hsog_01 stand idle.anim;
+anim		idle_1						   	data/animations/extra/two_handed/2hsog_01 stand idle 01.anim;
+anim		idle_2							data/animations/extra/two_handed/2hsog_01 stand idle 02.anim;
+anim		idle_3						  	data/animations/extra/two_handed/2hsog_01 stand idle 03.anim;
+anim		idle_4						  	data/animations/extra/two_handed/2hsog_01 stand idle 04.anim;
+anim		idle_5						  	data/animations/extra/two_handed/2hsog_01 stand idle 05.anim;
+anim		idle_6						  	data/animations/extra/two_handed/2hsog_01 stand idle 06.anim;
+anim		idle_7						  	data/animations/extra/two_handed/2hsog_01 stand idle 07.anim;
+anim		idle_8						  	data/animations/extra/two_handed/2hsog_01 stand idle 08.anim;
+anim		idle_9						  	data/animations/extra/two_handed/2hsog_01 stand idle 09.anim;
+anim		stand_turn_cw_1					data/animations/extra/two_handed/2hsog_08 standing turn 90 right.anim;
+anim		stand_turn_ccw_1				data/animations/extra/two_handed/2hsog_09 standing turn 90 left.anim;
+anim		stand_to_ready					data/animations/extra/two_handed/2hsog_35 stand idle to stand ready.anim;
+anim		stand_to_walk					data/animations/extra/two_handed/2hsog_36 stand idle to march.anim;
+anim		stand_to_run					data/animations/extra/two_handed/2hsog_37 stand to run.anim;
+anim		walk_to_stand					data/animations/extra/two_handed/2hsog_38 march to stand.anim;
+anim		run_to_stand					data/animations/extra/two_handed/2hsog_41 run to stand.anim;
+anim		ready_to_stand					data/animations/extra/two_handed/2hsog_50 stand ready to stand.anim;
+anim		taunt_1							data/animations/extra/two_handed/2hsog_59_04 taunt 1.anim;
+anim		taunt_2							data/animations/extra/two_handed/2hsog_59_04 taunt 1.anim;
+anim		taunt_3							data/animations/extra/two_handed/2hsog_59_05 taunt 2.anim;
+anim		stand_to_hide					data/animations/extra/two_handed/2hsog_85 stand to hide.anim;
+anim		hide_to_stand					data/animations/extra/two_handed/2hsog_87 hide to stand.anim;
+anim		exhausted_run					data/animations/extra/exhausted/2hsstandard/2hs_exhausted_run_slow.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/2hsstandard/2hs_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/2hsstandard/2hs_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/2hsstandard/2hs_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/2hsstandard/2hs_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/2hsstandard/2hs_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/2hsstandard/2hs_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/2hsstandard/2hs_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/2hsstandard/2hs_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/2hsstandard/2hs_stand_to_exhausted_run.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/2hsstandard/2hs_stand_to_exhausted_walk.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/2hsstandard/2hs_exhausted_charge.anim;
+anim		exhausted_to_normal_walk		data/animations/extra/exhausted/2hsstandard/2hs_exhausted_walk_to_normal_walk.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/extra_flails/flail_cycle_variant_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/extra_flails/flail_cycle_variant_02.anim;
+anim		die_falling_cycle_var_03			data/animations/extra/extra_flails/flail_cycle_variant_03.anim;
+anim		die_falling_end_var_01				data/animations/extra/extra_flails/flail_land_variant_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/extra_flails/flail_land_variant_02.anim;
+anim		die_falling_end_var_03				data/animations/extra/extra_flails/flail_land_variant_03.anim;
+
+type		fs_2handed_berserker
+
+anim		exhausted_run					data/animations/extra/exhausted/2hs/2hs_exhausted_run.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/2hs/2hs_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/2hs/2hs_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/2hs/2hs_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/2hs/2hs_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/2hs/2hs_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/2hs/2hs_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/2hs/2hs_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/2hs/2hs_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/2hs/2hs_stand_to_exhausted_run.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/2hs/2hs_stand_to_exhausted_walk.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/2hs/2hs_exhausted_charge.anim;
+anim		exhausted_to_normal_walk		data/animations/extra/exhausted/2hs/2hs_exhausted_walk_to_normal_walk.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/extra_flails/flail_cycle_variant_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/extra_flails/flail_cycle_variant_02.anim;
+anim		die_falling_cycle_var_03			data/animations/extra/extra_flails/flail_cycle_variant_03.anim;
+anim		die_falling_end_var_01				data/animations/extra/extra_flails/flail_land_variant_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/extra_flails/flail_land_variant_02.anim;
+anim		die_falling_end_var_03				data/animations/extra/extra_flails/flail_land_variant_03.anim;
+
+type		strat_spy
+
+anim		exhausted_run					data/animations/extra/exhausted/lid/lid_exhausted_run.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/lid/lid_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/lid/lid_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/lid/lid_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/lid/lid_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/lid/lid_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/lid/lid_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/lid/lid_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/lid/lid_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/lid/lid_stand_to_exhausted_run.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/lid/lid_stand_to_exhausted_walk.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/lid/lid_exhausted_charge.anim;
+anim		exhausted_to_normal_walk		data/animations/extra/exhausted/lid/lid_exhausted_walk_to_normal_walk.anim;
+
+
+type		fs_dagger
+
+anim		exhausted_run					data/animations/extra/exhausted/lid/lid_exhausted_run.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/lid/lid_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/lid/lid_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/lid/lid_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/lid/lid_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/lid/lid_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/lid/lid_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/lid/lid_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/lid/lid_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/lid/lid_stand_to_exhausted_run.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/lid/lid_stand_to_exhausted_walk.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/lid/lid_exhausted_charge.anim;
+anim		exhausted_to_normal_walk		data/animations/extra/exhausted/lid/lid_exhausted_walk_to_normal_walk.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/extra_flails/flail_cycle_variant_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/extra_flails/flail_cycle_variant_02.anim;
+anim		die_falling_cycle_var_03			data/animations/extra/extra_flails/flail_cycle_variant_03.anim;
+anim		die_falling_end_var_01				data/animations/extra/extra_flails/flail_land_variant_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/extra_flails/flail_land_variant_02.anim;
+anim		die_falling_end_var_03				data/animations/extra/extra_flails/flail_land_variant_03.anim;
+
+type		fs_fast_dagger
+
+anim		exhausted_run					data/animations/extra/exhausted/lid/lid_exhausted_run_fast.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/lid/lid_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/lid/lid_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/lid/lid_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/lid/lid_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/lid/lid_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/lid/lid_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/lid/lid_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/lid/lid_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/lid/lid_stand_to_exhausted_run.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/lid/lid_exhausted_charge.anim;
+anim		exhausted_to_normal_walk		data/animations/extra/exhausted/lid/lid_exhausted_walk_to_normal_walk.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/extra_flails/flail_cycle_variant_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/extra_flails/flail_cycle_variant_02.anim;
+anim		die_falling_cycle_var_03			data/animations/extra/extra_flails/flail_cycle_variant_03.anim;
+anim		die_falling_end_var_01				data/animations/extra/extra_flails/flail_land_variant_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/extra_flails/flail_land_variant_02.anim;
+anim		die_falling_end_var_03				data/animations/extra/extra_flails/flail_land_variant_03.anim;
+
+type		fs_semi_fast_dagger
+
+anim		exhausted_run					data/animations/extra/exhausted/lid/lid_exhausted_run_semi_fast.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/lid/lid_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/lid/lid_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/lid/lid_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/lid/lid_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/lid/lid_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/lid/lid_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/lid/lid_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/lid/lid_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/lid/lid_stand_to_exhausted_run.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/lid/lid_stand_to_exhausted_walk.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/lid/lid_stand_to_exhausted_walk.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/lid/lid_exhausted_charge.anim;
+anim		exhausted_to_normal_walk		data/animations/extra/exhausted/lid/lid_exhausted_walk_to_normal_walk.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/extra_flails/flail_cycle_variant_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/extra_flails/flail_cycle_variant_02.anim;
+anim		die_falling_cycle_var_03			data/animations/extra/extra_flails/flail_cycle_variant_03.anim;
+anim		die_falling_end_var_01				data/animations/extra/extra_flails/flail_land_variant_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/extra_flails/flail_land_variant_02.anim;
+anim		die_falling_end_var_03				data/animations/extra/extra_flails/flail_land_variant_03.anim;
+
+type		fs_crossbow
+
+anim		exhausted_run					data/animations/extra/exhausted/lid/lid_exhausted_run.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/lid/lid_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/lid/lid_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/lid/lid_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/lid/lid_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/lid/lid_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/lid/lid_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/lid/lid_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/lid/lid_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/lid/lid_stand_to_exhausted_run.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/lid/lid_stand_to_exhausted_walk.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/lid/lid_exhausted_charge.anim;
+anim		exhausted_to_normal_walk		data/animations/extra/exhausted/lid/lid_exhausted_walk_to_normal_walk.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/extra_flails/flail_cycle_variant_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/extra_flails/flail_cycle_variant_02.anim;
+anim		die_falling_cycle_var_03			data/animations/extra/extra_flails/flail_cycle_variant_03.anim;
+anim		die_falling_end_var_01				data/animations/extra/extra_flails/flail_land_variant_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/extra_flails/flail_land_variant_02.anim;
+anim		die_falling_end_var_03				data/animations/extra/extra_flails/flail_land_variant_03.anim;
+
+type		fs_archer
+
+anim		exhausted_run					data/animations/extra/exhausted/lid/lid_exhausted_run.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/lid/lid_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/lid/lid_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/lid/lid_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/lid/lid_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/lid/lid_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/lid/lid_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/lid/lid_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/lid/lid_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/lid/lid_stand_to_exhausted_run.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/lid/lid_stand_to_exhausted_walk.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/lid/lid_exhausted_charge.anim;
+anim		exhausted_to_normal_walk		data/animations/extra/exhausted/lid/lid_exhausted_walk_to_normal_walk.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/extra_flails/flail_cycle_variant_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/extra_flails/flail_cycle_variant_02.anim;
+anim		die_falling_cycle_var_03			data/animations/extra/extra_flails/flail_cycle_variant_03.anim;
+anim		die_falling_end_var_01				data/animations/extra/extra_flails/flail_land_variant_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/extra_flails/flail_land_variant_02.anim;
+anim		die_falling_end_var_03				data/animations/extra/extra_flails/flail_land_variant_03.anim;
+
+type		fs_fast_archer
+
+anim		exhausted_run					data/animations/extra/exhausted/lid/lid_exhausted_run_fast.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/lid/lid_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/lid/lid_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/lid/lid_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/lid/lid_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/lid/lid_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/lid/lid_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/lid/lid_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/lid/lid_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/lid/lid_stand_to_exhausted_run.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/lid/lid_stand_to_exhausted_walk.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/lid/lid_exhausted_charge.anim;
+anim		exhausted_to_normal_walk		data/animations/extra/exhausted/lid/lid_exhausted_walk_to_normal_walk.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/extra_flails/flail_cycle_variant_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/extra_flails/flail_cycle_variant_02.anim;
+anim		die_falling_cycle_var_03			data/animations/extra/extra_flails/flail_cycle_variant_03.anim;
+anim		die_falling_end_var_01				data/animations/extra/extra_flails/flail_land_variant_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/extra_flails/flail_land_variant_02.anim;
+anim		die_falling_end_var_03				data/animations/extra/extra_flails/flail_land_variant_03.anim;
+
+type		fs_semi_fast_archer
+
+anim		exhausted_run					data/animations/extra/exhausted/lid/lid_exhausted_run_semi_fast.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/lid/lid_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/lid/lid_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/lid/lid_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/lid/lid_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/lid/lid_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/lid/lid_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/lid/lid_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/lid/lid_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/lid/lid_stand_to_exhausted_run.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/lid/lid_stand_to_exhausted_walk.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/lid/lid_exhausted_charge.anim;
+anim		exhausted_to_normal_walk		data/animations/extra/exhausted/lid/lid_exhausted_walk_to_normal_walk.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/extra_flails/flail_cycle_variant_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/extra_flails/flail_cycle_variant_02.anim;
+anim		die_falling_cycle_var_03			data/animations/extra/extra_flails/flail_cycle_variant_03.anim;
+anim		die_falling_end_var_01				data/animations/extra/extra_flails/flail_land_variant_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/extra_flails/flail_land_variant_02.anim;
+anim		die_falling_end_var_03				data/animations/extra/extra_flails/flail_land_variant_03.anim;
+
+type		fs_swordsman
+
+anim		exhausted_run					data/animations/extra/exhausted/lis/lis_exhausted_run.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/lis/lis_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/lis/lis_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/lis/lis_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/lis/lis_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/lis/lis_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/lis/lis_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/lis/lis_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/lis/lis_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/lis/lis_stand_to_exhausted_run.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/lis/lis_stand_to_exhausted_walk.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/lis/lis_exhausted_charge.anim;
+anim		exhausted_to_normal_walk		data/animations/extra/exhausted/lis/lis_exhausted_walk_to_normal_walk.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/extra_flails/flail_cycle_variant_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/extra_flails/flail_cycle_variant_02.anim;
+anim		die_falling_cycle_var_03			data/animations/extra/extra_flails/flail_cycle_variant_03.anim;
+anim		die_falling_end_var_01				data/animations/extra/extra_flails/flail_land_variant_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/extra_flails/flail_land_variant_02.anim;
+anim		die_falling_end_var_03				data/animations/extra/extra_flails/flail_land_variant_03.anim;
+
+type		fs_slow_swordsman
+
+anim		exhausted_run					data/animations/extra/exhausted/lis/lis_exhausted_run_slow.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/lis/lis_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/lis/lis_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/lis/lis_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/lis/lis_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/lis/lis_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/lis/lis_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/lis/lis_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/lis/lis_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/lis/lis_stand_to_exhausted_run.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/lis/lis_stand_to_exhausted_walk.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/lis/lis_exhausted_charge.anim;
+anim		exhausted_to_normal_walk		data/animations/extra/exhausted/lis/lis_exhausted_walk_to_normal_walk.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/extra_flails/flail_cycle_variant_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/extra_flails/flail_cycle_variant_02.anim;
+anim		die_falling_cycle_var_03			data/animations/extra/extra_flails/flail_cycle_variant_03.anim;
+anim		die_falling_end_var_01				data/animations/extra/extra_flails/flail_land_variant_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/extra_flails/flail_land_variant_02.anim;
+anim		die_falling_end_var_03				data/animations/extra/extra_flails/flail_land_variant_03.anim;
+
+type		fs_fast_swordsman
+
+anim		exhausted_run					data/animations/extra/exhausted/lis/lis_exhausted_run_fast.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/lis/lis_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/lis/lis_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/lis/lis_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/lis/lis_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/lis/lis_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/lis/lis_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/lis/lis_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/lis/lis_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/lis/lis_stand_to_exhausted_run.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/lis/lis_stand_to_exhausted_walk.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/lis/lis_exhausted_charge.anim;
+anim		exhausted_to_normal_walk		data/animations/extra/exhausted/lis/lis_exhausted_walk_to_normal_walk.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/extra_flails/flail_cycle_variant_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/extra_flails/flail_cycle_variant_02.anim;
+anim		die_falling_cycle_var_03			data/animations/extra/extra_flails/flail_cycle_variant_03.anim;
+anim		die_falling_end_var_01				data/animations/extra/extra_flails/flail_land_variant_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/extra_flails/flail_land_variant_02.anim;
+anim		die_falling_end_var_03				data/animations/extra/extra_flails/flail_land_variant_03.anim;
+
+type		fs_semi_fast_swordsman
+
+anim		exhausted_run					data/animations/extra/exhausted/lis/lis_exhausted_run_semi_fast.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/lis/lis_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/lis/lis_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/lis/lis_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/lis/lis_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/lis/lis_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/lis/lis_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/lis/lis_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/lis/lis_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/lis/lis_stand_to_exhausted_run.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/lis/lis_stand_to_exhausted_walk.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/lis/lis_exhausted_charge.anim;
+anim		exhausted_to_normal_walk		data/animations/extra/exhausted/lis/lis_exhausted_walk_to_normal_walk.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/extra_flails/flail_cycle_variant_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/extra_flails/flail_cycle_variant_02.anim;
+anim		die_falling_cycle_var_03			data/animations/extra/extra_flails/flail_cycle_variant_03.anim;
+anim		die_falling_end_var_01				data/animations/extra/extra_flails/flail_land_variant_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/extra_flails/flail_land_variant_02.anim;
+anim		die_falling_end_var_03				data/animations/extra/extra_flails/flail_land_variant_03.anim;
+
+type		fs_javelinman
+
+anim		exhausted_run					data/animations/extra/exhausted/lis/lis_exhausted_run.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/lij/lij_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/lis/lis_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/lis/lis_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/lis/lis_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/lis/lis_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/lis/lis_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/lij/lij_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/lis/lis_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/lis/lis_stand_to_exhausted_run.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/lis/lis_stand_to_exhausted_walk.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/lis/lis_exhausted_charge.anim;
+anim		exhausted_to_normal_walk		data/animations/extra/exhausted/lis/lis_exhausted_walk_to_normal_walk.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/extra_flails/flail_cycle_variant_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/extra_flails/flail_cycle_variant_02.anim;
+anim		die_falling_cycle_var_03			data/animations/extra/extra_flails/flail_cycle_variant_03.anim;
+anim		die_falling_end_var_01				data/animations/extra/extra_flails/flail_land_variant_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/extra_flails/flail_land_variant_02.anim;
+anim		die_falling_end_var_03				data/animations/extra/extra_flails/flail_land_variant_03.anim;
+
+
+type		fs_fast_javelinman
+
+anim		exhausted_run					data/animations/extra/exhausted/lij/lij_exhausted_run_fast.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/lij/lij_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/lis/lis_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/lis/lis_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/lis/lis_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/lis/lis_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/lis/lis_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/lij/lij_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/lis/lis_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/lis/lis_stand_to_exhausted_run.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/lis/lis_stand_to_exhausted_walk.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/lis/lis_exhausted_charge.anim;
+anim		exhausted_to_normal_walk		data/animations/extra/exhausted/lis/lis_exhausted_walk_to_normal_walk.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/extra_flails/flail_cycle_variant_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/extra_flails/flail_cycle_variant_02.anim;
+anim		die_falling_cycle_var_03			data/animations/extra/extra_flails/flail_cycle_variant_03.anim;
+anim		die_falling_end_var_01				data/animations/extra/extra_flails/flail_land_variant_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/extra_flails/flail_land_variant_02.anim;
+anim		die_falling_end_var_03				data/animations/extra/extra_flails/flail_land_variant_03.anim;
+
+
+
+type		fs_semi_fast_javelinman
+
+anim		exhausted_run					data/animations/extra/exhausted/lij/lij_exhausted_run_semi_fast.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/lij/lij_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/lis/lis_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/lis/lis_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/lis/lis_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/lis/lis_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/lis/lis_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/lij/lij_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/lis/lis_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/lis/lis_stand_to_exhausted_run.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/lis/lis_stand_to_exhausted_walk.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/lij/lij_exhausted_charge.anim;
+anim		exhausted_to_normal_walk		data/animations/extra/exhausted/lis/lis_exhausted_walk_to_normal_walk.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/extra_flails/flail_cycle_variant_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/extra_flails/flail_cycle_variant_02.anim;
+anim		die_falling_cycle_var_03			data/animations/extra/extra_flails/flail_cycle_variant_03.anim;
+anim		die_falling_end_var_01				data/animations/extra/extra_flails/flail_land_variant_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/extra_flails/flail_land_variant_02.anim;
+anim		die_falling_end_var_03				data/animations/extra/extra_flails/flail_land_variant_03.anim;
+
+
+
+type		fs_spearman
+
+anim		exhausted_run					data/animations/extra/exhausted/lis/lis_exhausted_run.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/lis/lis_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/lis/lis_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/lis/lis_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/lis/lis_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/lis/lis_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/lis/lis_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/lij/lij_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/lis/lis_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/lis/lis_stand_to_exhausted_run.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/lis/lis_stand_to_exhausted_walk.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/spm/spm_exhausted_charge.anim;
+anim		exhausted_to_normal_walk		data/animations/extra/exhausted/lis/lis_exhausted_walk_to_normal_walk.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/extra_flails/flail_cycle_variant_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/extra_flails/flail_cycle_variant_02.anim;
+anim		die_falling_cycle_var_03			data/animations/extra/extra_flails/flail_cycle_variant_03.anim;
+anim		die_falling_end_var_01				data/animations/extra/extra_flails/flail_land_variant_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/extra_flails/flail_land_variant_02.anim;
+anim		die_falling_end_var_03				data/animations/extra/extra_flails/flail_land_variant_03.anim;
+
+
+
+type		fs_slow_spearman
+
+anim		exhausted_run					data/animations/extra/exhausted/spm/spm_exhausted_run_slow.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/lis/lis_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/lis/lis_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/lis/lis_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/lis/lis_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/lis/lis_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/lis/lis_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/lij/lij_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/lis/lis_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/lis/lis_stand_to_exhausted_run.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/lis/lis_stand_to_exhausted_walk.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/spm/spm_exhausted_charge.anim;
+anim		exhausted_to_normal_walk		data/animations/extra/exhausted/lis/lis_exhausted_walk_to_normal_walk.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/extra_flails/flail_cycle_variant_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/extra_flails/flail_cycle_variant_02.anim;
+anim		die_falling_cycle_var_03			data/animations/extra/extra_flails/flail_cycle_variant_03.anim;
+anim		die_falling_end_var_01				data/animations/extra/extra_flails/flail_land_variant_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/extra_flails/flail_land_variant_02.anim;
+anim		die_falling_end_var_03				data/animations/extra/extra_flails/flail_land_variant_03.anim;
+
+
+type		fs_semi_fast_spearman
+
+anim		exhausted_run					data/animations/extra/exhausted/lij/lij_exhausted_run_semi_fast.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/lis/lis_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/lis/lis_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/lis/lis_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/lis/lis_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/lis/lis_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/lis/lis_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/lij/lij_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/lis/lis_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/lis/lis_stand_to_exhausted_run.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/lis/lis_stand_to_exhausted_walk.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/spm/spm_exhausted_charge.anim;
+anim		exhausted_to_normal_walk		data/animations/extra/exhausted/lis/lis_exhausted_walk_to_normal_walk.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/extra_flails/flail_cycle_variant_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/extra_flails/flail_cycle_variant_02.anim;
+anim		die_falling_cycle_var_03			data/animations/extra/extra_flails/flail_cycle_variant_03.anim;
+anim		die_falling_end_var_01				data/animations/extra/extra_flails/flail_land_variant_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/extra_flails/flail_land_variant_02.anim;
+anim		die_falling_end_var_03				data/animations/extra/extra_flails/flail_land_variant_03.anim;
+
+
+type		fs_fast_spearman
+
+anim		exhausted_run					data/animations/extra/exhausted/lij/lij_exhausted_run_fast.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/lis/lis_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/lis/lis_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/lis/lis_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/lis/lis_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/lis/lis_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/lis/lis_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/lij/lij_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/lis/lis_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/lis/lis_stand_to_exhausted_run.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/lis/lis_stand_to_exhausted_walk.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/spm/spm_exhausted_charge.anim;
+anim		exhausted_to_normal_walk		data/animations/extra/exhausted/lis/lis_exhausted_walk_to_normal_walk.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/extra_flails/flail_cycle_variant_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/extra_flails/flail_cycle_variant_02.anim;
+anim		die_falling_cycle_var_03			data/animations/extra/extra_flails/flail_cycle_variant_03.anim;
+anim		die_falling_end_var_01				data/animations/extra/extra_flails/flail_land_variant_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/extra_flails/flail_land_variant_02.anim;
+anim		die_falling_end_var_03				data/animations/extra/extra_flails/flail_land_variant_03.anim;
+
+
+type		strat_named_with_army
+
+anim		exhausted_run					data/animations/extra/exhausted/sg/sg_exhausted_run.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/sg/sg_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/sg/sg_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/sg/sg_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/sg/sg_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/sg/sg_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/sg/sg_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/sg/sg_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/sg/sg_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/sg/sg_stand_to_exhausted_run.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/sg/sg_stand_to_exhausted_walk.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/sg/sg_exhausted_charge.anim;
+anim		exhausted_to_normal_walk		data/animations/extra/exhausted/sg/sg_exhausted_walk_to_normal_walk.anim;
+
+
+type		fs_standard_bearer
+
+anim		exhausted_run					data/animations/extra/exhausted/sg/sg_exhausted_run.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/sg/sg_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/sg/sg_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/sg/sg_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/sg/sg_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/sg/sg_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/sg/sg_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/sg/sg_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/sg/sg_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/sg/sg_stand_to_exhausted_run.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/sg/sg_stand_to_exhausted_walk.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/sg/sg_exhausted_charge.anim;
+anim		exhausted_to_normal_walk		data/animations/extra/exhausted/sg/sg_exhausted_walk_to_normal_walk.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/extra_flails/flail_cycle_variant_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/extra_flails/flail_cycle_variant_02.anim;
+anim		die_falling_cycle_var_03			data/animations/extra/extra_flails/flail_cycle_variant_03.anim;
+anim		die_falling_end_var_01				data/animations/extra/extra_flails/flail_land_variant_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/extra_flails/flail_land_variant_02.anim;
+anim		die_falling_end_var_03				data/animations/extra/extra_flails/flail_land_variant_03.anim;
+
+
+type		fs_slinger_new
+
+anim		exhausted_run					data/animations/extra/exhausted/slg/slg_exhausted_run.anim;
+anim		exhausted_run_to_charge 		data/animations/extra/exhausted/slg/slg_exhausted_run_to_charge.anim;
+anim		exhausted_run_to_exhausted_walk	data/animations/extra/exhausted/slg/slg_exhausted_run_to_exhausted_walk.anim;
+anim		exhausted_run_to_stand 			data/animations/extra/exhausted/slg/slg_exhausted_run_to_stand.anim;
+anim		exhausted_walk 					data/animations/extra/exhausted/slg/slg_exhausted_walk.anim;
+anim		exhausted_walk_to_exhausted_run data/animations/extra/exhausted/slg/slg_exhausted_walk_to_exhausted_run.anim;
+anim		exhausted_walk_to_stand 		data/animations/extra/exhausted/slg/slg_exhausted_walk_to_stand.anim;
+anim		normal_to_exhausted_run 		data/animations/extra/exhausted/slg/slg_normal_run_to_exhausted_run.anim;
+anim		normal_to_exhausted_walk 		data/animations/extra/exhausted/slg/slg_normal_walk_to_exhausted_walk.anim;
+anim		stand_to_exhausted_run 			data/animations/extra/exhausted/slg/slg_stand_to_exhausted_run.anim;
+anim		stand_to_exhausted_walk 		data/animations/extra/exhausted/slg/slg_stand_to_exhausted_walk.anim;
+anim		exhausted_charge				data/animations/extra/exhausted/slg/slg_exhausted_charge.anim;
+anim		die_falling_cycle_var_01			data/animations/extra/extra_flails/slg_flail_cycle_variant_01.anim;
+anim		die_falling_cycle_var_02			data/animations/extra/extra_flails/slg_flail_cycle_variant_02.anim;
+anim		die_falling_cycle_var_03			data/animations/extra/extra_flails/slg_flail_cycle_variant_03.anim;
+anim		die_falling_end_var_01				data/animations/extra/extra_flails/slg_flail_land_variant_01.anim;
+anim		die_falling_end_var_02				data/animations/extra/extra_flails/slg_flail_land_variant_02.anim;
+anim		die_falling_end_var_03				data/animations/extra/extra_flails/slg_flail_land_variant_03.anim;

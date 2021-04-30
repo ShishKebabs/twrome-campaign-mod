@@ -1,0 +1,134 @@
+{
+	"frames": [
+        {
+            "position": {
+                "x": 0,
+                "y": 10
+            },
+            "size": {
+                "width": 720,
+                "height": 640
+            },
+            "priority": -1,
+            "fill": "decorated",
+            "anchor": "C",
+            "align": "C",
+        },
+        {
+                "position": {
+                    "x": 0,
+                    "y": -10
+                },
+                "size": {
+                    "width": 536,
+                    "height": 254
+                },
+                "priority": 1,
+                "fill": "clear_thick",
+                "anchor": "C",
+                "align": "C"
+        }
+	],
+	"list": [
+		{
+			"name": "title_string",
+			"x": 0,
+			"y": -260,
+			"align": "C",
+			"anchor": "C",
+			"font_colour":"dark_brown",
+			"font":"cinzel"
+		},
+		{
+			"name": "sub_title_1",
+			"x": 0,
+			"y": -196,
+			"align": "C",
+			"anchor": "C",
+			"font_colour":"dark_brown",
+			"font":"cinzel_med"
+		},
+		{
+			"name": "sub_title_2",
+			"x": 0,
+			"y": -164,
+			"align": "C",
+			"anchor": "C",
+			"font_colour":"dark_brown",
+			"font":"cinzel_med"
+		},
+		
+
+		{
+			"name": "divider",
+			"x": 0,
+			"y": -220,
+			"size": {
+				"width": 600,
+				"height": 21
+			},
+			"align": "C",
+			"anchor": "C"
+		},
+		
+		{
+			"name": "image",
+			"x": 0,
+			"y": -10,
+			"size": {
+				"width" : 510,
+				"height": 230
+			},
+			"align": "C",
+			"anchor": "C"
+		},
+		
+		{
+			"name": "message",
+			"x": 0,
+			"y": 128,
+			"size": {
+				"width" : 600
+			},
+			"align": "TC",
+			"anchor": "C",
+			"font_colour":"dark_brown",
+			"font":"verdana_med"
+		},
+		
+		{
+			"name": "locate_button",
+			"x": -1000,
+			"y": -1000,
+			"align":"C"
+		},
+		{
+            "name": "accept_button",
+            "x": -110,
+            "y": 250,
+            "size": {
+                "width": 80,
+                "height": 80
+            },
+            "align": "C",
+            "anchor": "C",
+        },
+		{
+            "name": "cancel_button",
+            "x": 110,
+            "y": 250,
+            "size": {
+                "width": 80,
+                "height": 80
+            },
+            "align": "C",
+            "anchor": "C",
+        },
+        {
+            "name": "advisor",
+            "x": 0,
+            "y": 0,
+            "anchor": "TL"
+        }
+	]
+}

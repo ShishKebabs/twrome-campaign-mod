@@ -1,0 +1,52 @@
+	black_and_white_cow	
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		black_and_white_cow
+			physical_info	none
+		}
+	}
+
+	brown_and_white_cow	
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		brown_and_white_cow
+			physical_info	none
+		}
+	}
+
+	camel	
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		camel
+			physical_info	none
+		}
+	}
+
+	brown_horse	
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		brown_horse
+			physical_info	none
+		}
+	}
+	

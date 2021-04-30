@@ -1,0 +1,662 @@
+; grass sprite texture lookups. Max 32 sprites per texture. Only 1 texture per map (climate/season combonation).
+; See feral_descr_grass_usage.txt for mapping to climate/season/groundtype.
+; Each grass sprite is a triangle described by the values below:
+; height: Height in meters (adjusted by the scale in feral_descr_grass_usage) of the grass sprite
+; width:  Width in meters (adjusted by the scale in feral_descr_grass_usage) of the grass sprite.
+;         The ratio of this to height should match the uv coords to avoid distorted textures.
+; top_position: The proportion of the space between vertex 0 and vertex 1 where
+;               the top vertex should be placed. 0 is above vertex 0, 1 is above
+;               vertex 1, and 0.5 is right in the middle. This could be ouside
+;               the range 0 to 1 if desired.
+;               This should match the uv coords to avoid distorted textures.
+; u0,v0->u2,v2: Texture coordinates for the grass clump verticies, with the top
+;               vertex last. These will be squished into two 16 bit unsigned
+;               integers each which will be separated in Grass.hlsl and scaled
+;               to the range -0.5 to 1.5.
+; colour_*: The grass colour will be shifted to match the terrain colour instead
+;           of the raw colours from texture *unless* the assigned colour is
+;           0,0,0(black), in which case we can't mix even if we wanted to (there's no
+;           room to shift the colours), so we use it as a magic value to indicate no
+;           mixing should be done. This allows for eg red flowers in an otherwise
+;           green landscape.
+;           
+;           A representative colour of the grass. Used when recolouring to match
+;           the terrain. This can be intentionally inaccurate to shift the
+;           colours used (but probably shouldn't be!).
+;           The colour is in HSV aka hue/saturation/value(brightness) space,
+;           all with values between 0 and 1, and with hue:
+;           0 and 1==pure red, 0.333==pure green, 0.667==pure blue.
+;
+; When generating a sprite atlas texture, keep in mind it will be alpha keyed,
+; and the mipmaps must be generated based on that (if you have an option to
+; lock the alpha-coverage ratio, set that to 0.5). Also, make sure the
+; transparent areas aren't bleeding black/garbage colour data into the higher
+; mip levels. Try making transparent pixels be a blurred version of the image.
+
+
+texture data/feral_textures/temperate_grassland_infertile_sprites
+{
+	sprite grass1de_a_basecolor
+	{
+		height			0.7369685098528862
+		width			0.7377926558256140
+		top_position	0.5666789268883952
+		u0				0.001250130357220769
+		v0				0.3815930485725403
+		u1				0.3715040683746338
+		v1				0.3814723491668701
+		u2				0.18046700954437256
+		v2				0.7326439619064331
+		colour_hue		0.12057324244254812
+		colour_sat		0.8131648064869749
+		colour_val		0.5467327943678653
+	}
+	sprite grass1de_b_basecolor
+	{
+		height			0.4166119545698166
+		width			0.6378061771392820
+		top_position	0.6346745868367155
+		u0				0.18581053614616394
+		v0				0.011252045631408691
+		u1				0.45607081055641174
+		v1				0.011213898658752441
+		u2				0.3636607825756073
+		v2				0.3305831551551819
+		colour_hue		0.12057408419888027
+		colour_sat		0.8158705092485489
+		colour_val		0.536261974891507
+	}
+	sprite grass1de_c_basecolor
+	{
+		height			0.43101494014263153
+		width			0.6378061771392820
+		top_position	0.773802423637078
+		u0				0.8155015110969543
+		v0				0.35962390899658203
+		u1				0.4093177616596222
+		v1				0.35957759618759155
+		u2				0.4763599634170532
+		v2				0.07908713817596436
+		colour_hue		0.12126401395533601
+		colour_sat		0.8106050870130918
+		colour_val		0.5568841476459754
+	}
+	sprite grass2de_a_basecolor
+	{
+		height			0.7450535818934441
+		width			0.7377926558256140
+		top_position	0.5666522669147283
+		u0				0.6066103577613831
+		v0				0.6570379137992859
+		u1				0.3032536208629608
+		v1				0.6573312282562256
+		u2				0.43293845653533936
+		v2				0.3339502215385437
+		colour_hue		0.112093369182346
+		colour_sat		0.7699738248731081
+		colour_val		0.642684984319623
+	}
+	sprite grass2de_b_basecolor
+	{
+		height			0.411117359995842
+		width			0.6378061771392820
+		top_position	0.6898215260958905
+		u0				0.311040461063385
+		v0				0.9578959122300148
+		u1				0.015483240596950054
+		v1				0.9579933024942875
+		u2				0.08622937649488449
+		v2				0.7259284555912018
+		colour_hue		0.11004452202168287
+		colour_sat		0.7549484951013752
+		colour_val		0.6400418216776288
+	}
+	sprite grass2de_c_basecolor
+	{
+		height			0.7283427566289902
+		width			0.6378061771392820
+		top_position	0.24551855655545682
+		u0				0.25544360280036926
+		v0				0.675283282995224
+		u1				0.6849333643913269
+		v1				0.6754733324050903
+		u2				0.3695785105228424
+		v2				0.988131295889616
+		colour_hue		0.11081090872306627
+		colour_sat		0.7631768993794249
+		colour_val		0.6403982778068813
+	}
+	sprite grass2de_d_basecolor
+	{
+		height			0.7302724570035934
+		width			0.6378061771392820
+		top_position	0.8192793085105786
+		u0				0.34794557094573975
+		v0				0.3643012046813965
+		u1				0.003960562404245138
+		v1				0.36436641216278076
+		u2				0.08246031403541565
+		v2				0.03845268487930298
+		colour_hue		0.11091128394081116
+		colour_sat		0.7645565680564769
+		colour_val		0.6298993017554384
+	}
+	sprite shoots
+	{
+		height			0.577492818236351
+		width			0.8089097589254360
+		top_position	0.45424309084192016
+		u0				0.5549941658973694
+		v0				0.3718258738517761
+		u1				0.8720848560333252
+		v1				0.37192684412002563
+		u2				0.6764989495277405
+		v2				0.5896390378475189
+		colour_hue		0.14722097513022145
+		colour_sat		0.2996230341004265
+		colour_val		0.37041619141738064
+	}
+	sprite plant1_a_basecolor
+	{
+		height			0.393075343221426
+		width			0.3464114665985100
+		top_position	0.4557170559308444
+		u0				0.9960291981697083
+		v0				0.0038791894912719727
+		u1				0.9959738254547119
+		v1				0.368042528629303
+		u2				0.7071447968482971
+		v2				0.18916445970535278
+		colour_hue		0.1749798952124921
+		colour_sat		0.6004429645246669
+		colour_val		0.49387358092583017
+	}
+	sprite plant3_basecolor
+	{
+		height			0.7364094704389572
+		width			0.6378061771392820
+		top_position	0.5701570153183761
+		u0				0.9984384775161743
+		v0				0.27826064825057983
+		u1				0.998712956905365
+		v1				0.9075186550617218
+		u2				0.6989393830299377
+		v2				0.6063771843910217
+		colour_hue		0.1587136263014443
+		colour_sat		0.7034069967939681
+		colour_val		0.32774591140858284
+	}
+	sprite plant3de_basecolor
+	{
+		height			0.7364094704389572
+		width			0.6378061771392820
+		top_position	0.5701570153183761
+		u0				0.9178304076194763
+		v0				0.991729000583291
+		u1				0.4521794021129608
+		v1				0.9915316645056009
+		u2				0.6752948760986328
+		v2				0.5867041647434235
+		colour_hue		0.08962880746107005
+		colour_sat		0.849470334214785
+		colour_val		0.5862262590505303
+	}
+}
+
+texture data/feral_textures/semi_arid_grass_sprites
+{
+	sprite grass1de_a_basecolor
+	{
+		height			0.7369685098528862
+		width			0.7377926558256140
+		top_position	0.5666789268883952
+		u0				0.001250130357220769
+		v0				0.3815930485725403
+		u1				0.3715040683746338
+		v1				0.3814723491668701
+		u2				0.18046700954437256
+		v2				0.7326439619064331
+		colour_hue		0.12057324244254812
+		colour_sat		0.8131648064869749
+		colour_val		0.5467327943678653
+	}
+	sprite grass1de_b_basecolor
+	{
+		height			0.4166119545698166
+		width			0.6378061771392820
+		top_position	0.6346745868367155
+		u0				0.18581053614616394
+		v0				0.011252045631408691
+		u1				0.45607081055641174
+		v1				0.011213898658752441
+		u2				0.3636607825756073
+		v2				0.3305831551551819
+		colour_hue		0.12057408419888027
+		colour_sat		0.8158705092485489
+		colour_val		0.536261974891507
+	}
+	sprite grass1de_c_basecolor
+	{
+		height			0.43101494014263153
+		width			0.6378061771392820
+		top_position	0.773802423637078
+		u0				0.8155015110969543
+		v0				0.35962390899658203
+		u1				0.4093177616596222
+		v1				0.35957759618759155
+		u2				0.4763599634170532
+		v2				0.07908713817596436
+		colour_hue		0.12127074804075548
+		colour_sat		0.8105635676139735
+		colour_val		0.5568579718026035
+	}
+	sprite grass2de_b_basecolor
+	{
+		height			0.411117359995842
+		width			0.6378061771392820
+		top_position	0.6898215260958905
+		u0				0.311040461063385
+		v0				0.9578959122300148
+		u1				0.015483240596950054
+		v1				0.9579933024942875
+		u2				0.08622937649488449
+		v2				0.7259284555912018
+		colour_hue		0.11004452202168287
+		colour_sat		0.7549484951013752
+		colour_val		0.6400418216776288
+	}
+	sprite grass2de_a_basecolor
+	{
+		height			0.7450535818934441
+		width			0.7377926558256140
+		top_position	0.5666522669147283
+		u0				0.6066103577613831
+		v0				0.6570379137992859
+		u1				0.3032536208629608
+		v1				0.6573312282562256
+		u2				0.43293845653533936
+		v2				0.3339502215385437
+		colour_hue		0.112093369182346
+		colour_sat		0.7699738248731081
+		colour_val		0.642684984319623
+	}
+	sprite grass2de_c_basecolor
+	{
+		height			0.7283427566289902
+		width			0.6378061771392820
+		top_position	0.24551855655545682
+		u0				0.25544360280036926
+		v0				0.675283282995224
+		u1				0.6849333643913269
+		v1				0.6754733324050903
+		u2				0.3695785105228424
+		v2				0.988131295889616
+		colour_hue		0.1108139467939028
+		colour_sat		0.7631649929835298
+		colour_val		0.6403985290065213
+	}
+	sprite grass2de_d_basecolor
+	{
+		height			0.7302724570035934
+		width			0.6378061771392820
+		top_position	0.8192793085105786
+		u0				0.34794557094573975
+		v0				0.3643012046813965
+		u1				0.003960562404245138
+		v1				0.36436641216278076
+		u2				0.08246031403541565
+		v2				0.03845268487930298
+		colour_hue		0.1109062331843845
+		colour_sat		0.7644570851773194
+		colour_val		0.6298772460349411
+	}
+	sprite plant3de_basecolor
+	{
+		height			0.7364094704389572
+		width			0.6378061771392820
+		top_position	0.5701570153183761
+		u0				0.989393949508667
+		v0				0.9569960460066795
+		u1				0.5237428545951843
+		v1				0.9567987099289894
+		u2				0.7468583583831787
+		v2				0.5519712269306183
+		colour_hue		0.08962880746107005
+		colour_sat		0.849470334214785
+		colour_val		0.5862262590505303
+	}
+	sprite shoots
+	{
+		height			0.577492818236351
+		width			0.8089097589254360
+		top_position	0.45424309084192016
+		u0				0.5549941658973694
+		v0				0.3718258738517761
+		u1				0.8720848560333252
+		v1				0.37192684412002563
+		u2				0.6764989495277405
+		v2				0.5896390378475189
+		colour_hue		0.14703798262932286
+		colour_sat		0.30034249991633627
+		colour_val		0.37032042703984946
+	}
+	sprite thistle
+	{
+		height			0.7353512942790985
+		width			1.4005740582943000
+		top_position	0.4179962718531981
+		u0				0.5967833995819092
+		v0				0.009721219539642334
+		u1				0.9776995778083801
+		v1				0.00976330041885376
+		u2				0.7461822032928467
+		v2				0.29643166065216064
+		colour_hue		0.2328543923474003
+		colour_sat		0.4008880166793926
+		colour_val		0.37483250900074394
+	}
+}
+
+texture data/feral_textures/temperate_grassland_fertile_sprites
+{
+	sprite grass1_c_basecolor
+	{
+		height			0.43101494014263153
+		width			0.6378061771392820
+		top_position	0.773802423637078
+		u0				0.6571260094642639
+		v0				0.2656238079071045
+		u1				0.31972962617874146
+		v1				0.265577495098114
+		u2				0.40608519315719604
+		v2				0.058424949645996094
+		colour_hue		0.20960202766139246
+		colour_sat		0.914558264863605
+		colour_val		0.4430472029225476
+	}
+	sprite grass1_b_basecolor
+	{
+		height			0.4166119545698166
+		width			0.6378061771392820
+		top_position	0.6346745868367155
+		u0				0.14998167753219604
+		v0				0.008394718170166016
+		u1				0.3916687071323395
+		v1				0.008356571197509766
+		u2				0.2986832857131958
+		v2				0.2192453145980835
+		colour_hue		0.2088967485417565
+		colour_sat		0.9250954482319461
+		colour_val		0.4244653673891847
+	}
+	sprite grass2_b_basecolor
+	{
+		height			0.411117359995842
+		width			0.6378061771392820
+		top_position	0.6898215260958905
+		u0				0.24312445521354675
+		v0				0.7082613706588745
+		u1				0.002900567604228854
+		v1				0.7083587646484375
+		u2				0.08598003536462784
+		v2				0.5411479771137238
+		colour_hue		0.18697732392780464
+		colour_sat		0.5506434375849976
+		colour_val		0.4128916886918291
+	}
+	sprite flower1_a_basecolor
+	{
+		height			0.4650804102420807
+		width			0.4256156980991360
+		top_position	0.6093908303680906
+		u0				0.615892231464386
+		v0				0.7372485399246216
+		u1				0.9050077795982361
+		v1				0.7375360429286957
+		u2				0.7857391238212585
+		v2				0.4678540825843811
+		colour_hue			0
+		colour_sat			0
+		colour_val			0
+	}
+	sprite flower4_a_basecolor_1
+	{
+		height			0.40047919750213623
+		width			0.2905442118644700
+		top_position	0.3334286247085099
+		u0				0.31250905990600586
+		v0				0.9947815253399312
+		u1				0.47594010829925537
+		v1				0.9953076555393636
+		u2				0.3623613119125366
+		v2				0.7364546358585358
+		colour_hue			0
+		colour_sat			0
+		colour_val			0
+	}
+	sprite flower4_a_basecolor_2
+	{
+		height			0.40047919750213623
+		width			0.2905442118644700
+		top_position	0.3334286247085099
+		u0				0.29720404744148254
+		v0				0.717395544052124
+		u1				0.13377243280410767
+		v1				0.7173494100570679
+		u2				0.24787892401218414
+		v2				0.9758680462837219
+		colour_hue			0
+		colour_sat			0
+		colour_val			0
+	}
+	sprite flower4_a_basecolor_de2
+	{
+		height			0.40047919750213623
+		width			0.2905442118644700
+		top_position	0.3334286247085099
+		u0				0.001927179517224431
+		v0				0.9948027469217777
+		u1				0.165358766913414
+		v1				0.9949336051940918
+		u2				0.05134536325931549
+		v2				0.7363558411598206
+		colour_hue			0
+		colour_sat			0
+		colour_val			0
+	}
+	sprite flower5_a_basecolor
+	{
+		height			0.40047919750213623
+		width			0.3719669952988620
+		top_position	0.697453508107682
+		u0				0.7771756649017334
+		v0				0.9963815249502659
+		u1				0.997700572013855
+		v1				0.9969076551496983
+		u2				0.9319055676460266
+		v2				0.7357189357280731
+		colour_hue			0
+		colour_sat			0
+		colour_val			0
+	}
+	sprite flower5_b_basecolor
+	{
+		height			0.40047919750213623
+		width			0.4060760885477060
+		top_position	0.523073482169019
+		u0				0.8692560195922852
+		v0				0.7465583086013794
+		u1				0.6184930801391602
+		v1				0.7470781803131104
+		u2				0.7449016571044922
+		v2				0.9976175706833601
+		colour_hue			0
+		colour_sat			0
+		colour_val			0
+	}
+	sprite flower5_c_basecolor
+	{
+		height			0.40047919750213623
+		width			0.3978084623813620
+		top_position	0.5131615508475015
+		u0				0.44250908493995667
+		v0				0.9963815249502659
+		u1				0.6722733974456787
+		v1				0.9969076551496983
+		u2				0.5598613619804382
+		v2				0.7402546405792236
+		colour_hue			0
+		colour_sat			0
+		colour_val			0
+	}
+	sprite flower1_b_basecolor
+	{
+		height			0.4650804102420807
+		width			0.4656274020671840
+		top_position	0.6429561626340425
+		u0				0.8176679015159607
+		v0				0.21350610256195068
+		u1				0.581763505935669
+		v1				0.21357738971710205
+		u2				0.6653033494949341
+		v2				0.0003629326820373535
+		colour_hue			0
+		colour_sat			0
+		colour_val			0
+	}
+	sprite flower2_a_basecolor
+	{
+		height			0.4650804102420807
+		width			0.4027709662914260
+		top_position	0.5872359024594682
+		u0				0.5598883032798767
+		v0				0.5142251253128052
+		u1				0.5599775314331055
+		v1				0.2517316937446594
+		u2				0.7743277549743652
+		v2				0.40393269062042236
+		colour_hue			0
+		colour_sat			0
+		colour_val			0
+	}
+	sprite flower3_a_basecolor
+	{
+		height			0.577492818236351
+		width			0.8089097589254360
+		top_position	0.45424309084192016
+		u0				0.99943608045578
+		v0				0.612397164106369
+		u1				0.999526858329773
+		v1				0.204553484916687
+		u2				0.738274097442627
+		v2				0.3840520977973938
+		colour_hue		0.2129812794377204
+		colour_sat		0.7776877077342623
+		colour_val		0.4090377868620467
+	}
+	sprite grass1_a_basecolor
+	{
+		height			0.7369685098528862
+		width			0.7916580289602280
+		top_position	0.5281214049183893
+		u0				0.009062962606549263
+		v0				0.28220731019973755
+		u1				0.3031216859817505
+		v1				0.2820866107940674
+		u2				0.15341056883335114
+		v2				0.5438324213027954
+		colour_hue		0.20929396137609185
+		colour_sat		0.9215470981573203
+		colour_val		0.43213020590780715
+	}
+	sprite grass2_a_basecolor
+	{
+		height			0.7450535818934441
+		width			0.8407216072082520
+		top_position	0.6197067231914316
+		u0				0.5446723103523254
+		v0				0.4869384169578552
+		u1				0.246315598487854
+		v1				0.4872317910194397
+		u2				0.354333758354187
+		v2				0.2687588334083557
+		colour_hue		0.18854411775100607
+		colour_sat		0.5778404647462528
+		colour_val		0.4209612053396542
+	}
+	sprite grass2_c_basecolor
+	{
+		height			0.6370692104101181
+		width			0.8000300824642180
+		top_position	0.27875810383148464
+		u0				0.1866975724697113
+		v0				0.49982738494873047
+		u1				0.5607508420944214
+		v1				0.4993364214897156
+		u2				0.31186485290527344
+		v2				0.7351616621017456
+		colour_hue		0.18777693566429962
+		colour_sat		0.565152305903829
+		colour_val		0.41529782477219884
+	}
+	sprite grass2_d_basecolor
+	{
+		height			0.5756837576627731
+		width			0.6497317552566520
+		top_position	0.7684842427405971
+		u0				0.32730939984321594
+		v0				0.26905715465545654
+		u1				0.0013307738117873669
+		v1				0.2691223621368408
+		u2				0.06594426184892654
+		v2				0.04336577653884888
+		colour_hue		0.18984430991428075
+		colour_sat		0.5692787838186688
+		colour_val		0.40771046501730424
+	}
+	sprite plant1_a_basecolor
+	{
+		height			0.4650804102420807
+		width			0.4240092989057300
+		top_position	0.44622662045574685
+		u0				0.9986527562141418
+		v0				0.228912353515625
+		u1				0.998525083065033
+		v1				0.0005393028259277344
+		u2				0.7313145995140076
+		v2				0.13462859392166138
+		colour_hue		0.17451147695519872
+		colour_sat		0.5967721288262179
+		colour_val		0.49347887081701564
+	}
+	sprite plant3_basecolor
+	{
+		height			0.7384283989667892
+		width			0.6378061771392820
+		top_position	0.46140192729163526
+		u0				0.7266303896903992
+		v0				0.7338235080242157
+		u1				0.37854471802711487
+		v1				0.7336261570453644
+		u2				0.5719744563102722
+		v2				0.4137030839920044
+		colour_hue		0.1587136263014443
+		colour_sat		0.7034069967939681
+		colour_val		0.32774591140858284
+	}
+	sprite plant2_a_basecolor
+	{
+		height			0.7450535818934441
+		width			0.8407216072082520
+		top_position	0.6197067231914316
+		u0				0.5446723103523254
+		v0				0.4869384169578552
+		u1				0.246315598487854
+		v1				0.4872317910194397
+		u2				0.354333758354187
+		v2				0.2687588334083557
+		colour_hue		0.20796568099512536
+		colour_sat		0.4078176207043642
+		colour_val		0.3591931411096973
+	}
+}

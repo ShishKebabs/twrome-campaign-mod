@@ -1,0 +1,43 @@
+plan
+	{
+target 				rectangle x 7 z 1 rot 0 width 32 height 32
+floor				barb_village_underlay.CAS	barb_village_overlay.CAS
+ground_types			barb_village_ground.tga -224 -224 224 224
+street_plan			barb_village_pathfinding.CAS
+borders				barb_village_limits.CAS
+
+barbarian_long_house,	-40.37,	-39.74,	-35.00,	16.00
+tree_A,	-10.82,	77.27,	62.00,	16.00
+tree_A,	-57.26,	-26.13,	114.00,	16.00
+tree_A,	38.16,	-29.22,	-170.00,	16.00
+barbarian_round_house_large,	-41.39,	1.36,	-102.50,	16.00
+barbarian_round_house_large,	36.77,	-47.65,	-179.50,	16.00
+barbarian_round_house_large,	118.22,	-181.39,	30.50,	0.00
+barbarian_round_house_large,	-57.37,	16.87,	84.50,	16.00
+barbarian_round_house_small,	187.23,	124.33,	99.00,	0.00
+pile_of_logs,	20.75,	58.28,	9.00,	16.00
+bush_A,	193.82,	123.83,	99.00,	0.00
+bush_A,	-20.49,	24.66,	-110.00,	16.00
+barbarian_round_house_small,	-60.94,	-0.99,	-139.50,	15.61
+barbarian_round_house_small,	29.13,	59.69,	102.50,	16.00
+bush_A,	52.39,	-27.51,	20.00,	16.00
+tree_A,	-34.38,	19.32,	140.00,	16.00
+paddock,	-21.28,	64.03,	-56.00,	16.00
+barbarian_round_house_large,	50.20,	31.40,	-94.50,	16.00
+tree_A,	-37.81,	68.76,	-170.00,	16.00
+tree_A,	42.24,	48.58,	167.00,	16.00
+tree_A,	34.11,	24.22,	-170.00,	16.00
+tree_A,	63.36,	-17.70,	-170.00,	16.00
+tree_A,	24.05,	-67.58,	66.00,	16.00
+tree_A,	-32.40,	-65.92,	-64.00,	16.00
+tree_A,	-16.58,	-22.66,	-124.00,	16.00
+pile_of_logs,	61.68,	31.13,	9.00,	16.00
+pile_of_logs,	47.47,	-42.77,	9.00,	16.00
+pile_of_logs,	-48.66,	-22.41,	9.00,	16.00
+pile_of_logs,	-71.05,	16.70,	9.00,	16.00
+barbarian_round_house_large,	199.64,	114.00,	-166.50,	0.00
+tree_A,	204.61,	131.75,	-170.00,	0.00
+barbarian_round_house_large,	-190.52,	-22.51,	-158.50,	0.00
+tree_A,	-175.63,	-22.30,	112.00,	0.00
+barb_village_fences,	0,	0,	0,	0
+}

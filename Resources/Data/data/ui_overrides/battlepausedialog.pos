@@ -1,0 +1,436 @@
+{
+        "frames": [
+            {
+                "position": {
+                    "x": 364,
+                    "y": 0
+                },
+                "size": {
+                    "width": 473.2
+                },
+                "priority": -5,
+                "fill": "invisible",
+                "ignore_scale": true
+            }
+        ],
+"tooltip": {
+        "x": 60,
+        "y": -440,
+        "width": 400,
+        "height": 168,
+        "anchor": "TC"
+    },
+    "list": [
+        {
+            "name": "rome_bg_column",
+            "x": 360,
+            "y": 0,
+             "size": {
+                "width": 514,
+                "height":1024
+            },
+            "align": "TC",
+            "anchor": "TL",
+            "priority": 10,
+            "ignore_scale": true
+        },
+        {
+            "name": "banner",
+            "x": 360,
+            "y": 0,
+            "size": {
+                "width": 400,
+                "height":980
+            },
+            "align": "TC",
+            "anchor": "TL",
+            "priority": 6,
+            "ignore_scale": true
+        },
+        {
+            "name": "rome_logo",
+            "x": 360,
+            "y": 80,
+            "size": {
+                "width": 275,
+                "height": 180
+            },
+            "align": "TC",
+            "hitbox" : {
+                "left": 0,
+                "top": 0,
+                "right": 0,
+                "bot": -40
+            },
+            "ignore_scale": true
+        },
+        {
+            "name": "return_to_game_button",
+            "x": 360,
+            "base_override" : {
+                "y": 300,
+            },
+            "y": 320,
+            "size": {
+                "height": 70,
+                "width": 273
+            },
+            "align": "BC",
+            "hitbox" : {
+                "left": 10,
+                "top": 20,
+                "right": -10,
+                "bot": -10
+            },
+            "font":"cinzel_med",
+            "ignore_scale": true
+        },
+        {
+            "name": "manual_button",
+            "x": 360,
+            "base_override" : {
+                "y": 355,
+            },
+            "y": 375,
+            "size": {
+                "height": 70,
+                "width": 273
+            },
+            "align": "BC",
+            "hitbox" : {
+                "left": 10,
+                "top": 20,
+                "right": -10,
+                "bot": -10
+            },
+            "font":"cinzel_med",
+            "priority": 10,
+            "ignore_scale": true
+        },
+        {
+            "name": "options_button",
+            "x": 360,
+            "base_override" : {
+                "y": 410,
+            },
+            "y": 430,
+            "size": {
+                "height": 70,
+                "width": 273
+            },
+            "align": "BC",
+            "hitbox" : {
+                "left": 10,
+                "top": 20,
+                "right": -10,
+                "bot": -10
+            },
+            "font":"cinzel_med",
+            "priority": 10,
+            "ignore_scale": true
+        },
+        {
+            "name": "options_dropdown_gfx_button",
+            "x": 360,
+            "base_override" : {
+                "y": 470,
+            },
+            "y": 490,
+            "size": {
+                "height": 50,
+                "width": 273
+            },
+            "align": "BC",
+            "hitbox" : {
+                "left": 10,
+                "top": 20,
+                "right": -10,
+                "bot": -10
+            },
+            "ignore_scale": true
+        },
+        {
+            "name": "options_dropdown_audio_button",
+            "x": 360,
+            "base_override" : {
+                "y": 510,
+            },
+            "y": 530,
+            "size": {
+                "height": 50,
+                "width": 273
+            },
+            "align": "BC",
+            "hitbox" : {
+                "left": 10,
+                "top": 20,
+                "right": -10,
+                "bot": -10
+            },
+            "ignore_scale": true
+        },
+        {
+            "name": "options_dropdown_controls_button",
+            "x": 360,
+            "base_override" : {
+                "y": 550,
+            },
+            "y": 570,
+            "size": {
+                "height": 50,
+                "width": 273
+            },
+            "align": "BC",
+            "hitbox" : {
+                "left": 10,
+                "top": 20,
+                "right": -10,
+                "bot": -10
+            },
+            "ignore_scale": true
+        },
+        {
+            "name": "options_dropdown_gameplay_button",
+            "x": 360,
+            "base_override" : {
+                "y": 590,
+            },
+            "y": 610,
+            "size": {
+                "height": 50,
+                "width": 273
+            },
+            "align": "BC",
+            "hitbox" : {
+                "left": 10,
+                "top": 20,
+                "right": -10,
+                "bot": -10
+            },
+            "ignore_scale": true
+        },
+        {
+            "_comment":"MKG -- Second group of options begin",
+        },
+        {
+            "name": "restart_battle_button",
+            "x": 360,
+            "base_override" : {
+                "y": 510,
+            },
+            "y": 530,
+            "size": {
+                "height": 70,
+                "width": 273
+            },
+            "align": "BC",
+            "hitbox" : {
+                "left": 10,
+                "top": 20,
+                "right": -10,
+                "bot": -10
+            },
+            "font":"cinzel_med",
+            "ignore_scale": true
+        },
+        {
+            "name": "exit_game_button",
+            "x": 360,
+            "base_override" : {
+                "y": 565,
+            },
+            "y": 585,
+            "size": {
+                "height": 70,
+                "width": 273
+            },
+            "align":"BC",
+            "hitbox" : {
+                "left": 10,
+                "top": 20,
+                "right": -10,
+                "bot": -10
+            },
+            "font": "cinzel_med",
+            "ignore_scale": true
+        },
+        {
+            "name": "quit_button",
+            "x": 360,
+            "base_override" : {
+                "y": 620,
+            },
+            "y": 640,
+            "size": {
+                "height": 70,
+                "width": 273
+            },
+            "align": "BC",
+            "hitbox" : {
+                "left": 10,
+                "top": 20,
+                "right": -10,
+                "bot": -10
+            },
+            "font":"cinzel_med",
+            "ignore_scale": true
+        },
+        {
+            "_comment":"MKG -- Second group of options ends",
+        },
+        {
+            "name": "show_help_sheet_checkbox",
+            "x": 246,
+            "_comment":"y coordinate gets overriden by the parent, PAUSE_MENU_CHECKBOX_BUTTON",
+            "size": {
+                "width": 32,
+                "height": 32
+            },
+            "align": "C",
+            "priority": 10,
+            "ignore_scale": true
+        },
+        {
+            "name": "show_help_sheet",
+            "x": 260,
+            "y": 850,
+            "size": {
+                "_comment":"MKG - We need the height to position the checkbox",
+                "height": 40
+            },
+            "hitbox" : {
+                "left": -25,
+            },
+            "align": "CL",
+            "font":"cinzel_med",
+            "priority": 10,
+            "ignore_scale": true
+        },
+        {
+            "name": "title_string",
+            "x": 0,
+            "y": -190,
+            "align": "C",
+            "anchor": "C",
+            "font":"cinzel_med",
+            "hidden": true,
+        },
+        {
+            "name": "how_to_pause_string",
+            "x": 0,
+            "y": -120,
+            "align": "C",
+            "size": {
+                "width": 520
+            },
+            "anchor": "C",
+            "font":"cinzel_med",
+            "hidden": true,
+        },
+        {
+            "name": "advisor",
+            "x": -1000,
+            "y": -1000,
+        },
+        {
+            "name": "advisor_manual",
+            "x": -100,
+            "y": -100,
+        },
+
+
+        {
+            "name": "advisor_zoom_to",
+            "x": -100,
+            "y": -100,
+        },
+        {
+            "name": "advisor_hide_bubble",
+            "x": -100,
+            "y": -100,
+        },
+        {
+            "name": "advanced_options_button",
+            "x": -100,
+            "y": -100,
+        },
+
+        {
+            "name": "advisor_animated_frame",
+            "x": -1000,
+            "y": 56,
+            "size" : {
+                "width"  : 400,
+                "height" : 250
+            },
+            "anchor": "TL",
+            "priority": 50,
+        },
+        
+        {
+            "name": "advisor_animated_background_frame_priority",
+            "priority": -1,
+        },
+
+        {
+            "name": "top_accordion",
+            "x": 355,
+            "y": -50,
+            "size": {
+                "width": 304,
+                "height": 50
+            },
+            "align": "C",
+            "hitbox" : {
+                "left": 0,
+                "top": 30,
+                "right": 0,
+                "bot": -20
+            },
+            "priority": 1,
+            "ignore_scale": true
+        },
+        {
+            "name": "bottom_accordion",
+            "x": 355,
+            "y": -50,
+            "size": {
+                "width": 260,
+                "height": 15
+            },
+            "align": "C",
+            "ignore_scale": true
+        },
+        {
+            "name": "highlight_left",
+            "x": -50,
+            "y": -50,
+            "size": {
+                "width": 30,
+                "height": 55
+            },
+            "priority": 20,
+            "ignore_scale": true
+        },
+        {
+            "name": "highlight_right",
+            "x": -50,
+            "y": -50,
+            "size": {
+                "width": 30,
+                "height": 55
+            },
+            "priority": 20,
+            "ignore_scale": true
+        },
+
+        {
+            "name": "current_initialiser",
+            "x": 0,
+            "y": 0,
+            "ignore_scale": true
+        },
+
+
+    ]
+}

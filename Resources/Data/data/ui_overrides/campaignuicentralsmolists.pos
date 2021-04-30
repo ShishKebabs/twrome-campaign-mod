@@ -1,0 +1,54 @@
+{
+	"frames": [
+	],
+
+	"list": [
+
+		{
+			"name":"list_heading",
+			"x": 32 ,
+			"y": 22,
+			"size" : {
+				"width": 1066 ,
+				"height" : 40
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"font": "verdana_med",
+			"font_colour": "dark_brown",
+			"priority": 1
+		},
+
+		{
+			"name":"divider",
+			"x": 30 ,
+			"y": 59,
+			"size" : {
+				"width": 1068 ,
+				"height" : 26
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"priority": 1
+		},
+
+
+		{
+			"name":"list",
+			"x": 40 ,
+			"y": 85,
+			"size" : {
+				"width": 1046 ,
+				"height" : 580
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"font_colour": "dark_brown",
+			"priority": 1,
+			"outside_slider": true,
+			"slider_gap": 8
+		},
+
+
+	]
+}

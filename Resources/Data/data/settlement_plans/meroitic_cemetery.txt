@@ -1,0 +1,32 @@
+plan
+
+{
+
+floor	underlay_meroitic_cemetery.cas 	overlay_meroitic_cemetery.cas
+	ground_types	ground_no_grass.tga	-64,	-64,	64,	64
+	borders	border_limits_128m_diameter.CAS
+
+meroitic_pyramid_large,		72,	38,	0,	8
+meroitic_pyramid_large,		-58,	-32,	-7.5,	0
+meroitic_pyramid_large,		32,	34,	0,	8
+
+meroitic_pyramid_small,		-26,	4,	-7.5,	2
+meroitic_pyramid_small,		86,	8,	0,	8
+meroitic_pyramid_small,		-46,	54,	0,	8
+meroitic_pyramid_small,		-86,	48,	0,	8
+meroitic_pyramid_small,		52,	38,	0,	8
+
+meroitic_pyramid_very_large,	-22,	52,	0,	8
+meroitic_pyramid_very_large,	6,	46,	0,	8
+
+meroitic_pyramid_very_small,	-8,	0,	0,	2
+meroitic_pyramid_very_small,	102,	48,	0,	8
+meroitic_pyramid_very_small,	56,	-30,	0,	4
+meroitic_pyramid_very_small,	-26,	-36,	0,	0
+meroitic_pyramid_very_small,	-40,	-32,	0,	0
+meroitic_pyramid_very_small,	-76,	-24,	-15,	0
+meroitic_pyramid_very_small,	-64,	62,	0,	8
+meroitic_pyramid_very_small,	-44,	8,	0,	2
+		
+
+	}

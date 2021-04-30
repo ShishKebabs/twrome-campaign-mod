@@ -1,0 +1,206 @@
+; ****  new parkland-style slot fillers
+
+
+; ** inner walls
+
+
+type		slot_filler_inner_wall_48x32_roman
+lod
+max_distance	4000
+model_rigid	slot_filler_inner_wall_48x32_roman.cas
+
+
+
+type		slot_filler_inner_wall_112x64_roman
+lod
+max_distance	4000
+model_rigid	slot_filler_inner_wall_112x64_roman.cas
+
+
+
+type		slot_filler_inner_wall_160x128_roman
+lod
+max_distance	4000
+model_rigid	slot_filler_inner_wall_160x128_roman.cas
+
+;
+
+type		slot_filler_inner_wall_48x32_egyptian
+lod
+max_distance	4000
+model_rigid	slot_filler_inner_wall_48x32_roman.cas
+
+
+
+type		slot_filler_inner_wall_112x64_egyptian
+lod
+max_distance	4000
+model_rigid	slot_filler_inner_wall_112x64_roman.cas
+
+
+
+type		slot_filler_inner_wall_160x128_egyptian
+lod
+max_distance	4000
+model_rigid	slot_filler_inner_wall_160x128_roman.cas
+
+;
+
+type		slot_filler_inner_wall_48x32_barbarian
+lod
+max_distance	4000
+model_rigid	slot_filler_inner_wall_48x32_barbarian.cas
+
+
+
+type		slot_filler_inner_wall_112x64_barbarian
+lod
+max_distance	4000
+model_rigid	slot_filler_inner_wall_112x64_barbarian.cas
+
+
+
+type		slot_filler_inner_wall_160x128_barbarian
+lod
+max_distance	4000
+model_rigid	slot_filler_inner_wall_160x128_barbarian.cas
+
+
+
+; ** outer walls
+
+
+type		slot_filler_outer_wall_48x32_roman
+lod
+max_distance	4000
+model_rigid	slot_filler_outer_wall_48x32_roman.cas
+
+
+
+type		slot_filler_outer_wall_112x64_roman
+lod
+max_distance	4000
+model_rigid	slot_filler_outer_wall_112x64_roman.cas
+
+
+
+type		slot_filler_outer_wall_160x128_roman
+lod
+max_distance	4000
+model_rigid	slot_filler_outer_wall_160x128_roman.cas
+
+
+
+type		slot_filler_outer_wall_256x192_roman
+lod
+max_distance	4000
+model_rigid	slot_filler_outer_wall_256x192_roman.cas
+
+
+
+type		slot_filler_outer_wall_256x96_roman
+lod
+max_distance	4000
+model_rigid	slot_filler_outer_Wall_256x96_roman.cas
+
+;
+
+
+type		slot_filler_outer_wall_48x32_egyptian
+lod
+max_distance	4000
+model_rigid	slot_filler_outer_wall_48x32_roman.cas
+
+
+
+type		slot_filler_outer_wall_112x64_egyptian
+lod
+max_distance	4000
+model_rigid	slot_filler_outer_wall_112x64_roman.cas
+
+
+
+type		slot_filler_outer_wall_160x128_egyptian
+lod
+max_distance	4000
+model_rigid	slot_filler_outer_wall_160x128_roman.cas
+
+
+
+type		slot_filler_outer_wall_256x192_egyptian
+lod
+max_distance	4000
+model_rigid	slot_filler_outer_wall_256x192_roman.cas
+
+
+
+type		slot_filler_outer_wall_256x96_egyptian
+lod
+max_distance	4000
+model_rigid	slot_filler_outer_Wall_256x96_roman.cas
+
+;
+
+type		slot_filler_outer_wall_48x32_barbarian
+lod
+max_distance	4000
+model_rigid	slot_filler_outer_wall_48x32_barbarian.cas
+
+
+
+type		slot_filler_outer_wall_112x64_barbarian
+lod
+max_distance	4000
+model_rigid	slot_filler_outer_wall_112x64_barbarian.cas
+
+
+
+type		slot_filler_outer_wall_160x128_barbarian
+lod
+max_distance	4000
+model_rigid	slot_filler_outer_wall_160x128_barbarian.cas
+
+
+type		slot_filler_outer_wall_256x192_barbarian
+lod
+max_distance	4000
+model_rigid	slot_filler_outer_wall_256x192_barbarian.cas
+
+
+
+type		slot_filler_outer_wall_256x96_barbarian
+lod
+max_distance	4000
+model_rigid	slot_filler_outer_Wall_256x96_barbarian.cas
+
+
+; ** flowers
+
+
+type		slot_empty_112x64_flowers
+lod
+max_distance	4000
+model_rigid	slot_empty_112x64_flowers.cas
+
+
+
+type		slot_filler_112x64_160x128_flowers
+lod
+max_distance	4000
+model_rigid	slot_filler_112x64_160x128_flowers.cas
+
+
+
+type		slot_filler_160x128_256x192_flowers
+lod
+max_distance	4000
+model_rigid	slot_filler_160x128_256x192_flowers.cas
+
+
+
+type		slot_filler_112x64_256x96_flowers
+lod
+max_distance	4000
+model_rigid	slot_filler_112x64_256x96_flowers.cas
+
+

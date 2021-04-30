@@ -1,0 +1,183 @@
+type				julii_admiral
+skeleton			strat_navy
+male
+pbr_texture romans_julii, data/models_strat/textures/boat_04_pbr.tga
+texture				romans_julii, data/models_strat/textures/boat_04_base_julii.tga
+model_flexi			data/models_strat/boat_04.cas, max
+no_variation model_flexi			data/models_strat/boat_04.cas, max
+
+type				brutii_admiral
+skeleton			strat_navy
+male
+pbr_texture romans_brutii, data/models_strat/textures/boat_04_pbr.tga
+texture				romans_brutii, data/models_strat/textures/boat_04_base_brutii.tga
+model_flexi			data/models_strat/boat_04.cas, max
+no_variation model_flexi			data/models_strat/boat_04.cas, max
+
+type				scipii_admiral
+skeleton			strat_navy
+male
+pbr_texture romans_scipii, data/models_strat/textures/boat_04_pbr.tga
+texture				romans_scipii, data/models_strat/textures/boat_04_base_scipii.tga
+model_flexi			data/models_strat/boat_04.cas, max
+no_variation model_flexi			data/models_strat/boat_04.cas, max
+
+type				senate_admiral
+skeleton			strat_navy
+male
+pbr_texture romans_senate, data/models_strat/textures/boat_04_pbr.tga
+texture				romans_senate, data/models_strat/textures/boat_04_base_senate.tga
+model_flexi			data/models_strat/boat_04.cas, max
+no_variation model_flexi			data/models_strat/boat_04.cas, max
+
+type				macedon_admiral
+skeleton			strat_navy
+male
+pbr_texture macedon, data/models_strat/textures/boat_05_pbr.tga
+texture				macedon, data/models_strat/textures/boat_05_base_macedon.tga
+model_flexi			data/models_strat/boat_05.cas, max
+no_variation model_flexi			data/models_strat/boat_05.cas, max
+
+type				carthage_admiral
+skeleton			strat_navy
+male
+pbr_texture carthage, data/models_strat/textures/boat_05_pbr.tga
+texture				carthage, data/models_strat/textures/boat_05_base_carthage.tga
+model_flexi			data/models_strat/boat_05.cas, max
+no_variation model_flexi			data/models_strat/boat_05.cas, max
+
+type				parthia_admiral
+skeleton			strat_navy
+male
+pbr_texture parthia, data/models_strat/textures/boat_01_pbr.tga
+texture				parthia, data/models_strat/textures/boat_01_base_parthia.tga
+model_flexi			data/models_strat/boat_01.cas, max
+no_variation model_flexi			data/models_strat/boat_01.cas, max
+
+type				egypt_admiral
+skeleton			strat_navy
+male
+pbr_texture egypt, data/models_strat/textures/boat_06_pbr.tga
+texture				egypt, data/models_strat/textures/boat_06_base_egypt.tga
+model_flexi			data/models_strat/boat_06.cas, max
+no_variation model_flexi			data/models_strat/boat_06.cas, max
+
+type				seleucid_admiral
+skeleton			strat_navy
+male
+pbr_texture seleucid, data/models_strat/textures/boat_05_pbr.tga
+texture				seleucid, data/models_strat/textures/boat_05_base_seleucid.tga
+model_flexi			data/models_strat/boat_05.cas, max
+no_variation model_flexi			data/models_strat/boat_05.cas, max
+
+type				pontus_admiral
+skeleton			strat_navy
+male
+pbr_texture pontus, data/models_strat/textures/boat_01_pbr.tga
+texture				pontus, data/models_strat/textures/boat_01_base_pontus.tga
+model_flexi			data/models_strat/boat_01.cas, max
+no_variation model_flexi			data/models_strat/boat_01.cas, max
+
+type				gaul_admiral
+skeleton			strat_navy
+male
+pbr_texture gauls, data/models_strat/textures/boat_03_pbr.tga
+texture				gauls, data/models_strat/textures/boat_03_base_gauls.tga
+model_flexi			data/models_strat/boat_03.cas, max
+no_variation model_flexi			data/models_strat/boat_03.cas, max
+
+type				german_admiral
+skeleton			strat_navy
+male
+pbr_texture germans, data/models_strat/textures/boat_03_pbr.tga
+texture				germans, data/models_strat/textures/boat_03_base_germania.tga
+model_flexi			data/models_strat/boat_03.cas, max
+no_variation model_flexi			data/models_strat/boat_03.cas, max
+
+type				briton_admiral
+skeleton			strat_navy
+male
+pbr_texture britons, data/models_strat/textures/boat_03_pbr.tga
+texture				britons, data/models_strat/textures/boat_03_base_britannia.tga
+model_flexi			data/models_strat/boat_03.cas, max
+no_variation model_flexi			data/models_strat/boat_03.cas, max
+
+type				armenia_admiral
+skeleton			strat_navy
+male
+pbr_texture armenia, data/models_strat/textures/boat_01_pbr.tga
+texture				armenia, data/models_strat/textures/boat_01_base_armenia.tga
+model_flexi			data/models_strat/boat_01.cas, max
+no_variation model_flexi			data/models_strat/boat_01.cas, max
+
+type				dacia_admiral
+skeleton			strat_navy
+male
+pbr_texture dacia, data/models_strat/textures/boat_03_pbr.tga
+texture				dacia, data/models_strat/textures/boat_03_base_dacia.tga
+model_flexi			data/models_strat/boat_03.cas, max
+no_variation model_flexi			data/models_strat/boat_03.cas, max
+
+type				greek_cities_admiral
+skeleton			strat_navy
+male
+pbr_texture greek_cities, data/models_strat/textures/boat_05_pbr.tga
+texture				greek_cities, data/models_strat/textures/boat_05_base_greek_cities.tga
+model_flexi			data/models_strat/boat_05.cas, max
+no_variation model_flexi			data/models_strat/boat_05.cas, max
+
+type				numidia_admiral
+skeleton			strat_navy
+male
+pbr_texture numidia, data/models_strat/textures/boat_01_pbr.tga
+texture				numidia, data/models_strat/textures/boat_01_base_numidia.tga
+model_flexi			data/models_strat/boat_01.cas, max
+no_variation model_flexi			data/models_strat/boat_01.cas, max
+
+type				scythia_admiral
+skeleton			strat_navy
+male
+pbr_texture scythia, data/models_strat/textures/boat_03_pbr.tga
+texture				scythia, data/models_strat/textures/boat_03_base_scythia.tga
+model_flexi			data/models_strat/boat_03.cas, max
+no_variation model_flexi			data/models_strat/boat_03.cas, max
+
+type				spain_admiral
+skeleton			strat_navy
+male
+pbr_texture spain, data/models_strat/textures/boat_03_pbr.tga
+texture				spain, data/models_strat/textures/boat_03_base_spain.tga
+model_flexi			data/models_strat/boat_03.cas, max
+no_variation model_flexi			data/models_strat/boat_03.cas, max
+
+type				thrace_admiral
+skeleton			strat_navy
+male
+pbr_texture thrace, data/models_strat/textures/boat_05_pbr.tga
+texture				thrace, data/models_strat/textures/boat_05_base_thrace.tga
+model_flexi			data/models_strat/boat_05.cas, max
+no_variation model_flexi			data/models_strat/boat_05.cas, max
+
+type				slave_admiral
+skeleton			strat_navy
+male
+pbr_texture slave, data/models_strat/textures/boat_05_pbr.tga
+texture				slave, data/models_strat/textures/boat_05_base_rebels.tga
+model_flexi			data/models_strat/boat_05.cas, max
+no_variation model_flexi			data/models_strat/boat_05.cas, max
+
+type				pontus_named					; Not sure if character is used - Currently references original data
+skeleton			strat_navy
+male
+pbr_texture slave, data/models_strat/textures/boat_01_pbr.tga
+texture				slave, data/models_strat/textures/boat_01_base_pontus.tga
+model_flexi			data/models_strat/boat_01.cas, max
+no_variation model_flexi			data/models_strat/boat_01.cas, max
+
+type				pontus_general					; Not sure if character is used - Currently references original data
+skeleton			strat_navy
+male
+pbr_texture slave, data/models_strat/textures/boat_05_pbr.tga
+texture				slave, data/models_strat/textures/boat_05_base_pontus.tga
+model_flexi			data/models_strat/boat_05.cas, max
+no_variation model_flexi			data/models_strat/boat_05.cas, max

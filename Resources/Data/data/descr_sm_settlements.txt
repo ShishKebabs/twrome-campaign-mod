@@ -1,0 +1,356 @@
+;  Specify all settlement data that is keyed on culture and settlement level.
+;  Currently, just strategy map model and UI card.  
+;  (Anything else required may have to be specified as a separate block - eg, anything that is per-faction
+;  rather than per-culture, or doesn't depend on level .)
+
+symbol	data/models_strat/residences/symbol.CAS
+siege	data/models_strat/residences/siege_icon.CAS
+
+roman
+{
+	village
+	{
+		normal				data/models_strat/residences/roman_village_buildings.CAS
+		card				data/ui/roman/cities/graeco-roman_village.tga
+	}
+	town
+	{
+		normal				data/models_strat/residences/roman_town_buildings.CAS
+		wall				data/models_strat/residences/roman_town_wall_1.CAS
+		wall				data/models_strat/residences/roman_town_wall_2.CAS
+		wall				data/models_strat/residences/roman_town_wall_3.CAS
+		card				data/ui/roman/cities/graeco-roman_town.tga
+	}
+	large_town
+	{
+		normal				data/models_strat/residences/roman_large_town_buildings.CAS
+		wall				data/models_strat/residences/roman_large_town_wall_1.CAS
+		wall				data/models_strat/residences/roman_large_town_wall_2.CAS
+		wall				data/models_strat/residences/roman_large_town_wall_3.CAS
+		card				data/ui/roman/cities/graeco-roman_large_town.tga
+	}
+	city
+	{
+		normal				data/models_strat/residences/roman_city_buildings.CAS
+		wall				data/models_strat/residences/roman_city_wall_1.CAS
+		wall				data/models_strat/residences/roman_city_wall_2.CAS
+		wall				data/models_strat/residences/roman_city_wall_3.CAS
+		wall				data/models_strat/residences/roman_city_wall_4.CAS
+		card				data/ui/roman/cities/graeco-roman_city.tga
+	}
+	large_city
+	{
+		normal				data/models_strat/residences/roman_large_city_buildings.CAS
+		wall				data/models_strat/residences/roman_large_city_wall_1.CAS
+		wall				data/models_strat/residences/roman_large_city_wall_2.CAS
+		wall				data/models_strat/residences/roman_large_city_wall_3.CAS
+		wall				data/models_strat/residences/roman_large_city_wall_4.CAS
+		card				data/ui/roman/cities/graeco-roman_large_city.tga
+	}
+	huge_city
+	{
+		normal				data/models_strat/residences/roman_huge_city_buildings.CAS
+		wall				data/models_strat/residences/roman_huge_city_wall_1.CAS
+		wall				data/models_strat/residences/roman_huge_city_wall_2.CAS
+		wall				data/models_strat/residences/roman_huge_city_wall_3.CAS
+		wall				data/models_strat/residences/roman_huge_city_wall_4.CAS
+		wall				data/models_strat/residences/roman_huge_city_wall_5.CAS
+		card				data/ui/roman/cities/graeco-roman_huge_city.tga
+	}
+}
+
+barbarian
+{
+	village
+	{
+		normal				data/models_strat/residences/barb_village.CAS
+		card				data/ui/barbarian/cities/barbarian_village.tga
+	}
+	town
+	{
+		normal				data/models_strat/residences/barb_town_buildings.CAS
+		wall				data/models_strat/residences/barb_town_wall_1.CAS
+		wall				data/models_strat/residences/barb_town_wall_2.CAS
+		card				data/ui/barbarian/cities/barbarian_town.tga
+	}
+	large_town
+	{
+		normal				data/models_strat/residences/barb_large_town_buildings.CAS
+		wall				data/models_strat/residences/barb_large_town_wall_1.CAS
+		wall				data/models_strat/residences/barb_large_town_wall_2.CAS
+		card				data/ui/barbarian/cities/barbarian_large_town.tga
+	}
+	city
+	{
+		normal				data/models_strat/residences/barb_city_buildings.CAS
+		wall				data/models_strat/residences/barb_city_wall_1.CAS
+		wall				data/models_strat/residences/barb_city_wall_2.CAS
+		card				data/ui/barbarian/cities/barbarian_city.tga
+	}
+}
+
+carthaginian
+{
+	village
+	{
+		normal				data/models_strat/residences/eastern_village_buildings.CAS
+		card				data/ui/eastern/cities/eastern-egyptian_village.tga
+	}
+	town
+	{
+		normal				data/models_strat/residences/eastern_town_buildings.CAS
+		wall				data/models_strat/residences/roman_town_wall_1.CAS
+		wall				data/models_strat/residences/roman_town_wall_2.CAS
+		wall				data/models_strat/residences/eastern_town_wall_3.CAS
+		card				data/ui/eastern/cities/eastern-egyptian_town.tga
+	}
+	large_town
+	{
+		normal				data/models_strat/residences/eastern_large_town_buildings.CAS
+		wall				data/models_strat/residences/roman_large_town_wall_1.CAS
+		wall				data/models_strat/residences/roman_large_town_wall_2.CAS
+		wall				data/models_strat/residences/eastern_large_town_wall_3.CAS
+		card				data/ui/eastern/cities/eastern-egyptian_large_town.tga
+	}
+	city
+	{
+		normal				data/models_strat/residences/eastern_city_buildings.CAS
+		wall				data/models_strat/residences/roman_city_wall_1.CAS
+		wall				data/models_strat/residences/roman_city_wall_2.CAS
+		wall				data/models_strat/residences/eastern_city_wall_3.CAS
+		wall				data/models_strat/residences/eastern_city_wall_4.CAS
+		card				data/ui/eastern/cities/eastern-egyptian_city.tga
+	}
+	large_city
+	{
+		normal				data/models_strat/residences/eastern_large_city_buildings.CAS
+		wall				data/models_strat/residences/roman_large_city_wall_1.CAS
+		wall				data/models_strat/residences/roman_large_city_wall_2.CAS
+		wall				data/models_strat/residences/eastern_large_city_wall_3.CAS
+		wall				data/models_strat/residences/eastern_large_city_wall_4.CAS
+		card				data/ui/eastern/cities/eastern-egyptian_large_city.tga
+	}
+	huge_city
+	{
+		normal				data/models_strat/residences/eastern_huge_city_buildings.CAS
+		wall				data/models_strat/residences/roman_huge_city_wall_1.CAS
+		wall				data/models_strat/residences/roman_huge_city_wall_2.CAS
+		wall				data/models_strat/residences/eastern_huge_city_wall_3.CAS
+		wall				data/models_strat/residences/eastern_huge_city_wall_4.CAS
+		wall				data/models_strat/residences/eastern_huge_city_wall_5.CAS
+		card				data/ui/eastern/cities/eastern-egyptian_huge_city.tga
+	}
+}
+
+greek
+{
+	village
+	{
+		normal				data/models_strat/residences/roman_village_buildings.CAS
+		card				data/ui/roman/cities/graeco-roman_village.tga
+	}
+	town
+	{
+		normal				data/models_strat/residences/roman_town_buildings.CAS
+		wall				data/models_strat/residences/roman_town_wall_1.CAS
+		wall				data/models_strat/residences/roman_town_wall_2.CAS
+		wall				data/models_strat/residences/greek_town_wall_3.CAS
+		card				data/ui/roman/cities/graeco-roman_town.tga
+	}
+	large_town
+	{
+		normal				data/models_strat/residences/roman_large_town_buildings.CAS
+		wall				data/models_strat/residences/roman_large_town_wall_1.CAS
+		wall				data/models_strat/residences/roman_large_town_wall_2.CAS
+		wall				data/models_strat/residences/greek_large_town_wall_3.CAS
+		card				data/ui/roman/cities/graeco-roman_large_town.tga
+	}
+	city
+	{
+		normal				data/models_strat/residences/roman_city_buildings.CAS
+		wall				data/models_strat/residences/roman_city_wall_1.CAS
+		wall				data/models_strat/residences/roman_city_wall_2.CAS
+		wall				data/models_strat/residences/greek_city_wall_3.CAS
+		wall				data/models_strat/residences/greek_city_wall_4.CAS
+		card				data/ui/roman/cities/graeco-roman_city.tga
+	}
+	large_city
+	{
+		normal				data/models_strat/residences/roman_large_city_buildings.CAS
+		wall				data/models_strat/residences/roman_large_city_wall_1.CAS
+		wall				data/models_strat/residences/roman_large_city_wall_2.CAS
+		wall				data/models_strat/residences/greek_large_city_wall_3.CAS
+		wall				data/models_strat/residences/greek_large_city_wall_4.CAS
+		card				data/ui/roman/cities/graeco-roman_large_city.tga
+	}
+	huge_city
+	{
+		normal				data/models_strat/residences/roman_huge_city_buildings.CAS
+		wall				data/models_strat/residences/roman_huge_city_wall_1.CAS
+		wall				data/models_strat/residences/roman_huge_city_wall_2.CAS
+		wall				data/models_strat/residences/greek_huge_city_wall_3.CAS
+		wall				data/models_strat/residences/greek_huge_city_wall_4.CAS
+		wall				data/models_strat/residences/greek_huge_city_wall_5.CAS
+		card				data/ui/roman/cities/graeco-roman_huge_city.tga
+	}
+}
+
+egyptian
+{
+	village
+	{
+		normal				data/models_strat/residences/eastern_village_buildings.CAS
+		card				data/ui/eastern/cities/eastern-egyptian_village.tga
+	}
+	town
+	{
+		normal				data/models_strat/residences/eastern_town_buildings.CAS
+		wall				data/models_strat/residences/roman_town_wall_1.CAS
+		wall				data/models_strat/residences/roman_town_wall_2.CAS
+		wall				data/models_strat/residences/eastern_town_wall_3.CAS
+		card				data/ui/eastern/cities/eastern-egyptian_town.tga
+	}
+	large_town
+	{
+		normal				data/models_strat/residences/eastern_large_town_buildings.CAS
+		wall				data/models_strat/residences/roman_large_town_wall_1.CAS
+		wall				data/models_strat/residences/roman_large_town_wall_2.CAS
+		wall				data/models_strat/residences/eastern_large_town_wall_3.CAS
+		card				data/ui/eastern/cities/eastern-egyptian_large_town.tga
+	}
+	city
+	{
+		normal				data/models_strat/residences/eastern_city_buildings.CAS
+		wall				data/models_strat/residences/roman_city_wall_1.CAS
+		wall				data/models_strat/residences/roman_city_wall_2.CAS
+		wall				data/models_strat/residences/eastern_city_wall_3.CAS
+		wall				data/models_strat/residences/eastern_city_wall_4.CAS
+		card				data/ui/eastern/cities/eastern-egyptian_city.tga
+	}
+	large_city
+	{
+		normal				data/models_strat/residences/eastern_large_city_buildings.CAS
+		wall				data/models_strat/residences/roman_large_city_wall_1.CAS
+		wall				data/models_strat/residences/roman_large_city_wall_2.CAS
+		wall				data/models_strat/residences/eastern_large_city_wall_3.CAS
+		wall				data/models_strat/residences/eastern_large_city_wall_4.CAS
+		card				data/ui/eastern/cities/eastern-egyptian_large_city.tga
+	}
+	huge_city
+	{
+		normal				data/models_strat/residences/eastern_huge_city_buildings.CAS
+		wall				data/models_strat/residences/roman_huge_city_wall_1.CAS
+		wall				data/models_strat/residences/roman_huge_city_wall_2.CAS
+		wall				data/models_strat/residences/eastern_huge_city_wall_3.CAS
+		wall				data/models_strat/residences/eastern_huge_city_wall_4.CAS
+		wall				data/models_strat/residences/eastern_huge_city_wall_5.CAS
+		card				data/ui/eastern/cities/eastern-egyptian_huge_city.tga
+	}
+}
+
+eastern
+{
+	village
+	{
+		normal				data/models_strat/residences/eastern_village_buildings.CAS
+		card				data/ui/eastern/cities/eastern-egyptian_village.tga
+	}
+	town
+	{
+		normal				data/models_strat/residences/eastern_town_buildings.CAS
+		wall				data/models_strat/residences/roman_town_wall_1.CAS
+		wall				data/models_strat/residences/roman_town_wall_2.CAS
+		wall				data/models_strat/residences/eastern_town_wall_3.CAS
+		card				data/ui/eastern/cities/eastern-egyptian_town.tga
+	}
+	large_town
+	{
+		normal				data/models_strat/residences/eastern_large_town_buildings.CAS
+		wall				data/models_strat/residences/roman_large_town_wall_1.CAS
+		wall				data/models_strat/residences/roman_large_town_wall_2.CAS
+		wall				data/models_strat/residences/eastern_large_town_wall_3.CAS
+		card				data/ui/eastern/cities/eastern-egyptian_large_town.tga
+	}
+	city
+	{
+		normal				data/models_strat/residences/eastern_city_buildings.CAS
+		wall				data/models_strat/residences/roman_city_wall_1.CAS
+		wall				data/models_strat/residences/roman_city_wall_2.CAS
+		wall				data/models_strat/residences/eastern_city_wall_3.CAS
+		wall				data/models_strat/residences/eastern_city_wall_4.CAS
+		card				data/ui/eastern/cities/eastern-egyptian_city.tga
+	}
+	large_city
+	{
+		normal				data/models_strat/residences/eastern_large_city_buildings.CAS
+		wall				data/models_strat/residences/roman_large_city_wall_1.CAS
+		wall				data/models_strat/residences/roman_large_city_wall_2.CAS
+		wall				data/models_strat/residences/eastern_large_city_wall_3.CAS
+		wall				data/models_strat/residences/eastern_large_city_wall_4.CAS
+		card				data/ui/eastern/cities/eastern-egyptian_large_city.tga
+	}
+	huge_city
+	{
+		normal				data/models_strat/residences/eastern_huge_city_buildings.CAS
+		wall				data/models_strat/residences/roman_huge_city_wall_1.CAS
+		wall				data/models_strat/residences/roman_huge_city_wall_2.CAS
+		wall				data/models_strat/residences/eastern_huge_city_wall_3.CAS
+		wall				data/models_strat/residences/eastern_huge_city_wall_4.CAS
+		wall				data/models_strat/residences/eastern_huge_city_wall_5.CAS
+		card				data/ui/eastern/cities/eastern-egyptian_huge_city.tga
+	}
+}
+
+nomad
+{
+	village
+	{
+		normal				data/models_strat/residences/eastern_village_buildings.CAS
+		card				data/ui/eastern/cities/eastern-egyptian_village.tga
+	}
+	town
+	{
+		normal				data/models_strat/residences/eastern_town_buildings.CAS
+		wall				data/models_strat/residences/roman_town_wall_1.CAS
+		wall				data/models_strat/residences/roman_town_wall_2.CAS
+		wall				data/models_strat/residences/eastern_town_wall_3.CAS
+		card				data/ui/eastern/cities/eastern-egyptian_town.tga
+	}
+	large_town
+	{
+		normal				data/models_strat/residences/eastern_large_town_buildings.CAS
+		wall				data/models_strat/residences/roman_large_town_wall_1.CAS
+		wall				data/models_strat/residences/roman_large_town_wall_2.CAS
+		wall				data/models_strat/residences/eastern_large_town_wall_3.CAS
+		card				data/ui/eastern/cities/eastern-egyptian_large_town.tga
+	}
+	city
+	{
+		normal				data/models_strat/residences/eastern_city_buildings.CAS
+		wall				data/models_strat/residences/roman_city_wall_1.CAS
+		wall				data/models_strat/residences/roman_city_wall_2.CAS
+		wall				data/models_strat/residences/eastern_city_wall_3.CAS
+		wall				data/models_strat/residences/eastern_city_wall_4.CAS
+		card				data/ui/eastern/cities/eastern-egyptian_city.tga
+	}
+	large_city
+	{
+		normal				data/models_strat/residences/eastern_large_city_buildings.CAS
+		wall				data/models_strat/residences/roman_large_city_wall_1.CAS
+		wall				data/models_strat/residences/roman_large_city_wall_2.CAS
+		wall				data/models_strat/residences/eastern_large_city_wall_3.CAS
+		wall				data/models_strat/residences/eastern_large_city_wall_4.CAS
+		card				data/ui/eastern/cities/eastern-egyptian_large_city.tga
+	}
+	huge_city
+	{
+		normal				data/models_strat/residences/eastern_huge_city_buildings.CAS
+		wall				data/models_strat/residences/roman_huge_city_wall_1.CAS
+		wall				data/models_strat/residences/roman_huge_city_wall_2.CAS
+		wall				data/models_strat/residences/eastern_huge_city_wall_3.CAS
+		wall				data/models_strat/residences/eastern_huge_city_wall_4.CAS
+		wall				data/models_strat/residences/eastern_huge_city_wall_5.CAS
+		card				data/ui/eastern/cities/eastern-egyptian_huge_city.tga
+	}
+}
+

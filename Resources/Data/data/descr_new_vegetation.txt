@@ -1,0 +1,385 @@
+;
+; This file contains the vegetation definitions; it gets parsed on application
+; startup but is not otherwise referred to. The data format is:
+;
+; One or more display definitions:
+; billboard_info <name>
+; texture <image>
+; board_min_max <min x> <min y> <max x> <max y>
+; tex_min_max <min u> <min v> <max u> <max v> : repeat upto 4 times.
+;
+; LOD definitions
+; lod animated_billboard <start> <stop> <update tolerance> <deflection %> <frame rate>
+; lod billboard <start> <stop> <update tolerance>
+; lod none <start> <stop>
+;
+; One or more vegetation definitions:
+; vegetation <name>
+; layout <size> <image>
+; radius <N>
+; height_range <min> <max>
+; aspect_range <min> <max>
+; billboard <name>
+;
+; NOTE that a radius of zero means items are not added to the physical grid
+
+;
+; Trees
+;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Defaults
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+billboard default
+{
+	texture pink.tga
+	board_min_max -0.5		0		0.5		1
+	tex_min_max	0.01625		0.48375		0.48375		0.01625
+	tex_min_max	0.01625		0.98375		0.48375		0.51625
+	tex_min_max 0.51626		0.98375		0.98375		0.51625
+}
+
+lod billboard
+{
+    billboard inf 5.0
+}
+
+lod animated_billboard
+{
+    animated_billboard 200.0 5.0 1 15
+    billboard inf 5.0
+}
+
+vegetation default_forest
+{
+    layout 256 forest_layout.tga
+    radius 2
+    height_range 16 20
+    aspect_range 0.3 0.5
+    lod animated_billboard
+}
+
+vegetation default_scrub
+{
+    layout 256 scrub_layout.tga
+    radius 0
+    height_range 0.5 2
+    aspect_range 1.0 1.0
+    lod billboard
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Billboards
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+billboard pines modifies default
+{
+	texture pine_summer.tga
+}
+
+billboard winter_pines modifies default
+{
+    texture pine_winter.tga
+}
+
+billboard medi_forest modifies default
+{
+    texture medi_forest.tga
+}
+
+billboard grass_fert_forest modifies default
+{
+    texture grass_fert_forest.tga
+}
+
+billboard grass_fert_forest_winter modifies default
+{
+    texture grass_fert_forest_win.tga
+}
+
+billboard grass_infert_forest modifies default
+{
+    texture grass_infert_forest.tga
+}
+
+billboard grass_infert_forest_winter modifies default
+{
+    texture grass_infert_forest_win.tga
+}
+
+billboard forest_open_forest modifies default
+{
+    texture open_forest.tga
+}
+
+billboard forest_open_forest_winter modifies default
+{
+    texture open_forest_win.tga
+}
+
+billboard forest_deep_forest modifies default
+{   
+    texture deep_forest.tga
+}
+
+billboard forest_deep_forest_winter modifies default
+{
+    texture deep_forest_win.tga
+}
+
+
+billboard highland_forest modifies default
+{
+    texture highland_forest.tga
+}
+
+billboard alpine_forest modifies default
+{
+    texture alp_arctic_forest.tga
+}
+
+
+billboard sub_arctic_forest modifies default
+{
+    texture alp_arctic_forest.tga
+}
+
+billboard sub_arctic_forest_winter modifies default
+{
+    texture alp_arctic_hiland_win.tga
+}
+
+
+billboard highland_forest_winter modifies default
+{
+    texture alp_arctic_hiland_win.tga
+}
+
+
+billboard semi_arid_forest modifies default
+{
+    texture arid_forest.tga
+}
+
+;
+; Scrub
+;
+
+billboard alpine_scrub modifies default
+{
+    texture alpine_scrub.tga
+}
+
+billboard sub_arctic_scrub modifies default
+{
+    texture arctic_scrub.tga
+}
+
+billboard semi_arid_scrub modifies default
+{
+    texture arid_scrub.tga
+}
+
+billboard highland_scrub modifies default
+{
+    texture highland_scrub.tga
+}
+
+billboard forest_open_scrub modifies default
+{
+    texture open_forest_scrub.tga
+}
+
+billboard forest_deep_scrub modifies default
+{
+    texture deep_forest_scrub.tga
+}
+
+billboard grass_fert_scrub modifies default
+{
+    texture grass_fert_scrub.tga
+}
+
+billboard grass_infert_scrub modifies default
+{
+    texture grass_infert_scrub.tga
+}
+
+billboard medi_scrub modifies default
+{
+    texture medi_scrub.tga
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Models
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+model tree_A_palm
+{
+    flexi models_unit/mount_elephant_forest_100.cas 10
+    rigid models_building/tree_A_palm_high.cas 40
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Vegetation Types
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; Pines
+vegetation dense_pine modifies default_forest
+{
+    billboard pines
+}
+
+vegetation winter_dense_pine modifies dense_pine
+{
+    billboard winter_pines
+}
+
+; Alpine
+vegetation alpine_dense_forest modifies default_forest
+{
+    height_range 12 20
+    aspect_range 0.3 0.7
+    billboard alpine_forest
+}
+
+vegetation alpine_dense_scrub modifies default_scrub
+{
+    billboard alpine_scrub
+}
+
+; Sub Arctic
+vegetation sub_arctic_dense_forest modifies default_forest
+{
+    height_range 7.0 20
+    aspect_range 0.5 0.9
+    billboard sub_arctic_forest
+}
+
+vegetation sub_arctic_dense_forest_win modifies sub_arctic_dense_forest
+{
+    billboard sub_arctic_forest_winter
+}
+
+vegetation sub_arctic_dense_scrub modifies default_scrub
+{
+    billboard sub_arctic_scrub
+}
+
+; Semi Arid
+vegetation semi_arid_dense_forest modifies default_forest
+{
+    height_range 12 20
+    aspect_range 0.3 0.7
+    billboard semi_arid_forest
+}
+
+vegetation semi_arid_dense_scrub modifies default_scrub
+{
+    billboard semi_arid_scrub
+}
+
+; Highland
+vegetation highland_dense_forest modifies default_forest
+{
+    height_range 7.0 20
+    aspect_range 0.5 0.9
+    billboard highland_forest
+}
+
+vegetation highland_dense_forest_win modifies highland_dense_forest
+{
+    billboard highland_forest_winter
+}
+
+vegetation highland_dense_scrub modifies default_scrub
+{
+    billboard highland_scrub
+}
+
+; Open forest
+vegetation forest_open_dense_forest modifies default_forest
+{
+    height_range 5.0 20
+    aspect_range 0.5 1.0
+    billboard forest_open_forest
+}
+
+vegetation forest_open_dense_forest_win modifies forest_open_dense_forest
+{
+    billboard forest_open_forest_winter
+}
+
+vegetation forest_open_dense_scrub modifies default_scrub
+{
+    billboard forest_open_scrub
+}
+
+; Deep forest
+vegetation forest_deep_dense_forest modifies default_forest
+{
+    layout 128 forest_layout.tga
+    height_range 6.0 12
+    aspect_range 0.5 1.0
+
+    billboard forest_deep_forest
+}
+
+vegetation forest_deep_dense_forest_win modifies forest_deep_dense_forest
+{
+    billboard forest_deep_forest_winter
+}
+
+vegetation forest_deep_dense_scrub modifies default_scrub
+{
+    layout 128 scrub_layout.tga
+    billboard forest_deep_scrub
+}
+
+; Grass Fertile
+vegetation grass_fert_dense_forest modifies default_forest
+{
+    height_range 5.0 12.0
+    aspect_range 1.0 1.0
+    billboard grass_fert_forest
+}
+
+vegetation grass_fert_dense_forest_win modifies grass_fert_dense_forest
+{
+    billboard grass_fert_forest_winter
+}
+
+vegetation grass_fert_dense_scrub modifies default_scrub
+{
+    billboard grass_fert_scrub
+}
+
+; Grass Infertile
+vegetation grass_infert_dense_forest modifies default_forest
+{
+    height_range 7.0 20
+    aspect_range 0.5 0.9
+    billboard grass_infert_forest
+}
+
+vegetation grass_infert_dense_forest_win modifies grass_infert_dense_forest
+{
+    billboard grass_infert_forest_winter
+}
+
+vegetation grass_infert_dense_scrub modifies default_scrub
+{
+    billboard grass_infert_scrub
+}
+
+; Mediterranean
+vegetation medi_dense_forest modifies default_forest
+{
+    height_range 5.0 20
+    aspect_range 0.3 0.7
+    billboard medi_forest
+}
+
+vegetation medi_dense_scrub modifies default_scrub
+{
+    billboard medi_scrub
+}

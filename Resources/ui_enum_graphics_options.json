@@ -1,0 +1,605 @@
+[
+	{
+        "name":"gfx_quality",
+        "values":[1, 2, 3, 4, 5],
+        "custom_value":5,
+        "default_value":2,
+        "restart_enabled":1,
+        "graphics_options":
+        [
+        ],
+    },
+	{
+		"name":"display_mode",
+		"values":[0, 1, 2],
+		"custom_value":3,
+		"default_value":0,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"window_mode","type":"int", "default_values" : [   0,     1,     2]},
+		],
+	},
+	{
+		"name":"vsync",
+		"values":[0, 1, 2],
+		"custom_value":3,
+		"default_value":1,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"vsync_interval",   "type":"int",  "default_values" : [    0,    1,    2]},
+		],
+	},
+	{
+		"name":"brightness",
+		"values":[0, 1],
+		"custom_value":1,
+		"default_value":1,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"brightness_value",  "type":"int",  "default_values" : [    0,   100]},
+		],
+	},
+	{
+		"name":"brightness_cst",
+		"values":[0],
+		"custom_value":1,
+		"default_value":0,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"brightness_cst_min","type":"int","default_values":[25, ]},
+			{"name":"brightness_cst_max","type":"int","default_values":[100, ]},
+		],
+	},
+	{
+		"name":"gamma",
+		"values":[0, 1],
+		"custom_value":1,
+		"default_value":1,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"gamma_value",  "type":"int",  "default_values" : [    0,  50]},
+		],
+	},
+	{
+		"name":"gamma_cst",
+		"values":[0],
+		"custom_value":1,
+		"default_value":0,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"gamma_cst_min","type":"int","default_values":[0, ]},
+			{"name":"gamma_cst_max","type":"int","default_values":[100, ]},
+		],
+	},
+	{
+		"name":"resolution_scale",
+		"values":[0, 1],
+		"custom_value":1,
+		"default_value":1,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"resolution_scale_value",  "type":"int",  "default_values" : [    0,  100]},
+
+		],
+	},
+	{
+		"name":"resolution_scale_cst",
+		"values":[0],
+		"custom_value":1,
+		"default_value":0,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"resolution_scale_cst_min","type":"int","default_values":[50, ]},
+			{"name":"resolution_scale_cst_max","type":"int","default_values":[100, ]},
+		],
+	},
+	{
+	    "name":"campaign_vibrancy",
+	    "values":[0, 1],
+	    "custom_value":1,
+	    "default_value":1,
+	    "restart_enabled":0,
+	    "graphics_options":
+	    [
+	        {"name":"campaign_vibrancy_value",  "type":"int",  "default_values" : [ 0,  100]},
+
+	    ],
+	},
+	{
+	    "name":"campaign_vibrancy_cst",
+	    "values":[0],
+	    "custom_value":1,
+	    "default_value":0,
+	    "restart_enabled":0,
+	    "graphics_options":
+	    [
+	        {"name":"campaign_vibrancy_cst_min","type":"int","default_values":[ 0, ]},
+	        {"name":"campaign_vibrancy_cst_max","type":"int","default_values":[ 100, ]},
+	    ],
+	},
+	{
+		"name":"ui_scale",
+		"values":[0, 1],
+		"custom_value":1,
+		"default_value":1,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"ui_scale_enabled","type":"bool", "default_values" : [false, true]},
+			{"name":"ui_scale_value",  "type":"int",  "default_values" : [    0,  80]},
+		],
+	},
+	{
+		"name":"ui_scale_fixed",
+		"values":[0, 1, 2, 3, 4],
+		"custom_value":1,
+		"default_value":2,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"ui_scale_fixed","type":"int","default_values":[ 65, 70, 80, 90, 100]},
+		],
+	},
+	{
+		"name":"framerate_limiter",
+		"values":[0, 1],
+		"custom_value":1,
+		"default_value":0,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"framerate_limit_enabled","type":"bool", "default_values" : [false, true]},
+			{"name":"framerate_limit_value"  ,"type":"int" , "default_values" : [    60, 60]},
+		],
+	},
+	{
+		"name":"framerate_limiter_cst",
+		"values":[0],
+		"custom_value":1,
+		"default_value":0,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"framerate_limiter_cst_min","type":"int","default_values":[30,  ]},
+			{"name":"framerate_limiter_cst_max","type":"int","default_values":[240, ]},
+		],
+	},
+	{
+		"name":"unit_colour_scheme",
+		"values":[0, 1],
+		"custom_value":2,
+		"default_value":0,
+		"restart_enabled":1,
+		"graphics_options":
+		[
+			{"name":"unit_colour_scheme",   "type":"int",  "default_values" : [    0,    1]},
+		],
+	},
+	{
+		"name":"lod_building",
+		"values":[1, 2, 3, 4],
+		"quality":[1, 2, 3, 4],
+		"custom_value":5,
+		"default_value":4,
+		"restart_enabled": 0,
+		"graphics_options":
+		[
+			{"name":"building_model_lod_scale"     ,"type":"float", "default_values": [   1.0,   1.0,   1.0,  2.0 ]},
+			{"name":"building_model_lod_offset"	   ,"type":"float", "default_values": [ 150.0, 100.0,  50.0,  0.0 ]},
+			{"name":"building_props_small_enabled" ,"type":"bool" , "default_values": [ false, false, false, true ]},
+			{"name":"building_props_medium_enabled","type":"bool" , "default_values": [ false, false,  true, true ]},
+			{"name":"building_props_big_enabled"   ,"type":"bool" , "default_values": [ false,  true,  true, true ]},
+		],
+	},
+	{
+		"name":"lod_terrain",
+		"values":[1, 2, 3, 4],
+		"quality":[1, 2, 3, 4],
+		"custom_value":5,
+		"default_value":4,
+		"restart_enabled": 1,
+		"graphics_options":
+		[
+			{"name":"terrain_detail"      ,"type":"int"  , "default_values": [  3,   3,   3,   3]},
+			{"name":"terrain_lod_distance","type":"float", "default_values": [150, 250, 400, 600]},
+		],
+	},
+	{
+		"name":"lod_tree",
+		"values":[1, 2, 3, 4],
+		"quality":[1, 2, 3, 4],
+		"custom_value":5,
+		"default_value":4,
+		"restart_enabled": 1,
+		"graphics_options":
+		[
+			{"name":"tree_detail" ,"type":"int"  , "default_values": [   1,    2,    3,    4]},
+			{"name":"tree_density","type":"float", "default_values": [ 2.5, 2.25,  2.0, 1.75]},
+		],
+	},
+	{
+		"name":"lod_grass",
+		"values":[1, 2, 3, 4],
+		"quality":[1, 2, 3, 4],
+		"custom_value":5,
+		"default_value":4,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"grass_enabled"                    ,"type":"bool" , "default_values": [false, true,  true,  true]},
+			{"name":"grass_range"                      ,"type":"float", "default_values": [  0.0, 40.0, 100.0, 150.0]},
+			{"name":"grass_density_dropoff_initial"    ,"type":"int"  , "default_values": [    1,    1,     0,     0]},
+			{"name":"grass_density_dropoff_count"      ,"type":"int"  , "default_values": [    2,    2,     4,     5]},
+			{"name":"grass_density_dropoff_area_ratio" ,"type":"float", "default_values": [  2.0,  2.0,   2.0,   2.0]},
+		],
+	},
+	{
+		"name":"lod_units",
+		"values":[1, 2, 3, 4],
+		"quality":[1, 2, 3, 4],
+		"custom_value":5,
+		"default_value":4,
+		"restart_enabled":1,
+		"graphics_options":
+		[
+			{"name":"units_model_detail" , "type":"int"  , "default_values": [   2,    3,    4,    5]},
+			{"name":"units_distance_lod0", "type":"float", "default_values": [ 8.0, 10.0, 12.0, 14.0]},
+			{"name":"units_distance_lod1", "type":"float", "default_values": [10.0, 20.0, 25.0, 30.0]},
+			{"name":"units_distance_lod2", "type":"float", "default_values": [20.0, 30.0, 35.0, 40.0]},
+			{"name":"units_distance_lod3", "type":"float", "default_values": [30.0, 50.0, 50.0, 50.0]},
+		],
+	},
+	{
+		"name":"lod_vfx",
+		"values":[1, 2, 3, 4],
+		"quality":[1, 2, 3, 4],
+		"custom_value":5,
+		"default_value":4,
+		"restart_enabled":1,
+		"graphics_options":
+		[
+			{"name":"vfx_sort_level","type":"int", "default_values": [1, 2, 3, 4]},
+		],
+	},
+	{
+		"name":"aa_mode",
+		"values":[0, 1, 2],
+		"quality":[0, 1, 1, 2],
+		"custom_value":3,
+		"default_value":1,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"fxaa_enabled", "type":"bool",  "default_values"   : [false,  true , false]},
+			{"name":"smaa_enabled", "type":"bool",  "default_values"   : [false,  false, true ]},
+		],
+	},
+	{
+		"name":"aa_sample",
+		"values":[0, 1, 2, 3],
+		"quality":[0, 0, 0, 0],
+		"custom_value":4,
+		"default_value":0,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"msaa_samples","type":"int", "default_values" : [1,    2,    4,    8]},
+		],
+	},
+	{
+		"name":"shadow_distance",
+		"values":[0, 2, 3, 4],
+		"quality":[0, 2, 3, 4],
+		"custom_value":5,
+		"default_value":2,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"shadows_enabled", "type":"bool",  "default_values"   : [false,  true,  true,  true]},
+			{"name":"shadow_max_range","type":"float", "default_values"   : [    0,   300,   450,   600]},
+			{"name":"shadow_cascade_count","type":"int", "default_values" : [    1,     2,     3,     4]},
+		],
+	},
+	{
+		"name":"shadow_filtering",
+		"values":[1, 2, 3, 4],
+		"quality":[1, 2, 3, 4],
+		"custom_value":5,
+		"default_value":2,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"shadow_filter_size","type":"float", "default_values" : [0.0, 1.0, 1.5, 2.5]},
+			{"name":"disc_samples_count","type":"int",   "default_values" : [  1,   8,  16,  32]},
+		],
+	},
+	{
+		"name":"shadow_resolution",
+		"values":[1, 2, 3, 4],
+		"quality":[1, 2, 3, 4],
+		"custom_value":5,
+		"default_value":2,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"shadow_atlas_resolution","type":"int", "default_values" :     [1024, 2048, 2048, 4096]},
+			{"name":"shadow_half_size_shadowmask","type":"int", "default_values" : [   1,    1,    0,    0]},
+		],
+	},
+	{
+		"name":"night_shadows",
+		"values":[0, 1],
+		"quality":[0, 0, 1, 1],
+		"custom_value":2,
+		"default_value":1,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"night_shadows_enabled","type":"bool", "default_values" : [false, true]},
+		],
+	},
+	{
+		"name":"dof",
+		"values":[0,1,3],
+		"quality":[0, 1, 1, 1],
+		"custom_value":5,
+		"default_value":1,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"dof_enabled","type":"bool", "default_values" : [false,  true,  true]},
+			{"name":"dof_quality","type":"bool", "default_values" : [false, false,  true]},
+		],
+	},
+	{
+		"name":"ssao",
+		"values":[0,1,2,3,4],
+		"quality":[0, 1, 2, 4],
+		"custom_value":5,
+		"default_value":1,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"ssao_enabled","type":"bool", "default_values" : [false,  true,  true,	true,  true]},
+			{"name":"ssao_quality","type":"int" , "default_values" : [    0,     0,     1,	   2,     3]},
+		],
+	},
+	{
+		"name":"lens_flare",
+		"values":[0, 1],
+		"quality":[0, 0, 1, 1],
+		"custom_value":2,
+		"default_value":1,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"lens_flare_enabled","type":"bool", "default_values" : [false, true]},
+		],
+	},
+	{
+		"name":"distortion_effects",
+		"values":[0, 1],
+		"quality":[0, 0, 1, 1],
+		"custom_value":2,
+		"default_value":1,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"heat_haze_enabled","type":"bool", "default_values" : [false, true]},
+		],
+	},
+	{
+		"name":"bloom",
+		"values":[0, 1],
+		"quality":[0, 0, 1, 1],
+		"custom_value":2,
+		"default_value":1,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"bloom_enabled",                    "type":"bool",  "default_values" : [false, true ]},
+			
+			{"name":"bloom_batt_day_threshold",         "type":"float", "default_values" : [ 0.75,  0.75]},
+			{"name":"bloom_batt_day_scaling",           "type":"float", "default_values" : [ 1.0 ,  1.0 ]},
+			{"name":"bloom_batt_day_max",               "type":"float", "default_values" : [ 5.0 ,  5.0 ]},
+			{"name":"bloom_batt_day_samples",           "type":"int",   "default_values" : [10   , 10   ]},
+			{"name":"bloom_batt_day_blur_std_dev",      "type":"float", "default_values" : [ 0.4 ,  0.4 ]},
+			{"name":"bloom_batt_day_inv_strength",      "type":"float", "default_values" : [20.0 , 20.0 ]},
+			{"name":"bloom_batt_day_mip_weighting_0",   "type":"float", "default_values" : [ 3.0 ,  3.0 ]},
+			{"name":"bloom_batt_day_mip_weighting_1",   "type":"float", "default_values" : [ 3.0 ,  3.0 ]},
+			{"name":"bloom_batt_day_mip_weighting_2",   "type":"float", "default_values" : [ 2.0 ,  2.0 ]},
+			{"name":"bloom_batt_day_mip_weighting_3",   "type":"float", "default_values" : [ 1.0 ,  1.0 ]},
+			{"name":"bloom_batt_day_mip_weighting_4",   "type":"float", "default_values" : [ 1.0 ,  1.0 ]},
+			{"name":"bloom_batt_day_mip_weighting_5",   "type":"float", "default_values" : [ 1.0 ,  1.0 ]},
+			
+			{"name":"bloom_batt_night_threshold",       "type":"float", "default_values" : [ 0.3 ,  0.3 ]},
+			{"name":"bloom_batt_night_scaling",         "type":"float", "default_values" : [ 1.5 ,  1.5 ]},
+			{"name":"bloom_batt_night_max",             "type":"float", "default_values" : [ 5.0 ,  5.0 ]},
+			{"name":"bloom_batt_night_samples",         "type":"int",   "default_values" : [10   , 10   ]},
+			{"name":"bloom_batt_night_blur_std_dev",    "type":"float", "default_values" : [ 0.4 ,  0.4 ]},
+			{"name":"bloom_batt_night_inv_strength",    "type":"float", "default_values" : [20.0 , 20.0 ]},
+			{"name":"bloom_batt_night_mip_weighting_0", "type":"float", "default_values" : [ 1.0 ,  1.0 ]},
+			{"name":"bloom_batt_night_mip_weighting_1", "type":"float", "default_values" : [ 1.0 ,  1.0 ]},
+			{"name":"bloom_batt_night_mip_weighting_2", "type":"float", "default_values" : [ 2.0 ,  2.0 ]},
+			{"name":"bloom_batt_night_mip_weighting_3", "type":"float", "default_values" : [ 2.5 ,  2.5 ]},
+			{"name":"bloom_batt_night_mip_weighting_4", "type":"float", "default_values" : [ 5.0 ,  5.0 ]},
+			{"name":"bloom_batt_night_mip_weighting_5", "type":"float", "default_values" : [10.0 , 10.0 ]},
+			
+			{"name":"bloom_camp_day_threshold",         "type":"float", "default_values" : [ 0.75,  0.75]},
+			{"name":"bloom_camp_day_scaling",           "type":"float", "default_values" : [ 1.5 ,  1.5 ]},
+			{"name":"bloom_camp_day_max",               "type":"float", "default_values" : [ 5.0 ,  5.0 ]},
+			{"name":"bloom_camp_day_samples",           "type":"int",   "default_values" : [10   , 10   ]},
+			{"name":"bloom_camp_day_blur_std_dev",      "type":"float", "default_values" : [ 0.4 ,  0.4 ]},
+			{"name":"bloom_camp_day_inv_strength",      "type":"float", "default_values" : [20.0 , 20.0 ]},
+			{"name":"bloom_camp_day_mip_weighting_0",   "type":"float", "default_values" : [ 3.0 ,  3.0 ]},
+			{"name":"bloom_camp_day_mip_weighting_1",   "type":"float", "default_values" : [ 3.0 ,  3.0 ]},
+			{"name":"bloom_camp_day_mip_weighting_2",   "type":"float", "default_values" : [ 2.0 ,  2.0 ]},
+			{"name":"bloom_camp_day_mip_weighting_3",   "type":"float", "default_values" : [ 1.0 ,  1.0 ]},
+			{"name":"bloom_camp_day_mip_weighting_4",   "type":"float", "default_values" : [ 1.0 ,  1.0 ]},
+			{"name":"bloom_camp_day_mip_weighting_5",   "type":"float", "default_values" : [ 1.0 ,  1.0 ]},
+			
+			{"name":"bloom_camp_night_threshold",       "type":"float", "default_values" : [ 0.3 ,  0.3 ]},
+			{"name":"bloom_camp_night_scaling",         "type":"float", "default_values" : [ 1.5 ,  1.5 ]},
+			{"name":"bloom_camp_night_max",             "type":"float", "default_values" : [ 5.0 ,  5.0 ]},
+			{"name":"bloom_camp_night_samples",         "type":"int",   "default_values" : [10   , 10   ]},
+			{"name":"bloom_camp_night_blur_std_dev",    "type":"float", "default_values" : [ 0.4 ,  0.4 ]},
+			{"name":"bloom_camp_night_inv_strength",    "type":"float", "default_values" : [20.0 , 20.0 ]},
+			{"name":"bloom_camp_night_mip_weighting_0", "type":"float", "default_values" : [ 1.0 ,  1.0 ]},
+			{"name":"bloom_camp_night_mip_weighting_1", "type":"float", "default_values" : [ 1.0 ,  1.0 ]},
+			{"name":"bloom_camp_night_mip_weighting_2", "type":"float", "default_values" : [ 2.0 ,  2.0 ]},
+			{"name":"bloom_camp_night_mip_weighting_3", "type":"float", "default_values" : [ 2.5 ,  2.5 ]},
+			{"name":"bloom_camp_night_mip_weighting_4", "type":"float", "default_values" : [ 5.0 ,  5.0 ]},
+			{"name":"bloom_camp_night_mip_weighting_5", "type":"float", "default_values" : [10.0 , 10.0 ]},
+		],
+	},
+	{
+		"name":"projectile_trails",
+		"values":[0, 1],
+		"custom_value":2,
+		"default_value":1,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"projectile_trails_enabled","type":"bool", "default_values" : [false, true]},
+		],
+	},
+	{
+		"name":"tactical_map_transition",
+		"values":[0, 1],
+		"custom_value":2,
+		"default_value":1,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"tactical_map_transition_enabled", "type":"bool", "default_values": [false, true]},
+		],
+	},
+	{
+		"name":"map_overlay_transition",
+		"values":[0, 1],
+		"custom_value":2,
+		"default_value":1,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"map_overlay_transition_enabled", "type":"bool", "default_values": [false, true]},
+		],
+	},
+	{
+		"name":"texture_filtering",
+		"values":[0, 1, 2, 3, 4],
+		"quality":[0, 1, 3, 4],
+		"custom_value":5,
+		"default_value":2,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"anisotropic_samples","type":"int",  "default_values" : [0, 2, 4, 8, 16]},
+		],
+	},
+	{
+		"name":"dynamic_lighting_quality",
+		"values":[0, 1, 2, 3, 4],
+		"quality":[0, 1, 3, 4],
+		"custom_value":5,
+		"default_value":2,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":   "dynamic_lighting_enabled","type":"bool", "default_values" : [false,  true,  true,  true,  true]},
+			{"name":"projectile_lighting_enabled","type":"bool", "default_values" : [false, false, false,  true,  true]},
+			{"name":"dynamic_lighting_max_lights","type":"int" , "default_values" : [    0,   128,   256,   512,  1024]},
+		],
+	},
+	{
+		"name":"water_quality",
+		"values":[1, 2, 3, 4],
+		"quality":[1, 2, 3, 4],
+		"custom_value":5,
+		"default_value":2,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"water_sspr_quality"			  ,"type":"int"  , "default_values" : [     0,     1,      2,      2]},
+			{"name":"base_normal_weakening_distance"  ,"type":"float", "default_values" : [ 400.0, 700.0, 1500.0, 1500.0]},
+			{"name":"detail_normal_weakening_distance","type":"float", "default_values" : [  75.0, 100.0,  125.0,  125.0]},
+			{"name":"water_caustics_enabled"		  ,"type":"bool" , "default_values" : [ false, false,   true,   true]},
+			{"name":"atmospheric_correction_enabled"  ,"type":"bool" , "default_values" : [ false, false,   true,   true]},
+			{"name":"screen_space_reflections_enabled","type":"bool" , "default_values" : [ false, false,  false,   true]},
+		],
+	},
+	{
+		"name":"texture_quality",
+		"values":[1, 2, 3, 4],
+		"quality":[1, 2, 3, 4],
+		"custom_value":5,
+		"default_value":2,
+		"restart_enabled":1,
+		"graphics_options":
+		[
+			{"name":"texture_mip_offset","type":"int", "default_values" : [3, 2, 1, 0]},
+		],
+	},
+	{
+		"name":"sky_quality",
+		"values":[1, 3, 4],
+		"quality":[1, 1, 3, 4],
+		"custom_value":5,
+		"default_value":1,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"sky_quality"     ,"type":"int", "default_values" : [0, 1, 2]},
+			{"name":"sky_amortisation","type":"int", "default_values" : [3, 3, 2]},
+		],
+	},
+
+	{
+		"name":"unit_size",
+		"values":[1, 2, 3, 4, 5],
+		"quality":[1, 2, 3, 4, 5],
+		"custom_value":6,
+		"default_value":4,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"unit_size","type":"int", "default_values" : [20, 40, 80, 160, 200]},
+		],
+	},
+	{
+		"name":"proximity_fading",
+		"values":[0, 1],
+		"quality":[0, 0, 1, 1],
+		"custom_value":2,
+		"default_value":1,
+		"restart_enabled":0,
+		"graphics_options":
+		[
+			{"name":"proximity_fading_enabled", "type":"bool",  "default_values" : [false, true] },
+		],
+	},
+	{
+		"name":"unit_variation",
+		"values":[0, 1],
+		"quality":[0, 0, 1, 1],
+		"custom_value":2,
+		"default_value":1,
+		"restart_enabled":1,
+		"graphics_options":
+		[
+			{"name":"unit_variation_enabled","type":"bool", "default_values" : [false, true]},
+		],
+	},
+	{
+		"name":"screen_resolution",
+		"restart_enabled":0,
+	}
+]
