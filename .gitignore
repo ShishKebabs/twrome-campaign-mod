@@ -52,6 +52,8 @@ vegetation/
 /**/*.tga
 /**/*.wfc
 /**/*.cas
+/**/*.item
+/**/*.dat
 
 package-lock.json
 
@@ -59,6 +61,8 @@ package-lock.json
 /**/*.zip
 /**/*.pak
 /**/*.webm
+/**/*.gif
+/**/*.png
 /**/*.jpg
 /**/*.mp4
 /**/*.bpi
