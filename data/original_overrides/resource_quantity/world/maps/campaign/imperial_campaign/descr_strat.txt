@@ -495,15 +495,15 @@ traits GoodCommander 2 , NaturalMilitarySkill 1 , GoodDefender 1 , PoliticsSkill
 ancillaries aged_retainer
 army
 unit		roman generals guard cavalry early				exp 1 armour 0 weapon_lvl 0
-unit		roman hastati				exp 1 armour 0 weapon_lvl 0
-unit		roman triarii				exp 1 armour 0 weapon_lvl 0
+unit		roman hastati				exp 0 armour 0 weapon_lvl 0
+unit		roman triarii				exp 0 armour 0 weapon_lvl 0
 
 character	Lucius Julius, named character, heir, age 31, , x 91, y 80
 traits GoodCommander 1 , PoliticsSkill 2 , GoodAdministrator 3 , Energetic 2
 ancillaries freeman_clerk
 army
 unit		roman generals guard cavalry early				exp 1 armour 0 weapon_lvl 0
-unit		roman hastati				exp 1 armour 0 weapon_lvl 0
+unit		roman hastati				exp 0 armour 0 weapon_lvl 0
 unit		roman city militia				exp 0 armour 0 weapon_lvl 0
 
 character	Quintus Julius, named character, age 29, , x 96, y 82
@@ -511,7 +511,7 @@ traits NaturalMilitarySkill 3 , GoodAttacker 1 , Energetic 1
 ancillaries drillmaster
 army
 unit		roman generals guard cavalry early				exp 1 armour 0 weapon_lvl 0
-unit		roman hastati				exp 1 armour 0 weapon_lvl 0
+unit		roman hastati				exp 0 armour 0 weapon_lvl 0
 unit		roman city militia				exp 0 armour 0 weapon_lvl 0
 
 character	Sextus Antio, diplomat, age 29, , x 93, y 78
@@ -531,9 +531,9 @@ traits GoodCommander 1 , PoliticsSkill 2 , GoodAdministrator 2 , MathematicsSkil
 ancillaries merchant
 army
 unit		roman generals guard cavalry early				exp 1 armour 0 weapon_lvl 0
-unit		roman hastati				exp 1 armour 0 weapon_lvl 0
-unit		roman hastati				exp 1 armour 0 weapon_lvl 0
-unit		roman velite				exp 1 armour 0 weapon_lvl 0
+unit		roman hastati				exp 0 armour 0 weapon_lvl 0
+unit		roman hastati				exp 0 armour 0 weapon_lvl 0
+unit		roman velite				exp 0 armour 0 weapon_lvl 0
 
 
 character_record		Amulius Julius, 	male, command 0, influence 0, management 0, subterfuge 0, age 13, alive, never_a_leader
@@ -602,15 +602,15 @@ traits GoodCommander 1 , NaturalMilitarySkill 1 , GoodAttacker 1 , PoliticsSkill
 ancillaries drillmaster
 army
 unit		roman generals guard cavalry early				exp 1 armour 0 weapon_lvl 0
-unit		roman hastati				exp 1 armour 0 weapon_lvl 0
-unit		roman velite				exp 1 armour 0 weapon_lvl 0
+unit		roman hastati				exp 0 armour 0 weapon_lvl 0
+unit		roman velite				exp 0 armour 0 weapon_lvl 0
 
 character	Aulus Brutus, named character, heir, age 34, , x 111, y 68
 traits GoodCommander 1 , PoliticsSkill 2 , Rabblerouser 2 , GoodAdministrator 2
 ancillaries quartermaster
 army
 unit		roman generals guard cavalry early				exp 1 armour 0 weapon_lvl 0
-unit		roman hastati				exp 1 armour 0 weapon_lvl 0
+unit		roman hastati				exp 0 armour 0 weapon_lvl 0
 unit		roman velite				exp 0 armour 0 weapon_lvl 0
 
 character	Marcus Attius, admiral, age 29, , x 120, y 64
@@ -697,12 +697,11 @@ settlement
 	}
 }
 
-character	Cornelius Scipio, named character, leader, age 54, , x 106, y 51
+character	Cornelius Scipio, named character, leader, age 50, , x 106, y 51
 traits GoodCommander 2 , PoliticsSkill 2 , GoodAdministrator 2 , Austere 1 , GoodInfantryGeneral 1
 ancillaries aged_retainer
 army
 unit		roman generals guard cavalry early				exp 1 armour 0 weapon_lvl 0
-unit		roman hastati				exp 0 armour 0 weapon_lvl 0
 unit		roman hastati				exp 0 armour 0 weapon_lvl 0
 unit		roman hastati				exp 0 armour 0 weapon_lvl 0
 
@@ -711,14 +710,15 @@ traits GoodCommander 1 , NaturalMilitarySkill 3 , PoliticsSkill 1 , GoodRiskyAtt
 ancillaries drillmaster
 army
 unit		roman generals guard cavalry early				exp 1 armour 0 weapon_lvl 0
-unit		roman hastati				exp 1 armour 0 weapon_lvl 0
+unit		roman hastati				exp 0 armour 0 weapon_lvl 0
+unit		roman hastati				exp 0 armour 0 weapon_lvl 0
 
 character	Quintus Scipio, named character, age 35, , x 106, y 50
 traits NaturalMilitarySkill 1 , PoliticsSkill 1 , Intelligent 1 , Generous 1
 army
 unit		roman generals guard cavalry early				exp 1 armour 0 weapon_lvl 0
-unit		roman hastati				exp 2 armour 0 weapon_lvl 0
-unit		roman archer				exp 2 armour 0 weapon_lvl 0
+unit		roman hastati				exp 0 armour 0 weapon_lvl 0
+unit		roman archer				exp 0 armour 0 weapon_lvl 0
 unit		roman velite				exp 0 armour 0 weapon_lvl 0
 
 character	Quintus Caecus, diplomat, age 26, , x 103, y 67
