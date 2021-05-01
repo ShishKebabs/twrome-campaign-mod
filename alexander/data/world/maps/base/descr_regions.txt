@@ -272,7 +272,7 @@ Cisalpine_Gaul
 	gauls
 	Insubres
 	221 232 41
-	slaves, dogs, pigs, italy
+	slaves, dogs, pigs
 	5
 	10
 Venetia
@@ -280,7 +280,7 @@ Venetia
 	gauls
 	Veneti
 	13 198 117
-	slaves, glass, textiles, dogs, pigs, italy
+	slaves, glass, textiles, dogs, pigs
 	5
 	14
 Transalpine_Gaul
@@ -352,7 +352,7 @@ Liguria
 	gauls
 	Ligurians
 	157 13 198
-	pottery, timber, slaves, dogs, pigs, italy
+	pottery, timber, slaves, dogs, pigs
 	5
 	4
 Pontus
@@ -400,7 +400,7 @@ Umbria
 	macedon
 	Umbrians
 	198 43 13
-	pottery, olive_oil, wine, slaves, dogs, pigs, italy
+	pottery, olive_oil, wine, slaves, dogs, pigs
 	5
 	7
 Lusitania
@@ -552,7 +552,7 @@ Bruttium
 	macedon
 	Lucanians
 	13 170 198
-	silver, slaves, dogs, pigs, italy
+	silver, slaves, dogs, pigs
 	5
 	8
 Ionia
@@ -624,7 +624,7 @@ Sicilia_Romanus
 	macedon
 	Sicani
 	177 142 58
-	slaves, dogs, pigs, italy
+	slaves, dogs, pigs
 	5
 	8
 Sicilia_Poeni
@@ -632,7 +632,7 @@ Sicilia_Poeni
 	carthage
 	Sicani
 	65 17 202
-	slaves, dogs, pigs, italy
+	slaves, dogs, pigs
 	5
 	8
 Mauretania
@@ -688,7 +688,7 @@ Sicilia_Graecus
 	macedon
 	Syracusans
 	198 178 13
-	grain, timber, slaves, dogs, pigs, sparta, italy
+	grain, timber, slaves, dogs, pigs, sparta
 	5
 	8
 Laconia

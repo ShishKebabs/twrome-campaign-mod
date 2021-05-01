@@ -458,16 +458,16 @@ settlement
 	region Etruria
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator romans_julii
 	building
 	{
-		type barracks militia_barracks
+		type core_building governors_villa
 	}
 	building
 	{
-		type core_building governors_villa
+		type barracks militia_barracks
 	}
 }
 
@@ -482,11 +482,11 @@ settlement
 	faction_creator romans_julii
 	building
 	{
-		type barracks muster_field
+		type core_building governors_villa
 	}
 	building
 	{
-		type core_building governors_villa
+		type barracks muster_field
 	}
 }
 
@@ -561,7 +561,7 @@ settlement
 	region Apulia
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator romans_julii
 	building
@@ -589,11 +589,11 @@ settlement
 	faction_creator romans_julii
 	building
 	{
-		type barracks muster_field
+		type core_building governors_house
 	}
 	building
 	{
-		type core_building governors_house
+		type barracks muster_field
 	}
 }
 
@@ -665,16 +665,16 @@ settlement
 	region Campania
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator romans_julii
 	building
 	{
-		type barracks militia_barracks
+		type core_building governors_villa
 	}
 	building
 	{
-		type core_building governors_villa
+		type barracks militia_barracks
 	}
 }
 
@@ -689,11 +689,11 @@ settlement
 	faction_creator romans_julii
 	building
 	{
-		type barracks muster_field
+		type core_building governors_villa
 	}
 	building
 	{
-		type core_building governors_villa
+		type barracks militia_barracks
 	}
 }
 
@@ -711,7 +711,6 @@ traits GoodCommander 1 , NaturalMilitarySkill 3 , PoliticsSkill 1 , GoodRiskyAtt
 ancillaries drillmaster
 army
 unit		roman generals guard cavalry early				exp 1 armour 0 weapon_lvl 0
-unit		roman hastati				exp 1 armour 0 weapon_lvl 0
 unit		roman hastati				exp 1 armour 0 weapon_lvl 0
 
 character	Quintus Scipio, named character, age 35, , x 106, y 50
@@ -763,12 +762,12 @@ settlement
 	region Latium
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator romans_julii
 	building
 	{
-		type core_building governors_palace
+		type core_building governors_villa
 	}
 	building
 	{
@@ -821,7 +820,7 @@ unit		roman archer				exp 9 armour 3 weapon_lvl 3
 unit		roman triarii				exp 9 armour 3 weapon_lvl 3
 unit		roman triarii				exp 9 armour 3 weapon_lvl 3
 
-character	Marcus Maxentius, named character, heir, age 20, , x 93, y 73
+character	Marcus Maxentius, named character, heir, age 18, , x 93, y 73
 traits GoodCommander 2 , NaturalMilitarySkill 2 , PoliticsSkill 1 , GoodAdministrator 1 , Intelligent 1
 ancillaries bodyguard
 army
@@ -831,10 +830,10 @@ unit		roman princeps				exp 9 armour 3 weapon_lvl 3
 unit		roman princeps				exp 9 armour 3 weapon_lvl 3
 unit		roman triarii				exp 9 armour 3 weapon_lvl 3
 
-character	Flavius Nepos, diplomat, age 30, , x 96, y 69
+character	Flavius Nepos, diplomat, age 18, , x 96, y 69
 traits GoodDiplomat 5
 
-character	Servius Maxentius, named character, age 26, , x 94, y 69
+character	Servius Maxentius, named character, age 19, , x 94, y 69
 traits GoodCommander 1 , NaturalMilitarySkill 1 , PublicFaith 2 , GoodAdministrator 1 , Intelligent 1
 ancillaries scribe_ancillary
 army
