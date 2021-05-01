@@ -45,9 +45,9 @@ texture macedon, data/characters/textures/strat_assassin_macedon.tga
 texture numidia, data/characters/textures/strat_assassin_numidia.tga
 texture parthia, data/characters/textures/strat_assassin_parthia.tga
 texture pontus, data/characters/textures/strat_assassin_pontus.tga
-texture romans_brutii, data/characters/textures/strat_assassin_romans_brutii.tga
+texture romans_brutii, data/characters/textures/strat_assassin_romans_julii.tga
 texture romans_julii, data/characters/textures/strat_assassin_romans_julii.tga
-texture romans_scipii, data/characters/textures/strat_assassin_romans_scipii.tga
+texture romans_scipii, data/characters/textures/strat_assassin_romans_julii.tga
 texture romans_senate, data/characters/textures/strat_assassin_romans_senate.tga
 texture scythia, data/characters/textures/strat_assassin_scythia.tga
 texture seleucid, data/characters/textures/strat_assassin_seleucid.tga
@@ -344,7 +344,7 @@ type				brutii_admiral
 skeleton			strat_navy
 male
 pbr_texture romans_brutii, data/models_strat/textures/boat_04_pbr.tga
-texture				romans_brutii, data/models_strat/textures/boat_04_base_brutii.tga
+texture				romans_brutii, data/models_strat/textures/boat_04_base_julii.tga
 model_flexi			data/models_strat/boat_04.cas, max
 no_variation model_flexi			data/models_strat/boat_04.cas, max
 
@@ -420,9 +420,9 @@ texture macedon, data/characters/textures/strat_diplomat_macedon.tga
 texture numidia, data/characters/textures/strat_diplomat_numidia.tga
 texture parthia, data/characters/textures/strat_diplomat_parthia.tga
 texture pontus, data/characters/textures/strat_diplomat_pontus.tga
-texture romans_brutii, data/characters/textures/strat_diplomat_romans_brutii.tga
+texture romans_brutii, data/characters/textures/strat_diplomat_romans_julii.tga
 texture romans_julii, data/characters/textures/strat_diplomat_romans_julii.tga
-texture romans_scipii, data/characters/textures/strat_diplomat_romans_scipii.tga
+texture romans_scipii, data/characters/textures/strat_diplomat_romans_julii.tga
 texture romans_senate, data/characters/textures/strat_diplomat_romans_senate.tga
 texture scythia, data/characters/textures/strat_diplomat_scythia.tga
 texture seleucid, data/characters/textures/strat_diplomat_seleucid.tga
@@ -792,9 +792,9 @@ texture macedon, data/characters/textures/strat_merchant_macedon.tga
 texture numidia, data/characters/textures/strat_merchant_numidia.tga
 texture parthia, data/characters/textures/strat_merchant_parthia.tga
 texture pontus, data/characters/textures/strat_merchant_pontus.tga
-texture romans_brutii, data/characters/textures/strat_merchant_romans_brutii.tga
+texture romans_brutii, data/characters/textures/strat_merchant_romans_julii.tga
 texture romans_julii, data/characters/textures/strat_merchant_romans_julii.tga
-texture romans_scipii, data/characters/textures/strat_merchant_romans_scipii.tga
+texture romans_scipii, data/characters/textures/strat_merchant_romans_julii.tga
 texture romans_senate, data/characters/textures/strat_merchant_romans_senate.tga
 texture scythia, data/characters/textures/strat_merchant_scythia.tga
 texture seleucid, data/characters/textures/strat_merchant_seleucid.tga
@@ -1121,7 +1121,7 @@ type				scipii_admiral
 skeleton			strat_navy
 male
 pbr_texture romans_scipii, data/models_strat/textures/boat_04_pbr.tga
-texture				romans_scipii, data/models_strat/textures/boat_04_base_scipii.tga
+texture				romans_scipii, data/models_strat/textures/boat_04_base_julii.tga
 model_flexi			data/models_strat/boat_04.cas, max
 no_variation model_flexi			data/models_strat/boat_04.cas, max
 
@@ -1910,9 +1910,9 @@ texture macedon, data/characters/textures/strat_spy_macedon.tga
 texture numidia, data/characters/textures/strat_spy_numidia.tga
 texture parthia, data/characters/textures/strat_spy_parthia.tga
 texture pontus, data/characters/textures/strat_spy_pontus.tga
-texture romans_brutii, data/characters/textures/strat_spy_romans_brutii.tga
+texture romans_brutii, data/characters/textures/strat_spy_romans_julii.tga
 texture romans_julii, data/characters/textures/strat_spy_romans_julii.tga
-texture romans_scipii, data/characters/textures/strat_spy_romans_scipii.tga
+texture romans_scipii, data/characters/textures/strat_spy_romans_julii.tga
 texture romans_senate, data/characters/textures/strat_spy_romans_senate.tga
 texture scythia, data/characters/textures/strat_spy_scythia.tga
 texture seleucid, data/characters/textures/strat_spy_seleucid.tga
