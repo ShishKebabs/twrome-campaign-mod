@@ -30,7 +30,7 @@ nonplayable
 end
 
 
-start_date	-290 summer
+start_date	-271 summer
 end_date	14 summer
 
 brigand_spawn_value 10
