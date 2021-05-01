@@ -49,7 +49,7 @@ vegetation/
 
 /**/*.xsddelta
 /**/*.dds
-/**/*.tga
+banners/
 /**/*.wfc
 /**/*.cas
 /**/*.item
