@@ -2004,7 +2004,6 @@ building temple_of_fertility
         {
             capability
             {
-                recruit "barb screeching women german"  0  requires factions { germans, }
                 happiness_bonus bonus 1
                 population_growth_bonus bonus 1
             }
@@ -2020,7 +2019,6 @@ building temple_of_fertility
         {
             capability
             {
-                recruit "barb screeching women german"  0  requires factions { germans, }
                 happiness_bonus bonus 2
                 population_growth_bonus bonus 2
             }
@@ -2036,7 +2034,6 @@ building temple_of_fertility
         {
             capability
             {
-                recruit "barb screeching women german"  0  requires factions { germans, }
                 happiness_bonus bonus 3
                 population_growth_bonus bonus 3
             }
@@ -2052,7 +2049,6 @@ building temple_of_fertility
         {
             capability
             {
-                recruit "barb screeching women german"  0  requires factions { germans, }
                 happiness_bonus bonus 4
                 population_growth_bonus bonus 4
             }
@@ -2068,7 +2064,6 @@ building temple_of_fertility
         {
             capability
             {
-                recruit "barb screeching women german"  0  requires factions { germans, }
                 happiness_bonus bonus 7
                 population_growth_bonus bonus 5
                 law_bonus bonus 2
