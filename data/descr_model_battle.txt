@@ -4171,7 +4171,7 @@ texture	Default,				data/animals/textures/mount_horse_base_default.tga	; Used fo
 texture	romans_julii,			data/animals/textures/mount_horse_base_julii.tga
 texture	armenia,				data/animals/textures/mount_horse_base_armenia.tga
 texture	britons,				data/animals/textures/mount_horse_base_britannia.tga
-texture	romans_brutii,			data/animals/textures/mount_horse_base_brutii.tga
+texture	romans_brutii,			data/animals/textures/mount_horse_base_julii.tga
 texture	carthage,				data/animals/textures/mount_horse_base_carthage.tga
 texture	dacia,					data/animals/textures/mount_horse_base_dacia.tga
 texture	egypt,					data/animals/textures/mount_horse_base_egypt.tga
@@ -4182,7 +4182,7 @@ texture	macedon,				data/animals/textures/mount_horse_base_macedon.tga
 texture	numidia,				data/animals/textures/mount_horse_base_numidia.tga
 texture	parthia,				data/animals/textures/mount_horse_base_parthia.tga
 texture	pontus,					data/animals/textures/mount_horse_base_pontus.tga
-texture	romans_scipii,			data/animals/textures/mount_horse_base_scipii.tga
+texture	romans_scipii,			data/animals/textures/mount_horse_base_julii.tga
 texture	scythia,				data/animals/textures/mount_horse_base_scythia.tga
 texture	seleucid,				data/animals/textures/mount_horse_base_seleucid.tga
 texture	romans_senate,			data/animals/textures/mount_horse_base_senate.tga
@@ -5846,7 +5846,7 @@ texture	Default,				data/animals/textures/mount_horse_base_default.tga	; Used fo
 texture	romans_julii,			data/animals/textures/mount_horse_base_julii.tga
 texture	armenia,				data/animals/textures/mount_horse_base_armenia.tga
 texture	britons,				data/animals/textures/mount_horse_base_britannia.tga
-texture	romans_brutii,			data/animals/textures/mount_horse_base_brutii.tga
+texture	romans_brutii,			data/animals/textures/mount_horse_base_julii.tga
 texture	carthage,				data/animals/textures/mount_horse_base_carthage.tga
 texture	dacia,					data/animals/textures/mount_horse_base_dacia.tga
 texture	egypt,					data/animals/textures/mount_horse_base_egypt.tga
@@ -5857,7 +5857,7 @@ texture	macedon,				data/animals/textures/mount_horse_base_macedon.tga
 texture	numidia,				data/animals/textures/mount_horse_base_numidia.tga
 texture	parthia,				data/animals/textures/mount_horse_base_parthia.tga
 texture	pontus,					data/animals/textures/mount_horse_base_pontus.tga
-texture	romans_scipii,			data/animals/textures/mount_horse_base_scipii.tga
+texture	romans_scipii,			data/animals/textures/mount_horse_base_julii.tga
 texture	scythia,				data/animals/textures/mount_horse_base_scythia.tga
 texture	seleucid,				data/animals/textures/mount_horse_base_seleucid.tga
 texture	romans_senate,			data/animals/textures/mount_horse_base_senate.tga
@@ -5883,7 +5883,7 @@ texture	Default,				data/animals/textures/mount_horse_base_default.tga	; Used fo
 texture	romans_julii,			data/animals/textures/mount_horse_base_julii.tga
 texture	armenia,				data/animals/textures/mount_horse_base_armenia.tga
 texture	britons,				data/animals/textures/mount_horse_base_britannia.tga
-texture	romans_brutii,			data/animals/textures/mount_horse_base_brutii.tga
+texture	romans_brutii,			data/animals/textures/mount_horse_base_julii.tga
 texture	carthage,				data/animals/textures/mount_horse_base_carthage.tga
 texture	dacia,					data/animals/textures/mount_horse_base_dacia.tga
 texture	egypt,					data/animals/textures/mount_horse_base_egypt.tga
@@ -5894,7 +5894,7 @@ texture	macedon,				data/animals/textures/mount_horse_base_macedon.tga
 texture	numidia,				data/animals/textures/mount_horse_base_numidia.tga
 texture	parthia,				data/animals/textures/mount_horse_base_parthia.tga
 texture	pontus,					data/animals/textures/mount_horse_base_pontus.tga
-texture	romans_scipii,			data/animals/textures/mount_horse_base_scipii.tga
+texture	romans_scipii,			data/animals/textures/mount_horse_base_julii.tga
 texture	scythia,				data/animals/textures/mount_horse_base_scythia.tga
 texture	seleucid,				data/animals/textures/mount_horse_base_seleucid.tga
 texture	romans_senate,			data/animals/textures/mount_horse_base_senate.tga
@@ -5920,7 +5920,7 @@ texture	Default,				data/animals/textures/mount_horse_base_default.tga	; Used fo
 texture	romans_julii,			data/animals/textures/mount_horse_base_julii.tga
 texture	armenia,				data/animals/textures/mount_horse_base_armenia.tga
 texture	britons,				data/animals/textures/mount_horse_base_britannia.tga
-texture	romans_brutii,			data/animals/textures/mount_horse_base_brutii.tga
+texture	romans_brutii,			data/animals/textures/mount_horse_base_julii.tga
 texture	carthage,				data/animals/textures/mount_horse_base_carthage.tga
 texture	dacia,					data/animals/textures/mount_horse_base_dacia.tga
 texture	egypt,					data/animals/textures/mount_horse_base_egypt.tga
@@ -5931,7 +5931,7 @@ texture	macedon,				data/animals/textures/mount_horse_base_macedon.tga
 texture	numidia,				data/animals/textures/mount_horse_base_numidia.tga
 texture	parthia,				data/animals/textures/mount_horse_base_parthia.tga
 texture	pontus,					data/animals/textures/mount_horse_base_pontus.tga
-texture	romans_scipii,			data/animals/textures/mount_horse_base_scipii.tga
+texture	romans_scipii,			data/animals/textures/mount_horse_base_julii.tga
 texture	scythia,				data/animals/textures/mount_horse_base_scythia.tga
 texture	seleucid,				data/animals/textures/mount_horse_base_seleucid.tga
 texture	romans_senate,			data/animals/textures/mount_horse_base_senate.tga
@@ -6229,8 +6229,8 @@ tired Tired
 aged 0.00
 pbr_texture data/characters/textures/roman_arcani_pbr.tga
 texture data/characters/textures/roman_arcani.tga
-texture romans_brutii, data/characters/textures/roman_arcani_romans_brutii.tga
-texture romans_scipii, data/characters/textures/roman_arcani_romans_scipii.tga
+texture romans_brutii, data/characters/textures/roman_arcani_romans_julii.tga
+texture romans_scipii, data/characters/textures/roman_arcani_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_arcani_romans_senate.tga
 model African data/characters/roman_arcani_African
 no_variation model African data/characters/roman_arcani_African
@@ -6257,8 +6257,8 @@ tired VeryTired
 aged 0.00
 pbr_texture data/characters/textures/roman_archer_pbr.tga
 texture data/characters/textures/roman_archer.tga
-texture romans_brutii, data/characters/textures/roman_archer_romans_brutii.tga
-texture romans_scipii, data/characters/textures/roman_archer_romans_scipii.tga
+texture romans_brutii, data/characters/textures/roman_archer_romans_julii.tga
+texture romans_scipii, data/characters/textures/roman_archer_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_archer_romans_senate.tga
 model African data/characters/roman_archer_African
 model romans_scipii, African data/characters/roman_archer_romans_scipii_African
@@ -6309,8 +6309,8 @@ tired VeryTired
 aged 0.00
 pbr_texture data/characters/textures/roman_archer_auxillia_pbr.tga
 texture data/characters/textures/roman_archer_auxillia.tga
-texture romans_brutii, data/characters/textures/roman_archer_auxillia_romans_brutii.tga
-texture romans_scipii, data/characters/textures/roman_archer_auxillia_romans_scipii.tga
+texture romans_brutii, data/characters/textures/roman_archer_auxillia_romans_julii.tga
+texture romans_scipii, data/characters/textures/roman_archer_auxillia_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_archer_auxillia_romans_senate.tga
 model African data/characters/roman_archer_auxillia_African
 model romans_brutii, African data/characters/roman_archer_auxillia_romans_brutii_African
@@ -6361,8 +6361,8 @@ tired VeryTired
 aged 0.00
 pbr_texture data/characters/textures/roman_cavalry_auxillia_pbr.tga
 texture data/characters/textures/roman_cavalry_auxillia.tga
-texture romans_brutii, data/characters/textures/roman_cavalry_auxillia_romans_brutii.tga
-texture romans_scipii, data/characters/textures/roman_cavalry_auxillia_romans_scipii.tga
+texture romans_brutii, data/characters/textures/roman_cavalry_auxillia_romans_julii.tga
+texture romans_scipii, data/characters/textures/roman_cavalry_auxillia_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_cavalry_auxillia_romans_senate.tga
 model African data/characters/roman_cavalry_auxillia_African
 model romans_scipii, African data/characters/roman_cavalry_auxillia_romans_scipii_African
@@ -6409,8 +6409,8 @@ tired VeryTired
 aged 0.00
 pbr_texture data/characters/textures/roman_centurion_pbr.tga
 texture data/characters/textures/roman_centurion.tga
-texture romans_brutii, data/characters/textures/roman_centurion_romans_brutii.tga
-texture romans_scipii, data/characters/textures/roman_centurion_romans_scipii.tga
+texture romans_brutii, data/characters/textures/roman_centurion_romans_julii.tga
+texture romans_scipii, data/characters/textures/roman_centurion_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_centurion_romans_senate.tga
 model African data/characters/roman_centurion_African
 model romans_brutii, African data/characters/roman_centurion_romans_brutii_African
@@ -6459,8 +6459,8 @@ tired VeryTired
 aged 0.00
 pbr_texture data/characters/textures/roman_city_militia_pbr.tga
 texture data/characters/textures/roman_city_militia.tga
-texture romans_brutii, data/characters/textures/roman_city_militia_romans_brutii.tga
-texture romans_scipii, data/characters/textures/roman_city_militia_romans_scipii.tga
+texture romans_brutii, data/characters/textures/roman_city_militia_romans_julii.tga
+texture romans_scipii, data/characters/textures/roman_city_militia_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_city_militia_romans_senate.tga
 texture slave, data/characters/textures/roman_city_militia_slave.tga
 model African data/characters/roman_city_militia_African
@@ -6522,8 +6522,8 @@ tired VeryTired
 aged 0.00
 pbr_texture data/characters/textures/roman_crew_pbr.tga
 texture data/characters/textures/roman_crew.tga
-texture romans_brutii, data/characters/textures/roman_crew_romans_brutii.tga
-texture romans_scipii, data/characters/textures/roman_crew_romans_scipii.tga
+texture romans_brutii, data/characters/textures/roman_crew_romans_julii.tga
+texture romans_scipii, data/characters/textures/roman_crew_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_crew_romans_senate.tga
 model African data/characters/roman_crew_African
 model romans_scipii, African data/characters/roman_crew_romans_scipii_African
@@ -6574,8 +6574,8 @@ tired VeryTired
 aged 0.00
 pbr_texture data/characters/textures/roman_early_centurion_pbr.tga
 texture data/characters/textures/roman_early_centurion.tga
-texture romans_brutii, data/characters/textures/roman_early_centurion_romans_brutii.tga
-texture romans_scipii, data/characters/textures/roman_early_centurion_romans_scipii.tga
+texture romans_brutii, data/characters/textures/roman_early_centurion_romans_julii.tga
+texture romans_scipii, data/characters/textures/roman_early_centurion_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_early_centurion_romans_senate.tga
 model African data/characters/roman_early_centurion_African
 model romans_scipii, African data/characters/roman_early_centurion_romans_scipii_African
@@ -6620,7 +6620,7 @@ tired Tired
 aged 0.00
 pbr_texture data/characters/textures/roman_early_standard_pbr.tga
 texture data/characters/textures/roman_early_standard.tga
-texture romans_brutii, data/characters/textures/roman_early_standard_romans_brutii.tga
+texture romans_brutii, data/characters/textures/roman_early_standard_romans_julii.tga
 texture romans_julii, data/characters/textures/roman_early_standard_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_early_standard_romans_senate.tga
 model African data/characters/roman_early_standard_African
@@ -6648,8 +6648,8 @@ tired VeryTired
 aged 0.00
 pbr_texture data/characters/textures/roman_equites_pbr.tga
 texture data/characters/textures/roman_equites.tga
-texture romans_brutii, data/characters/textures/roman_equites_romans_brutii.tga
-texture romans_scipii, data/characters/textures/roman_equites_romans_scipii.tga
+texture romans_brutii, data/characters/textures/roman_equites_romans_julii.tga
+texture romans_scipii, data/characters/textures/roman_equites_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_equites_romans_senate.tga
 texture slave, data/characters/textures/roman_equites_slave.tga
 model African data/characters/roman_equites_African
@@ -6735,9 +6735,9 @@ medieval_features no
 tired Tired
 aged 0.00
 pbr_texture data/characters/textures/roman_general_romans_brutii_pbr.tga
-texture data/characters/textures/roman_general_romans_brutii.tga
+texture data/characters/textures/roman_general_romans_julii.tga
 texture romans_julii, data/characters/textures/roman_general_romans_julii.tga
-texture romans_scipii, data/characters/textures/roman_general_romans_scipii.tga
+texture romans_scipii, data/characters/textures/roman_general_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_general_romans_senate.tga
 model African data/characters/roman_general_romans_brutii_African
 model romans_julii, African data/characters/roman_general_romans_julii_African
@@ -6786,8 +6786,8 @@ tired VeryTired
 aged 0.00
 pbr_texture data/characters/textures/roman_crew_pbr.tga
 texture data/characters/textures/roman_crew.tga
-texture romans_brutii, data/characters/textures/roman_crew_romans_brutii.tga
-texture romans_scipii, data/characters/textures/roman_crew_romans_scipii.tga
+texture romans_brutii, data/characters/textures/roman_crew_romans_julii.tga
+texture romans_scipii, data/characters/textures/roman_crew_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_crew_romans_senate.tga
 model African data/characters/roman_crew_romans_scipii_African
 model romans_brutii, African data/characters/roman_handler_romans_brutii_African
@@ -6836,8 +6836,8 @@ tired VeryTired
 aged 0.00
 pbr_texture data/characters/textures/roman_hastati_pbr.tga
 texture data/characters/textures/roman_hastati.tga
-texture romans_brutii, data/characters/textures/roman_hastati_romans_brutii.tga
-texture romans_scipii, data/characters/textures/roman_hastati_romans_scipii.tga
+texture romans_brutii, data/characters/textures/roman_hastati_romans_julii.tga
+texture romans_scipii, data/characters/textures/roman_hastati_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_hastati_romans_senate.tga
 texture slave, data/characters/textures/roman_hastati_slave.tga
 model African data/characters/roman_hastati_African
@@ -6897,8 +6897,8 @@ tired VeryTired
 aged 0.00
 pbr_texture data/characters/textures/roman_heavy_cavalry_pbr.tga
 texture data/characters/textures/roman_heavy_cavalry.tga
-texture romans_brutii, data/characters/textures/roman_heavy_cavalry_romans_brutii.tga
-texture romans_scipii, data/characters/textures/roman_heavy_cavalry_romans_scipii.tga
+texture romans_brutii, data/characters/textures/roman_heavy_cavalry_romans_julii.tga
+texture romans_scipii, data/characters/textures/roman_heavy_cavalry_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_heavy_cavalry_romans_senate.tga
 model African data/characters/roman_heavy_cavalry_African
 model romans_scipii, African data/characters/roman_heavy_cavalry_romans_scipii_African
@@ -6945,8 +6945,8 @@ tired VeryTired
 aged 0.00
 pbr_texture data/characters/textures/roman_infantry_auxillia_pbr.tga
 texture data/characters/textures/roman_infantry_auxillia.tga
-texture romans_brutii, data/characters/textures/roman_infantry_auxillia_romans_brutii.tga
-texture romans_scipii, data/characters/textures/roman_infantry_auxillia_romans_scipii.tga
+texture romans_brutii, data/characters/textures/roman_infantry_auxillia_romans_julii.tga
+texture romans_scipii, data/characters/textures/roman_infantry_auxillia_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_infantry_auxillia_romans_senate.tga
 model African data/characters/roman_infantry_auxillia_African
 model romans_brutii, African data/characters/roman_infantry_auxillia_romans_brutii_African
@@ -6998,9 +6998,9 @@ pbr_texture armenia, data/characters/textures/roman_legionary_cohort_i_armenia_p
 pbr_texture numidia, data/characters/textures/roman_legionary_cohort_i_armenia_pbr.tga
 texture data/characters/textures/roman_legionary_cohort_i_armenia.tga
 texture numidia, data/characters/textures/roman_legionary_cohort_i_numidia.tga
-texture romans_brutii, data/characters/textures/roman_legionary_cohort_i_romans_brutii.tga
+texture romans_brutii, data/characters/textures/roman_legionary_cohort_i_romans_julii.tga
 texture romans_julii, data/characters/textures/roman_legionary_cohort_i_romans_julii.tga
-texture romans_scipii, data/characters/textures/roman_legionary_cohort_i_romans_scipii.tga
+texture romans_scipii, data/characters/textures/roman_legionary_cohort_i_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_legionary_cohort_i_romans_senate.tga
 model African data/characters/roman_legionary_cohort_i_romans_julii_African
 model armenia, African data/characters/roman_legionary_cohort_i_armenia_African
@@ -7078,8 +7078,8 @@ aged 0.00
 pbr_texture data/characters/textures/roman_legionary_cohort_ii_pbr.tga
 pbr_texture seleucid, data/characters/textures/roman_legionary_cohort_ii_seleucid_pbr.tga
 texture data/characters/textures/roman_legionary_cohort_ii.tga
-texture romans_brutii, data/characters/textures/roman_legionary_cohort_ii_romans_brutii.tga
-texture romans_scipii, data/characters/textures/roman_legionary_cohort_ii_romans_scipii.tga
+texture romans_brutii, data/characters/textures/roman_legionary_cohort_ii_romans_julii.tga
+texture romans_scipii, data/characters/textures/roman_legionary_cohort_ii_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_legionary_cohort_ii_romans_senate.tga
 texture seleucid, data/characters/textures/roman_legionary_cohort_ii_seleucid.tga
 model African data/characters/roman_legionary_cohort_ii_African
@@ -7148,9 +7148,9 @@ medieval_features no
 tired VeryTired
 aged 0.00
 pbr_texture data/characters/textures/roman_lesser_general_romans_brutii_pbr.tga
-texture data/characters/textures/roman_lesser_general_romans_brutii.tga
+texture data/characters/textures/roman_lesser_general_romans_julii.tga
 texture romans_julii, data/characters/textures/roman_lesser_general_romans_julii.tga
-texture romans_scipii, data/characters/textures/roman_lesser_general_romans_scipii.tga
+texture romans_scipii, data/characters/textures/roman_lesser_general_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_lesser_general_romans_senate.tga
 model African data/characters/roman_lesser_general_romans_brutii_African
 model romans_scipii, African data/characters/roman_lesser_general_romans_scipii_African
@@ -7197,8 +7197,8 @@ tired VeryTired
 aged 0.00
 pbr_texture data/characters/textures/roman_light_infantry_pbr.tga
 texture data/characters/textures/roman_light_infantry.tga
-texture romans_brutii, data/characters/textures/roman_light_infantry_romans_brutii.tga
-texture romans_scipii, data/characters/textures/roman_light_infantry_romans_scipii.tga
+texture romans_brutii, data/characters/textures/roman_light_infantry_romans_julii.tga
+texture romans_scipii, data/characters/textures/roman_light_infantry_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_light_infantry_romans_senate.tga
 model African data/characters/roman_light_infantry_African
 model romans_brutii, African data/characters/roman_light_infantry_romans_brutii_African
@@ -7272,8 +7272,8 @@ tired VeryTired
 aged 0.00
 pbr_texture data/characters/textures/roman_medium_cavalry_pbr.tga
 texture data/characters/textures/roman_medium_cavalry.tga
-texture romans_brutii, data/characters/textures/roman_medium_cavalry_romans_brutii.tga
-texture romans_scipii, data/characters/textures/roman_medium_cavalry_romans_scipii.tga
+texture romans_brutii, data/characters/textures/roman_medium_cavalry_romans_julii.tga
+texture romans_scipii, data/characters/textures/roman_medium_cavalry_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_medium_cavalry_romans_senate.tga
 model African data/characters/roman_medium_cavalry_African
 model romans_scipii, African data/characters/roman_medium_cavalry_romans_scipii_African
@@ -7323,9 +7323,9 @@ medieval_features no
 tired No
 aged 0.00
 pbr_texture data/characters/textures/roman_mirmillo_gladiator_romans_brutii_pbr.tga
-texture data/characters/textures/roman_mirmillo_gladiator_romans_brutii.tga
+texture data/characters/textures/roman_mirmillo_gladiator_romans_julii.tga
 texture romans_julii, data/characters/textures/roman_mirmillo_gladiator_romans_julii.tga
-texture romans_scipii, data/characters/textures/roman_mirmillo_gladiator_romans_scipii.tga
+texture romans_scipii, data/characters/textures/roman_mirmillo_gladiator_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_mirmillo_gladiator_romans_senate.tga
 texture slave, data/characters/textures/roman_mirmillo_gladiator_slave.tga
 model African data/characters/roman_mirmillo_gladiator_romans_brutii_African
@@ -7353,9 +7353,9 @@ tired VeryTired
 aged 0.00
 pbr_texture data/characters/textures/roman_peasant_pbr.tga
 texture data/characters/textures/roman_peasant.tga
-texture romans_brutii, data/characters/textures/roman_peasant_romans_brutii.tga
+texture romans_brutii, data/characters/textures/roman_peasant_romans_julii.tga
 texture romans_julii, data/characters/textures/roman_peasant_romans_julii.tga
-texture romans_scipii, data/characters/textures/roman_peasant_romans_scipii.tga
+texture romans_scipii, data/characters/textures/roman_peasant_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_peasant_romans_senate.tga
 model African data/characters/roman_peasant_African
 model romans_julii, African data/characters/roman_peasant_romans_julii_African
@@ -7414,8 +7414,8 @@ tired VeryTired
 aged 0.00
 pbr_texture data/characters/textures/roman_praetorian_cavalry_pbr.tga
 texture data/characters/textures/roman_praetorian_cavalry.tga
-texture romans_brutii, data/characters/textures/roman_praetorian_cavalry_romans_brutii.tga
-texture romans_scipii, data/characters/textures/roman_praetorian_cavalry_romans_scipii.tga
+texture romans_brutii, data/characters/textures/roman_praetorian_cavalry_romans_julii.tga
+texture romans_scipii, data/characters/textures/roman_praetorian_cavalry_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_praetorian_cavalry_romans_senate.tga
 model African data/characters/roman_praetorian_cavalry_African
 model romans_scipii, African data/characters/roman_praetorian_cavalry_romans_scipii_African
@@ -7461,9 +7461,9 @@ medieval_features no
 tired VeryTired
 aged 0.00
 pbr_texture data/characters/textures/roman_praetorian_cohort_i_romans_brutii_pbr.tga
-texture data/characters/textures/roman_praetorian_cohort_i_romans_brutii.tga
+texture data/characters/textures/roman_praetorian_cohort_i_romans_julii.tga
 texture romans_julii, data/characters/textures/roman_praetorian_cohort_i_romans_julii.tga
-texture romans_scipii, data/characters/textures/roman_praetorian_cohort_i_romans_scipii.tga
+texture romans_scipii, data/characters/textures/roman_praetorian_cohort_i_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_praetorian_cohort_i_romans_senate.tga
 model African data/characters/roman_praetorian_cohort_i_romans_brutii_African
 model romans_scipii, African data/characters/roman_praetorian_cohort_i_romans_scipii_African
@@ -7508,8 +7508,8 @@ tired VeryTired
 aged 0.00
 pbr_texture data/characters/textures/roman_praetorian_cohort_ii_pbr.tga
 texture data/characters/textures/roman_praetorian_cohort_ii.tga
-texture romans_brutii, data/characters/textures/roman_praetorian_cohort_ii_romans_brutii.tga
-texture romans_scipii, data/characters/textures/roman_praetorian_cohort_ii_romans_scipii.tga
+texture romans_brutii, data/characters/textures/roman_praetorian_cohort_ii_romans_julii.tga
+texture romans_scipii, data/characters/textures/roman_praetorian_cohort_ii_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_praetorian_cohort_ii_romans_senate.tga
 model African data/characters/roman_praetorian_cohort_ii_African
 model romans_scipii, African data/characters/roman_praetorian_cohort_ii_romans_scipii_African
@@ -7549,9 +7549,9 @@ medieval_features no
 tired VeryTired
 aged 0.00
 pbr_texture data/characters/textures/roman_principes_romans_brutii_pbr.tga
-texture data/characters/textures/roman_principes_romans_brutii.tga
+texture data/characters/textures/roman_principes_romans_julii.tga
 texture romans_julii, data/characters/textures/roman_principes_romans_julii.tga
-texture romans_scipii, data/characters/textures/roman_principes_romans_scipii.tga
+texture romans_scipii, data/characters/textures/roman_principes_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_principes_romans_senate.tga
 model African data/characters/roman_principes_romans_brutii_African
 model romans_scipii, African data/characters/roman_principes_romans_scipii_African
@@ -7599,9 +7599,9 @@ medieval_features no
 tired No
 aged 0.00
 pbr_texture data/characters/textures/roman_samnite_gladiator_romans_brutii_pbr.tga
-texture data/characters/textures/roman_samnite_gladiator_romans_brutii.tga
+texture data/characters/textures/roman_samnite_gladiator_romans_julii.tga
 texture romans_julii, data/characters/textures/roman_samnite_gladiator_romans_julii.tga
-texture romans_scipii, data/characters/textures/roman_samnite_gladiator_romans_scipii.tga
+texture romans_scipii, data/characters/textures/roman_samnite_gladiator_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_samnite_gladiator_romans_senate.tga
 texture slave, data/characters/textures/roman_samnite_gladiator_slave.tga
 model African data/characters/roman_samnite_gladiator_romans_brutii_African
@@ -7654,7 +7654,7 @@ tired Tired
 aged 0.00
 pbr_texture data/characters/textures/roman_standard_pbr.tga
 texture data/characters/textures/roman_standard.tga
-texture romans_brutii, data/characters/textures/roman_standard_romans_brutii.tga
+texture romans_brutii, data/characters/textures/roman_standard_romans_julii.tga
 texture romans_julii, data/characters/textures/roman_standard_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_standard_romans_senate.tga
 model African data/characters/roman_standard_African
@@ -7682,8 +7682,8 @@ tired VeryTired
 aged 0.00
 pbr_texture data/characters/textures/roman_triarii_pbr.tga
 texture data/characters/textures/roman_triarii.tga
-texture romans_brutii, data/characters/textures/roman_triarii_romans_brutii.tga
-texture romans_scipii, data/characters/textures/roman_triarii_romans_scipii.tga
+texture romans_brutii, data/characters/textures/roman_triarii_romans_julii.tga
+texture romans_scipii, data/characters/textures/roman_triarii_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_triarii_romans_senate.tga
 model African data/characters/roman_triarii_African
 model romans_brutii, African data/characters/roman_triarii_romans_brutii_African
@@ -7737,8 +7737,8 @@ aged 0.00
 pbr_texture data/characters/textures/roman_velite_pbr.tga
 pbr_texture slave, data/characters/textures/roman_velite_slave_pbr.tga
 texture data/characters/textures/roman_velite.tga
-texture romans_brutii, data/characters/textures/roman_velite_romans_brutii.tga
-texture romans_scipii, data/characters/textures/roman_velite_romans_scipii.tga
+texture romans_brutii, data/characters/textures/roman_velite_romans_julii.tga
+texture romans_scipii, data/characters/textures/roman_velite_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_velite_romans_senate.tga
 texture slave, data/characters/textures/roman_velite_slave.tga
 model African data/characters/roman_velite_African
@@ -7767,7 +7767,7 @@ aged 0.00
 pbr_texture data/characters/textures/roman_velite_gladiator_pbr.tga
 texture data/characters/textures/roman_velite_gladiator.tga
 texture romans_julii, data/characters/textures/roman_velite_gladiator_romans_julii.tga
-texture romans_scipii, data/characters/textures/roman_velite_gladiator_romans_scipii.tga
+texture romans_scipii, data/characters/textures/roman_velite_gladiator_romans_julii.tga
 texture romans_senate, data/characters/textures/roman_velite_gladiator_romans_senate.tga
 texture slave, data/characters/textures/roman_velite_gladiator_slave.tga
 model African data/characters/roman_velite_gladiator_African
