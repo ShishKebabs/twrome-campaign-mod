@@ -18,7 +18,7 @@ town
 	wall				data/models_strat/residences/roman_town_wall_1.CAS,				settlement_roman_walled_level_2
 	wall				data/models_strat/residences/roman_town_wall_2.CAS,				settlement_roman_walled_level_2
 	wall				data/models_strat/residences/roman_town_wall_3.CAS,				settlement_roman_walled_level_2
-	card				data/ui/roman/cities/graeco-roman_town.tga		
+	card				data/ui/roman/cities/graeco-roman_town.tga
 }
 large_town
 {
@@ -60,12 +60,12 @@ huge_city
 fort				data/models_strat/residences/roman_fort.CAS,						fort_roman
 fort_cost			500
 fort_wall			data/models_strat/residences/roman_fort_wall.CAS
-fishing_village		data/models_strat/residences/roman_fishing_village.CAS,				port_roman_level_1	
-port_land			data/models_strat/residences/roman_port_01_land.CAS,				port_roman_level_2	
+fishing_village		data/models_strat/residences/roman_fishing_village.CAS,				port_roman_level_1
+port_land			data/models_strat/residences/roman_port_01_land.CAS,				port_roman_level_2
 port_sea			data/models_strat/residences/roman_port_01_sea.CAS
-port_land			data/models_strat/residences/roman_port_02_land.CAS,				port_roman_level_3	
+port_land			data/models_strat/residences/roman_port_02_land.CAS,				port_roman_level_3
 port_sea			data/models_strat/residences/roman_port_02_sea.CAS
-port_land			data/models_strat/residences/roman_port_03_land.CAS,				port_roman_level_4	
+port_land			data/models_strat/residences/roman_port_03_land.CAS,				port_roman_level_4
 port_sea			data/models_strat/residences/roman_port_03_sea.CAS
 watchtower			data/models_strat/residences/watchtower_roman.CAS,					watchtower_roman
 watchtower_cost		200
@@ -82,7 +82,7 @@ rebel_standard_index	1
 {
 village
 {
-	normal				data/models_strat/residences/barb_village.CAS,					settlement_barbarian_level_1					
+	normal				data/models_strat/residences/barb_village.CAS,					settlement_barbarian_level_1
 	card				data/ui/barbarian/cities/barbarian_village.tga
 }
 town
@@ -110,7 +110,7 @@ city
 fort				data/models_strat/residences/barb_fort.CAS,							fort_barbarian
 fort_cost			500
 fort_wall			data/models_strat/residences/barb_fort_wall.CAS
-fishing_village		data/models_strat/residences/barb_fishing_village.CAS,				port_barbarian_level_1	
+fishing_village		data/models_strat/residences/barb_fishing_village.CAS,				port_barbarian_level_1
 port_land			data/models_strat/residences/barb_port_01_land.CAS,					port_barbarian_level_2
 port_sea			data/models_strat/residences/barb_port_01_sea.CAS
 port_land			data/models_strat/residences/barb_port_02_land.CAS,					port_barbarian_level_3
@@ -183,8 +183,8 @@ huge_city
 fort				data/models_strat/residences/east_fort.CAS,							fort_eastern
 fort_cost			500
 fort_wall			data/models_strat/residences/east_fort_wall.CAS
-fishing_village		data/models_strat/residences/eastern_fishing_village.CAS,			port_eastern_level_1	
-port_land			data/models_strat/residences/eastern_port_01_land.CAS,				port_eastern_level_2	
+fishing_village		data/models_strat/residences/eastern_fishing_village.CAS,			port_eastern_level_1
+port_land			data/models_strat/residences/eastern_port_01_land.CAS,				port_eastern_level_2
 port_sea			data/models_strat/residences/eastern_port_01_sea.CAS
 port_land			data/models_strat/residences/eastern_port_02_land.CAS,				port_eastern_level_3
 port_sea			data/models_strat/residences/eastern_port_02_sea.CAS
