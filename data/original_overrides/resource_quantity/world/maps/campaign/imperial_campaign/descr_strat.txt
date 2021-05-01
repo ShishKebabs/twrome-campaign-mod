@@ -451,7 +451,7 @@ resource	silver,         1,         111,  82
 
 faction	romans_julii, balanced_smith
 superfaction romans_senate
-denari	5000
+denari	3000
 settlement
 {
 	level large_town
@@ -496,9 +496,7 @@ ancillaries aged_retainer
 army
 unit		roman generals guard cavalry early				exp 1 armour 0 weapon_lvl 0
 unit		roman hastati				exp 1 armour 0 weapon_lvl 0
-unit		roman hastati				exp 1 armour 0 weapon_lvl 0
 unit		roman triarii				exp 1 armour 0 weapon_lvl 0
-unit		roman archer				exp 1 armour 0 weapon_lvl 0
 
 character	Lucius Julius, named character, heir, age 31, , x 91, y 80
 traits GoodCommander 1 , PoliticsSkill 2 , GoodAdministrator 3 , Energetic 2
@@ -506,14 +504,14 @@ ancillaries freeman_clerk
 army
 unit		roman generals guard cavalry early				exp 1 armour 0 weapon_lvl 0
 unit		roman hastati				exp 1 armour 0 weapon_lvl 0
-unit		roman hastati				exp 1 armour 0 weapon_lvl 0
+unit		roman city militia				exp 0 armour 0 weapon_lvl 0
 
 character	Quintus Julius, named character, age 29, , x 96, y 82
 traits NaturalMilitarySkill 3 , GoodAttacker 1 , Energetic 1
 ancillaries drillmaster
 army
 unit		roman generals guard cavalry early				exp 1 armour 0 weapon_lvl 0
-unit		roman city militia				exp 0 armour 0 weapon_lvl 0
+unit		roman hastati				exp 1 armour 0 weapon_lvl 0
 unit		roman city militia				exp 0 armour 0 weapon_lvl 0
 
 character	Sextus Antio, diplomat, age 29, , x 93, y 78
@@ -556,7 +554,7 @@ relative 	Vibius Julius, 	Claudia,		Manius Julius,	end
 
 faction	romans_brutii, balanced_smith
 superfaction romans_senate
-denari	5000
+denari	3000
 settlement
 {
 	level large_town
@@ -634,8 +632,6 @@ ancillaries doctor
 army
 unit		roman generals guard cavalry early				exp 0 armour 0 weapon_lvl 0
 unit		roman light cavalry				exp 1 armour 0 weapon_lvl 0
-unit		roman hastati				exp 0 armour 0 weapon_lvl 0
-unit		roman hastati				exp 0 armour 0 weapon_lvl 0
 unit		roman velite				exp 0 armour 0 weapon_lvl 0
 
 character	Vibius Brutus, named character, age 30, , x 114, y 63
@@ -662,7 +658,7 @@ relative 	Amulius Brutus, 	Lucilla,		Cassius Brutus,	Cornelius Brutus,	end
 
 faction	romans_scipii, balanced_smith
 superfaction romans_senate
-denari	5000
+denari	3000
 settlement
 {
 	level large_town
@@ -706,9 +702,9 @@ traits GoodCommander 2 , PoliticsSkill 2 , GoodAdministrator 2 , Austere 1 , Goo
 ancillaries aged_retainer
 army
 unit		roman generals guard cavalry early				exp 1 armour 0 weapon_lvl 0
-unit		roman hastati				exp 1 armour 0 weapon_lvl 0
-unit		roman hastati				exp 1 armour 0 weapon_lvl 0
-unit		roman hastati				exp 2 armour 0 weapon_lvl 0
+unit		roman hastati				exp 0 armour 0 weapon_lvl 0
+unit		roman hastati				exp 0 armour 0 weapon_lvl 0
+unit		roman hastati				exp 0 armour 0 weapon_lvl 0
 
 character	Julianus Scipio, named character, heir, age 36, , x 102, y 68
 traits GoodCommander 1 , NaturalMilitarySkill 3 , PoliticsSkill 1 , GoodRiskyAttacker 1
@@ -1453,7 +1449,7 @@ relative 	Demetrius, 	Athena,		Kassandros,	Orthia,	end
 
 
 faction	carthage, balanced_smith
-denari	7000
+denari	5000
 settlement
 {
 	level city
@@ -1677,7 +1673,7 @@ relative 	Theages, 	Xanthe,		end
 
 
 faction	parthia, balanced_smith
-denari	5000
+denari	3000
 settlement
 {
 	level large_town
@@ -2632,7 +2628,7 @@ relative 	Scyles, 	Birkita,		Fallon,	Scylurus,	end
 
 
 faction	greek_cities, balanced_smith
-denari	5000
+denari	3000
 settlement
 {
 	level city
