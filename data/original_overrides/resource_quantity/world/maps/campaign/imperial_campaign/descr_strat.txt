@@ -2639,7 +2639,7 @@ settlement
 	region Laconia
 
 	year_founded 0
-	population 500
+	population 400
 	plan_set default_set
 	faction_creator macedon
 	building
