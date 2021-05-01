@@ -1,0 +1,102 @@
+plan
+
+{
+
+floor underlay_mausoleum_at_halicarnassus_settlement.cas
+
+
+mausoleum_at_halicarnassus,		0,	10,	0,	0
+
+quadriga_small,				0,	10,	0,	67
+
+
+; lions lining the steps
+
+lion_statue,				-11.5,	-23,	0,	25
+lion_statue,				-11.5,	-31,	0,	22
+lion_statue,				-11.5,	-39,	0,	19
+lion_statue,				-11.5,	-47,	0,	16
+lion_statue,				11.5,	-23,	0,	25
+lion_statue,				11.5,	-31,	0,	22
+lion_statue,				11.5,	-39,	0,	19
+lion_statue,				11.5,	-47,	0,	16
+
+; lions on the roof
+
+lion_statue,				-6,	-4,	0,	53
+lion_statue,				0,	-4,	0,	53
+lion_statue,				6,	-4,	0,	53
+lion_statue,				-10,	22,	-90,	53
+lion_statue,				-10,	16,	-90,	53
+lion_statue,				-10,	10,	-90,	53
+lion_statue,				-10,	4,	-90,	53
+lion_statue,				-10,	-2,	-90,	53
+;lion_statue,				-6,	24,	180,	53
+;lion_statue,				0,	24,	180,	53
+;lion_statue,				6,	24,	180,	53
+;lion_statue,				10,	22,	90,	53
+;lion_statue,				10,	16,	90,	53
+;lion_statue,				10,	10,	90,	53
+;lion_statue,				10,	4,	90,	53
+;lion_statue,				10,	-2,	90,	53
+
+; statues at the corners of the roof
+
+roman_statue_halfsize,			-14,	-8,	-45,	53
+roman_statue_halfsize,			14,	-8,	45,	53
+roman_statue_halfsize,			14,	28,	135,	53
+roman_statue_halfsize,			-14,	28,	-135,	53
+
+
+; statues at the corners of the lower podium
+
+roman_statue_halfsize,			-30.5,	-20.5,	0,	25
+roman_statue_halfsize,			-30.5,	20.5,	0,	25
+roman_statue_halfsize,			30.5,	20.5,	0,	25
+roman_statue_halfsize,			30.5,	-20.5,	0,	25
+
+; statues between the pillars
+
+roman_statue_halfsize,			-10.5,	-7,	0,	37
+roman_statue_halfsize,			-7.5,	-7,	0,	37
+roman_statue_halfsize,			-4.5,	-7,	0,	37
+roman_statue_halfsize,			-1.5,	-7,	0,	37
+roman_statue_halfsize,			1.5,	-7,	0,	37
+roman_statue_halfsize,			4.5,	-7,	0,	37
+roman_statue_halfsize,			7.5,	-7,	0,	37
+roman_statue_halfsize,			10.5,	-7,	0,	37
+
+roman_statue_halfsize,			-12.5,	-5,	-90,	37
+roman_statue_halfsize,			-12.5,	-2,	-90,	37
+roman_statue_halfsize,			-12.5,	1,	-90,	37
+roman_statue_halfsize,			-12.5,	4,	-90,	37
+roman_statue_halfsize,			-12.5,	7,	-90,	37
+roman_statue_halfsize,			-12.5,	10,	-90,	37
+roman_statue_halfsize,			-12.5,	13,	-90,	37
+roman_statue_halfsize,			-12.5,	16,	-90,	37
+roman_statue_halfsize,			-12.5,	19,	-90,	37
+roman_statue_halfsize,			-12.5,	22,	-90,	37
+roman_statue_halfsize,			-12.5,	25,	-90,	37
+
+;roman_statue_halfsize,			12.5,	-5,	90,	37
+;roman_statue_halfsize,			12.5,	-2,	90,	37
+;roman_statue_halfsize,			12.5,	1,	90,	37
+;roman_statue_halfsize,			12.5,	4,	90,	37
+;roman_statue_halfsize,			12.5,	7,	90,	37
+;roman_statue_halfsize,			12.5,	10,	90,	37
+;roman_statue_halfsize,			12.5,	13,	90,	37
+;roman_statue_halfsize,			12.5,	16,	90,	37
+;roman_statue_halfsize,			12.5,	19,	90,	37
+;roman_statue_halfsize,			12.5,	22,	90,	37
+;roman_statue_halfsize,			12.5,	25,	90,	37
+
+;roman_statue_halfsize,			-10.5,	27,	180,	37
+;roman_statue_halfsize,			-7.5,	27,	180,	37
+;roman_statue_halfsize,			-4.5,	27,	180,	37
+;roman_statue_halfsize,			-1.5,	27,	180,	37
+;roman_statue_halfsize,			1.5,	27,	180,	37
+;roman_statue_halfsize,			4.5,	27,	180,	37
+;roman_statue_halfsize,			7.5,	27,	180,	37
+;roman_statue_halfsize,			10.5,	27,	180,	37
+
+}

@@ -1,0 +1,11 @@
+plan
+
+{
+	floor		egyptian_ruin_01_underlay.cas egyptian_ruin_01_overlay.cas
+
+	ground_types	ground_default_grass.tga	-64,	-64,	64,	64
+	borders	border_limits_64m_diameter.CAS
+;				x,		y,		rot,	z,
+eastern_ruin_03,		0.837m,	        -6.234m	        0.0	0
+
+}

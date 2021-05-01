@@ -1,0 +1,32 @@
+; List of locations that's picked from at random when loading a custom battle. Coordinates represent tiles on the base game's campaign map.
+
+location 45  89
+location 71  93
+location 59  118
+location 85  115
+location 147 137
+location 73  26	
+location 74  43	
+location 102 8	
+location 200 21 
+location 92  88	
+location 86  80	
+location 50  142
+location 137 10 
+location 241 137
+location 183 152
+location 184 148
+location 36  125
+location 77  127
+location 12 53
+location 38  141
+location 83  84 
+location 95  71 
+location 216 93 
+location 141 52 
+location 55  128
+location 180 135
+location 102 65 
+location 99  21 
+location 82  43 
+location 222  79 

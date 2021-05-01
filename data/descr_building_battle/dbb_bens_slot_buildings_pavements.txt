@@ -1,0 +1,65 @@
+	pavement_eastern_blacksmith
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_eastern_blacksmith
+			physical_info	none
+		}
+	}
+
+	pavement_eastern_governors_villa
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_eastern_governors_villa
+			physical_info	none
+		}
+	}
+
+
+	pavement_eastern_imperial_palace
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_eastern_imperial_palace
+			physical_info	none
+		}
+	}
+
+	pavement_egyptian_pro-consuls_palace
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_egyptian_pro-consuls_palace
+			physical_info	none
+		}
+	}
+
+	pavement_eastern_temple
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_eastern_temple
+			physical_info	none
+		}
+	}

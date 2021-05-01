@@ -1,0 +1,1698 @@
+farm_house
+	{
+		stat_cat tiny_wooden
+		localised_name ambient
+		level
+		{
+			min_health 0
+			battle_stats
+			item		farm_house
+			physical_info	info_farm_house.cas
+		}
+	}
+
+kiln
+	{
+		stat_cat tiny_wooden
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		kiln
+			physical_info	info_kiln.cas
+		}
+	}
+
+ancient_battlefield_obelisk
+	{
+		stat_cat small_stone
+		localised_name ancient_obelisk
+		level
+		{
+			min_health 0
+			battle_stats
+			item		ancient_battlefield_obelisk
+			physical_info	ancient_battlefield_collision.CAS
+		}
+	}
+
+	roman_village_fences
+	{
+		stat_cat indestructable
+		localised_name ambient
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_village_fences
+			physical_info	roman_village_fences_info.CAS
+		}
+	}
+
+
+	greek_elite_cavalry_stables
+	{
+		stat_cat	large_stone
+		localised_name elite_cavalry_stables
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_elite_cavalry_stables
+			physical_info	greek_equestrian_lvl04_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_elite_cavalry_stables_rubble
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+	greek_royal_cavalry_stables
+	{
+		stat_cat	large_stone
+		localised_name royal_cavalry_stables
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_royal_cavalry_stables
+			physical_info	greek_equestrian_lvl05_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_royal_cavalry_stables_rubble
+			physical_info	info_roman_rubble_256x96.cas
+		}
+	}
+
+
+
+
+	roman_tenamentA
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentA
+			physical_info	roman_tenamentA_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_64x80
+			physical_info	info_roman_rubble_64x80.cas
+		}
+	}
+
+	roman_tenamentA1
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentA1 roman_tenament_A1_props_big roman_tenament_A1_props_medium roman_tenament_A1_props_small
+			physical_info	roman_tenamentA1_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_64x80
+			physical_info	info_roman_rubble_64x80.cas
+		}
+	}
+
+	roman_tenamentA2
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentA2 roman_tenament_A2_props_big roman_tenament_A2_props_medium roman_tenament_A2_props_small
+			physical_info	roman_tenamentA2_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_64x80
+			physical_info	info_roman_rubble_64x80.cas
+		}
+	}
+
+	roman_tenamentA3
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentA3 roman_tenament_A3_props_big roman_tenament_A3_props_medium roman_tenament_A3_props_small
+			physical_info	roman_tenamentA3_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_64x80
+			physical_info	info_roman_rubble_64x80.cas
+		}
+	}
+
+	roman_tenamentA4
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentA4
+			physical_info	roman_tenamentA4_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_64x80
+			physical_info	info_roman_rubble_64x80.cas
+		}
+	}
+
+	roman_tenamentA5
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentA5
+			physical_info	roman_tenamentA5_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_64x80
+			physical_info	info_roman_rubble_64x80.cas
+		}
+	}
+
+	roman_tenamentB
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentB
+			physical_info	roman_tenamentB_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_32x32
+			physical_info	info_roman_rubble_32x32.cas
+		}
+	}
+
+	roman_tenamentB1
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentB1 roman_tenament_B1_props_big roman_tenament_B1_props_medium roman_tenament_B1_props_small
+			physical_info	roman_tenamentB1_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_32x32
+			physical_info	info_roman_rubble_32x32.cas
+		}
+	}
+
+	roman_tenamentB2
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentB2 roman_tenament_B2_props_big roman_tenament_B2_props_medium roman_tenament_B2_props_small
+			physical_info	roman_tenamentB2_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_32x32
+			physical_info	info_roman_rubble_32x32.cas
+		}
+	}
+
+	roman_tenamentB3
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentB3 roman_tenament_B3_props_big roman_tenament_B3_props_medium roman_tenament_B3_props_small
+			physical_info	roman_tenamentB3_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_32x32
+			physical_info	info_roman_rubble_32x32.cas
+		}
+	}
+
+	roman_tenamentB4
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentB4
+			physical_info	roman_tenamentB4_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_32x32
+			physical_info	info_roman_rubble_32x32.cas
+		}
+	}
+
+	roman_tenamentB5
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentB5
+			physical_info	roman_tenamentB5_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_32x32
+			physical_info	info_roman_rubble_32x32.cas
+		}
+	}
+
+roman_tenamentC
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentC
+			physical_info	roman_tenamentC_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_58x28
+			physical_info	info_roman_rubble_58x28.cas
+		}
+	}
+
+	roman_tenamentC1
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentC1 roman_tenament_C1_props_big roman_tenament_C1_props_medium roman_tenament_C1_props_small
+			physical_info	roman_tenamentC1_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_58x28
+			physical_info	info_roman_rubble_58x28.cas
+		}
+	}
+
+	roman_tenamentC2
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentC2 roman_tenament_C2_props_big roman_tenament_C2_props_medium roman_tenament_C2_props_small
+			physical_info	roman_tenamentC2_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_58x28
+			physical_info	info_roman_rubble_58x28.cas
+		}
+	}
+
+	roman_tenamentC3
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentC3 roman_tenament_C3_props_big roman_tenament_C3_props_medium roman_tenament_C3_props_small
+			physical_info	roman_tenamentC3_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_58x28
+			physical_info	info_roman_rubble_58x28.cas
+		}
+	}
+
+	roman_tenamentC4
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentC4 roman_tenament_C4_props_big roman_tenament_C4_props_medium roman_tenament_C4_props_small
+			physical_info	roman_tenamentC4_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_58x28
+			physical_info	info_roman_rubble_58x28.cas
+		}
+	}
+
+	roman_tenamentC5
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentC5 roman_tenament_C5_props_big roman_tenament_C5_props_medium roman_tenament_C5_props_small
+			physical_info	roman_tenamentC5_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_58x28
+			physical_info	info_roman_rubble_58x28.cas
+		}
+	}
+
+
+roman_tenamentD
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentD
+			physical_info	roman_tenamentD_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_7x29
+			physical_info	info_roman_rubble_7x29.cas
+		}
+	}
+
+	roman_tenamentD1
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentD1 roman_tenament_D1_props_big roman_tenament_D1_props_medium roman_tenament_D1_props_small
+			physical_info	roman_tenamentD1_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_7x29
+			physical_info	info_roman_rubble_7x29.cas
+		}
+	}
+
+	roman_tenamentD2
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentD2 roman_tenament_D2_props_big roman_tenament_D2_props_medium roman_tenament_D2_props_small
+			physical_info	roman_tenamentD2_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_7x29
+			physical_info	info_roman_rubble_7x29.cas
+		}
+	}
+
+	roman_tenamentD3
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentD3 roman_tenament_D3_props_big roman_tenament_D3_props_medium roman_tenament_D3_props_small
+			physical_info	roman_tenamentD3_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_7x29
+			physical_info	info_roman_rubble_7x29.cas
+		}
+	}
+
+	roman_tenamentD4
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentD4 roman_tenament_D4_props_big roman_tenament_D4_props_medium roman_tenament_D4_props_small
+			physical_info	roman_tenamentD4_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_7x29
+			physical_info	info_roman_rubble_7x29.cas
+		}
+	}
+
+	roman_tenamentD5
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentD5 roman_tenament_D5_props_big roman_tenament_D5_props_medium roman_tenament_D5_props_small
+			physical_info	roman_tenamentD5_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_7x29
+			physical_info	info_roman_rubble_7x29.cas
+		}
+	}
+
+
+roman_tenamentE
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentE
+			physical_info	roman_tenamentE_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_10_4x7
+			physical_info	info_roman_rubble_10_4x7.cas
+		}
+	}
+
+	roman_tenamentE1
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentE1
+			physical_info	roman_tenamentE1_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_10_4x7
+			physical_info	info_roman_rubble_10_4x7.cas
+		}
+	}
+
+	roman_tenamentE2
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_tenamentE2
+			physical_info	roman_tenamentE2_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_10_4x7
+			physical_info	info_roman_rubble_10_4x7.cas
+		}
+	}
+
+	roman_tenamentE3
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_tenament_E1_props
+			physical_info	roman_tenamentE2_info.cas
+		}
+	}
+
+	roman_tenamentE4
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_tenament_E2_props
+			physical_info	roman_tenamentE2_info.cas
+		}
+	}
+
+;; CARTHAGINIAN TENAMENTS
+
+
+carthaginian_tenamentA
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		carthaginian_tenamentA  carthaginian_tenament_A_props_big carthaginian_tenament_A_props_medium carthaginian_tenament_A_props_small
+			physical_info	east_tenamentA_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		eastern_rubble_tenamentA
+			physical_info	info_eastern_rubble_tenamentA.cas
+		}
+	}
+
+carthaginian_tenamentB
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		carthaginian_tenamentB carthaginian_tenamentB_props
+			physical_info	east_tenamentB_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		eastern_rubble_tenamentB
+			physical_info	info_eastern_rubble_tenamentB.cas
+		}
+	}
+
+carthaginian_tenamentC
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		carthaginian_tenamentC carthaginian_tenament_C_props_big carthaginian_tenament_C_props_medium carthaginian_tenament_C_props_small
+			physical_info	east_tenamentC_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		eastern_rubble_tenamentC
+			physical_info	info_eastern_rubble_tenamentC.cas
+		}
+	}
+
+
+carthaginian_tenamentD
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		carthaginian_tenamentD carthaginian_tenament_D_props_big carthaginian_tenament_D_props_medium carthaginian_tenament_D_props_small
+			physical_info	east_tenamentD_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		eastern_rubble_tenamentD
+			physical_info	info_eastern_rubble_tenamentD.cas
+		}
+	}
+
+
+
+
+
+roman_town_tenament_collision
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	roman_town_tenament_collision_info.CAS
+		}
+	}
+
+roman_large_town_tenament_collision
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	roman_large_town_tenament_collision_info.CAS
+		}
+	}
+
+
+roman_camp_collision
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	roman_camp_collision_info.CAS
+		}
+	}
+
+
+
+roman_city_collision
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	roman_city_collision_info.CAS
+		}
+	}
+
+
+; ROMAN LARGE CITY BUILDINGS
+
+roman_large_city_collision
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	roman_large_city_collision_info.CAS
+		}
+	}
+
+; ROMAN HUGE CITY BUILDINGS
+
+roman_huge_city_collision
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	roman_huge_city_collision_info.CAS
+		}
+	}
+
+;GREEK TENAMENTS
+
+greek_tenamentA
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentA
+			physical_info	roman_tenamentA_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_64x80
+			physical_info	info_roman_rubble_64x80.cas
+		}
+	}
+
+greek_tenamentA1
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentA1 roman_tenament_A1_props_big roman_tenament_A1_props_medium roman_tenament_A1_props_small
+			physical_info	roman_tenamentA1_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_64x80
+			physical_info	info_roman_rubble_64x80.cas
+		}
+	}
+
+greek_tenamentA2
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentA2 roman_tenament_A2_props_big roman_tenament_A2_props_medium roman_tenament_A2_props_small
+			physical_info	roman_tenamentA2_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_64x80
+			physical_info	info_roman_rubble_64x80.cas
+		}
+	}
+
+	greek_tenamentA3
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentA3 roman_tenament_A3_props_big roman_tenament_A3_props_medium roman_tenament_A3_props_small
+			physical_info	roman_tenamentA3_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_64x80
+			physical_info	info_roman_rubble_64x80.cas
+		}
+	}
+
+	greek_tenamentA4
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentA4
+			physical_info	roman_tenamentA4_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_64x80
+			physical_info	info_roman_rubble_64x80.cas
+		}
+	}
+
+	greek_tenamentA5
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentA5
+			physical_info	roman_tenamentA5_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_64x80
+			physical_info	info_roman_rubble_64x80.cas
+		}
+	}
+
+greek_tenamentB
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentB
+			physical_info	roman_tenamentB_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_32x32
+			physical_info	info_roman_rubble_32x32.cas
+		}
+	}
+
+	greek_tenamentB1
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentB1 roman_tenament_B1_props_big roman_tenament_B1_props_medium roman_tenament_B1_props_small
+			physical_info	roman_tenamentB1_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_32x32
+			physical_info	info_roman_rubble_32x32.cas
+		}
+	}
+
+	greek_tenamentB2
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentB2 roman_tenament_B2_props_big roman_tenament_B2_props_medium roman_tenament_B2_props_small
+			physical_info	roman_tenamentB2_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_32x32
+			physical_info	info_roman_rubble_32x32.cas
+		}
+	}
+
+	greek_tenamentB3
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentB3 roman_tenament_B3_props_big roman_tenament_B3_props_medium roman_tenament_B3_props_small
+			physical_info	roman_tenamentB3_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_32x32
+			physical_info	info_roman_rubble_32x32.cas
+		}
+	}
+
+	greek_tenamentB4
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentB4
+			physical_info	roman_tenamentB4_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_32x32
+			physical_info	info_roman_rubble_32x32.cas
+		}
+	}
+
+	greek_tenamentB5
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentB5
+			physical_info	roman_tenamentB5_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_32x32
+			physical_info	info_roman_rubble_32x32.cas
+		}
+	}
+
+greek_tenamentC
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentC
+			physical_info	roman_tenamentC_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_58x28
+			physical_info	info_roman_rubble_58x28.cas
+		}
+	}
+
+	greek_tenamentC1
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentC1 roman_tenament_C1_props_big roman_tenament_C1_props_medium roman_tenament_C1_props_small
+			physical_info	roman_tenamentC_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_58x28
+			physical_info	info_roman_rubble_32x32.cas
+		}
+	}
+
+	greek_tenamentC2
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentC2 roman_tenament_C2_props_big roman_tenament_C2_props_medium roman_tenament_C2_props_small
+			physical_info	roman_tenamentC2_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_58x28
+			physical_info	info_roman_rubble_32x32.cas
+		}
+	}
+
+	greek_tenamentC3
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentC3 roman_tenament_C3_props_big roman_tenament_C3_props_medium roman_tenament_C3_props_small
+			physical_info	roman_tenamentC3_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_58x28
+			physical_info	info_roman_rubble_32x32.cas
+		}
+	}
+
+	greek_tenamentC4
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentC4 roman_tenament_C4_props_big roman_tenament_C4_props_medium roman_tenament_C4_props_small
+			physical_info	roman_tenamentC4_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_58x28
+			physical_info	info_roman_rubble_32x32.cas
+		}
+	}
+
+	greek_tenamentC5
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentC5 roman_tenament_C5_props_big roman_tenament_C5_props_medium roman_tenament_C5_props_small
+			physical_info	roman_tenamentC5_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_58x28
+			physical_info	info_roman_rubble_32x32.cas
+		}
+	}
+
+
+
+
+greek_tenamentD
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentD
+			physical_info	roman_tenamentD_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_7x29
+			physical_info	info_roman_rubble_7x29.cas
+		}
+	}
+
+	greek_tenamentD1
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentD1 roman_tenament_D1_props_big roman_tenament_D1_props_medium roman_tenament_D1_props_small
+			physical_info	roman_tenamentD1_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_7x29
+			physical_info	info_roman_rubble_32x32.cas
+		}
+	}
+
+	greek_tenamentD2
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentD2 greek_tenament_D2_props
+			physical_info	roman_tenamentD2_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_7x29
+			physical_info	info_roman_rubble_32x32.cas
+		}
+	}
+
+	greek_tenamentD3
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentD3 roman_tenament_D3_props_big roman_tenament_D3_props_medium roman_tenament_D3_props_small
+			physical_info	roman_tenamentD3_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_7x29
+			physical_info	info_roman_rubble_32x32.cas
+		}
+	}
+
+	greek_tenamentD4
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentD4 roman_tenament_D4_props_big roman_tenament_D4_props_medium roman_tenament_D4_props_small
+			physical_info	roman_tenamentD4_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_7x29
+			physical_info	info_roman_rubble_32x32.cas
+		}
+	}
+
+	greek_tenamentD5
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentD5
+			physical_info	roman_tenamentD5_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_7x29
+			physical_info	info_roman_rubble_32x32.cas
+		}
+	}
+
+
+greek_tenamentE
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentE
+			physical_info	roman_tenamentE_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_10_4x7
+			physical_info	info_roman_rubble_10_4x7.cas
+		}
+	}
+
+	greek_tenamentE1
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentE1
+			physical_info	roman_tenamentE1_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_10_4x7
+			physical_info	info_roman_rubble_10_4x7.cas
+		}
+	}
+
+	greek_tenamentE2
+	{
+		stat_cat medium_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_tenamentE2
+			physical_info	roman_tenamentE2_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_10_4x7
+			physical_info	info_roman_rubble_10_4x7.cas
+		}
+	}
+
+wagonA
+	{
+		stat_cat tiny_wooden
+		localised_name wagon
+		level
+		{
+			min_health 0
+			battle_stats
+			item		wagonA
+			physical_info	LION_wagon_laager_wagon_info.CAS
+		}
+	}
+
+wagonB
+	{
+		stat_cat tiny_wooden
+		localised_name wagon
+		level
+		{
+			min_health 0
+			battle_stats
+			item		wagonB
+			physical_info	LION_wagon_laager_wagon_info.CAS
+		}
+	}
+
+wagonC
+	{
+		stat_cat tiny_wooden
+		localised_name wagon
+		level
+		{
+			min_health 0
+			battle_stats
+			item		wagonC
+			physical_info	LION_wagon_laager_wagon_info.CAS
+		}
+	}
+
+large_lake2_water
+	{
+		stat_cat tiny_wooden
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		large_lake2_water
+			physical_info	none
+		}
+	}
+
+oasis2_water
+	{
+		stat_cat tiny_wooden
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		oasis2_water
+			physical_info	none
+		}
+	}
+
+small_lake2_water
+	{
+		stat_cat tiny_wooden
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		small_lake2_water
+			physical_info	none
+		}
+	}
+
+; *****************  extra town/city collision info  **************
+
+
+eastern_town_collision
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_town_collision_info.CAS
+		}
+	}
+
+
+eastern_large_town_collision_info
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_large_town_collision_info.CAS
+		}
+	}
+
+egyptian_large_town_collision_info
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	egyptian_large_town_collision_info.CAS
+		}
+	}
+
+eastern_city_collision_info
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_city_collision_info.CAS
+		}
+	}
+
+egyptian_city_collision_info
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	egyptian_city_collision_info.CAS
+		}
+	}
+
+eastern_large_city_collision_info
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_large_city_collision_info.CAS
+		}
+	}
+
+egyptian_large_city_collision_info
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	egyptian_large_city_collision_info.CAS
+		}
+	}
+
+eastern_huge_city_collision_info
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	eastern_huge_city_collision_info.CAS
+		}
+	}
+
+egyptian_huge_city_collision_info
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	egyptian_huge_city_collision_info.CAS
+		}
+	}
+
+
+greek_town_collision_info
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	greek_town_collision_info.CAS
+		}
+	}
+
+greek_large_town_collision_info
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	greek_large_town_collision_info.CAS
+		}
+	}
+
+greek_city_collision
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		dummy
+			physical_info	greek_city_collision_info.CAS
+		}
+	}
+
+
+
+barbarian_city_collision
+	{
+		stat_cat indestructable
+		localised_name none
+		no_shadow
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barbarian_city_collision_fences
+			physical_info	barbarian_city_collision_info.CAS
+		}
+	}

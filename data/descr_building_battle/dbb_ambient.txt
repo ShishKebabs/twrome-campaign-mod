@@ -1,0 +1,611 @@
+	roman_ruins
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_ruins
+			physical_info	roman_ruins_info.CAS
+		}
+	}
+
+	ruins_2
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats	
+			item		ruins_2
+			physical_info	ruins_2_info.CAS
+		}
+	}
+
+	abandoned_house
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats	
+			item		abandoned_house
+			physical_info	abandoned_house_info.CAS
+		}
+	}
+
+	abandoned_house_2
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		abandoned_house_2
+			physical_info	abandoned_house_2_info.CAS
+		}
+	}
+
+	hayfield_new
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		follow_terrain
+		level
+		{
+			min_health 0
+			battle_stats
+			item		hayfield_new
+			physical_info	none
+		}
+	}
+
+	barb_ruins
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_ruins
+			physical_info	barb_ruins_info.CAS
+		}
+	}
+
+	barb_ruins_01
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_ruins_01
+			physical_info	barb_ruins_01_info.CAS
+		}
+	}
+
+	eastern_blacksmith_ruin
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		eastern_blacksmith_ruin
+			physical_info	eastern_blacksmith_ruin_info.CAS
+		}
+	}
+
+	eastern_ruin_01
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		eastern_ruin_01
+			physical_info	eastern_ruin_01_info.CAS
+		}
+	}
+	barb_ruins_02
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_ruins_02
+			physical_info	barb_ruins_02_info.CAS
+		}
+	}
+
+	barb_ruins_03
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_ruins_03
+			physical_info	barb_ruins_03_info.CAS
+		}
+	}
+
+	barb_ruins_04
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		barb_ruins_04
+			physical_info	barb_ruins_04_info.CAS
+		}
+	}
+
+	eastern_blacksmith_ruin
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		eastern_blacksmith_ruin
+			physical_info	eastern_blacksmith_ruin_info.CAS
+		}
+	}
+
+	eastern_ruin_01
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		eastern_ruin_01
+			physical_info	eastern_ruin_01_info.CAS
+		}
+	}
+	eastern_ruin_02
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		eastern_ruin_02
+			physical_info	eastern_ruin_02_info.CAS
+		}
+	}
+
+	eastern_ruin_03
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		eastern_ruin_03
+			physical_info	eastern_ruin_03_info.CAS
+		}
+	}
+
+	eastern_ruin_village
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		eastern_ruin_village
+			physical_info	eastern_ruin_village_info.CAS
+		}
+	}
+
+	egyptian_ruin_01
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		egyptian_ruin_01
+			physical_info	egyptian_ruin_01_info.CAS
+		}
+	}
+
+	egyptian_ruins_large
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		egyptian_ruins_large
+			physical_info	egyptian_ruins_large_info.CAS
+		}
+	}
+
+	egyptian_ruins_03
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		egyptian_ruins_03
+			physical_info	egyptian_ruins_03_info.CAS
+		}
+	}
+
+	egyptian_ruins_walls
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		egyptian_ruins_walls
+			physical_info	egyptian_ruins_walls_info.CAS
+		}
+	}
+
+	greek_ruin_01
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_ruin_01
+			physical_info	greek_ruin_01_info.CAS
+		}
+	}
+
+	ruined_greek_temple_02
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats	
+			item		ruined_greek_temple_02
+			physical_info	ruined_greek_temple_02_info.CAS
+		}
+	}
+
+	swamp_ruins_01
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		swamp_ruins_01
+			physical_info	swamp_ruins_01_info.CAS
+		}
+	}
+
+	swamp_ruins_02
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		swamp_ruins_02
+			physical_info	swamp_ruins_02_info.CAS
+		}
+	}
+
+	swamp_ruins_03
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		swamp_ruins_03
+			physical_info	swamp_ruins_03_info.CAS
+		}
+	}
+
+	swamp_ruins_04
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		swamp_ruins_04
+			physical_info	swamp_ruins_04_info.CAS
+		}
+	}
+
+	swamp_ruins_05
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		swamp_ruins_05
+			physical_info	swamp_ruins_05_info.CAS
+		}
+	}
+
+	greek_ruins_02
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_ruins_02
+			physical_info	greek_ruins_02_info.CAS
+		}
+	}
+	snowy_ruin_01
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		snowy_ruin_01
+			physical_info	snowy_ruin_01_info.CAS
+		}
+	}
+	snowy_ruin_02
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		snowy_ruin_02
+			physical_info	snowy_ruin_02_info.CAS
+		}
+	}
+	snow_ruins_walls
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		snow_ruins_walls
+			physical_info	snow_ruins_walls_info.CAS
+		}
+	}
+	snow_ruins_walls_2
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		snow_ruins_walls_2
+			physical_info	snow_ruins_walls_2_info.CAS
+		}
+	}
+	snow_ruins_walls_3
+	{
+		stat_cat indestructable
+		localised_name none	;ruin?
+		level
+		{
+			min_health 0
+			battle_stats
+			item		snow_ruins_walls_3
+			physical_info	snow_ruins_walls_3_info.CAS
+		}
+	}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;    FARMS     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	farm_grove
+	{
+		stat_cat indestructable
+		localised_name none	
+		level
+		{
+			min_health 0
+			battle_stats
+			item		farm_grove
+			physical_info	farm_grove_info.CAS
+		}
+	}
+
+	farm_grove_winter
+	{
+		stat_cat indestructable
+		localised_name none	
+		level
+		{
+			min_health 0
+			battle_stats
+			item		farm_grove_winter
+			physical_info	farm_grove_info.CAS
+		}
+	}
+
+	farm_hay_corn
+	{
+		stat_cat indestructable
+		localised_name none	
+		level
+		{
+			min_health 0
+			battle_stats
+			item		farm_hay_corn
+			physical_info	farm_hay_corn_info.CAS
+		}
+	}
+
+	farm_hay_corn_winter
+	{
+		stat_cat indestructable
+		localised_name none	
+		level
+		{
+			min_health 0
+			battle_stats
+			item		farm_hay_corn_winter
+			physical_info	farm_hay_corn_info.CAS
+		}
+	}
+
+	farm_orchard_field
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		farm_orchard_field
+			physical_info	farm_orchard_field_info.CAS
+		}
+	}
+
+	farm_orchard_field_winter
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		farm_orchard_field_winter
+			physical_info	farm_orchard_field_info.CAS
+		}
+	}
+
+	hay_field_long_ploughed
+	{
+		stat_cat indestructable
+		localised_name none
+		follow_terrain	
+		level
+		{
+			min_health 0
+			battle_stats
+			item		hay_field_long_ploughed
+			physical_info	none
+		}
+	}
+
+	hay_field_new_128_128
+	{
+		stat_cat indestructable
+		localised_name none
+		follow_terrain	
+		level
+		{
+			min_health 0
+			battle_stats
+			item		hay_field_new_128_128
+			physical_info	none
+		}
+	}
+
+	hay_field_new_128_64
+	{
+		stat_cat indestructable
+		localised_name none
+		follow_terrain	
+		level
+		{
+			min_health 0
+			battle_stats
+			item		hay_field_new_128_64
+			physical_info	none
+		}
+	}
+
+	hay_field_ruin
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		hay_field_ruin
+			physical_info	hay_field_ruin_info.CAS
+		}
+	}
+
+	hay_field_ruin_winter
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		hay_field_ruin_winter
+			physical_info	hay_field_ruin_info.CAS
+		}
+	}
+
+	hay_field_small_ploughed
+	{
+		stat_cat indestructable
+		localised_name none	
+		follow_terrain
+		level
+		{
+			min_health 0
+			battle_stats
+			item		hay_field_small_ploughed
+			physical_info	none
+		}
+	}
+
+	olive_grove
+	{
+		stat_cat indestructable
+		localised_name none	
+		level
+		{
+			min_health 0
+			battle_stats
+			item		olive_grove
+			physical_info	none
+		}
+	}
+

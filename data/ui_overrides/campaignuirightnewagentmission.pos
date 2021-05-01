@@ -1,0 +1,175 @@
+
+{
+	"frames": [
+
+	],
+	"list": [
+		{
+			"name":"title",
+			"x": 209 ,
+			"y": 10,
+			"anchor": "TL",
+			"align": "TC",
+		},
+
+
+		{
+		"_comment":"The width of the missions_list and agents_list's columns are set in using three defines in code in feral_campaign_map_hd_pieces.h NEW_AGENT_MISSION_LISTS_FIRST_COLUMN_WIDTH, NEW_AGENT_MISSION_LISTS_SECOND_COLUMN_WIDTH, NEW_AGENT_MISSION_LISTS_THIRD_COLUMN_WIDTH"
+		},
+		{
+			"name":"agents_list_heading",
+			"x": 3 ,
+			"y": 60,
+			"size": {
+				"width": 400 ,
+				"height" : 200
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"tags":["agent_list"]
+		},
+		{
+			"name":"agents_list",
+			"x": 3 ,
+			"y": 100,
+			"size": {
+				"width": 400 ,
+				"height" : 145
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"tags":["agent_list"]
+		},
+
+		{
+			"name":"missions_list_heading",
+			"x": 3 ,
+			"y": 250,
+			"size": {
+				"width": 400 ,
+				"height" : 125
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"tags":["mission_list"]
+		},
+
+
+{
+"_comment":"specific agent elements"
+},
+
+		{
+			"name":"heading_string",
+			"x": 18 ,
+			"y": 60,
+			"anchor": "TL",
+			"align": "TL",
+			"font":"verdana_sml",
+			"tags":["current_agent_agent"]
+		},
+		{
+			"name":"portrait",
+			"x": 18 ,
+			"y": 80,
+			"size": {
+				"width"  : 75,
+				"height" : 100
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"tags":["current_agent_agent"]
+		},
+		{
+			"name":"character_info",
+			"x": 109 ,
+			"y": 80,
+			"anchor": "TL",
+			"align": "TL",
+			"font":"verdana_sml",
+			"tags":["current_agent_agent"]
+		},
+		{
+			"name":"character_points",
+			"x": 109 ,
+			"y": 100,
+			"anchor": "TL",
+			"align": "TL",
+			"tags":["current_agent_agent"]
+		},
+
+{
+	"_comment":"current agent mission elements"
+},
+		{
+			"name":"current_agent_mission_title",
+			"x": -18204 ,
+			"y": -1000,
+			"anchor": "TL",
+			"align": "TL",
+			"tags":["current_agent_mission"]
+		},
+
+		{
+			"name":"location_string",
+			"x": 218 ,
+			"y": 60,
+			"anchor": "TL",
+			"align": "TL",
+			"tags":["current_agent_mission"]
+		},
+
+		{
+			"name":"mission_image",
+			"x": 218 ,
+			"y": 80,
+			"size": {
+				"width": 182 ,
+				"height" : 100
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"tags":["current_agent_mission"]
+		},
+
+
+		{
+			"name":"mission_details_table",
+			"x": 218 ,
+			"y": 150,
+			"_comment":"mission details columns width is set in NEW_AGENT_MISSION_SUB_FRAME::on_notify",
+			"anchor": "TL",
+			"align": "TL",
+			"tags":["current_agent_mission"]
+		},
+
+
+		{
+			"name":"assign_mission_button",
+			"x": 209 ,
+			"y": 220,
+
+			"anchor": "TL",
+			"align": "TC",
+			"tags":["current_agent_mission"]
+		},
+
+
+		{
+			"name":"missions_list",
+			"x": 3 ,
+			"y": 290,
+			"size": {
+				"width": 400 ,
+				"height" : 125
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"tags":["current_agent_mission", "mission_list"]
+		},
+
+
+
+
+	]
+}

@@ -1,0 +1,3968 @@
+{
+    "frames": [
+
+        {
+            "comment": "This is the main light-brown background for this menu",
+            "name": "faction_overview_background_frame",
+            "position": {
+                "x": 0 ,
+                "y": -484
+            },
+            "size": {
+                "width": 1118 ,
+                "height": 915
+            },
+            "anchor":"C",
+            "align": "TC",
+            "fill": "decorated",
+            "tags": [
+                "faction_overview",
+                "faction_family",
+                "faction_senate_policies",
+                "faction_senate_standing",
+                "faction_faction",
+                "faction_finance",
+                "faction_diplomacy",
+                "faction_lists",
+                "faction_retinue",
+                "faction_agent_hub"
+            ],
+            "priority":-1
+        },
+
+        {
+            "name": "faction_overview_overlay",
+            "position": {
+                "x": 36 ,
+                "y": 70
+            },
+            "size": {
+                "width": 1747 ,
+                "height": 364
+            },
+            "fill": "invisible",
+            "tag": "faction_overview",
+            "priority":20,
+            "annotation_id": "Rome.Annotations.faction_overview-description"
+        },
+
+        
+        {
+            "name": "faction_policies_standing_frame",
+            "position": {
+                "x": 0 ,
+                "y": 58
+            },
+            "size": {
+                "width": 1070 ,
+                "height": 707
+            },
+            "anchor":"C",
+            "align": "C",
+            "fill": "clear",
+            "tags": ["faction_senate_policies", "faction_senate_standing", "faction_faction", "faction_family", "faction_finance", "faction_lists",],
+            "priority":0,
+        },
+
+
+        {
+            "position": {
+                "x": -873 ,
+                "y": -442
+            },
+            "size": {
+                "width": 855 ,
+                "height": 364
+            },
+            "notch%": true,
+            "anchor":"C",
+            "priority": -1,
+            "fill": "black_curved",
+            "tag": "faction_diplomacy"
+        },
+
+
+        {
+            "position": {
+                "x": 74,
+                "y": -1000
+            },
+            "size": {
+                "width": 618,
+                "height": 100
+            },
+            "collapsed_size": {
+                "width": 618,
+                "height": 40
+            },
+            "priority": 14,
+            "fill": "black_curved",
+            "tag":"tooltip",
+            "fill_right":true
+        }
+    ],
+    "tooltip": {
+        "x": 84,
+        "y": -300,
+        "width": 588,
+        "height": 80,
+        "fill_right":true,
+        "font":"verdana_lrg"
+    },
+    "tooltip_ticker": {
+        "x": 76,
+        "y": -300,
+        "width": 606,
+        "height": 50,
+        "fill_right":true,
+        "font":"verdana_lrg"
+    },
+    "list": [
+        {
+            "name": "own_faction_tab",
+            "annotation_id": "Rome.Annotations.faction_general-own_faction",
+            "x": 0 ,
+            "y": -460,
+            "size": {
+                "width": 80,
+                "height": 80
+            },
+            "bi_override":{
+				"x": -90 ,
+				"y": -460,
+			},
+			"alex_override":{
+				"x": -90 ,
+				"y": -460,
+			},
+            "anchor": "C",
+            "align":"TC",
+            "tags": [
+                "faction_overview",
+                "faction_family",
+                "faction_senate_policies",
+                "faction_senate_standing",
+                "faction_faction",
+                "faction_finance",
+                "faction_diplomacy",
+                "faction_lists",
+                "faction_retinue",
+                "faction_agent_hub"
+            ]
+        },
+        {
+            "name": "overview_tab",
+            "annotation_id": "Rome.Annotations.generic-return",
+            "x": -449 ,
+            "y": -460,
+            "size": {
+                "width": 80,
+                "height": 80
+            },
+            "anchor": "C",
+            "align":"TC",
+            "tags": [
+                "faction_overview",
+                "faction_lists",
+                "faction_senate_offices",
+                "faction_senate_missions",
+                "faction_senate_standing",
+                "faction_senate_policies",
+                "faction_senate_standing",
+                "faction_faction",
+                "faction_finance",
+                "faction_diplomacy",
+                "faction_family",
+                "faction_own_faction",
+                "faction_retinue",
+                "faction_agent_hub"
+            ]
+        },
+        {
+            "name": "senate_tab",
+            "annotation_id": "Rome.Annotations.faction_general-senate",
+            "x": -299 ,
+            "y": -460,
+            "size": {
+                "width": 80,
+                "height": 80
+            },
+            "anchor": "C",
+            "align":"TC",
+            "tags": [
+                "faction_overview",
+                "faction_family",
+                "faction_senate_policies",
+                "faction_senate_standing",
+                "faction_faction",
+                "faction_diplomacy",
+                "faction_lists",
+                "faction_finance",
+                "faction_retinue",
+                "faction_agent_hub"
+            ]
+        },
+        {
+            "name": "diplomacy_tab",
+            "annotation_id": "Rome.Annotations.faction_general-standing",
+            "x": -163 ,
+            "y": 140,
+            "size": {
+                "width": 70,
+                "height": 70
+            },
+            "anchor": "BL",
+            "align":"C",
+            "tags": [
+                "faction_finance",
+                "faction_diplomacy",
+                "faction_family",
+                "faction_own_faction",
+            ]
+        },
+        {
+            "name": "faction_tab",
+            "annotation_id": "Rome.Annotations.faction_general-factions",
+            "x": -149 ,
+            "y": -460,
+            "size": {
+                "width": 80,
+                "height": 80
+            },
+			"bi_override":{
+				"x": -270 ,
+				"y": -460,
+			},
+			"alex_override":{
+				"x": -270 ,
+				"y": -460,
+			},
+            
+            "anchor": "C",
+            "align":"TC",
+            "tags": [
+                "faction_overview",
+                "faction_family",
+                "faction_senate_policies",
+                "faction_senate_standing",
+                "faction_faction",
+                "faction_diplomacy",
+                "faction_lists",
+                "faction_finance",
+                "faction_retinue",
+                "faction_agent_hub"
+            ]
+        },
+        {
+            "name": "finance_tab",
+            "annotation_id": "Rome.Annotations.faction_general-finances",
+            "x": 910 ,
+            "y": 140,
+            "size": {
+                "width": 80,
+                "height": 80
+            },
+            "anchor": "BL",
+            "align":"C",
+            "tags": [
+                "faction_finance",
+                "faction_diplomacy",
+                "faction_family",
+                "faction_own_faction"
+            ]
+        },
+        {
+            "name": "family_tab",
+            "annotation_id": "Rome.Annotations.faction_general-family",
+            "x": 1292 ,
+            "y": 140,
+            "size": {
+                "width": 80,
+                "height": 80
+            },
+            "anchor": "BL",
+            "align":"C",
+            "tags": [
+                "faction_finance",
+                "faction_diplomacy",
+                "faction_family",
+                "faction_own_faction"
+            ]
+        },
+        {
+            "name": "lists_tab",
+            "annotation_id": "Rome.Annotations.faction_general-lists",
+            "x": 149 ,
+            "y": -460,
+            "size": {
+                "width": 80,
+                "height": 80
+            },
+            "bi_override":{
+				"x": 90,
+				"y": -460,
+			},
+			"alex_override":{
+				"x": 90,
+				"y": -460,
+			},
+            "anchor": "C",
+            "align":"TC",
+            "tags": [
+                "faction_overview",
+                "faction_family",
+                "faction_senate_policies",
+                "faction_senate_standing",
+                "faction_faction",
+                "faction_diplomacy",
+                "faction_lists",
+                "faction_finance",
+                "faction_retinue",
+                "faction_agent_hub"
+            ]
+        },
+        {
+            "name": "move_retinue_tab",
+            "annotation_id": "Rome.Annotations.faction_general-own_faction",
+            "x": 299 ,
+            "y": -460,
+            "size": {
+                "width": 80,
+                "height": 80
+            },
+            "bi_override":{
+				"x": 270,
+				"y": -460,
+			},
+			"alex_override":{
+				"x": 270,
+				"y": -460,
+			},
+
+            "anchor": "C",
+            "align":"TC",
+            "tags": [
+                "faction_overview",
+                "faction_family",
+                "faction_senate_policies",
+                "faction_senate_standing",
+                "faction_faction",
+                "faction_diplomacy",
+                "faction_lists",
+                "faction_finance",
+                "faction_retinue",
+                "faction_agent_hub"
+            ]
+        },
+
+        {
+            "name": "agent_hub_tab",
+            "annotation_id": "Rome.Annotations.faction_general-own_faction",
+            "x": 449 ,
+            "y": -460,
+            "size": {
+                "width": 80,
+                "height": 80
+            },
+            "anchor": "C",
+            "align":"TC",
+            "tags": [
+                "faction_overview",
+                "faction_family",
+                "faction_senate_policies",
+                "faction_senate_standing",
+                "faction_faction",
+                "faction_diplomacy",
+                "faction_lists",
+                "faction_finance",
+                "faction_retinue",
+                "faction_agent_hub"
+            ]
+        },
+
+        {
+            "name": "close_button",
+            "x": 539 ,
+            "y": -502,
+            "size": {
+                "width": 82,
+                "height": 76
+            },
+            "tags":["faction_overview",
+                    "faction_family",
+                    "faction_senate_policies",
+                    "faction_senate_standing",
+                    "faction_faction",
+                    "faction_diplomacy",
+                    "faction_lists",
+                    "faction_finance",
+                    "faction_retinue",
+                    "faction_agent_hub"],
+            "anchor": "C",
+            "align":"TC"
+        },
+        {
+            "comment": "Name of the sub-menu. Same for all screens",
+            "name": "title_string",
+            "x": 0 ,
+            "y": -375,
+            "anchor": "C",
+            "align":"TC",
+            "font_colour":"dark_brown",
+            "font":"cinzel"
+        },
+        {
+            "comment": "Divider on the left of title_string",
+            "name": "left_title_divider",
+            "x": -120 ,
+            "y": -365,
+                "size": {
+                    "width": 400 ,
+                    "height": 21
+                },
+            "anchor": "C",
+            "align":"TR"
+        },
+        
+        {
+            "comment": "Divider on the right of title_string",
+            "name": "right_title_divider",
+            "x": 120 ,
+            "y": -365,
+                "size": {
+                    "width": 400 ,
+                    "height": 21
+                },
+            "anchor": "C",
+            "align":"TL"
+        },
+
+{
+    "comment": "Overview tab - Faction Leader START"
+},
+        {
+            "comment": "Faction leader header",
+            "name": "leader_string",
+            "x": -512 ,
+            "y": -315,
+            "size": {
+                "width": 473 ,
+                "height": 40
+            },
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "font":"cinzel"
+        },
+
+        {
+
+            "comment": "Divider on top left. Mirrors overview_tab_divider_3.
+                        If you change this, change 'move_retinue_tab_divider_0' and 'agent_hud_divider_0' as well",
+            "name": "overview_tab_divider_1",
+            "x": -21 ,
+            "y": -288,
+            "size": {
+                "width": 499 ,
+                "height": 21
+            },
+            "anchor": "C",
+            "align" : "TR"
+        },
+
+        {
+            "name": "overview_tab_portrait",
+            "x": -495 ,
+            "y": -240,
+            "size": {
+                "width": 109,
+                "height": 152
+            },
+            "anchor": "C",
+            "align" : "TL"
+        },
+
+        {
+            "name": "leader_portrait_trigger_area",
+            "x": -495 ,
+            "y": -240,
+            "size": {
+                "width": 109,
+                "height": 152
+            },
+            "anchor": "C",
+            "align":"TL",
+            "tags": [
+                "faction_overview1"
+            ]
+        },
+        
+        {
+            "name": "leader_portrait_background",
+            "x": -506 ,
+            "y": -250,
+            "size": {
+                "width": 131,
+                "height": 174
+            },
+            "anchor": "C",
+            "align" : "TL"
+        },
+
+        {
+            "comment": "Faction leader's name",
+            "name": "overview_tab_heading_string",
+            "x": -350 ,
+            "y": -205,
+            "size" : {
+                "width": 350
+            },
+            "font":"cinzel",
+            "font_colour":"dark_brown",
+            "anchor": "C",
+            "align": "BL"
+        },
+
+        {
+            "name": "overview_tab_title_string",
+            "x": -3730 ,
+            "y": -195,
+            "size": {
+                "width": 110,
+                "height": 155
+            },
+            "anchor": "C"
+        },
+
+        {
+            "name": "overview_tab_location_string",
+            "x": -3730 ,
+            "y": -195,
+            "size": {
+                "width": 110,
+                "height": 150
+            },
+            "anchor": "C"
+        },
+
+        {
+            "name": "overview_tab_age_string",
+            "x": -350 ,
+            "y": -188,
+            "size": {
+                "width": 110,
+                "height": 150
+            },
+            "font":"verdana",
+            "font_colour":"dark_brown",
+            "anchor": "C"
+        },
+
+
+        {
+            "name": "overview_tab_character_points",
+            "x": -353 ,
+            "y": -135,
+            "size": {
+                "width": 270,
+                "height": 30
+            },
+            "anchor": "C",
+            "font":"verdana",
+            "font_colour":"dark_brown"
+        },
+{
+    "comment": "Overview tab - Faction Leader END"
+},
+
+
+{
+    "comment": "Overview tab - Faction Overview START"
+},
+        {
+            "name": "faction_overview_heading",
+            "x": 18 ,
+            "y": -315,
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med"
+        },
+
+        {
+
+            "comment": "Divider on top right. Mirrors overview_tab_divider_1.
+                        If you change this, change 'move_retinue_tab_divider_3' and 'agent_hud_divider_1' as well",
+            "name": "overview_tab_divider_3",
+            "x": 11 ,
+            "y": -288,
+                "size": {
+                    "width": 509 ,
+                    "height": 21
+                },
+            "anchor": "C",
+            "align":"TL"
+        },
+
+        {
+            "name": "overview_table",
+            "x": 36 ,
+            "y": -270,
+            "size": {
+                "width": 473 ,
+                "height": 385
+            },
+            "anchor": "C"
+        },
+{
+    "comment": "Overview tab - Faction Overview END"
+},
+
+{
+    "comment": "Overview tab - Victory/Senate/Diplomacy Panels START"
+},
+        {
+            "name": "victory_condition_heading",
+            "x": -512 ,
+            "y": -35,
+            "size": {
+                "width": 473 ,
+                "height": 20
+            },
+            "bi_override":{
+            "x": -512 ,
+            "y": -35
+            },
+            "anchor": "C",
+            "align": "TL",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med"
+        },
+        
+        {
+            "name": "victory_turns_remaining_group",
+            "x": -100 ,
+            "y": -57,
+            "size": {
+                "width": 40 ,
+                "height": 45
+            },
+            "anchor": "C",
+            "font_colour":"dark_brown",
+            "font":"cinzel"
+        },
+
+        {
+
+            "name": "overview_tab_divider_0",
+            "x": -11 ,
+            "y": -10,
+                "size": {
+                    "width": 509 ,
+                    "height": 21
+                },
+            "anchor": "C",
+            "align":"TR"
+        },
+        
+        {
+            "name": "victory_table",
+            "x": -502 ,
+            "y": 2,
+            "size": {
+                "width": 473 ,
+                "height": 125
+            },
+            "align":"TL",
+            "anchor": "C",
+            "notch%": true,
+            "font_colour":"dark_brown",
+            "font":"verdana_sml",
+        },
+
+        {
+            "name": "mission_heading",
+            "x": -512 ,
+            "y": 135,
+            "size": {
+                "width": 364 ,
+                "height": 140
+            },
+            "align":"TL",
+            "anchor": "C",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med",
+        },
+
+        {
+            "name": "mission_turns_remaining_group",
+            "x": -100 ,
+            "y": 115,
+            "size": {
+                "width": 40 ,
+                "height": 45
+            },
+            "bi_override":{
+            "x": -9909 ,
+            },
+            "alex_override":{
+            "x": -9909 ,
+            },
+            "anchor": "C",
+            "font_colour":"dark_brown",
+            "font":"cinzel"
+        },
+
+        {
+            "name": "overview_tab_divider_2",
+            "x": -11 ,
+            "y": 160,
+            "size": {
+                "width": 509 ,
+                "height": 21
+            },
+            "bi_override":{
+            "x": -9909 ,
+            },
+            "alex_override":{
+            "x": -9909 ,
+            },
+            "anchor": "C",
+            "align" : "TR"
+        },
+        
+        {
+            "name": "mission_list",
+            "x": -500 ,
+            "y": 196,
+            "size": {
+                "width": 509 ,
+                "height": 218
+            },
+            "align":"TL",
+            "anchor": "C",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml",
+        },
+
+        {
+            "name": "mission_table",
+            "x": -509 ,
+            "y": 200,
+            "size": {
+                "width": 364 ,
+                "height": 140
+            },
+            "align":"TL",
+            "anchor": "C",
+            "font_colour":"dark_brown",
+            "font":"verdana_med",
+        },
+
+        {
+            "name": "diplomacy_overview_heading",
+            "x": 18 ,
+            "y": 135,
+            "size": {
+                "width": 273,
+                "height": 180
+            },
+            "anchor": "C",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med"
+        },
+
+        {
+            "name": "overview_tab_divider_4",
+            "x": 11 ,
+            "y": 160,
+                "size": {
+                    "width": 509 ,
+                    "height": 21
+                },
+            "anchor": "C",
+            "align":"TL"
+        },
+
+        {
+            "name": "diplomacy_overview_list",
+            "x": 36 ,
+            "y": 180,
+            "size": {
+                "width": 473 ,
+                "height": 230
+            },
+            "anchor": "C",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml",
+            "outside_slider": true,
+            "slider_gap": 5
+        },
+{
+    "comment": "Overview tab - Victory/Senate/Diplomacy Panels END"
+},
+
+
+{
+    "comment": "Senate Tab START"
+},
+
+        {
+            "name": "senate_movie",
+            "x": 1000,
+            "y": 1000,
+            "hidden": true
+        },
+
+        {
+            "name": "senate_policy_tab",
+            "x": -230 ,
+            "y": -330,
+            "size": {
+                "width": 450 ,
+                "height": 80
+            },
+            "anchor": "C",
+            "align":"TC",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med",
+            "annotation_id": "Rome.Annotations.faction_senate-policy",
+        },
+
+        {
+            "name": "senate_standing_tab",
+            "x": 230 ,
+            "y": -330,
+            "size": {
+                "width": 450 ,
+                "height": 80
+            },
+            "anchor": "C",
+            "align":"TC",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med",
+            "annotation_id": "Rome.Annotations.faction_senate-standing",
+        },
+
+        {
+            "name": "senate_divider_0",
+            "x": -18 ,
+            "y": -205,
+            "size": {
+                "width": 509 ,
+                "height": 21
+            },
+            "anchor":"C",
+            "align":"TR",
+            "annotation_id": "Rome.Annotations.faction_senate-policy_buttons"
+        },
+
+        {
+            "name": "senate_divider_1",
+            "x": 18 ,
+            "y": -205,
+            "size": {
+                "width": 509 ,
+                "height": 21
+            },
+            "anchor":"C",
+            "annotation_id": "Rome.Annotations.faction_senate-policy_buttons"
+        },
+
+
+    {
+        "comment": "Senate Policy Tab"
+    },
+
+        {
+            "name": "senate_policy_faction_title",
+            "x": -518 ,
+            "y": -235,
+            "anchor":"C",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med"
+        },
+
+        {
+            "name": "senate_policy_title_string",
+            "x": 27 ,
+            "y": -235,
+            "anchor": "C",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med"
+        },
+
+        {
+            "name": "senate_policy_buttons",
+            "x": -25 ,
+            "y": -176,
+            "size": {
+                "width": 470 ,
+                "height": 560
+            },
+            "anchor":"C",
+            "align":"TR",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml_bold",
+            "annotation_id": "Rome.Annotations.faction_senate-policy_buttons"
+        },
+
+        {
+            "name": "senate_policy_faction_standing",
+            "x": 36 ,
+            "y": -175,
+            "size": {
+                "width": 480 ,
+                "height": 530
+            },
+            "anchor":"C",
+            "font_colour":"dark_brown",
+            "annotation_id": "Rome.Annotations.faction_senate-policies"
+        },
+
+    {
+        "comment": "Senate Floor Tab"
+    },
+
+        {
+            "name": "standing_title",
+            "x": -518 ,
+            "y": -235,
+            "anchor": "C",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med"
+        },
+
+        {
+            "name": "senate_support_table",
+            "x": -405 ,
+            "y": 240,
+            "size": {
+                "width": 0,
+                "height": 420
+            },
+            "anchor": "C",
+            "align": "BC"
+        },
+
+        {
+            "name": "popular_support_table",
+            "x": -150 ,
+            "y": 240,
+            "size": {
+                "width": 0,
+                "height": 420
+            },
+            "anchor": "C",
+            "align": "BC"
+        },
+
+        {
+            "name": "the_senate_string",
+            "x": -508 ,
+            "y": 245,
+            "anchor": "C",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml_bold"
+        },
+    
+        {
+            "name": "the_people_string",
+            "x": -249 ,
+            "y": 245,
+            "anchor": "C",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml_bold"
+        },
+
+        {
+            "name": "senate_standing_string",
+            "x": -508 ,
+            "y": 270,
+            "size": {
+                "width": 220 ,
+                "height": 400
+            },
+            "notch%": true,
+            "align": "TL",
+            "anchor": "C",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml"
+        },
+        {
+            "name": "popular_standing_string",
+            "x": -249 ,
+            "y": 270,
+            "size": {
+                "width": 220 ,
+                "height": 400
+            },
+            "notch%": true,
+            "align": "TL",
+            "anchor": "C",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml"
+        },
+        
+        {
+            "name": "standing_vertical_divider",
+            "x": -260 ,
+            "y": -160,
+            "size": {
+                "width": 21,
+                "height": 540
+            },
+            "anchor": "C",
+            "font":"verdana_med"
+        },
+        
+
+        {
+            "name": "senate_offices_title",
+            "x": 27 ,
+            "y": -235,
+            "anchor":"C",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med"
+        },
+
+        {
+            "name": "senate_offices_list",
+            "x": 36 ,
+            "y": -185,
+            "size": {
+                "width": 473 ,
+                "height": 585
+            },
+            "anchor":"C",
+            "font":"verdana_sml",
+            "font_colour":"dark_brown",
+            "outside_slider": true,
+            "slider_gap": 5,
+            "annotation_id": "Rome.Annotations.faction_senate-offices"
+        },
+
+        {
+            "_comment":"moved out of the way",
+            "name": "senate_offices_list_heading",
+            "x": 36 ,
+            "y": -2200,
+            "size": {
+                "width": 509 ,
+                "height": 90
+            },
+            "anchor":"TC",
+            "font":"verdana_med"
+        },
+
+        
+        {
+            "name": "senate_offices_empty_offices_string",
+            "x": 254 ,
+            "y": -155,
+            "anchor":"C",
+            "align":"C",
+            "font_colour":"dark_brown",
+            "font":"verdana_med"
+        },
+
+{
+    "comment": "Senate Tab - Senate Policy END"
+},
+
+{
+    "comment": "Factions Tab START"
+},
+
+        {
+            "name": "faction_factions_faction_title",
+            "x": -505 ,
+            "y": -235,
+            "align":"TL",
+            "anchor": "C",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med"
+        },
+
+        {
+            "name": "ranking_title",
+            "x": -233 ,
+            "y": -235,
+            "align":"TL",
+            "anchor": "C",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med"
+        },
+		
+		{
+            "name": "diplomatic_standing_legend_icon",
+            "x": -140 ,
+            "y": -230,
+            "size": {
+                "width": 26,
+                "height": 26
+            },
+            "align":"TL",
+            "anchor": "C",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med"
+        },
+
+        {
+            "name": "diplomatic_standing_title",
+            "x": -112 ,
+            "y": -230,
+            "align":"TL",
+            "anchor": "C",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med"
+        },
+        
+        {
+            "name": "diplomatic_standing_faction_logo",
+            "x": -215 ,
+            "y": -240,
+            "size": {
+                "width": 76,
+                "height": 76
+            },
+            "align":"TL",
+            "anchor": "C",
+            "priority": "1",
+        },
+
+        {
+            "name": "faction_factions_divider_0",
+            "x": -263 ,
+            "y": -205,
+            "size": {
+                "width": 250 ,
+                "height": 21
+            },
+            "anchor":"C",
+            "align":"TR"
+        },
+
+        {
+            "name": "faction_factions_divider_1",
+            "x": -240 ,
+            "y": -205,
+            "size": {
+                "width": 760 ,
+                "height": 21
+            },
+            "anchor":"C",
+            "align":"TL"
+        },
+
+        {
+            "name": "faction_info_tab",
+            "x": -230 ,
+            "y": -330,
+            "size": {
+                "width": 450 ,
+                "height": 80
+            },
+            "anchor": "C",
+            "align":"TC",
+            "annotation_id": "Rome.Annotations.faction_ranking-ai",
+        },
+
+        {
+            "name": "faction_ranking_tab",
+            "x": 230 ,
+            "y": -330,
+            "size": {
+                "width": 450 ,
+                "height": 80
+            },
+            "anchor": "C",
+            "align":"TC",
+            "annotation_id": "Rome.Annotations.faction_ranking-rank"
+        },
+
+        {
+            "name": "ranking_buttons",
+            "x": -495 ,
+            "y": -175,
+            "size": {
+                "width": 210 ,
+                "height": 465
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+
+        {
+            "name": "ranking_type_cycle",
+            "x": -185 ,
+            "y": -165,
+            "size" : {
+                "width": 240 ,
+            },
+            "anchor": "C",
+            "font_colour": "dark_brown",
+            "font": "verdana_sml"
+        },
+
+        {
+            "name": "ranking_faction_cycle",
+            "x": 252 ,
+            "y": -165,
+            "size" : {
+                "width": 240 ,
+            },
+            "anchor": "C",
+            "font_colour": "dark_brown",
+            "font": "verdana_sml"
+        },
+
+        {
+            "name": "ranking_graph",
+            "x": -180 ,
+            "y": -110,
+            "size": {
+                "width": 650 ,
+                "height": 330
+            },
+            "font_colour": "dark_brown",
+            "anchor": "C",
+            "annotation_id": "Rome.Annotations.faction_ranking-graph"
+        },
+
+        {
+            "name": "ranking_filter_string",
+            "x": -2266 ,
+            "y": -32,
+            "anchor": "C",
+            "align":"C",
+            "font":"verdana_lrg"
+        },
+
+        {
+            "comment": "moved out of the way",
+            "name": "ranking_cycle_frame",
+            "x": 280,
+            "y": -200,
+            "anchor": "TL",
+            "annotation_id": "Rome.Annotations.faction_ranking-select"
+        },
+
+        {
+            "name": "faction_button_group",
+            "x": -495 ,
+            "y": -175,
+            "size": {
+                "width": 210 ,
+                "height": 465
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+
+        {
+            "name": "diplomatic_standing_list",
+            "x": -200 ,
+            "y": 100,
+            "size": {
+                "width": 710 ,
+                "height": 310
+            },
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml_bold"
+        },
+        
+        
+        {
+            "name": "diplomatic_standing_bars_list",
+            "x": -200,
+            "y": -150,
+            "size": {
+                "width": 315,
+                "height": 160
+            },
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml_bold"
+        },
+        
+        {
+            "name": "diplomatic_standing_priorities_string",
+            "x": -200,
+            "y": 15,
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+        },
+        
+        {
+            "name": "diplomatic_standing_faction_treasury_string",
+            "x": -200,
+            "y": 60,
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+        },
+        
+        
+        {
+            "name": "diplomacy_map",
+            "x": 135,
+            "y": -153,
+            "size": {
+                "width": 368,
+                "height": 230
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+
+        {
+            "name": "diplomacy_map_frame",
+            "x": 122,
+            "y": -166,
+            "size": {
+                "width": 394,
+                "height": 258
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+        
+
+{
+    "comment": "Factions Tab END"
+},
+
+{
+    "comment": "Finance & Family Tab START"
+},
+
+        {
+            "name": "family_tree_tab",
+            "x": 230 ,
+            "y": -330,
+            "size": {
+                "width": 450 ,
+                "height": 80
+            },
+            "anchor": "C",
+            "align":"TC",
+            "annotation_id": "Rome.Annotations.faction_ranking-ai",
+        },
+        
+        {
+            "name": "financial_overview_tab",
+            "x": -230 ,
+            "y": -330,
+            "size": {
+                "width": 450 ,
+                "height": 80
+            },
+            "anchor": "C",
+            "align":"TC",
+            "annotation_id": "Rome.Annotations.faction_ranking-rank"
+        },
+
+        {
+            "name": "family_members_list_heading",
+            "x": -520 ,
+            "y": -232,
+            "size": {
+                "width": 590 ,
+                "height": 500
+            },
+            "font_colour":"dark_brown",
+            "font":"verdana_sml_bold",
+            "anchor":"C",
+            "align": "TL"
+        },
+
+        {
+            "name": "family_tree_divider",
+            "x": -518 ,
+            "y": -195,
+            "size": {
+                "width": 628 ,
+                "height": 25
+            },
+            "font_colour":"dark_brown",
+            "anchor":"C",
+            "align": "TL"
+        },
+        
+        {
+            "name": "family_members_list",
+            "x": -510 ,
+            "y": -168,
+            "size": {
+                "width": 590 ,
+                "height": 550
+            },
+            "anchor":"C",
+            "align": "TL",
+            "outside_slider": true,
+            "slider_gap": 10
+        },
+
+        {
+            "name": "family_tree_button",
+            "x": 462 ,
+            "y": -280,
+            "size": {
+                "width": 60 ,
+                "height": 60
+            },
+            "anchor":"C",
+            "align": "TL"
+        },
+
+        {
+            "name": "family_title",
+            "x": 115 ,
+            "y": -225,
+            "anchor": "C",
+            "align": "TL",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med"
+        },
+
+
+        {
+            "name": "family_tree_back_frame",
+            "x": 318 ,
+            "y": -193,
+            "size": {
+                "width": 412 ,
+                "height": 586
+            },
+            "anchor":"C",
+            "align": "TC"
+        },
+
+        {
+            "name": "family_tree_trigger_area",
+            "x": 318 ,
+            "y": -184,
+            "size": {
+                "width": 396 ,
+                "height": 560
+            },
+            "priority":10,
+            "anchor":"C",
+            "align": "TC"
+        },
+        {
+            "name": "family_info",
+            "x": 328,
+            "y": -180,
+            "size": {
+                "width": 380 ,
+                "height": 558
+            },
+            "anchor":"C",
+            "align": "TC"
+        },
+
+        {
+            "name": "family_current_character_frame",
+            "x": -551 ,
+            "y": -95,
+            "size" : {
+                "width": 368 ,
+                "height" : 495
+            },
+            "anchor": "C",
+            "align": "TR",
+            "priority": 1
+        },
+
+        {
+            "name": "financial_overview_list",
+            "x": 14 ,
+            "y": -228,
+            "size": {
+                "width": 1018 ,
+                "height": 510
+            },
+            "font_colour":"dark_brown",
+            "outside_slider": true,
+            "slider_gap": 10,
+            "anchor":"C",
+            "align": "TC"
+        },
+
+        {
+            "name": "financial_overview_divider",
+            "x": 0 ,
+            "y": 278,
+            "size": {
+                "width": 1030 ,
+                "height": 21
+            },
+            "anchor":"C",
+            "align": "TC"
+        },
+        
+        
+        {
+            "name": "approximation_string",
+            "x": 0 ,
+            "y": -255,
+            "anchor":"C",
+            "align": "TC",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med"
+        },
+
+
+        {
+            "name": "financial_management_title",
+            "x": -509 ,
+            "y": 300,
+			"size": {
+                "width": 42,
+                "height": 42
+            },
+            "anchor":"C",
+            "align": "TL",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med"
+        },
+
+        {
+            "name": "faction_automanage_all",
+            "x": -115 ,
+            "y": 350,
+            "size": {
+                "width": 32,
+                "height": 32
+            },
+            "anchor":"C",
+            "align": "TL"
+        },
+		{
+            "name": "faction_automanage_all_string",
+            "x": -70 ,
+            "y": 355,
+            "size": {
+                "width": 200,
+                "height": 42
+            },
+            "font_colour":"dark_brown",
+            "font":"verdana_sml",
+            "anchor":"C",
+            "align": "TL"
+        },
+
+
+        {
+            "name": "faction_automanage_taxes",
+            "x": -503 ,
+            "y": 350,
+            "size": {
+                "width": 32,
+                "height": 32
+            },
+            "anchor":"C",
+            "align": "TL"
+        },
+		{
+            "name": "faction_automanage_taxes_string",
+            "x": -458 ,
+            "y": 355,
+            "size": {
+                "width": 200,
+                "height": 42
+            },
+            "font_colour":"dark_brown",
+            "font":"verdana_sml",
+            "anchor":"C",
+            "align": "TL"
+        },
+        {
+            "name": "financial_spend_policy_title",
+            "x": 250 ,
+            "y": 330,
+            "anchor":"C",
+            "align": "TL",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml",
+        },
+        {
+            "name": "faction_ai_slider",
+            "x": 250 ,
+            "y": 352,
+            "hitbox" : {
+                "left": -20,
+                "top": -40,
+                "right": 20,
+                "bot": 20
+            },
+            "_comment":"Dont try to set size here, for some reason it messes up the width when we click the automanage taxes/all checkboxes",
+            "anchor":"C",
+            "align": "TL"
+        },
+
+    
+{
+    "comment": "Finance & Family Tab END"
+},
+
+
+{
+    "comment": "Lists Tab START"
+},
+
+        {
+            "name": "lists_current_character_frame",
+            "x": -551 ,
+            "y": -95,
+            "size" : {
+                "width": 368 ,
+                "height" : 495
+            },
+            "anchor": "C",
+            "align": "TR",
+            "priority": 1
+        },
+
+{
+    "_comment":"Lists elements for settlement from now on"
+},
+        {
+            "name": "lists_settlements_tab",
+            "x": -330 ,
+            "y": -330,
+            "size": {
+                "width": 320 ,
+                "height": 80
+            },
+            "anchor": "C",
+            "align":"TC",
+            "annotation_id": "Rome.Annotations.faction_senate-policy"
+        },
+
+        {
+            "name": "settlement_list_top_frame_behind_checkboxes",
+            "x": -618 ,
+            "y": -2302,
+            "size": {
+                "width": 582 ,
+                "height": 60
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+
+        {
+            "name": "settlement_list_list_heading",
+            "x": -518 ,
+            "y": -232,
+            "size": {
+                "width": 473 ,
+                "height": 50
+            },
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml_bold"
+        },
+
+        {
+            "name": "settlement_list_divider",
+            "x": -520 ,
+            "y": -194,
+            "size": {
+                "width": 505 ,
+                "height": 21
+            },
+            "anchor": "C",
+            "align":"TL",
+            "font":"verdana_med"
+        },
+
+        {
+            "name": "settlement_list_list",
+            "x": -510 ,
+            "y": -170,
+            "size": {
+                "width": 480 ,
+                "height": 540
+            },
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "outside_slider": true,
+            "slider_gap": 10
+        },
+
+        {
+            "name": "settlement_info_group_title",
+            "x": 8 ,
+            "y": -220,
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med"
+        },
+        
+        {
+            "name": "settlement_info_disaster_icons",
+            "x": 455 ,
+            "y": -260,
+            "anchor": "C",
+            "align":"TR",
+            "font":"verdana_med"
+        },
+        
+        {
+            "name": "settlement_info_group_title_divider",
+            "x": 0 ,
+            "y": -194,
+            "size": {
+                "width": 525 ,
+                "height": 21
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+
+        {
+            "name": "settlement_info_group_heading_string",
+            "x": 100 ,
+            "y": -130,
+            "size": {
+                "width": 250,
+            },
+            "anchor": "C",
+            "align":"TL",
+            "font":"verdana_sml"
+        },
+
+        {
+            "name" : "settlement_info_group_portrait_frame",
+            "x": 51,
+            "y": -114,
+            "size": {
+                "width":  77,
+                "height": 102
+            },
+            "anchor": "C",
+            "align":"C"
+        },
+        {
+            "name": "settlement_info_group_portrait",
+            "x": 51 ,
+            "y": -116,
+            "size": {
+                "width": 57,
+                "height": 80
+            },
+            "anchor": "C",
+            "align":"C"
+        },
+        {
+            "name" : "settlement_info_group_map_frame",
+            "x": 409 ,
+            "y": -113,
+            "size": {
+                "width":  214,
+                "height": 126
+            },
+            "anchor": "C",
+            "align":"C"
+        },
+        {
+            "name" : "settlement_info_group_map",
+            "x": 409 ,
+            "y": -115,
+            "size": {
+                "width":  188,
+                "height": 100
+            },
+            "anchor": "C",
+            "align":"C"
+        },
+
+        {
+            "name": "settlement_info_group_title_string",
+            "x": 100 ,
+            "y": -150,
+            "anchor": "C",
+            "align":"TL",
+            "font":"verdana_sml"
+        },
+
+        {
+            "name": "settlement_info_group_location_string",
+            "x": 100 ,
+            "y": -110,
+            "anchor": "C",
+            "align":"TL",
+            "font":"verdana_sml"
+        },
+
+        {
+            "name": "settlement_info_group_age_string",
+            "x": 100 ,
+            "y": -4145,
+            "anchor": "C",
+            "align":"TL",
+            "font":"verdana_sml"
+        },
+
+        {
+            "name": "settlement_info_group_character_points",
+            "x": 100 ,
+            "y": -90,
+            "size": {
+                "width": 140,
+                "height": 20
+            },
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml"
+        },
+
+        {
+            "name": "settlement_info_groups_settlement_next_level_icon_text",
+            "x": 215 ,
+            "y": 13,
+            "bi_override":{
+                "x": 184 ,
+                "y": 13,
+            },
+            "anchor": "C",
+            "align":"TC",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml"
+        },
+
+        {
+            "name": "settlement_info_groups_tax_rate_icon_text",
+            "x": 385 ,
+            "y": 13,
+            "bi_override":{
+                "x": 335 ,
+                "y": 13,
+            },
+            "anchor": "C",
+            "align":"TC",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml"
+        },
+
+        {
+            "name": "settlement_info_groups_loyalty_icon_text",
+            "x": 300 ,
+            "y": 13,
+            "bi_override":{
+                "x": 260 ,
+                "y": 13,
+            },
+            "anchor": "C",
+            "align":"TC",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml"
+        },
+
+        {
+            "name": "settlement_info_groups_pop_growth_icon_text",
+            "x": 130 ,
+            "y": 13,
+            "bi_override":{
+                "x": 109 ,
+                "y": 13,
+            },
+            "anchor": "C",
+            "align":"TC",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml"
+        },
+
+        {
+            "name": "settlement_info_groups_population_icon_text",
+            "x": 45 ,
+            "y": 13,
+            "bi_override":{
+                "x": 33 ,
+                "y": 13,
+            },
+            "anchor": "C",
+            "align":"TC",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml"
+        },
+
+        {
+            "name": "settlement_info_groups_income_icon_text",
+            "x": 470 ,
+            "y": 13,
+            "bi_override":{
+                "x": 410 ,
+                "y": 13,
+            },
+            "anchor": "C",
+            "align":"TC",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml"
+        },
+        
+        {
+            "name": "settlement_info_groups_religion_icon_text",
+            "x": 470 ,
+            "y": 13,
+            "bi_override":{
+                "x": 484 ,
+                "y": 13,
+            },
+            "anchor": "C",
+            "align":"TC",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml"
+        },
+
+        {
+            "name": "settlement_info_groups_loyalty_icon",
+            "x": 300 ,
+            "y": -36,
+            "bi_override":{
+                "x": 260 ,
+                "y": -36,
+            },
+            "size": {
+                "width": 52,
+                "height": 52
+            },
+            "anchor": "C",
+            "align":"TC"
+        },
+
+        {
+            "name": "settlement_info_groups_pop_growth_icon",
+            "x": 130 ,
+            "y": -36,
+            "bi_override":{
+                "x": 110 ,
+                "y": -36,
+            },
+            "size": {
+                "width": 52,
+                "height": 52
+            },
+            "anchor": "C",
+            "align":"TC"
+        },
+
+        {
+            "name": "settlement_info_groups_population_icon",
+            "x": 45 ,
+            "y": -36,
+            "bi_override":{
+                "x": 35 ,
+                "y": -36,
+            },
+            "size": {
+                "width": 52,
+                "height": 52
+            },
+            "anchor": "C",
+            "align":"TC"
+        },
+
+        {
+            "name": "settlement_info_groups_tax_rate_icon",
+            "x": 385 ,
+            "y": -36,
+            "bi_override":{
+                "x": 335 ,
+                "y": -36,
+            },
+            "size": {
+                "width": 52,
+                "height": 52
+            },
+            "anchor": "C",
+            "align":"TC"
+        },
+
+        {
+            "name": "settlement_info_groups_income_icon",
+            "x": 470 ,
+            "y": -36,
+            "bi_override":{
+                "x": 410 ,
+                "y": -36,
+            },
+            "size": {
+                "width": 52,
+                "height": 52
+            },
+            "anchor": "C",
+            "align":"TC"
+        },
+
+        {
+            "name": "settlement_info_groups_settlement_next_level_icon",
+            "x": 215 ,
+            "y": -36,
+            "bi_override":{
+                "x": 185 ,
+                "y": -36,
+            },
+            "size": {
+                "width": 52,
+                "height": 52
+            },
+            "anchor": "C",
+            "align":"TC"
+        },
+        
+        {
+            "name": "settlement_info_groups_religion_icon",
+            "x": 490 ,
+            "y": -36,
+            "bi_override":{
+                "x": 485 ,
+                "y": -36,
+            },
+            "size": {
+                "width": 52,
+                "height": 52
+            },
+            "anchor": "C",
+            "align":"TC"
+        },
+
+        {
+            "name": "settlement_info_group_settlement_info_groups_group",
+            "x": 20000 ,
+            "y": -55,
+            "size": {
+                "width": 540
+            },
+            "bi_override": {
+                "size": {
+                    "width": 540,
+                },
+            },
+            "font":"verdana_sml",
+            "font_colour":"dark_brown",
+            "anchor": "C",
+            "align":"TL"
+        },
+
+
+        {
+            "name": "settlement_info_group_settlement_stats_list",
+            "x": 5 ,
+            "y": 40,
+            "size": {
+                "width": 490 ,
+                "height": 230
+            },
+            "anchor": "C",
+            "align":"TL",
+            "outside_slider": true,
+            "slider_gap": 8,
+        },
+
+        {
+            "name": "settlement_info_group_manage_divider",
+            "x": 0 ,
+            "y": 265,
+            "size": {
+                "width": 525 ,
+                "height": 21
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+
+        {
+            "name": "settlement_info_group_manage_settlement_title",
+            "x": 9 ,
+            "y": 281,
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med"
+        },
+
+
+        {
+            "name": "settlement_info_group_automanage_check",
+            "x": 5 ,
+            "y": 305,
+            "size":
+            {
+                "width": 40,
+                "height": 40
+            },
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml"
+        },
+
+        {
+            "name": "settlement_info_group_automanage_construction_check",
+            "x": 180 ,
+            "y": 305,
+            "size":
+            {
+                "width": 40,
+                "height": 40
+            },
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml"
+        },
+
+
+        {
+            "name": "settlement_info_group_automanage_recruitment_check",
+            "x": 355 ,
+            "y": 305,
+            "size":
+            {
+                "width": 40,
+                "height": 40
+            },
+            "anchor": "C",
+            "align": "TL",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml"
+        },
+
+        {
+            "name": "settlement_info_group_tax_level_list",
+            "x": 10 ,
+            "y": 355,
+            "size": {
+                "width": 182 ,
+                "height" : 50
+            },
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml"
+        },
+
+        {
+            "name": "settlement_info_group_governor_policy_list",
+            "x": 10 ,
+            "y": 355,
+            "size": {
+                "width": 182 ,
+                "height" : 50
+                },
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml"
+        },
+        {
+            "name": "settlement_info_group_games_policy_list",
+            "x": 190 ,
+            "y": 355,
+            "size": {
+                "width": 182 ,
+                "height" : 50
+                },
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml"
+        },
+
+
+        {
+            "name": "settlement_info_group_manage_settlement_backframe",
+            "x": -18204 ,
+            "y": -1000,
+        },
+        {
+            "name": "settlement_info_group_unit_counter",
+            "x": -18204 ,
+            "y": -1000,
+        },
+        {
+            "name": "settlement_info_group_income_string",
+            "x": -18204 ,
+            "y": -1000,
+        },
+        {
+            "name": "settlement_info_group_income_icon",
+            "x": -18204 ,
+            "y": -1000,
+        },
+        {
+            "name": "settlement_info_group_enemy_faction_logo",
+            "x": -18204 ,
+            "y": -1000,
+        },
+        {
+            "name": "settlement_info_group_settlement_loyalty_icon",
+            "x": -18204 ,
+            "y": -1000,
+        },
+
+        {
+            "name": "settlement_info_group_settlement_population_growth_icon",
+            "x": -18204 ,
+            "y": -1000,
+        },
+        {
+            "name": "settlement_info_group_settlement_is_training_icon",
+            "x": -18204 ,
+            "y": -1000,
+        },
+        {
+            "name": "settlement_info_group_settlement_is_building_icon",
+            "x": -18204 ,
+            "y": -1000,
+        },
+        
+        {
+            "name": "settlement_info_group_settlement_is_automanaging_icon",
+            "x": -18204 ,
+            "y": -1000,
+        },
+
+        {
+            "name": "settlement_info_group_zoom_to_btn",
+            "x": 374 ,
+            "y": 346,
+            "size": {
+                "width": 48,
+                "height": 48
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+
+        {
+            "name": "settlement_info_group_view_settlement_btn",
+            "x": 424 ,
+            "y": 346,
+            "size": {
+                "width": 48,
+                "height": 48
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+
+        {
+            "name": "settlement_info_group_make_capital_btn",
+            "x": 474 ,
+            "y": 346,
+            "size": {
+                "width": 48,
+                "height": 48
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+
+{
+    "_comment":"Lists elements for generals from now on"
+},
+
+        {
+            "name": "lists_military_tab",
+            "x": 0 ,
+            "y": -330,
+            "size": {
+                "width": 320 ,
+                "height": 80
+            },
+            "anchor": "C",
+            "align":"TC",
+            "annotation_id": "Rome.Annotations.faction_senate-policy"
+        },
+        {
+            "name": "military_list_top_frame_behind_checkboxes",
+            "x": -618 ,
+            "y": -230,
+            "size": {
+                "width": 582 ,
+                "height": 60
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+
+        {
+            "name": "military_list_list_heading",
+            "x": -518 ,
+            "y": -232,
+            "size": {
+                "width": 473 ,
+                "height": 50
+            },
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml_bold"
+        },
+        {
+            "name": "military_list_divider",
+            "x": -520 ,
+            "y": -194,
+            "size": {
+                "width": 505 ,
+                "height": 21
+            },
+            "anchor": "C",
+            "align":"TL",
+        },
+        {
+            "name": "military_list_list",
+            "x": -510 ,
+            "y": -170,
+            "size": {
+                "width": 480 ,
+                "height": 540
+            },
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "outside_slider": true,
+            "slider_gap": 10
+        },
+
+
+        {
+            "name": "character_info_group_title",
+            "x": 8 ,
+            "y": -195,
+            "size": {
+                "width": 300,
+            },
+            "anchor": "C",
+            "align":"BL",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med"
+        },
+
+        {
+            "name": "character_info_group_character_points",
+            "x": 515 ,
+            "y": -225,
+            "size": {
+                "width": 210,
+                "height": 34
+            },
+            "anchor": "C",
+            "align":"TR",
+            "font_colour": "dark_brown",
+            "font":"cinzel_med"
+        },
+
+        {
+            "name": "character_info_group_title_divider",
+            "x": 0 ,
+            "y": -194,
+            "size": {
+                "width": 525 ,
+                "height": 21
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+
+        {
+            "name": "character_info_group_heading_string",
+            "x": 91 ,
+            "y": -170,
+            "size": {
+                "width": 90,
+                "height": 120
+            },
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml"
+        },
+        {
+            "name" : "character_info_group_portrait_frame",
+            "x": 83 ,
+            "y": -74,
+            "size": {
+                "width": 130,
+                "height": 172
+            },
+            "anchor": "C",
+            "align":"C"
+        },
+        {
+            "name": "character_info_group_portrait",
+            "x": 84 ,
+            "y": -75,
+            "size": {
+                "width": 108,
+                "height": 150
+            },
+            "anchor": "C",
+            "align":"C"
+        },
+        
+        {
+            "name": "automanage_merchant_checkbox",
+            "x": 20 ,
+            "y": 2,
+            "size" : {
+                "width"  : 34,
+                "height" : 34
+            },
+            "anchor": "C",
+            "align": "TL",
+        },
+
+        {
+            "name": "character_info_group_age_string",
+            "x": 0 ,
+            "y": -5195,
+            "size": {
+                "width": 50,
+                "height": 70
+            },
+            "anchor": "C",
+            "align":"TL",
+            "font":"verdana_med"
+        },
+
+        {
+            "name": "character_info_group_location_string",
+            "x": 15 ,
+            "y": -180,
+            "size": {
+                "width": 50,
+                "height": 70
+            },
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml"
+        },
+
+        {
+            "name": "character_info_group_title_string",
+            "x": 0 ,
+            "y": -5195,
+            "size": {
+                "width": 50,
+                "height": 70
+            },
+            "anchor": "C",
+            "align":"TL",
+            "font":"verdana_med"
+        },
+        
+        {
+            "name" : "character_info_group_map_frame",
+            "x": 354 ,
+            "y": -74,
+            "size": {
+                "width":  316,
+                "height": 174
+            },
+            "anchor": "C",
+            "align":"C"
+        },
+        
+        {
+            "name" : "character_info_group_map",
+            "x": 354 ,
+            "y": -75,
+            "size": {
+                "width":  292,
+                "height": 150
+            },
+            "anchor": "C",
+            "align":"C"
+        },
+        {
+            "name" : "character_info_group_trade_right_granded_icon",
+            "x": 515,
+            "y": 220,
+            "size": {
+                "width":  30,
+                "height": 30
+            },
+            "anchor": "C",
+            "align":"TR"
+        },
+        {
+            "name" : "character_info_group_traded_resources_group",
+            "x": 16 ,
+            "y": 273,
+            "anchor": "C",
+            "align":"TL"
+        },
+        {
+            "name" : "character_info_group_profit_string",
+            "x": 515,
+            "y": 245,
+            "anchor": "C",
+            "align":"TR",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml_bold"
+        },
+        
+        
+
+        {
+            "name" : "character_info_group_toggle_map_retrain_icons_button",
+            "x": 450 ,
+            "y": -32,
+            "size": {
+                "width":  60,
+                "height": 60
+            },
+            "anchor": "C",
+            "align":"TR",
+        },
+
+        {
+            "name" : "character_info_group_zoom_to_btn",
+            "x": 520 ,
+            "y": -32,
+            "size": {
+                "width":  60,
+                "height": 60
+            },
+            "anchor": "C",
+            "align":"TR",
+        },
+        
+        {
+            "name" : "character_info_group_open_agent_hub_btn",
+            "x": 450 ,
+            "y": -32,
+            "size": {
+                "width":  60,
+                "height": 60
+            },
+            "anchor": "C",
+            "align":"TR",
+        },
+        
+        {
+            "name" : "character_info_group_cancel_agent_mission_btn",
+            "x": 264 ,
+            "y": 320,
+			"size": {
+				"width" : 280,
+				"height" : 70
+			},
+			"font":"verdana_med",
+            "anchor": "C",
+            "align":"TC"
+        },
+
+        {
+            "name": "character_info_group_title_2_divider",
+            "x": 10 ,
+            "y": 28,
+            "size": {
+                "width": 505 ,
+                "height": 10
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+
+        {
+            "name": "character_info_group_title_2",
+            "x": 10 ,
+            "y": 48,
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med"
+        },
+
+        {
+            "name": "character_info_group_unit_counter",
+            "x": 455 ,
+            "y": 40,
+            "size": {
+                "width": 455 ,
+                "height": 90
+            },
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "font":"verdana_med"
+        },
+
+        {
+            "name": "character_info_group_card_group",
+            "x": 10 ,
+            "y": 75,
+            "size": {
+                "width": 500 ,
+                "height": 285
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+
+        {
+            "name": "character_info_group_retinue_and_traits_list",
+            "x": 0 ,
+            "y": 50000,
+            "size": {
+                "width": 618 ,
+                "height": 245
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+
+
+
+
+{
+    "_comment":"Lists elements for agents from now on"
+},
+
+        {
+            "name": "lists_agents_tab",
+            "x": 330 ,
+            "y": -330,
+            "size": {
+                "width": 320 ,
+                "height": 80
+            },
+            "anchor": "C",
+            "align":"TC",
+            "annotation_id": "Rome.Annotations.faction_senate-policy"
+        },
+
+        {
+            "name": "agent_list_top_frame_behind_checkboxes",
+            "x": -618 ,
+            "y": -230,
+            "size": {
+                "width": 582 ,
+                "height": 60
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+
+        {
+            "name": "agent_list_list_heading",
+            "x": -518 ,
+            "y": -232,
+            "size": {
+                "width": 473 ,
+                "height": 50
+            },
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml_bold"
+        },
+        {
+            "name": "agent_list_divider",
+            "x": -520 ,
+            "y": -194,
+            "size": {
+                "width": 505 ,
+                "height": 21
+            },
+            "anchor": "C",
+            "align":"TL",
+        },
+        {
+            "name": "agent_list_list",
+            "x": -510 ,
+            "y": -170,
+            "size": {
+                "width": 480 ,
+                "height": 540
+            },
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "outside_slider": true,
+            "slider_gap": 10
+        },
+
+
+        {
+            "name": "character_info_group_mission_image_frame",
+            "x": 267 ,
+            "y": 137,
+            "size": {
+                "width": 323,
+                "height": 161
+            },
+            "anchor": "C",
+            "align":"C"
+        },
+        {
+            "name": "character_info_group_mission_image",
+            "x": 269,
+            "y": 136,
+            "size": {
+                "width": 300,
+                "height": 133
+            },
+            "anchor": "C",
+            "align":"C"
+        },
+
+        {
+            "name": "character_info_group_mission_target_logo",
+            "x": 349 ,
+            "y": 130,
+            "size": {
+                "width": 87,
+                "height": 87
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+
+
+        {
+            "name": "character_info_group_turns_remaining_group",
+            "x": 393,
+            "y": 176,
+            "size": {
+                "width": 41,
+                "height": 48
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+
+        {
+            "name": "character_info_group_mission_desc_title",
+            "x": 16 ,
+            "y": 217,
+            "size": {
+                "width": 50,
+                "height": 75
+            },
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med"
+        },
+
+        {
+            "name": "character_info_group_mission_desc",
+            "x": 16 ,
+            "y": 245,
+            "size": {
+                "width": 50,
+                "height": 75
+            },
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "font":"verdana_sml"
+        },
+
+{
+    "comment": "Lists Tab END"
+},
+
+
+
+{
+    "comment": "Move Retinue Tab START.
+                Please note that individual elements of the details panel (recipient_info_panel)
+                are in CampaignUINarrowGeneralDetailsMoveRetinue.pos; it's probably easier to just edit those."
+},
+
+        {
+            "name": "move_retinue_tab_faction_characters_title",
+            "x": -510 ,
+            "y": -320,
+            "size": {
+                "width": 473 ,
+                "height": 40
+            },
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med"
+        },
+
+        {
+            "name": "move_retinue_character_dropdown_list",
+            "x": -36,
+            "y": -322,
+            "size": {
+                "width": 215 ,
+                "height": 50
+            },
+            "anchor":"C",
+            "align":"TR",
+            "priority": 20,
+            "font_colour":"dark_brown",
+            "font":"verdana_sml_bold"
+        },
+
+        {
+            "comment": "Divider on top left. Mirrors move_retinue_tab_divider_3.
+                        If you change this, change 'overview_tab_divider_0' and 'agent_hud_divider_0' as well",
+            "name": "move_retinue_tab_divider_0",
+            "x": -21 ,
+            "y": -288,
+            "size": {
+                "width": 499 ,
+                "height": 21
+            },
+            "anchor": "C",
+            "align" : "TR"
+        },
+
+        {
+            "name": "move_retinue_characters_list_heading",
+            "x": -509 ,
+            "y": -265,
+            "size": {
+                "width": 489 ,
+                "height": 75
+            },
+            "anchor":"C",
+            "priority": 1,
+            "font_colour":"dark_brown",
+            "font":"verdana_sml_bold"
+        },
+
+        {
+            "name": "move_retinue_tab_black_divider_0",
+            "x": -42 ,
+            "y": -241,
+                "size": {
+                    "width": 469.5 ,
+                    "height": 3
+                },
+            "anchor": "C",
+            "align":"TR"
+        },
+
+        {
+            "name": "move_retinue_characters_list",
+            "x": -509 ,
+            "y": -239,
+            "size": {
+                "width": 459 ,
+                "height": 239
+            },
+            "anchor":"C",
+            "outside_slider": true,
+            "slider_gap": 12
+        },
+
+        {
+            "name": "move_retinue_tab_divider_6",
+            "x": -25 ,
+            "y": -8,
+            "size": {
+                "width": 485 ,
+                "height": 22
+            },
+            "anchor": "C",
+            "align" : "TR"
+        },
+
+        {
+            "comment": "Doesn't look like this does anything now",
+            "name": "recipient_info_panel_background",
+            "x": -555 ,
+            "y": -100,
+            "size": {
+                "width": 360 ,
+                "height": 495
+            },
+            "anchor":"C",
+            "align" : "TR",
+            "priority": 1
+        },
+
+        {
+            "name": "move_retinue_tab_divider_3",
+            "x": 11 ,
+            "y": -288,
+                "size": {
+                    "width": 509 ,
+                    "height": 21
+                },
+            "anchor": "C",
+            "align":"TL"
+        },
+
+        {
+            "name": "move_retinue_tab_divider_5",
+            "x": 11 ,
+            "y": 138,
+            "size": {
+                "width": 509 ,
+                "height": 21
+            },
+            "anchor": "C",
+            "align" : "TL"
+        },
+
+        {
+            "name": "recipient_info_panel",
+            "x": 0 ,
+            "y": 0,
+            "size": {
+                "width": 327 ,
+                "height": 205
+            },
+            "anchor":"TL",
+            "align" : "TL",
+            "priority": 1
+        },
+
+        {
+            "name": "move_retinue_tab_faction_retinue_title",
+            "x": -510 ,
+            "y": 20,
+            "anchor": "C",
+            "align":"TL",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med"
+        },
+
+        {
+            "name": "move_retinue_retinue_dropdown_list",
+            "x": -36 ,
+            "y": 18,
+            "size": {
+                "width": 215 ,
+                "height": 50
+            },
+            "anchor":"C",
+            "align":"TR",
+            "priority": 20,
+            "font_colour":"dark_brown",
+            "font":"verdana_sml_bold",
+        },
+
+        {
+            "name": "move_retinue_tab_divider_1",
+            "x": -21 ,
+            "y": 52,
+            "size": {
+                "width": 499 ,
+                "height": 21
+            },
+            "anchor": "C",
+            "align" : "TR"
+        },
+
+        {
+            "name": "move_retinue_retinue_list_heading",
+            "x": -509 ,
+            "y": 75,
+            "size": {
+                "width": 489 ,
+                "height": 75
+            },
+            "font_colour":"dark_brown",
+            "font":"verdana_sml_bold",
+            "anchor":"C",
+            "priority": 1
+        },
+        {
+            "name": "move_retinue_tab_black_divider_1",
+            "x": -41 ,
+            "y": 99,
+                "size": {
+                    "width": 470.5 ,
+                    "height": 3
+                },
+            "anchor": "C",
+            "align":"TR"
+        },
+
+        {
+            "name": "move_retinue_retinue_list",
+            "x": -509 ,
+            "y": 100,
+            "size": {
+                "width": 460 ,
+                "height": 280
+            },
+            "anchor":"C",
+            "outside_slider": true,
+            "slider_gap": 12
+        },
+
+        {
+            "name": "move_retinue_tab_divider_2",
+            "x": -21 ,
+            "y": 375,
+            "size": {
+                "width": 499 ,
+                "height": 21
+            },
+            "anchor": "C",
+            "align" : "TR"
+        },
+
+        {
+            "name": "move_retinue_no_retinue_selected_string",
+            "x": 263 ,
+            "y": 240,
+            "align": "C",
+            "anchor":"C",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med",
+            "priority": 1
+        },
+
+        {
+            "name": "move_retinue_retinue_to_move_background_group",
+            "x": 19 ,
+            "y": 183,
+            "anchor": "C"
+        },
+
+        {
+            "name": "move_retinue_retinue_to_move_group",
+            "x": 20 ,
+            "y": 183,
+            "anchor": "C"
+        },
+
+        {
+            "name": "move_retinue_move_retinue_button",
+            "x": 264 ,
+            "y": 318,
+            "align":"TC",
+            "anchor":"C",
+            "priority": 10
+        },
+
+        {
+            "name": "move_retinue_tab_divider_4",
+            "x": 11 ,
+            "y": 375,
+            "size": {
+                "width": 509 ,
+                "height": 21
+            },
+            "anchor": "C",
+            "align" : "TL"
+        },
+
+
+{
+    "comment": "Move Retinue Tab END"
+},
+
+{
+    "comment":"Agent Hub Tab START"
+},
+        {
+            "name": "agent_hud_divider_0",
+            "x": -21 ,
+            "y": -288,
+            "size": {
+                "width": 499 ,
+                "height": 21
+            },
+            "anchor": "C",
+            "align" : "TR"
+        },
+        {
+            "name": "agent_hud_divider_1",
+            "x": 11 ,
+            "y": -288,
+                "size": {
+                    "width": 509 ,
+                    "height": 21
+                },
+            "anchor": "C",
+            "align":"TL"
+        },
+        {
+            "name": "agent_hud_divider_2",
+            "x": 11 ,
+            "y": -95,
+            "size": {
+                "width": 509 ,
+                "height": 21
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+        {
+            "name": "agent_hud_divider_3",
+            "x": -21 ,
+            "y": 70,
+            "size": {
+                "width": 499 ,
+                "height": 21
+            },
+            "anchor": "C",
+            "align" : "TR"
+        },
+        {
+            "name": "agent_hud_divider_4",
+            "x": 11 ,
+            "y": 300,
+            "size": {
+                "width": 509 ,
+                "height": 21
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+        {
+            "name": "agent_hud_divider_5",
+            "x": -21 ,
+            "y": 375,
+            "size": {
+                "width": 499 ,
+                "height": 21
+            },
+            "anchor": "C",
+            "align" : "TR"
+        },
+        {
+            "name": "agent_hud_divider_6",
+            "x": -31 ,
+            "y": 20,
+            "size": {
+                "width": 480 ,
+                "height": 15
+            },
+            "anchor": "C",
+            "align":"TR"
+        },
+    
+        {
+            "name": "agent_hub_agents_list_heading",
+            "x": -515 ,
+            "y": -327,
+            "size": {
+                "width": 465 ,
+                "height": 75
+            },
+            "font_colour":"dark_brown",
+            "font":"verdana_sml_bold",
+            "anchor": "C",
+            "align":"TL"
+        },
+
+        {
+            "name": "agent_hub_agents_list",
+            "x": -510 ,
+            "y": -270,
+            "size": {
+                "width": 460 ,
+                "height": 294
+            },
+            "font_colour":"dark_brown",
+            "anchor": "C",
+            "align":"TL",
+            "outside_slider": true,
+            "slider_gap": 12
+        },
+
+
+        {
+            "name": "agent_hub_missions_list_heading",
+            "x": -510 ,
+            "y": 35,
+            "size": {
+                "width": 460 ,
+                "height": 75
+            },
+            "font_colour":"dark_brown",
+            "font":"verdana_sml_bold",
+            "anchor": "C",
+            "align":"TL"
+        },
+
+        {
+            "name": "agent_hub_missions_list",
+            "x": -509 ,
+            "y": 88,
+            "size": {
+                "width": 460 ,
+                "height": 286
+            },
+            "font_colour":"dark_brown",
+            "anchor": "C",
+            "align":"TL",
+            "outside_slider": true,
+            "slider_gap": 12
+        },
+        
+        {
+            "name": "agent_hub_missions_list_disabled",
+            "x": -509 ,
+            "y": 88,
+            "size": {
+                "width": 460 ,
+                "height": 286
+            },
+            "font_colour":"grey",
+            "anchor": "C",
+            "align":"TL"
+        },
+
+        {
+            "name": "agent_hub_agent_heading_string",
+            "x": 20 ,
+            "y": -314,
+            "size" : {
+                "width": 350
+            },
+            "font_colour":"dark_brown",
+            "font":"cinzel_med",
+            "anchor": "C",
+            "align":"TL"
+        },
+        {
+            "name": "agent_hub_agent_portrait",
+            "x": 47 ,
+            "y": -258,
+            "size": {
+                "width": 72 ,
+                "height": 100
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+        
+        {
+            "name": "agent_hub_agent_portrait_frame",
+            "x": 35 ,
+            "y": -268,
+            "size": {
+                "width": 94 ,
+                "height": 122
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+        
+        {
+            "name": "agent_hub_agent_title_string",
+            "x": 147 ,
+            "y": -253,
+            "font_colour":"dark_brown",
+            "anchor": "C",
+            "align":"TL"
+        },
+        {
+            "name": "agent_hub_agent_age_string",
+            "x": 147 ,
+            "y": -223,
+            "font_colour":"dark_brown",
+            "anchor": "C",
+            "align":"TL"
+        },
+        {
+            "name": "agent_hub_agent_location_string",
+            "x": 147 ,
+            "y": -193,
+            "font_colour":"dark_brown",
+            "anchor": "C",
+            "align":"TL"
+        },
+        {
+            "name": "agent_hub_agent_character_points",
+            "x": 511 ,
+            "y": -324,
+            "size": {
+                "width":160,
+                "height":34,
+            },
+            "anchor": "C",
+            "font_colour":"dark_brown",
+            "font": "cinzel_med",
+            "align":"TR"
+        },
+        {
+            "name": "agent_hub_agent_character_religion",
+            "x": 50 ,
+            "y": -195,
+            "size": {
+                "width":35,
+                "height":35,
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+
+
+        {
+            "name": "agent_hub_mission_target_faction_icon",
+            "x": 15 ,
+            "y": -138,
+            "size": {
+                "width": 45,
+                "height": 45
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+        {
+            "name": "agent_hub_mission_title",
+            "x": 65 ,
+            "y": -115,
+            "font_colour":"dark_brown",
+            "font":"cinzel_med",
+            "anchor": "C",
+            "align":"CL"
+        },
+        {
+            "name": "agent_hub_mission_turns_remaining_icon",
+            "x": 470 ,
+            "y": -133,
+            "size": {
+                "width": 40,
+                "height": 40
+            },
+            "anchor": "C",
+            "align":"TL"
+        },
+
+        {
+            "name" : "agent_hub_mission_details_list",
+            "x": 364 ,
+            "y": 248,
+            "size": {
+                "width": 100,
+                "height": 100
+            },
+            "font_colour":"dark_brown",
+            "anchor": "C",
+            "align":"TC"
+        },
+
+        {
+            "name" : "agent_hub_mission_details_subframe",
+            "x": 20 ,
+            "y": -74,
+            "anchor": "C",
+            "align":"TL"
+        },
+        
+
+        {
+            "name" : "agent_hub_confirm_mission_button",
+            "x": 264 ,
+            "y": 356,
+            "hitbox" : {
+                "left": -52,
+                "top": -10,
+                "right": 52,
+                "bot": 12
+            },
+            "anchor": "C",
+            "align":"TC"
+        },
+
+
+        {
+            "name" : "agent_hub_cancel_mission_button",
+            "x": 264 ,
+            "y": 356,
+            "hitbox" : {
+                "left": -52,
+                "top": -10,
+                "right": 52,
+                "bot": 12
+            },
+            "anchor": "C",
+            "align":"TC"
+        },
+        
+        {
+            "name" : "agent_hub_title",
+            "x": 136 ,
+            "y": -7,
+            "font_colour":"dark_brown",
+            "anchor": "C",
+            "align":"TL"
+        },
+
+        {
+            "name": "agent_hub_faction_logo",
+            "x": 560 ,
+            "y": 153,
+            "size": {
+                "width": 40,
+                "height": 40
+            },
+            "anchor": "C",
+            "align":"TL",
+        },
+
+{
+"_comment" : "If you want to change elements of the mission targets, look for the FactionDialog_AgentHub pos files."
+},
+
+
+{
+    "comment":"Agent Hub Tab END"
+},
+
+
+
+{
+    "comment": "No idea what these are for. Maybe mobile elements that were removed from Rome HD"
+},
+        
+
+        {
+            "name": "list_towns_tab",
+            "x": -1667 ,
+            "y": 472,
+            "size": {
+                "width": 70,
+                "height": 70
+            },
+            "anchor": "C",
+            "align":"C",
+            "annotation_id": "Rome.Annotations.faction_senate-settlement",
+        },
+
+        {
+            "name": "list_armies_tab",
+            "x": -997 ,
+            "y": 472,
+            "size": {
+                "width": 70,
+                "height": 70
+            },
+            "anchor": "C",
+            "align":"C",
+            "annotation_id": "Rome.Annotations.faction_senate-military",
+        },
+
+        {
+            "name": "list_agents_tab",
+            "x": -1973 ,
+            "y": 472,
+            "size": {
+                "width": 70,
+                "height": 70
+            },
+            "anchor": "C",
+            "align":"C",
+            "annotation_id": "Rome.Annotations.faction_senate-agents",
+        },
+
+        {
+            "name": "list_retinues_tab",
+            "x": -2279 ,
+            "y": -472,
+            "size": {
+                "width": 70,
+                "height": 70
+            },
+            "anchor": "C",
+            "align":"C",
+            "annotation_id": "Rome.Annotations.sett_character-assistants",
+        },
+    
+
+        {
+            "name": "list_title",
+            "x": 0 ,
+            "y": -462,
+            "notch%": true,
+            "align":"C",
+            "anchor":"C",
+            "font":"verdana_lrg"
+        },
+        {
+            "name": "list_army",
+            "x": -855 ,
+            "y": -412,
+            "size": {
+                "width": 637 ,
+                "height": 360
+            },
+            "font":"verdana_med",
+            "anchor":"C",
+            "annotation_id": "Rome.Annotations.faction_lists-armies"
+        },
+        {
+            "name": "list_army_heading",
+            "x": -855 ,
+            "y": -439,
+            "size": {
+                "width": 637 ,
+                "height": 370
+            },
+            "anchor":"C",
+            "font":"verdana_med"
+        },
+        {
+            "name": "list_army_title",
+            "x": -546 ,
+            "y": -462,
+            "anchor":"C",
+            "align":"C",
+            "font":"verdana_lrg"
+        },
+        {
+            "name": "list_settlement",
+            "x": -254 ,
+            "y": 56,
+            "size": {
+                "width": 1092 ,
+                "height": 370
+            },
+            "font":"verdana_med",
+            "anchor":"C",
+            "annotation_id": "Rome.Annotations.faction_lists-settlements"
+        },
+        {
+            "name": "list_settlement_heading",
+            "x": -254 ,
+            "y": 1,
+            "size": {
+                "width": 1092 ,
+                "height": 370
+            },
+            "anchor":"C",
+            "font":"verdana_med"
+        },
+        {
+            "name": "list_settlement_title",
+            "x": 364 ,
+            "y": -24,
+            "anchor":"C",
+            "align":"C",
+            "font":"verdana_lrg"
+        },
+        {
+            "name": "list_characters",
+            "x": -855 ,
+            "y": 26,
+            "size": {
+                "width": 509 ,
+                "height": 390
+            },
+            "anchor":"C",
+            "font":"verdana_med",
+            "annotation_id": "Rome.Annotations.faction_lists-agents"
+        },
+        {
+            "name": "list_characters_heading",
+            "x": -855 ,
+            "y": 1,
+            "size": {
+                "width": 509 ,
+                "height": 370
+            },
+            "anchor":"C",
+            "font":"verdana_med"
+        },
+        {
+            "name": "list_characters_title",
+            "x": -600 ,
+            "y": -24,
+            "anchor":"C",
+            "align":"C",
+            "font":"verdana_lrg"
+        },
+        {
+            "name": "list_retinues",
+            "x": -127 ,
+            "y": -412,
+            "size": {
+                "width": 964 ,
+                "height": 360
+            },
+            "anchor":"C",
+            "font":"verdana_med",
+            "annotation_id": "Rome.Annotations.faction_lists-retinues"
+        },
+        {
+            "name": "list_retinues_heading",
+            "x": -127 ,
+            "y": -439,
+            "size": {
+                "width": 509 ,
+                "height": 370
+            },
+            "anchor":"C",
+            "font":"verdana_med"
+        },
+        {
+            "name": "list_retinues_title",
+            "x": 364 ,
+            "y": -462,
+            "anchor":"C",
+            "align":"C",
+            "font":"verdana_lrg"
+        },
+    
+        {
+            "name": "character_details_list",
+            "x": 254 ,
+            "y": -152,
+            "size": {
+                "width": 364 ,
+                "height": 400
+            },
+            "anchor":"C",
+            "align": "TL"
+        },
+
+
+        {
+            "name": "family_heir_button",
+            "x": -345 ,
+            "y": 328,
+            "size": {
+                "width": 60,
+                "height": 60
+            },
+            "annotation_id": "Rome.Annotations.faction_family-heir",
+            "anchor":"C",
+        },
+        {
+            "name": "family_zoom_button",
+            "x": -273 ,
+            "y": 328,
+            "size": {
+                "width": 60,
+                "height": 60
+            },
+            "annotation_id": "Rome.Annotations.faction_family-zoom",
+            "anchor":"C",
+        },
+
+        
+        {
+            "name": "family_tooltip",
+            "x": -600 ,
+            "y": 308,
+            "size": {
+                "width": 819 ,
+            },
+            "align": "TC",
+            "font":"verdana_med",
+            "anchor": "C",
+        },
+        {
+            "name": "family_character_panel",
+            "x": -364 ,
+            "y": -9,
+            "size": {
+                "width": 336 ,
+                "height": 430
+            },
+            "anchor": "C",
+        },
+
+        {
+            "name": "family_portrait",
+            "x": -345 ,
+            "y": 3,
+            "size": {
+                "width": 145 ,
+                "height": 180
+            },
+            "anchor": "C",
+        },
+        {
+            "name": "family_character_info",
+            "x": -182 ,
+            "y": 3,
+            "size": {
+                "width": 145 ,
+                "height": 180
+            },
+            "anchor": "C",
+        },
+        {
+            "name": "family_character_points",
+            "x": -345 ,
+            "y": 193,
+            "size": {
+                "width": 145 ,
+                "height": 180
+            },
+            "anchor": "C",
+        },
+
+
+        {
+            "name": "family_character_retinue_traits",
+            "x": 36 ,
+            "y": -106,
+            "size": {
+                "width": 819 ,
+                "height": 216
+            },
+            "anchor": "C",
+            "font":"verdana_sml",
+        },
+        {
+            "name": "family_character_traits_string",
+            "x": 36 ,
+            "y": -993,
+            "font":"verdana_med",
+            "anchor": "C",
+        },
+        {
+            "name": "family_character_retinue_string",
+            "x": -2266 ,
+            "y": -331,
+            "font":"verdana_med",
+            "anchor": "C",
+        },
+        {
+            "name": "family_character_details_string",
+            "x": -2266 ,
+            "y": 50,
+            "align":"C",
+            "anchor": "C",
+        },
+        
+        
+        {
+            "name": "capital_trigger_area",
+            "x": -855 ,
+            "y": -412,
+            "size": {
+                "width": 728 ,
+                "height": 30
+            },
+            "anchor": "C",
+            "tags": [
+                "faction_overview1"
+            ]
+        },
+        {
+            "name": "family_trigger_area",
+            "x": -855 ,
+            "y": -382,
+            "size": {
+                "width": 728 ,
+                "height": 30
+            },
+            "anchor": "C",
+            "tags": [
+                "faction_overview1"
+            ]
+        },
+        {
+            "name": "treasury_trigger_area",
+            "x": -855 ,
+            "y": -322,
+            "size": {
+                "width": 728 ,
+                "height": 60
+            },
+            "anchor": "C",
+            "tags": [
+                "faction_overview1"
+            ]
+        },
+        {
+            "name": "settlements_trigger_area",
+            "x": -855 ,
+            "y": -247,
+            "size": {
+                "width": 728 ,
+                "height": 140
+            },
+            "anchor": "C",
+            "tags": [
+                "faction_overview1"
+            ]
+        },
+        {
+            "name": "mission_trigger_area",
+            "x": -618 ,
+            "y": 128,
+            "size": {
+                "width": 364 ,
+                "height": 240
+            },
+            "align":"TL",
+            "anchor": "C",
+            "tags": [
+                "faction_overview1"
+            ]
+        },
+        {
+            "name": "diplomacy_trigger_area",
+            "x": 273 ,
+            "y": -310,
+            "size": {
+                "width": 345 ,
+                "height": 600
+            },
+            "anchor": "C",
+            "tags": [
+                "faction_overview1"
+            ]
+        },
+        {
+            "name": "help_button",
+            "x": 813,
+            "y": -230
+        },
+        {
+            "name": "advisor",
+            "x": -1,
+            "y": -1
+        },
+        {
+            "name": "money_string",
+            "x": -240 ,
+            "y": 6,
+            "priority": 53,
+            "align":"TL",
+            "anchor":"TR",
+            "font":"cinzel_sml_bold",
+            "font_colour":"dark_brown"
+        },
+        {
+
+            "name": "money_icon",
+            "x": -282 ,
+            "y": -4,
+            "size":{
+                "height": 42,
+                "width": 42
+            },
+            "priority": 53,
+            "align":"TL",
+            "anchor":"TR"
+        },
+        {
+            "name": "money_annotation",
+            "x": -10,
+            "y": -10,
+            "size": {
+                "width": 400 ,
+                "height": 41
+            },
+            "priority": 2,
+            "annotation_id": "Rome.Annotations.camp_status-money"
+        },
+
+        {
+            "name": "senate_mission_list",
+            "x": 54 ,
+            "y": -439,
+            "size": {
+                "width": 800 ,
+                "height": 300
+            },
+            "anchor":"C",
+            "font":"verdana_med"
+        },
+
+        {
+            "name": "diplomacy_list",
+            "x": 36 ,
+            "y": -439,
+            "size": {
+                "width": 819 ,
+                "height": 358
+            },
+            "anchor": "C",
+            "font":"verdana_med"
+        },
+
+        {
+            "name": "diplomacy_heading",
+            "x": -819 ,
+            "y": -439,
+            "size": {
+                "width": 819 ,
+                "height": 358
+            },
+            "align": "TL",
+            "anchor": "C",
+            "font":"verdana_med"
+        },
+
+        {
+            "name": "diplomacy_own_faction_title",
+            "x": 464 ,
+            "y": 50,
+            "align":"C",
+            "font":"verdana_lrg"
+        },
+
+        {
+            "name": "diplomacy_other_factions_title",
+            "x": 446 ,
+            "y": -462,
+            "align":"C",
+            "anchor": "C",
+            "font":"verdana_lrg"
+        },
+
+        {
+            "name": "finance_title",
+            "x": 637 ,
+            "y": -39,
+            "align":"C",
+            "anchor": "C",
+            "font":"verdana_lrg"
+        },
+
+        {
+            "name": "finance_table",
+            "x": 36 ,
+            "y": -9,
+            "size": {
+                "width": 764 ,
+                "height": 356
+            },
+            "anchor": "C",
+            "notch%": true,
+            "font":"verdana_med"
+        },
+
+        {
+            "name": "finance_image",
+            "x": 335,
+            "y": 160,
+            "hidden": true
+        },
+
+        {
+            "name": "retinue_travel_button",
+            "x": 300,
+            "y": -40,
+            "size": {
+                "width": 70,
+                "height": 70
+            },
+            "anchor": "BR",
+            "align":"C",
+            "scale_x_pos":true,
+        },
+
+
+    ]
+}

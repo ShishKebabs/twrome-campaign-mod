@@ -1,0 +1,23 @@
+plan
+
+{
+	floor		greek_theatre_underlay.cas greek_theatre_overlay.cas
+	borders	border_limits_64m_diameter.CAS
+
+;			x,	y,	rot,	z,
+
+greek_theatre		0	32	0	0
+
+tree_A,		-90,	132,	-56.25,		-8.832
+tree_A,		-50,	122,	146.25,		-3.304
+tree_A,		40,	122,	-168.75,	-2.915
+tree_A,		108,	-120,	0,		10.703
+
+tree_B,		-96.075,	-14.641,	0,	9.541
+tree_B,		-12.037,	-53.706,	0,	31.804
+tree_B,		40.111,		-46.956,	0,	28.366
+tree_B,		73.112,		-48.865,	0,	24.153
+tree_B,		25.767,		-81.965,	0,	22.796
+
+
+}

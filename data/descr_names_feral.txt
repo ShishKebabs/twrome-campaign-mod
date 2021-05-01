@@ -1,0 +1,21 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Names Database Entries
+;;
+;; Holds non-localised Latin names for settlements and characters.  These are arranged on
+;; a per faction basis.
+;;
+;; Entries are specified by the following syntax:
+;;
+;; faction: <faction name>
+;;	settlements
+;;		<settlement names list>
+;;	characters
+;;		<character names list>
+;;
+;; faction ... etc
+
+
+faction: romans_julii
+
+	characters
+		Gnaeus

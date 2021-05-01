@@ -1,0 +1,313 @@
+;; Mo - Move
+;; S - Select
+;; G - Garrison building
+;; Eq - Pickup equipment
+;; Na - No action
+;; A - Attack
+
+;; Infantry, cavalry, artillery - all normal unit types
+;; equipment equipment, such as rams, ladders, towers - not attached to a unit
+;; equipped_infanty - infantry attached to some equipment equipment
+;; handler - an animal handler unit, such as wardogs and incendiary pigs
+;; coward - a unit that is routing
+;; empty_building - building that can be hidden in
+
+selected none
+{
+	over own
+	{
+		none				Ig
+		infantry			S
+		equipped_infantry	S
+		cavalry				S
+		artillery			S
+		handler				S
+		sapper				S
+		coward				S			
+		sap_point			Na
+		equipment			Na
+		land				Ig
+		water				Ig
+		building			Ig
+		empty_building		Ig
+		platform			Ig
+	}
+	over enemy
+	{
+		default Na
+	}
+	over allied
+	{
+		default Na
+	}
+}
+
+selected infantry
+{
+	over own
+	{
+		infantry			Mo
+		equipped_infantry	Mo
+		handler				Mo
+		cavalry				Mo
+		artillery			Mo
+		sapper				Mo
+		coward				Mo			
+		sap_point			Na		
+		equipment			Eq
+		land				Mo
+		water				Na
+		building			Na
+		empty_building		G
+		platform			Mo
+	}
+	over enemy
+	{
+		handler				A
+		infantry			A
+		equipped_infantry	A
+		cavalry				A
+		sapper				A
+		coward				A			
+		artillery			A
+		sap_point			A
+		equipment			Eq ;; Maybe have the porsiblilty of picking up others equipment
+		building			Na
+		empty_building		G
+		platform			Mo
+	}
+	over allied
+	{
+		default Na
+		platform			Mo
+	}
+}
+
+selected handler
+{
+	over own
+	{
+		infantry			Mo
+		equipped_infantry	Mo
+		handler				Mo
+		cavalry				Mo
+		artillery			Mo
+		coward				Mo			
+		sapper				Mo
+		sap_point			Na		
+		equipment			Eq
+		land				Mo
+		water				Na
+		building			Na
+		empty_building		Na
+		platform			Mo
+	}
+	over enemy
+	{
+		default A
+		equipment			Eq ;; Maybe have the porsiblilty of picking up others equipment
+		building			Na
+		empty_building		Na
+		platform			Mo
+	}
+	over allied
+	{
+		default Na
+		platform			Mo
+	}
+}
+
+selected sapper
+{
+	over own
+	{
+		infantry			Mo
+		equipped_infantry	Mo
+		cavalry				Mo
+		handler				Mo
+		artillery			Mo
+		sapper				Mo
+		coward				Mo			
+		equipment			Eq
+		sap_point			G
+		land				Mo
+		water				Na
+		building			Na
+		empty_building		Na
+		platform			Mo
+	}
+	over enemy
+	{
+		default				A
+		equipment			Eq 
+		building			Na
+		empty_building		Na
+		platform			Mo
+	}
+	over allied
+	{
+		default Na
+		platform Mo
+	}
+}
+
+selected equipped_infantry
+{
+	over own
+	{
+		infantry			Mo
+		equipped_infantry	Mo
+		cavalry				Mo
+		artillery			Mo
+		sapper				Mo
+		handler				Mo
+		coward				Mo			
+		equipment			Eq
+		sap_point			Na
+		land				Mo
+		water				Na
+		building			Na
+		empty_building		Na
+		platform			Mo
+	}
+	over enemy
+	{
+		default				A
+		equipment			Eq 
+		empty_building		Na
+		platform			Mo
+	}
+	over allied
+	{
+		default Na
+		platform Mo
+	}
+}
+
+selected coward
+{
+	over own
+	{
+		infantry			Mo
+		equipped_infantry	Mo
+		cavalry				Mo
+		artillery			Mo
+		sapper				Mo
+		handler				Mo
+		coward				Mo			
+		equipment			Eq
+		sap_point			Na
+		land				Na
+		water				Na
+		building			Na
+		empty_building		Na
+		platform			Na
+	}
+	over enemy
+	{
+		default	Na
+	}
+	over allied
+	{
+		default Na
+	}
+}
+
+selected cavalry
+{
+	over own
+	{
+		infantry			Mo
+		equipped_infantry	Mo
+		cavalry				Mo
+		handler				Mo
+		artillery			Mo
+		sapper				Mo
+		coward				Mo			
+		sap_point			Na
+		equipment			Eq
+		land				Mo
+		water				Na
+		building			Na
+		empty_building		Na
+		platform			Na
+	}
+	over enemy
+	{
+		default				A
+		equipment			Eq		;; Maybe have the porsiblilty of picking up others equipment
+		building			Na
+		empty_building		Na
+		platform			Na
+	}
+	over allied
+	{
+		default Na
+		platform Mo
+	}
+}
+
+selected artillery
+{
+	over own
+	{
+		infantry			Mo
+		equipped_infantry	Mo
+		cavalry				Mo
+		artillery			Mo
+		sapper				Mo
+		handler				Mo
+		coward				Mo			
+		sap_point			Na
+		equipment			Eq
+		land				Mo
+		water				Na
+		building			A
+		empty_building		A
+		platform			Na
+	}
+	over enemy
+	{
+		default				A
+		equipment			Eq
+		empty_building		Na
+		platform			Na
+	}
+	over allied
+	{
+		default Na
+		building			A
+		empty_building		A
+	}
+}
+
+selected equipment
+{
+	over own
+	{
+		infantry			Mo
+		equipped_infantry	Mo
+		cavalry				Mo
+		artillery			Mo
+		handler				Mo
+		coward				Mo			
+		sap_point			Na
+		equipment			Eq
+		land				Mo
+		water				Na
+		building			Na
+		empty_building		Na
+		platform			Na
+	}
+	over enemy
+	{
+		default				A
+		sap_point			Na
+		empty_building		Na
+		platform			Na
+	}
+	over allied
+	{
+		default Na
+	}
+}

@@ -1,0 +1,12 @@
+plan
+
+{
+	floor		swamp_ruins_05_underlay.cas swamp_ruins_05_overlay.cas
+	borders	border_limits_64m_diameter.CAS
+
+;				x,		y,		rot,	z,
+swamp_ruins_05,		0.0m,	        0.0m		0.0	0.0m
+
+
+
+}

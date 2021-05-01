@@ -1,0 +1,14 @@
+
+
+	roman_dockyard
+	{
+		full_health 10
+		localised_name dockyard
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_dockyard
+			physical_info	none
+		}
+	}

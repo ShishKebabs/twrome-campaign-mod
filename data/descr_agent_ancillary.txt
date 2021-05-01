@@ -1,0 +1,83 @@
+
+culture roman
+
+doctor			data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+quartermaster	data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+priest			data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+scout			data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+engineer		data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+																											
+spy				spy.tga				spy_info.tga				spy.tga			350	1	1
+assassin		assassin.tga		assassin_info.tga		assassin.tga	500	1	1
+diplomat		diplomat.tga		diplomat_info.tga		diplomat.tga	250	1	1
+admiral			admiral.tga			admiral_info.tga			admiral.tga		100	1	1
+																											
+																											
+culture barbarian																							
+																											
+doctor			data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+quartermaster	data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+priest			data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+scout			data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+engineer		data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+																											
+spy				spy.tga			spy_info.tga			spy.tga				350	1	1
+assassin		assassin.tga	assassin_info.tga	assassin.tga		500	1	1
+diplomat		diplomat.tga	diplomat_info.tga	diplomat.tga		250	1	1
+admiral			admiral.tga		admiral_info.tga		admiral.tga			100	1	1
+																											
+																											
+culture carthaginian																						
+																											
+doctor			data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+quartermaster	data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+priest			data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+scout			data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+engineer		data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+
+spy				spy.tga			spy_info.tga		spy.tga			350	1	1
+assassin		assassin.tga	assassin_info.tga	assassin.tga	500	1	1
+diplomat		diplomat.tga	diplomat_info.tga	diplomat.tga	250	1	1
+admiral			admiral.tga		admiral_info.tga	admiral.tga		100	1	1
+
+
+culture greek
+
+doctor			data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+quartermaster	data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+priest			data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+scout			data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+engineer		data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+															
+spy				spy.tga				spy_info.tga				spy.tga					350	1	1
+assassin		assassin.tga		assassin_info.tga		assassin.tga			500	1	1
+diplomat		diplomat.tga		diplomat_info.tga		diplomat.tga			250	1	1
+admiral			admiral.tga			admiral_info.tga			admiral.tga				100	1	1
+															
+															
+culture egyptian											
+															
+doctor			data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+quartermaster	data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+priest			data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+scout			data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+engineer		data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+																											
+spy				spy.tga				spy_info.tga		spy.tga			350	1	1
+assassin		assassin.tga		assassin_info.tga	assassin.tga	500	1	1
+diplomat		diplomat.tga		diplomat_info.tga	diplomat.tga	250	1	1
+admiral			admiral.tga			admiral_info.tga	admiral.tga		100	1	1
+																											
+																											
+culture eastern																								
+																											
+doctor			data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+quartermaster	data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+priest			data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+scout			data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+engineer		data/ui/generic/generic_ancillary.tga		data/ui/generic/generic_ancillary_info.tga	data/ui/generic/generic_ancillary_info.tga	100	1	10
+															
+spy				spy.tga				spy_info.tga		spy.tga				350	1	1
+assassin		assassin.tga		assassin_info.tga	assassin.tga		500	1	1
+diplomat		diplomat.tga		diplomat_info.tga	diplomat.tga		250	1	1
+admiral			admiral.tga			admiral_info.tga	admiral.tga			100	1	1

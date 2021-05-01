@@ -1,0 +1,222 @@
+plan
+
+{
+; z=-4 to move white flag outside the rock
+target rectangle x 0 z -4 rot 0 width 32 height 32
+floor		barbarian_town_underlay.CAS barbarian_town_overlay.CAS
+ground_types	barb_town_ground.tga -320 -256 256 256
+street_plan	barb_town_pathfinding.CAS
+borders		
+
+	{
+
+	;WALLS
+
+
+gateway,	0,	224,	180,	-0
+gateway,	224,	0,	90,	-0
+gateway,	-64,	-224,	0,	0
+gateway,	-288,	64,	-90,	0
+
+tower_external_corner_link,	96,	224,	-180,	-0
+tower_external_corner_link,	224,	96,	-180,	-0
+tower_external_corner_link,	-160,	-224,	0,	0
+tower_external_corner_link,	-288,	-96,	0,	0
+
+tower_straight,	64,	-224,	0,	-0
+tower_straight,	-192,	-128,	-45,	0
+tower_straight,	-256,	192,	-135,	0
+tower_straight,	-128,	224,	-180,	0
+tower_straight,	128,	128,	135,	-0
+tower_straight,	192,	-192,	45,	-0
+
+internal_left_link,	96,	160,	90,	-0
+internal_left_link,	-160,	-160,	-90,	0
+
+internal_right_link,	-224,	-96,	0,	0
+internal_right_link,	160,	96,	-180,	-0
+
+external_left_link,	-288,	160,	-90,	0
+external_right_link,	-224,	224,	180,	-0
+
+external_left_link,	224,	-160,	90,	-0
+external_right_link,	160,	-224,	0,	-0
+
+straight,	-64,	224,	180,	0
+straight,	-192,	224,	-180,	0
+straight,	-256,	-96,	0,	0
+straight,	-128,	-224,	0,	0
+straight,	-288,	-64,	-90,	0
+straight,	0,	-224,	0,	0
+straight,	-288,	0,	-90,	0
+straight,	224,	-64,	90,	-0
+straight,	-288,	128,	-90,	0
+straight,	224,	64,	90,	-0
+straight,	192,	96,	-180,	-0
+straight,	96,	192,	90,	-0
+straight,	64,	224,	180,	-0
+straight,	128,	-224,	0,	-0
+straight,	224,	-128,	90,	-0
+straight,	-160,	-192,	-90,	0
+
+straight_link,	224,	-96,	90,	-0
+straight_link,	-288,	-32,	-90,	0
+straight_link,	32,	-224,	0,	0
+straight_link,	-96,	224,	-180,	0
+straight_link,	96,	-224,	0,	-0
+straight_link,	-160,	224,	-180,	0
+
+
+	}
+
+
+; ROAD JOINERS
+
+gateway_slot_into_flat_town,	0,	256,	90,	0
+gateway_slot_into_flat_town,	256,	0,	0,	0
+gateway_slot_into_flat_town,	-64,	-256,	-90,	0
+gateway_slot_into_flat_town,	-320,	64,	180,	0
+
+
+
+	;COLLISION OBJECTS
+
+barb_town_collision,	0,	0,	0,	0
+
+
+	;BUILDINGS	
+
+
+
+slot_plaza_barbarian_32x32m,	0,	0,	0,	8
+
+slot_48x32_core_building,	-39.08,	-3.35,	-90,	8
+
+slot_48x32_barracks,	42.09,	1.82,	-90,	8
+
+slot_48x32_religious,	-230,	30,	90,	0
+
+slot_48x32_market,	-39.56,	-157.75,	90,	0
+
+
+
+barbarian_hall_large,	-129.25,	156.58,	30,	6
+
+barbarian_long_house,	-149.13,	107.13,	35,	6
+barbarian_long_house,	-117.71,	84.05,	70,	6
+barbarian_long_house,	71.29,	-164.29,	50,	4
+barbarian_long_house,	123.02,	-159.08,	140,	4
+barbarian_long_house,	87.34,	-96.83,	-90,	4
+barbarian_long_house,	-80.30,	147.88,	-150,	6
+barbarian_long_house,	-71.292,	-102.447,	-158.054,	0
+barbarian_long_house,	159.486,	-59.882,	-23,	0
+
+barbarian_round_house_large,	128.55,	-106.61,	-39.50,	4
+barbarian_round_house_large,	-170.68,	-22.07,	90.50,	4
+barbarian_round_house_large,	-162.52,	-43.10,	135.50,	4
+barbarian_round_house_large,	-113.38,	-26.26,	-79.50,	4
+barbarian_round_house_large,	-140.72,	-24.13,	20.50,	4
+barbarian_round_house_large,	163.32,	43.47,	-29.50,	4
+barbarian_round_house_large,	141.03,	46.92,	15.50,	4
+barbarian_round_house_large,	131.05,	-4.06,	160.50,	4
+barbarian_round_house_large,	146.56,	18.56,	-99.50,	4
+barbarian_round_house_large,	-92.001,	-115.025,	15,	0
+
+barbarian_round_house_small,	38.77,	150.49,	170.50,	0
+barbarian_round_house_small,	-144.47,	8.27,	10.50,	4
+barbarian_round_house_small,	176.49,	5.61,	-109.50,	4
+barbarian_round_house_small,	32.87,	174.77,	135.50,	0
+barbarian_round_house_small,	58.46,	169.89,	-139.50,	0
+barbarian_round_house_small,	77.23,	110.75,	40.50,	0
+barbarian_round_house_small,	99.57,	115.45,	-34.50,	0
+barbarian_round_house_small,	109.31,	91.15,	-114.50,	0
+barbarian_round_house_small,	-100.37,	-92.73,	135.50,	0
+barbarian_round_house_small,	-52.47,	-99.77,	135.50,	0
+barbarian_round_house_small,	-242.08,	-15.72,	-14.50,	0
+barbarian_round_house_small,	-225.41,	-31.34,	-89.50,	0
+barbarian_round_house_small,	-239.73,	-53.24,	-169.50,	0
+barbarian_round_house_small,	-228.60,	148.42,	-24.50,	0
+barbarian_round_house_small,	-232.81,	111.06,	-179.50,	0
+barbarian_round_house_small,	-214.90,	130.15,	-99.50,	0
+
+
+barb_town_compoundA,	20.54,	166.62,	95,	0
+
+barb_town_compoundB,	96.73,	107.85,	75,	0
+barb_town_compoundB,	-222.99,	129.52,	10,	0
+barb_town_compoundB,	-233.26,	-33.36,	20,	0
+barb_town_compoundB,	-74.722,	-125.031,	32.575,	0
+
+barb_fenceA,	-143.03,	-24.13,	-56,	4
+barb_fenceA,	149.30,	21.29,	-166,	4
+
+barb_fenceB,	98.40,	-132.51,	149,	4
+
+barb_fenceC,	-115.21,	127.73,	-56,	6
+
+bush_A,	-142.73,	83.14,	0,	6
+bush_A,	-116.57,	-47.86,	0,	4
+bush_A,	-154.01,	-29.10,	0,	4
+bush_A,	148.90,	32.55,	-120,	4
+bush_A,	113.93,	9.51,	-120,	4
+bush_A,	107.64,	-85.74,	-160,	4
+bush_A,	30.97,	185.46,	90,	-0
+bush_A,	11.73,	187.19,	90,	-0
+bush_A,	-14.38,	179.14,	90,	-0
+
+pile_of_logs,	-132.27,	6.19,	59,	4
+pile_of_logs,	-156.15,	-60.33,	59,	4
+pile_of_logs,	168.59,	-3.92,	-61,	4
+pile_of_logs,	122.92,	50.02,	-61,	4
+
+tree_A,	-166.50,	-1.59,	50,	4
+tree_A,	-116.09,	-4.18,	140,	4
+tree_A,	-177.07,	-34.76,	-20,	4
+tree_A,	-155.55,	140.96,	-55,	6
+tree_A,	-126.51,	113.77,	80,	6
+tree_A,	-151.24,	89.53,	-20,	6
+tree_A,	-91.83,	122.49,	-20,	6
+tree_A,	178.96,	29.63,	-10,	4
+tree_A,	121.12,	38.09,	-55,	4
+tree_A,	151.53,	-12.78,	80,	4
+tree_A,	155.46,	55.33,	50,	4
+tree_A,	139.49,	-135.61,	-65,	4
+tree_A,	48.77,	-129.36,	-180,	4
+tree_A,	102.90,	-120.07,	-65,	4
+tree_A,	117.82,	-88.84,	-180,	4
+tree_A,	104.21,	-180.36,	-155,	4
+tree_A,	-51.67,	43.99,	-55,	8
+tree_A,	-20.84,	-66.10,	-180,	8
+tree_A,	22.74,	-55.64,	60,	8
+tree_A,	-12.25,	142.32,	-75,	0
+tree_A,	82.27,	127.03,	-180,	0
+tree_A,	-225.85,	-10.52,	125,	0
+tree_A,	-211.72,	150.73,	115,	0
+tree_A,	-248.54,	-38.14,	125,	0
+tree_A,	-231.53,	130.45,	125,	0
+tree_A,	-202.205,	170.012,	-170,	0
+
+tree_B,	-12.01,	-130.17,	-165,	0
+tree_B,	-87.233,	-142.234,	-165,	0
+tree_B,	-91.99,	-79.58,	-165,	0
+tree_B,	-106.83,	25.71,	-165,	0
+tree_B,	2.63,	162.68,	-165,	0
+tree_B,	211.35,	76.61,	-165,	0
+tree_B,	175.75,	-62.58,	-165,	0
+tree_B,	173.59,	-185.70,	-165,	0
+tree_B,	-95.13,	-184.57,	-165,	0
+
+tree_C,		-107.15,	170.85,		45,	6
+tree_C,		209.719,	-110.891,	0,	0
+tree_C,		-72.445,	103.942,	0,	6
+tree_C,		-222.072,	87.754,		0,	0
+tree_C,		-15.484,	-176.821,	-165,	0
+
+tree_F,	-144.83,	-55.94,	-165,	4
+tree_F,	73.243,		-140.117,	0,	4
+tree_F,	38.026,		-46.239,	0,	8
+tree_F,	30.992,		68.957,		0,	8
+tree_F,	-12.76,		68.509,		0,	8
+tree_F,	-44.876,	-49.018,	0,	8
+
+}

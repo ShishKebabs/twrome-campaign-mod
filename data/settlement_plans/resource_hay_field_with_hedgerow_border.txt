@@ -1,0 +1,22 @@
+plan
+
+{
+	floor		underlay_hay_field_with_hedgerow_border.cas overlay_hay_field_with_hedgerow_border.cas
+
+;			x,	y,	rot,	z,
+
+hay_field_square,	0,	0,	0,	0
+
+hedgerow_straight,	0,	30,	180,	0
+hedgerow_straight,	30,	0,	90,	0
+hedgerow_straight,	-30,	0,	-90,	0
+hedgerow_straight,	0,	-30,	0,	0
+
+hedgerow_corner,	29,	-29,	90,	0
+hedgerow_corner,	-29,	-29,	0,	0
+hedgerow_corner,	29,	29,	180,	0
+hedgerow_corner,	-29,	29,	-90,	0
+
+
+
+}

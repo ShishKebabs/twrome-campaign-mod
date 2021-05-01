@@ -1,0 +1,10 @@
+plan
+
+{
+
+	floor	         farm_grove_underlay.CAS	farm_grove_overlay.CAS
+	ground_types	ground_no_grass.tga	-64,	-64,	64,	64		
+	
+	farm_grove,		        0,	        0,	        0,	0
+
+}

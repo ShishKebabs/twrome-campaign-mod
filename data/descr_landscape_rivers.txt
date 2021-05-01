@@ -1,0 +1,60 @@
+
+river meander2
+{
+	base		data/models_landscape/river_meander2_underlay.cas
+	overlay		data/models_landscape/river_meander2_overlay.cas
+	texture		data/models_landscape/textures
+	water		data/models_landscape/river_meander2_overlay_water.cas
+	areas		data/models_landscape/river_meander2_area.cas
+	collision	data/models_landscape/river_meander2_collision.cas
+	info		data/models_landscape/river_meander2_info.cas
+
+	centre		5 16
+
+	bridge		7 15 rotation_90
+}
+
+river meander3
+{
+	base		data/models_landscape/river_meander3_underlay.cas
+	overlay		data/models_landscape/river_meander3_overlay.cas
+	texture		data/models_landscape/textures
+	water		data/models_landscape/river_meander3_overlay_water.cas
+	areas		data/models_landscape/river_meander3_area.cas
+	collision	data/models_landscape/river_meander3_collision.cas
+	info		data/models_landscape/river_meander3_info.cas
+
+	centre		5 16
+
+	bridge		10 20 rotation_90
+}
+
+river meander4
+{
+	base		data/models_landscape/river_meander4_underlay.cas
+	overlay		data/models_landscape/river_meander4_overlay.cas
+	texture		data/models_landscape/textures
+	water		data/models_landscape/river_meander4_overlay_water.cas
+	areas		data/models_landscape/river_meander4_area.cas
+	collision	data/models_landscape/river_meander4_collision.cas
+	info		data/models_landscape/river_meander4_info.cas
+
+	centre		8 16
+
+	bridge		10 20 rotation_90
+}
+
+river 3_fordable
+{
+	base		data/models_landscape/river3_fordable_underlay.cas
+	overlay		data/models_landscape/river3_fordable_overlay.cas
+	texture		data/models_landscape/textures
+	water		data/models_landscape/river3_fordable_overlay_water.cas
+	areas		data/models_landscape/river3_fordable_area.cas
+	collision		data/models_landscape/river3_fordable_collision.cas
+	info		data/models_landscape/river3_fordable_info.cas
+
+	centre		5 16
+
+	bridge		10 20 rotation_90
+}

@@ -1,0 +1,676 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;;  Siege engine fire
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+effect burning_engine_smoke
+{
+	type particle
+ 	{
+		texture			battlefield/fire/smoke3.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.9, 0.9
+		size_range      		1.8, 1.4
+		age_range       		2.1, 14.2
+        grow_range	 			1, 1 
+        vel_range				0.5, 2
+        fade_time				0.25
+        die_size				1, 1
+		colour     				255,255,255
+		alpha_max	   			255			 ; maximum alpha value
+		spin_rate				-1, 1
+		
+		emitter tri_surface
+		{
+			density					0	     	; how many particles per second
+			offset_from_surface		0,0,0		; offset from surface to emit from
+
+			emitter_falloff_dist	10000		; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			; 			
+		}
+	}
+}
+
+;;;;;;; MIDDLE TOWER EFFECTS ;;;;;;;;;;;;;;;;;;;;;;;
+
+effect fire_siege_tower_01
+{
+	type particle
+ 	{
+		texture			battlefield/fire/smoke2.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.9, 0.9
+		size_range      		1.8, 11.4
+		age_range       		0.1,0.24
+        grow_range	 			1, 1 
+        vel_range				0.5, 15.4
+        fade_time				1.8
+        die_size				0.5, 0.1
+		colour     				235,235,235
+		alpha_max	   			114		 ; maximum alpha value
+		spin_rate				-0.24,0.24
+		acceleration			0,5,0
+		
+		emitter tri_surface
+		{
+			density					180	     	; how many particles per second
+			offset_from_surface		0,2.4,0		; offset from surface to emit from
+
+			emitter_falloff_dist	250			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			; 			
+		}
+	}
+}
+
+effect fire_siege_tower_02
+{
+	type particle
+ 	{
+		texture			battlefield/fire/smoke3.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.9, 0.9
+		size_range      		0.5, 16.4
+		age_range       		1.0,1.4
+        grow_range	 			1, 1 
+        vel_range				0.5, 9.6
+        fade_time				2.5
+        die_size				0.1,0.5
+		colour     				210,200,200
+		alpha_max	   			140		 ; maximum alpha value
+		spin_rate				-0.04,0.04
+		
+		emitter tri_surface
+		{
+			density					70	     	; how many particles per second
+			offset_from_surface		0,0,0		; offset from surface to emit from
+
+			emitter_falloff_dist	400			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			; 			
+		}
+	}
+}
+
+;;;;;;;;;;;;;; BALLISTA EFFECTS ;;;;;;;;;;;;;;;;;;;;;
+
+effect fire_siege_tower_03
+{
+	type particle
+ 	{
+		texture			battlefield/fire/smoke2.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.9, 0.9
+		size_range      		2.5, 3.4
+		age_range       		0.14,0.54
+        grow_range	 			1, 1 
+        vel_range				0.8,1.4
+        fade_time				1
+        die_size				0.2, 0.01
+		colour     				215,215,215
+		alpha_max	   			120		 ; maximum alpha value
+		spin_rate				-0.54,0.54
+		acceleration			0,5,0
+		
+		emitter tri_surface
+		{
+			density					50	     	; how many particles per second
+			offset_from_surface		0,-0.25,0		; offset from surface to emit from
+
+			emitter_falloff_dist	100			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.9			; 			
+		}
+	}
+}
+
+effect fire_siege_tower_04
+{
+	type particle
+ 	{
+		texture			battlefield/fire/smoke4.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.9, 0.9
+		size_range      		0.2, 5.4
+		age_range       		1.0,2.4
+        grow_range	 			1, 1 
+        vel_range				0.1, 1.8
+        fade_time				1.8
+        die_size				0.1,0.2
+		colour     				245,225,225
+		alpha_max	   			180		 ; maximum alpha value
+		spin_rate				-0.14,0.14
+		acceleration			0,1,0
+		
+		emitter tri_surface
+		{
+			density					10	     	; how many particles per second
+			offset_from_surface		0,-0.3,0		; offset from surface to emit from
+
+			emitter_falloff_dist	250			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			; 			
+		}
+	}
+}
+
+effect fire_siege_tower_08
+{
+	type particle
+ 	{
+		texture			battlefield/fire/smoke3.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.9, 0.9
+		size_range      		0.1, 4.4
+		age_range       		0.3,0.4
+        grow_range	 			1, 1 
+        vel_range				0.5, 5.6
+        fade_time				1
+        die_size				0.1,0.25
+		colour     				210,200,200
+		alpha_max	   			140		 ; maximum alpha value
+		spin_rate				-0.04,0.04
+		acceleration			0,0.5,0
+		
+		emitter tri_surface
+		{
+			density					2	     	; how many particles per second
+			offset_from_surface		0,0,0		; offset from surface to emit from
+
+			emitter_falloff_dist	400			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			; 			
+		}
+	}
+}
+
+
+;;;;;;; ONAGER EFFECTS ;;;;;;;;;;;;;;;;;;;;;;;
+
+effect fire_siege_tower_05
+{
+	type particle
+ 	{
+		texture			battlefield/fire/smoke2.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.9, 0.9
+		size_range      		2.24, 5.4
+		age_range       		0.1,0.2
+        grow_range	 			1, 1 
+        vel_range				0.5, 2.8
+        fade_time				1.5
+        die_size				0.5, 0.1
+		colour     				235,235,235
+		alpha_max	   			114		 ; maximum alpha value
+		spin_rate				-0.24,0.24
+		acceleration			0,6,0
+		
+		emitter tri_surface
+		{
+			density					30	     	; how many particles per second
+			offset_from_surface		0,-1,0		; offset from surface to emit from
+
+			emitter_falloff_dist	250			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			; 			
+		}
+	}
+}
+
+effect fire_siege_tower_06
+{
+	type particle
+ 	{
+		texture			battlefield/fire/smoke4.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.9, 0.9
+		size_range      		5, 10.4
+		age_range       		0.5,0.7
+        grow_range	 			1, 1 
+        vel_range				0.5, 7.6
+        fade_time				2
+        die_size				0.1,0.25
+		colour     				220,200,200
+		alpha_max	   			255		 ; maximum alpha value
+		spin_rate				-0.04,0.04
+		acceleration			0,1,0
+		
+		emitter tri_surface
+		{
+			density					5	     	; how many particles per second
+			offset_from_surface		0,0,0		; offset from surface to emit from
+
+			emitter_falloff_dist	400			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			; 			
+		}
+	}
+}
+
+effect fire_siege_tower_07
+{
+	type particle
+ 	{
+		texture			battlefield/fire/smoke3.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.9, 0.9
+		size_range      		5, 10.4
+		age_range       		0.3,0.4
+        grow_range	 			1, 1 
+        vel_range				0.5, 5.6
+        fade_time				1
+        die_size				0.1,0.25
+		colour     				210,200,200
+		alpha_max	   			140		 ; maximum alpha value
+		spin_rate				-0.04,0.04
+		acceleration			0,0.5,0
+		
+		emitter tri_surface
+		{
+			density					1	     	; how many particles per second
+			offset_from_surface		0,0,0		; offset from surface to emit from
+
+			emitter_falloff_dist	400			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			; 			
+		}
+	}
+}
+
+;;;;;;; RAM EFFECTS ;;;;;;;;;;;;;;;;;;;;;;;
+
+effect fire_siege_tower_09
+{
+	type particle
+ 	{
+		texture			battlefield/fire/smoke2.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.9, 0.9
+		size_range      		2.5, 5.9
+		age_range       		0.05,0.15
+        grow_range	 			1, 1 
+        vel_range				0.5, 2.8
+        fade_time				1
+        die_size				0.5, 0.1
+		colour     				235,235,235
+		alpha_max	   			114		 ; maximum alpha value
+		spin_rate				-0.24,0.24
+		acceleration			0,8,0
+		
+		emitter tri_surface
+		{
+			density					30	     	; how many particles per second
+			offset_from_surface		0,-1,0		; offset from surface to emit from
+
+			emitter_falloff_dist	250			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			; 			
+		}
+	}
+}
+
+effect fire_siege_tower_10
+{
+	type particle
+ 	{
+		texture			battlefield/fire/smoke4.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.9, 0.9
+		size_range      		5, 6.4
+		age_range       		0.5,1.4
+        grow_range	 			1, 1 
+        vel_range				3.5, 5.6
+        fade_time				1
+        die_size				0.1,0.25
+		colour     				220,200,200
+		alpha_max	   			255		 ; maximum alpha value
+		spin_rate				-0.04,0.04
+		acceleration			0,1,0
+		
+		emitter tri_surface
+		{
+			density					10	     	; how many particles per second
+			offset_from_surface		0,0,0		; offset from surface to emit from
+
+			emitter_falloff_dist	400			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			; 			
+		}
+	}
+}
+
+effect fire_siege_tower_11
+{
+	type particle
+ 	{
+		texture			battlefield/fire/smoke3.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.9, 0.9
+		size_range      		5, 10.4
+		age_range       		0.3,1
+        grow_range	 			1, 1 
+        vel_range				0.5, 5.6
+        fade_time				1
+        die_size				0.1,0.25
+		colour     				210,200,200
+		alpha_max	   			140		 ; maximum alpha value
+		spin_rate				-0.04,0.04
+		acceleration			0,0.5,0
+		
+		emitter tri_surface
+		{
+			density					1	     	; how many particles per second
+			offset_from_surface		0,0,0		; offset from surface to emit from
+
+			emitter_falloff_dist	400			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			; 			
+		}
+	}
+}
+
+;;;;;;; LADDER EFFECTS ;;;;;;;;;;;;;;;;;;;;;;;
+
+effect fire_siege_tower_12
+{
+	type particle
+ 	{
+		texture			battlefield/fire/smoke2.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.9, 0.9
+		size_range      		2.5, 5.9
+		age_range       		0.05,0.15
+        grow_range	 			1, 1 
+        vel_range				0.5, 2.8
+        fade_time				1
+        die_size				0.5, 0.1
+		colour     				235,235,235
+		alpha_max	   			114		 ; maximum alpha value
+		spin_rate				-0.24,0.24
+		acceleration			0,8,0
+		
+		emitter tri_surface
+		{
+			density					30	     	; how many particles per second
+			offset_from_surface		0,-1,0		; offset from surface to emit from
+
+			emitter_falloff_dist	250			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			; 			
+		}
+	}
+}
+
+effect fire_siege_tower_13
+{
+	type particle
+ 	{
+		texture			battlefield/fire/smoke4.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.9, 0.9
+		size_range      		5, 10.4
+		age_range       		0.5,0.7
+        grow_range	 			1, 1 
+        vel_range				0.5, 7.6
+        fade_time				2
+        die_size				0.1,0.25
+		colour     				220,200,200
+		alpha_max	   			255		 ; maximum alpha value
+		spin_rate				-0.04,0.04
+		acceleration			0,1,0
+		
+		emitter tri_surface
+		{
+			density					5	     	; how many particles per second
+			offset_from_surface		0,0,0		; offset from surface to emit from
+
+			emitter_falloff_dist	400			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			; 			
+		}
+	}
+}
+
+effect fire_siege_tower_14
+{
+	type particle
+ 	{
+		texture			battlefield/fire/smoke3.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.9, 0.9
+		size_range      		5, 10.4
+		age_range       		0.3,0.4
+        grow_range	 			1, 1 
+        vel_range				0.5, 5.6
+        fade_time				1
+        die_size				0.1,0.25
+		colour     				210,200,200
+		alpha_max	   			140		 ; maximum alpha value
+		spin_rate				-0.04,0.04
+		acceleration			0,0.5,0
+		
+		emitter tri_surface
+		{
+			density					1	     	; how many particles per second
+			offset_from_surface		0,0,0		; offset from surface to emit from
+
+			emitter_falloff_dist	400			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			; 			
+		}
+	}
+}
+
+;;;;;;; HELIOPOLIS TOWER EFFECTS ;;;;;;;;;;;;;;;;;;;;;;;
+
+effect fire_siege_tower_15
+{
+	type particle
+ 	{
+		texture			battlefield/fire/smoke2.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.9, 0.9
+		size_range      		2.2, 14.4
+		age_range       		0.1,0.24
+        grow_range	 			1, 1 
+        vel_range				0.5, 15.4
+        fade_time				1.8
+        die_size				0.5, 0.1
+		colour     				235,235,235
+		alpha_max	   			114		 ; maximum alpha value
+		spin_rate				-0.24,0.24
+		acceleration			0,5,0
+		
+		emitter tri_surface
+		{
+			density					180	     	; how many particles per second
+			offset_from_surface		0,2.4,0		; offset from surface to emit from
+
+			emitter_falloff_dist	250			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			; 			
+		}
+	}
+}
+
+effect fire_siege_tower_16
+{
+	type particle
+ 	{
+		texture			battlefield/fire/smoke3.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.9, 0.9
+		size_range      		2.5, 20.4
+		age_range       		1.0,1.4
+        grow_range	 			1, 1 
+        vel_range				0.5, 9.6
+        fade_time				2.5
+        die_size				0.1,0.5
+		colour     				210,200,200
+		alpha_max	   			140		 ; maximum alpha value
+		spin_rate				-0.04,0.04
+		
+		emitter tri_surface
+		{
+			density					70	     	; how many particles per second
+			offset_from_surface		0,0,0		; offset from surface to emit from
+
+			emitter_falloff_dist	400			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			; 			
+		}
+	}
+}
+
+;;;;;;; SIEGE TOWER EFFECTS ;;;;;;;;;;;;;;;;;;;;;;;
+
+effect fire_siege_tower_17
+{
+	type particle
+ 	{
+		texture			battlefield/fire/smoke2.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.9, 0.9
+		size_range      		1.8, 11.4
+		age_range       		0.1,0.24
+        grow_range	 			1, 1 
+        vel_range				0.5, 15.4
+        fade_time				1.8
+        die_size				0.5, 0.1
+		colour     				235,235,235
+		alpha_max	   			114		 ; maximum alpha value
+		spin_rate				-0.24,0.24
+		acceleration			0,5,0
+		
+		emitter tri_surface
+		{
+			density					100	     	; how many particles per second
+			offset_from_surface		0,2.4,0		; offset from surface to emit from
+
+			emitter_falloff_dist	150			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			; 			
+		}
+	}
+}
+
+effect fire_siege_tower_18
+{
+	type particle
+ 	{
+		texture			battlefield/fire/smoke3.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.9, 0.9
+		size_range      		0.5, 16.4
+		age_range       		1.0,1.4
+        grow_range	 			1, 1 
+        vel_range				0.5, 9.6
+        fade_time				2.5
+        die_size				0.1,0.5
+		colour     				210,200,200
+		alpha_max	   			140		 ; maximum alpha value
+		spin_rate				-0.04,0.04
+		
+		emitter tri_surface
+		{
+			density					30	     	; how many particles per second
+			offset_from_surface		0,0,0		; offset from surface to emit from
+
+			emitter_falloff_dist	300			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			; 			
+		}
+	}
+}
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;								SIEGE FIRE EFFECT SETS												 ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+effect_set engine_fire_middle_tower_set
+{
+	lod 1000
+	{
+		fire_siege_tower_01	
+		fire_siege_tower_02
+	}
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+effect_set engine_fire_set
+{
+	lod 1000
+	{
+		burning_engine_smoke	
+	}
+}
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+effect_set engine_fire_ballista_set
+{
+	lod 1000
+	{
+		fire_siege_tower_03	
+		fire_siege_tower_04
+		fire_siege_tower_08
+	}
+}
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+effect_set engine_fire_onager_set
+{
+	lod 1000
+	{
+		fire_siege_tower_05	
+		fire_siege_tower_06
+		fire_siege_tower_07
+	}
+}
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+effect_set engine_fire_ram_set
+{
+	lod 1000
+	{
+		fire_siege_tower_09	
+		fire_siege_tower_10
+		fire_siege_tower_11
+	}
+}
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+effect_set engine_fire_ladder_set
+{
+	lod 1000
+	{
+		fire_siege_tower_12	
+		fire_siege_tower_13
+		fire_siege_tower_14
+	}
+}
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+effect_set engine_fire_heliopolis_set
+{
+	lod 1000
+	{
+		fire_siege_tower_15	
+		fire_siege_tower_16
+	}
+}
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+effect_set engine_fire_siege_set
+{
+	lod 1000
+	{
+		fire_siege_tower_17
+		fire_siege_tower_18
+	}
+}
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

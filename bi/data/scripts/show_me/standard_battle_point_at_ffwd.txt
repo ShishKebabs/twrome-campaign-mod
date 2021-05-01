@@ -1,0 +1,19 @@
+script
+	declare_show_me						; This is a show me script
+
+	monitor_event AbandonShowMe	TrueCondition	; Catch the AbandonShowMe event
+		ui_flash_stop					; Stop the UI highlighting
+		suspend_unscripted_advice false		; Restore unscripted advice
+		terminate_script					; Shut down the show me script
+	end_monitor	
+
+	suspend_unscripted_advice true
+	ui_flash_start ffwd_button
+	wait 2
+	ui_flash_start ultra_ffwd_button
+	wait 2
+	ui_flash_start play_button
+	wait 2
+	ui_flash_stop
+	suspend_unscripted_advice false
+end_script

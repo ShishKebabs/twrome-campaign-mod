@@ -1,0 +1,57 @@
+plan
+
+{
+	floor		roman_farm_A_underlay.cas roman_farm_A_overlay.cas
+
+	ground_types	ground_roman_farm_a.tga	-96,	-96,	96,	96
+
+	borders	border_limits_128m_diameter.CAS
+;		x,		y,	rot,	z,
+
+greek_semidetached_house_roman_variant,	-35,	60,	0,	0
+
+greek_poor_house_roman_variant,		-45,	0,	180,	0
+greek_poor_house_roman_variant,		1,	-3,	-80,	0
+
+egyptian_grain_threshing_pit,	-4,	17,	0,	0
+
+pile_of_logs,			7,	25,	-25,	0
+pile_of_logs,			5,	32,	-70,	0
+
+wine_press,			-45,	30,	90,	0
+
+village_well,			-45,	21,	0,	0
+
+white_granary,			6,	58,	0,	0
+
+hay_field_long,			58,	78,	0,	0
+corn_field_long,		58,	48,	0,	0
+
+;fenced_area_long,		58,	78,	0,	0
+;fenced_area_long,		58,	48,	0,	0
+
+fenced_area_double,		64,	-64,	0,	0
+
+planted_vines,			60,	0,	0,	0
+planted_vines,			-62,	-62,	-90,	0
+
+hay_field_harvested,		-80,	60,	-90,	0
+
+lettuce_patch,			-16,	-38,	0,	0
+pumpkin_patch,			7,	-38,	0,	0
+lettuce_patch,			7,	-60,	0,	0
+
+cart_B,				-82,	47,	0,	0
+
+roman_farm_A,			0,	0,	0,	0
+
+tree_F,			-80,	10,	115,	0
+tree_F,			80,	-80,	170,	0
+
+tree_A,			-80,	-17,	170,	0
+tree_A,			4,	-83,	45,	0
+
+tree_E,			-18,	-74,	0,	0
+tree_E,			-24,	-7,	-125,	0
+
+}

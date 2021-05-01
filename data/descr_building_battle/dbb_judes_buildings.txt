@@ -1,0 +1,12 @@
+	farm_house
+	{
+		stat_cat tiny_wooden
+		localised_name ambient
+		level
+		{
+			min_health 0
+			battle_stats
+			item		farm_house
+			physical_info	info_farm_house.cas
+		}
+	}

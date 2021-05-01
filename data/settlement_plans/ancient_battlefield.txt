@@ -1,0 +1,11 @@
+plan
+
+{
+
+floor	ancient_battlefield_underlay.CAS	ancient_battlefield_overlay.CAS
+	borders	border_limits_64m_diameter.CAS		
+ancient_battlefield_obelisk,		0,	0,	0,	0
+
+
+
+	}

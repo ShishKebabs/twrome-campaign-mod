@@ -1,0 +1,632 @@
+; example template
+
+	;circus_maximus
+	;{
+	;	stat_cat large_stone
+	;	localised_name circus_maximus
+	;	level
+	;	{
+	;		min_health 0
+	;		battle_stats
+	;		item		circus_maximus
+	;		physical_info	info_circus_maximus.cas
+	;	}
+	;}
+
+
+; *****    MISSILES tech-tree buildings    *****
+
+
+; ROMAN/GREEK
+
+	practice_field_roman
+	{
+		stat_cat small_stone
+		localised_name practice_range
+		level
+		{
+			min_health 1
+			battle_stats	
+			item		practice_field_roman
+			physical_info	practice_field_roman_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		practice_field_roman_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+
+	archery_range_roman
+	{
+		stat_cat medium_stone
+		localised_name archery_range
+		level
+		{
+			min_health 1
+			battle_stats	
+			item		archery_range_roman
+			physical_info	archery_range_roman_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		archery_range_roman_rubble
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+
+	catapult_range_roman
+	{
+		stat_cat medium_stone
+		localised_name catapult_range
+		level
+		{
+			min_health 1
+			battle_stats	
+			item		catapult_range_roman
+			physical_info	catapult_range_roman_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		catapult_range_roman_rubble
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+
+	siege_engineer_roman
+	{
+		stat_cat medium_stone
+		localised_name siege_engineer
+		level
+		{
+			min_health 1
+			battle_stats
+			item		siege_engineer_roman
+			physical_info	siege_engineer_roman_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		siege_engineer_roman_rubble
+			physical_info	info_roman_rubble_160x128.cas
+		}
+	}
+
+; EASTERN/EGYPTIAN
+
+
+	practice_field_eastern
+	{
+		stat_cat small_stone
+		localised_name practice_range
+		level
+		{
+			min_health 1
+			battle_stats
+			item		practice_field_eastern
+			physical_info	practice_field_eastern_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		practice_field_eastern_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+	archery_range_eastern
+	{
+		stat_cat medium_stone
+		localised_name archery_range
+		level
+		{
+			min_health 1
+			battle_stats
+			item		archery_range_eastern
+			physical_info	archery_range_eastern_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		archery_range_eastern_rubble
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+	catapult_range_eastern
+	{
+		stat_cat medium_stone
+		localised_name catapult_range
+		level
+		{
+			min_health 1
+			battle_stats
+			item		catapult_range_eastern
+			physical_info	catapult_range_eastern_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		catapult_range_eastern_rubble
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+	siege_engineer_eastern
+	{
+		stat_cat medium_stone
+		localised_name siege_engineer
+		level
+		{
+			min_health 1
+			battle_stats
+			item		siege_engineer_eastern
+			physical_info	siege_engineer_eastern_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_160x128
+			physical_info	info_roman_rubble_160x128.cas
+		}
+	}
+
+; BARBARIAN
+
+
+	practice_field_barbarian
+	{
+		stat_cat small_stone
+		localised_name practice_range
+		level
+		{
+			min_health 1
+			battle_stats
+			item		practice_field_barbarian
+			physical_info	practice_field_barbarian_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_48x32
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+
+	archery_range_barbarian
+	{
+		stat_cat medium_stone
+		localised_name archery_range
+		level
+		{
+			min_health 1
+			battle_stats
+			item		archery_range_barbarian
+			physical_info	archery_range_barbarian_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		archery_range_barbarian_rubble
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+
+
+; *****    HEALTH tech-tree buildings    *****
+
+
+; ROMAN
+
+	sewers_roman
+	{
+		stat_cat medium_stone
+		localised_name sewers
+		level
+		{
+			min_health 1
+			battle_stats
+			item		sewers_roman
+			physical_info	sewers_roman_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_48x32
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+	baths_roman
+	{
+		stat_cat medium_stone
+		localised_name baths
+		level
+		{
+			min_health 1
+			battle_stats
+			item		baths_roman
+			physical_info	baths_roman_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_112x64
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+	baths_greek
+	{
+		stat_cat medium_stone
+		localised_name baths
+		level
+		{
+			min_health 1
+			battle_stats
+			item		baths_greek
+			physical_info	baths_roman_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_112x64
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+; EGYPTIAN
+
+	sewers_egyptian
+	{
+		stat_cat medium_stone
+		localised_name sewers
+		level
+		{
+			min_health 1
+			battle_stats
+			item		sewers_egyptian
+			physical_info	sewers_egyptian_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		sewers_egyptian_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+	baths_egyptian
+	{
+		stat_cat medium_stone
+		localised_name baths
+		level
+		{
+			min_health 1
+			battle_stats
+			item		baths_egyptian
+			physical_info	baths_egyptian_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		baths_egyptian_rubble
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+; *****    AQUEDUCTS
+
+
+	aqueduct_large_city
+	{
+		stat_cat medium_stone_nonflammable
+		localised_name aqueduct
+		level
+		{
+			min_health 1
+			battle_stats flammability_none impact_damage_low
+			item		aqueduct_large_city
+			physical_info	info_aquaduct_large_city.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats  flammability_none impact_damage_low
+			item		roman_rubble_aqueduct_large_city
+			physical_info	info_rubble_roman_aquaduct_large_city.cas
+		}
+	}
+
+	aqueduct_huge_city
+	{
+		stat_cat medium_stone_nonflammable
+		localised_name aqueduct
+		level
+		{
+			min_health 1
+			battle_stats  flammability_none impact_damage_low
+			item		aqueduct_huge_city
+			physical_info	info_aquaduct_huge_city.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats  flammability_none impact_damage_low
+			item		roman_rubble_aqueduct_huge_city
+			physical_info	info_rubble_roman_aquaduct_huge_city.cas
+		}
+	}
+
+	city_plumbing_huge_city
+	{
+		stat_cat medium_stone_nonflammable
+		localised_name city_plumbing
+		level
+		{
+			min_health 1
+			battle_stats flammability_none impact_damage_low
+			item		city_plumbing_huge_city
+			physical_info	info_city_plumbing_huge_city.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		roman_rubble_aqueduct_huge_city
+			physical_info	info_rubble_roman_aquaduct_huge_city.cas
+		}
+	}
+
+
+
+; *****    DESPOTIC LAW tech-tree buildings    *****
+
+
+; EGYPTIAN/EASTERN
+
+	execution_square_eastern
+	{
+		stat_cat medium_stone
+		localised_name execution_square
+		level
+		{
+			min_health 1
+			battle_stats
+			item		execution_square_eastern
+			physical_info	execution_square_eastern_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		execution_square_eastern_rubble
+			physical_info	info_roman_rubble_160x128.cas
+		}
+	}
+
+	secret_police_HQ_eastern
+	{
+		stat_cat medium_stone
+		localised_name secret_police_hq
+		level
+		{
+			min_health 1
+			battle_stats
+			item		secret_police_HQ_eastern
+			physical_info	secret_police_HQ_eastern_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		secret_police_hq_eastern_rubble
+			physical_info	info_roman_rubble_160x128.cas
+		}
+	}
+
+	secret_police_network_eastern
+	{
+		stat_cat medium_stone
+		localised_name secret_police_network
+		level
+		{
+			min_health 1
+			battle_stats
+			item		secret_police_network_eastern
+			physical_info	secret_police_network_eastern_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		secret_police_network_eastern_rubble
+			physical_info	info_roman_rubble_256x192.cas
+		}
+	}
+
+
+; *****     THEATRE tech-tree buildings    *****
+
+
+; GREEK
+
+	odeon_greek
+	{
+		stat_cat medium_stone
+		localised_name odeon
+		level
+		{
+			min_health 1
+			battle_stats
+			item		odeon_greek
+			physical_info	odeon_greek_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_odeon_rubble
+			physical_info	info_roman_rubble_160x128.cas
+		}
+	}
+
+	lyceum_greek
+	{
+		stat_cat medium_stone
+		localised_name lyceum
+		level
+		{
+			min_health 1
+			battle_stats
+			item		lyceum_greek
+			physical_info	lyceum_greek_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		lyceum_greek_rubble
+			physical_info	info_roman_rubble_160x128.cas
+		}
+	}
+
+	theatre_greek
+	{
+		stat_cat medium_stone
+		localised_name theatre
+		level
+		{
+			min_health 1
+			battle_stats
+			item		theatre_greek
+			physical_info	theatre_greek_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_256x192
+			physical_info	info_roman_rubble_256x192.cas
+		}
+	}
+
+
+; *******   TAVERNS tech-tree buildings   **********
+
+; BARBARIAN
+
+
+	tavern_barbarian
+	{
+		stat_cat medium_stone
+		localised_name tavern
+		level
+		{
+			min_health 1
+			battle_stats
+			item		tavern_barbarian
+			physical_info	tavern_barbarian_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		tavern_barbarian_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+	bardic_circle_barbarian
+	{
+		stat_cat medium_stone
+		localised_name bardic_circle
+		level
+		{
+			min_health 1
+			battle_stats
+			item		bardic_circle_barbarian
+			physical_info	bardic_circle_barbarian_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		bardic_circle_barbarian_rubble
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+
+; ***********  OTHER
+
+
+	egyptian_great_forum
+	{
+		stat_cat medium_stone
+		localised_name grand_bazaar
+		level
+		{
+			min_health 1
+			battle_stats
+			item		egyptian_great_forum
+			physical_info	egyptian_great_forum_info.CAS
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		egyptian_great_forum_rubble
+			physical_info	info_roman_rubble_160x128.cas
+		}
+	}

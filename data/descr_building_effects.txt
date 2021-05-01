@@ -1,0 +1,254 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; Large collapse dust
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+effect building_collapse_dust_large
+{
+	type particle
+ 	{
+		texture					battlefield/fire/dust0.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.8, 0.8
+		size_range      		60, 70
+		age_range       		0.8, 1.7
+        grow_range	 			0.1 ,0.6
+        vel_range				12, 18 ;6, 8
+        fade_time				2.5
+        die_size				110,0
+		colour     				200, 200, 200
+		alpha_max	   			255		 ; maximum alpha value
+		spin_rate				-0.10, 0.10
+		acceleration			0,0.0,0
+		
+		emitter vector_outline
+		{
+			density					200	    	; how many particles per second
+			min_angle				5			; minimum angle up from horizontal to emit in
+			max_angle				20			; maximum angle up from horizontal to emit in
+			shrink_factor			0.5
+		}
+	}
+}
+
+effect building_collapse_dust_fade
+{
+	type particle
+ 	{
+		texture					battlefield/fire/dust0.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.8, 0.8
+		size_range      		120, 150
+		age_range       		0.2, 0.7
+        grow_range	 			0.1 ,0.6
+        vel_range				7, 14
+        fade_time				9
+        die_size				600,0
+		colour     				200, 200, 200
+		alpha_max	   			100	 ; maximum alpha value
+		spin_rate				0.02, -0.02
+		acceleration			0,0.0,0
+		
+		emitter hemisphere
+		{
+			density					50	    	; how many particles per second
+			min_angle				5			; minimum angle up from horizontal to emit in
+			max_angle				90		; maximum angle up from horizontal to emit in
+		}
+	}
+}
+
+
+effect_set building_collapse_dust_large_set
+{
+	play_time	1 			;  time to play effect for in seconds	
+	lod 1000
+	{
+		building_collapse_dust_large
+		building_collapse_dust_fade		
+	}
+}
+
+effect_set building_anim_collapse_dust_large_set
+{
+	lod 1000
+	{
+		building_collapse_dust_large
+	}
+}
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; Medium collapse dust
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+effect building_collapse_dust_medium
+{
+	type particle
+ 	{
+		texture					battlefield/fire/dust0.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.8, 0.8
+		size_range      		60, 70
+		age_range       		0.8, 1.5
+        grow_range	 			0.1 ,0.6
+        vel_range				12, 14
+        fade_time				2.5
+        die_size				110,0
+		colour     				200, 200, 200
+		alpha_max	   			255		 ; maximum alpha value
+		spin_rate				-0.15, 0.20
+		acceleration			0,0.0,0
+		
+		emitter vector_outline
+		{
+			density					300	    	; how many particles per second
+			min_angle				5			; minimum angle up from horizontal to emit in
+			max_angle				20			; maximum angle up from horizontal to emit in
+			shrink_factor			0.5
+		}
+	}
+}
+
+effect building_collapse_dust_fade_medium
+{
+	type particle
+ 	{
+		texture					battlefield/fire/dust0.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.8, 0.8
+		size_range      		120, 150
+		age_range       		0.6, 1.0
+        grow_range	 			0.1 ,0.6
+        vel_range				4, 4
+        fade_time				9
+        die_size				600,0
+		colour     				200, 200, 200
+		alpha_max	   			100	 ; maximum alpha value
+		spin_rate				0.05, -0.05
+		acceleration			0,0.0,0
+		max_particles			400
+		
+		emitter hemisphere
+		{
+			density					50	    	; how many particles per second
+			min_angle				85			; minimum angle up from horizontal to emit in
+			max_angle				90		; maximum angle up from horizontal to emit in
+			shrink_factor			0.5
+		}
+	}
+}
+
+
+effect_set building_collapse_dust_medium_set
+{
+	play_time	1.5 			;  time to play effect for in seconds	
+	lod 1000
+	{
+		building_collapse_dust_medium
+		building_collapse_dust_fade_medium
+	}
+}
+
+
+effect_set building_anim_collapse_dust_medium_set
+{
+	lod 1000
+	{
+		building_collapse_dust_medium
+	}
+}
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; Small collapse dust
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+effect building_collapse_dust_small
+{
+	type particle
+ 	{
+		texture					battlefield/fire/dust0.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.8, 0.8
+		size_range      		10, 20
+		age_range       		0.6, 1
+        grow_range	 			0.1 ,0.6
+        vel_range				1, 3
+        fade_time				3
+        die_size				30,0
+		colour     				200, 200, 200
+		alpha_max	   			200		 ; maximum alpha value
+		spin_rate				-0.15, 0.20
+		acceleration			0,0.0,0
+		
+		emitter vector_outline
+		{
+			density					200	    	; how many particles per second
+			min_angle				5			; minimum angle up from horizontal to emit in
+			max_angle				20			; maximum angle up from horizontal to emit in
+			shrink_factor			0.5
+		}
+	}
+}
+
+effect building_collapse_dust_fade_small
+{
+	type particle
+ 	{
+		texture					battlefield/fire/dust0.tga
+
+		sprite_origin			0.1, 0.1
+		sprite_size				0.8, 0.8
+		size_range      		50, 70
+		age_range       		6.1, 1.0
+        grow_range	 			0.1 ,0.6
+        vel_range				4, 8
+        fade_time				8
+        die_size				100,0
+		colour     				200, 200, 200
+		alpha_max	   			70	 ; maximum alpha value
+		spin_rate				0.05, -0.05
+		acceleration			0,0.0,0
+		
+		emitter hemisphere
+		{
+			density					10	    	; how many particles per second
+			min_angle				85			; minimum angle up from horizontal to emit in
+			max_angle				90		; maximum angle up from horizontal to emit in
+		}
+	}
+}
+
+
+effect_set building_collapse_dust_small_set
+{
+	play_time	1 			;  time to play effect for in seconds	
+	lod 1000
+	{
+		building_collapse_dust_small
+		building_collapse_dust_fade_small		
+	}
+}
+
+effect_set building_anim_collapse_dust_small_set
+{
+	lod 1000
+	{
+		building_collapse_dust_small
+	}
+}

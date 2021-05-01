@@ -1,0 +1,201 @@
+	pavement_roman_trader
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_roman_trader
+			physical_info	none
+		}
+	}
+
+	pavement_roman_blacksmith
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_roman_blacksmith
+			physical_info	none
+		}
+	}
+
+	pavement_roman_marketplace
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_roman_marketplace
+			physical_info	none
+		}
+	}
+
+	
+	
+
+
+
+		pavement_cavalry_barracks
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_cavalry_barracks
+			physical_info	none
+		}
+	}
+
+		pavement_great_forum_with_curia
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_great_forum_with_curia
+			physical_info	none
+		}
+	}
+
+	pavement_pantheon
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_pantheon
+			physical_info	none
+		}
+	}
+
+	pavement_roman_pro-consuls_palace
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_roman_pro-consuls_palace
+			physical_info	none
+		}
+	}
+
+	pavement_greek_pro-consuls_palace	
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_greek_pro-consuls_palace
+			physical_info	none
+		}
+	}
+
+	pavement_greek_merchants_quarter	
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_greek_merchants_quarter
+			physical_info	none
+		}
+	}
+
+	pavement_greek_large_marketplace	
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_greek_large_marketplace
+			physical_info	none
+		}
+	}
+
+	pavement_greek_marketplace	
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_greek_marketplace
+			physical_info	none
+		}
+	}
+
+	pavement_eastern_hippodrome	
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_eastern_hippodrome
+			physical_info	none
+		}
+	}
+
+	pavement_eastern_cavalry_barracks	
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_eastern_cavalry_barracks
+			physical_info	none
+		}
+	}
+
+
+	pavement_egyptian_shrine_andrews	
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_egyptian_shrine_andrews
+			physical_info	none
+		}
+	}
+
+	pavement_forum	
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_forum
+			physical_info	none
+		}
+	}
+

@@ -1,0 +1,11 @@
+
+cliff big_c_shape
+{
+	base		data/models_landscape/cliff_big_c_shape_underlay.cas
+	overlay		data/models_landscape/cliff_big_c_shape_overlay.cas
+	texture		data/models_landscape/textures
+	info		data/models_landscape/cliff_big_c_shape_collision.cas
+}
+
+
+

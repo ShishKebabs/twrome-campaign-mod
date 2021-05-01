@@ -1,0 +1,67 @@
+min_clump_separation					0.25
+max_clump_separation					18.0
+min_items_per_clump						3
+max_items_per_clump						12
+min_item_separation						0.5
+max_item_separation						0.75
+
+vegetation_item
+;grass
+
+	texture_name						data/battlefield/vegetation/wall_shrub.tga
+	texture_coords						0, 0.75, 1.0, 1.0
+
+	probability							0.5
+	min_width							1.0
+	max_width							2.0
+	min_height							1.0
+	max_height                                                      1.0
+
+vegetation_item
+;bush
+
+	texture_name						data/battlefield/vegetation/wall_shrub.tga
+	texture_coords						0, 0.45, 0.52, 0.74
+
+	probability							0.5
+	min_width							1.5
+	max_width							2.5
+	min_height							1.0
+	max_height							2.5							
+				
+
+;vegetation_item
+;tall plant pink top
+;
+;	texture_name						data/battlefield/vegetation/wall_shrub.tga
+;	texture_coords						0, 0.007, 0.25, 0.39
+;
+;	probability							0.1
+;	min_width							1.0
+;	max_width							1.5
+;	min_height							1.0
+;	max_height                                                      1.5
+
+vegetation_item
+;plant
+	
+        texture_name						data/battlefield/vegetation/wall_shrub.tga
+	texture_coords						0.25, 0.02, 0.65, 0.39
+
+	probability							0.4
+	min_width							1.0
+	max_width							1.0
+	min_height							1.0
+	max_height                                                      1.0
+
+vegetation_item
+;tall plant
+
+	texture_name						data/battlefield/vegetation/wall_shrub.tga
+	texture_coords						0.65, 0.007, 1.0, 0.57
+
+	probability							0.4
+	min_width							1.0
+	max_width							1.0
+	min_height							1.0
+	max_height                                                      1.5

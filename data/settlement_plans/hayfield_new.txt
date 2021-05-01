@@ -1,0 +1,11 @@
+plan
+
+{
+
+floor	hay_field_new_underlay.CAS	hay_field_new_overlay.CAS
+
+ground_types	ground_no_grass.tga	-32,	-32,	32,	32
+		
+hayfield_new,		0,	0,	0,	0
+
+	}

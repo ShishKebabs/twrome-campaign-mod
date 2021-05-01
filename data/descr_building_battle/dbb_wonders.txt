@@ -1,0 +1,341 @@
+; ******************   Giza  *************************
+  
+sphinx
+{
+	stat_cat indestructable
+	localised_name sphinx
+	level
+	{
+		min_health 0
+		battle_stats
+		item		sphinx
+		physical_info	info_sphinx.cas
+	}
+}
+
+great_sphinx
+{
+	stat_cat indestructable
+	localised_name great_sphinx
+	level
+	{
+		min_health 0
+		battle_stats
+		item		great_sphinx
+		physical_info	info_sphinx.cas
+	}
+}
+
+
+; **************** Statue Of Zeus at Olympia
+
+
+temple_of_zeus
+{
+	stat_cat indestructable
+	localised_name temple_of_zeus
+	level
+	{
+		min_health 0
+		battle_stats
+		item		temple_of_zeus
+		physical_info	info_temple_of_zeus.cas
+	}
+}
+
+temple_of_zeus_RTM
+{
+	stat_cat indestructable
+	localised_name ambient
+	level
+	{
+		min_health 0
+		battle_stats
+		item		temple_of_zeus_RTM
+		physical_info	info_temple_of_zeus.cas
+	}
+}
+
+
+statue_of_zeus
+{
+	stat_cat indestructable
+	localised_name ambient
+	level
+	{
+		min_health 0
+		battle_stats
+		item		statue_of_zeus
+		physical_info	info_statue_of_zeus.cas
+	}
+}
+
+
+statue_of_zeus_RTM
+{
+	stat_cat indestructable
+	localised_name ambient
+	level
+	{
+		min_health 0
+		battle_stats
+		item		statue_of_zeus_RTM
+		physical_info	none
+	}
+}
+
+
+altis_walls
+{
+	stat_cat indestructable
+	localised_name ambient
+	level
+	{
+		min_health 0
+		battle_stats
+		item		altis_walls
+		physical_info	info_altis_walls.cas
+	}
+}
+
+statue_of_zeus_temple_interior
+{
+	stat_cat indestructable
+	localised_name ambient
+	level
+	{
+		min_health 0
+		battle_stats
+		item		statue_of_zeus_temple_interior
+		physical_info	none
+	}
+}
+
+; ******************** Temple to Artemis at Ephesus  
+
+
+
+temple_to_artemis
+{
+	stat_cat indestructable
+	localised_name temple_to_artemis
+	level
+	{
+		min_health 0
+		battle_stats
+		item		temple_to_artemis
+		physical_info	info_temple_to_artemis.cas
+	}
+}
+
+temple_to_artemis_RTM
+{
+	stat_cat indestructable
+	localised_name ambient
+	level
+	{
+		min_health 0
+		battle_stats
+		item		temple_to_artemis_RTM
+		physical_info	info_temple_to_artemis.cas
+	}
+}
+
+
+
+; *********************  Mausoleum at Halicarnassus
+
+
+mausoleum_at_halicarnassus
+{
+	stat_cat indestructable
+	localised_name mausoleum
+	level
+	{
+		min_health 0
+		battle_stats
+		item		mausoleum_at_halicarnassus
+		physical_info	info_mausoleum_at_halicarnassus.cas
+	}
+}
+
+
+lion_statue
+{
+	stat_cat indestructable
+	localised_name ambient
+	level
+	{
+		min_health 0
+		battle_stats
+		item		lion_statue
+		physical_info	none
+	}
+}
+
+
+quadriga_small
+{
+	stat_cat indestructable
+	localised_name ambient
+	level
+	{
+		min_health 0
+		battle_stats
+		item		quadriga_small
+		physical_info	none
+	}
+}
+
+
+; *******************  Pharos at Alexandria 
+
+pharos_at_alexandria
+{
+	stat_cat indestructable
+	localised_name pharos
+	level
+	{
+		min_health 0
+		battle_stats
+		item		pharos_at_alexandria
+		physical_info	info_pharos_at_alexandria.cas
+	}
+}
+
+
+; ********************   Colossus of Rhodes
+
+
+colossus_of_rhodes
+{
+	stat_cat indestructable
+	localised_name colossus
+	level
+	{
+		min_health 0
+		battle_stats
+		item		colossus_of_rhodes
+		physical_info	none
+	}
+}
+
+colossus_harbour_mouth
+{
+	stat_cat indestructable
+	localised_name ambient
+	level
+	{
+		min_health 0
+		battle_stats
+		item		colossus_harbour_mouth
+		physical_info	none
+	}
+}	
+
+
+; *********************  Hanging Gardens Of Babylon
+
+
+hanging_gardens_of_babylon
+{
+	stat_cat indestructable
+	localised_name hanging_gardens
+	level
+	{
+		min_health 0
+		battle_stats
+		item		hanging_gardens_of_babylon
+		physical_info	info_hanging_gardens_of_babylon.cas
+	}
+}	
+
+ziggurat
+{
+	stat_cat indestructable
+	localised_name ambient
+	level
+	{
+		min_health 0
+		battle_stats
+		item		ziggurat
+		physical_info	info_ziggurat.cas
+	}
+}	
+
+
+; *********************  Colosseum for RTM
+
+
+colosseum_interior_RTM
+{
+	stat_cat indestructable
+	localised_name ambient
+	level
+	{
+		min_health 0
+		battle_stats
+		item		colosseum_interior_RTM
+		physical_info	none
+	}
+}	
+
+
+; **********************  Circus Maximus  for RTM
+
+
+circus_maximus_RTM_carceres_statues
+{
+	stat_cat indestructable
+	localised_name ambient
+	level
+	{
+		min_health 0
+		battle_stats
+		item		circus_maximus_RTM_carceres_statues
+		physical_info	none
+	}
+}
+	
+
+circus_maximus_RTM_carceres_end
+{
+	stat_cat indestructable
+	localised_name ambient
+	level
+	{
+		min_health 0
+		battle_stats
+		item		circus_maximus_RTM_carceres_end
+		physical_info	none
+	}
+}
+
+
+circus_maximus_RTM_middle_section
+{
+	stat_cat indestructable
+	localised_name ambient
+	level
+	{
+		min_health 0
+		battle_stats
+		item		circus_maximus_RTM_middle_section
+		physical_info	none
+	}
+}
+
+circus_maximus_RTM_rounded_end
+{
+	stat_cat indestructable
+	localised_name ambient
+	level
+	{
+		min_health 0
+		battle_stats
+		item		circus_maximus_RTM_rounded_end
+		physical_info	none
+	}
+}
+
+

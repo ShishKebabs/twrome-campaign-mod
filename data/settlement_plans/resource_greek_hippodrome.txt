@@ -1,0 +1,10 @@
+plan
+
+{
+	floor		greek_hippodrome_underlay.cas greek_hippodrome_overlay.cas
+	borders	border_limits_128m_diameter.CAS
+;			x,	y,	rot,	z,
+
+greek_hippodrome	0	0	0	0
+
+}

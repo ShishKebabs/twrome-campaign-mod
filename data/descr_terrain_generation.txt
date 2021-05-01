@@ -1,0 +1,150 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+;	format:
+;	-------------------------------------------------------------------------
+;
+;		climate	<climate_name>
+;		{
+;			max_height_diff			<height_diff>
+;			max_river_height_diff	<height_diff>
+;
+;			fractal_initial_ranges
+;			{
+;				<ground_type>	<min_range>	<max_range>
+;				...
+;			}
+;
+;			fractal_iteration_multipliers
+;			{
+;				<ground_type>	<1st>	<2nd>	...		
+;				...
+;				
+;				*	last specified iteration continues for all remaining iterations (e.g. if last is 3rd then 3rd = 4th = 5th ...)
+;					currently there are 4 iterations
+;			}
+;
+;			displacements
+;			{
+;				<ground_type>	<probability>	<min_radius>	<max_radius>	<min_height_to_radius_ratio>	<max_height_to_radius_ratio>
+;				...	
+;			}		
+;
+;			battlefield_template
+;			{
+;				hills				<probility>		<min_radius>	<max_radius>	<min_height>	<max_height>
+;				hills_contrast		<smoothing>
+;				forest				<probility>
+;				forest_contrast		<probility>
+;			}	
+;
+;		}
+;
+;		* <climate_name> and <ground_type> may use "default" to set values for all non specified
+;
+;	-------------------------------------------------------------------------
+;
+;	valid ground types:
+;	-------------------------------------------------------------------------
+;
+;		fertile_low		
+;		fertile_medium	
+;		fertile_high	
+;		wilderness		
+;		mountains_high	
+;		mountains_low	
+;		hills			
+;		forest_dense	
+;		forest_sparse	
+;		swamp			
+;		ocean			
+;		sea_deep		
+;		sea_shallow		
+;		beach			
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+climate default
+{
+	max_height_diff			200
+	max_river_height_diff	20
+
+	fractal_initial_ranges
+	{
+		default				50	100
+
+		fertile_low			50	100
+		fertile_medium		50	100
+		fertile_high		50	100
+		wilderness			50	100
+		mountains_high		100	200
+		mountains_low		100	200
+		hills				100	150
+		forest_dense		50	100
+		forest_sparse		50	100
+		swamp				50	100
+		ocean				50	100
+		sea_deep			50	100
+		sea_shallow			50	100
+		beach				50	100
+	}
+
+	fractal_iteration_multipliers
+	{
+		default				0.5
+
+		fertile_low			0.5 0.6 0.5 0.7
+		fertile_medium		0.4 0.5 0.4 0.6
+		fertile_high		0.3 0.4 0.3 0.5
+		wilderness			0.5
+		mountains_high		0.7 0.9
+		mountains_low		0.7 0.8
+		hills				0.6 0.7 0.8 0.9
+		forest_dense		0.5
+		forest_sparse		0.5
+		swamp				0.5
+		ocean				0.5
+		sea_deep			0.5
+		sea_shallow			0.5
+		beach				0.5
+	}
+
+	displacements
+	{
+		default				0	0	0	0	0
+
+		hills				0.1	64	200	0.1	0.2	
+	}
+
+	battlefield_template
+	{
+		hills				0.5	50	150	10	20
+		hills_contrast		1.0	
+		forest				0.75
+		forest_contrast		0.9
+	}
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+climate sandy_desert
+{
+	max_height_diff			200
+	max_river_height_diff	20
+
+	fractal_initial_ranges
+	{
+		default				50	100
+	}
+
+	fractal_iteration_multipliers
+	{
+		default				0.5
+	}
+
+	displacements
+	{
+		default				0.1	64	200	0.1	0.2	
+	}
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

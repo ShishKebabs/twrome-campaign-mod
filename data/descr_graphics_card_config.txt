@@ -1,0 +1,6 @@
+// This contains graphic card specific configuration overrides per deviceID and driver revision
+
+// Matrox Parhelia 128 
+Device 00000527
+Driver 0006000D 0001063D
+Tweak  AGP_BROKEN	1

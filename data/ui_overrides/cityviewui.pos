@@ -1,0 +1,153 @@
+{
+	"tooltip": {
+		"comment": "hide in HD. Was x: 100",
+		"x": -5000,
+		"y": 10,
+		"width": 230,
+		"height": 98,
+		"anchor": "TL",
+		"scale_width":true
+	},
+	"tooltip_ticker": {
+		"x": 100,
+		"y": -300,
+		"width": 230,
+		"height": 98,
+		"anchor": "TL",
+		"scale_width":true
+	},
+	"list": [
+		{
+			"name": "exit_button",
+			"x": 100,
+			"y": -500,
+			"size": {
+				"width": 85,
+				"height": 135
+			},
+			"anchor":"CR",
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			}
+		},
+		{
+			"name": "exit_button_frame",
+			"x": 10000,
+			"y": 0,
+			"size": {
+				"width": 100,
+				"height": 75
+			},
+			"anchor":"CR"
+		},
+
+
+		{
+			"name": "toggle_tactical_map_bar_animated_frame",
+			"x": 0 ,
+			"y": -85,
+			"size": {
+				"width": 430 ,
+				"height": 80
+			},
+			"align": "TC",
+			"anchor": "TC",
+			"priority": 0
+		},
+		{
+			"name": "toggle_tactical_map_bar",
+			"x": 0 ,
+			"y": -50,
+			"size": {
+				"width": 402 ,
+				"height": 10
+			},
+			"align": "TC",
+			"anchor": "TC",
+			"priority": 1
+		},
+		{
+			"name": "toggle_tactical_map_bat_string",
+			"x": 0 ,
+			"y": -40,
+			"align": "TC",
+			"anchor": "TC",
+			"priority": 1
+		},
+
+
+		{
+			"name": "advisor",
+			"x": -18204 ,
+			"y": 0,
+			"size" : {
+				"height" : 70,
+				"width"  : 70
+			},
+			"anchor": "TL",
+			"priority": 55
+		},
+		{
+			"name": "advisor_manual",
+			"x": -18204 ,
+			"y": 22 ,
+			"size" : {
+				"height" : 40,
+				"width"  : 40
+			},
+			"anchor": "TL",
+			"align":"C",
+			"priority": 5
+		},
+
+		{
+			"name": "advisor_zoom_to",
+			"x": -18204 ,
+			"y": 22 ,
+			"size" : {
+				"height" : 40,
+				"width"  : 40
+			},
+			"anchor": "TL",
+			"align":"C",
+			"priority": 5
+		},
+		{
+			"name": "advisor_hide_bubble",
+			"x": -18204 ,
+			"y": 22 ,
+			"size" : {
+				"height" : 40,
+				"width"  : 40
+			},
+			"anchor": "TL",
+			"align":"C",
+			"priority": 5
+		},
+
+		{
+			"name": "advisor_animated_frame",
+			"x": -18204 ,
+			"y": 56,
+			"size" : {
+				"width"  : 400,
+				"height" : 250
+			},
+			"anchor": "TL",
+			"priority": 50
+		},
+
+		{
+			"comment": "STB on the city view the ackground_frame is not positioned every frame because it shouldnt be shown at all so we will move it even though we usually shouldnt ",
+			"name": "advisor_animated_background_frame_priority",
+			"x": -18204 ,
+			"y": 56,
+			"priority": 40,
+        },
+
+
+	]
+}

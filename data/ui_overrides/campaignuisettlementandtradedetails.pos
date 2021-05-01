@@ -1,0 +1,603 @@
+{
+    "frames":
+    [
+
+
+
+
+        {
+            "position": {
+                "x": 0 ,
+                "y": 45
+            },
+            "size": {
+                "width": 728 ,
+                "height" : 125
+            },
+            "anchor": "TL",
+            "align": "TL",
+            "fill": "invisible",
+            "tags" : [ "trade_details" ],
+        },
+
+
+
+        {
+            "position": {
+            "x": 0 ,
+            "y": 192
+            },
+            "size": {
+                "width": 364 ,
+                "height" : 120
+            },
+            "anchor": "TL",
+            "align": "TL",
+            "fill": "invisible",
+            "tags" : [ "trade_details" ],
+        },
+        {
+            "position": {
+            "x": 364 ,
+            "y": 192
+            },
+            "size": {
+                "width": 364 ,
+                "height" : 120
+            },
+            "anchor": "TL",
+            "align": "TL",
+            "fill": "invisible",
+            "tags" : [ "trade_details" ],
+        },
+
+
+
+
+
+
+        {
+            "position": {
+            "x": 0 ,
+            "y": 45
+            },
+            "size": {
+                "width": 728 ,
+                "height" : 40
+            },
+            "anchor": "TL",
+            "align": "TL",
+            "fill": "invisible",
+            "tags" : [ "settlement_details" ],
+        },
+        {
+            "position": {
+                "x": 0 ,
+                "y": 85
+            },
+            "size": {
+                "width": 364 ,
+                "height" : 265
+            },
+            "anchor": "TL",
+            "align": "TL",
+            "fill": "invisible",
+            "tags" : [ "settlement_details" ],
+        },
+        {
+            "position": {
+                "x": 0 ,
+                "y": 85
+            },
+            "size": {
+                "width": 364 ,
+                "height" : 265
+            },
+            "anchor": "TL",
+            "align": "TL",
+            "fill": "invisible",
+            "tags" : [ "settlement_details" ],
+        },
+
+    ],
+
+    "list":
+    [
+    
+{
+"_comment": "strings"
+},
+        {
+            "name":"title",
+            "x": 554 ,
+            "y": 50,
+            "anchor": "TL",
+            "align": "C",
+            "font_colour": "dark_brown",
+            "font":"cinzel_bold",
+        },
+        
+        {
+            "name":"title_left_divider",
+            "x": 66 ,
+            "y": 44,
+            "size": {
+                "width": 330 ,
+                "height" : 20
+            },
+            "anchor": "TL",
+            "align": "TL",
+        },
+        {
+            "name":"title_right_divider",
+            "x": 1044 ,
+            "y": 44,
+            "size": {
+                "width": 330 ,
+                "height" : 20
+            },
+            "anchor": "TL",
+            "align": "TR",
+        },
+
+        
+        {
+            "name":"siege_duration_string",
+            "x": 556 ,
+            "y": 82,
+            "anchor": "TL",
+            "align": "TC",
+            "font_colour": "dark_brown",
+            "font":"cinzel_med",
+        },
+
+
+
+        {
+            "name":"pop_growth_title",
+            "x": 595 ,
+            "y": 110,
+            "size": {
+                "width": 473 ,
+                "height" : 40
+            },
+            "font_colour": "dark_brown",
+            "anchor": "TL",
+            "align": "TL",
+            "font":"cinzel_med_bold",
+        },
+        {
+            "name":"population_growth_divider",
+            "x": 588 ,
+            "y": 130,
+            "size": {
+                "width": 500 ,
+                "height" : 20
+            },
+            "anchor": "TL",
+            "align": "TL",
+        },
+
+        {
+            "name":"population_growth_table_list",
+            "x": 598 ,
+            "y": 150,
+            "size": {
+                "width": 473 ,
+                "height" : 361
+            },
+            "anchor": "TL",
+            "align": "TL",
+            "outside_slider": true,
+            "slider_gap": 10
+        },
+
+        {
+            "name":"population_growth_bottom_divider",
+            "x": 593 ,
+            "y": 500,
+            "size": {
+                "width": 488 ,
+                "height" : 25
+            },
+            "anchor": "TL",
+            "align": "TL",
+        },
+
+
+
+        {
+            "name":"public_order_title",
+            "x": 29 ,
+            "y": 112,
+            "size": {
+                "width": 473 ,
+                "height" : 40
+            },
+            "font_colour": "dark_brown",
+            "anchor": "TL",
+            "align": "TL",
+            "font":"cinzel_med_bold",
+        },
+        
+        {
+            "name":"public_order_divider",
+            "x": 21 ,
+            "y": 130,
+            "size": {
+                "width": 498 ,
+                "height" : 20
+            },
+            "anchor": "TL",
+            "align": "TL",
+        },
+        
+        {
+            "name":"public_order_table_list",
+            "x": 31 ,
+            "y": 150,
+            "size": {
+                "width": 473 ,
+                "height" : 361
+            },
+            "anchor": "TL",
+            "align": "TL",
+            "outside_slider": true,
+            "slider_gap": 10
+        },
+
+        
+        {
+            "name":"public_order_bottom_divider",
+            "x": 30 ,
+            "y": 500,
+            "size": {
+                "width": 488 ,
+                "height" : 25
+            },
+            "anchor": "TL",
+            "align": "TL",
+        },
+
+{
+"_comment":"management elements",
+},
+        {
+            "name":"management_divider",
+            "x": 556 ,
+            "y": 520,
+            "size": {
+                "width": 1068 ,
+                "height" : 20
+            },
+            "anchor": "TL",
+            "align": "TC",
+        },
+        {
+            "name":"manage_settlement_title",
+            "x": 561 ,
+            "y": 543,
+            "anchor": "TL",
+            "align": "TC",
+            "font_colour": "dark_brown",
+            "font":"cinzel_med",
+        },
+
+
+        {
+            "name":"automanage_check",
+            "x": 37 ,
+            "y": 575,
+            "size": {
+                "width"  : 40,
+                "height" : 40
+            },
+            "anchor": "TL",
+            "align": "TL",
+            "font_colour": "dark_brown",
+            "priority": 1
+        },
+
+        {
+            "name":"automanage_construction_check",
+            "x": 249 ,
+            "y": 575,
+            "size": {
+                "width"  : 40,
+                "height" : 40
+            },
+            "anchor": "TL",
+            "align": "TL",
+            "font_colour": "dark_brown",
+            "priority": 1
+        },
+
+        {
+            "name":"automanage_recruitment_check",
+            "x": 463 ,
+            "y": 575,
+            "size": {
+                "width"  : 40,
+                "height" : 40
+            },
+            "anchor": "TL",
+            "align": "TL",
+            "font_colour": "dark_brown",
+            "priority": 1
+        },
+
+        {
+            "name":"tax_level_list",
+            "x": 672 ,
+            "y": 575,
+            "size": {
+                "width": 182 ,
+                "height" : 50
+            },
+            "anchor": "TL",
+            "align": "TL",
+            "font_colour": "dark_brown",
+            "priority": 1,
+            "outside_slider": true,
+            "slider_gap": 10
+        },
+
+        {
+            "name":"governor_policy_list",
+            "x": 672 ,
+            "y": 575,
+            "size": {
+                "width": 182 ,
+                "height" : 50
+            },
+            "anchor": "TL",
+            "align": "TL",
+            "font_colour": "dark_brown",
+            "priority": 1,
+            "outside_slider": true,
+            "slider_gap": 10
+        },
+
+        {
+            "name":"games_policy_list",
+            "x": 904 ,
+            "y": 575,
+            "size": {
+                "width": 182 ,
+                "height" : 50
+            },
+            "anchor": "TL",
+            "align": "TL",
+            "font_colour": "dark_brown",
+            "priority": 1,
+            "outside_slider": true,
+            "slider_gap": 10
+        },
+
+
+{
+"_comment":"trade details"
+},
+
+    {
+        "name":"trades_string_record_list",
+        "x": 35 ,
+        "y": 70,
+        "size": {
+            "width": 1045 ,
+            "height" : 50
+        },
+        "anchor": "TL",
+        "align": "TL",
+        "font_colour": "dark_brown",
+        "font": "cinzel_med"
+    },
+    
+    {
+        "name":"trades_divider",
+        "x": 556 ,
+        "y": 95,
+        "size": {
+            "width": 1070 ,
+            "height" : 20
+        },
+        "anchor": "TL",
+        "align": "TC",
+    },
+    
+    {
+        "name":"trades_table_list",
+        "x": 29 ,
+        "y": 105,
+        "size": {
+            "width": 1050 ,
+            "height" : 160
+        },
+        "anchor": "TL",
+        "align": "TL",
+        "outside_slider": true,
+        "slider_gap": 8
+    },
+
+    {
+        "name":"trades_bottom_divider",
+        "x": 556 ,
+        "y": 260,
+        "size": {
+            "width": 1060 ,
+            "height" : 25
+        },
+        "anchor": "TL",
+        "align": "TC",
+    },
+    
+    
+    
+    {
+        "name":"total_income_record",
+        "x": 35 ,
+        "y": 486,
+        "size": {
+            "width": 1045 ,
+            "height" : 35
+        },
+        "anchor": "TL",
+        "align": "TL",
+        "font_colour": "dark_brown",
+        "font": "cinzel_med_bold"
+    },
+    
+    {
+        "name":"total_income_divider",
+        "x": 5560 ,
+        "y": 292,
+        "size": {
+            "width": 1068 ,
+            "height" : 20
+        },
+        "anchor": "TL",
+        "align": "TC",
+    },
+
+    {
+        "name":"other_income_string",
+        "x": 29 ,
+        "y": 280,
+        "anchor": "TL",
+        "align": "TL",
+        "font":"cinzel_med_bold",
+        "font_colour": "dark_brown",
+    },
+    {
+        "name":"other_income_value",
+        "x": 470 ,
+        "y": 280,
+        "anchor": "TL",
+        "align": "TR",
+        "font":"cinzel_med_bold",
+        "font_colour": "dark_brown",
+    },
+    
+    {
+        "name":"other_income_icon",
+        "x": 477 ,
+        "y": 275,
+		"size": {
+			"width": 35,
+			"height" : 35
+		},
+        "anchor": "TL",
+        "align": "TL",
+    },
+    
+    
+    {
+        "name":"other_income_table_list",
+        "x": 30 ,
+        "y": 305,
+        "size": {
+            "width": 480 ,
+            "height" : 173
+        },
+        "anchor": "TL",
+        "align": "TL",
+        "outside_slider": true,
+        "slider_gap": 10
+    },
+
+    {
+        "name":"trade_bold_divider_0",
+        "x": 30 ,
+        "y": 304,
+        "size": {
+            "width": 491 ,
+            "height" : 3
+        },
+        "anchor": "TL",
+        "align": "TL",
+    },
+    
+    {
+        "name":"total_income_bottom_divider",
+        "x": 30 ,
+        "y": 467,
+        "size": {
+            "width": 488 ,
+            "height" : 25
+        },
+        "anchor": "TL",
+        "align": "TL",
+    },
+
+    {
+        "name":"expenditure_string",
+        "x": 595 ,
+        "y": 280,
+        "anchor": "TL",
+        "align": "TL",
+        "font": "cinzel_med_bold",
+        "font_colour": "dark_brown",
+    },
+    {
+        "name":"expenditure_value",
+        "x": 1036 ,
+        "y": 280,
+        "anchor": "TL",
+        "align": "TR",
+        "font": "cinzel_med_bold",
+        "font_colour": "dark_brown",
+    },
+
+	{
+        "name":"expenditure_icon",
+        "x": 1043 ,
+        "y": 275,
+		"size": {
+			"width": 35,
+			"height" : 35
+		},
+        "anchor": "TL",
+        "align": "TL",
+    },
+
+
+    {
+        "name":"expenditure_table_list",
+        "x": 595 ,
+        "y": 305,
+        "size": {
+            "width": 480 ,
+            "height" : 173
+        },
+        "anchor": "TL",
+        "align": "TL",
+        "outside_slider": true,
+        "slider_gap": 10
+    },
+
+    {
+        "name":"trade_bold_divider_1",
+        "x": 593 ,
+        "y": 304,
+        "size": {
+            "width": 491 ,
+            "height" : 3
+        },
+        "anchor": "TL",
+        "align": "TL",
+    },
+
+    {
+        "name":"total_expenditure_bottom_divider",
+        "x": 593 ,
+        "y": 467,
+        "size": {
+            "width": 488 ,
+            "height" : 25
+        },
+        "anchor": "TL",
+        "align": "TL",
+    },
+
+    ]
+}

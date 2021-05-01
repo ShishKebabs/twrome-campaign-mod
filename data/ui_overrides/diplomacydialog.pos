@@ -1,0 +1,560 @@
+{
+    "frames": [
+
+        {
+            "position": {
+                "x": 0,
+                "y": -25
+            },
+            "size": {
+                "width": 1100 ,
+                "height": 905
+            },
+            "priority": -2,
+            "fill": "black_curved",
+            "anchor": "C",
+            "align": "C",
+        },
+
+        
+        {
+            "name":"offers_right_background_frame",
+            "position": {
+                "x": 526 ,
+                "y": 138
+            },
+            "size": {
+                "width": 254 ,
+                "height": 475
+            },
+            "anchor": "C",
+            "align": "CR",
+            "priority":    -1,
+            "fill": "clear"
+        },
+
+        {
+            "name":"offers_left_background_frame",
+            "position": {
+                "x": -530,
+                "y": 138
+            },
+            "size": {
+                "width": 254 ,
+                "height": 475
+            },
+            "anchor": "C",
+            "align": "CL",
+            "priority":    -1,
+            "fill": "clear"
+        },
+
+    ],
+    "list": [
+        {
+            "name": "title",
+            "x": 0 ,
+            "y": -430,
+            "align": "C",
+            "anchor": "C",
+            "font_colour":"dark_brown",
+            "font":"cinzel"
+        },
+        
+        
+        {
+            "_comment": "move it out of the way ( y used to be 70 btw)",
+            "name": "header",
+            "x": 910 ,
+            "y": -700,
+            "size" : {
+                "width": 1 ,
+            },
+            "align": "C",
+            "priority":20,
+            "notch%": true
+        },
+        {
+            "name": "faction_relation_status",
+            "x": 0 ,
+            "y": -394,
+            "align": "C",
+            "anchor": "C",
+            "font_colour":"dark_brown",
+            "font":"cinzel_sml_bold"
+        },
+        {
+            "name": "player_faction_name",
+            "x": -520 ,
+            "y": -390,
+            "size" : {
+                "width": 220 ,
+            },
+            "anchor": "C",
+            "align": "BL",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med"
+        },
+        {
+            "name": "enemy_faction_name",
+            "x": 520 ,
+            "y": -390,
+            "size" : {
+                "width": 220 ,
+            },
+            "anchor": "C",
+            "align": "BR",
+            "font_colour":"dark_brown",
+            "font":"cinzel_med"
+        },
+        {
+
+            "name": "player_faction_logo",
+            "x": -300 ,
+            "y": -442,
+            "size": {
+                "width" : 86,
+                "height": 86
+            },
+            "anchor": "C",
+            "align": "TL"
+        },
+        {
+            "name": "enemy_faction_logo",
+            "x": 300 ,
+            "y": -442,
+            "size": {
+                "width" : 86,
+                "height": 86
+            },
+            "anchor": "C",
+            "align": "TR"
+        },
+        {
+            "name": "embargo_icon",
+            "x": 270 ,
+            "y": -400,
+            "size": {
+                "width" : 63,
+                "height": 63
+            },
+            "anchor": "C",
+            "align": "TR"
+        },
+
+        {
+            "name": "divider_0",
+            "x": -520 ,
+            "y": -388,
+            "size" : {
+                "width": 345 ,
+                "height" : 21
+            },
+            "anchor": "C",
+            "align": "TL",
+        },
+        {
+            "name": "divider_1",
+            "x": 520 ,
+            "y": -388,
+            "size" : {
+                "width": 345 ,
+                "height" : 21
+            },
+            "anchor": "C",
+            "align": "TR",
+        },
+
+        {
+            "name": "proposal",
+            "x": 0 ,
+            "y": -225,
+            "size" : {
+                "width": 560     ,
+                "height" : 612
+            },
+            "anchor": "C",
+            "align": "TC",
+            "annotation_id": "Rome.Annotations.dip_receive-your",
+            "priority":-1
+        },
+
+        {
+            "_comment": "moved it out of the way",
+            "name": "minimize_button",
+            "x": -120,
+            "y": 652
+        },
+        
+        {
+
+            "name": "your_offer_list",
+            "x": -398 ,
+            "y": -84,
+            "size" : {
+                "width": 200 ,
+                "height" : 430
+            },
+            "slider_gap": 10,
+            "outside_slider": true,
+            "font_colour": "dark_brown",
+            "anchor": "C",
+            "align": "TC",
+        },
+
+
+        {
+            "_comment":"treaties",
+            "name": "enemy_offer_list",
+            "x": 393 ,
+            "y": -84,
+            "size" : {
+                "width": 200 ,
+                "height" : 430
+            },
+            "font_colour": "dark_brown",
+            "slider_gap": 12,
+            "outside_slider": true,
+            "align":"TC",
+            "anchor": "C",
+            "annotation_id": "Rome.Annotations.dip_receive-treaties",
+            "priority": 10
+        },
+        {
+            "name": "offer_button",
+            "x": -100 ,
+            "y": 365,
+            "align": "C",
+            "anchor": "C",
+            "size": {
+                "width" : 57,
+                "height": 57
+            },
+            "annotation_id": "Rome.Annotations.dip_send-offer",
+            "priority": 15
+        },
+        {
+            "name": "gift_button",
+            "x": 0 ,
+            "y": 365,
+            "align": "C",
+            "anchor": "C",
+            "size": {
+                "width" : 57,
+                "height": 57
+            },
+            "annotation_id": "Rome.Annotations.dip_send-gift",
+            "priority":15
+        },
+        {
+            "name": "inform_button",
+            "x": -100 ,
+            "y": 365,
+            "align": "C",
+            "anchor": "C",
+            "size": {
+                "width" : 57,
+                "height": 57
+            },
+            "annotation_id": "Rome.Annotations.dip_send-cancel",
+            "priority":15
+        },
+        
+        {
+            "name": "end_negotiations_button",
+            "x": 100 ,
+            "y": 365,
+            "align": "C",
+            "anchor": "C",
+            "size": {
+                "width" : 57,
+                "height": 57
+            },
+            "annotation_id": "Rome.Annotations.dip_send-cancel",
+            "priority":15
+        },
+        
+        
+        {
+            "_comment": "moved it out of the way    ",
+            "name": "close_button",
+            "x": 9520 ,
+            "y": -450,
+            "size": {
+                "width" : 40,
+                "height": 40
+            },
+            "anchor": "C",
+            "align": "C",
+            "annotation_id": "Rome.Annotations.dip_send-exit"
+        },
+        {
+            "name": "help_button",
+            "x": -1390,
+            "y": 86
+        },
+        {
+            "name": "speech_bubbles",
+            "x": 5 ,
+            "y": -305,
+            "size": {
+                "width": 370 ,
+                "height": 105
+            },
+            "anchor": "C",
+            "align": "TC"
+        },
+        {
+            "name": "proposal_send_button",
+            "x": -45 ,
+            "y": 365,
+            "align": "C",
+            "anchor": "C",
+            "size": {
+                "width" : 57,
+                "height": 57
+            },
+            "annotation_id": "Rome.Annotations.dip_send-offer",
+            "priority":14
+        },
+
+
+        {
+            "name": "proposal_cancel_button",
+            "x": 45 ,
+            "y":  365,
+            "align": "C",
+            "anchor": "C",
+            "size": {
+                "width" : 57,
+                "height": 57
+            },
+            "annotation_id": "Rome.Annotations.dip_send-exit",
+            "priority":14
+        },
+
+        {
+            "name": "proposal_accept_button",
+            "x": -100 ,
+            "y": 365,
+            "align": "C",
+            "anchor": "C",
+            "priority":15,
+            "size": {
+                "width" : 57,
+                "height": 57
+            },
+            "annotation_id": "Rome.Annotations.dip_receive-accept"
+        },
+        {
+            "name": "proposal_decline_button",
+            "x": 0 ,
+            "y": 365,
+            "align": "C",
+            "anchor": "C",
+            "size": {
+                "width" : 57,
+                "height": 57
+            },
+            "priority":15,
+            "annotation_id": "Rome.Annotations.dip_receive-reject"
+        },
+        {
+            "name": "proposal_counter_button",
+            "x": 100 ,
+            "y": 365,
+            "align": "C",
+            "anchor": "C",
+            "size": {
+                "width" : 57,
+                "height": 57
+            },
+            "priority":15,
+            "annotation_id": "Rome.Annotations.dip_receive-counter"
+        },
+        {
+            "name": "money_string",
+            "x": -240 ,
+            "y": 6,
+            "priority": 53,
+            "align":"TL",
+            "anchor":"TR",
+            "font":"cinzel_sml_bold",
+            "font_colour":"dark_brown"
+        },
+        {
+
+            "name": "money_icon",
+            "x": -282 ,
+            "y": -4,
+            "size":{
+                "height": 42,
+                "width": 42
+            },
+            "priority": 53,
+            "align":"TL",
+            "anchor":"TR"
+        },
+        {
+            "name": "money_annotation",
+            "x": -10,
+            "y": -10,
+            "size": {
+                "width": 400 ,
+                "height": 41
+            },
+            "priority": 51,
+            "annotation_id": "Rome.Annotations.camp_status-money"
+        },
+        {
+            "name": "advisor",
+            "x": -1,
+            "y": -1
+        },
+        {
+            "name": "proposal_faction_selector_demand",
+            "reference": true,
+            "annotation_id": "Rome.Annotations.dip_demand_attack_confirm"
+        },
+        {
+            "name": "proposal_faction_selector_offer",
+            "reference": true,
+            "annotation_id": "Rome.Annotations.dip_offer_attack_confirm"
+        },
+        {
+            "name": "proposal_settlement_selector_demand",
+            "reference": true,
+            "annotation_id": "Rome.Annotations.dip_demand_region_confirm"
+        },
+        {
+            "name": "proposal_settlement_selector_offer",
+            "reference": true,
+            "annotation_id": "Rome.Annotations.dip_offer_region_confirm"
+        },
+        {
+            "name": "proposal_money_selector",
+            "reference": true,
+            "annotation_id": "Rome.Annotations.dip_offer_tribute"
+        },
+
+
+
+        {
+            "name": "left_character_frame",
+            "x": -545 ,
+            "y": -95,
+            "size" : {
+                "width": 360 ,
+                "height" : 495
+            },
+            "anchor": "C",
+            "align": "TR",
+            "priority": 1
+        },
+
+        {
+            "name": "right_character_frame",
+            "x": 545 ,
+            "y": -95,
+            "size" : {
+                "width": 360 ,
+                "height" : 495
+            },
+            "anchor": "C",
+            "align": "TL",
+            "priority": -1
+        },
+        
+        
+        {
+            "name": "relationship_bar",
+            "x": 0,
+            "y": -385,
+            "size" : {
+                "width": 240,
+                "height" : 48
+            },
+            "anchor": "C",
+            "align": "TC"
+        },
+        
+        {
+            "name": "strength_comparison_bar",
+            "x": 4,
+            "y": -345,
+            "size" : {
+                "width": 244,
+                "height" : 48
+            },
+            "anchor": "C",
+            "align": "TC"
+        },
+        
+        
+        {
+            "name": "left_faction_reputation",
+            "x": -516,
+            "y": -360,
+            "size" : {
+                "width": 240,
+                "height" : 48
+            },
+            "anchor": "C",
+            "align": "TL"
+        },
+        
+        
+        {
+            "name": "right_faction_reputation",
+            "x": 512,
+            "y": -360,
+            "size" : {
+                "width": 240,
+                "height" : 48
+            },
+            "anchor": "C",
+            "align": "TR"
+        },
+        
+        {
+            "name": "left_diplomatic_standing",
+            "x": -515,
+            "y": -5,
+            "size" : {
+                "width": 235,
+                "height" : 300
+            },
+            "anchor": "C",
+            "align": "BL"
+        },
+        
+        {
+            "name": "right_diplomatic_standing",
+            "x": 280,
+            "y": -5,
+            "size" : {
+                "width": 230,
+                "height" : 300
+            },
+            "anchor": "C",
+            "align": "BL"
+        },
+
+        {
+            "name": "proposal_balance_string",
+            "x": 0 ,
+            "y": 298,
+            "anchor": "C",
+            "align": "TC",
+            "font": "verdana_sml_bold",
+            "priority": 5
+        },
+
+        
+
+
+
+
+
+    ]
+}

@@ -1,0 +1,11 @@
+plan
+
+{
+
+floor	underlay_watchtower_barbarian.cas overlay_watchtower_barbarian.cas
+	borders	border_limits_64m_diameter.CAS
+
+
+barbarian_standalone_watchtower,		0,	0,	0,	10
+
+	}

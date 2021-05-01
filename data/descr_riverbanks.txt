@@ -1,0 +1,983 @@
+; Each ornament is an individual CAS file with potentially multiple subgeometries, whose name is used to locate the corresponding CAS file.
+; LOD indices are appended at the end of each CAS file and will be loaded automatically for each ornament (up to a maximum of 3).
+; eg. 'cattail_bull_rock_a' will try to load 'cattail_bull_rock_a_lod_0.cas', 'cattail_bull_rock_a_lod_1.cas' and 'cattail_bull_rock_a_lod_2.cas' (if available)
+;
+; placement can be:
+;	- adapt_to_terrain: mesh will be skewed so it adapt to the underlying terrain while still pointing upward (typically useful for plants)
+;	- follow_terrain: mesh will be rotated accordingly to the terrain (useful for solid objects like rocks)
+;	- float_on_water: mesh will be placed on water rather than on the riverbank (useful for water lilies)
+;	- intersect_terrain: mesh will be rotated following the riverbank, but will otherwise intersecate the terrain
+;
+; climates is a list of climates where the ornament can be spawned, each followed by a distribution (ie. probability) of it spawning in said climate.
+; A climate can have a distribution of 0.0 or can simply be omitted to avoid spawning an ornament on that climate.
+; Available climates are:
+;	- default
+;	- sandy_desert
+;	- rocky_desert
+;	- temperate_grassland_fertile
+;	- temperate_grassland_infertile
+;	- temperate_forest_open
+;	- temperate_forest_deep
+;	- swamp
+;	- highland
+;	- alpine
+;	- sub_arctic
+;	- semi_arid
+;
+; type can be:
+;	- vegetation
+;	- rocks
+;	- broken_pier: unique ornament type, only one of these will appear in a map
+;	- broken_boat: unique ornament type, only one of these will appear in a map
+;
+
+lods
+{
+	level 0 75.0
+	level 1 150.0
+	level 2 10000.0
+}
+
+ornaments
+{
+	cattail_bulrush_b
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 1.0
+			rocky_desert 0.7
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 0.5
+			temperate_forest_deep 0.3
+			swamp 10.0
+			highland 0.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement adapt_to_terrain
+		type vegetation
+	}
+	cattail_bulrush_marigold_a
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 1.0
+			rocky_desert 0.7
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 10.0
+			temperate_forest_deep 0.3
+			swamp 10.0
+			highland 10.0
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement adapt_to_terrain
+		type vegetation
+	}
+	cattail_sedgegrass_lrg_a
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 1.0
+			rocky_desert 0.7
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 10.0
+			temperate_forest_deep 1.3
+			swamp 10.0
+			highland 0.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement adapt_to_terrain
+		type vegetation
+	}
+	broken_old_pier
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 1.0
+			rocky_desert 1.0
+			temperate_grassland_fertile 1.0
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 1.0
+			highland 0.4
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement intersect_terrain
+		type broken_pier
+	}
+	papyrus_sedgegrass_lrg_a
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 1.0
+			rocky_desert 1.0
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 1.0
+			highland 0.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement adapt_to_terrain
+		type vegetation
+	}
+	papyrus_island_a
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 1.0
+			rocky_desert 0.7
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 1.0
+			highland 0.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement adapt_to_terrain
+		type vegetation
+	}
+	papyrus_tree_sedge_grass
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 1.0
+			rocky_desert 0.7
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 0.4
+			highland 0.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement adapt_to_terrain
+		type vegetation
+	}
+	papyrus_weeds
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 1.0
+			rocky_desert 0.7
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 0.4
+			highland 0.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement adapt_to_terrain
+		type vegetation
+	}
+	marigold_grass_a
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 1.0
+			rocky_desert 0.7
+			temperate_grassland_fertile 5.0
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 0.5
+			temperate_forest_deep 0.3
+			swamp 1.0
+			highland 2.0
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement adapt_to_terrain
+		type vegetation
+	}
+	marigold_grass_b
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 1.0
+			rocky_desert 0.7
+			temperate_grassland_fertile 4.0
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 0.5
+			temperate_forest_deep 0.3
+			swamp 0.4
+			highland 0.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement adapt_to_terrain
+		type vegetation
+	}
+	large_rock_a
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 2.0
+			rocky_desert 1.0
+			temperate_grassland_fertile 1.0
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 0.5
+			temperate_forest_deep 0.3
+			swamp 0.4
+			highland 0.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement follow_terrain
+		type rocks
+	}
+	large_rock_b
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 1.0
+			rocky_desert 1.0
+			temperate_grassland_fertile 1.0
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 0.5
+			temperate_forest_deep 0.3
+			swamp 0.4
+			highland 0.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement follow_terrain
+		type rocks
+	}
+	rock_lrg_set_a
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 5.0
+			rocky_desert 5.0
+			temperate_grassland_fertile 0.6
+			temperate_grassland_infertile 10.0
+			temperate_forest_open 0.5
+			temperate_forest_deep 0.3
+			swamp 1.0
+			highland 0.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement follow_terrain
+		type rocks
+	}
+	rock_lrg_set_b
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 1.0
+			rocky_desert 1.7
+			temperate_grassland_fertile 0.6
+			temperate_grassland_infertile 10.0
+			temperate_forest_open 0.5
+			temperate_forest_deep 0.3
+			swamp 0.4
+			highland 0.2
+			alpine 0.1
+			sub_arctic 5.0
+			semi_arid 5.0
+		}
+		placement follow_terrain
+		type rocks
+	}
+	rock_lrg_set_c
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 5.0
+			rocky_desert 10.0
+			temperate_grassland_fertile 0.6
+			temperate_grassland_infertile 10.0
+			temperate_forest_open 0.5
+			temperate_forest_deep 0.3
+			swamp 0.4
+			highland 0.2
+			alpine 5.0
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement follow_terrain
+		type rocks
+	}
+	rock_lrg_set_d
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 10.0
+			rocky_desert 10.0
+			temperate_grassland_fertile 0.6
+			temperate_grassland_infertile 5.0
+			temperate_forest_open 0.5
+			temperate_forest_deep 0.3
+			swamp 0.4
+			highland 0.2
+			alpine 5.0
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement follow_terrain
+		type rocks
+	}
+	rock_set_a
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 10.0
+			rocky_desert 10.0
+			temperate_grassland_fertile 5.0
+			temperate_grassland_infertile 5.0
+			temperate_forest_open 0.5
+			temperate_forest_deep 0.3
+			swamp 0.4
+			highland 0.2
+			alpine 0.1
+			sub_arctic 5.0
+			semi_arid 0.75
+		}
+		placement follow_terrain
+		type rocks
+	}
+	rock_set_f
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 10.0
+			rocky_desert 10.0
+			temperate_grassland_fertile 0.6
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 0.5
+			temperate_forest_deep 0.3
+			swamp 0.4
+			highland 0.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement follow_terrain
+		type rocks
+	}
+	rock_set_e
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 10.0
+			rocky_desert 10.0
+			temperate_grassland_fertile 0.6
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 0.5
+			temperate_forest_deep 0.3
+			swamp 0.4
+			highland 0.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement follow_terrain
+		type rocks
+	}
+	rock_set_d
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 10.0
+			rocky_desert 10.0
+			temperate_grassland_fertile 0.6
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 0.5
+			temperate_forest_deep 0.3
+			swamp 0.4
+			highland 0.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement follow_terrain
+		type rocks
+	}
+	rock_set_d
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 10.0
+			rocky_desert 10.0
+			temperate_grassland_fertile 1.0
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 0.5
+			temperate_forest_deep 0.3
+			swamp 0.4
+			highland 0.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement follow_terrain
+		type rocks
+	}
+	rock_set_c
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 10.0
+			rocky_desert 10.0
+			temperate_grassland_fertile 0.6
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 0.5
+			temperate_forest_deep 0.3
+			swamp 0.4
+			highland 0.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement follow_terrain
+		type rocks
+	}
+	rock_set_b
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 10.0
+			rocky_desert 10.0
+			temperate_grassland_fertile 0.6
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 0.5
+			temperate_forest_deep 0.3
+			swamp 0.4
+			highland 0.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement follow_terrain
+		type rocks
+	}
+	swamp_grass_c
+	{
+		climates
+		{
+			default 10.0
+			sandy_desert 1.0
+			rocky_desert 0.7
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 10.0
+			highland 1.0
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement adapt_to_terrain
+		type vegetation
+	}
+	water_lilly_a
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 1.0
+			rocky_desert 0.7
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 10.0
+			highland 1.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement float_on_water
+		type vegetation
+	}
+	water_lilly_grass_a
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 1.0
+			rocky_desert 0.7
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 10.0
+			highland 0.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement float_on_water
+		type vegetation
+	}
+	weed_and_sedge_grass_a
+	{
+		climates
+		{
+			default 2.0
+			sandy_desert 1.0
+			rocky_desert 0.7
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 10.0
+			highland 0.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement adapt_to_terrain
+		type vegetation
+	}
+	weed_grass_a
+	{
+		climates
+		{
+			default 2.0
+			sandy_desert 1.0
+			rocky_desert 0.7
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 10.0
+			highland 0.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement adapt_to_terrain
+		type vegetation
+	}
+	weed_grass_c
+	{
+		climates
+		{
+			default 1.0
+			sandy_desert 1.0
+			rocky_desert 0.7
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 10.0
+			highland 0.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement adapt_to_terrain
+		type vegetation
+	}
+	wood_stumps_a
+	{
+		climates
+		{
+			default 3.0
+			sandy_desert 10.0
+			rocky_desert 10.0
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 10.0
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 10.0
+			highland 5.0
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 3.50
+		}
+		placement float_on_water
+		type broken_pier
+	}
+	pier_shrt_lilly
+	{
+		climates
+		{
+			default 1.0
+			sandy_desert 10.0
+			rocky_desert 10.0
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 10.0
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 10.0
+			highland 5.0
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 3.50
+		}
+		placement intersect_terrain
+		type broken_pier
+	}
+	pier_long_lilly
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 10.0
+			rocky_desert 10.0
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 10.0
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 10.0
+			highland 5.0
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 3.50
+		}
+		placement intersect_terrain
+		type broken_pier
+	}
+	wood_stumps_b
+	{
+		climates
+		{
+			default 1.0
+			sandy_desert 10.0
+			rocky_desert 10.0
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 10.0
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 10.0
+			highland 5.0
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 3.50
+		}
+		placement float_on_water
+		type broken_pier
+	}
+	broken_boat_a
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 10.0
+			rocky_desert 10.0
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 10.0
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 10.0
+			highland 5.0
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 3.50
+		}
+		placement follow_terrain
+		type broken_boat
+	}
+	broken_boat_b
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 10.0
+			rocky_desert 10.0
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 10.0
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 10.0
+			highland 5.0
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 3.50
+		}
+		placement follow_terrain
+		type broken_boat
+	}
+	broken_boat_sedgegrass
+	{
+		climates
+		{
+			default 1.0
+			sandy_desert 10.0
+			rocky_desert 10.0
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 10.0
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 10.0
+			highland 5.0
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 3.50
+		}
+		placement follow_terrain
+		type broken_boat
+	}
+	broken_boat_c
+	{
+		climates
+		{
+			default 1.0
+			sandy_desert 10.0
+			rocky_desert 10.0
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 10.0
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 10.0
+			highland 5.0
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 3.50
+		}
+		placement follow_terrain
+		type broken_boat
+	}
+	cattail_broken_boat
+	{
+		climates
+		{
+			default 5.0
+			sandy_desert 10.0
+			rocky_desert 10.0
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 10.0
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 10.0
+			highland 5.0
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 3.50
+		}
+		placement adapt_to_terrain
+		type broken_boat
+	}
+	broken_boat_wood_stumps
+	{
+		climates
+		{
+			default 1.0
+			sandy_desert 10.0
+			rocky_desert 10.0
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 10.0
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 10.0
+			highland 5.0
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 3.50
+		}
+		placement float_on_water
+		type broken_boat
+	}
+	submerged_boat_pier
+	{
+		climates
+		{
+			default 0.5
+			sandy_desert 10.0
+			rocky_desert 10.0
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 10.0
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 10.0
+			highland 5.0
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 3.50
+		}
+		placement intersect_terrain
+		type broken_pier
+	}
+	submerged_boat
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 10.0
+			rocky_desert 10.0
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 10.0
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 10.0
+			highland 5.0
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 3.50
+		}
+		placement float_on_water
+		type broken_boat
+	}
+	abandonded_boat
+	{
+		climates
+		{
+			default 0.5
+			sandy_desert 10.0
+			rocky_desert 10.0
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 10.0
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 10.0
+			highland 5.0
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 3.50
+		}
+		placement float_on_water
+		type broken_boat
+	}
+	wood_stumps_lilly
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 10.0
+			rocky_desert 10.0
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 10.0
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 10.0
+			highland 5.0
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 3.50
+		}
+		placement float_on_water
+		type broken_pier
+	}
+	broken_sml_old_pier_b
+	{
+		climates
+		{
+			default 0.6
+			sandy_desert 1.0
+			rocky_desert 5.0
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 10.0
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 10.0
+			highland 0.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement intersect_terrain
+		type broken_pier
+	}
+	cattail_sedge_grass_a
+	{
+		climates
+		{
+			default 3.0
+			sandy_desert 1.0
+			rocky_desert 0.7
+			temperate_grassland_fertile 10.0
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 10.0
+			temperate_forest_deep 10.0
+			swamp 10.0
+			highland 0.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement adapt_to_terrain
+		type vegetation
+	}
+	pier_broken_dry_planks_a
+	{
+		climates
+		{
+			default 0.8
+			sandy_desert 1.0
+			rocky_desert 0.7
+			temperate_grassland_fertile 0.3
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 0.3
+			temperate_forest_deep 0.3
+			swamp 0.3
+			highland 0.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement intersect_terrain
+		type broken_pier
+	}
+	pier_broken_dry_planks_b
+	{
+		climates
+		{
+			default 0.3
+			sandy_desert 1.0
+			rocky_desert 0.7
+			temperate_grassland_fertile 0.4
+			temperate_grassland_infertile 0.3
+			temperate_forest_open 0.3
+			temperate_forest_deep 0.3
+			swamp 0.3
+			highland 0.2
+			alpine 0.1
+			sub_arctic 0.1
+			semi_arid 0.75
+		}
+		placement adapt_to_terrain
+		type broken_pier
+	}
+}

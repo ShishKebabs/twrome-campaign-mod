@@ -1,0 +1,8 @@
+tournament_name	tournament_of_zeus_1v1
+
+
+custom/Granicus_MP_1v1
+custom/Halicarnassus_MP_1v1
+custom/Issus_MP_1v1
+custom/Gaugamela_MP_1v1
+custom/Hydaspes_MP_1v1

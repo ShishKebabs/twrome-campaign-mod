@@ -1,0 +1,14 @@
+plan
+
+{
+
+floor	roman_ruins_underlay.CAS	roman_ruins_overlay.CAS
+
+	ground_types	ground_default_grass.tga	-64,	-64,	64,	64		
+	borders	border_limits_64m_diameter.CAS
+
+roman_ruins,		0,	0,	0,	0
+
+
+
+	}

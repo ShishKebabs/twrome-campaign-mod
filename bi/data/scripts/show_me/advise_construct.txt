@@ -1,0 +1,8 @@
+script
+	highlight_construction_item
+	
+	while I_AdvisorVisible
+	end_while
+	
+	highlight_construction_item false
+end_script

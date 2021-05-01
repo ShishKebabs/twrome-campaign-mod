@@ -1,0 +1,10 @@
+plan
+
+{
+
+floor underlay_mausoleum_at_halicarnassus_settlement.cas
+
+
+mausoleum_at_halicarnassus,		0,	10,	0,	0
+
+}

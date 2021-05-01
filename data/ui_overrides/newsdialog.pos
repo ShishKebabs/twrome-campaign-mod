@@ -1,0 +1,231 @@
+{
+	"frames": [
+		{
+			"size": {
+				"fullscreen":true
+			},
+			"priority": -1,
+			"fill": "black_curved"
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": -10
+			},
+			"size": {
+				"width": 618,
+				"height": 100
+			},
+			"collapsed_size": {
+				"width": 618,
+				"height": 40
+			},
+			"priority": 15,
+			"fill": "black_curved",
+			"tag":"tooltip",
+			"anchor": "TR",
+			"align":"TR",
+			"fill_left":true
+		}
+	],
+	"tooltip": {
+		"x": 80,
+		"y": 4,
+		"width": 600,
+		"height": 80,
+		"anchor": "TL",
+		"fill_right":true,
+		"font":"verdana_lrg"
+	},
+	"tooltip_ticker": {
+		"x": 80,
+		"y": 4,
+		"width": 600,
+		"height": 50,
+		"anchor": "TL",
+		"fill_right":true,
+		"font":"verdana_lrg"
+	},
+	"list": [
+		{
+			"name": "keep_button",
+			"annotation_id": "Rome.Annotations.camp_news_2-keep",
+			"x": -300,
+			"y": -35,
+			"anchor": "BC",
+			"align": "C",
+			"scale_x_pos":true,
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			}
+		},
+		{
+			"name": "next_button",
+			"x": -315,
+			"y": 671
+		},
+		{
+			"name": "delete_button",
+			"annotation_id": "Rome.Annotations.camp_news_2-destroy",
+			"x": -150,
+			"y": -35,
+			"anchor": "BC",
+			"align": "C",
+			"scale_x_pos":true,
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			}
+		},
+		{
+			"name": "keep_all_button",
+			"annotation_id": "Rome.Annotations.camp_news_2-keep_all",
+			"x": -0,
+			"y": -35,
+			"anchor": "BC",
+			"align": "C",
+			"scale_x_pos":true,
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			}
+		},
+		{
+			"name": "delete_all_button",
+			"annotation_id": "Rome.Annotations.camp_news_2-destroy_all",
+			"x": 150,
+			"y": -35,
+			"anchor": "BC",
+			"align": "C",
+			"scale_x_pos":true,
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			}
+		},
+		{
+			"name": "message",
+			"x": 0,
+			"y": 44,
+			"anchor": "TC",
+			"align": "TC",
+            "size": {
+                "width": 650,
+                "height": 420
+            },
+            "font":"verdana_lrg",
+            "scale_width":true,
+            "notch_override": {
+				"size": {
+                	"height": 406
+            	}
+			}
+		},
+		{
+			"name": "message_table",
+			"x": 0,
+			"y": 44,
+			"anchor": "TC",
+			"align": "TC",
+			"size": {
+				"width": 670,
+				"height": 420
+			},
+			"font":"verdana_lrg",
+			"scale_width":true,
+			"notch_override": {
+				"size": {
+					"width": 620
+				}
+			}
+		},
+		{
+			"name": "message_zoom_button",
+			"annotation_id": "Rome.Annotations.camp_news_2-location",
+			"x": 300,
+			"y": -35,
+			"anchor": "BC",
+			"align": "C",
+			"scale_x_pos":true,
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			}
+		},
+		{
+			"name": "message_details_button",
+			"annotation_id": "Rome.Annotations.camp_news_2-info",
+			"x": 300,
+			"y": -35,
+			"anchor": "BC",
+			"align": "C",
+			"scale_x_pos":true,
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			}
+		},
+		{
+			"name": "message_minimise_button",
+			"x": 900,
+			"y": 250,
+			"hidden": true
+		},
+        {
+            "name": "which_message_indicator",
+            "x": 0,
+            "y": 170,
+			"align": "C",
+			"size": {
+				"width" : 320,
+				"height": 10
+			},
+			"anchor": "C",
+			"annotation_id": "Rome.Annotations.camp_news_1-items",
+			"hitbox" : {
+    			"left": -30,
+    			"top":-15,
+    			"right":30,
+    			"bot":11
+			}
+        },
+        {
+            "name": "left_tap_area",
+            "x": 0,
+            "y": 0,
+            "size": {
+                "width": 300,
+                "height": 690
+            },
+            "anchor": "TL"
+        },
+        {
+            "name": "right_tap_area",
+            "x": -300,
+            "y": 0,
+            "size": {
+                "width": 300,
+                "height": 690
+            },
+            "anchor": "TR"
+        },
+        {
+			"name": "advisor",
+			"x": -1,
+			"y": -1
+		}
+	]
+}

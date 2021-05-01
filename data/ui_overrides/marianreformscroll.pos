@@ -1,0 +1,100 @@
+{
+
+	"frames": [
+		{
+			"name": "bg_frame",
+			"position": {
+				"x": 0,
+				"y": -480
+			},
+			"size": {
+				"width": 740,
+				"height": 740
+			},
+			"priority": -1,
+			"fill": "black_curved_close_embedded",
+			"anchor": "C",
+			"align": "TC"
+		}
+	],
+	"list": [
+		{
+			"name": "title_string",
+			"x": 0,
+			"y": -430,
+			"size": {
+				"width": 625
+			},
+			"align": "C",
+			"anchor": "C",
+			"font_colour":"dark_brown",
+			"font":"cinzel"
+		},
+
+		{
+			"name": "divider",
+			"x": 0,
+			"y": -395,
+			"size": {
+				"width": 625,
+				"height": 21
+			},
+			"align": "C",
+			"anchor": "C"
+		},
+
+		{
+			"name": "image",
+			"x": 0,
+			"y": -243,
+			"size": {
+				"width": 408,
+				"height": 229
+			},
+			"align": "C",
+			"anchor": "C"
+		},
+
+		{
+			"name": "image_frame",
+			"x": 0,
+			"y": -243,
+			"size": {
+				"width": 438,
+				"height": 260
+			},
+			"align": "C",
+			"anchor": "C"
+		},
+
+		{
+			"name": "close_button",
+			"x": 365,
+			"y": -465,
+			"size": {
+				"width" : 20,
+				"height": 20
+			},
+			"anchor": "C",
+			"align": "C",
+		},
+		{
+			"name": "description",
+			"x": 0,
+			"y": -105,
+			"size": {
+				"width" : 625
+			},
+			"align": "TC",
+			"anchor": "C",
+			"font": "verdana_med",
+			"font_colour":"dark_brown"
+		},
+        {
+			"name": "advisor",
+			"x": -1,
+			"y": -1,
+			"anchor": "TL"
+		},
+	]
+}

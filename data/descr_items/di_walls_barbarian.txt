@@ -1,0 +1,340 @@
+; barbarian walls for generic-wall settlements
+
+
+type			barbarian_town_gateway
+lod
+max_distance	4000
+model_rigid		barbarian_town_gateway_high.cas
+
+
+
+type			barbarian_town_wall_straight
+lod
+max_distance	4000
+model_rigid		barbarian_town_wall_straight_high.cas
+
+
+
+type			barbarian_town_wall_joiner_straight
+lod
+max_distance	4000
+model_rigid		barbarian_town_wall_joiner_straight_high.cas
+
+
+
+type			barbarian_town_wall_joiner_diagonal
+lod
+max_distance	4000
+model_rigid		barbarian_town_wall_joiner_diagonal_high.cas
+
+
+
+type			barbarian_town_wall_watchtower
+lod
+max_distance	4000
+model_rigid		barbarian_town_wall_watchtower_high.cas
+
+
+
+type			barbarian_town_wall_joiner_internal_left
+lod
+max_distance	4000
+model_rigid		barbarian_town_wall_joiner_internal_left_high.cas
+
+
+
+type			barbarian_town_wall_joiner_internal_right
+lod
+max_distance	4000
+model_rigid		barbarian_town_wall_joiner_internal_right_high.cas
+
+
+
+type			barbarian_town_wall_joiner_external_left
+lod
+max_distance	4000
+model_rigid		barbarian_town_wall_joiner_external_left_high.cas
+
+
+
+type			barbarian_town_wall_joiner_external_right
+lod
+max_distance	4000
+model_rigid		barbarian_town_wall_joiner_external_right_high.cas
+
+
+
+type			barbarian_town_wall_internal_corner
+lod
+max_distance	4000
+model_rigid		barbarian_town_wall_internal_corner_high.cas
+
+
+type			barbarian_town_wall_external_corner
+lod
+max_distance	4000
+model_rigid		barbarian_town_wall_external_corner_high.cas
+
+
+type			barbarian_town_internal_corner_watchtower
+lod
+max_distance	4000
+model_rigid		barbarian_town_internal_corner_watchtower_high.cas
+
+
+type			barbarian_town_external_corner_watchtower
+lod
+max_distance	4000
+model_rigid		barbarian_town_external_corner_watchtower_high.cas
+
+
+
+; barbarian walls for round settlements
+
+
+type			barbarian_wooden_town_wall_straight
+lod
+max_distance	200
+model_rigid		barbarian_wooden_town_wall_straight_high.cas
+lod
+max_distance	4000
+model_rigid		barbarian_wooden_town_wall_straight_low.cas
+
+
+
+type			barbarian_wooden_village_wall_straight
+lod
+max_distance	200
+model_rigid		barbarian_wooden_village_wall_straight_high.cas
+lod
+max_distance	4000
+model_rigid		barbarian_wooden_village_wall_straight_low.cas
+
+
+
+type			barbarian_wooden_town_gateway
+lod
+max_distance	200
+model_rigid		barbarian_wooden_town_gateway_high.cas
+lod
+max_distance	4000
+model_rigid		barbarian_wooden_town_gateway_low.cas
+
+
+
+
+type			barbarian_wooden_village_gateway
+lod
+max_distance	200
+model_rigid		barbarian_wooden_village_gateway_high.cas
+lod
+max_distance	4000
+model_rigid		barbarian_wooden_village_gateway_low.cas
+
+
+
+type			barbarian_wooden_town_watchtower
+lod
+max_distance	200
+model_rigid		barbarian_wooden_town_watchtower_high.cas
+lod
+max_distance	4000
+model_rigid		barbarian_wooden_town_watchtower_low.cas
+
+
+
+type			barbarian_wooden_village_watchtower
+lod
+max_distance	200
+model_rigid		barbarian_wooden_village_watchtower_high.cas
+lod
+max_distance	4000
+model_rigid		barbarian_wooden_village_watchtower_low.cas
+
+
+
+
+type			barb_wooden_short_gateway
+lod
+max_distance	200
+model_rigid		models_walls/wooden_wall_short_gateway_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/wooden_wall_short_gateway_low.cas
+
+
+type			barb_wooden_short_straight
+lod
+max_distance	200
+model_rigid		models_walls/wooden_wall_short_straight_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/wooden_wall_short_straight_low.cas
+
+type			barb_wooden_short_straight_damaged_static
+lod
+max_distance	4000
+model_rigid		models_walls/wooden_wall_short_straight_damaged_static.cas
+
+type			barb_wooden_short_straight_damaged_anim
+lod
+max_distance	4000
+model_anim		models_walls/wooden_wall_short_straight_damaged_anim.cas
+
+type			barb_wooden_short_straight_damaged_remains
+lod
+max_distance	4000
+model_rigid		models_walls/wooden_wall_short_straight_damaged_remains.cas
+
+type			barb_wooden_short_straight_destroyed_static
+lod
+max_distance	4000
+model_rigid		models_walls/wooden_wall_short_straight_destroyed_static.cas
+
+type			barb_wooden_short_straight_destroyed_anim
+lod
+max_distance	4000
+model_anim		models_walls/wooden_wall_short_straight_destroyed_anim.cas
+
+type			barb_wooden_short_straight_destroyed_remains
+lod
+max_distance	4000
+model_rigid		models_walls/wooden_wall_short_straight_destroyed_remains.cas
+
+type			barb_wooden_short_joiner_straight
+lod
+max_distance	200
+model_rigid		models_walls/wooden_wall_short_joiner_straight_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/wooden_wall_short_joiner_straight_low.cas
+
+
+type			barb_wooden_short_watchtower
+lod
+max_distance	200
+model_rigid		models_walls/wooden_wall_short_watchtower_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/wooden_wall_short_watchtower_low.cas
+
+type			barb_wooden_short_watchtower_destroyed_static
+lod
+max_distance	4000
+model_rigid		models_walls/wooden_wall_short_watchtower_destroyed_static.cas
+
+type			barb_wooden_short_watchtower_destroyed_remains
+lod
+max_distance	4000
+model_rigid		models_walls/wooden_wall_short_watchtower_destroyed_remains.cas
+
+type			barb_wooden_short_watchtower_destroyed_anim
+lod
+max_distance	4000
+model_anim		models_walls/wooden_wall_short_watchtower_destroyed_anim.cas
+
+
+
+type			barb_wooden_short_joiner_diagonal
+lod
+max_distance	200
+model_rigid		models_walls/wooden_wall_short_joiner_diagonal_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/wooden_wall_short_joiner_diagonal_low.cas
+
+type			barb_wooden_short_joiner_internal_left
+lod
+max_distance	200
+model_rigid		models_walls/wooden_wall_short_joiner_internal_left_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/wooden_wall_short_joiner_internal_left_low.cas
+
+type			barb_wooden_short_joiner_internal_right
+lod
+max_distance	200
+model_rigid		models_walls/wooden_wall_short_joiner_internal_right_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/wooden_wall_short_joiner_internal_right_low.cas
+
+type			barb_wooden_short_joiner_external_right
+lod
+max_distance	200
+model_rigid		models_walls/wooden_wall_short_joiner_external_right_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/wooden_wall_short_joiner_external_right_low.cas
+
+type			barb_wooden_short_joiner_external_left
+lod
+max_distance	200
+model_rigid		models_walls/wooden_wall_short_joiner_external_left_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/wooden_wall_short_joiner_external_left_low.cas
+
+type			barb_wooden_short_internal_corner
+lod
+max_distance	200
+model_rigid		models_walls/wooden_wall_short_ic_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/wooden_wall_short_ic_low.cas
+
+type			barb_wooden_short_external_corner
+lod
+max_distance	200
+model_rigid		models_walls/wooden_wall_short_ec_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/wooden_wall_short_ec_low.cas
+
+type			barb_wooden_short_internal_corner_watchtower
+lod
+max_distance	200
+model_rigid		models_walls/wooden_wall_short_ic_watchtower_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/wooden_wall_short_ic_watchtower_low.cas
+
+type			barb_wooden_short_internal_corner_watchtower_destroyed_static
+lod
+max_distance	4000
+model_rigid		models_walls/wooden_wall_short_ic_watchtower_destroyed_static.cas
+
+type			barb_wooden_short_internal_corner_watchtower_destroyed_remains
+lod
+max_distance	4000
+model_rigid		models_walls/wooden_wall_short_ic_watchtower_destroyed_remains.cas
+
+type			barb_wooden_short_internal_corner_watchtower_destroyed_anim
+lod
+max_distance	4000
+model_anim		models_walls/wooden_wall_short_ic_watchtower_destroyed_anim.cas
+
+
+type			barb_wooden_short_external_corner_watchtower
+lod
+max_distance	200
+model_rigid		models_walls/wooden_wall_short_ec_watchtower_high.cas
+lod
+max_distance	4000
+model_rigid		models_walls/wooden_wall_short_ec_watchtower_low.cas
+
+type			barb_wooden_short_external_corner_watchtower_destroyed_static
+lod
+max_distance	4000
+model_rigid		models_walls/wooden_wall_short_ec_watchtower_destroyed_static.cas
+
+type			barb_wooden_short_external_corner_watchtower_destroyed_remains
+lod
+max_distance	4000
+model_rigid		models_walls/wooden_wall_short_ec_watchtower_destroyed_remains.cas
+
+type			barb_wooden_short_external_corner_watchtower_destroyed_anim
+lod
+max_distance	4000
+model_anim		models_walls/wooden_wall_short_ec_watchtower_destroyed_anim.cas
+

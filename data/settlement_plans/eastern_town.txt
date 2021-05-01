@@ -1,0 +1,154 @@
+plan
+
+{
+target rectangle x 0 z 0 rot 0 width 32 height 32
+floor    eastern_town_underlay.CAS eastern_town_overlay.CAS
+ground_types	ground_eastern_town.tga -288 -288 288 288
+street_plan	eastern_town_pathfinding.CAS
+borders
+                {
+
+	;WALLS
+
+gateway,	0,	-224,	0,	0
+gateway,	0,	224,	-180,	0
+gateway,	-224,	0,	-90,	0
+gateway,	224,	0,	90,	0
+
+straight,	-224,	64,	-90,	0
+straight,	-64,	224,	180,	0
+straight,	64,	224,	180,	0
+straight,	64,	-224,	0,	0
+straight,	-64,	-224,	0,	0
+straight,	-224,	-64,	-90,	0
+straight,	224,	-64,	90,	0
+straight,	96,	-192,	90,	0
+straight,	-192,	-96,	0,	0
+straight,	224,	64,	90,	0
+straight,	-192,	96,	-180,	0
+straight,	-96,	192.0,	-90,	0
+straight,	192,	96,	-180,	0
+straight,	160,	192,	90,	0
+straight,	-160,	-128,	-90,	0
+straight,	192,	-96,	0,	0
+straight,	128,	224,	180,	0
+straight,	-96,	128,	-90,	0
+straight,	-128,	96,	-180,	0
+
+straight_link,	160,	160,	90,	0
+straight_link,	96,	224,	180,	0
+straight_link,	-96,	160,	-90,	0
+straight_link,	-160,	96,	180,	0
+
+tower_straight,	160,	128,	90,	0
+tower_straight,	-128,	-192,	-45,	0
+tower_straight,	128,	-128,	45,	0
+
+internal_left_link,	160,	-96,	0,	0
+
+external_right_link,	-160,	-160,	-90,	0
+
+external_left_link,	-96,	-224,	0,	0
+
+internal_right_link,	96,	-160,	90,	0
+
+internal_corner_link,	-160,	-96,	0,	0
+internal_corner_link,	160,	96,	180,	0
+internal_corner_link,	-96,	96,	-90,	0
+
+external_corner_link,	96,	-224,	90,	0
+external_corner_link,	160,	224,	180,	0
+
+tower_external_corner_link,	-96,	224,	-90,	0
+tower_external_corner_link,	224,	96,	-180,	0
+tower_external_corner_link,	-224,	96,	-90,	0
+tower_external_corner_link,	-224,	-96,	0,	0
+tower_external_corner_link,	224,	-96,	90,	0
+
+  }
+
+; ROAD JOINERS
+
+gateway_slot_into_flat_town,	0,	256,	90,	0
+gateway_slot_into_flat_town,	256,	0,	0,	0
+gateway_slot_into_flat_town,	0,	-256,	-90,	0
+gateway_slot_into_flat_town,	-256,	0,	180,	0
+
+
+
+	;SLOTS
+
+slot_plaza_eastern_32x32m,	0.00,	0.00,	0.00,	0.00
+slot_48x32_core_building,	-48.324,	45.358,	0,	0.00
+slot_48x32_barracks,	40.641,	175.933,	180,	0.00
+slot_48x32_religious,	49.498,	-47.207,	-180,	0.00
+slot_48x32_market,	-176.62,	40.521,	-90.00,	0.00
+
+	;COLLISION OBJECTS
+
+eastern_town_collision,	0.00,	0.00,	0.00,	0.00
+
+	;AMBIENTS
+
+egyptian_eastern_open_tent,	77.36,	62.73,	0.00,	0.00
+egyptian_eastern_open_tent,	103.86,	48.53,	-15.00,	0.00
+
+egyptian_storage_building,	116.82,	62.75,	-100.00,	0.00
+egyptian_storage_building,	-170.654,	-51.785,	-100,	0
+
+	;FAST DRAW AMBIENTS
+
+east_tenamentA,	-41.27,	-117.89,	-90.00,	0.00
+east_tenamentA,	117.04,	-40.85,	-180.00,	0.00
+east_tenamentA,	41.27,	117.89,	90.00,	0.00
+east_tenamentA,	-117.65,	41.27,	-180.00,	0.00
+
+east_tenamentB,	-89.89,	-88.29,	-90.00,	0.00
+east_tenamentB,	47.16,	59.53,	-90.00,	0.00
+east_tenamentB,	89.89,	88.29,	90.00,	0.00
+east_tenamentB,	-177.143,	-24.178,	180,	0
+east_tenamentB,	25.787,	-176.653,	-90,	0
+east_tenamentB,	59.015,	-176.822,	0,	0
+east_tenamentB,	90.732,	-91.602,	0,	0
+east_tenamentB,	91.126,	109.557,	-90,	0
+
+east_tenamentC,	-40.59,	88.29,	0.00,	0.00
+east_tenamentC,	-88.29,	-40.59,	90.00,	0.00
+east_tenamentC,	40.59,	-153.72,	-180.00,	0.00
+east_tenamentC,	96.89,	14.37,	180.00,	0.00
+east_tenamentC,	153.02,	40.59,	-90.00,	0.00
+east_tenamentC,	-39.107,	166.371,	180,	0
+east_tenamentC,	-95.987,	-112.678,	-60,	0
+east_tenamentC,	165.573,	-38.21,	90,	0
+east_tenamentC,	-41.877,	-166.315,	0,	0
+
+east_tenamentD,	-40.12,	136.59,	0.00,	0
+east_tenamentD,	40.12,	-106.28,	-180.00,	0
+east_tenamentD,	-136.59,	-40.12,	90.00,	0
+east_tenamentD,	91.155,	160.3,	90,	0
+
+	;TREES
+
+tree_F,	-64.46,	21.50,	35.00,	0.00
+tree_E,	140.56,	37.56,	140.00,	0.00
+tree_C,	64.93,	-124.82,	-180.00,	0.00
+tree_E,	14.98,	-62.94,	140.00,	0.00
+tree_C,	-153.23,	-52.53,	-180.00,	0.00
+tree_F,	73.37,	43.47,	35.00,	0.00
+tree_E,	-57.03,	-123.16,	140.00,	0.00
+tree_C,	-49.45,	74.76,	-180.00,	0.00
+tree_F,	65.63,	-18.15,	35.00,	0.00
+tree_E,	-57.91,	129.80,	140.00,	0.00
+tree_C,	54.36,	119.10,	-180.00,	0.00
+tree_F,	-121.16,	54.71,	35.00,	0.00
+tree_E,	51.10,	-106.02,	140.00,	0.00
+tree_C,	-60.36,	-15.01,	-180.00,	0.00
+tree_F,	20.59,	66.03,	35.00,	0.00
+tree_E,	-137.48,	-59.01,	140.00,	0.00
+tree_C,	-30.58,	76.34,	-180.00,	0.00
+tree_F,	-51.78,	-62.40,	35.00,	0.00
+tree_C,	-41.11,	77.36,	70.00,	0.00
+tree_F,	113.28,	-24.90,	35.00,	0.00
+tree_E,	-29.69,	-70.02,	140.00,	0.00
+
+  }

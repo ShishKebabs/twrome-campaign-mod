@@ -1,0 +1,370 @@
+{
+	"frames": [
+		{
+			"size": {
+				"fullscreen":true
+			},
+			"priority": -1,
+			"fill": "black_curved"
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": -10
+			},
+			"size": {
+				"width": 618,
+				"height": 100
+			},
+			"collapsed_size": {
+				"width": 618,
+				"height": 40
+			},
+			"priority": 5,
+			"fill": "black_curved",
+			"tag":"tooltip",
+			"anchor": "TR",
+			"align":"TR",
+			"fill_left":true
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 80
+			},
+			"anchor":"TC",
+			"align":"TC",
+			"size": {
+				"width":554,
+				"height":432
+			},
+			"priority": -1,
+			"fill": "black_curved",
+			"scale_width":true
+		}
+	],
+	"tooltip": {
+		"x": 44,
+		"y": 42,
+		"width": 630,
+		"height": 80,
+		"anchor": "TC",
+		"align": "C",
+		"scale_width":true,
+		"font":"verdana_lrg"
+	},
+	"tooltip_ticker": {
+		"x": 38,
+		"y": 3,
+		"width": 624,
+		"height": 50,
+		"anchor": "TC",
+		"align": "TC",
+		"scale_width":true,
+		"font":"verdana_lrg",
+		"notch_override":{
+			"width": 636
+			}
+	},
+	"list": [
+		{
+			"name": "character_info",
+			"x": -562,
+			"y": -170,
+			"size": {
+				"width": 400,
+				"height": 0
+			}
+		},
+		{
+			"name": "character_lists",
+			"x": -568,
+			"y": -315,
+			"size": {
+				"width": 402,
+				"height": 0
+			}
+		},
+		{
+			"name": "retinue_string",
+			"x": -568,
+			"y": -292
+		},
+		{
+			"name": "traits_string",
+			"x": -758,
+			"y": -292
+		},
+		{
+			"name": "character_title",
+			"x": -605,
+			"y": -120,
+			"size": {
+				"width": 300,
+				"height": 0
+			}
+		},
+		{
+			"name": "character_spy_details",
+			"x": 0,
+			"y": 54,
+			"size": {
+				"width": 200,
+				"height": 0
+			},
+			"align": "C",
+			"anchor": "TC",
+			"font":"verdana_med",
+			"font_colour": "white"
+		},
+		{
+			"name": "army_spy_details",
+			"x": -360,
+			"y": 500,
+			"size": {
+				"width": 200,
+				"height": 0
+			}
+		},
+		{
+			"name": "units_table",
+			"x": 75,
+			"y": 106,
+			"size":{
+                "width":530,
+                "height":100
+            },
+			"anchor": "TL",
+			"scale_width": true,
+			"scale_x_pos": true,
+			"annotation_id": "Rome.Annotations.units_npc_army-unit"
+		},
+		{
+			"name": "units_string",
+			"x": 70,
+			"y": 82,
+			"anchor": "TL",
+			"font":"verdana_med",
+			"font_colour":"ally_yellow",
+			"scale_x_pos": true
+		},
+		{
+			"name": "agents_table",
+			"x": 75,
+			"y": 250,
+			"size":{
+                "width":530,
+                "height":100
+            },
+			"anchor": "TL",
+			"scale_width": true,
+			"scale_x_pos": true,
+			"annotation_id": "Rome.Annotations.units_npc_army-agent"
+		},
+		{
+			"name": "agents_string",
+			"x": 70,
+			"y": 224,
+			"anchor": "TL",
+			"font":"verdana_med",
+			"font_colour":"ally_yellow",
+			"scale_x_pos": true
+		},
+		{
+			"name": "other_table",
+			"x": 75,
+			"y": 392,
+			"size":{
+                "width":530,
+                "height":100
+            },
+			"anchor": "TL",
+			"scale_width": true,
+			"scale_x_pos": true,
+			"annotation_id": "Rome.Annotations.units_npc_army-equip"
+		},
+		{
+			"name": "other_string",
+			"x": 70,
+			"y": 366,
+			"anchor": "TL",
+			"font":"verdana_med",
+			"font_colour":"ally_yellow",
+			"scale_x_pos": true
+		},
+		{
+			"name": "zoom_button",
+			"x": 180,
+			"y": -32,
+			"anchor": "BC",
+			"align": "C",
+			"scale_x_pos":true,
+			"annotation_id": "Rome.Annotations.units_npc_army-location",
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			}
+		},
+		{
+			"name": "bodyguard_button",
+			"x": -180,
+			"y": -32,
+			"anchor": "BC",
+			"align": "C",
+			"scale_x_pos":true,
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			},
+			"annotation_id": "Rome.Annotations.units_npc_army-bodyg"
+		},
+		{
+			"name": "unit_info",
+			"x": 168,
+			"y": 110,
+			"size": {
+				"width" : 400,
+				"height": 470
+			},
+			"anchor": "TL"
+		},
+		{
+			"name": "z_unit_table",
+			"x": 177,
+			"y": 155,
+			"size": {
+				"width" : 360,
+				"height": 0
+			},
+			"anchor": "TL"
+		},
+		{
+			"name": "unit_image",
+			"x": 177,
+			"y": 185,
+			"anchor": "TL"
+		},
+		{
+			"name": "unit_name",
+			"x": 160,
+			"y": 115,
+			"size": {
+				"width": 400,
+				"height": 0
+			},
+			"anchor": "TL"
+		},
+		{
+			"name": "unit_time",
+			"x": 170,
+			"y": 105,
+			"anchor": "TL"
+		},
+		{
+			"name": "unit_cost",
+			"x": 320,
+			"y": 105,
+			"anchor": "TL"
+		},
+		{
+			"name": "unit_info_display",
+			"x": 160,
+			"y": 138,
+			"size": {
+				"width": 185,
+				"height": 300
+			},
+			"anchor": "TL"
+		},
+		{
+			"name": "unit_description",
+			"x": 170,
+			"y": 422,
+			"size": {
+				"width": 360,
+				"height": 0
+			}
+		},
+		{
+			"name": "unit_disband_button",
+			"x": 750,
+			"y": -626
+		},
+		{
+			"name": "unit_zoom_button",
+			"x": 1600,
+			"y": 180
+		},
+		{
+			"name": "agent_cost_string",
+			"x": 600,
+			"y": 180
+		},
+		{
+			"name": "agent_upkeep_string",
+			"x": 600,
+			"y": 180
+		},
+		{
+			"name": "agent_description",
+			"x": 600,
+			"y": 180
+		},
+		{
+			"name": "units_table_slider",
+			"x": 75,
+			"y": 204,
+			"anchor": "TL",
+			"scale_x_pos": true
+		},
+		{
+			"name": "agents_table_slider",
+			"x": 75,
+			"y": 344,
+			"anchor": "TL",
+			"scale_x_pos": true
+		},
+		{
+			"name": "other_table_slider",
+			"x": 75,
+			"y": 490,
+			"anchor": "TL",
+			"scale_x_pos": true
+		},
+		{
+			"name": "help_button",
+			"x": 879,
+			"y": -626
+		},
+		{
+			"name": "close_button",
+			"x": -60,
+			"y": -58,
+			"size": {
+				"width": 55,
+				"height": 55
+			},
+			"anchor": "BR",
+			"align":"TL",
+			"hitbox" : {
+				"left": -20,
+				"top":-20,
+				"right":20,
+				"bot":20
+			},
+			"notch_override": {
+				"x": -72
+			},
+			"annotation_id": "Rome.Annotations.units_npc_army-close"
+		},
+        {
+			"name": "advisor",
+			"x": -1,
+			"y": -1
+		}
+	]
+}

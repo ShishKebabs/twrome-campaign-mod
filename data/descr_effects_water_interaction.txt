@@ -1,0 +1,1373 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Water interaction definition file.
+;; ----------------------------------
+;;
+;;
+;; effect_set < lod > name
+;; lod - optional, if not present then effect_set it used for all lod's.
+;;
+;; !warning! -  the lod specification must have a space following the opening angle bracket
+;;              in between each lod and before the closing angle bracket.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+version 1.0
+
+; Small trails left if soldier is in ankle deep water
+effect soldier_foot_water_trail 
+{
+		type decal
+		{
+				start_size [ 0.2 0.5 ]
+				end_size   [ 0.4 0.6 ]
+				anim_time  2.0
+
+				colour_lookup
+				{
+					keyframe		0.0		0   255 255 255	; <0.0 to 1.0> <a r g b>
+					keyframe		0.4		164 255 255 255	
+					keyframe		0.6		164 255 255 255	
+					keyframe		1.0		0   255 255 255
+				}
+		
+				texture data/battlefield/water/ripple_01.tga ;; pink.tga ; trail_01.tga 
+		}
+}
+
+; Aimated water trail if soldier is waist deep in water.
+effect soldier_water_trail 
+{
+		type decal
+		{
+				start_size  	1.4
+				end_size    	1.4
+				anim_time   	0.25
+				delay_time		0.125 ; Will halts the colour cycle animtion until the state is set to expire.
+
+				colour_lookup
+				{				
+					keyframe		0.0		0   255 255 255	; <0.0 to 1.0> <a r g b>
+					keyframe		0.4		164  255 255 255	
+					keyframe		0.6		164  255 255 255	
+					keyframe		1.0		0   255 255 255
+				}
+		
+				texture data/battlefield/water/trail.tga ;trail.tga
+
+				tex_anim
+				{
+					speed 	1.0
+					frame	0.0 0.0 1.0 0.5
+					frame	0.0 0.5 1.0 0.5
+				}
+		}
+}
+
+; Simple non animated water trails for soldiers.
+effect soldier_water_trail_simple
+{
+		type decal
+		{
+				start_size 1.4 
+				end_size   1.4
+				anim_time  0.25
+				delay_time 0.125
+
+				colour_lookup
+				{
+					keyframe		0.0		0   255 255 255	; <0.0 to 1.0> <a r g b>
+					keyframe		0.4		164 255 255 255	
+					keyframe		0.6		164 255 255 255	
+					keyframe		1.0		0   255 255 255
+				}
+		
+				texture data/battlefield/water/trail_01.tga 
+		}
+}
+
+;; Animated water trail for horses and camels.
+effect horse_water_trail 
+{
+		type decal
+		{
+				start_size  	2.4
+				end_size    	2.4
+				anim_time   	0.5
+				delay_time		0.25 ; Will halts the colour cycle animtion until the state is set to expire.
+
+				colour_lookup
+				{				
+					keyframe		0.0		0   255 255 255	; <0.0 to 1.0> <a r g b>
+					keyframe		0.4		164  255 255 255	
+					keyframe		0.6		164  255 255 255	
+					keyframe		1.0		0   255 255 255
+				}
+		
+				texture data/battlefield/water/trail.tga ; trail.tga
+
+				tex_anim
+				{
+					speed 	1.0
+					frame	0.0 0.0 1.0 0.5
+					frame	0.0 0.5 1.0 0.5
+				}
+		}
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Water surface decals
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+effect horse_water_trail_new_decal_long_1
+{
+	type particle
+	{
+		texture             feral_textures/water_set_002.tga
+		sprite_origin		0.0, 0.0
+		sprite_size			0.5, 0.5
+		sprite_border		3.0, 3.0
+
+		size_range       	0.9, 1.2
+		age_range        	2.0, 3.0
+	    grow_range		 	1.0, 1.5
+		vel_range  			0.0, 0.0
+		
+		keyframe_colour
+		{
+				0.0		0, 	 	255, 255, 255
+				0.15	100, 	255, 255, 255
+				0.69	100, 	255, 255, 255
+				1.0		0, 		255, 255, 255
+		}
+		
+		alpha_max	   		255			 ; maximum alpha value
+		initial_size		0.25, 0.45
+		fade_time			1.0
+		offset				0.0, 0.01, 0.0
+		max_particles       3000
+
+		emitter distance_time
+		{
+			density			        1.4 	   	; how many particels per second
+			emitter_falloff_dist	100			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			
+			distance_scale  		1
+			max_distance			0.2	
+			age_scale				1.0		
+		}
+
+		random_emit_radius		-0.5, 0.5
+		random_emit_x
+		random_emit_z
+		system_radius			2.0			; radius used for culling
+		batched
+		randomly_flip_UVs						; randomly flip (mirror) UVs in x axis
+		world_orientation
+		geom_angle_z		90.0
+	}
+}
+
+effect horse_water_trail_new_decal_long_2
+{
+	type particle
+	{
+		texture             feral_textures/water_set_002.tga
+		sprite_origin		0.5, 0.0
+		sprite_size			0.5, 0.5
+		sprite_border		3.0, 3.0
+
+		size_range       	2.1, 2.5
+		age_range        	3.33, 3.53
+	    grow_range		 	1.0, 1.2
+		vel_range  			0.0, 0.0
+		
+		keyframe_colour
+		{
+				0.0		0, 	 	255, 255, 255
+				0.15	100, 	255, 255, 255
+				0.69	100, 	255, 255, 255
+				1.0		0, 		255, 255, 255
+		}
+		
+		alpha_max	   		255			 ; maximum alpha value
+		initial_size		0.25, 0.55
+		fade_time			1.0
+		offset				0.0, 0.01, 0.0
+		max_particles       3000
+
+		emitter distance_time
+		{
+			density			        1.26 	   	; how many particels per second
+			emitter_falloff_dist	100			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			
+			distance_scale  		1
+			max_distance			0.2	
+			age_scale				1.0		
+		}
+
+		random_emit_radius		-0.5, 0.5
+		random_emit_x
+		random_emit_z
+		system_radius			2.0			; radius used for culling
+		batched
+		randomly_flip_UVs						; randomly flip (mirror) UVs in x axis
+		world_orientation
+		geom_angle_z		90.0
+	}
+}
+
+effect horse_water_trail_new_decal_long_3
+{
+	type particle
+	{
+		texture             feral_textures/water_set_002.tga
+		sprite_origin		0.0, 0.5
+		sprite_size			0.5, 0.5
+		sprite_border		3.0, 3.0
+
+		size_range       	1.3, 1.6
+		age_range        	1.7, 2.8
+	    grow_range		 	1.0, 1.0
+		vel_range  			0.0, 0.0
+		
+		keyframe_colour
+		{
+				0.0		0, 	 	255, 255, 255
+				0.15	100, 	255, 255, 255
+				0.69	100, 	255, 255, 255
+				1.0		0, 		255, 255, 255
+		}
+		
+		alpha_max	   		255			 ; maximum alpha value
+		initial_size		0.25, 0.55
+		fade_time			1.0
+		offset				0.0, 0.01, 0.0
+		max_particles       3000
+
+		emitter distance_time
+		{
+			density			        0.96 	   	; how many particels per second
+			emitter_falloff_dist	100			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			
+			distance_scale  		1
+			max_distance			0.2	
+			age_scale				1.0		
+		}
+
+		random_emit_radius		-0.5, 0.5
+		random_emit_x
+		random_emit_z
+		system_radius			2.0			; radius used for culling
+		batched
+		randomly_flip_UVs						; randomly flip (mirror) UVs in x axis
+		world_orientation
+		geom_angle_z		90.0
+	}
+}
+
+effect horse_water_trail_new_decal_long_1_running
+{
+	type particle
+	{
+		texture             feral_textures/water_set_002.tga
+		sprite_origin		0.0, 0.0
+		sprite_size			0.5, 0.5
+		sprite_border		3.0, 3.0
+
+		size_range       	1.4, 1.9
+		age_range        	2.5, 3.3
+	    grow_range		 	1.0, 1.5
+		vel_range  			0.0, 0.0
+		
+		keyframe_colour
+		{
+				0.0		0, 	 	255, 255, 255
+				0.15	60, 	255, 255, 255
+				0.69	60, 	255, 255, 255
+				1.0		0, 		255, 255, 255
+		}
+		
+		alpha_max	   		255			 ; maximum alpha value
+		initial_size		0.65, 0.95
+		fade_time			1.0
+		offset				0.0, 0.005, 0.0
+		max_particles       3000
+
+		emitter distance_time
+		{
+			density			        4.3 	   	; how many particels per second
+			emitter_falloff_dist	100			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			
+			distance_scale  		1
+			max_distance			0.2	
+			age_scale				1.0		
+		}
+
+		random_emit_radius		-1.2, 1.2
+		random_emit_x
+		random_emit_z
+		system_radius			2.0			; radius used for culling
+		batched
+		randomly_flip_UVs						; randomly flip (mirror) UVs in x axis
+		world_orientation
+		geom_angle_z		90.0
+	}
+}
+
+effect horse_water_trail_new_decal_long_2_running
+{
+	type particle
+	{
+		texture             feral_textures/water_set_002.tga
+		sprite_origin		0.5, 0.0
+		sprite_size			0.5, 0.5
+		sprite_border		3.0, 3.0
+
+		size_range       	2.3, 2.9
+		age_range        	3.33, 3.53
+	    grow_range		 	1.0, 1.2
+		vel_range  			0.0, 0.0
+		
+		keyframe_colour
+		{
+				0.0		0, 	 	255, 255, 255
+				0.15	60, 	255, 255, 255
+				0.69	60, 	255, 255, 255
+				1.0		0, 		255, 255, 255
+		}
+		
+		alpha_max	   		255			 ; maximum alpha value
+		initial_size		0.55, 0.75
+		fade_time			1.0
+		offset				0.0, 0.005, 0.0
+		max_particles       3000
+
+		emitter distance_time
+		{
+			density			        3.9 	   	; how many particels per second
+			emitter_falloff_dist	100			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			
+			distance_scale  		1
+			max_distance			0.2	
+			age_scale				1.0		
+		}
+
+		random_emit_radius		-1.2, 1.2
+		random_emit_x
+		random_emit_z
+		system_radius			2.0			; radius used for culling
+		batched
+		randomly_flip_UVs						; randomly flip (mirror) UVs in x axis
+		world_orientation
+		geom_angle_z		90.0
+	}
+}
+
+effect horse_water_trail_new_decal_long_3_running
+{
+	type particle
+	{
+		texture             feral_textures/water_set_002.tga
+		sprite_origin		0.0, 0.5
+		sprite_size			0.5, 0.5
+		sprite_border		3.0, 3.0
+
+		size_range       	1.9, 2.5
+		age_range        	1.7, 2.8
+	    grow_range		 	1.0, 1.4
+		vel_range  			0.0, 0.0
+		
+		keyframe_colour
+		{
+				0.0		0, 	 	255, 255, 255
+				0.15	60, 	255, 255, 255
+				0.69	60, 	255, 255, 255
+				1.0		0, 		255, 255, 255
+		}
+		
+		alpha_max	   		255			 ; maximum alpha value
+		initial_size		0.55, 0.85
+		fade_time			1.0
+		offset				0.0, 0.005, 0.0
+		max_particles       3000
+
+		emitter distance_time
+		{
+			density			        5.16 	   	; how many particels per second
+			emitter_falloff_dist	100			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			
+			distance_scale  		1
+			max_distance			0.2	
+			age_scale				1.0		
+		}
+
+		random_emit_radius		-1.2, 1.2
+		random_emit_x
+		random_emit_z
+		system_radius			2.0			; radius used for culling
+		batched
+		randomly_flip_UVs						; randomly flip (mirror) UVs in x axis
+		world_orientation
+		geom_angle_z		90.0
+	}
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Spray effect
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+effect horse_water_splash_new_half_1
+{
+	type particle
+	{
+		texture             feral_textures/water_set_001.tga
+		sprite_origin		0.0, 0.0
+		sprite_size			0.5, 0.25
+		sprite_border		3.0, 3.0
+
+		size_range       	0.35, 0.45
+		size_range_w       	0.7, 0.9
+		age_range        	2.0, 2.4
+	    grow_range		 	1.0, 1.0
+		vel_range  			0.0, 0.0
+		
+		keyframe_colour
+		{
+				0.0		0, 	 	255, 255, 255
+				0.25	80, 	255, 255, 255
+				0.79	80, 	255, 255, 255
+				1.0		0, 		255, 255, 255
+		}
+		
+		alpha_max	   		255			 ; maximum alpha value
+		initial_size		0.125, 0.175
+		initial_size_w		0.25, 0.35
+		fade_time			1.0
+		offset				0.0, 0.07, 0.0
+		max_particles       3000
+
+		emitter distance_time
+		{
+			density			        0.985 	   	; how many particels per second
+			emitter_falloff_dist	100			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			
+			distance_scale  		1
+			max_distance			0.2	
+			age_scale				1.0		
+		}
+
+		random_emit_radius		0, 0.05
+		system_radius			2.0			; radius used for culling
+		batched
+		randomly_flip_UVs						; randomly flip (mirror) UVs in x axis
+		follow_emitter
+		follow_factor		0.25
+	}
+}
+
+effect horse_water_splash_new_half_2
+{
+	type particle
+	{
+		texture             feral_textures/water_set_001.tga
+		sprite_origin		0.5, 0.0
+		sprite_size			0.5, 0.25
+		sprite_border		3.0, 3.0
+
+		size_range       	0.375, 0.45
+		size_range_w       	0.75, 0.9
+		age_range        	1.0, 1.2
+	    grow_range		 	1.0, 1.0
+		vel_range  			0.1, 0.1
+		
+		keyframe_colour
+		{
+				0.0		0, 	 	255, 255, 255
+				0.25	80, 	255, 255, 255
+				0.79	80, 	255, 255, 255
+				1.0		0, 		255, 255, 255
+		}
+		
+		alpha_max	   		255			 ; maximum alpha value
+		initial_size		0.225, 0.375
+		initial_size_w		0.45, 0.75
+		fade_time			1.0
+		offset				0.0, 0.05, 0.0
+		max_particles       3000
+
+		emitter distance_time
+		{
+			density			        0.8 	   	; how many particels per second
+			emitter_falloff_dist	100			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			
+			distance_scale  		1
+			max_distance			0.2	
+			age_scale				1.0		
+		}
+
+		random_emit_radius		0, 0.05
+		system_radius			2.0			; radius used for culling
+		batched
+		randomly_flip_UVs						; randomly flip (mirror) UVs in x axis
+		flip_UVs_y
+		follow_emitter
+		follow_factor		0.25
+	}
+}
+
+effect horse_water_splash_new_half_3
+{
+	type particle
+	{
+		texture             feral_textures/water_set_001.tga
+		sprite_origin		0.5, 0.25
+		sprite_size			0.5, 0.25
+		sprite_border		3.0, 3.0
+
+		size_range       	0.45, 0.6
+		size_range_w       	0.9, 1.2
+		age_range        	0.5, 0.6
+	    grow_range		 	1.0, 1.0
+		vel_range  			0.2, 0.2
+		
+		keyframe_colour
+		{
+				0.0		0, 	 	255, 255, 255
+				0.25	80, 	255, 255, 255
+				0.79	80, 	255, 255, 255
+				1.0		0, 		255, 255, 255
+		}
+		
+		alpha_max	   		255			 ; maximum alpha value
+		initial_size		0.225, 0.325
+		initial_size_w		0.45, 0.65
+		fade_time			1.0
+		offset				0.0, 0.05, 0.0
+		max_particles       3000
+
+		emitter distance_time
+		{
+			density			        0.7 	   	; how many particels per second
+			emitter_falloff_dist	100			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			
+			distance_scale  		1
+			max_distance			0.2	
+			age_scale				1.0		
+		}
+
+		random_emit_radius		0, 0.05
+		system_radius			2.0			; radius used for culling
+		batched
+		randomly_flip_UVs						; randomly flip (mirror) UVs in x axis
+		follow_emitter
+		follow_factor		0.25
+	}
+}
+
+effect horse_water_splash_new_4
+{
+	type particle
+	{
+		texture             feral_textures/water_set_001.tga
+		sprite_origin		0.0, 0.5
+		sprite_size			0.5, 0.5
+		sprite_border		3.0, 3.0
+
+		size_range       	0.65, 0.75
+		age_range        	0.9, 1.5
+	    grow_range		 	1.0, 1.5
+		vel_range  			0.2, 0.2
+		
+		keyframe_colour
+		{
+				0.0		0, 	 	255, 255, 255
+				0.25	80, 	255, 255, 255
+				0.79	80, 	255, 255, 255
+				1.0		0, 		255, 255, 255
+		}
+		
+		alpha_max	   		255			 ; maximum alpha value
+		initial_size		0.25, 0.55
+		fade_time			1.0
+		offset				0.0, 0.1, 0.0
+		max_particles       3000
+
+		emitter distance_time
+		{
+			density			        0.85 	   	; how many particels per second
+			emitter_falloff_dist	100			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			
+			distance_scale  		1
+			max_distance			0.2	
+			age_scale				1.0		
+		}
+
+		random_emit_radius		0, 0.05
+		system_radius			2.0			; radius used for culling
+		batched
+		randomly_flip_UVs						; randomly flip (mirror) UVs in x axis
+		flip_UVs_y
+		follow_emitter
+		follow_factor		0.25
+	}
+}
+
+effect horse_water_splash_new_5
+{
+	type particle
+	{
+		texture             feral_textures/water_set_001.tga
+		sprite_origin		0.5, 0.5
+		sprite_size			0.5, 0.5
+		sprite_border		3.0, 3.0
+
+		size_range       	0.65, 0.75
+		age_range        	1.1, 1.9
+	    grow_range		 	1.0, 1.5
+		vel_range  			0.2, 0.2
+		
+		keyframe_colour
+		{
+				0.0		0, 	 	255, 255, 255
+				0.25	80, 	255, 255, 255
+				0.79	80, 	255, 255, 255
+				1.0		0, 		255, 255, 255
+		}
+		
+		alpha_max	   		255			 ; maximum alpha value
+		initial_size		0.15, 0.45
+		fade_time			1.0
+		offset				0.0, 0.1, 0.0
+		max_particles       3000
+
+		emitter distance_time
+		{
+			density			        0.75 	   	; how many particels per second
+			emitter_falloff_dist	100			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			
+			distance_scale  		1
+			max_distance			0.2	
+			age_scale				1.0		
+		}
+
+		random_emit_radius		0, 0.05
+		system_radius			2.0			; radius used for culling
+		batched
+		randomly_flip_UVs						; randomly flip (mirror) UVs in x axis
+		flip_UVs_y
+		follow_emitter
+		follow_factor		0.25
+	}
+}
+
+effect horse_water_splash_new_6
+{
+	type particle
+	{
+		texture             feral_textures/water_set_001.tga
+		sprite_origin		0.5, 0.5
+		sprite_size			0.5, 0.5
+		sprite_border		3.0, 3.0
+
+		size_range       	0.35, 0.45
+		age_range        	1.0, 1.6
+	    grow_range		 	1.0, 1.5
+		vel_range  			0.2, 0.2
+		
+		keyframe_colour
+		{
+				0.0		0, 	 	255, 255, 255
+				0.25	80, 	255, 255, 255
+				0.79	80, 	255, 255, 255
+				1.0		0, 		255, 255, 255
+		}
+		
+		alpha_max	   		255			 ; maximum alpha value
+		initial_size		0.15, 0.45
+		fade_time			1.0
+		offset				0.2, 0.1, 0.2
+		max_particles       3000
+
+		emitter distance_time
+		{
+			density			        2.25 	   	; how many particels per second
+			emitter_falloff_dist	100			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			
+			distance_scale  		1
+			max_distance			0.2	
+			age_scale				1.0		
+		}
+
+		random_emit_radius		0, 0.05
+		system_radius			2.0			; radius used for culling
+		batched
+		randomly_flip_UVs						; randomly flip (mirror) UVs in x axis
+		flip_UVs_y
+		follow_emitter
+		follow_factor		0.25
+	}
+}
+
+effect horse_water_splash_new_half_1_running
+{
+	type particle
+	{
+		texture             feral_textures/water_set_001.tga
+		sprite_origin		0.0, 0.0
+		sprite_size			0.5, 0.25
+		sprite_border		3.0, 3.0
+
+		size_range       	0.7, 0.9
+		size_range_w       	1.4, 1.8
+		age_range        	1.0, 1.2
+	    grow_range		 	1.0, 1.0
+		vel_range  			0.0, 0.0
+		
+		keyframe_colour
+		{
+				0.0		0, 	 	255, 255, 255
+				0.25	80, 	255, 255, 255
+				0.79	80, 	255, 255, 255
+				1.0		0, 		255, 255, 255
+		}
+		
+		alpha_max	   		255			 ; maximum alpha value
+		initial_size		0.125, 0.175
+		initial_size_w		0.25, 0.35
+		fade_time			1.0
+		offset				0.0, 0.07, 0.0
+		max_particles       3000
+
+		emitter distance_time
+		{
+			density			        1.95 	   	; how many particels per second
+			emitter_falloff_dist	100			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			
+			distance_scale  		1
+			max_distance			0.2	
+			age_scale				1.0		
+		}
+
+		random_emit_radius		0, 0.05
+		system_radius			2.0			; radius used for culling
+		batched
+		randomly_flip_UVs						; randomly flip (mirror) UVs in x axis
+		follow_emitter
+		follow_factor		0.5
+	}
+}
+
+effect horse_water_splash_new_half_2_running
+{
+	type particle
+	{
+		texture             feral_textures/water_set_001.tga
+		sprite_origin		0.5, 0.0
+		sprite_size			0.5, 0.25
+		sprite_border		3.0, 3.0
+
+		size_range       	0.75, 0.9
+		size_range_w       	1.5, 1.8
+		age_range        	0.5, 0.6
+	    grow_range		 	1.0, 1.0
+		vel_range  			0.2, 0.2
+		
+		keyframe_colour
+		{
+				0.0		0, 	 	255, 255, 255
+				0.25	80, 	255, 255, 255
+				0.79	80, 	255, 255, 255
+				1.0		0, 		255, 255, 255
+		}
+		
+		alpha_max	   		255			 ; maximum alpha value
+		initial_size		0.225, 0.375
+		initial_size_w		0.45, 0.75
+		fade_time			1.0
+		offset				0.0, 0.2, 0.0
+		max_particles       3000
+
+		emitter distance_time
+		{
+			density			        1.6 	   	; how many particels per second
+			emitter_falloff_dist	100			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			
+			distance_scale  		1
+			max_distance			0.2	
+			age_scale				1.0		
+		}
+
+		random_emit_radius		0, 0.05
+		system_radius			2.0			; radius used for culling
+		batched
+		randomly_flip_UVs						; randomly flip (mirror) UVs in x axis
+		flip_UVs_y
+		follow_emitter
+		follow_factor		0.5
+	}
+}
+
+effect horse_water_splash_new_half_3_running
+{
+	type particle
+	{
+		texture             feral_textures/water_set_001.tga
+		sprite_origin		0.5, 0.25
+		sprite_size			0.5, 0.25
+		sprite_border		3.0, 3.0
+
+		size_range       	0.9, 1.2
+		size_range_w       	1.8, 2.4
+		age_range        	0.5, 0.6
+	    grow_range		 	1.0, 1.0
+		vel_range  			0.2, 0.2
+		
+		keyframe_colour
+		{
+				0.0		0, 	 	255, 255, 255
+				0.25	80, 	255, 255, 255
+				0.79	80, 	255, 255, 255
+				1.0		0, 		255, 255, 255
+		}
+		
+		alpha_max	   		255			 ; maximum alpha value
+		initial_size		0.225, 0.325
+		initial_size_w		0.45, 0.65
+		fade_time			1.0
+		offset				0.0, 0.2, 0.0
+		max_particles       3000
+
+		emitter distance_time
+		{
+			density			        1.5 	   	; how many particels per second
+			emitter_falloff_dist	100			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			
+			distance_scale  		1
+			max_distance			0.2	
+			age_scale				1.0		
+		}
+
+		random_emit_radius		0, 0.05
+		system_radius			2.0			; radius used for culling
+		batched
+		randomly_flip_UVs						; randomly flip (mirror) UVs in x axis
+		follow_emitter
+		follow_factor		0.5
+	}
+}
+
+effect horse_water_splash_new_4_running
+{
+	type particle
+	{
+		texture             feral_textures/water_set_001.tga
+		sprite_origin		0.0, 0.5
+		sprite_size			0.5, 0.5
+		sprite_border		3.0, 3.0
+
+		size_range       	1.3, 1.5
+		age_range        	0.45, 0.75
+	    grow_range		 	1.0, 1.5
+		vel_range  			0.4, 0.4
+		
+		keyframe_colour
+		{
+				0.0		0, 	 	255, 255, 255
+				0.25	80, 	255, 255, 255
+				0.79	80, 	255, 255, 255
+				1.0		0, 		255, 255, 255
+		}
+		
+		alpha_max	   		255			 ; maximum alpha value
+		initial_size		0.25, 0.55
+		fade_time			1.0
+		offset				0.0, 0.4, 0.0
+		max_particles       3000
+
+		emitter distance_time
+		{
+			density			        1.7 	   	; how many particels per second
+			emitter_falloff_dist	100			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			
+			distance_scale  		1
+			max_distance			0.2	
+			age_scale				1.0		
+		}
+
+		random_emit_radius		0, 0.05
+		system_radius			2.0			; radius used for culling
+		batched
+		randomly_flip_UVs						; randomly flip (mirror) UVs in x axis
+		flip_UVs_y
+		follow_emitter
+		follow_factor		0.5
+	}
+}
+
+effect horse_water_splash_new_5_running
+{
+	type particle
+	{
+		texture             feral_textures/water_set_001.tga
+		sprite_origin		0.5, 0.5
+		sprite_size			0.5, 0.5
+		sprite_border		3.0, 3.0
+
+		size_range       	1.3, 1.5
+		age_range        	0.55, 0.95
+	    grow_range		 	1.0, 1.5
+		vel_range  			0.4, 0.4
+		
+		keyframe_colour
+		{
+				0.0		0, 	 	255, 255, 255
+				0.25	80, 	255, 255, 255
+				0.79	80, 	255, 255, 255
+				1.0		0, 		255, 255, 255
+		}
+		
+		alpha_max	   		255			 ; maximum alpha value
+		initial_size		0.15, 0.45
+		fade_time			1.0
+		offset				0.0, 0.4, 0.0
+		max_particles       3000
+
+		emitter distance_time
+		{
+			density			        1.5 	   	; how many particels per second
+			emitter_falloff_dist	100			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			
+			distance_scale  		1
+			max_distance			0.2	
+			age_scale				1.0		
+		}
+
+		random_emit_radius		0, 0.05
+		system_radius			2.0			; radius used for culling
+		batched
+		randomly_flip_UVs						; randomly flip (mirror) UVs in x axis
+		flip_UVs_y
+		follow_emitter
+		follow_factor		0.5
+	}
+}
+
+effect horse_water_splash_new_6_running
+{
+	type particle
+	{
+		texture             feral_textures/water_set_001.tga
+		sprite_origin		0.5, 0.5
+		sprite_size			0.5, 0.5
+		sprite_border		3.0, 3.0
+
+		size_range       	0.7, 0.9
+		age_range        	0.50, 0.8
+	    grow_range		 	1.0, 1.5
+		vel_range  			0.4, 0.4
+		
+		keyframe_colour
+		{
+				0.0		0, 	 	255, 255, 255
+				0.25	80, 	255, 255, 255
+				0.79	80, 	255, 255, 255
+				1.0		0, 		255, 255, 255
+		}
+		
+		alpha_max	   		255			 ; maximum alpha value
+		initial_size		0.15, 0.45
+		fade_time			1.0
+		offset				0.2, 0.4, 0.2
+		max_particles       3000
+
+		emitter distance_time
+		{
+			density			        4.5 	   	; how many particels per second
+			emitter_falloff_dist	100			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			
+			distance_scale  		1
+			max_distance			0.2	
+			age_scale				1.0		
+		}
+
+		random_emit_radius		0, 0.05
+		system_radius			2.0			; radius used for culling
+		batched
+		randomly_flip_UVs						; randomly flip (mirror) UVs in x axis
+		flip_UVs_y
+		follow_emitter
+		follow_factor		0.5
+	}
+}
+
+
+;; Simple non animated water trail for horses and camels.
+effect horse_water_trail_simple
+{
+		type decal
+		{
+				start_size 2.4 
+				end_size   2.4
+				anim_time  0.25
+				delay_time 0.125
+
+				colour_lookup
+				{
+					keyframe		0.0		0   255 255 255	; <0.0 to 1.0> <a r g b>
+					keyframe		0.4		164 255 255 255	
+					keyframe		0.6		164 255 255 255	
+					keyframe		1.0		0   255 255 255
+				}
+		
+				texture data/battlefield/water/trail_01.tga 
+		}
+}
+ 
+effect elephant_water_trail 
+{
+		;; type water_trail_effect
+		;; {
+		;;     depth 
+		type decal
+		{
+				start_size  	3.4
+				end_size    	3.4
+				anim_time   	0.5
+				delay_time		0.25 ; Will halts the colour cycle animtion until the state is set to expire.
+
+				colour_lookup
+				{				
+					keyframe		0.0		0   255 255 255	; <0.0 to 1.0> <a r g b>
+					keyframe		0.4		164  255 255 255	
+					keyframe		0.6		164  255 255 255	
+					keyframe		1.0		0   255 255 255
+				}
+		
+				texture data/battlefield/water/trail.tga ;trail.tga
+
+				tex_anim
+				{
+					speed 	1.0
+					frame	0.0 0.0 1.0 0.5
+					frame	0.0 0.5 1.0 0.5
+				}
+		}
+
+		;; type sub
+}
+
+effect chariot_water_trail 
+{
+		;; type water_trail_effect
+		;; {
+		;;     depth 
+		type decal
+		{
+				start_size  	3.4
+				end_size    	3.4
+				anim_time   	0.5
+				delay_time		0.25 ; Will halts the colour cycle animtion until the state is set to expire.
+
+				colour_lookup
+				{				
+					keyframe		0.0		0   255 255 255	; <0.0 to 1.0> <a r g b>
+					keyframe		0.4		164  255 255 255	
+					keyframe		0.6		164  255 255 255	
+					keyframe		1.0		0   255 255 255
+				}
+		
+				texture data/battlefield/water/trail.tga ;trail.tga
+
+				tex_anim
+				{
+					speed 	1.0
+					frame	0.0 0.0 1.0 0.5
+					frame	0.0 0.5 1.0 0.5
+				}
+		}
+
+		;; type sub
+}
+
+; Ripple effect when arrow hts water
+effect arrow_ripple ; <effect_name>
+{
+	   type		decal			; <decal | ribbon | particle> 
+	   {
+				start_size		[ 0.2 0.5 ]		; <meters>
+				end_size		[ 0.6 1.0 ]		; <meters>
+				anim_time		[ 1.0 2.0 ]		; <seconds>
+				
+				colour_lookup
+				{
+					keyframe		0.0		0   255 255 255	; <0.0 to 1.0> <a r g b>
+					keyframe		0.5		255 255 255 255	
+					keyframe		1.0		0   255 255 255
+				}
+
+				texture			data/battlefield/water/ripple_01.tga
+	   }			   
+}
+
+; Ripple effect when arrow hts water
+effect arrow_ripple ; <effect_name>
+{
+	   type		decal			; <decal | ribbon | particle> 
+	   {
+				start_size		[ 0.2 0.5 ]		; <meters>
+				end_size		[ 0.6 1.0 ]		; <meters>
+				anim_time		[ 1.0 2.0 ]		; <seconds>
+				
+				colour_lookup
+				{
+					keyframe		0.0		0   255 255 255	; <0.0 to 1.0> <a r g b>
+					keyframe		0.5		255 255 255 255	
+					keyframe		1.0		0   255 255 255
+				}
+
+				texture			data/battlefield/water/ripple_01.tga
+	   }			   
+}
+
+effect footstep_ripple
+{
+	   type		decal			; <decal | ribbon | particle> 
+	   {
+				start_size		[ 0.2 0.5 ]		; <meters>
+				end_size		[ 0.6 1.0 ]		; <meters>
+				anim_time		[ 0.5 1.5 ]		; <seconds>
+				
+				colour_lookup
+				{
+					keyframe		0.0		0   255 255 255	; <0.0 to 1.0> <a r g b>
+					keyframe		0.5		44  255 255 255	
+					keyframe		1.0		0   255 255 255
+				}
+
+				texture			data/battlefield/water/ripple_01.tga
+	   }			   
+}
+
+effect_set < 0 1 2 3 > default_water_set ; < lods > name
+{
+	lod 100   ; max distance from the camera to use this effect in meters.
+	{
+		arrow_ripple
+;		default_spray
+	}
+	
+	lod 300
+	{
+		arrow_ripple
+	}
+}
+
+effect_set < 4 > default_water_set
+{
+	lod 100
+	{
+;		default_ripple
+	}
+}
+
+effect_set seige_engine_effect_set
+{
+	lod 200
+	{
+;		default_spray
+	}
+}
+
+effect_set water_footsteps
+{
+	lod 50
+	{
+		footstep_ripple 
+	}
+}
+
+effect_set soldier_water_trail
+{
+	lod 50
+	{
+		soldier_water_trail
+	}
+	lod
+	{
+		soldier_water_trail_simple
+	}
+}
+
+effect_set soldier_water_trail_running
+{
+	lod 50
+	{
+		soldier_water_trail
+	}
+	lod
+	{
+		soldier_water_trail_simple
+	}
+}
+
+;
+; TODO: This can be improved in couple ways:
+;
+; - mix rest of the available sprites from water sets to make it more random (both surface
+;   splashes and kickback spray)
+; - current spray assets look kind of sparse so maybe add more but need to make few more
+;   variations so they aren't too repetitive
+; - tune the values slightly better so they stick closer to units - for mounts can
+;   actually try to match each leg and have four spawn points, for soldiers central spawn
+;   point, tweak follow_factor/lifetime/density, etc., could actually position particles
+;   around units more precisely using world space orientation.
+; - add correct soft particle values for kickback spray (at least for half-sprite
+;   particles)
+; - create simpler version for lower LOD (by most likely removing most of kickback spray)
+;
+effect_set horse_water_trail 
+{
+	lod 50
+	{
+		; Splash above water surface
+		horse_water_splash_new_half_1
+		horse_water_splash_new_half_2
+		horse_water_splash_new_half_3
+		horse_water_splash_new_4
+		horse_water_splash_new_5
+		horse_water_splash_new_6
+		
+		; Decal on water surface
+		horse_water_trail_new_decal_long_1
+		horse_water_trail_new_decal_long_2
+		horse_water_trail_new_decal_long_3
+		
+	;	horse_water_trail_new_3
+	}
+	lod 100
+	{
+		; Splash above water surface
+		horse_water_splash_new_half_1
+		horse_water_splash_new_half_2
+		horse_water_splash_new_half_3
+		horse_water_splash_new_4
+		horse_water_splash_new_5
+		horse_water_splash_new_6
+		
+		; Decal on water surface
+		horse_water_trail_new_decal_long_1
+		horse_water_trail_new_decal_long_2
+		horse_water_trail_new_decal_long_3
+	}
+}
+
+effect_set horse_water_trail_running
+{
+	lod 50
+	{
+		; Splash above water surface
+		horse_water_splash_new_half_1_running
+		horse_water_splash_new_half_2_running
+		horse_water_splash_new_half_3_running
+		horse_water_splash_new_4_running
+		horse_water_splash_new_5_running
+		horse_water_splash_new_6_running
+				
+		; Decal on water surface
+		horse_water_trail_new_decal_long_1_running
+		horse_water_trail_new_decal_long_2_running
+		horse_water_trail_new_decal_long_3_running
+	}
+	lod 100
+	{
+		; Splash above water surface
+		horse_water_splash_new_half_1_running
+		horse_water_splash_new_half_2_running
+		horse_water_splash_new_half_3_running
+		horse_water_splash_new_4_running
+		horse_water_splash_new_5_running
+		horse_water_splash_new_6_running
+		
+		; Decal on water surface
+		horse_water_trail_new_decal_long_1_running
+		horse_water_trail_new_decal_long_2_running
+		horse_water_trail_new_decal_long_3_running
+	}
+}
+
+effect_set chariot_water_trail 
+{
+	lod 50
+	{
+		chariot_water_trail
+	}
+}
+
+effect_set camel_water_trail 
+{
+	lod 50
+	{
+		horse_water_trail
+	}
+
+	lod 100
+	{
+		horse_water_trail_simple
+	}
+}
+
+
+; Placeholder water splash.
+;; effect default_spray
+;; {
+;;   	type particle
+;;  	{				
+;; 		max_systems     10  ; <maximum number of systems of this type to run concurrently>
+
+;; 		modifier texture_emitter
+;; 		{
+;; 			emitter
+;; 			{
+;; 				max_particles	20  ; <maximum number of particles>
+;; 				spawn_rate		10	; <particles per second>
+;; 				lifetime    	2.0	; <seconds>
+;; 				velocity		2.5	; <m/s>
+
+;; 				start_size [ 0.1 0.2 ]
+;; 				end_size   [ 0.3 0.5 ]
+;; 			}
+
+;; 			width		0.5 	; <meters>
+;; 			height 		0.5		; <meters>
+	
+;; 			texture		data/battlefield/water/ripple_01.tga
+;; 		}
+	
+;; 		modifier colour_lookup
+;; 		{
+;; 			op				set
+;; 			input			elapsed_time
+			
+;; 			colour_lookup
+;; 			{
+;; 				keyframe		0.0		0   255 255 255	; <0.0 to 1.0> <a r g b>
+;; 				keyframe		0.5		128 255 255 255	
+;; 				keyframe		1.0		0   255 255 255
+;; 			}
+;; 		}
+
+;; 		modifier apply_force
+;; 		{
+;; 			acceleration	(0, -9.81, 0)  ; <m/s^2> gravity
+;; 		}
+
+;; 		modifier linear_growth
+;; 		{
+;; 			input			elapsed_time
+;; 			start_size		0.25
+;; 			end_size		0.5 
+;; 		}
+
+;; 		modifier static_texture
+;; 		{
+;; 			texture data/battlefield/water/ripple_01.tga
+;; 		}
+;; 	}
+;; }

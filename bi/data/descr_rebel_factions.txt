@@ -1,0 +1,695 @@
+rebel_type			Britons //Empire_West
+category			peasant_revolt
+chance				0					
+description			Britons
+unit				western peasant celt
+unit				western peasant celt
+unit				celtic slingers
+unit				celtic slingers
+unit				celtic spearman
+unit				merc veteranii
+unit				coastal levies
+unit				celtic warlord
+
+rebel_type			Latins //Empire_West
+category			peasant_revolt
+chance				0					
+description			Latins
+unit				western peasant
+unit				western peasant
+unit				merc veteranii
+unit				merc equites veteranii
+unit				generic rebel general
+
+rebel_type			Sicani //Empire_West
+category			peasant_revolt
+chance				0					
+description			Sicani
+unit				western peasant
+unit				western peasant
+unit				merc veteranii
+unit				merc equites veteranii
+unit				generic rebel general
+
+rebel_type			Celts //Celts
+category			peasant_revolt
+chance				0					
+description			Celts
+unit				western peasant celt
+unit				celtic spearman
+unit				celtic spearman
+unit				celtic crossbowmen
+unit				celtic kerns
+unit				celtic warlord
+
+rebel_type 			Slavs		//Barbaricum
+category			peasant_revolt
+chance				3					
+description			Slavs
+unit				peasant vandal
+unit				steppe swordsmen vandal
+unit				steppe horse archers
+unit				steppe spearmen vandal
+unit				steppe warlords
+					
+rebel_type 			Ostrogoths //Goths
+category			peasant_revolt
+chance				3					
+description			Ostrogoths
+unit				gothic warriors
+unit				gothic warriors
+unit				goth raiders
+unit				gothic horse archers
+unit				goth warlords
+					
+rebel_type 			Alans		//Huns
+category			peasant_revolt
+chance				3					
+description			Alans
+unit				alan horse archers
+unit				alan horse archers
+unit				alan horse archers
+unit				alan horse archers
+unit				steppe warlords
+
+rebel_type 			Saka		//Huns
+category			peasant_revolt
+chance				3					
+description			Saka
+unit				alan horse archers
+unit				alan horse archers
+unit				alan horse archers
+unit				alan horse archers
+unit				steppe warlords
+					
+rebel_type 			Angles	//Saxons
+category			peasant_revolt 
+chance				6					
+description			Angles
+unit				levy spearman saxon
+unit				levy spearman saxon
+unit				western peasant saxon
+unit				western peasant saxon
+unit				saxon keels
+unit				saxon hunters
+unit				saxon warlord
+					
+rebel_type 			Armenians		//Sassanids
+category			peasant_revolt 
+chance				0					
+description			Armenians
+unit				sassanid peasant
+unit				nomad archer cavalry
+unit				nomad archer cavalry
+unit				kurdish javelinmen
+unit				eastern rebel general
+
+rebel_type 			Cappadocians		//Empire_East
+category			peasant_revolt 
+chance				0					
+description			Cappadocians
+unit				levy spearmen sassanid
+unit				nomad archer cavalry
+unit				nomad archer cavalry
+unit				mountain slinger
+unit				eastern rebel general
+				
+rebel_type 			Berbers	//Empire_West
+category			peasant_revolt 
+chance				0					
+description			Berbers
+unit				african peasant
+unit				desert cavalry
+unit				desert cavalry
+unit				desert archers african
+unit				desert chieftain					
+
+rebel_type 			Poeni	//Empire_West
+category			peasant_revolt 
+chance				0					
+description			Poeni
+unit				african peasant
+unit				hillmen
+unit				hillmen
+unit				desert archers african
+unit				merc veteranii
+unit				generic rebel general					
+				
+rebel_type 			Burgundii		//Rebels
+category			peasant_revolt 
+chance				0					
+description			Burgundii
+unit				chosen warlord alemanni
+unit				spear warband alemanni
+unit				spear warband alemanni
+unit				western peasant alemanni
+unit				saxon hunters
+					
+rebel_type 			Chatti		//Rebels
+category			peasant_revolt 
+chance				6					
+description			Chatti	
+unit				chosen warlord alemanni
+unit				spear warband alemanni
+unit				western peasant alemanni
+unit				western peasant alemanni
+unit				saxon hunters
+
+rebel_type 			Belgae		//Empire_West
+category			peasant_revolt 
+chance				3					
+description			Belgae
+unit				western peasant
+unit				western peasant
+unit				equites auxilia
+unit				merc veteranii
+unit				levy spearman frank
+unit				barbarian rebel general
+					
+rebel_type 			Frisii		//Empire_West
+category			peasant_revolt 
+chance				3					
+description			Frisii
+unit				western peasant saxon
+unit				western peasant saxon
+unit				levy spearman frank
+unit				saxon keels
+unit				saxon sea raiders
+unit				saxon warlord
+
+rebel_type 			Franki		//Empire_West
+category			peasant_revolt 
+chance				3					
+description			Franki
+unit				western peasant frank
+unit				western peasant frank
+unit				levy spearman frank
+unit				frankish raiders
+unit				frankish raiders
+unit				frankish paladin bodyguard
+
+rebel_type 			Batavi		//Empire_West
+category			peasant_revolt 
+chance				3					
+description			Batavi
+unit				western peasant
+unit				western peasant
+unit				equites auxilia
+unit				merc veteranii
+unit				levy spearman saxon
+unit				barbarian rebel general
+					
+rebel_type 			Iazyges	//Iazyges
+category			peasant_revolt 
+chance				0					
+description			Iazyges
+unit				herdsmen sarmatian
+unit				herdsmen sarmatian
+unit				steppe raiders
+unit				steppe horse archers
+unit				steppe horse archers
+unit				sarmatian warlords
+					
+rebel_type 			Jutes		//Saxons
+category			peasant_revolt 
+chance				6					
+description			Jutes	
+unit				western peasant saxon
+unit				western peasant saxon
+unit				levy spearman frank
+unit				saxon keels
+unit				saxon hunters
+unit				saxon sea raiders
+unit				saxon warlord
+					
+rebel_type 			Juthungi		//Empire_West
+category			peasant_revolt 
+chance				3					
+description			Juthungi	
+unit				spear warband alemanni
+unit				western peasant alemanni
+unit				western peasant alemanni
+unit				lombard archers
+unit				chosen warlord alemanni
+					
+rebel_type 			Kurds		//Sassanids
+category			peasant_revolt 
+chance				3					
+description			Kurds
+unit				kurdish javelinmen
+unit				kurdish javelinmen
+unit				sassanid peasant
+unit				eastern rebel general
+					
+rebel_type 			Lombardi		//Rebels
+category			peasant_revolt 
+chance				0					
+description			Lombardi
+unit				western peasant alemanni
+unit				western peasant alemanni
+unit				lombard archers
+unit				lombard archers
+unit				spear warband alemanni
+unit				chosen warlord alemanni
+					
+rebel_type 			Marcomanni	//Rebels
+category			peasant_revolt 
+chance				3					
+description			Marcomanni
+unit				western peasant alemanni
+unit				western peasant alemanni
+unit				lombard archers
+unit				lombard archers
+unit				spear warband alemanni
+unit				chosen warlord alemanni
+					
+rebel_type 			Moors		//Empire_West
+category			peasant_revolt 
+chance				0					
+description			Moors
+unit				moorish raiders
+unit				moorish raiders
+unit				mountain men
+unit				mountain men
+unit				desert chieftain				
+					
+rebel_type 			Nabataeans 	//Empire_East
+category			peasant_revolt 
+chance				3					
+description			Nabataeans
+unit				moorish raiders
+unit				mountain men
+unit				mountain men
+unit				desert chieftain				
+
+rebel_type 			Cypriots //Empire_East
+category			peasant_revolt 
+chance				3					
+description			Cypriots
+unit				equites auxilia
+unit				coastal levies
+unit				merc veteranii
+unit				generic rebel general
+
+rebel_type 			Cretans //Empire_East
+category			peasant_revolt 
+chance				3					
+description			Cretans
+unit				equites auxilia
+unit				coastal levies
+unit				merc veteranii
+unit				generic rebel general
+				
+rebel_type 			Palmyrans		//Empire_East
+category			peasant_revolt 
+chance				0					
+description			Palmyrans
+unit				merc sughdian warriors
+unit				sassanid peasant
+unit				levy spearmen sassanid
+unit				nomad archer cavalry
+unit				eastern rebel general
+
+rebel_type 			Judaeans		//Empire_East
+category			peasant_revolt 
+chance				0					
+description			Judaeans
+unit				sassanid peasant
+unit				levy spearmen sassanid
+unit				camel raiders
+unit				eastern rebel general
+				
+rebel_type 			Parthians		//Sassanids
+category			peasant_revolt 
+chance				0					
+description			Parthians
+unit				sassanid peasant
+unit				camel raiders
+unit				camel raiders
+unit				nomad archer cavalry
+unit				eastern rebel general
+					
+rebel_type 			Persians		//Sassanids
+category			peasant_revolt 
+chance				0					
+description			Persians
+unit				sassanid peasant
+unit				sassanid peasant
+unit				camel raiders
+unit				nomad archer cavalry
+unit				eastern rebel general
+
+rebel_type 			Syrians		//Sassanids
+category			peasant_revolt 
+chance				0					
+description			Syrians
+unit				sassanid peasant
+unit				sassanid peasant
+unit				camel raiders
+unit				nomad archer cavalry
+unit				eastern rebel general
+
+rebel_type 			Pictii		//Celts
+category			peasant_revolt 
+chance				0					
+description			Pictii
+unit				western peasant celt
+unit				western peasant celt
+unit				celtic spearman
+unit				celtic spearman
+unit				celtic crossbowmen
+unit				celtic crossbowmen
+unit				celtic warlord
+
+rebel_type 			Roxolani	//Rebels
+category			peasant_revolt 
+chance				0					
+description			Roxolani
+unit				herdsmen sarmatian
+unit				herdsmen sarmatian
+unit				steppe raiders
+unit				sarmatian warlords
+
+rebel_type 			Edones	//Empire_East
+category			peasant_revolt 
+chance				0					
+description			Edones
+unit				merc veteranii
+unit				merc equites veteranii
+unit				gothic spearmen
+unit				merc herdsmen
+unit				generic rebel general
+
+rebel_type 			Galatians	//Empire_East
+category			peasant_revolt 
+chance				0					
+description			Galatians
+unit				sassanid peasant
+unit				merc veteranii
+unit				foederati cavalry
+unit				levy spearmen sassanid
+unit				mountain slinger
+unit				generic rebel general
+
+rebel_type 			Sarmatians	//Vandals
+category			peasant_revolt 
+chance				0					
+description			Sarmatians
+unit				herdsmen sarmatian
+unit				steppe raiders
+unit				steppe horse archers
+unit				steppe horse archers
+unit				sarmatian warlords
+
+rebel_type 			Paphlagonians	//Empire_East
+category			peasant_revolt 
+chance				0					
+description			Paphlagonians
+unit				sassanid peasant
+unit				merc veteranii
+unit				merc bosphoran infantry
+unit				foederati cavalry
+unit				levy spearmen sassanid
+unit				mountain slinger
+unit				eastern rebel general
+
+rebel_type 			Beronicensis	//Empire_West
+category			peasant_revolt 
+chance				0					
+description			Beronicensis
+unit				western peasant
+unit				merc veteranii
+unit				limitanei
+unit				merc herdsmen
+unit				generic rebel general
+
+rebel_type 			Iberians	//Empire_West
+category			peasant_revolt 
+chance				0					
+description			Iberians
+unit				western peasant
+unit				merc veteranii
+unit				limitanei
+unit				merc herdsmen
+unit				barbarian rebel general
+
+rebel_type 			Achaeans	//Empire_East
+category			peasant_revolt 
+chance				0					
+description			Achaeans
+unit				sassanid peasant
+unit				merc veteranii
+unit				merc equites veteranii
+unit				merc herdsmen
+unit				generic rebel general
+
+rebel_type 			Phrygians	//Empire_East
+category			peasant_revolt 
+chance				0					
+description			Phrygians
+unit				merc veteranii
+unit				foederati cavalry
+unit				merc bosphoran infantry
+unit				mountain slinger
+unit				barbarian rebel general
+
+rebel_type 			Cilicians	//Empire_East
+category			peasant_revolt 
+chance				0					
+description			Cilicians
+unit				merc veteranii
+unit				foederati cavalry
+unit				mountain slinger
+unit				kurdish javelinmen
+unit				eastern rebel general
+
+rebel_type 			Lusitanians	//Empire_West
+category			peasant_revolt 
+chance				0					
+description			Lusitanians
+unit				western peasant
+unit				merc veteranii
+unit				limitanei
+unit				merc herdsmen
+unit				barbarian rebel general
+
+rebel_type 			Scotii	//Celts
+category			peasant_revolt 
+chance				0					
+description			Scotii
+unit				celtic spearman
+unit				celtic spearman
+unit				western peasant celt
+unit				western peasant celt
+unit				celtic kerns
+unit				celtic slingers
+unit				celtic warlord
+
+rebel_type 			Sughdians		//Sassanids
+category			peasant_revolt 
+chance				0					
+description			Sughdians
+unit				sassanid peasant
+unit				mountain slinger
+unit				merc sughdian warriors
+unit				merc sughdian warriors
+unit				eastern rebel general
+
+rebel_type 			Colchians		//Sassanids
+category			peasant_revolt 
+chance				0					
+description			Colchians
+unit				mountain slinger
+unit				herdsmen sarmatian
+unit				steppe horse archers
+unit				steppe raiders
+unit				eastern rebel general
+
+rebel_type 			Pictones		//Empire_West
+category			peasant_revolt 
+chance				0					
+description			Pictones
+unit				western peasant alemanni
+unit				western peasant alemanni
+unit				spear warband alemanni
+unit				foederati cavalry
+unit				merc veteranii
+unit				lombard archers
+unit				chosen warlord alemanni
+
+rebel_type 			Suebi		//Empire_West
+category			peasant_revolt 
+chance				0					
+description			Suebi
+unit				western peasant alemanni
+unit				western peasant alemanni
+unit				spear warband alemanni
+unit				frankish raiders
+unit				foederati infantry
+unit				merc veteranii
+unit				lombard archers
+unit				chosen warlord alemanni
+
+rebel_type 			Aedui		//Empire_West
+category			peasant_revolt 
+chance				0					
+description			Aedui
+unit				western peasant alemanni
+unit				western peasant alemanni
+unit				spear warband alemanni
+unit				frankish raiders
+unit				foederati infantry
+unit				merc veteranii
+unit				lombard archers
+unit				chosen warlord alemanni
+
+rebel_type 			Quaddi		//Alemanni
+category			peasant_revolt 
+chance				0					
+description			Quaddi
+unit				western peasant alemanni
+unit				western peasant alemanni
+unit				spear warband alemanni
+unit				foederati infantry
+unit				lombard archers
+unit				chosen warlord alemanni
+
+rebel_type 			Alemanni		//Alemanni
+category			peasant_revolt 
+chance				0					
+description			Alemanni
+unit				western peasant alemanni
+unit				western peasant alemanni
+unit				spear warband alemanni
+unit				foederati infantry
+unit				lombard archers
+unit				chosen warlord alemanni
+
+rebel_type 			Vocontii		//Empire_West
+category			peasant_revolt 
+chance				0					
+description			Vocontii
+unit				western peasant alemanni
+unit				western peasant alemanni
+unit				levy spearman frank
+unit				foederati cavalry
+unit				barbarian rebel general
+
+rebel_type 			Veneti		//Empire_West
+category			peasant_revolt 
+chance				0					
+description			Veneti
+unit				western peasant alemanni
+unit				western peasant alemanni
+unit				spear warband alemanni
+unit				foederati cavalry
+unit				generic rebel general
+
+rebel_type 			Ligurians		//Empire_West
+category			peasant_revolt 
+chance				0					
+description			Ligurians
+unit				western peasant alemanni
+unit				western peasant alemanni
+unit				spear warband alemanni
+unit				foederati cavalry
+unit				foederati infantry
+unit				generic rebel general
+
+rebel_type 			Illyrians		//Empire_West
+category			peasant_revolt 
+chance				0					
+description			Illyrians
+unit				herdsmen sarmatian
+unit				western peasant alemanni
+unit				foederati cavalry
+unit				runaway slave spearmen
+unit				generic rebel general
+
+rebel_type 			Thracians		//Empire_East
+category			peasant_revolt 
+chance				0					
+description			Thracians
+unit				merc bosphoran infantry
+unit				merc bosphoran infantry
+unit				goth raiders
+unit				gothic warriors
+unit				generic rebel general
+
+rebel_type 			Basques		//Empire_West
+category			peasant_revolt 
+chance				0					
+description			Basques
+unit				western peasant
+unit				western peasant
+unit				merc veteranii
+unit				limitanei
+unit				merc herdsmen
+unit				barbarian rebel general
+
+rebel_type 			Volcae		//Empire_West
+category			peasant_revolt 
+chance				0					
+description			Volcae
+unit				western peasant alemanni
+unit				western peasant frank
+unit				spear warband alemanni
+unit				frankish raiders
+unit				foederati infantry
+unit				merc veteranii
+unit				lombard archers
+unit				chosen warlord alemanni
+
+rebel_type 			Paionians		//Empire_West
+category			peasant_revolt 
+chance				0					
+description			Paionians
+unit				western peasant
+unit				merc veteranii
+unit				gothic spearmen
+unit				merc herdsmen
+unit				generic rebel general
+
+rebel_type 			Scordisci		//Empire_West
+category			peasant_revolt 
+chance				0					
+description			Scordisci
+unit				herdsmen sarmatian
+unit				peasant vandal
+unit				western peasant alemanni
+unit				foederati cavalry
+unit				runaway slave spearmen
+unit				generic rebel general
+
+;;;;;;;;;;;;		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;				
+;non region			based
+;;;;;;;;;;;;		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+					
+rebel_type			brigands
+category			brigands
+chance				50
+description			brigands
+unit				merc foederati infantry		
+unit				merc bosphoran infantry	
+unit				merc veteranii		
+unit				merc vandal raiders	
+unit				merc bucellarii
+unit				merc hounds of culann
+unit				merc sughdian warriors
+unit				merc sarmatian armoured archers
+unit				merc vandal lancers
+unit				merc alan noble cavalry
+unit				merc sarmatian auxilia
+unit				merc foederati cavalry
+unit				merc alan horse archers
+unit				merc equites veteranii
+unit				merc wolfhounds
+		
+					
+rebel_type			pirates
+category			pirates
+chance				50
+description			pirates
+unit				naval pirate ships		
+					
+					

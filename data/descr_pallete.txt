@@ -1,0 +1,290 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; Colourmap description file
+;
+; Setup a number of palettes with an array of colours in each
+; The seasonal colourmaps need to have identical entries
+; 
+; colour values in 0.0 - 1.0 range - Functions exist to translate to 0-255 if necessary
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+begin_colourmap		winter
+
+;			R		G		B		ID
+
+	colour	0.000	0.000	0.000   sun_midnight		; sun colours (1 for each of the 8 timezones)
+	colour	1.000	0.310	0.000   sun_sunrise		
+	colour	0.941	0.921	0.490	sun_mid_morn
+	colour	1.000	1.000	1.000   sun_morning
+	colour	1.000	1.000	1.000   sun_midday
+	colour	1.000	1.000	1.000   sun_sunset
+	colour	0.941	0.921	0.490	sun_mid_eve
+	colour	1.000	0.310	0.000   sun_night	
+
+	colour	0.400	0.400	0.300	midday_sun_light	; light colours
+	colour  0.100	0.100	0.100	horizon_sun_light	
+	colour	0.000	0.000	0.000   sun_ambient			
+
+	colour	0.350   0.350   0.350	full_moon_light
+	colour	0.100	0.100	0.100	new_moon_light
+	colour  0.080	0.080	0.080	horizon_moon_light	
+	colour  0.010   0.010   0.010   moon_ambient
+
+	colour	0.150	0.150	0.220	ambient_level_night
+	colour	0.010	0.010	0.010	ambient_level_day
+
+	colour	0.000	0.000	0.000   fog_midnight		; Fog colours (1 for each of the 8 timezones)
+	colour	0.300	0.300	0.300   fog_sunrise
+	colour	0.600	0.600	0.600   fog_mid_morn
+	colour	0.700	0.700	0.700	fog_morning
+	colour	0.800	0.800	0.800	fog_midday
+	colour	0.700	0.700	0.700	fog_sunset
+	colour	0.600	0.600	0.600   fog_mid_eve
+	colour	0.300	0.300	0.300   fog_night
+
+; Skydome colours - For each time of day (8 in total), there are 3 colours required - horizon, midpoint and zenith
+
+	colour	0.000	0.000	0.000	sd_midnight_horiz
+	colour	0.000	0.000	0.000	sd_midnight_mid
+	colour	0.000	0.000	0.000	sd_midnight_zen
+
+	colour	0.412	0.255	0.600	sd_sunrise_horiz
+	colour	0.000	0.118	0.263	sd_sunrise_mid
+	colour	0.412	0.255	0.600	sd_sunrise_zen
+
+	colour	0.898	0.361	1.000	sd_mid_morn_horiz
+	colour	0.000	0.247	0.549	sd_mid_morn_mid
+	colour	0.012	0.000	0.431	sd_mid_morn_zen
+
+	colour	0.847	0.729	0.953	sd_morning_horiz
+	colour	0.000	0.443	0.851	sd_morning_mid
+	colour	0.020	0.000	0.768	sd_morning_zen
+
+	colour	0.683	0.828	1.000	sd_midday_horiz
+	colour	0.000	0.659	1.000	sd_midday_mid
+	colour	0.028	0.000	1.000	sd_midday_zen
+
+	colour	0.847	0.729	0.953	sd_sunset_horiz
+	colour	0.000	0.443	0.851	sd_sunset_mid
+	colour	0.020	0.000	0.768	sd_sunset_zen
+
+	colour	0.898	0.361	1.000	sd_mid_eve_horiz
+	colour	0.000	0.247	0.549	sd_mid_eve_mid
+	colour	0.012	0.000	0.431	sd_mid_eve_zen
+
+	colour	0.412	0.255	0.600	sd_night_horiz
+	colour	0.000	0.118	0.263	sd_night_mid
+	colour	0.412	0.255	0.600	sd_night_zen
+
+end_colourmap
+
+begin_colourmap		spring
+
+;			R		G		B		ID
+
+	colour	0.000	0.000	0.000   sun_midnight		; sun colours (1 for each of the 8 timezones)
+	colour	1.000	0.310	0.000   sun_sunrise		
+	colour	0.941	0.921	0.490	sun_mid_morn
+	colour	1.000	1.000	1.000   sun_morning
+	colour	1.000	1.000	1.000   sun_midday
+	colour	1.000	1.000	1.000   sun_sunset
+	colour	0.941	0.921	0.490	sun_mid_eve
+	colour	1.000	0.310	0.000   sun_night	
+
+	colour	0.400	0.400	0.300	midday_sun_light	; light colours
+	colour  0.100	0.100	0.100	horizon_sun_light	
+	colour	0.000	0.000	0.000   sun_ambient			
+
+	colour	0.350   0.350   0.350	full_moon_light
+	colour	0.100	0.100	0.100	new_moon_light
+	colour  0.080	0.080	0.080	horizon_moon_light	
+	colour  0.010   0.010   0.010   moon_ambient
+
+	colour	0.150	0.150	0.220	ambient_level_night
+	colour	0.010	0.010	0.010	ambient_level_day
+
+	colour	0.000	0.000	0.000   fog_midnight		; Fog colours (1 for each of the 8 timezones)
+	colour	0.300	0.300	0.300   fog_sunrise
+	colour	0.600	0.600	0.600   fog_mid_morn
+	colour	0.700	0.700	0.700	fog_morning
+	colour	0.800	0.800	0.800	fog_midday
+	colour	0.700	0.700	0.700	fog_sunset
+	colour	0.600	0.600	0.600   fog_mid_eve
+	colour	0.300	0.300	0.300   fog_night
+
+; Skydome colours - For each time of day (8 in total), there are 3 colours required - horizon, midpoint and zenith
+
+	colour	0.000	0.000	0.000	sd_midnight_horiz
+	colour	0.000	0.000	0.000	sd_midnight_mid
+	colour	0.000	0.000	0.000	sd_midnight_zen
+
+	colour	0.412	0.255	0.600	sd_sunrise_horiz
+	colour	0.000	0.118	0.263	sd_sunrise_mid
+	colour	0.412	0.255	0.600	sd_sunrise_zen
+
+	colour	0.898	0.361	1.000	sd_mid_morn_horiz
+	colour	0.000	0.247	0.549	sd_mid_morn_mid
+	colour	0.012	0.000	0.431	sd_mid_morn_zen
+
+	colour	0.847	0.729	0.953	sd_morning_horiz
+	colour	0.000	0.443	0.851	sd_morning_mid
+	colour	0.020	0.000	0.768	sd_morning_zen
+
+	colour	0.683	0.828	1.000	sd_midday_horiz
+	colour	0.000	0.659	1.000	sd_midday_mid
+	colour	0.028	0.000	1.000	sd_midday_zen
+
+	colour	0.847	0.729	0.953	sd_sunset_horiz
+	colour	0.000	0.443	0.851	sd_sunset_mid
+	colour	0.020	0.000	0.768	sd_sunset_zen
+
+	colour	0.898	0.361	1.000	sd_mid_eve_horiz
+	colour	0.000	0.247	0.549	sd_mid_eve_mid
+	colour	0.012	0.000	0.431	sd_mid_eve_zen
+
+	colour	0.412	0.255	0.600	sd_night_horiz
+	colour	0.000	0.118	0.263	sd_night_mid
+	colour	0.412	0.255	0.600	sd_night_zen
+
+end_colourmap
+
+begin_colourmap		summer
+
+;			R		G		B		ID
+
+	colour	0.000	0.000	0.000   sun_midnight		; sun colours (1 for each of the 8 timezones)
+	colour	1.000	0.310	0.000   sun_sunrise		
+	colour	0.941	0.921	0.490	sun_mid_morn
+	colour	1.000	1.000	1.000   sun_morning
+	colour	1.000	1.000	1.000   sun_midday
+	colour	1.000	1.000	1.000   sun_sunset
+	colour	0.941	0.921	0.490	sun_mid_eve
+	colour	1.000	0.310	0.000   sun_night	
+
+	colour	0.400	0.400	0.300	midday_sun_light	; light colours
+	colour  0.100	0.100	0.100	horizon_sun_light	
+	colour	0.000	0.000	0.000   sun_ambient			
+
+	colour	0.350   0.350   0.350	full_moon_light
+	colour	0.100	0.100	0.100	new_moon_light
+	colour  0.080	0.080	0.080	horizon_moon_light	
+	colour  0.010   0.010   0.010   moon_ambient
+
+	colour	0.150	0.150	0.220	ambient_level_night
+	colour	0.010	0.010	0.010	ambient_level_day
+
+	colour	0.000	0.000	0.000   fog_midnight		; Fog colours (1 for each of the 8 timezones)
+	colour	0.300	0.300	0.300   fog_sunrise
+	colour	0.600	0.600	0.600   fog_mid_morn
+	colour	0.700	0.700	0.700	fog_morning
+	colour	0.800	0.800	0.800	fog_midday
+	colour	0.700	0.700	0.700	fog_sunset
+	colour	0.600	0.600	0.600   fog_mid_eve
+	colour	0.300	0.300	0.300   fog_night
+
+; Skydome colours - For each time of day (8 in total), there are 3 colours required - horizon, midpoint and zenith
+
+	colour	0.000	0.000	0.000	sd_midnight_horiz
+	colour	0.000	0.000	0.000	sd_midnight_mid
+	colour	0.000	0.000	0.000	sd_midnight_zen
+
+	colour	0.412	0.255	0.600	sd_sunrise_horiz
+	colour	0.000	0.118	0.263	sd_sunrise_mid
+	colour	0.412	0.255	0.600	sd_sunrise_zen
+
+	colour	0.898	0.361	1.000	sd_mid_morn_horiz
+	colour	0.000	0.247	0.549	sd_mid_morn_mid
+	colour	0.012	0.000	0.431	sd_mid_morn_zen
+
+	colour	0.847	0.729	0.953	sd_morning_horiz
+	colour	0.000	0.443	0.851	sd_morning_mid
+	colour	0.020	0.000	0.768	sd_morning_zen
+
+	colour	0.683	0.828	1.000	sd_midday_horiz
+	colour	0.000	0.659	1.000	sd_midday_mid
+	colour	0.028	0.000	1.000	sd_midday_zen
+
+	colour	0.847	0.729	0.953	sd_sunset_horiz
+	colour	0.000	0.443	0.851	sd_sunset_mid
+	colour	0.020	0.000	0.768	sd_sunset_zen
+
+	colour	0.898	0.361	1.000	sd_mid_eve_horiz
+	colour	0.000	0.247	0.549	sd_mid_eve_mid
+	colour	0.012	0.000	0.431	sd_mid_eve_zen
+
+	colour	0.412	0.255	0.600	sd_night_horiz
+	colour	0.000	0.118	0.263	sd_night_mid
+	colour	0.412	0.255	0.600	sd_night_zen
+
+end_colourmap
+
+begin_colourmap		autumn
+
+;			R		G		B		ID
+
+	colour	0.000	0.000	0.000   sun_midnight		; sun colours (1 for each of the 8 timezones)
+	colour	1.000	0.310	0.000   sun_sunrise		
+	colour	0.941	0.921	0.490	sun_mid_morn
+	colour	1.000	1.000	1.000   sun_morning
+	colour	1.000	1.000	1.000   sun_midday
+	colour	1.000	1.000	1.000   sun_sunset
+	colour	0.941	0.921	0.490	sun_mid_eve
+	colour	1.000	0.310	0.000   sun_night	
+
+	colour	0.400	0.400	0.300	midday_sun_light	; light colours
+	colour  0.100	0.100	0.100	horizon_sun_light	
+	colour	0.000	0.000	0.000   sun_ambient			
+
+	colour	0.350   0.350   0.350	full_moon_light
+	colour	0.100	0.100	0.100	new_moon_light
+	colour  0.080	0.080	0.080	horizon_moon_light	
+	colour  0.010   0.010   0.010   moon_ambient
+
+	colour	0.150	0.150	0.220	ambient_level_night
+	colour	0.010	0.010	0.010	ambient_level_day
+
+	colour	0.000	0.000	0.000   fog_midnight		; Fog colours (1 for each of the 8 timezones)
+	colour	0.300	0.300	0.300   fog_sunrise
+	colour	0.600	0.600	0.600   fog_mid_morn
+	colour	0.700	0.700	0.700	fog_morning
+	colour	0.800	0.800	0.800	fog_midday
+	colour	0.700	0.700	0.700	fog_sunset
+	colour	0.600	0.600	0.600   fog_mid_eve
+	colour	0.300	0.300	0.300   fog_night
+
+; Skydome colours - For each time of day (8 in total), there are 3 colours required - horizon, midpoint and zenith
+
+	colour	0.000	0.000	0.000	sd_midnight_horiz
+	colour	0.000	0.000	0.000	sd_midnight_mid
+	colour	0.000	0.000	0.000	sd_midnight_zen
+
+	colour	0.412	0.255	0.600	sd_sunrise_horiz
+	colour	0.000	0.118	0.263	sd_sunrise_mid
+	colour	0.412	0.255	0.600	sd_sunrise_zen
+
+	colour	0.898	0.361	1.000	sd_mid_morn_horiz
+	colour	0.000	0.247	0.549	sd_mid_morn_mid
+	colour	0.012	0.000	0.431	sd_mid_morn_zen
+
+	colour	0.847	0.729	0.953	sd_morning_horiz
+	colour	0.000	0.443	0.851	sd_morning_mid
+	colour	0.020	0.000	0.768	sd_morning_zen
+
+	colour	0.683	0.828	1.000	sd_midday_horiz
+	colour	0.000	0.659	1.000	sd_midday_mid
+	colour	0.028	0.000	1.000	sd_midday_zen
+
+	colour	0.847	0.729	0.953	sd_sunset_horiz
+	colour	0.000	0.443	0.851	sd_sunset_mid
+	colour	0.020	0.000	0.768	sd_sunset_zen
+
+	colour	0.898	0.361	1.000	sd_mid_eve_horiz
+	colour	0.000	0.247	0.549	sd_mid_eve_mid
+	colour	0.012	0.000	0.431	sd_mid_eve_zen
+
+	colour	0.412	0.255	0.600	sd_night_horiz
+	colour	0.000	0.118	0.263	sd_night_mid
+	colour	0.412	0.255	0.600	sd_night_zen
+
+end_colourmap

@@ -1,0 +1,98 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+model_file_list
+
+	set_directory	data/battlefield/tiles/cliff_v3
+
+	cliff_a.cas
+	cliff_a_in.cas
+	cliff_a_out.cas
+;	cliff_a_end_left.cas
+;	cliff_a_end_right.cas
+
+end_model_file_list
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+define_lod cliff_a
+
+;							top		bottom	left	right
+	
+	edge_tesselation		false	false	true	true
+	
+
+;	model name		region	top		bottom	left	right		
+	
+	cliff_a_qqnl	lo		n		n		n		l
+	cliff_a_qqll	lo		n		n		l		l
+	cliff_a_qqlh	lo		n		n		l		h
+	cliff_a_kkhh	hi		n		n		h		h
+	cliff_a_qqhl	lo		n		n		h		l
+	cliff_a_qqln	lo		n		n		l		n
+
+end_define_lod
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+define_lod cliff_a_in
+
+;							top		bottom	left	right
+	
+	edge_tesselation		false	true	false	true
+	
+
+;	model name			region	top		bottom	left	right		
+	
+	cliff_a_in_qlqn		lo		n		l		n		n
+	cliff_a_in_qnql		lo		n		n		n		l
+	cliff_a_in_qlqh		lo		n		l		n		h
+	cliff_a_in_qlql		lo		n		l		n		l
+	cliff_a_in_khkh		hi		n		h		n		h
+	cliff_a_in_qhql		lo		n		h		n		l
+
+end_define_lod
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+define_lod cliff_a_out
+
+;							top		bottom	left	right
+	
+	edge_tesselation		true	false	false	true
+	
+
+;	model name			region	top		bottom	left	right		
+	
+	cliff_a_out_nqql	lo		n		n		n		l
+	cliff_a_out_lqln	lo		l		n		n		n	
+	cliff_a_out_lqql	lo		l		n		n		l
+	cliff_a_out_lqqh	lo		l		n		n		h
+	cliff_a_out_hqql	lo		h		n		n		l	
+	cliff_a_out_hkkh	hi		h		n		n		h
+
+end_define_lod
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+define_lod_links
+
+;	string id					defined lod		orientation
+
+	cliff_a_top					cliff_a			rotation_180
+	cliff_a_bottom				cliff_a			rotation_0	
+	cliff_a_left				cliff_a			rotation_90
+	cliff_a_right				cliff_a			rotation_270					
+
+	cliff_a_in_top_left			cliff_a_in		rotation_180
+	cliff_a_in_top_right		cliff_a_in		rotation_270
+	cliff_a_in_bottom_left		cliff_a_in		rotation_90
+	cliff_a_in_bottom_right		cliff_a_in		rotation_0
+
+	cliff_a_out_top_left		cliff_a_out		rotation_90
+	cliff_a_out_top_right		cliff_a_out		rotation_180
+	cliff_a_out_bottom_left		cliff_a_out		rotation_0
+	cliff_a_out_bottom_right	cliff_a_out		rotation_270
+
+end_define_lod_links
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

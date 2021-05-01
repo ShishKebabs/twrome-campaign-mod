@@ -1,0 +1,190 @@
+{
+
+	"frames": [],
+	"list":
+	[
+		{
+			"name" : "parent_list",
+			"x": 0 ,
+			"y": 0,
+			"size": {
+				"width": 480,
+				"height": 375
+			},
+			"anchor": "TL",
+            "outside_slider": true,
+            "slider_gap": 0
+		},
+		{
+			"name" : "settlement_name_and_stance",
+			"x": 0 ,
+			"y": -5,
+			"anchor": "TL",
+			"font_colour":"dark_brown",
+			"font":"verdana_sml"
+
+		},
+
+		{
+			"name" : "sucess_rate",
+			"x": 470 ,
+			"y": -5,
+			"anchor": "TL",
+			"align": "TR",
+			"font_colour":"dark_brown",
+			"font":"verdana_med"
+
+		},
+        {
+            "name" : "go_to_button",
+            "x": 470 ,
+            "y": 30,
+            "size": {
+				"width": 40,
+				"height": 40
+			},
+            "anchor": "TL",
+            "align": "TR",
+        },
+		{
+			"name" : "image_background_frame",
+			"x": 14 ,
+			"y": 20,
+			"size": {
+				"width": 78,
+				"height": 102
+			},
+			"anchor": "TL",
+		},
+		
+		{
+			"name" : "settlement_info_groups_group",
+			"x": 20 ,
+			"y": 130,
+			"anchor": "TL",
+		},
+		
+		
+		
+		
+		
+		{ "_comment" : "character data from now on" },
+		
+		
+		{
+			"name" : "heading_string",
+			"x": 95 ,
+			"y": 50,
+			"size": {
+				"width": 500
+			},
+			"anchor": "TL",
+			"font_colour":"dark_brown",
+			"font":"verdana_sml"
+		},
+		
+		{
+			"name" : "portrait",
+			"x": 25 ,
+			"y": 30,
+			"size": {
+				"width": 57,
+				"height": 80
+			},
+			"anchor": "TL",
+		},
+		
+		{
+			"name" : "title_string",
+			"x": 95 ,
+			"y": 30,
+			"anchor": "TL",
+			"font_colour":"dark_brown",
+			"font":"verdana_sml"
+		},
+		
+		{
+			"name" : "location_string",
+			"x": 95 ,
+			"y": 70,
+			"anchor": "TL",
+			"font_colour":"dark_brown",
+			"font":"verdana_sml"
+		},
+		
+		{
+			"name" : "age_string",
+			"x": 4000 ,
+			"y": 0,
+			"anchor": "TL",
+			"font_colour":"dark_brown",
+			"font":"verdana_sml"
+		},
+		
+		{
+			"name" : "character_points",
+			"x": 95 ,
+			"y": 90,
+			"size": {
+				"width": 175,
+				"height": 20
+			},
+			"font_colour":"dark_brown",
+			"anchor": "TL",
+		},
+
+		{
+			"name" : "character_religion",
+			"x": 10 ,
+			"y": 80,
+			"size":{
+				"width": 30,
+				"height": 30
+			},
+			"anchor": "TL",
+			"align":"TL",
+		},
+
+		{
+			"name": "traits_string",
+			"x": 40 ,
+			"y": 143,
+			"align":"TC",
+			"priority":5,
+			"font":"verdana_sml_bold",
+			"font_colour":"dark_brown"
+		},
+		{
+			"name": "vertical_divider",
+			"x": 266 ,
+			"y": 145,
+			"size": {
+                "width": 21,
+                "height": 230
+            },
+            "align":"TC"
+		},
+		{
+			"name": "retinue_string",
+			"x": 300 ,
+			"y": 143,
+			"align":"TC",
+			"priority":5,
+			"font":"verdana_sml_bold",
+			"font_colour":"dark_brown"
+		},
+
+		{
+			"name": "traits_retinue",
+			"x": 20 ,
+			"y": 170,
+			"size":{
+				"width": 460,
+				"height": 200
+			},
+			"priority":5,
+			"font":"verdana_sml"
+		},
+	
+	]
+}

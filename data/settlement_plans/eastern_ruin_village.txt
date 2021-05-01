@@ -1,0 +1,15 @@
+plan
+
+{
+
+floor	eastern_ruin_village_underlay.CAS	eastern_ruin_village_overlay.CAS
+
+	ground_types	ground_default_grass.tga	-64,	-64,	64,	64	
+
+	borders	border_limits_64m_diameter.CAS
+
+eastern_ruin_village,		0,	0,	0,	0
+
+
+
+	}

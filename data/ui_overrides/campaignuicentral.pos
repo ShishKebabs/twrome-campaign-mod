@@ -1,0 +1,785 @@
+{
+	"frames": [
+	],
+	"list": [
+		{
+			"name": "base_frame",
+			"x": 0 ,
+			"y": -293,
+			"size": {
+				"width": 1122 ,
+				"height" : 300
+			},
+			"additional_clipping":
+			[
+				{
+					"x": 0 ,
+					"y":-30,
+					"width": 1820 ,
+					"height":840,
+					"anchor":"BC",
+					"align":"BC"
+				},
+			],
+			"anchor": "BC",
+			"align": "TC",
+			"priority": 0
+		},
+		{
+			"name": "top_frame",
+			"x": 0 ,
+			"y": -330,
+			"size": {
+				"width": 462 ,
+				"height" : 180
+			},
+			"additional_clipping":
+			[
+				{
+					"x": 0 ,
+					"y":-227,
+					"width": 1820 ,
+					"height":840,
+					"anchor":"BC",
+					"align":"BC"
+				},
+			],
+			"ignore_mouse":true,
+			"anchor": "BC",
+			"align": "TC",
+			"priority": 1
+		},
+		
+		{
+			"name": "top_frame_decoration_left_statue",
+			"x": -264 ,
+			"y": -342,
+			"size": {
+				"width": 70,
+				"height" : 116
+			},
+			"anchor": "BC",
+			"align": "TL",
+			"priority": 6
+		},
+		{
+			"name": "top_frame_decoration_right_statue",
+			"x": 268 ,
+			"y": -342,
+			"size": {
+				"width": 70,
+				"height" : 116
+			},
+			"anchor": "BC",
+			"align": "TR",
+			"priority": 6
+		},
+		{
+			"name": "top_frame_decoration_left_decor",
+			"x": -280 ,
+			"_comment":"MKG 18-Mar-2021; y and height is copied exactly from the frame's border - as this is the only way to position precisely",
+			"size": {
+				"width": 90,
+			},
+			"anchor": "BC",
+			"align": "TL",
+			"priority": 7
+		},
+		{
+			"name": "top_frame_decoration_right_decor",
+			"x": 280,
+			"_comment":"MKG 18-Mar-2021; y and height is copied exactly from the frame's border - as this is the only way to position precisely", 
+			"size": {
+				"width": 90,
+			},
+			"anchor": "BC",
+			"align": "TR",
+			"priority": 7
+		},
+
+
+
+		{
+			"name":"smo_list_trigger",
+			"x": 0 ,
+			"y": -330,
+			"size": {
+				"width": 336 ,
+				"height" : 116
+			},
+			"anchor": "BC",
+			"align": "TC",
+			"priority": 3
+		},
+
+		{
+			"name": "animated_frame",
+			"x": 0 ,
+			"y": -250,
+			"size" : {
+				"width": 655 ,
+				"height" : 800
+			},
+			"additional_clipping":
+			[
+				{
+					"x": 0 ,
+					"y":-30,
+					"width": 1820 ,
+					"height":840,
+					"anchor":"BC",
+					"align":"BC"
+				},
+			],
+			"anchor": "BC",
+			"align": "TC",
+			"priority": -1
+		},
+
+		{
+			"name": "animated_frame_wide",
+			"x": 0 ,
+			"y": -291,
+			"size" : {
+				"width": 1116 ,
+				"height" : 800
+			},
+			"additional_clipping":
+			[
+				{
+					"x": 0 ,
+					"y":-200,
+					"width": 1820 ,
+					"height":1000,
+					"anchor":"BC",
+					"align":"BC"
+				},
+			],
+			"anchor": "BC",
+			"align": "TC",
+			"priority": -1
+		},
+
+		{
+			"_comment":"base frame group elements"
+		},
+		{
+			"_comment":"dont change alignment - the implementation aligns the children based on the position of the cycler only",
+			"name": "cycler",
+			"x": 0 ,
+			"y": -310,
+			"priority": 7,
+			"annotation_id": "Rome.Annotations.camp_status-faction",
+			"anchor":"BC"
+		},
+
+		{
+			"name": "divider",
+			"x": 0 ,
+			"y": -233,
+			"size" : {
+				"width": 950 ,
+				"height" : 21
+			},
+			"priority": 5,
+			"annotation_id": "Rome.Annotations.camp_status-faction",
+			"anchor":"BC",
+			"align":"TC"
+		},
+
+		{
+			"name": "enemy_faction_logo",
+			"x": -5205 ,
+			"y": -5240,
+			"size" : {
+				"width"  : 56,
+				"height" : 56
+			},
+			"anchor": "BC",
+			"align": "TC",
+			"priority": 0
+		},
+
+		{
+			"name": "settlement_upgrade_retrain_icon",
+			"x": 380,
+			"y": -275,
+			"size" : {
+				"width"  : 45,
+				"height" : 45
+			},
+			"anchor": "BC",
+			"align": "TL",
+			"priority": 1
+		},
+		
+		{
+			"name": "settlement_is_training_icon",
+			"x": 320,
+			"y": -275,
+			"size" : {
+				"width"  : 45,
+				"height" : 45
+			},
+			"anchor": "BC",
+			"align": "TL",
+			"priority": 1
+		},
+
+		{
+			"name": "settlement_is_building_icon",
+			"x": 260,
+			"y": -275,
+			"size" : {
+				"width"  : 45,
+				"height" : 45
+			},
+			"anchor": "BC",
+			"align": "TL",
+			"priority": 1
+		},
+		
+		{
+			"name": "settlement_is_automanaging_icon",
+			"x": 440,
+			"y": -275,
+			"size" : {
+				"width"  : 45,
+				"height" : 45
+			},
+			"anchor": "BC",
+			"align": "TL",
+			"priority": 1
+		},
+
+
+		{
+			"name": "public_order_group",
+			"x": -390,
+			"y": -215,
+			"anchor": "BC",
+			"align": "TL",
+			"font":"cinzel_med",
+			"priority": 1
+		},
+		
+		{
+			"name": "population_growth_group",
+			"x": -244 ,
+			"y": -215,
+			"anchor": "BC",
+			"align": "TL",
+			"font":"cinzel_med",
+			"priority": 1
+		},
+		{
+			"name": "population_group",
+			"x": -98 ,
+			"y": -215,
+			"anchor": "BC",
+			"align": "TL",
+			"font":"cinzel_med",
+			"priority": 1
+		},
+		
+		{
+			"name": "population_required_group",
+			"x": 48 ,
+			"y": -215,
+			"anchor": "BC",
+			"align": "TL",
+			"font":"cinzel_med",
+			"priority": 1
+		},
+
+		{
+			"name": "income_icon",
+			"x": 194 ,
+			"y": -215,
+			"size" : {
+				"width": 50,
+				"height": 50
+			},
+			"anchor": "BC",
+			"align": "TL",
+			"font":"cinzel_med",
+			"priority": 1
+		},
+		{
+			"name": "income_string",
+			"x": 244 ,
+			"y": -205,
+			"anchor": "BC",
+			"align": "TL",
+			"priority": 1,
+			"font_colour":"black",
+			"font":"cinzel_med",
+		},
+		{
+			"name": "taxes_group",
+			"x": 340 ,
+			"y": -215,
+			"anchor": "BC",
+			"align": "TL",
+			"font":"cinzel_med",
+			"priority": 1
+		},
+		
+		{
+			"name": "religion_group",
+			"x": 500,
+			"y": -275,
+			"anchor": "BC",
+			"align": "TL",
+			"font":"cinzel_med",
+			"priority": 1
+		},
+
+
+		{
+			"name": "unit_counter",
+			"x": 545,
+			"y": -217,
+			"size" : {
+				"width": 30 ,
+				"height" : 50
+			},
+			"anchor": "BC",
+			"align": "TR",
+			"font":"cinzel_med",
+			"font_colour":"dark_brown",
+			"priority": 1
+		},
+
+{
+"_comment":"card groups here"
+},
+		
+
+		{
+			"name": "cards",
+			"x": 0 ,
+			"y": 0,
+			"size" : {
+				"height" : 74,
+				"width": 1080,
+			},
+			"anchor": "BC",
+			"annotation_id": "Rome.Annotations.camp_tabs-bar"
+		},
+
+		{
+			"_comment_":"Is currently not used - MKG 09-Nov-2020" ,
+			"name": "cards2",
+			"x": 0 ,
+			"y": 0,
+			"size" : {
+				"height" : 74,
+				"width": 1080,
+			},
+			"anchor": "BC",
+			"priority":10,
+			"annotation_id": "Rome.Annotations.camp_tabs-bar"
+		},
+
+		{
+			"name": "building_cards",
+			"x": 0 ,
+			"y": 0,
+			"size" : {
+				"height" : 80,
+				"width": 1080,
+			},
+			"anchor": "BC",
+			"annotation_id": "Rome.Annotations.camp_tabs-bar"
+		},
+
+		{
+			"name": "short_card_group_left_agents",
+			"x": 90 ,
+			"y": -168,
+			"size" : {
+				"height" : 94,
+				"width": 541,
+			},
+			"anchor": "BC",
+			"annotation_id": "Rome.Annotations.camp_tabs-bar"
+		},
+
+		{
+			"name": "short_card_group_right_other_agents",
+			"x": -515,
+			"y": -168,
+			"size" : {
+				"height" : 94,
+				"width": 434,
+			},
+			"anchor": "BC",
+			"annotation_id": "Rome.Annotations.camp_tabs-bar"
+		},
+
+		{
+			"name": "short_card_group_left_navy",
+			"x": 90 ,
+			"y": -168,
+			"size" : {
+				"height" : 94,
+				"width": 271,
+			},
+			"anchor": "BC",
+			"annotation_id": "Rome.Annotations.camp_tabs-bar"
+		},
+
+		{
+			"name": "short_card_group_right_passengers",
+			"x": -265,
+			"y": -168,
+			"size" : {
+				"height" : 94,
+				"width": 757 ,
+			},
+			"anchor": "BC",
+			"annotation_id": "Rome.Annotations.camp_tabs-bar"
+		},
+
+		{
+			"name": "long_buildings_card_list",
+			"x": 0 ,
+			"y": -168,
+			"size" : {
+				"height" : 94,
+				"width": 1080,
+			},
+			"anchor": "BC",
+			"align": "TC",
+			"annotation_id": "Rome.Annotations.camp_tabs-bar"
+		},
+
+
+		{
+			"name": "long_army_card_list",
+			"x": 0 ,
+			"y": -168,
+			"size" : {
+				"height" : 94,
+				"width": 1088,
+			},
+			"anchor": "BC",
+			"align": "TC",
+			"annotation_id": "Rome.Annotations.camp_tabs-bar"
+		},
+
+		{
+			"name": "short_card_list_left",
+			"x": -515,
+			"y": -168,
+			"size" : {
+				"height" : 94,
+				"width": 541 ,
+			},
+			"anchor": "BC",
+			"annotation_id": "Rome.Annotations.camp_tabs-bar"
+		},
+		{
+			"name": "short_card_list_right",
+			"x": 90 ,
+			"y": -168,
+			"size" : {
+				"height" : 94,
+				"width": 434,
+			},
+			"anchor": "BC",
+			"annotation_id": "Rome.Annotations.camp_tabs-bar"
+		},
+		
+		{
+			"name": "short_navy_card_list_left",
+			"x": -545,
+			"y": -168,
+			"size" : {
+				"height" : 94,
+				"width": 271 ,
+			},
+			"anchor": "BC",
+			"annotation_id": "Rome.Annotations.camp_tabs-bar"
+		},
+		
+		{
+			"name": "short_navy_card_list_left_fake",
+			"x": -545,
+			"y": -168,
+			"size" : {
+				"height" : 94,
+				"width": 271 ,
+			},
+			"anchor": "BC",
+			"annotation_id": "Rome.Annotations.camp_tabs-bar"
+		},
+		
+		{
+			"name": "short_navy_card_list_right",
+			"x": -265,
+			"y": -168,
+			"size" : {
+				"height" : 94,
+				"width": 757 ,
+			},
+			"anchor": "BC",
+			"annotation_id": "Rome.Annotations.camp_tabs-bar"
+		},
+		
+		{
+			"name":"your_agents_string",
+			"x": -515,
+			"y": -196,
+			"anchor": "BC",
+		},
+		
+		{
+			"name":"foreign_merchants_string",
+			"x": 90,
+			"y": -196,
+			"anchor": "BC",
+		},
+
+		
+		{
+			"name": "disembark_btn",
+			"x": 523,
+			"y": -135,
+			"size" : {
+				"width"  : 55,
+				"height" : 55
+			},
+			"anchor": "BC",
+			"align": "C",
+			"priority": 3
+		},
+		
+
+		{
+			"name": "settlement_details_btn",
+			"x": -405 ,
+			"y":-35,
+			"size" : {
+				"width"  : 55,
+				"height" : 55
+			},
+			"anchor": "BC",
+			"align": "C",
+			"priority": 3
+		},
+		{
+			"name": "trade_details_btn",
+			"x": -345 ,
+			"y":-35,
+			"size" : {
+				"width"  : 55,
+				"height" : 55
+			},
+			"anchor": "BC",
+			"align": "C",
+			"priority": 3
+		},
+		{
+			"name": "religion_details_btn",
+			"x": -285 ,
+			"y": -35,
+			"size" : {
+				"width"  : 55,
+				"height" : 55
+			},
+			"anchor": "BC",
+			"align": "C",
+			"priority": 3
+		},
+
+		{
+			"name": "zoom_to_btn",
+			"x": 372 ,
+			"y":-35,
+			"size" : {
+				"width"  : 55,
+				"height" : 55
+			},
+			"anchor": "BC",
+			"align": "C",
+			"priority": 4
+		},
+		
+		{
+			"name": "horde_btn",
+			"x": 310 ,
+			"y":-35,
+			"size" : {
+				"width"  : 55,
+				"height" : 55
+			},
+			"anchor": "BC",
+			"align": "C",
+			"priority": 8
+		},
+
+		{
+			"name": "view_settlement_btn",
+			"x": 372 ,
+			"y":-35,
+			"size" : {
+				"width"  : 55,
+				"height" : 55
+			},
+			"anchor": "BC",
+			"align": "C",
+			"priority": 3
+		},
+
+		{
+			"name": "make_capital_btn",
+			"x": 434 ,
+			"y":-35,
+			"size" : {
+				"width"  : 55,
+				"height" : 55
+			},
+			"anchor": "BC",
+			"align": "C",
+			"priority": 3
+		},
+		{
+			"name": "automerge_button",
+			"x": 434 ,
+			"y":-35,
+			"size" : {
+				"width"  : 55,
+				"height" : 55
+			},
+			"anchor": "BC",
+			"align": "C",
+			"priority": 3
+		},
+		{
+			"name": "disband_button",
+			"x": 434 ,
+			"y":-35,
+			"size" : {
+				"width"  : 55,
+				"height" : 55
+			},
+			"anchor": "BC",
+			"align": "C",
+			"priority": 3
+		},
+
+		{
+			"comment":"This is not in the GDD, so I moved it outside the screen. Previous x was -473",
+			"name": "character_details_elements_faction_logo",
+			"x": -9473 ,
+			"y": -220,
+			"size" : {
+				"width"  : 50,
+				"height" : 50
+			},
+			"anchor": "BC",
+			"align": "TL",
+			"priority":3
+		},
+
+		{
+			"comment":"This is not in the GDD, so I moved it outside the screen. Previous x was -400",
+			"name": "character_details_elements_faction_name",
+			"x": -9400 ,
+			"y": -215,
+			"anchor": "BC",
+			"align": "TL",
+			"font":"verdana_med",
+			"priority":3
+		},
+
+
+		{
+			"name": "character_details_elements_traveling_to_string",
+			"x": -473 ,
+			"y": -5178,
+			"anchor": "BC",
+			"align": "TL",
+			"font":"verdana_med",
+			"priority":3
+		},
+
+		{
+			"name": "character_details_elements_turns_away",
+			"x": 0 ,
+			"y": -5178,
+			"anchor": "BC",
+			"align": "TC",
+			"font":"verdana_sml",
+			"priority":3
+		},
+
+		{
+			"name": "character_details_elements_unit_counter",
+			"x": 545,
+			"y": -217,
+			"size" : {
+				"width": 30 ,
+				"height" : 50
+			},
+			"anchor": "BC",
+			"align": "TR",
+			"font":"cinzel_med",
+			"font_colour":"dark_brown",
+			"priority": 1
+		},
+
+		{
+			"name": "settlement_status_icons",
+			"x": -535 ,
+			"y": -275,
+			"priority": 5,
+			"anchor": "BC",
+		},
+		
+		{
+			"name": "siege_group",
+			"x": -485 ,
+			"y": -275,
+			"size" : {
+				"_comment":"Only Height matters",
+				"width": 45,
+				"height": 45
+			},
+			"priority": 5,
+			"anchor": "BC",
+			"font":"cinzel_med",
+		},
+		
+		{
+			"name": "wall_level_group",
+			"x": -420 ,
+			"y": -275,
+			"size" : {
+				"_comment":"Only Height matters",
+				"width": 45,
+				"height": 45
+			},
+			"priority": 5,
+			"anchor": "BC",
+			"font":"cinzel_med",
+		},
+		
+		{
+			"name": "garrison_count_group",
+			"x": -355 ,
+			"y": -275,
+			"size" : {
+				"_comment":"Only Height matters",
+				"width": 45,
+				"height": 45
+			},
+			"priority": 5,
+			"anchor": "BC",
+			"font":"cinzel_med",
+		},
+
+	]
+}

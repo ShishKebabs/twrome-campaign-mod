@@ -1,0 +1,65 @@
+script
+	declare_show_me
+	
+	declare_counter abandon
+	declare_counter scroll_visible				; Track whether the advanced stats scroll is visible
+	
+	monitor_event ScrollClosed ScrollClosed own_settlement_info_scroll		;Catch the scroll closing
+		set_counter scroll_visible 0
+		set_counter abandon 1
+	end_monitor
+
+	monitor_event AbandonShowMe TrueCondition								;Catch the AbandonShowMe event
+		set_counter abandon 1
+	end_monitor
+
+	monitor_event SettlementScrollAdviceRequested TrueCondition				;Catch the advice being requested again
+		set_counter abandon 1
+	end_monitor
+
+	monitor_conditions I_CompareCounter abandon = 1	
+		ui_flash_stop						; Stop the UI highlighting
+		enable_entire_ui	
+		suspend_unscripted_advice	false			; Restore unscripted advice
+		if I_CompareCounter	scroll_visible = 1	; If the advanced stats scroll is visible...
+			simulate_mouse_click 	rclick_up			; ...dismiss the scroll
+		end_if
+		terminate_script						; Shutdown the show me script
+	end_monitor	
+
+	suspend_unscripted_advice true
+	disable_entire_ui
+	ui_flash_start settlement_stats_button
+	wait 2
+
+	ui_flash_stop
+	if not I_AdvancedStatsScrollIsOpen
+enable_ui settlement_stats_button	
+		select_ui_element settlement_stats_button
+		simulate_mouse_click lclick_down
+		simulate_mouse_click lclick_up
+	end_if
+	set_counter	scroll_visible 1
+
+disable_ui settlement_stats_button
+	advance_advice_thread UI_Panel_Settlement_Advanced_Advice_Thread
+	ui_flash_start advanced_stats_show_trade_button
+	wait 2
+
+	while I_AdvisorVisible
+	end_while
+
+	ui_flash_stop
+enable_ui advanced_stats_show_trade_button	
+	select_ui_element advanced_stats_show_trade_button
+	simulate_mouse_click lclick_down
+	simulate_mouse_click lclick_up
+
+	advance_advice_thread UI_Panel_Trade_Early_Advice_Basics_Thread
+	
+	while I_AdvisorVisible
+	end_while
+
+	enable_entire_ui
+	suspend_unscripted_advice false
+end_script

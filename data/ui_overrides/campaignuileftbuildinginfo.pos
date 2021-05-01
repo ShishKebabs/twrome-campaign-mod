@@ -1,0 +1,351 @@
+{
+	"frames": [
+
+	],
+	"list": [
+
+		{
+			"_comment":"bodyguard info elements start here",
+		},
+
+		{
+			"_comment":"unit_name used for building name ",
+			"name": "unit_name",
+			"x": 22 ,
+			"y": 20,
+			"size": {
+				"width": 265,
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"font_colour":"dark_brown",
+			"font":"cinzel_sml",
+			"priority": 0
+		},
+
+
+		{
+			"_comment":"unit image is used for the building image",
+			"name":"unit_image",
+			"x": 22 ,
+			"y": 46,
+			"size": {
+				"width": 180,
+				"height": 81
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"priority":0
+		},
+
+		{
+			"name":"building_destroy_button",
+			"x": 280 ,
+			"y"	: 80,
+			"size": {
+				"width": 40,
+				"height": 40
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"priority":0
+		},
+		
+		{
+			"name":"description_toggle_button",
+			"x": 280 ,
+			"y"	: 30,
+			"size": {
+				"width": 40,
+				"height": 40
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"priority":0
+		},
+		
+
+		{
+			"name":"construction_cost",
+			"x": 210 ,
+			"y": 50,
+			"size": {
+				"width": 30,
+				"height": 30
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"font":"verdana_sml",
+			"font_colour": "black",
+			"priority":0
+		},
+
+		{
+			"name":"construction_time",
+			"x": 210 ,
+			"y": 90,
+			"size": {
+				"width": 30,
+				"height": 30
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"font":"verdana_sml",
+			"font_colour": "black",
+			"priority":0
+		},
+
+		{
+			"_comment":"Parent List that contains capabilities, requirements and eables training of. Resizing of individual elements is now done in UNIT_BUILDING_INFORMATION::initialise"
+		},
+
+		{
+			"name": "parent_list",
+			"x": 20 ,
+			"y": 136,
+			"size": {
+				"width": 305 ,
+				"height": 275
+			},
+			"font_colour":"dark_brown",
+			"priority": 0,
+			"tags":["page1"]
+
+		},
+
+		{
+			"name":"divider",
+			"x": 10 ,
+			"y":129,
+			"size": {
+				"width": 320 ,
+				"height": 15
+			},
+			"tags":["page2"]
+		},
+
+		{
+			"_comment":"unit_description_title used for building description title",
+			"name":"unit_description_title",
+			"x": 28 ,
+			"y":144,
+			"anchor": "TL",
+			"align": "TL",
+			"priority":0,
+			"font_colour":"dark_brown",
+			"font":"verdana_sml_bold",
+			"tags":["page2"]
+		},
+
+		{
+			"_comment":"unit_description_list used for building description",
+			"name":"unit_description_list",
+			"x": 28 ,
+            "y":168,
+			"size": {
+				"width": 280 ,
+                "height": 196
+			},
+			"anchor": "TL",
+			"align": "TL",
+			"priority":0,
+			"font_colour":"dark_brown",
+			"font":"verdana_sml",
+			"outside_slider": true,
+            "slider_gap": 5,
+			"tags":["page2"]
+		},
+		
+
+	
+
+{
+"_comment":"field construction elements start here",
+},
+
+	{
+		"name":"field_construction_divider",
+		"x": 10 ,
+		"y":129,
+		"size": {
+			"width": 320 ,
+			"height": 15
+		},
+	},
+	{
+		"name":"field_construction_description_title",
+		"x": 25 ,
+		"y":145,
+		"anchor": "TL",
+		"align": "TL",
+		"priority":0,
+		"font_colour":"dark_brown",
+		"font":"verdana_sml_bold",
+	},
+
+
+	{
+		"name":"watchtower_description",
+		"x": 25 ,
+		"y":165,
+		"size": {
+			"width": 280 ,
+			"height": 350
+		},
+		"anchor": "TL",
+		"align": "TL",
+		"priority":0,
+		"font_colour":"dark_brown",
+		"font":"verdana_sml",
+	},
+
+	{
+		"name":"watchtower_cost_icon",
+		"x": 210 ,
+		"y":40,
+		"size": {
+			"width": 30,
+			"height": 30
+		},
+		"anchor": "TL",
+		"align": "TL",
+		"font":"verdana_sml",
+		"font_colour": "black",
+		"priority":0
+	},
+	{
+		"name":"watchtower_cost_string",
+		"x": 240 ,
+        "y":45,
+        "anchor": "TL",
+        "align": "TL",
+        "font":"verdana_sml",
+        "font_colour": "black",
+		"priority":0
+	},
+
+	{
+		"name": "watchtower_title",
+		"x": 25 ,
+		"y": 13,
+		"anchor": "TL",
+		"align": "TL",
+		"font_colour":"dark_brown",
+		"font":"cinzel_sml",
+		"priority": 0
+	},
+
+	{
+		"name":"fort_description",
+		"x": 25 ,
+		"y":165,
+		"size": {
+			"width": 280 ,
+			"height": 350
+		},
+		"anchor": "TL",
+		"align": "TL",
+		"priority":0,
+		"font_colour":"dark_brown",
+		"font":"verdana_sml",
+	},
+
+	{
+		"name":"fort_cost_icon",
+		"x": 210 ,
+		"y":40,
+		"size": {
+			"width": 30,
+			"height": 30
+		},
+		"anchor": "TL",
+		"align": "TL",
+		"font":"verdana_sml",
+		"font_colour": "black",
+		"priority":0
+	},
+	{
+		"name":"fort_cost_string",
+		"x": 240 ,
+        "y":45,
+        "anchor": "TL",
+        "align": "TL",
+        "font":"verdana_sml",
+        "font_colour": "black",
+		"priority":0
+	},
+
+	{
+		"name": "fort_title",
+		"x": 25 ,
+		"y": 13,
+		"anchor": "TL",
+		"align": "TL",
+		"font_colour":"dark_brown",
+		"font":"cinzel_sml",
+		"priority": 0
+	},
+
+    {
+        "name":"blockade_description",
+		"x": 25 ,
+		"y":165,
+		"size": {
+			"width": 280 ,
+			"height": 350
+		},
+		"anchor": "TL",
+		"align": "TL",
+		"priority":0,
+		"font_colour":"dark_brown",
+		"font":"verdana_sml",
+    },
+    {
+        "name":"blockade_cost_icon",
+		"x": 210 ,
+		"y":40,
+		"size": {
+			"width": 30,
+			"height": 30
+		},
+		"anchor": "TL",
+		"align": "TL",
+		"font":"verdana_sml",
+		"font_colour": "black",
+		"priority":0
+    },
+    {
+        "name":"blockade_cost_string",
+		"x": 240 ,
+        "y":45,
+        "anchor": "TL",
+        "align": "TL",
+        "font":"verdana_sml",
+        "font_colour": "black",
+        "priority":0
+    },
+    {
+        "name": "blockade_title",
+		"x": 25 ,
+		"y": 13,
+		"anchor": "TL",
+		"align": "TL",
+		"font_colour":"dark_brown",
+		"font":"cinzel_sml",
+		"priority": 0
+    },
+    {
+		"name":"field_construction_building_capabilities_background",
+		"x": -920 ,
+		"y": 132,
+		"size": {
+			"width": 300 ,
+			"height": 105
+		},
+		"anchor": "TL",
+		"align": "TL",
+		"priority":0,
+		"tags":["page1"]
+	},
+	]
+}

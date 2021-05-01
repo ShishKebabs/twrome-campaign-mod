@@ -1,0 +1,847 @@
+{
+    "frames": [
+        {
+            "name": "background_frame",
+            "position": {
+                "x": 0,
+                "y": 10
+            },
+            "size": {
+                "width": 1300,
+                "height": 1000
+            },
+            "priority": -1,
+            "anchor": "C",
+            "align": "C",
+            "fill": "black_curved",
+            "ignore_scale":true
+        },
+
+        {
+            "name": "centre_thick_clear_frame",
+            "position": {
+                "x": 0,
+                "y": -397,
+            },
+            "size": {
+                "width": 265,
+                "height": 114
+            },
+            "priority": -1,
+            "anchor": "C",
+            "align": "C",
+            "fill": "clear_thick",
+            "ignore_scale":true
+        },
+        
+        {
+            "name": "right_thick_clear_frame",
+            "position": {
+                "x": 260,
+                "y": -397,
+            },
+            "size": {
+                "width": 310,
+                "height": 114
+            },
+            "priority": -1,
+            "anchor": "C",
+            "align": "CL",
+            "fill": "clear_thick",
+            "ignore_scale":true
+        },
+
+        {
+            "name": "left_thick_clear_frame",
+            "position": {
+                "x": -260,
+                "y": -397
+            },
+            "size": {
+                "width": 310,
+                "height": 114
+            },
+            "priority": -1,
+            "anchor": "C",
+            "align": "CR",
+            "fill": "clear_thick",
+            "ignore_scale":true
+        },
+
+    ],
+    "list": [
+
+        {
+            "name": "marble_columns_0",
+            "x": -587,
+            "y": 32,
+            "size": {
+                "width": 88,
+                "height": 668
+            },
+            "align": "CR",
+            "anchor": "C",
+            "priority": "2",
+            "ignore_scale":true
+        },
+        {
+            "name": "marble_columns_1",
+            "x": 587,
+            "y": 32,
+            "size": {
+                "width": 88,
+                "height": 668
+            },
+            "align": "CL",
+            "anchor": "C",
+            "priority": "2",
+            "ignore_scale":true
+        },
+        
+        {
+            "name": "marble_horizontal_pieces_0",
+            "x": 0,
+            "y": -483,
+            "size": {
+                "width": 1208,
+                "height": 38
+            },
+            "align": "C",
+            "anchor": "C",
+            "priority": "2",
+            "ignore_scale":true
+        },
+        {
+            "name": "marble_horizontal_pieces_1",
+            "x": 0,
+            "y": 382,
+            "size": {
+                "width": 1306,
+                "height": 38
+            },
+            "align": "C",
+            "anchor": "C",
+            "priority": "2",
+            "ignore_scale":true
+        },
+        {
+            "name": "marble_horizontal_pieces_2",
+            "x": 0,
+            "y": -307,
+            "size": {
+                "width": 1350,
+                "height": 49
+            },
+            "align": "C",
+            "anchor": "C",
+            "priority": "-1",
+            "ignore_scale":true
+        },
+        {
+            "name": "marble_horizontal_pieces_3",
+            "x": 0,
+            "y": 516,
+            "size": {
+                "width": 1350,
+                "height": 52
+            },
+            "align": "C",
+            "anchor": "C",
+            "priority": "-1",
+            "ignore_scale":true
+        },
+        {
+            "name": "circle_frame_0",
+            "x": -199,
+            "y": -398,
+            "size": {
+                "width": 105,
+                "height": 105
+            },
+            "align": "C",
+            "anchor": "C",
+            "ignore_scale":true
+        },
+        {
+            "name": "circle_frame_1",
+            "x": 195,
+            "y": -398,
+            "size": {
+                "width": 105,
+                "height": 105
+            },
+            "align": "C",
+            "anchor": "C",
+            "ignore_scale":true
+        },
+
+        {
+            "name": "detail_0",
+            "x": -587,
+            "y": -464,
+            "size": {
+                "width": 85,
+                "height": 135
+            },
+            "align": "TR",
+            "anchor": "C",
+            "priority": "5",
+            "ignore_scale":true
+        },
+
+        {
+            "name": "detail_1",
+            "x": -587,
+            "y": 402,
+            "size": {
+                "width": 85,
+                "height": 90
+            },
+            "align": "TR",
+            "anchor": "C",
+            "priority": "5",
+            "ignore_scale":true
+        },
+
+        {
+            "name": "detail_2",
+            "x": 587,
+            "y": -465,
+            "size": {
+                "width": 85,
+                "height": 135
+            },
+            "align": "TL",
+            "anchor": "C",
+            "ignore_scale":true
+        },
+
+        {
+            "name": "detail_3",
+            "x": 587,
+            "y": 402,
+            "size": {
+                "width": 85,
+                "height": 90
+            },
+            "align": "TL",
+            "anchor": "C",
+            "priority": "5",
+            "ignore_scale":true
+        },
+
+        {
+            "name": "detail_4",
+            "x": -639,
+            "y": -483,
+            "size": {
+                "width": 72,
+                "height": 38
+            },
+            "align": "C",
+            "anchor": "C",
+            "priority": "2",
+            "ignore_scale":true
+        },
+
+        {
+            "name": "detail_5",
+            "x": -645,
+            "y": 382,
+            "size": {
+                "width": 59,
+                "height": 38
+            },
+            "align": "C",
+            "anchor": "C",
+            "priority": "2",
+            "ignore_scale":true
+        },
+
+        {
+            "name": "detail_6",
+            "x": 638,
+            "y": -483,
+            "size": {
+                "width": 72,
+                "height": 38
+            },
+            "align": "C",
+            "anchor": "C",
+            "priority": "2",
+            "ignore_scale":true
+        },
+
+        {
+            "name": "detail_7",
+            "x": 645,
+            "y": 382,
+            "size": {
+                "width": 59,
+                "height": 38
+            },
+            "align": "C",
+            "anchor": "C",
+            "priority": "2",
+            "ignore_scale":true
+        },
+
+
+        {
+            "name": "outcome_string",
+            "x": 0,
+            "y": -400,
+            "align": "C",
+            "anchor": "C",
+            "font":"cinzel",
+            "font_colour":"dark_brown",
+            "ignore_scale":true
+        },
+
+
+        {
+            "name": "countdown",
+            "x": 0,
+            "y": -370,
+            "align": "C",
+            "anchor": "C",
+            "font":"verdana_sml_bold",
+            "font_colour":"dark_brown",
+            "ignore_scale":true
+        },
+
+        {
+            "name": "faction_logo_0",
+            "x": -199,
+            "y": -398,
+            "size": {
+                "width": 70,
+                "height": 70
+            },
+            "align": "C",
+            "anchor": "C",
+            "ignore_scale":true
+        },
+
+        {
+            "name": "faction_logo_1",
+            "x": 195,
+            "y": -398,
+            "size": {
+                "width": 70,
+                "height": 70
+            },
+            "align": "C",
+            "anchor": "C",
+            "ignore_scale":true
+        },
+
+		{
+			"name": "scored_ranking",
+			"x": -596,
+			"y": -275,
+			"align": "TL",
+			"anchor": "C",
+			"font":"cinzel_med",
+			"font_colour":"dark_brown",
+			"ignore_scale":true
+		},
+
+
+		{
+			"name": "scored_faction_heading",
+			"x": -505,
+			"y": -275,
+			"align": "TL",
+			"anchor": "C",
+			"font":"cinzel_med",
+			"font_colour":"dark_brown",
+			"ignore_scale":true
+		},
+
+		{
+			"name": "scored_leader_heading",
+			"x": -227,
+			"y": -275,
+			"align": "TC",
+			"anchor": "C",
+			"font":"cinzel_med",
+			"font_colour":"dark_brown",
+			"ignore_scale":true
+		},
+
+		{
+			"name": "scored_men_deployed_heading",
+			"x": -2,
+			"y": -275,
+			"size": {
+				"width": 250,
+				"height": 15
+			},
+			"align": "TC",
+			"anchor": "C",
+			"font":"cinzel_med",
+			"font_colour":"dark_brown",
+			"ignore_scale":true
+		},
+
+		{
+			"name": "scored_casualties_inflicted_heading_0",
+			"x": 238,
+			"y": -275,
+			"size": {
+				"width": 250,
+				"height": 15
+			},
+			"align": "TC",
+			"anchor": "C",
+			"font":"cinzel_med",
+			"font_colour":"dark_brown",
+			"ignore_scale":true
+		},
+
+		{
+			"name": "scored_men_remaining_heading",
+			"x": 463,
+			"y": -275,
+			"size": {
+				"width": 250,
+				"height": 15
+			},
+			"align": "TC",
+			"anchor": "C",
+			"font":"cinzel_med",
+			"font_colour":"dark_brown",
+			"ignore_scale":true
+		},
+
+
+        {
+            "name": "faction_heading",
+            "x": -586,
+            "y": -275,
+            "align": "TL",
+            "anchor": "C",
+            "font":"cinzel_med",
+            "font_colour":"dark_brown",
+            "ignore_scale":true
+        },
+
+        {
+            "name": "leader_heading",
+            "x": -339,
+            "y": -275,
+            "align": "TC",
+            "anchor": "C",
+            "font":"cinzel_med",
+            "font_colour":"dark_brown",
+            "ignore_scale":true
+        },
+
+        {
+            "name": "men_deployed_heading",
+            "x": -80,
+            "y": -275,
+            "size": {
+                "width": 250,
+                "height": 15
+            },
+            "align": "TC",
+            "anchor": "C",
+            "font":"cinzel_med",
+            "font_colour":"dark_brown",
+            "ignore_scale":true
+        },
+
+        {
+            "name": "casualties_inflicted_heading_0",
+            "x": 170,
+            "y": -275,
+            "size": {
+                "width": 250,
+                "height": 15
+            },
+            "align": "TC",
+            "anchor": "C",
+            "font":"cinzel_med",
+            "font_colour":"dark_brown",
+            "ignore_scale":true
+        },
+
+        {
+            "name": "men_remaining_heading",
+            "x": 405,
+            "y": -275,
+            "size": {
+                "width": 250,
+                "height": 15
+            },
+            "align": "TC",
+            "anchor": "C",
+            "font":"cinzel_med",
+            "font_colour":"dark_brown",
+            "ignore_scale":true
+        },
+
+        {
+            "name": "cohort_heading",
+            "x": -520,
+            "y": -135,
+            "align": "C",
+            "anchor": "C",
+            "font":"verdana_sml_bold",
+            "font_colour":"dark_brown",
+            "tags":["page2"],
+            "ignore_scale":true
+        },
+
+        {
+            "name": "unit_type_heading",
+            "x": -385,
+            "y": -135,
+            "size": {
+                "width": 250,
+                "height": 15
+            },
+            "align": "C",
+            "anchor": "C",
+            "font":"verdana_sml_bold",
+            "font_colour":"dark_brown",
+            "tags":["page2"],
+            "ignore_scale":true
+        },
+
+        {
+            "name": "experience_gained_heading",
+            "x": -202,
+            "y": -135,
+            "align": "C",
+            "anchor": "C",
+            "font":"verdana_sml_bold",
+            "font_colour":"dark_brown",
+            "tags":["page2"],
+            "ignore_scale":true
+        },
+
+        {
+            "name": "casualties_sustained_heading",
+            "x": -2,
+            "y": -135,
+            "align": "C",
+            "anchor": "C",
+            "font":"verdana_sml_bold",
+            "font_colour":"dark_brown",
+            "tags":["page2"],
+            "ignore_scale":true
+        },
+
+        {
+            "name": "casualties_inflicted_heading_1",
+            "x": 193,
+            "y": -135,
+            "align": "C",
+            "anchor": "C",
+            "font":"verdana_sml_bold",
+            "font_colour":"dark_brown",
+            "tags":["page2"],
+            "ignore_scale":true
+        },
+
+        {
+            "name": "casualties_healed_heading",
+            "x": 380,
+            "y": -135,
+            "align": "C",
+            "anchor": "C",
+            "font":"verdana_sml_bold",
+            "font_colour":"dark_brown",
+            "tags":["page2"],
+            "ignore_scale":true
+        },
+
+        {
+            "name": "men_heading",
+            "x": 515,
+            "y": -135,
+            "align": "C",
+            "anchor": "C",
+            "font":"verdana_sml_bold",
+            "font_colour":"dark_brown",
+            "tags":["page2"],
+            "ignore_scale":true
+        },
+
+        {
+            "name": "ship_shunk_heading",
+            "x": 525,
+            "y": -135,
+            "align": "C",
+            "anchor": "C",
+            "font":"verdana_sml_bold",
+            "font_colour":"dark_brown",
+            "tags":["page2"],
+            "ignore_scale":true
+        },
+
+        {
+            "name": "divider_0",
+            "x": 0,
+            "y": -165,
+            "size": {
+                "width": 1148,
+                "height": 15
+            },
+            "align": "C",
+            "anchor": "C",
+            "tags":["page2"],
+            "ignore_scale":true
+        },
+
+        {
+            "name": "divider_1",
+            "x": 0,
+            "y": -111,
+            "size": {
+                "width": 1136,
+                "height": 15
+            },
+            "align": "C",
+            "anchor": "C",
+            "tags":["page2"],
+            "ignore_scale":true
+        },
+
+        {
+            "name": "divider_2",
+            "x": 0,
+            "y": -245,
+            "size": {
+                "width": 1136,
+                "height": 15
+            },
+            "align": "C",
+            "anchor": "C",
+            "ignore_scale":true
+        },
+
+        
+
+        {
+            "name": "all_armies_list",
+            "x": -1,
+            "y": -231,
+            "size": {
+                "width": 1136,
+                "height": 600
+            },
+            "align": "TC",
+            "anchor": "C",
+            "font":"verdana_med",
+            "font_colour":"dark_brown",
+            "tags":["page1"],
+            "ignore_scale":true
+        },
+
+        {
+            "name": "selected_army_for_details",
+            "x": -3,
+            "y": -231,
+            "size": {
+                "width": 1136,
+                "height": 500
+            },
+            "align": "TC",
+            "anchor": "C",
+            "font":"verdana_med",
+            "font_colour":"dark_brown",
+            "tags":["page2"],
+            "ignore_scale":true
+        },
+
+        {
+            "name": "army_details_list",
+            "x": 0,
+            "y": -100,
+            "size": {
+                "width": 1136,
+                "height": 462
+            },
+            "align": "TC",
+            "anchor": "C",
+            "font":"verdana_sml",
+            "font_colour":"dark_brown",
+            "tags":["page2"],
+            "ignore_scale":true
+        },
+
+        {
+            "name": "replay_battle_button",
+            "x": -238,
+            "y": 445,
+            "size": {
+                "width": 70,
+                "height": 70
+            },
+            "align": "C",
+            "anchor": "C",
+            "font":"verdana_med",
+            "font_colour":"dark_brown",
+            "ignore_scale":true
+        },
+
+        {
+            "name": "continue_button",
+            "x": 0,
+            "y": 445,
+            "size": {
+                "width": 70,
+                "height": 70
+            },
+            "align": "C",
+            "anchor": "C",
+            "font":"verdana_med",
+            "font_colour":"dark_brown",
+            "ignore_scale":true
+        },
+
+        {
+            "name": "save_replay_button",
+            "x": 238,
+            "y": 445,
+            "size": {
+                "width": 70,
+                "height": 70
+            },
+            "align": "C",
+            "anchor": "C",
+            "font":"verdana_med",
+            "font_colour":"dark_brown",
+            "ignore_scale":true
+        },
+
+
+        {
+            "name": "details_button",
+            "x": -9250,
+            "y": 445,
+            "size": {
+                "width": 70,
+                "height": 70
+            },
+            "align": "C",
+            "anchor": "C",
+            "font":"verdana_med",
+            "font_colour":"dark_brown",
+            "ignore_scale":true
+        },
+
+
+        {
+            "comment": "NAVAL HEADERS",
+        },
+
+
+
+        {
+            "name": "naval_cohort_heading",
+            "x": -532,
+            "y": -135,
+            "align": "C",
+            "anchor": "C",
+            "font":"verdana_sml_bold",
+            "font_colour":"dark_brown",
+            "tags":["page2"],
+            "ignore_scale":true
+        },
+
+        {
+            "name": "naval_unit_type_heading",
+            "x": -415,
+            "y": -135,
+            "size": {
+                "width": 250,
+                "height": 15
+            },
+            "align": "C",
+            "anchor": "C",
+            "font":"verdana_sml_bold",
+            "font_colour":"dark_brown",
+            "tags":["page2"],
+            "ignore_scale":true
+        },
+
+        {
+            "name": "naval_experience_gained_heading",
+            "x": -250,
+            "y": -135,
+            "align": "C",
+            "anchor": "C",
+            "font":"verdana_sml_bold",
+            "font_colour":"dark_brown",
+            "tags":["page2"],
+            "ignore_scale":true
+        },
+
+        {
+            "name": "naval_casualties_sustained_heading",
+            "x": -85,
+            "y": -135,
+            "align": "C",
+            "anchor": "C",
+            "font":"verdana_sml_bold",
+            "font_colour":"dark_brown",
+            "tags":["page2"],
+            "ignore_scale":true
+        },
+
+        {
+            "name": "naval_casualties_inflicted_heading_1",
+            "x": 80,
+            "y": -135,
+            "align": "C",
+            "anchor": "C",
+            "font":"verdana_sml_bold",
+            "font_colour":"dark_brown",
+            "tags":["page2"],
+            "ignore_scale":true
+        },
+
+        {
+            "name": "naval_casualties_healed_heading",
+            "x": 245,
+            "y": -135,
+            "align": "C",
+            "anchor": "C",
+            "font":"verdana_sml_bold",
+            "font_colour":"dark_brown",
+            "tags":["page2"],
+            "ignore_scale":true
+        },
+
+        {
+            "name": "naval_men_heading",
+            "x": 410,
+            "y": -135,
+            "align": "C",
+            "anchor": "C",
+            "font":"verdana_sml_bold",
+            "font_colour":"dark_brown",
+            "tags":["page2"],
+            "ignore_scale":true
+        },
+
+        {
+            "name": "naval_ship_shunk_heading",
+            "x": 532,
+            "y": -135,
+            "align": "C",
+            "anchor": "C",
+            "font":"verdana_sml_bold",
+            "font_colour":"dark_brown",
+            "tags":["page2"],
+            "ignore_scale":true
+        },
+
+
+    ]
+}

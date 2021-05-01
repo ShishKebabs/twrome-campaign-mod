@@ -1,0 +1,143 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; landscape tile placement description file
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; CLIFFS
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+tile_set	cliff_a
+{
+	ground_types	
+	{
+		top
+		top_lo
+		bottom
+		bottom_hi
+	}
+
+	ground_type_rules	top
+	{
+		plus	bottom	25
+	}
+	
+	corner_ground_type_map
+	{
+								;tl			tr			bl			br
+
+		line_top				bottom		bottom		top			top
+		line_bottom				top			top			bottom		bottom
+		line_left				bottom		top			bottom		top	
+		line_right				top			bottom		top			bottom					
+
+		in_top_left				bottom		top			top			top
+		in_top_right			top			bottom		top			top
+		in_bottom_left			top			top			bottom		top
+		in_bottom_right			top			top			top			bottom
+
+		out_top_left			bottom		bottom		bottom		top
+		out_top_right			bottom		bottom		top			bottom
+		out_bottom_left			bottom		top			bottom		bottom
+		out_bottom_right		top			bottom		bottom		bottom
+
+		end_left_top_left		bottom_hi	top_lo		bottom		top
+		end_left_top_right		bottom		bottom_hi	top			top_lo
+		end_left_bottom_left	top_lo		top			bottom_hi	bottom
+		end_left_bottom_right	top			bottom		top_lo		bottom_hi
+
+		end_right_top_left		bottom_hi	bottom		top_lo		top
+		end_right_top_right		top_lo		bottom_hi	top			bottom
+		end_right_bottom_left	bottom		top			bottom_hi	top_lo
+		end_right_bottom_right	top			top_lo		bottom		bottom_hi
+	}
+
+	connectors
+	{
+				; top to bottom, left to right
+		alpha	; high to low
+		beta	; low to high
+	}
+
+	edge_connector_map
+	{
+								;t		b		l		r
+
+		line_top				none	none	beta	beta
+		line_bottom				none	none	alpha	alpha		
+		line_left				beta	beta	none	none
+		line_right				alpha	alpha	none	none		
+
+		in_top_left				beta	none	beta	none
+		in_top_right			alpha	none	none	beta
+		in_bottom_left			none	beta	alpha	none
+		in_bottom_right			none	alpha	none	alpha
+
+		out_top_left			none	beta	none	beta
+		out_top_right			none	alpha	beta	none
+		out_bottom_left			beta	none	none	alpha
+		out_bottom_right		alpha	none	alpha	none
+	
+		end_left_top_left		none	beta	none	none
+		end_left_top_right		none	none	beta	none
+		end_left_bottom_left	none	none	none	alpha
+		end_left_bottom_right	alpha	none	none	none
+	}
+
+	conditions
+	{
+		>	15	top	bottom
+	}	
+}
+
+tile_set	cliff_b
+{
+	ground_types	
+	{
+		top
+		top_lo
+		bottom
+		bottom_hi
+	}
+
+	ground_type_rules	top
+	{
+		plus	bottom	12
+	}
+	
+	corner_ground_type_map
+	{
+								;tl			tr			bl			br
+
+		line_top				bottom		bottom		top			top
+		line_bottom				top			top			bottom		bottom
+		line_left				bottom		top			bottom		top	
+		line_right				top			bottom		top			bottom					
+
+		in_top_left				bottom		top			top			top
+		in_top_right			top			bottom		top			top
+		in_bottom_left			top			top			bottom		top
+		in_bottom_right			top			top			top			bottom
+
+		out_top_left			bottom		bottom		bottom		top
+		out_top_right			bottom		bottom		top			bottom
+		out_bottom_left			bottom		top			bottom		bottom
+		out_bottom_right		top			bottom		bottom		bottom
+
+		end_left_top_left		bottom_hi	top_lo		bottom		top
+		end_left_top_right		bottom		bottom_hi	top			top_lo
+		end_left_bottom_left	top_lo		top			bottom_hi	bottom
+		end_left_bottom_right	top			bottom		top_lo		bottom_hi
+
+		end_right_top_left		bottom_hi	bottom		top_lo		top
+		end_right_top_right		top_lo		bottom_hi	top			bottom
+		end_right_bottom_left	bottom		top			bottom_hi	top_lo
+		end_right_bottom_right	top			top_lo		bottom		bottom_hi
+	}
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+

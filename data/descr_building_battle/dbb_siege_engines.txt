@@ -1,0 +1,38 @@
+	onager
+	{
+		stat_cat small_wooden
+		localised_name onager
+		level
+		{
+			min_health 0
+			battle_stats
+			item		onager
+			physical_info	../onager_low.cas
+		}
+	}
+
+	siege_tower
+	{
+		stat_cat medium_wooden
+		localised_name siege_tower
+		level
+		{
+			min_health 0
+			battle_stats
+			item		siege_tower
+			physical_info	../siege_tower_very_low.cas
+		}
+	}
+
+	ballista
+	{
+		stat_cat tiny_wooden
+		localised_name ballista
+		level
+		{
+			min_health 0
+			battle_stats
+			item		ballista
+			physical_info	../ballista_low.cas
+		}
+	}

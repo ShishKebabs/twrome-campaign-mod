@@ -1,0 +1,249 @@
+{
+	"frames": [
+		
+		{
+			"position": {
+				"x": 0,
+				"y": 0
+			},
+			"size": {
+				"width": 700,
+				"height": 600
+			},
+			"priority": -2,
+			"fill": "black_curved",
+			"anchor": "C",
+			"align": "C",
+			"scale_width":true
+		}
+	],
+	"tooltip": {
+		"x": 47,
+		"y": 42,
+		"width": 624,
+		"height": 80,
+		"anchor": "TC",
+		"align": "C",
+		"scale_width":true,
+		"font":"verdana_lrg"
+	},
+	"tooltip_ticker": {
+		"x": 37,
+		"y": 3,
+		"width": 624,
+		"height": 50,
+		"anchor": "TC",
+		"align": "TC",
+		"scale_width":true,
+		"font":"verdana_lrg"
+	},
+	"list": [
+		{
+			"name": "mission_list",
+			"x": 2,
+			"y": 83,
+			"size": {
+				"width": 672,
+				"height": 210
+			},
+			"align":"C",
+			"anchor":"C",
+			"scale_width":true,
+			"font":"verdana_med",
+			"annotation_id": "Rome.Annotations.units_assassinate-target",
+			"notch_override": {
+				"x": 20,
+				"size": {
+                	"width": 654
+            	}
+			}
+		},
+		{
+			"name": "mission_list_heading",
+			"x": -40,
+			"y": -46,
+			"align":"C",
+			"anchor":"C",
+			"priority":1,
+			"font":"verdana_med",
+			"size": {
+				"width": 700,
+				"height": 400
+			}
+		},
+		{
+			"name": "title_string",
+			"x": -770,
+			"y": 155,
+			"size": {
+				"width": 200,
+				"height": 0
+			}
+		},
+		{
+			"name": "assassinate_button",
+			"x": 150,
+			"y": -280,
+			"align":"C",
+			"anchor":"BC",
+			"scale_x_pos":true,
+			"annotation_id": "Rome.Annotations.units_assassinate-doit",
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			}
+		},
+		{
+			"name": "sabotage_button",
+			"x": 150,
+			"y": -280,
+			"align":"C",
+			"anchor":"BC",
+			"scale_x_pos":true,
+			"annotation_id": "Rome.Annotations.units_sabotage-doit",
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			}
+		},
+		{
+			"name": "mission_image",
+			"x": 192,
+			"y": 320,
+			"align":"C",
+			"anchor":"TC",
+			"scale_x_pos":true
+		},
+		{
+			"name": "assassinate_tab",
+			"x": -220,
+			"y": 330,
+			"align":"C",
+			"anchor":"TC",
+			"scale_x_pos":true,
+			"annotation_id": "Rome.Annotations.units_sabotage-assassination",
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			}
+		},
+		{
+			"name": "sabotage_tab",
+			"x": -70,
+			"y": 330,
+			"align":"C",
+			"anchor":"TC",
+			"scale_x_pos":true,
+			"annotation_id": "Rome.Annotations.units_assassinate-sabotage",
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			}
+		},
+		{
+			"name": "building_name",
+			"x": 666,
+			"y": 130,
+			"size": {
+				"width": 200,
+				"height": 100
+			}
+		},
+		{
+			"name": "building_image",
+			"x": 585,
+			"y": 155
+		},
+		{
+			"name": "building_time",
+			"x": 590,
+			"y": 165
+		},
+		{
+			"name": "building_cost",
+			"x": 898,
+			"y": 165
+		},
+		{
+			"name": "building_upgrades",
+			"x": 700,
+			"y": 280
+		},
+		{
+			"name": "building_description",
+			"x": 585,
+			"y": 335,
+			"size": {
+				"width": 375,
+				"height": 270
+			}
+		},
+		{
+			"name": "building_destroy",
+			"x": -730,
+			"y": 636
+		},
+		{
+			"name": "character_panel",
+			"x": 565,
+			"y": 129,
+			"size": {
+				"width": 400,
+				"height": 100
+			},
+			"annotation_id": "Rome.Annotations.units_assassinate-info"
+		},
+		{
+			"name": "character_retinue_traits",
+			"x": 585,
+			"y": 255,
+            "size": {
+                "width": 370,
+                "height": 195
+            },
+			"annotation_id": "Rome.Annotations.units_assassinate-info"
+		},
+		{
+			"name": "character_retinue_string",
+			"x": 582,
+			"y": 234
+		},
+		{
+			"name": "character_traits_string",
+			"x": 755,
+			"y": 234
+		},
+		{
+			"name": "help_button",
+			"x": 99,
+			"y": -640
+		},
+		{
+			"name": "close_button",
+			"x": -150,
+			"y": -280,
+			"align":"C",
+			"anchor":"BC",
+			"scale_x_pos":true,
+			"annotation_id": "Rome.Annotations.units_assassinate-close"
+		},
+		{
+			"name": "building_zoom",
+			"x": 740,
+			"y": 640
+		},
+		{
+			"name": "advisor",
+			"x": -1,
+			"y": -1
+		}
+	]
+}

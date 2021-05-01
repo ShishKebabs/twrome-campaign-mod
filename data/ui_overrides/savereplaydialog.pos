@@ -1,0 +1,295 @@
+{
+	"frames": [
+        {
+            "position": {
+                "x": 364,
+                "y": 0
+            },
+            "size": {
+                "width": 480
+            },
+            "priority": -5,
+            "ignore_scale": true,
+            "fill": "invisible"
+        },
+        {
+            "position": {
+                "x": 0 ,
+                "y": 32 ,
+            },
+            "size": {
+                "width": 506 ,
+                "height": 343 ,
+            },
+            "priority": 10,
+            "ignore_scale": true,
+            "fill": "decorated",
+            "anchor":"RIGHT_PNL",
+            "align": "C",
+            "tags": [ "save_load_delete_confirm",
+            "save_load_overwrite_confirm",
+            "save_success"]
+        },
+		{
+			"position": {
+                "x": 0,
+                "y": 22.2
+			},
+			"size": {
+                "width": 1123,
+                "height": 894
+			},
+            "align":"C",
+			"priority": -5,
+			"fill": "black_curved",
+			"ignore_scale":true,
+            "anchor": "RIGHT_PNL",
+            "tags": [ "save_load_base" ]
+		},
+       
+	],
+	"list": [
+        {
+            "name": "eagle_header",
+            "size": {
+                "width": 290,
+                "height": 110
+            },
+            "align": "C",
+            "anchor": "RIGHT_PNL",
+        },
+        {
+            "name": "countdown",
+            "x": 305,
+            "y": -330,
+            "align": "C",
+            "anchor": "C",
+            "font":"verdana_med_bold",
+            "font_colour":"dark_brown",
+            "ignore_scale":true
+        },
+		{
+            "name": "file_list",
+            "x": 0,
+            "y": 17,
+            "size" : {
+                "width" : 1019.2,
+                "height" : 572
+            },
+            "tags": [ "save_load_base" ],
+            "priority": 1,
+            "ignore_scale":true,
+            "align": "C",
+            "anchor": "RIGHT_PNL",
+        },
+        {
+            "name": "main_panel",
+            "x": 0,
+            "y": 22.2,
+            "size": {
+                "width": 1123,
+                "height": 894
+            },
+            "align":"C",
+            "priority": -5,
+            "fill": "invisible",
+            "ignore_scale":true,
+            "anchor": "RIGHT_PNL",
+        },
+        {
+            "name": "sort_button_group",
+            "x": 309.4,
+            "y": -282.4,
+            "size" : {
+                "width" : 37,
+                "height" : 37
+            },
+            "align":"C",
+            "font":"cinzel",
+            "priority": 1,
+            "ignore_scale":true,
+            "anchor": "RIGHT_PNL",
+            "tags": [ "save_load_base" ],
+        },
+		{
+			"name": "sort_names_button",
+            "x": -430,
+            "y": -294,
+			"size" : {
+                "width" : 42,
+                "height" : 42
+			},
+			"align":"C",
+            "font":"cinzel",
+			"priority": 1,
+			"ignore_scale":true,
+            "anchor": "RIGHT_PNL",
+            "tags": [ "save_load_base" ],
+		},
+		{
+			"name": "sort_date_button",
+            "x": 300,
+            "y": -294,
+			"size" : {
+                "width" : 42,
+                "height" : 42
+			},
+			"align":"C",
+            "font":"cinzel",
+			"priority": 1,
+			"ignore_scale":true,
+            "anchor": "RIGHT_PNL",
+            "tags": [ "save_load_base" ],
+		},
+        {
+            "name": "load_game_button",
+            "x": 302.1,
+            "y": 350,
+            "size" : {
+                "width" : 130,
+                "height": 50
+            },
+            "align": "C",
+            "font":"cinzel",
+            "priority": 1,
+            "ignore_scale":true,
+            "anchor": "RIGHT_PNL",
+            "tags": [ "hidden" ],
+        },
+        {
+            "name": "delete_game_button",
+            "x": 403.6,
+            "y": 350,
+            "size" : {
+                "width" : 200,
+                "height":  50
+            },
+            "align": "C",
+            "font":"cinzel",
+            "priority": 1,
+            "ignore_scale":true,
+            "anchor": "RIGHT_PNL",
+            "tags": [ "save_load_base" ],
+        },
+		{
+			"name": "save_game_button",
+            "x": 197.4,
+            "y": 350,
+            "size" : {
+                "width": 200,
+                "height": 50
+            },
+            "align": "C",
+            "font":"cinzel",
+			"priority": 1,
+			"ignore_scale":true,
+            "anchor": "RIGHT_PNL",
+            "tags": [ "save_load_base" ],
+		},
+		{
+			"name": "name_input_box_no_load",
+            "x": -203.8,
+            "y": 350,
+			"size" : {
+                "width" : 595.1,
+                "height" : 44
+			},
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			},
+			"priority": 1,
+			"ignore_scale":true,
+            "anchor": "RIGHT_PNL",
+            "tags": [ "save_load_base" ],
+		},
+		{
+			"name": "name_input_box",
+            "x": -203.8,
+            "y": 350,
+			"size" : {
+                "width": 595.1,
+                "height": 44
+			},
+			"align":"C",
+			"priority": 1,
+			"ignore_scale":true,
+            "anchor": "RIGHT_PNL",
+            "tags": [ "save_load_base" ],
+		},
+        {
+            "name": "text_block",
+            "x": 0 ,
+            "y": -45,
+            "align": "C",
+            "anchor": "RIGHT_PNL",
+            "size" : {
+                "width": 236.6,
+            },
+            "ignore_scale": true,
+            "font":"verdana_lrg",
+            "font_colour":"black",
+            "tags": [ "save_load_delete_confirm",
+            "save_load_overwrite_confirm",
+            "save_success"],
+            "priority": 50
+        },
+        {
+            "name": "accept_button",
+            "x": -105.6,
+            "y": 123.1,
+            "size": {
+                "width": 72,
+                "height": 72
+            },
+            "ignore_scale": true,
+            "anchor":"RIGHT_PNL",
+            "align": "C",
+            "tags": [ "save_load_delete_confirm",
+            "save_load_overwrite_confirm" ],
+            "priority": 50
+        },
+        {
+            "name": "cancel_button",
+            "x": 105.6,
+            "y": 123.1,
+            "size": {
+                "width": 72,
+                "height": 72
+            },
+            "ignore_scale": true,
+            "anchor":"RIGHT_PNL",
+            "align": "C",
+            "tags": [ "save_load_delete_confirm",
+                        "save_load_overwrite_confirm"],
+            "priority": 50
+        },
+        {
+            "name": "success_accept_button",
+            "x": 0,
+            "y": 123.1,
+            "size": {
+                "width": 72,
+                "height": 72
+            },
+            "ignore_scale": true,
+            "anchor":"RIGHT_PNL",
+            "align": "C",
+            "tags": [ "save_success"],
+            "priority":50
+        },
+    	{
+			"name": "advisor",
+			"x": -100,
+			"y": -100,
+			"ignore_scale":true
+		},
+		{
+			"name": "radar",
+			"priority" : -1,
+			"ignore_scale":true
+		}
+	]
+}

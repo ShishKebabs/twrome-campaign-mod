@@ -1,0 +1,25 @@
+type					flag_vertical_small
+lod
+max_distance				200
+model_anim					models_spot/flag_vertical_small.CAS
+lod
+max_distance				4000
+model_rigid					models_spot/flag_vertical_small_low.CAS
+
+type					flag_horizontal_large
+lod
+max_distance				200
+model_anim					models_spot/flag_horizontal_large.CAS
+lod
+max_distance				4000
+model_rigid					models_spot/flag_horizontal_large_low.CAS
+
+
+type					flag_vertical_large
+lod
+max_distance				200
+model_anim					models_spot/flag_vertical_large.CAS
+lod
+max_distance				4000
+model_rigid					models_spot/flag_vertical_large_low.CAS
+

@@ -1,0 +1,289 @@
+{
+	"frames": [ ],
+
+	"list": [
+
+		{
+			"name": "portrait",
+			"x": 330 ,
+			"y": 55,
+			"size" : {
+				"width"  : 79,
+				"height" : 110
+			},
+			"align":"TR",
+			"priority":5
+		},
+  {
+            "name": "portrait_frame",
+            "x": 340 ,
+            "y": 45,
+            "size" : {
+                "width"  : 99,
+                "height" : 130
+            },
+            "align":"TR",
+            "priority":5
+        },
+
+		{
+			"name": "general_bodyguard_button",
+			"x": 68 ,
+			"y": 60,
+			"size" : {
+				"width"  : 45,
+				"height" : 45
+			},
+			"priority":5,
+			"align":"TR",
+			"tags":[ "page1", "page3" ]
+		},
+		{
+			"name": "questionmark_bodyguard_button",
+			"x": 68 ,
+			"y": 60,
+			"size" : {
+				"width"  : 45,
+				"height" : 45
+			},
+			"priority":5,
+			"align":"TR",
+			"tags":[ "page2" ]
+		},
+        {
+            "name": "fleet_button",
+            "x": 68 ,
+            "y": 60,
+            "size" : {
+                "width"  : 45,
+                "height" : 45
+            },
+            "priority":5,
+            "align":"TR",
+            "tags":[ "page4" ]
+        },
+        
+
+
+		{
+			"comment": "General's Role",
+			"name": "title_string",
+			"x": 180 ,
+			"y": 15,
+			"priority":5,
+			"font":"cinzel_med",
+			"font_colour":"dark_brown",
+			"anchor":"L",
+			"align":"TC"
+		},
+
+		{
+			"comment": "General's Name",
+			"name": "heading_string",
+			"x": 235 ,
+			"y": 55,
+			"size": {
+				"comment": "see fbug://RHD-8353"
+			},
+			"align":"TR",
+			"font":"verdana_sml"
+		},
+
+		{
+			"comment": "General's Location",
+			"name": "location_string",
+			"x": -9125 ,
+			"y": 75,
+			"priority":5,
+			"align":"TR",
+			"font":"verdana_sml"
+		},
+
+		{
+			"comment": "General's Age",
+			"name": "age_string",
+			"x": 235 ,
+			"y": 80,
+			"priority":5,
+			"align":"TR",
+			"font":"verdana_sml"
+		},
+
+		{
+			"comment": "General's Basic Stats",
+			"name": "character_points",
+			"x": 235 ,
+			"y": 135,
+			"size": {
+				"width": 200 ,
+				"height": 30
+			},
+			"priority":5,
+			"align":"TR",
+			"font":"cinzel_med"
+		},
+
+		{
+			"name": "character_religion",
+			"x": 335 ,
+			"y": 125,
+			"size": {
+				"width": 40 ,
+				"height": 40
+			},
+			"priority":5,
+			"align":"TR",
+		},
+
+
+
+		{
+			"name": "x_men_string",
+			"x": 235,
+			"y": 105,
+			"priority":5,
+			"align":"TR",
+			"font":"verdana_sml",
+			"font_colour":"dark_brown",
+		},
+  
+        {
+            "name": "no_embarked_units_string",
+            "x": 125,
+            "y": 300,
+            "priority":5,
+            "align":"TC",
+            "font":"verdana_med",
+            "font_colour":"dark_brown",
+            "tags":[ "page2" ]
+        },
+
+		{
+			"name": "horizontal_divider",
+			"x": 25 ,
+			"y": 165,
+			"size": {
+				"width": 320 ,
+				"height": 20
+			},
+			"priority":5,
+		},
+
+
+		{
+			"name": "cards",
+			"x": 49,
+			"y": 180,
+			"size": {
+                "width": 275 ,
+                "height": 300
+            },
+			"priority":5,
+			"tags":[ "page2" ]
+		},
+        {
+            "name": "fleet_cards",
+            "x": 49,
+            "y": 180,
+            "size": {
+                "width": 275 ,
+                "height": 300
+            },
+            "priority":5,
+            "tags":[ "page3" ]
+        },
+
+
+		{
+			"name": "trb_bonus_list",
+			"x": 5254 ,
+			"y": 180,
+			"size": {
+				"width": 273 ,
+				"height": 250
+			},
+			"priority":5,
+			"font":"verdana_sml",
+			"tags":[ "page1", "page4" ]
+		},
+
+		{
+			"name": "trb_bonus_list_heading",
+			"x": 5518 ,
+			"y": 180,
+			"size": {
+				"width": 273 ,
+				"height": 50
+			},
+			"priority":5,
+			"font":"verdana_sml",
+			"tags":[ "page1", "page4" ]
+		},
+
+		{
+			"comment": "Traits header",
+			"name": "trb_traits_string",
+			"x": 24 ,
+			"y": 188,
+			"align":"TL",
+			"priority":5,
+			"font":"verdana_sml_bold",
+			"font_colour":"dark_brown",
+			"tags":[ "page1", "page4" ]
+		},
+		{
+			"comment": "Retinues header",
+			"name": "trb_retinue_string",
+			"x": 198 ,
+			"y": 188,
+			"align":"TL",
+			"priority":5,
+			"font":"verdana_sml_bold",
+			"font_colour":"dark_brown",
+			"tags":[ "page1", "page4" ]
+		},
+
+		{
+			"name": "trb_retinue_trait_header_background",
+			"x": 45 ,
+			"y": -1475,
+			"size": {
+				"width": 418 ,
+				"height": 35
+			},
+			"priority":4,
+			"font":"verdana_sml",
+			"tags":[ "page5" ]
+		},
+
+		{
+			"comment": "Combined list of traits and retinues",
+			"name": "trb_traits_retinue",
+			"x": 25 ,
+			"y": 210,
+			"size": {
+				"width": 330 ,
+				"height": 263
+			},
+			"priority":5,
+			"font":"verdana_sml",
+			"tags":[ "page1", "page4" ]
+		},
+
+		{
+			"name": "vertical_divider",
+			"x": 190 ,
+			"y": 190,
+			"size": {
+				"width": 15 ,
+				"height": 280
+			},
+			"priority":5,
+			"align":"TL",
+			"tags":[ "page1", "page4" ]
+		},
+
+	]
+}
+
+

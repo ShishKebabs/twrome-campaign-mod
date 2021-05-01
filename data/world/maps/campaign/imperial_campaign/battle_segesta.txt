@@ -1,0 +1,1171 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; SEGESTA BATTLE
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+		set_battle campaign\imperial_campaign\descr_battle_segesta.txt;
+		battle_wait 0.2;
+
+		monitor_event ScrollDidOpen ScrollDidOpen conditions_complete_scroll;
+			stop_all_point_at_indicators;
+			remove_battle_map_arrow;
+			enable_ui conditions_complete_quit_button;
+			enable_ui conditions_complete_continue_button;
+			ui_flash_start conditions_complete_quit_button, circle;
+			ui_flash_start post_battle_stats_show_results_button, circle;
+			terminate_monitor;
+		end_monitor;
+
+		monitor_event ScrollDidOpen ScrollDidOpen post_battle_scroll
+			stop_all_point_at_indicators;
+			enable_ui post_battle_show_stats_button;
+			enable_ui post_battle_stats_show_results_button;
+			ui_flash_start post_battle_show_stats_button, circle;											;; Highlighter around Continue button
+			ui_flash_start post_battle_stats_show_results_button, circle;
+			disable_ui post_battle_stats_save_replay;
+			disable_ui fight_again_button;
+			advance_advice_thread Battle_Results_Screen_1_type_b;											;; Message displayed in Marcus' panel
+			terminate_script;
+			terminate_monitor;
+		end_monitor;
+
+		monitor_event ScrollClosed ScrollClosed end_game_scroll_hd;
+			toggle_minimap;
+		end_monitor;
+
+		monitor_event UnitInfoOpened TrueCondition;
+			enable_ui close_animated_frame_button;
+			terminate_monitor;
+		end_monitor;
+		
+		disable_cursor;
+		camera_default_mode_set rts;
+		prepare_for_battle;
+
+		label_location 40, -115 ArchersFire;
+		label_location 40, -230 TriariiPoint;
+		label_location 40, -270 ArchersPoint;
+		label_location 110, -250 GeneralPoint;
+		label_location 25, -250 HastatiPoint_1;
+		label_location 55, -250 HastatiPoint_2;
+		label_location 72, -180 LockFormationPoint;
+		label_location 140, -80 FlankPoint_1;
+		label_location 38, 20 PeasantsEndPoint;
+		label_location 40, -80 ArcherEndPoint;
+		label_location 40, -120 WarbandEndPoint;
+		label_unit 0 0 0 player_general;
+		label_unit 0 0 1 player_hastati_1;
+		label_unit 0 0 2 player_hastati_2;
+		label_unit 0 0 3 player_triarii;
+		label_unit 0 0 4 player_archers;
+		label_unit 1 0 0 barb_spearband;
+		label_unit 1 0 2 barb_archers;
+		label_unit 1 0 1 barb_peasants;
+
+
+
+		;; Begin tutorial, player units entrance
+		unit_order_move player_general 116, -270;
+		unit_order_move player_hastati_1 30, -270;
+		unit_order_move player_hastati_2 70, -270;
+		unit_order_move player_triarii 30, -290;
+		unit_order_move player_archers 70, -290;
+		toggle_minimap;
+		hide_ui;
+		disable_entire_ui;
+		enable_ui tooltip;
+		enable_ui pause_button;
+		enable_ui advisor_continue;
+		enable_ui type_e_advice_left_arrow;
+        enable_ui type_e_advice_right_arrow;
+		enable_ui pause_menu_buttons;
+		enable_ui play_button;
+		enable_ui battle_pause_display;
+		enable_ui tutorial_hd_frame_a_replay;
+		enable_ui tutorial_hd_frame_b_replay;
+		enable_ui tutorial_hd_frame_d_replay;
+		enable_ui tutorial_hd_frame_e_replay;
+		disable_ui advisor_portrait_button;
+
+		block_unit_selection on player_archers;
+		block_unit_selection on player_general;
+		block_unit_selection on player_triarii;
+		block_unit_selection on player_hastati_1;
+		block_unit_selection on player_hastati_2;
+		click_drag_move off;
+
+		disable_shortcuts true;
+		disable_shortcuts options_button false;
+		disable_shortcuts battle_hud false;
+		disable_shortcuts freelook false;
+		inhibit_camera_input true;
+		console_command invulnerable_general "Flavius Julius";
+		box_drag_selection off;
+		
+
+
+		
+		;; Set camera positions and orientations
+		camera_position 			-150, 120, -300 120, 40, 30;							;; starting (x, y, z) look at (x, y, z)
+		set_camera_bookmark 1, 		0, 50, -350 	120, 0, 30;								;; above player army, looking at Segesta
+		set_camera_bookmark 2,  	30, 60, -340 	40, 15, -170;							;; looking at TriariiPoint
+		set_camera_bookmark 3, 		60, 60, -360 	40, 0, -210;							;; looking at ArchersPoint
+		set_camera_bookmark 4, 		30, 70, -330 	25, 0, -220;							;; looking at HastatiPoint_1
+		set_camera_bookmark 5, 		70, 70, -340 	55, 0, -220;							;; looking at HastatiPoint_2
+		set_camera_bookmark 6, 		130, 70, -340 	70, 10, -190;							;; looking at GeneralPoint
+		set_camera_bookmark 7, 		40, 70, -320 	40, 20, -100;							;; looking at LockFormationPoint
+		set_camera_bookmark 8, 		210, 70, -70 	20, 0, -180;							;; looking at FlankPoint_1
+		set_camera_bookmark 9, 		0, 70, -340 	70, 10, -200;							;; looking at FlankPoint_1
+		set_camera_bookmark 10, 	125, 60, -255 	70, 20, -170;							;; looking at FlankPoint_1
+		set_camera_bookmark 11, 	40, 70, -280 	40, 20, -120;							;; looking at LockFormationPoint
+		set_camera_bookmark 12, 	90, 70, 175 	40, 0, -60;								;; looking at FlankPoint_1
+		set_camera_bookmark 13, 	30, 60, -350 	40, 0, -220;							;; looking at Triarii
+		set_camera_bookmark 14, 	0, 70, -65 		80, 10, -100;							;; looking at barb Archers
+		set_camera_bookmark 15, 	-20, 60, -100 	60, 20, -130;							;; looking at barb Spearmen
+		set_camera_bookmark 16, 	30, 80, 100 	30, 30, -30;							;; looking at Segesta Centre
+
+		monitor_event UnitHasRouted UnitHasRouted barb infantry slave;
+			unit_set_morale barb_spearband firm;
+			unit_unset_morale barb_spearband;
+			terminate_monitor;
+		end_monitor;
+
+		monitor_event UnitHasRouted UnitHasRouted barb archer slave;
+			unit_set_morale barb_archers firm;
+		end_monitor;
+
+		monitor_event UnitHasRouted UnitHasRouted barb peasant slave;
+			unit_set_morale barb_peasants routing;
+			unit_set_morale barb_archers routing;
+		end_monitor;
+
+		monitor_event I_UnitDestroyed I_UnitDestroyed barb_peasants;
+			point_at_unit_pos barb_spearband circle 30;
+			terminate_monitor;
+		end_monitor;
+
+		monitor_event I_PercentageUnitKilled player_triarii > 20;
+			unit_set_fire_at_will_mode barb_archers off;
+			unit_order_halt player_archers;
+			terminate_monitor;
+		end_monitor;
+
+		monitor_event I_PercentageUnitKilled player_general > 20;
+			unit_set_fire_at_will_mode barb_archers off;
+			unit_order_halt player_archers;
+			terminate_monitor;
+		end_monitor;
+
+		unit_set_weapon_upgrade player_general 2;
+		unit_set_weapon_upgrade player_hastati_1 2;
+		unit_set_weapon_upgrade player_hastati_2 2;
+		unit_set_weapon_upgrade player_triarii 2;
+		unit_set_armour_upgrade player_general 3;
+		unit_set_armour_upgrade player_hastati_1 3;
+		unit_set_armour_upgrade player_hastati_2 3;
+		unit_set_armour_upgrade player_triarii 3;
+		unit_set_experience player_general 6;
+		unit_set_experience player_hastati_1 6;
+		unit_set_experience player_hastati_2 6;
+		unit_set_experience player_triarii 6;
+
+		filter_unit_commands off change_formation;
+		filter_unit_commands off change_formation_width_in_men;
+		filter_unit_commands off player_general;
+		filter_unit_commands off player_hastati_1;
+		filter_unit_commands off player_hastati_2;
+		filter_unit_commands off player_triarii;
+		filter_unit_commands off player_archers;
+		filter_unit_commands on change_move_speed;
+		unit_set_skirmish_mode barb_archers off;
+		unit_set_skirmish_mode player_archers off;
+		unit_set_guard_mode barb_archers on;
+		unit_set_fire_at_will_mode player_archers off;
+		restrict_battle_movement circle, label FlankPoint_1, 20;
+		unit_order_move_to_orientation barb_spearband WarbandEndPoint 60 180 0 -270 run;
+		unit_order_move_to_orientation barb_archers ArcherEndPoint 40 180 0 -270 run;
+		unit_order_move_to_orientation barb_peasants PeasantsEndPoint 20 180 0 -270 run;
+
+
+
+		;; Advisor Introduction
+		battle_wait 3;
+		inhibit_camera_input true;
+		battle_wait 1;
+		camera_zoom_to_bookmark 1 60;
+		battle_wait 1;
+		;;inhibit_camera_input false;
+		battle_wait 3;
+		show_ui;
+		advance_advice_thread Advisor_Introduction_1;										;; Message displayed in Marcus' panel
+		enable_cursor;
+		while I_AdvisorSpeechPlaying;
+		end_while;
+		battle_wait 1;
+		ui_flash_start advisor_continue, circle;											;; Highlighter around Continue button
+		while I_AdvisorVisible;																;; Player left-click on the highlighted button
+		end_while;
+		ui_flash_stop advisor_continue;
+		battle_wait 1;
+
+
+
+		;; Moving the camera
+		disable_shortcuts camera::step_l false;
+		disable_shortcuts camera::rot_l_battle false;
+		disable_shortcuts camera::step_r false;
+		disable_shortcuts camera::rot_r_battle false;
+		disable_shortcuts camera::step_fwd false;
+		disable_shortcuts camera::step_bck false;
+		disable_shortcuts camera::cam_down false;
+		disable_shortcuts camera::cam_up false;
+		disable_shortcuts camera::rot_u false;
+		disable_shortcuts camera::rot_d false;
+		disable_ui advisor_continue_type_d;
+		battle_wait 1;
+		advance_advice_thread Moving_The_Camera_1_type_b;									;; Message displayed in Marcus' panel
+		inhibit_camera_input false;
+
+
+
+		;; Pan camera forwards, backwars, left and right
+		declare_counter Completed_Camera_Moves;
+
+		declare_counter StepFWD;
+		monitor_event ShortcutTriggered ShortcutTriggered camera::step_fwd;
+			inc_counter Completed_Camera_Moves 1;
+			inc_counter StepFWD 1;
+			if I_CompareCounter Completed_Camera_Moves = 4;
+				terminate_monitor;
+			end_if;
+		end_monitor;
+
+		declare_counter StepBCK;
+		monitor_event ShortcutTriggered ShortcutTriggered camera::step_bck;
+			inc_counter Completed_Camera_Moves 1;
+			inc_counter StepBCK 1;
+			if I_CompareCounter Completed_Camera_Moves = 4;
+				terminate_monitor;
+			end_if;
+		end_monitor;
+
+		declare_counter StepL;
+		monitor_event ShortcutTriggered ShortcutTriggered camera::step_l;
+			inc_counter Completed_Camera_Moves 1;
+			inc_counter StepL 1;
+			if I_CompareCounter Completed_Camera_Moves = 4;
+				terminate_monitor;
+			end_if;
+		end_monitor;
+
+		declare_counter StepR;
+		monitor_event ShortcutTriggered ShortcutTriggered camera::step_r;
+			inc_counter Completed_Camera_Moves 1;
+			inc_counter StepR 1;
+			if I_CompareCounter Completed_Camera_Moves = 4;
+				terminate_monitor;
+			end_if;
+		end_monitor;
+
+		while I_CompareCounter StepL = 0;
+		end_while;
+		while I_CompareCounter StepR = 0;
+		end_while;
+		while I_CompareCounter StepFWD = 0;
+		end_while;
+		while I_CompareCounter StepBCK = 0;
+		end_while;
+		while I_CompareCounter Completed_Camera_Moves = 4;
+		end_while;
+		battle_wait 0.2;
+		advance_completed_tasks 2;
+
+
+
+		;; Rotate camera left and right
+		declare_counter Completed_Camera_Moves_Rot;
+
+		declare_counter RotL;
+		monitor_event ShortcutTriggered ShortcutTriggered camera::rot_l_battle;
+			inc_counter Completed_Camera_Moves_Rot 1;
+			inc_counter RotL 1;
+			if I_CompareCounter Completed_Camera_Moves_Rot = 2;
+				terminate_monitor;
+			end_if;
+		end_monitor;
+
+		declare_counter RotR;
+		monitor_event ShortcutTriggered ShortcutTriggered camera::rot_r_battle;
+			inc_counter Completed_Camera_Moves_Rot 1;
+			inc_counter RotR 1;
+			if I_CompareCounter Completed_Camera_Moves_Rot = 2;
+				terminate_monitor;
+			end_if;
+		end_monitor;
+
+		while I_CompareCounter RotL = 0;
+		end_while;
+		while I_CompareCounter RotR = 0;
+		end_while;
+		battle_wait 0.2;
+		while I_CompareCounter Completed_Camera_Moves_Rot = 2;
+		end_while;
+		advance_completed_tasks 3;
+
+
+
+		;; Elevate camera up and down
+		declare_counter Completed_Camera_Moves_Elev;
+
+		declare_counter CamUP;
+		monitor_event ShortcutTriggered ShortcutTriggered camera::cam_up;
+			inc_counter Completed_Camera_Moves_Elev 1;
+			inc_counter CamUP 1;
+			if I_CompareCounter Completed_Camera_Moves_Elev = 2;
+				terminate_monitor;
+			end_if;
+		end_monitor;
+
+		declare_counter CamDOWN;
+		monitor_event ShortcutTriggered ShortcutTriggered camera::cam_down;
+			inc_counter Completed_Camera_Moves_Elev 1;
+			inc_counter CamDOWN 1;
+			if I_CompareCounter Completed_Camera_Moves_Elev = 2;
+				terminate_monitor;
+			end_if;
+		end_monitor;
+
+		battle_wait 0.2;
+		while I_CompareCounter CamUP = 0;
+		end_while;
+		while I_CompareCounter CamDOWN = 0;
+		end_while;
+		while I_CompareCounter Completed_Camera_Moves_Elev = 2;
+		end_while;
+		advance_completed_tasks 4;
+
+
+
+		;; Tilt camera up and down
+		declare_counter Completed_Camera_Moves_Tilt;
+
+		declare_counter RotU;
+		monitor_event ShortcutTriggered ShortcutTriggered camera::rot_u;
+			inc_counter Completed_Camera_Moves_Tilt 1;
+			inc_counter RotU 1;
+			if I_CompareCounter Completed_Camera_Moves_Tilt = 2;
+				terminate_monitor;
+			end_if;
+		end_monitor;
+
+		declare_counter RotD;
+		monitor_event ShortcutTriggered ShortcutTriggered camera::rot_d;
+			inc_counter Completed_Camera_Moves_Tilt 1;
+			inc_counter RotD 1;
+			if I_CompareCounter Completed_Camera_Moves_Tilt = 2;
+				terminate_monitor;
+			end_if;
+		end_monitor;
+
+		while I_CompareCounter RotU = 0;
+		end_while;
+		while I_CompareCounter RotD = 0;
+		end_while;
+		battle_wait 0.2;
+		while I_CompareCounter Completed_Camera_Moves_Tilt = 2;
+		end_while;
+		advance_completed_tasks 5;
+		battle_wait 3;
+    	enable_ui advisor_continue_type_d;
+
+
+
+		;; Highlight players unit cards
+		battle_wait 1;
+		advance_advice_thread Your_Unit_Cards_1;											;; Message displayed in Marcus' panel
+		point_at_card unit, slot 0, 0, square, blue 1;
+		point_at_card unit, slot 1, 1, square, blue 1;
+		point_at_card unit, slot 2, 2, square, blue 1;
+		point_at_card unit, slot 3, 3, square, blue 1;
+		point_at_card unit, slot 4, 4, square, blue 1;
+		battle_wait 4;
+		stop_all_point_at_indicators;
+		while I_AdvisorSpeechPlaying;
+		end_while;
+		ui_flash_start advisor_continue, circle;											;; Highlighter around Continue button
+		while I_AdvisorVisible;																;; Player left-click on the highlighted button
+		end_while;
+		ui_flash_stop advisor_continue;
+		battle_wait 0.5;
+
+
+
+		;; Select units
+		disable_shortcuts order_withdraw true;
+		disable_ui order_withdraw true;
+		enable_ui pause_button;
+		enable_ui play_button;
+		advance_advice_thread Select_Units_1_type_b;										;; Message displayed in Marcus' panel
+		stop_all_point_at_indicators;
+		battle_wait 1;
+		enable_ui_card unit, 3;
+		block_unit_selection off player_triarii;
+		;;inhibit_camera_input true;
+		;;battle_wait 1;
+		;;camera_zoom_to_bookmark 13 60;														;; Camera pans to player's army
+		point_at_unit_pos player_triarii circle 30;											;; Highlighter around player's spearmen
+		point_at_card unit, slot 3, 3, square;
+		;;battle_wait 1;
+		;;inhibit_camera_input false;
+		while_not I_UnitSelected player_triarii;
+		end_while;
+		advance_completed_tasks 2;
+		battle_wait 2;
+		stop_all_point_at_indicators;
+		battle_wait 3;
+
+
+
+		;; Move triarii units
+		advance_advice_thread Move_Your_Units_And_Speed_Up_Battle_type_e;
+		advance_completed_tasks 2;
+		disable_ui type_e_advice_left_arrow;
+        disable_ui type_e_advice_right_arrow;
+        enable_ui_card unit, 3;
+		click_drag_move on;
+		filter_unit_commands on player_triarii move;
+		filter_unit_commands on player_triarii move_rot;
+		set_min_formation_width 25;
+		battle_wait 0.1;																	;; Camera pans to location to select
+		;;inhibit_camera_input true;
+		;;battle_wait 1;
+		;;camera_zoom_to_bookmark 2 60;
+		;;battle_wait 1;
+		;;inhibit_camera_input false;
+		;;battle_wait 2;
+		clear_restrict_battle_movement;
+		restrict_battle_movement circle, label TriariiPoint, 30;
+		point_at_location TriariiPoint circle 30;
+		monitor_conditions I_IsUnitMoving player_triarii;
+			advance_completed_tasks 3;
+			terminate_monitor;
+		end_monitor;
+		battle_wait 6;
+		while_not I_UnitDistanceFromPosition player_triarii TriariiPoint < 60;				;; Player right-click on the highlighted spot
+		end_while;
+
+
+
+		;; Increase game battle speed
+		set_advice_page 2;
+		advance_completed_tasks 3;
+		enable_ui half_speed_button;
+		enable_ui ffwd_button;
+		enable_ui ultra_ffwd_button;
+		ui_flash_start ffwd_button, circle;
+		while_not I_UnitDistanceFromPosition player_triarii TriariiPoint < 30;				;; Player right-click on the highlighted spot
+			monitor_event ButtonPressed ButtonPressed ffwd_button;
+				ui_flash_stop ffwd_button;
+				terminate_monitor;
+			end_monitor;
+		end_while;
+		ui_flash_stop ffwd_button;
+		unit_order_move player_triarii TriariiPoint;
+		while_not I_UnitDistanceFromPosition player_triarii TriariiPoint < 10;				;; Player right-click on the highlighted spot
+		end_while;		
+		remove_battle_map_arrow;
+		disable_ui_card unit, 3;
+		battle_wait 2;
+		filter_unit_commands off player_triarii move;
+		filter_unit_commands off player_triarii move_rot;
+		battle_wait 4;
+		unit_order_turn player_triarii 0 absolute;
+		battle_wait 2;
+
+		
+
+		;; Move the first set of hastati units
+		set_advice_page 3;
+		advance_completed_tasks 1;
+		filter_unit_commands on player_hastati_1 move;
+		filter_unit_commands on player_hastati_1 move_rot;
+		set_min_formation_width 20;
+		battle_wait 1;
+		;;inhibit_camera_input true;
+		;;battle_wait 1;
+		;;camera_zoom_to_bookmark 4 60;
+		;;battle_wait 1;
+		;;inhibit_camera_input false;
+		disable_ui_card unit, 4;
+		battle_wait 2;
+		enable_ui_card unit, 1;
+		block_unit_selection on player_triarii;
+		block_unit_selection off player_hastati_1;
+		point_at_unit_pos player_hastati_1 circle 15;										;; Highlighter around hastati_1 units
+		point_at_card unit, slot 1, 1, square;
+		while_not I_UnitSelected player_hastati_1;											;; Player left-click on the highlighted unit
+		end_while;
+		advance_completed_tasks 2;
+		stop_all_point_at_indicators;
+		enable_ui_card unit, 1;
+		battle_wait 2;
+		clear_restrict_battle_movement;
+		restrict_battle_movement circle, label HastatiPoint_1, 15;
+		monitor_conditions I_IsUnitMoving player_hastati_1;
+			advance_completed_tasks 3;
+			terminate_monitor;
+		end_monitor;
+		while_not I_UnitDistanceFromPosition player_hastati_1 HastatiPoint_1 < 15;			;; Player right-click on the highlighted spot
+			point_at_location HastatiPoint_1 circle 15;										;; Point at location hastati_1 units should be moved to
+		end_while;
+		unit_order_move player_hastati_1 HastatiPoint_1;									;; Move units to correct location for the player
+		while_not I_UnitDistanceFromPosition player_hastati_1 HastatiPoint_1 < 10;			;; Player right-click on the highlighted spot
+		end_while;
+		remove_battle_map_arrow;
+		battle_wait 2;
+		filter_unit_commands off player_hastati_1 move;
+		filter_unit_commands off player_hastati_1 move_rot;
+		battle_wait 4;
+		advance_completed_tasks 1;
+		unit_order_turn player_hastati_1 0 absolute;										;; Set correct unit rotation for the player 
+		battle_wait 2;
+		filter_unit_commands on player_hastati_2 move;
+		filter_unit_commands on player_hastati_2 move_rot;
+		battle_wait 1;
+		;;inhibit_camera_input true;
+		;;battle_wait 1;
+		;;camera_zoom_to_bookmark 5 60;
+		;;battle_wait 1;
+		;;inhibit_camera_input false;
+		disable_ui_card unit, 1;
+		battle_wait 2;
+		enable_ui_card unit, 2;
+		block_unit_selection on player_hastati_1;
+
+
+
+		;; Move the second set of hastati units
+		block_unit_selection off player_hastati_2;
+		point_at_unit_pos player_hastati_2 circle 15;										;; Highlighter around hastati_2 units
+		point_at_card unit, slot 2, 2, square;
+		while_not I_UnitSelected player_hastati_2;											;; Player left-click on the highlighted unit
+		end_while;
+		advance_completed_tasks 2;
+		stop_all_point_at_indicators;
+		enable_ui_card unit, 2;
+		battle_wait 2;
+		clear_restrict_battle_movement;
+		restrict_battle_movement circle, label HastatiPoint_2, 15;
+		monitor_conditions I_IsUnitMoving player_hastati_2;
+			advance_completed_tasks 3;
+			terminate_monitor;
+		end_monitor;
+		while_not I_UnitDistanceFromPosition player_hastati_2 HastatiPoint_2 < 15;			;; Player right-click on the highlighted spot
+			point_at_location HastatiPoint_2 circle 15;										;; Point at location hastati_2 units should be moved to
+		end_while;
+		unit_order_move player_hastati_2 HastatiPoint_2;									;; Move units to correct location for the player
+		while_not I_UnitDistanceFromPosition player_hastati_2 HastatiPoint_2 < 10;			;; Player right-click on the highlighted spot
+		end_while;
+		remove_battle_map_arrow;
+		battle_wait 2;
+
+		filter_unit_commands off player_hastati_2 move;
+		filter_unit_commands off player_hastati_2 move_rot;
+		battle_wait 4;
+		unit_order_turn player_hastati_2 0 absolute;										;; Set correct unit rotation for the player 
+		battle_wait 2;
+
+
+
+		;; Move archer units
+		advance_advice_thread Set_A_Formation_type_e;										;; Message (first paragraph) displayed in Marcus' panel
+		advance_completed_tasks 1;
+		filter_unit_commands on player_archers move;
+		filter_unit_commands on player_archers move_rot;
+		set_min_formation_width 45;
+		battle_wait 1;
+		;;inhibit_camera_input true;
+		;;battle_wait 1;
+		;;camera_zoom_to_bookmark 3 60;
+		;;battle_wait 1;
+		;;inhibit_camera_input false;
+		disable_ui_card unit, 3;
+		battle_wait 3;
+		enable_ui_card unit, 4;
+		block_unit_selection on player_hastati_2;
+		block_unit_selection off player_archers;
+		point_at_unit_pos player_archers circle 30;											;; Highlighter archer units
+		point_at_card unit, slot 4, 4, square;
+		while_not I_UnitSelected player_archers;											;; Player left-click on the highlighted unit
+		end_while;
+		advance_completed_tasks 2;
+		unit_order_turn player_hastati_2 0 absolute;
+		stop_all_point_at_indicators;
+		enable_ui_card unit, 4;
+		battle_wait 1;
+		clear_restrict_battle_movement;
+		restrict_battle_movement circle, label ArchersPoint, 30;
+		monitor_conditions I_IsUnitMoving player_archers;
+			advance_completed_tasks 3;
+			terminate_monitor;
+		end_monitor;
+		while_not I_UnitDistanceFromPosition player_archers ArchersPoint < 30;				;; Player right-click on the highlighted spot
+			point_at_location ArchersPoint circle 30;										;; Highlighter around new archers location
+		end_while;
+		unit_order_move player_archers ArchersPoint;										;; Move units to correct location for the player
+		while_not I_UnitDistanceFromPosition player_archers ArchersPoint < 20;				;; Player right-click on the highlighted spot
+		end_while;
+		remove_battle_map_arrow;
+		battle_wait 2;
+		filter_unit_commands off player_archers move;
+		filter_unit_commands off player_archers move_rot;
+		battle_wait 4;
+		unit_order_turn player_archers 0 absolute;											;; Set correct unit rotation for the player 
+		battle_wait 2;
+        filter_unit_commands on player_general move;
+        filter_unit_commands on player_general move_rot;
+        set_min_formation_width 28;
+		set_advice_page 2;																	;; Message (second paragraph) displayed in Marcus' panel
+		advance_completed_tasks 1;
+		;;inhibit_camera_input true;
+		;;battle_wait 1;
+		;;camera_zoom_to_bookmark 6 60;
+		;;battle_wait 1;
+		;;inhibit_camera_input false;
+		disable_ui_card unit, 2;
+		enable_ui_card unit, 0;
+		block_unit_selection on player_archers;
+
+
+
+		;; Move cavalry units (general)
+		block_unit_selection off player_general;
+		point_at_unit_pos player_general circle 20;											;; Highlighter around player's General
+		while_not I_UnitSelected player_general;											;; Player left-click on the highlighted unit
+		end_while;
+		advance_completed_tasks 2;
+		stop_all_point_at_indicators;
+		enable_ui_card unit, 0;
+		battle_wait 2;
+		clear_restrict_battle_movement;
+		restrict_battle_movement circle, label GeneralPoint, 12;
+		monitor_conditions I_IsUnitMoving player_general;
+			advance_completed_tasks 3;
+			terminate_monitor;
+		end_monitor;
+		while_not I_UnitDistanceFromPosition player_general GeneralPoint < 20;				;; Player right-click on the highlighted spot
+			point_at_location GeneralPoint circle 12;										;; Highlighter around new location
+		end_while;
+		unit_order_move player_general GeneralPoint;										;; Move units to correct location for the player
+		while_not I_UnitDistanceFromPosition player_general GeneralPoint < 12;				;; Player right-click on the highlighted spot
+		end_while;
+		remove_battle_map_arrow;
+		battle_wait 2;
+		filter_unit_commands off player_general move;
+		filter_unit_commands off player_general move_rot;
+		battle_wait 4;
+		unit_order_turn player_general 0 absolute;											;; Set correct unit rotation for the player
+		battle_wait 2;
+		block_unit_selection on player_general;
+		enable_ui type_e_advice_left_arrow;
+        enable_ui type_e_advice_right_arrow;
+		battle_wait 2;
+		box_drag_selection on;
+		click_drag_move off;
+
+
+
+		;; Group selected units
+		advance_advice_thread Group_Selected_Units_1_type_b;								;; Message displayed in Marcus' panel
+		;;inhibit_camera_input true;
+		;;battle_wait 1;
+		;;camera_zoom_to_bookmark 9 60;
+		;;battle_wait 1;
+		;;inhibit_camera_input false;
+		filter_unit_commands on change_formation;
+		battle_wait 1;
+		declare_counter GroupButtonPressed;
+		declare_counter TermMonitorCheck;
+		monitor_event ButtonPressed ButtonPressed orders_group;
+			if I_CompareCounter TermMonitorCheck = 1;
+				terminate_monitor;
+			end_if;
+			set_counter GroupButtonPressed 1;
+			enable_all_ui_cards;
+		end_monitor;
+		set_label group_units_label;
+		if_not I_SpecificUnitsSelected player_general player_hastati_1 player_hastati_2 player_triarii player_archers;
+			disable_ui orders_group;
+			point_at_card unit, slot 0, 0, square;
+			point_at_card unit, slot 1, 1, square;
+			point_at_card unit, slot 2, 2, square;
+			point_at_card unit, slot 3, 3, square;
+			point_at_card unit, slot 4, 4, square;
+		end_if;
+		battle_wait 1;
+		block_unit_selection off player_general;
+		block_unit_selection off player_archers;
+		block_unit_selection off player_triarii;
+		block_unit_selection off player_hastati_1;
+		block_unit_selection off player_hastati_2;
+		enable_ui_card unit, 0;
+		enable_ui_card unit, 1;
+		enable_ui_card unit, 2;
+		enable_ui_card unit, 3;
+		enable_ui_card unit, 4;
+		enable_ui battle_unit_card_group;													;; Let the player select all cards by selecting the group tab
+		while_not I_SpecificUnitsSelected player_general player_hastati_1 player_hastati_2 player_triarii player_archers;											;; Player left-click on the highlighted unit
+		end_while;
+		stop_all_point_at_indicators;
+		advance_completed_tasks 2;
+		ui_flash_start orders_group, circle;												;; Highlighter around Group Selected Units button
+		while I_CompareCounter GroupButtonPressed = 0;										;; Player left-click on highlighted button
+			disable_ui orders_group;
+			if I_SpecificUnitsSelected player_general player_hastati_1 player_hastati_2 player_triarii player_archers;
+				enable_ui orders_group;
+			end_if;
+			if_not I_SpecificUnitsSelected player_general player_hastati_1 player_hastati_2 player_triarii player_archers;
+				goto group_units_label;
+			end_if;
+		end_while;
+		set_counter GroupButtonPressed 0;
+		advance_completed_tasks 3;
+		set_counter TermMonitorCheck 1;
+		ui_flash_stop orders_group;
+		disable_ui orders_group;
+		disable_ui lock_button;
+		filter_unit_commands on player_general move;
+		filter_unit_commands on player_general move_rot;
+		filter_unit_commands on player_hastati_1 move;
+		filter_unit_commands on player_general move_rot;
+		filter_unit_commands on player_hastati_2 move;
+		filter_unit_commands on player_general move_rot;
+		filter_unit_commands on player_triarii move;
+		filter_unit_commands on player_general move_rot;
+		filter_unit_commands on player_archers move;
+		filter_unit_commands on player_general move_rot;			
+		enable_ui_card unit, 0;
+		enable_ui_card unit, 1;
+		enable_ui_card unit, 2;
+		enable_ui_card unit, 3;
+		enable_ui_card unit, 4;
+		block_unit_selection off player_general;
+		block_unit_selection off player_archers;
+		block_unit_selection off player_triarii;
+		block_unit_selection off player_hastati_1;
+		block_unit_selection off player_hastati_2;
+		battle_wait 3;
+
+
+
+		;; Lock formation
+		advance_advice_thread Lock_Formation_1_type_b;
+		set_label units_deselect_lock;
+		disable_ui lock_button;
+		if_not I_SpecificUnitsSelected player_general player_hastati_1 player_hastati_2 player_triarii player_archers;
+			point_at_card unit, slot 0, 0, square;
+			point_at_card unit, slot 1, 1, square;
+			point_at_card unit, slot 2, 2, square;
+			point_at_card unit, slot 3, 3, square;
+			point_at_card unit, slot 4, 4, square;
+			battle_wait 3;
+		end_if;
+		enable_ui_card unit, 0;
+		enable_ui_card unit, 1;
+		enable_ui_card unit, 2;
+		enable_ui_card unit, 3;
+		enable_ui_card unit, 4;
+		battle_wait 2;
+		stop_all_point_at_indicators;
+		enable_ui lock_button;															
+		ui_flash_start lock_button, circle;													;; Highlighter around Group Selected Units button
+		declare_counter LockButtonPressed;
+		monitor_event ButtonPressed ButtonPressed lock_button;
+			set_counter LockButtonPressed 1;
+			terminate_monitor;
+		end_monitor;
+		while I_CompareCounter LockButtonPressed = 0;										;; Player left-click on highlighted button
+			if_not I_SpecificUnitsSelected player_general player_hastati_1 player_hastati_2 player_triarii player_archers;
+				if I_CompareCounter LockButtonPressed = 0;
+					goto units_deselect_lock;
+				end_if;
+			end_if;
+		end_while;
+		set_counter LockButtonPressed 0;
+		disable_ui lock_button;
+		advance_completed_tasks 2;
+		ui_flash_stop lock_button;
+		battle_wait 3;
+		filter_unit_commands off player_general run;
+		filter_unit_commands off player_hastati_1 run;
+		filter_unit_commands off player_hastati_2 run;
+		filter_unit_commands off player_triarii run;
+		filter_unit_commands off player_archers run;
+		filter_unit_commands off change_formation;
+		;;ui_card_selection_lock off;
+		
+
+
+		;; Move grouped units forward
+		advance_advice_thread Select_Location_1_type_b;										;; Message displayed in Marcus' panel
+		battle_wait 1;
+		;;inhibit_camera_input true;
+		;;battle_wait 1;
+		;;camera_zoom_to_bookmark 7 60;
+		;;battle_wait 1;
+		;;inhibit_camera_input false;
+		set_label units_deselect_location;
+		if_not I_SpecificUnitsSelected player_general player_hastati_1 player_hastati_2 player_triarii player_archers;
+			point_at_card unit, slot 0, 0, square;
+			point_at_card unit, slot 1, 1, square;
+			point_at_card unit, slot 2, 2, square;
+			point_at_card unit, slot 3, 3, square;
+			point_at_card unit, slot 4, 4, square;
+			battle_wait 2;
+		end_if;
+		enable_ui_card unit, 0;
+		enable_ui_card unit, 1;
+		enable_ui_card unit, 2;
+		enable_ui_card unit, 3;
+		enable_ui_card unit, 4;
+		battle_wait 2;
+		stop_all_point_at_indicators;
+		point_at_location LockFormationPoint circle 15;										;; Highlighter around location
+		clear_restrict_battle_movement;
+		restrict_battle_movement circle, label LockFormationPoint, 20;
+		monitor_conditions I_IsUnitMoving player_general;
+			advance_completed_tasks 2;
+			terminate_monitor;
+		end_monitor;
+		while_not I_UnitDistanceFromPosition player_archers LockFormationPoint < 70;		;; Player right-click on highlighted location
+			if_not I_SpecificUnitsSelected player_general player_hastati_1 player_hastati_2 player_triarii player_archers;
+				if_not I_UnitDistanceFromPosition player_archers LockFormationPoint < 70;
+					goto units_deselect_location;
+				end_if;
+			end_if;
+		end_while;
+		box_drag_selection off;		
+		unit_order_move player_general 110 -200 run;
+		while_not I_UnitDistanceFromPosition player_general 110 -200 < 10;
+		end_while;
+		filter_unit_commands off player_archers move;
+		remove_battle_map_arrow;
+		battle_wait 2;
+		unit_order_turn player_general 0 absolute;
+		unit_order_turn player_hastati_1 0 absolute;
+		unit_order_turn player_hastati_2 0 absolute;
+		unit_order_turn player_triarii 0 absolute;
+		unit_order_turn player_archers 0 absolute;
+		battle_wait 2;
+		block_unit_selection on player_triarii;
+		block_unit_selection on player_hastati_1;
+		block_unit_selection on player_hastati_2;
+		block_unit_selection on player_general;
+		block_unit_selection on player_archers;
+		battle_wait 2;
+
+
+		;; Attack enemy spearband units with player archers
+		advance_advice_thread Attack_Enemy_Unit_1_type_b;									;; Message displayed in Marcus' panel
+		battle_wait 2;
+		;;inhibit_camera_input true;
+		;;battle_wait 1;
+		;;camera_zoom_to_bookmark 11 60;
+		;;battle_wait 1;
+		;;inhibit_camera_input false;
+		disable_ui battle_unit_card_group;			;; Ensure the player can't select the whole group with the tab
+		block_unit_selection off player_archers;
+		point_at_card unit, slot 3, 4, square;
+		point_at_unit_pos player_archers circle 10;											;; Highlighter around player's archers
+		while_not I_UnitSelected player_archers;											;; Player left-click on the highlighted unit
+		end_while;
+		advance_completed_tasks 2;
+		filter_unit_commands on player_archers;
+		filter_unit_commands off player_archers move;
+		stop_all_point_at_indicators;
+		clear_restrict_battle_movement;
+		restrict_battle_movement circle, label WarbandEndPoint, 7;
+		battle_wait 1;
+        point_at_unit_pos barb_spearband circle 5;											;; Highlighter around Enemy spearmen
+        while_not I_IsUnitUnderFire barb_spearband;
+	        if I_UnitDistanceFromPosition player_archers WarbandEndPoint < 75;				;; If player uses 'alt' key for melee attack force ranged attack
+				unit_order_attack_unit player_archers barb_spearband;						;; This prevents player from blocking the progression
+				block_unit_selection on player_archers;
+			end_if;
+		end_while;
+		block_unit_selection on player_archers;
+		advance_completed_tasks 3;
+		stop_all_point_at_indicators;
+		remove_battle_map_arrow;
+		battle_wait 2;
+		stop_all_point_at_indicators;
+
+
+
+		;; Move player cavalry
+		advance_advice_thread Toggle_Speed_Unit_And_Button_type_e;							;; Message displayed in Marcus' panel
+		enable_ui_card unit 0;
+		battle_wait 3;
+		;;inhibit_camera_input true;
+		;;battle_wait 1;
+		;;camera_zoom_to_bookmark 10 60;														;; Camera pans to player's cavalry
+		;;battle_wait 1;
+		;;inhibit_camera_input true;
+		point_at_unit_pos player_general circle 10;											;; Highlighter around player's cavalry
+		point_at_unit_card player_general, square;
+		block_unit_selection off player_general;
+		filter_unit_commands on player_general run;
+		while_not I_UnitSelected player_general;											;; Player left-click on the highlighted unit
+		end_while;
+		advance_completed_tasks 2;
+		ui_flash_stop;
+		battle_wait 2;
+		filter_unit_commands on player_general move;
+		point_at_location FlankPoint_1 circle 10;											;; Highlighter around location (behind the enemy spearmen)
+		;;inhibit_camera_input true;
+		;;battle_wait 1;
+		;;camera_zoom_to_bookmark 8 80;
+		;;battle_wait 1;
+		;;inhibit_camera_input false;
+		clear_restrict_battle_movement;
+		restrict_battle_movement circle, label FlankPoint_1, 11;
+		stop_all_point_at_indicators;
+
+
+
+		;; Toggle unit speed button 
+		monitor_conditions I_IsUnitMoving player_general;
+			battle_wait 1;
+			set_advice_page 2;																;; Message displayed in Marcus' panel
+			advance_completed_tasks 3;
+			ui_flash_start toggle_run, circle;												;; Highlighter around Speed Toggle button
+			enable_ui toggle_run;
+			while I_AdvisorSpeechPlaying;
+			end_while;
+			battle_wait 2;
+			ui_flash_stop toggle_run;
+			terminate_monitor;
+		end_monitor;
+		while_not I_UnitDistanceFromPosition player_general FlankPoint_1 < 30;
+		end_while;
+		remove_battle_map_arrow;
+		battle_wait 2;
+		enable_ui advisor_continue_type_e;
+    	ui_flash_start advisor_continue_type_e, circle;										;; Highlighter around Continue button
+		while I_AdvisorVisible;																;; Player left-click on the highlighted button
+		end_while;																			;; Next advice triggered
+		ui_flash_stop advisor_continue_type_e;
+		disable_ui advisor_continue_type_e;
+		battle_wait 4;
+
+
+
+		;; Cavalry charge attack
+		advance_advice_thread Cavalry_Charge_Attack_1_type_b;								;; Message displayed in Marcus' panel
+		advance_completed_tasks 2;
+		clear_restrict_battle_movement;
+		restrict_battle_movement circle, label ArcherEndPoint, 7;
+		filter_unit_commands on player_general;
+		battle_wait 3;												
+		;;inhibit_camera_input true;
+		;;battle_wait 1;
+		;;camera_zoom_to_bookmark 14 80;														;; Camera pans to enemy archers
+		;;battle_wait 1;
+		;;inhibit_camera_input false;
+		point_at_unit_pos barb_archers circle 7;											;; Highlighter around enemy archers unit
+		monitor_conditions I_IsUnitMoving player_general;
+			advance_completed_tasks 3;
+			terminate_monitor;
+		end_monitor;
+		while_not I_IsUnitEngagedWithUnit player_general barb_archers;						;; Player right-click on the highlighted unit
+		end_while;
+		stop_all_point_at_indicators;
+		battle_wait 1;
+		block_unit_selection on player_general;
+
+
+
+		;; Select players hastati units
+		advance_advice_thread How_To_Use_Troops_1_type_b;									;; Message displayed in Marcus' panel
+		battle_wait 3;
+		declare_counter hastati_moving;
+		set_label attack_with_hastati;
+		ui_card_selection_lock off;
+		point_at_card unit, slot 0, 1, square;
+		point_at_card unit, slot 1, 2, square;
+		block_unit_selection off player_hastati_1;
+		block_unit_selection off player_hastati_2;
+		while_not I_SpecificUnitsSelected player_hastati_1 player_hastati_2;				;; Player left click on the highlighted units
+		end_while;
+		advance_completed_tasks 2;
+		filter_unit_commands on player_hastati_1;
+		filter_unit_commands on player_hastati_2;
+		filter_unit_commands off barb_archers;														
+		;;inhibit_camera_input true;
+		;;battle_wait 1;
+
+
+
+		;; Attack with players hastati units
+		;;camera_zoom_to_bookmark 15 60;														;; Camera pans to enemy spearmen
+		;;battle_wait 1;
+		;;inhibit_camera_input false;
+		clear_restrict_battle_movement;	
+		restrict_battle_movement circle, label WarbandEndPoint, 12;														
+		point_at_unit_pos barb_spearband circle 10;											;; Highlighter around Enemy spearmen
+		ui_flash_start toggle_run, circle;
+		monitor_conditions I_IsUnitMoving player_hastati_1 and not I_IsUnitMoveFastSet player_hastati_1;
+			set_counter hastati_moving 1;
+			ui_flash_stop toggle_run;
+			stop_all_point_at_indicators;
+			terminate_monitor;
+		end_monitor;
+		unit_order_turn player_hastati_1 0 absolute;
+		battle_wait 2;
+		declare_counter hastati_idle;
+		while I_CompareCounter hastati_idle = 0;
+			if_not I_IsUnitIdle player_hastati_1;
+				set_counter hastati_idle 1;
+			end_if;
+			if_not I_IsUnitIdle player_hastati_2;
+				set_counter hastati_idle 1;
+			end_if;
+		end_while;
+		advance_completed_tasks 3;
+		ui_card_selection_lock off;
+		remove_battle_map_arrow;
+		battle_wait 6;
+		declare_counter enemy_defeated;
+		while I_CompareCounter enemy_defeated = 0;											;; Progress when the enemy spearband has been destroyed
+			if I_IsUnitRouting barb_spearband;
+				set_counter enemy_defeated 1;
+			end_if;
+			if I_UnitDestroyed barb_spearband;
+				set_counter enemy_defeated 1;
+			end_if;
+		end_while;
+		
+
+		;; Select all units
+		advance_advice_thread Select_All_Button_1_type_b;									;; Message displayed in Marcus' panel
+		filter_unit_commands on player_triarii;
+		block_unit_selection off player_archers;
+		block_unit_selection off player_triarii;
+		block_unit_selection off player_general;
+		battle_wait 3;
+		enable_ui feral_select_all_units;
+		ui_flash_start feral_select_all_units, circle;										;; Highlighter around Select All button
+		disable_shortcuts false;
+		disable_shortcuts order_withdraw true;
+		while_not I_SpecificUnitsSelected player_hastati_1 player_hastati_2 player_triarii player_general player_archers;								;; Player left click on the highlighted units
+		end_while;
+		disable_shortcuts true;
+		disable_shortcuts options_button false;
+		disable_shortcuts battle_hud false;
+		disable_shortcuts freelook false;
+		disable_shortcuts order_withdraw true;
+		disable_shortcuts camera::step_l false;
+		disable_shortcuts camera::rot_l_battle false;
+		disable_shortcuts camera::step_r false;
+		disable_shortcuts camera::rot_r_battle false;
+		disable_shortcuts camera::step_fwd false;
+		disable_shortcuts camera::step_bck false;
+		disable_shortcuts camera::cam_down false;
+		disable_shortcuts camera::cam_up false;
+		disable_shortcuts camera::rot_u false;
+		disable_shortcuts camera::rot_d false;
+		advance_completed_tasks 2;
+		clear_restrict_battle_movement;
+		ui_flash_stop feral_select_all_units;												;; All troops selected
+		stop_all_point_at_indicators;
+		monitor_conditions not I_UnitSelected player_general;
+			ui_flash_start feral_select_all_units, circle;									;; Highlighter around Select All button
+			declare_counter SelectAllPressed;
+			monitor_event ButtonPressed ButtonPressed feral_select_all_units;
+			set_counter SelectAllPressed 1;
+				terminate_monitor;
+			end_monitor;
+			while I_CompareCounter SelectAllPressed = 0;									;; Player left click on the highlighted button
+			end_while;
+			set_counter SelectAllPressed 0;
+			ui_flash_stop feral_select_all_units;
+			terminate_monitor;
+		end_monitor;
+		battle_wait 1;
+
+
+
+		;; Attack enemy peasants
+		point_at_unit_pos barb_peasants circle 30;
+		inhibit_camera_input true;
+		battle_wait 1;
+		camera_zoom_to_bookmark 16 80;														;; Camera pans to enemy spearmen
+		battle_wait 1;
+		inhibit_camera_input false;	
+		monitor_conditions I_IsUnitMoving player_general;
+			advance_completed_tasks 3;
+			unit_order_attack_unit barb_peasants player_general;
+			terminate_monitor;
+		end_monitor;
+		while_not I_IsUnitEngaged barb_peasants;											;; Player double right-click on the highlighted units
+		end_while;
+		battle_wait 4;
+		stop_all_point_at_indicators;
+		unit_set_morale barb_spearband routing;
+		unit_unset_morale barb_archers;
+		unit_unset_morale barb_peasants;
+
+
+
+		;; Enemy defeated, tutorial complete
+		ui_flash_start conditions_complete_quit_button, square;
+		declare_counter ConditionsMet;
+		monitor_event ButtonPressed ButtonPressed conditions_complete_quit_button;
+			set_counter ConditionsMet 1;
+			terminate_monitor;
+		end_monitor;
+		monitor_event ButtonPressed ButtonPressed conditions_complete_continue_button;		;; Ensuring that enemies don't run off after continuing the battle
+			unit_set_morale barb_spearband firm;
+			unit_set_morale barb_archers firm;
+			unit_set_morale barb_peasants firm;
+			unit_order_attack_unit barb_spearband player_hastati_1 run;
+			unit_order_attack_unit player_hastati_1 barb_spearband run;
+			unit_order_move barb_archers WarbandEndPoint;
+			unit_order_attack_unit barb_peasants player_general run;
+			terminate_monitor;
+		end_monitor;
+
+
+
+		;; End game scroll open
+		monitor_event ScrollDidOpen ScrollDidOpen conditions_complete_scroll;
+			stop_all_point_at_indicators;
+			remove_battle_map_arrow;
+			enable_ui conditions_complete_quit_button;
+			enable_ui conditions_complete_continue_button;
+			ui_flash_start conditions_complete_quit_button, square;
+			ui_flash_start post_battle_stats_show_results_button, circle;
+			terminate_monitor;
+		end_monitor;
+		while I_CompareCounter ConditionsMet = 0;
+		end_while;
+		enable_entire_ui;
+
+
+
+		;; Battle results screen
+		declare_counter SegestaResultButtonPressed;
+		monitor_event ButtonPressed ButtonPressed post_battle_stats_show_results_button;
+			set_counter SegestaResultButtonPressed 1;
+			terminate_monitor;
+		end_monitor;
+		monitor_event ScrollOpened ScrollOpened post_battle_scroll;
+			enable_ui post_battle_scroll;
+			enable_ui post_battle_stats_show_results_button;
+			ui_flash_start post_battle_stats_show_results_button;							;; Highlighter around Continue button
+			terminate_monitor;
+		end_monitor;
+		while I_CompareCounter SegestaResultButtonPressed = 0;
+		end_while;
+		enable_entire_ui;
+		ui_flash_stop post_battle_stats_show_results_button;
+		ui_flash_stop conditions_complete_quit_button;

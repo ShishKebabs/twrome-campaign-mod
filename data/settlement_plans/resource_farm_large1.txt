@@ -1,0 +1,29 @@
+plan
+
+{
+	floor		farm_large1_underlay.cas farm_large1_overlay.cas
+	ground_types	ground_no_grass.tga	-64,	-64,	64,	64
+	borders		border_limits_64m_diameter.CAS
+
+
+;		x,		y,	rot,	z,
+
+roman_governors_villa	0	0	-173	0
+
+tree_A,			-54.2	-55	15	0
+tree_A,			-54	-86	30	0
+tree_A,			-54.4	-140	45	-1.15
+tree_A,			-54	-172	60	-3.35
+tree_A,			-54.7	-231	75	-9.30
+tree_A,			-54	-284	15	-11.75	
+tree_A,			-21.4	-284.3	65	-11.75
+tree_A,			15	-284	90	-11.75
+tree_A,			54.3	-284	120	-11.75
+tree_A,			54.1	-231	145	-9.3
+tree_A,			54	-201	180	-6.2
+tree_A,			54.4	-172	210	-3
+tree_A,			54	-135	235	-.6
+tree_A,			54	-55	250	-3.13
+tree_A,			54	-54	235	
+
+}

@@ -1,0 +1,66 @@
+// Spy
+SPYING_BASE_CHANCE                                 :: 0.25
+SECRET_CHARACTER_IN_ARMY                           :: 0.5
+SPY_LEVEL_MODIFIER_NOT_A_SPY                       :: 0.5
+SPY_WITHIN_SETTLEMENT_TARGET                       :: 5.0
+SPY_ALLIANCE_MODIFIER                              :: 1.5
+HIDDEN_DETECTION_BASE_CHANCE                       :: 0.18
+MAX_CHANCE_WHEN_SPYING_FROM_AFAR                   :: 95
+
+// Assassins
+ASSASSINATION_BASE_CHANCE                          :: 0.16
+ASSASSINATION_TARGET_IS_GENERAL_OR_GOVERNOR        :: 0.5
+ASSASSINATION_TARGET_IN_ARMY_OR_SETTLEMENT         :: 0.7
+ASSASSINATION_TARGET_IS_AGENT                      :: 2.0
+BASE_DEATH_CHANCE                                  :: 0.2
+HIDDEN_AGENT_DEATH_CHANCE                          :: 0.2
+SPOTTED_CHANCE                                     :: 33.0
+
+// Sabotage
+SABOTAGE_BASE_CHANCE                               :: 0.2
+BUILDING_DEFENCE_MODIFIER                          :: 1.0
+
+// Bribery
+BASE_COST_NAMED_CHARACTER                          :: 7500
+BASE_COST_AGENT                                    :: 800
+CULTURE_COST_MODIFIER                              :: 2
+UNIT_RECRUITMENT_MODIFIER                          :: 2
+BRIBERY_CHARACTER_BASE_CHANCE                      :: 0.4
+CULTURE_CHANCE_MODIFIER                            :: 0.66
+BRIBERY_POPULATION_BASE_CHANCE                     :: 0.8
+BASE_COST_SETTLEMENT                               :: 3000
+POPULATION_COST_MODIFIER                           :: 0.05
+FACTION_CASHFLOW_INFLATION_MODIFIER                :: 40000
+
+// Acquisition
+ACQUISITION_BASE_CHANCE                            :: 33.0
+ACQUISITION_LEVEL_MODIFIER                         :: 1.0
+ACQUISITION_ATTACK_TRADE_RIGHTS_MODIFIER           :: 1.4
+ACQUISITION_DEFENCE_TRADE_RIGHTS_MODIFIER          :: 0.7
+ACQUISITION_CHANCE_MIN                             :: 1
+ACQUISITION_CHANCE_MAX                             :: 95
+MC_MIN_SURVIVAL_ACQUIRE                            :: 75
+MC_MIN_REBEL_SURVIVAL_ACQUIRE                      :: 50
+
+// Trade
+MC_DB_BASE_INCOME_MODIFIER                         :: 0.5
+MC_DB_TRADE_BONUS_OFFSET                           :: 10.0
+MERCHANT_BASE_INCOME                               :: 50
+MERCHANT_BASE_FEE                                  :: 30
+MERCHANT_NO_AGREEMENT_MULTIPLIER                   :: 0.1
+MERCHANT_EXCLUSIVITY_MULTIPLIER                    :: 1.5
+MERCHANT_DISTANCE_MULTIPLIER                       :: 0.15
+SETTLEMENT_MERCHANT_TOTAL_MAXIMUM                  :: 20
+MERCHANT_LEVEL_INCOME_PERCENTAGE                   :: 7
+MERCHANT_BASE_INCOME_PERCENTAGE                    :: 30
+
+// Merchant AI
+ALLY_RESOURCE_WEIGHT_MODIFIER                      :: -0.5
+SUSPICIOUS_RESOURCE_WEIGHT_MODIFIER                :: -0.25
+NEUTRAL_RESOURCE_WEIGHT_MODIFIER                   :: 0.0
+HOSTILE_RESOURCE_WEIGHT_MODIFIER                   :: 0.5
+AT_WAR_RESOURCE_WEIGHT_MODIFIER                    :: 1.0
+
+// Rebel Merchants
+REBEL_MERCHANT_LIMIT                               :: 30
+REBEL_MERCHANT_SPAWN_CHANCE                        :: 5.0

@@ -1,0 +1,351 @@
+script
+
+;;;;*************************************************************************************************
+;;; Player enters map. 	
+;;; We start the camera where we want. 	
+;;; The camera moves over to Alexander.
+;;;;*************************************************************************************************
+
+; ***************************************************************************************************
+;	COUNTERS
+; ***************************************************************************************************
+
+				declare_counter strat_start
+
+				declare_counter strat_outro
+
+;****************************************************************************************************
+;****************************************************************************************************
+;****************************************ESCAPE KEY HANDLER *****************************************
+;****************************************************************************************************
+;****************************************************************************************************
+
+;				Allows user to skip intro and start the campaign by pressing the ESC key
+
+				steal_esc_key
+
+			monitor_event EscPressed TrueCondition
+				set_counter strat_start 1
+				terminate_monitor
+			end_monitor
+
+
+;****************************************************************************************************
+;***************Start of campaign - STRATSTART MONITOR	(Transfer control to player)*****************
+;***************Start of campaign - STRATSTART MONITOR	(Transfer control to player)*****************
+;***************Start of campaign - STRATSTART MONITOR	(Transfer control to player)*****************
+;****************************************************************************************************
+
+			monitor_conditions I_CompareCounter strat_start = 1				
+				snap_strat_camera 11, 49
+				zoom_strat_camera 0.0
+				filter_all_ui_commands on
+				enable_entire_ui
+				disable_shortcuts false		
+				inhibit_camera_input false
+				enable_cursor
+				steal_esc_key off
+				show_ui
+				hide_all_revealed_tiles
+				suspend_unscripted_advice false
+				stop_sound_event Alexander_campaign_intro_01_tag
+				stop_sound_event Alexander_campaign_intro_02_tag
+				stop_sound_event Alexander_campaign_intro_03_tag
+				stop_sound_event Alexander_campaign_intro_04_tag
+				stop_sound_event Alexander_campaign_intro_05_tag
+				stop_sound_event Alexander_campaign_intro_06_tag
+				stop_sound_event Alexander_campaign_intro_07_tag
+				stop_sound_event Alexander_campaign_intro_08_tag
+				stop_sound_event Alexander_campaign_intro_09_tag
+				stop_sound_event Alexander_campaign_intro_10_tag
+				;;console_command kill_army "Nicanor of Messene" dont_show_death_anim
+				;;console_command kill_army "Cleander of Nicaea" dont_show_death_anim
+				character_flash_stop Alexander
+				settlement_flash_stop Sparta
+				;set_counter strat_outro 1
+				;terminate_prologue
+				terminate_script
+				terminate_monitor
+			end_monitor
+
+
+;****************************************************************************************************
+;***************end of campaign - STRATEND MONITOR	(Take control from player)*******************
+;***************end of campaign - STRATEND MONITOR	(Take control from player)*******************
+;***************end of campaign - STRATEND MONITOR	(Take control from player)*******************
+;****************************************************************************************************
+
+			;monitor_event GeneralCaptureSettlement FactionType macedon
+				;and SettlementName Halicarnassus
+
+				;set_counter strat_outro 1
+
+				;terminate_monitor
+			;end_monitor
+
+			monitor_event GeneralCaptureSettlement SettlementName Halicarnassus
+
+				set_counter strat_outro 1
+
+				terminate_monitor
+			end_monitor
+
+			monitor_conditions I_CompareCounter strat_outro = 1
+
+				zoom_strat_camera 0.0
+				move_strat_camera 119, 23		:Hydaspes
+
+				terminate_monitor
+			end_monitor
+
+
+;****************************************************************************************************
+;****************************************************************************************************
+;*****************************************Intro Sequence*********************************************
+;****************************************************************************************************
+;****************************************************************************************************
+
+
+;				Start_of_first_turn
+
+				;declare_prologue
+				disable_cursor
+				disable_shortcuts true
+				inhibit_camera_input true
+				disable_shortcuts advisor_portrait_button false
+				suspend_unscripted_advice true
+				disable_entire_ui
+				filter_all_ui_commands off
+
+				hide_ui
+
+				;; JNF 2021-01-28 - This is broken in the original game, so just remove it in HD
+				;;set_music_state tension
+
+				snap_strat_camera 11, 58
+
+				campaign_wait 3
+
+				play_sound_event	ALEXANDER_CAMPAIGN_INTRO_SPEECH_01		tag = Alexander_campaign_intro_01_tag
+
+				zoom_strat_camera 0.0
+				move_strat_camera 11, 58		;Center camera on Alexander (1)
+
+				campaign_wait 2
+
+				;; PZ 09-Mar-2021 Moving the initial character highlight from Alexander as a fix for for fbug://RHD-8956
+				character_flash_start Admiral Assandros
+				campaign_wait 0.01
+				character_flash_stop Admiral Assandros
+
+				character_flash_start Alexander
+
+				campaign_wait 1.8
+
+				character_flash_stop Alexander
+
+				campaign_wait 2
+				;; JNF 2021-04-21 - Fix overlapping voiceover on chinese intro
+				if 		LangIs zh_CN
+					campaign_wait 2
+				end_if
+
+				;;spawn_army 
+				;;faction Macedon 
+				;;character Nicanor of Messene, general, age 20, x 7, y 43
+				;;unit		hoplites				exp 0 armour 0 weapon_lvl 0
+				;;end
+				
+				;;spawn_army 
+				;;faction Slave sub_faction Macedon
+				;;character Cleander of Nicaea, general, age 20, x 8, y 43
+				;;unit		hoplites				exp 0 armour 0 weapon_lvl 0
+				;;end
+
+				move_strat_camera 9, 48		;Move camera focus to Greece
+				zoom_strat_camera 0.0
+
+				play_sound_event	ALEXANDER_CAMPAIGN_INTRO_SPEECH_02		tag = Alexander_campaign_intro_02_tag
+
+				campaign_wait 1
+
+				;;console_command kill_army "Cleander of Nicaea"
+				
+				campaign_wait 7
+				;; JNF 2021-04-21 - Fix overlapping voiceover on chinese intro
+				if 		LangIs zh_CN
+					campaign_wait 8
+				end_if
+
+				;; PZ 09-Mar-2021 Moving the initial settlement highlight from Sparta as a fix for fbug://RHD-8956
+				settlement_flash_start Halicarnassus					
+				campaign_wait 0.01
+				settlement_flash_stop Halicarnassus
+
+				settlement_flash_start Sparta
+
+				play_sound_event	ALEXANDER_CAMPAIGN_INTRO_SPEECH_03		tag = Alexander_campaign_intro_03_tag
+
+				campaign_wait 1.9
+
+				settlement_flash_stop Sparta
+
+				campaign_wait 2
+				;; JNF 2021-04-21 - Fix overlapping voiceover on chinese intro
+				if 		LangIs zh_CN
+					campaign_wait 2
+				end_if
+
+				play_sound_event	ALEXANDER_CAMPAIGN_INTRO_SPEECH_04		tag = Alexander_campaign_intro_04_tag
+
+				zoom_strat_camera 1.0
+				
+				;; JNF 2021-04-24 - fbug://RHD-10864, reduce the speed of the camera here
+				move_strat_camera 76, 28, 1.0
+
+				campaign_wait 1
+
+				snap_strat_camera 29, 33
+				zoom_strat_camera 1.0
+
+				campaign_wait 1
+				;; JNF 2021-04-21 - Fix overlapping voiceover on chinese intro
+				if 		LangIs zh_CN
+					campaign_wait 4
+				end_if
+
+				reveal_tile 23, 26
+
+				reveal_tile 26, 27
+
+				reveal_tile 28, 27
+
+				reveal_tile 32, 28
+
+				reveal_tile 35, 31
+
+				play_sound_event	ALEXANDER_CAMPAIGN_INTRO_SPEECH_05		tag = Alexander_campaign_intro_05_tag
+
+				campaign_wait 7
+				;; JNF 2021-04-21 - Fix overlapping voiceover on chinese intro
+				if 		LangIs zh_CN
+					campaign_wait 3
+				end_if
+
+				hide_all_revealed_tiles
+
+				settlement_flash_start Halicarnassus
+
+				play_sound_event	ALEXANDER_CAMPAIGN_INTRO_SPEECH_06		tag = Alexander_campaign_intro_06_tag
+
+				campaign_wait 1
+
+				settlement_flash_stop Halicarnassus
+
+				reveal_tile 40, 39			;Reveal Issus
+
+				campaign_wait 1
+
+				reveal_tile 39, 29			;Reveal Tyre
+
+				campaign_wait 1
+
+				reveal_tile 23, 23			:Reveal Rhioctis
+
+				campaign_wait 6
+				;; JNF 2021-04-21 - Fix overlapping voiceover on chinese intro
+				if 		LangIs zh_CN
+					campaign_wait 5
+				end_if
+
+				play_sound_event	ALEXANDER_CAMPAIGN_INTRO_SPEECH_07		tag = Alexander_campaign_intro_07_tag
+
+				campaign_wait 10
+				;; JNF 2021-04-21 - Fix overlapping voiceover on chinese intro
+				if 		LangIs zh_CN
+					campaign_wait 4
+				end_if
+
+				hide_all_revealed_tiles
+
+				play_sound_event	ALEXANDER_CAMPAIGN_INTRO_SPEECH_08		tag = Alexander_campaign_intro_08_tag
+
+				campaign_wait 2
+
+				zoom_strat_camera 1.0
+				move_strat_camera 107, 45
+
+				campaign_wait 4
+				;; JNF 2021-04-21 - Fix overlapping voiceover on chinese intro
+				if 		LangIs zh_CN
+					campaign_wait 3
+				end_if
+
+				;;console_command kill_army "Nicanor of Messene" dont_show_death_anim
+
+				play_sound_event	ALEXANDER_CAMPAIGN_INTRO_SPEECH_09		tag = Alexander_campaign_intro_09_tag
+
+				campaign_wait 3
+
+				zoom_strat_camera 1.0
+				move_strat_camera 107, 25
+
+				campaign_wait 2
+				;; JNF 2021-04-21 - Fix overlapping voiceover on chinese intro
+				if 		LangIs zh_CN
+					campaign_wait 3
+				end_if
+
+				play_sound_event	ALEXANDER_CAMPAIGN_INTRO_SPEECH_10		tag = Alexander_campaign_intro_10_tag
+
+				reveal_tile 115, 40			;Reveal Bactria
+				reveal_tile 89, 41			;Reveal Nisa
+				reveal_tile 80, 33			;Reveal Ecbatana
+				reveal_tile 63, 28			;Reveal Babylon
+				reveal_tile 28, 15			;Reveal Memphis
+				reveal_tile 23, 23			;Reveal Rhyoctis
+				reveal_tile 39, 29			;Reveal Tyre
+				reveal_tile 40, 39			;Reveal Issus
+
+				zoom_strat_camera 1.0
+				move_strat_camera 31, 25
+
+				zoom_strat_camera 0.0
+				move_strat_camera 11, 49		:Camera moves back to Alexander
+
+				;; JNF 2021-04-21 - Fix overlapping voiceover on chinese intro
+				if 		LangIs zh_CN
+					campaign_wait 3
+				end_if
+
+				hide_all_revealed_tiles
+
+				stop_sound_event Alexander_campaign_intro_01_tag
+				stop_sound_event Alexander_campaign_intro_02_tag
+				stop_sound_event Alexander_campaign_intro_03_tag
+				stop_sound_event Alexander_campaign_intro_04_tag
+				stop_sound_event Alexander_campaign_intro_05_tag
+				stop_sound_event Alexander_campaign_intro_06_tag
+				stop_sound_event Alexander_campaign_intro_07_tag
+				stop_sound_event Alexander_campaign_intro_08_tag
+				stop_sound_event Alexander_campaign_intro_09_tag
+				stop_sound_event Alexander_campaign_intro_10_tag
+
+				set_counter strat_start 1
+
+				filter_all_ui_commands on
+				enable_entire_ui
+				disable_shortcuts false		
+				inhibit_camera_input false
+				enable_cursor
+        steal_esc_key off
+				show_ui
+				suspend_unscripted_advice false
+
+				;terminate_prologue
+				terminate_script
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;					THE END OF THE SCRIPT
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+end_script

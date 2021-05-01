@@ -1,0 +1,87 @@
+{
+	"tooltip": {
+		"x": -140,
+		"y": 4,
+		"width": 350,
+		"height": 68
+	},
+	"frames": [
+		{
+			"size": {
+				"fullscreen":true
+			},
+			"priority": -1,
+			"fill": "black_curved"
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": -28
+			},
+			"size": {
+				"width": 600,
+				"height": 410
+			},
+			"priority": -1,
+			"fill": "black_curved",
+			"anchor": "C",
+			"align": "C",
+			"scale_width":true,
+			"notch_right_resize":true,
+			"notch_left_resize":true
+		}
+	],
+	"list": [
+		{
+			"name": "gesture_list",
+			"x": 0,
+			"y": -30,	
+			"size" : {
+				"width" : 585,
+				"height": 400
+			},
+			"anchor": "C",
+			"align": "C",
+			"scale_width":true,
+			"notch_right_resize":true,
+			"notch_left_resize":true
+		},
+			{
+			"name": "movie",
+			"x": 160,
+			"y": 80,
+			"size" : {
+				"width" : 540,
+				"height": 360
+			}
+		},
+		{
+			"name": "close_button",
+			"x": -4,
+			"y": -4,
+			"size": {
+				"width": 72,
+				"height": 72
+			},
+			"align": "BR",
+			"anchor": "BR",
+			"scale_x_pos":true,
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			}
+		},
+		{
+			"name": "help_button",
+			"x": 90,
+			"y": -650
+		},
+        {
+			"name": "advisor",
+			"x": -100,
+			"y": -100
+		}
+	]
+}

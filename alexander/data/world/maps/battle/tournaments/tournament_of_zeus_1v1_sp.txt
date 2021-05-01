@@ -1,0 +1,8 @@
+tournament_name	tournament_of_zeus
+
+
+custom/Granicus
+custom/Halicarnassus
+custom/Issus
+custom/Gaugamela
+custom/Hydaspes

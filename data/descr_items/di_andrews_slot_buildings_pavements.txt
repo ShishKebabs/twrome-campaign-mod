@@ -1,0 +1,96 @@
+type		pavement_roman_trader
+lod
+max_distance	4000
+model_rigid	pavement_roman_trader.cas
+
+
+type		pavement_roman_blacksmith
+lod
+max_distance	4000
+model_rigid	pavement_roman_blacksmith.cas
+
+
+type		pavement_cavalry_barracks
+lod
+max_distance	4000
+model_rigid	pavement_cavalry_barracks.cas
+
+
+type		pavement_roman_marketplace
+lod
+max_distance	4000
+model_rigid	pavement_roman_marketplace.cas
+
+
+type		pavement_great_forum_with_curia
+lod
+max_distance	4000
+model_rigid	pavement_great_forum_with_curia.cas
+
+
+;** new
+
+
+type		pavement_pantheon
+lod
+max_distance	4000
+model_rigid	pavement_pantheon.cas
+
+
+type		pavement_roman_pro-consuls_palace
+lod
+max_distance	4000
+model_rigid	pavement_roman_pro-consuls_palace.cas
+
+
+type		pavement_greek_pro-consuls_palace
+lod
+max_distance	4000
+model_rigid	pavement_greek_pro-consuls_palace.cas
+
+
+type		pavement_greek_merchants_quarter
+lod
+max_distance	4000
+model_rigid	pavement_greek_merchants_quarter.cas
+
+
+
+type		pavement_greek_large_marketplace
+lod
+max_distance	4000
+model_rigid 	pavement_greek_large_marketplace.cas
+
+
+type		pavement_greek_marketplace
+lod
+max_distance	4000
+model_rigid	pavement_greek_marketplace.cas
+
+
+type		pavement_eastern_hippodrome
+lod
+max_distance	4000
+model_rigid	pavement_eastern_hippodrome.cas
+
+
+
+type		pavement_eastern_cavalry_barracks
+lod
+max_distance	4000
+model_rigid	pavement_eastern_cavalry_barracks.cas
+
+
+
+type		pavement_egyptian_shrine_andrews
+lod
+max_distance	4000
+model_rigid	pavement_egyptian_shrine_andrews.cas
+
+
+
+type		pavement_forum
+lod
+max_distance	4000
+model_rigid	pavement_forum.cas
+

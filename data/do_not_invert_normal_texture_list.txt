@@ -1,0 +1,3 @@
+data/models_building/textures/##wheat_gold.tga
+data/models_building/textures/##wheat_green.tga
+data/models_building/textures/##wheat_brown.tga

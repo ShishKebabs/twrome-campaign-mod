@@ -1,0 +1,14 @@
+plan
+
+{
+
+floor	ruins_2_underlay.CAS	ruins_2_overlay.CAS
+
+	ground_types	ground_default_grass.tga	-64,	-64,	64,	64	
+	borders	border_limits_64m_diameter.CAS
+	
+ruins_2,		0,	0,	0,	0
+
+
+
+	}

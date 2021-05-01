@@ -1,0 +1,458 @@
+type	roman_ruins
+lod
+max_distance	400
+model_rigid	roman_ruins_high.CAS
+lod
+max_distance	800
+model_rigid	roman_ruins_low.CAS
+
+type	ruins_2
+lod
+max_distance	200
+model_rigid	ruins_2_high.CAS
+lod
+max_distance	400
+model_rigid	ruins_2_med.CAS
+lod
+max_distance	800
+model_rigid	ruins_2_low.CAS
+
+type	abandoned_house
+lod
+max_distance	400
+model_rigid	abandoned_house_high.CAS
+lod
+max_distance	800
+model_rigid	abandoned_house_low.CAS
+
+type	abandoned_house_2
+lod
+max_distance	200
+model_rigid	abandoned_house_2_high.CAS
+lod
+max_distance	400
+model_rigid	abandoned_house_2_med.CAS
+lod
+max_distance	800
+model_rigid	abandoned_house_2_low.CAS
+
+type	hayfield_new
+lod
+max_distance	200
+model_rigid	hay_field_new_high.CAS
+lod
+max_distance	400
+model_rigid	hay_field_new_med.CAS
+lod
+max_distance	800
+model_rigid	hay_field_new_low.CAS
+
+type	barb_ruins
+lod
+max_distance	200
+model_rigid	barb_ruins_high.CAS
+lod
+max_distance	400
+model_rigid	barb_ruins_med.CAS
+lod
+max_distance	800
+model_rigid	barb_ruins_low.CAS
+
+type	barb_ruins_01
+lod
+max_distance	200
+model_rigid	barb_ruins_01_high.CAS
+lod
+max_distance	400
+model_rigid	barb_ruins_01_med.CAS
+lod
+max_distance	800
+model_rigid	barb_ruins_01_low.CAS
+
+type	barb_ruins_02
+lod
+max_distance	200
+model_rigid	barb_ruins_02_high.CAS
+lod
+max_distance	400
+model_rigid	barb_ruins_02_med.CAS
+lod
+max_distance	800
+model_rigid	barb_ruins_02_low.CAS
+
+type	barb_ruins_03
+lod
+max_distance	200
+model_rigid	barb_ruins_03_high.CAS
+lod
+max_distance	400
+model_rigid	barb_ruins_03_med.CAS
+lod
+max_distance	800
+model_rigid	barb_ruins_03_low.CAS
+
+type	barb_ruins_04
+lod
+max_distance	200
+model_rigid	barb_ruins_04_high.CAS
+lod
+max_distance	400
+model_rigid	barb_ruins_04_med.CAS
+lod
+max_distance	800
+model_rigid	barb_ruins_04_low.CAS
+
+type	 eastern_blacksmith_ruin
+lod
+max_distance	200
+model_rigid	eastern_blacksmith_ruin_high.CAS
+lod
+max_distance	400
+model_rigid	eastern_blacksmith_ruin_med.CAS
+lod
+max_distance	800
+model_rigid	eastern_blacksmith_ruin_low.CAS
+
+type	eastern_ruin_01
+lod
+max_distance	200
+model_rigid	eastern_ruin_01_high.CAS
+lod
+max_distance	400
+model_rigid	eastern_ruin_01_med.CAS
+lod
+max_distance	800
+model_rigid	eastern_ruin_01_low.CAS
+
+type	eastern_ruin_02
+lod
+max_distance	200
+model_rigid	eastern_ruin_02_high.CAS
+lod
+max_distance	400
+model_rigid	eastern_ruin_02_med.CAS
+lod
+max_distance	800
+model_rigid	eastern_ruin_02_low.CAS
+
+type	eastern_ruin_03
+lod
+max_distance	200
+model_rigid	eastern_ruin_03_high.CAS
+lod
+max_distance	400
+model_rigid	eastern_ruin_03_med.CAS
+lod
+max_distance	800
+model_rigid	eastern_ruin_03_low.CAS
+
+type	eastern_ruin_village
+lod
+max_distance	200
+model_rigid	eastern_ruin_village_high.CAS
+lod
+max_distance	400
+model_rigid	eastern_ruin_village_med.CAS
+lod
+max_distance	800
+model_rigid	eastern_ruin_village_low.CAS
+
+type	egyptian_ruin_01
+lod
+max_distance	200
+model_rigid	egyptian_ruin_01_high.CAS
+lod
+max_distance	400
+model_rigid	egyptian_ruin_01_med.CAS
+lod
+max_distance	800
+model_rigid	egyptian_ruin_01_low.CAS
+
+type	egyptian_ruins_large
+lod
+max_distance	200
+model_rigid	egyptian_ruins_large_high.CAS
+lod
+max_distance	400
+model_rigid	egyptian_ruins_large_med.CAS
+lod
+max_distance	800
+model_rigid	egyptian_ruins_large_low.CAS
+
+type	egyptian_ruins_03
+lod
+max_distance	200
+model_rigid	egyptian_ruins_03_high.CAS
+lod
+max_distance	400
+model_rigid	egyptian_ruins_03_med.CAS
+lod
+max_distance	800
+model_rigid	egyptian_ruins_03_low.CAS
+
+type	egyptian_ruins_walls
+lod
+max_distance	200
+model_rigid	egyptian_ruins_walls_high.CAS
+lod
+max_distance	400
+model_rigid	egyptian_ruins_walls_med.CAS
+lod
+max_distance	800
+model_rigid	egyptian_ruins_walls_low.CAS
+
+type	greek_ruin_01
+lod
+max_distance	200
+model_rigid	greek_ruin_01_high.CAS
+lod
+max_distance	400
+model_rigid	greek_ruin_01_med.CAS
+lod
+max_distance	800
+model_rigid	greek_ruin_01_low.CAS
+
+type	ruined_greek_temple_02
+lod
+max_distance	200
+model_rigid	ruined_greek_temple_02_high.CAS
+lod
+max_distance	400
+model_rigid	ruined_greek_temple_02_med.CAS
+lod
+max_distance	800
+model_rigid	ruined_greek_temple_02_low.CAS
+
+type	swamp_ruins_01
+lod
+max_distance	200
+model_rigid	swamp_ruins_01_high.CAS
+lod
+max_distance	400
+model_rigid	swamp_ruins_01_med.CAS
+lod
+max_distance	800
+model_rigid	swamp_ruins_01_low.CAS
+
+type	swamp_ruins_02
+lod
+max_distance	200
+model_rigid	swamp_ruins_02_high.CAS
+lod
+max_distance	400
+model_rigid	swamp_ruins_02_med.CAS
+lod
+max_distance	800
+model_rigid	swamp_ruins_02_low.CAS
+
+type	swamp_ruins_03
+lod
+max_distance	200
+model_rigid	swamp_ruins_03_high.CAS
+lod
+max_distance	800
+model_rigid	swamp_ruins_03_low.CAS
+
+type	swamp_ruins_04
+lod
+max_distance	200
+model_rigid	swamp_ruins_04_high.CAS
+lod
+max_distance	800
+model_rigid	swamp_ruins_04_low.CAS
+
+type	swamp_ruins_05
+lod
+max_distance	200
+model_rigid	swamp_ruins_05_high.CAS
+lod
+max_distance	400
+model_rigid	swamp_ruins_05_med.CAS
+lod
+max_distance	800
+model_rigid	swamp_ruins_05_low.CAS
+
+type	greek_ruins_02
+lod
+max_distance	200
+model_rigid	greek_ruins_02_high.CAS
+lod
+max_distance	400
+model_rigid	greek_ruins_02_med.CAS
+lod
+max_distance	800
+model_rigid	greek_ruins_02_low.CAS
+
+type	snowy_ruin_01
+lod
+max_distance	200
+model_rigid	snowy_ruin_01_high.CAS
+lod
+max_distance	400
+model_rigid	snowy_ruin_01_med.CAS
+lod
+max_distance	800
+model_rigid	snowy_ruin_01_low.CAS
+
+type	snowy_ruin_02
+lod
+max_distance	200
+model_rigid	snowy_ruin_02_high.CAS
+lod
+max_distance	400
+model_rigid	snowy_ruin_02_med.CAS
+lod
+max_distance	800
+model_rigid	snowy_ruin_02_low.CAS
+
+type	snow_ruins_walls
+lod
+max_distance	200
+model_rigid	snow_ruins_walls_high.CAS
+lod
+max_distance	400
+model_rigid	snow_ruins_walls_med.CAS
+lod
+max_distance	800
+model_rigid	snow_ruins_walls_low.CAS
+
+type	snow_ruins_walls_2
+lod
+max_distance	200
+model_rigid	snow_ruins_walls_2_high.CAS
+lod
+max_distance	400
+model_rigid	snow_ruins_walls_2_low.CAS
+
+type	snow_ruins_walls_3
+lod
+max_distance	200
+model_rigid	snow_ruins_walls_3_high.CAS
+lod
+max_distance	400
+model_rigid	snow_ruins_walls_3_med.CAS
+lod
+max_distance	800
+model_rigid	snow_ruins_walls_3_low.CAS
+
+;;;;NEW FARMS;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type		farm_grove
+lod		
+max_distance	200
+model_rigid	farm_grove_high.CAS
+lod		
+max_distance	400
+model_rigid	farm_grove_low.CAS
+
+type		farm_grove_winter
+lod		
+max_distance	200
+model_rigid	farm_grove_winter_high.CAS
+lod		
+max_distance	400
+model_rigid	farm_grove_winter_low.CAS
+
+type		farm_hay_corn
+lod		
+max_distance	200
+model_rigid	farm_hay_corn_high.CAS
+lod		
+max_distance	400
+model_rigid	farm_hay_corn_low.CAS
+
+type		farm_hay_corn_winter
+lod		
+max_distance	200
+model_rigid	farm_hay_corn_winter_high.CAS
+lod		
+max_distance	400
+model_rigid	farm_hay_corn_winter_low.CAS
+
+type		farm_orchard_field
+lod		
+max_distance	200
+model_rigid	farm_orchard_field_high.CAS
+lod		
+max_distance	400
+model_rigid	farm_orchard_field_low.CAS
+
+type		farm_orchard_field_winter
+lod		
+max_distance	200
+model_rigid	farm_orchard_field_winter_high.CAS
+lod		
+max_distance	400
+model_rigid	farm_orchard_field_winter_low.CAS	
+
+type		hay_field_long_ploughed
+lod		
+max_distance	150
+model_rigid	hay_field_long_ploughed_high.CAS
+lod		
+max_distance	300
+model_rigid	hay_field_long_ploughed_med.CAS
+;lod		
+;max_distance	600
+;model_rigid	hay_field_long_ploughed_low.CAS
+
+type		hay_field_new_128_128
+lod		
+max_distance	150
+model_rigid	hay_field_new_128_128_high.CAS
+lod		
+max_distance	300
+model_rigid	hay_field_new_128_128_med.CAS
+;lod		
+;max_distance	600
+;model_rigid	hay_field_new_128_128_low.CAS
+
+type		hay_field_new_128_64
+lod		
+max_distance	150
+model_rigid	hay_field_new_128_64_high.CAS
+lod		
+max_distance	300
+model_rigid	hay_field_new_128_64_med.CAS
+;lod		
+;max_distance	600
+;model_rigid	hay_field_new_128_64_low.CAS
+
+type		hay_field_ruin
+lod		
+max_distance	150
+model_rigid	hay_field_ruin_high.CAS
+lod		
+max_distance	300
+model_rigid	hay_field_ruin_med.CAS
+;lod		
+;max_distance	600
+;model_rigid	hay_field_ruin_low.CAS
+
+type		hay_field_ruin_winter
+lod		
+max_distance	150
+model_rigid	hay_field_ruin_winter_high.CAS
+
+type		hay_field_small_ploughed
+lod		
+max_distance	150
+model_rigid	hay_field_small_ploughed_high.CAS
+lod		
+max_distance	300
+model_rigid	hay_field_small_ploughed_med.CAS
+;lod		
+;max_distance	600
+;model_rigid	hay_field_small_ploughed_low.CAS
+
+type		olive_grove
+lod		
+max_distance	150
+model_rigid	olive_grove_high.CAS
+lod		
+max_distance	300
+model_rigid	olive_grove_med.CAS
+lod		
+max_distance	600
+model_rigid	olive_grove_low.CAS
+

@@ -1,0 +1,648 @@
+{
+    "frames": [
+        {
+            "position": {
+                "x": 364,
+                "y": 0
+            },
+            "size": {
+                "width": 480
+            },
+            "priority": -5,
+            "fill": "invisible",
+            "ignore_scale": true
+        },
+        {
+            "position": {
+                "x": 0,
+                "y": 20
+            },
+            "size": {
+                "width": 1110,
+                "height": 921
+            },
+            "align": "C",
+            "priority": -5,
+            "ignore_scale": true,
+            "fill": "decorated",
+            "anchor": "RIGHT_PNL"
+        }
+    ],
+    "list": [
+        {
+            "name": "main_panel",
+            "x": 0,
+            "y": 20,
+            "size": {
+                "width": 1110,
+                "height": 921
+            },
+            "align": "C",
+            "priority": -5,
+            "fill": "invisible",
+            "anchor": "RIGHT_PNL",
+            "ignore_scale": true
+        },
+        {
+            "name": "eagle_header",
+            "size": {
+                "width": 290,
+                "height": 110
+            },
+            "align": "C",
+            "ignore_scale": true
+        },
+        {
+            "name": "whats_new_link",
+            "x": 0,
+            "y": -340,
+            "align": "C",
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "camera_header",
+            "x": -486,
+            "y": -284,
+            "align": "BL",
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "camera_divider",
+            "x": -496,
+            "y": -276,
+            "size": {
+                "height": 20,
+                "width": 415,
+            },
+            "ignore_scale": true,
+            "align": "CL",
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "basic_header",
+            "x": -486,
+            "y": 152,
+            "align": "BL",
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "basic_divider",
+            "x": -496,
+            "y": 160,
+            "size": {
+                "height": 20,
+                "width": 420,
+            },
+            "ignore_scale": true,
+            "align": "CL",
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "additional_controls_header",
+            "x": -486,
+            "y": 386,
+            "align": "BL",
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "additional_controls_divider",
+            "x": -496,
+            "y": 395,
+            "size": {
+                "height": 20,
+                "width": 420,
+            },
+            "ignore_scale": true,
+            "align": "CL",
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "ingame_header",
+            "x": -30,
+            "y": -284,
+            "align": "BL",
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "ingame_divider",
+            "x": -40,
+            "y": -276,
+            "size": {
+                "height": 20,
+                "width": 525,
+            },
+            "ignore_scale": true,
+            "align": "CL",
+            "anchor": "RIGHT_PNL"
+        },
+
+        {
+            "name": "rotate_left_string",
+            "x": -380,
+            "y": -210,
+            "size": {
+                "width": 145,
+            },
+            "align": "CR",
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "rotate_right_string",
+            "x": -220,
+            "y": -210,
+            "size": {
+                "width": 145,
+            },
+            "align": "CL",
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "move_forwards_string",
+            "x": -300,
+            "y": -240,
+            "size": {
+                "width": 400,
+            },
+            "align": "BC",
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "move_backwards_string",
+            "x": -300,
+            "y": -130,
+            "size": {
+                "width": 400,
+            },
+            "align": "TC",
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "move_left_string",
+            "x": -380,
+            "y": -160,
+            "size": {
+                "width": 150,
+            },
+            "align": "CR",
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+
+        {
+            "name": "move_right_string",
+            "x": -220,
+            "y": -160,
+            "size": {
+                "width": 150,
+            },
+            "align": "CL",
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "keyboard_icon",
+            "x": -300,
+            "y": -140,
+            "align": "BC",
+            "size" : {
+                "width": 130,
+                "height": 90
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "zoom_string",
+            "x": -403.6,
+            "y": -40,
+            "align": "CL",
+            "size" : {
+                "width": 327.6 ,
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "zoom_icon",
+            "x": -445,
+            "y": -40,
+            "align": "C",
+            "size" : {
+                "width": 35,
+                "height": 50
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "mouse_edge_string",
+            "x": -403.6,
+            "y": 60,
+            "align": "CL",
+            "size" : {
+                "width": 320,
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "mouse_edge_icon",
+            "x": -445,
+            "y": 60,
+            "align": "C",
+            "size" : {
+                "width": 35,
+                "height": 50
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+             "comment":"Basic control elements START",
+        },
+        {
+            "name": "select_string",
+            "x": -403.6,
+            "y": 200,
+            "align": "CL",
+            "size" : {
+                "width": 320,
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "select_icon",
+            "x": -445,
+            "y": 200,
+            "align": "C",
+            "size" : {
+                "width": 35,
+                "height": 50
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "location_string",
+            "x": -403.6,
+            "y": 260,
+            "align": "CL",
+            "size" : {
+                "width": 320,
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "location_icon",
+            "x": -445,
+            "y": 260,
+            "align": "C",
+            "size" : {
+                "width": 35,
+                "height": 50
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "assign_string",
+            "x": -403.6,
+            "y": 320,
+            "align": "CL",
+            "size" : {
+                "width": 320,
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "assign_icon",
+            "x": -445,
+            "y": 320,
+            "align": "C",
+            "size" : {
+                "width": 35,
+                "height": 50
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+             "comment":"Basic control elements END",
+        },
+        {
+             "comment":"Additional controls elements START",
+        },
+        {
+            "name": "additional_controls_string",
+            "x": -486,
+            "y": 400,
+            "align": "TL",
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "comment":"additional_controls_link is positioned in code",
+        },
+        {
+             "comment":"Additional controls elements END",
+        },
+        {
+            "name": "end_string",
+            "x": 194,
+            "y": -235,
+            "align": "CL",
+            "size" : {
+                "width": 300,
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "end_shortcut",
+            "x": 180,
+            "y": -235,
+            "align": "CR",
+            "size" : {
+                "height": 40
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "save_string",
+            "x": 194,
+            "y": -180,
+            "align": "CL",
+            "size" : {
+                "width": 300,
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "save_shortcut",
+            "x": 180,
+            "y": -180,
+            "align": "CR",
+            "size" : {
+                "height": 40
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "move_string",
+            "x": 194,
+            "y": -125,
+            "align": "CL",
+            "size" : {
+                "width": 300,
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "move_shortcut",
+            "x": 180,
+            "y": -125,
+            "align": "CR",
+            "size" : {
+                "height": 40
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "labels_string",
+            "x": 194,
+            "y": -70,
+            "align": "CL",
+            "size" : {
+                "width": 300,
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "labels_shortcut",
+            "x": 180,
+            "y": -70,
+            "align": "CR",
+            "size" : {
+                "height": 40
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "automerge_string",
+            "x": 194,
+            "y": -15,
+            "align": "CL",
+            "size" : {
+                "width": 300,
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "automerge_shortcut",
+            "x": 180,
+            "y": -15,
+            "align": "CR",
+            "size" : {
+                "height": 40
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "rally_string",
+            "x": 194,
+            "y": 40,
+            "align": "CL",
+            "size" : {
+                "width": 300,
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "rally_shortcut",
+            "x": 180,
+            "y": 40,
+            "align": "CR",
+            "size" : {
+                "height": 40
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "overlay_string",
+            "x": 194,
+            "y": 95,
+            "align": "CL",
+            "size" : {
+                "width": 300,
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "overlay_shortcut",
+            "x": 180,
+            "y": 95,
+            "align": "CR",
+            "size" : {
+                "height": 40
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "settlements_string",
+            "x": 194,
+            "y": 150,
+            "align": "CL",
+            "size" : {
+                "width": 300,
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "settlements_shortcut",
+            "x": 180,
+            "y": 150,
+            "align": "CR",
+            "size" : {
+                "height": 40
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "armies_string",
+            "x": 194,
+            "y": 205,
+            "align": "CL",
+            "size" : {
+                "width": 300,
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "armies_shortcut",
+            "x": 180,
+            "y": 205,
+            "align": "CR",
+            "size" : {
+                "height": 40
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "agents_string",
+            "x": 194,
+            "y": 260,
+            "align": "CL",
+            "size" : {
+                "width": 300,
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "agents_shortcut",
+            "x": 180,
+            "y": 260,
+            "align": "CR",
+            "size" : {
+                "height": 40
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "admirals_string",
+            "x": 194,
+            "y": 315,
+            "align": "CL",
+            "size" : {
+                "width": 300,
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "admirals_shortcut",
+            "x": 180,
+            "y": 315,
+            "align": "CR",
+            "size" : {
+                "height": 40
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "recruitment_string",
+            "x": 194,
+            "y": 370,
+            "align": "CL",
+            "size" : {
+                "width": 300,
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "recruitment_shortcut",
+            "x": 180,
+            "y": 370,
+            "align": "CR",
+            "size" : {
+                "height": 40,
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "construction_string",
+            "x": 194,
+            "y": 425,
+            "align": "CL",
+            "size" : {
+                "width": 300,
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        },
+        {
+            "name": "construction_shortcut",
+            "x": 180,
+            "y": 425,
+            "align": "CR",
+            "size" : {
+                "height": 40,
+            },
+            "ignore_scale": true,
+            "anchor": "RIGHT_PNL"
+        }
+    ]
+}

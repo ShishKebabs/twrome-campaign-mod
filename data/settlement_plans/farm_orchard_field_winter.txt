@@ -1,0 +1,11 @@
+plan
+
+{
+
+	floor	         farm_orchard_field_underlay.CAS	farm_orchard_field_winter_overlay.CAS
+	borders	border_limits_64m_diameter.CAS
+		
+;				x,		y,		rot,	z,
+farm_orchard_field_winter,		0,	        0,	        0,	0
+
+	}

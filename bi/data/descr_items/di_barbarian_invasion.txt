@@ -1,0 +1,676 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;								:
+;	buildings for the barbarian invasion add-on.		:
+;								;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+;	tech tree buildings and associated rubble
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type			BI_roman_governors_palace
+lod
+max_distance		400
+model_rigid		../../bi/data/models_building/BI_roman_governors_palace_high.cas
+lod
+max_distance		800
+model_rigid		../../bi/data/models_building/BI_roman_governors_palace_med.cas
+lod
+max_distance		2000
+model_rigid		../../bi/data/models_building/BI_roman_governors_palace_low.cas
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type			BI_barb_pagan_religion_lvl_1
+lod
+max_distance		200
+model_rigid		../../bi/data/models_building/BI_barb_pagan_religion_lvl_1_lod_1.cas
+lod
+max_distance		300
+model_rigid		../../bi/data/models_building/BI_barb_pagan_religion_lvl_1_lod_2.cas
+lod
+max_distance		800
+model_rigid		../../bi/data/models_building/BI_barb_pagan_religion_lvl_1_lod_3.cas
+
+type			BI_barb_pagan_religion_lvl_1_rubble
+lod
+max_distance	500
+model_rigid		../../bi/data/models_building/BI_barb_pagan_religion_lvl_1_rubble.CAS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type			BI_barb_pagan_religion_lvl_2
+lod
+max_distance		200
+model_rigid		../../bi/data/models_building/BI_barb_pagan_religion_lvl_2_lod_1.cas
+lod
+max_distance		300
+model_rigid		../../bi/data/models_building/BI_barb_pagan_religion_lvl_2_lod_2.cas
+lod
+max_distance		800
+model_rigid		../../bi/data/models_building/BI_barb_pagan_religion_lvl_2_lod_3.cas
+
+type			BI_barb_pagan_religion_lvl_2_rubble
+lod
+max_distance	500
+model_rigid		../../bi/data/models_building/BI_barb_pagan_religion_lvl_2_rubble.CAS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type			BI_barb_pagan_religion_lvl_3
+lod
+max_distance		200
+model_rigid		../../bi/data/models_building/BI_barb_pagan_religion_lvl_3_lod_1.cas
+lod
+max_distance		300
+model_rigid		../../bi/data/models_building/BI_barb_pagan_religion_lvl_3_lod_2.cas
+lod
+max_distance		800
+model_rigid		../../bi/data/models_building/BI_barb_pagan_religion_lvl_3_lod_3.cas
+
+type			BI_barb_pagan_religion_lvl_3_rubble
+lod
+max_distance	500
+model_rigid		../../bi/data/models_building/BI_barb_pagan_religion_lvl_3_rubble.CAS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+type			BI_catapult_range_barbarian
+lod
+max_distance	1200
+model_rigid		../../bi/data/models_building/BI_barb_missiles_lvl_4_lod1.CAS
+
+type			BI_catapult_range_barbarian_rubble
+lod
+max_distance	500
+model_rigid		../../bi/data/models_building/BI_barb_missiles_lvl_4_rubble.CAS
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; siege engineer, same footprint as archery_range_barbarian - Alan
+;;  ...has same footprint as Roman Siege engineer. Let's see if this works. - Kevin
+;; nope, didn't work - Kevin
+
+type			BI_siege_engineer_barbarian
+lod
+max_distance	500
+model_rigid		../../bi/data/models_building/BI_barb_missiles_lvl_4_lod1.CAS
+
+type			BI_siege_engineer_barbarian_rubble
+lod
+max_distance	500
+model_rigid		../../bi/data/models_building/BI_barb_missiles_lvl_4_rubble.CAS
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type			BI_barbarian_great_forum
+lod
+max_distance		200
+model_rigid		../../bi/data/models_building/BI_barb_trade_lvl_5_lod1.CAS
+lod
+max_distance		300
+model_rigid		../../bi/data/models_building/BI_barb_trade_lvl_5_lod2.CAS
+lod
+max_distance		800
+model_rigid		../../bi/data/models_building/BI_barb_trade_lvl_5_lod3.CAS
+lod
+max_distance		1200
+model_rigid		../../bi/data/models_building/BI_barb_trade_lvl_5_lod4.CAS
+lod
+max_distance		1600
+model_rigid		../../bi/data/models_building/BI_barb_trade_lvl_5_lod5.CAS
+
+type			BI_barbarian_great_forum_rubble
+lod
+max_distance	500
+model_rigid		../../bi/data/models_building/BI_barb_trade_lvl_5_rubble.CAS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type			BI_barbarian_foundry
+lod
+max_distance	200
+model_rigid	../../bi/data/models_building/BI_smith_lvl_5_lod1.CAS
+lod
+max_distance	400
+model_rigid	../../bi/data/models_building/BI_smith_lvl_5_lod2.CAS
+lod
+max_distance	800
+model_rigid	../../bi/data/models_building/BI_smith_lvl_5_lod3.CAS
+lod
+max_distance	1200
+model_rigid	../../bi/data/models_building/BI_smith_lvl_5_lod4.CAS
+
+type			BI_barbarian_foundry_rubble
+lod
+max_distance	500
+model_rigid		../../bi/data/models_building/BI_barb_smith_lvl_5_rubble.CAS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type			BI_barb_christian_academic_lvl_3
+lod		
+max_distance	200	
+model_rigid		../../bi/data/models_building/BI_barb_christian_academic_lvl_3_lod1.cas
+lod		
+max_distance	400	
+model_rigid		../../bi/data/models_building/BI_barb_christian_academic_lvl_3_lod2.cas
+lod		
+max_distance	800	
+model_rigid		../../bi/data/models_building/BI_barb_christian_academic_lvl_3_lod3.cas
+lod		
+max_distance	1200	
+model_rigid		../../bi/data/models_building/BI_barb_christian_academic_lvl_3_lod4.cas
+
+type			BI_barb_christian_academic_lvl_3_rubble
+lod
+max_distance	500
+model_rigid		../../bi/data/models_building/BI_barb_christian_academic_rubble.CAS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type			BI_barb_christian_academic_lvl_4
+lod		
+max_distance	200	
+model_rigid		../../bi/data/models_building/BI_barb_christian_academic_lvl_4_lod1.cas
+lod		
+max_distance	400	
+model_rigid		../../bi/data/models_building/BI_barb_christian_academic_lvl_4_lod2.cas
+lod		
+max_distance	800	
+model_rigid		../../bi/data/models_building/BI_barb_christian_academic_lvl_4_lod3.cas
+lod		
+max_distance	1200	
+model_rigid		../../bi/data/models_building/BI_barb_christian_academic_lvl_4_lod4.cas
+
+type			BI_barb_christian_academic_lvl_4_rubble
+lod
+max_distance	500
+model_rigid		../../bi/data/models_building/BI_barb_christian_academic_rubble.CAS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type			BI_barb_christian_academic_lvl_5
+lod		
+max_distance	200	
+model_rigid		../../bi/data/models_building/BI_barb_christian_academic_lvl_5_lod1.cas
+lod		
+max_distance	400	
+model_rigid		../../bi/data/models_building/BI_barb_christian_academic_lvl_5_lod2.cas
+lod		
+max_distance	800	
+model_rigid		../../bi/data/models_building/BI_barb_christian_academic_lvl_5_lod3.cas
+lod		
+max_distance	1200	
+model_rigid		../../bi/data/models_building/BI_barb_christian_academic_lvl_5_lod4.cas
+
+type			BI_barb_christian_academic_lvl_5_rubble
+lod
+max_distance	500
+model_rigid		../../bi/data/models_building/BI_barb_christian_academic_rubble.CAS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		
+type			BI_barb_barracks_lvl_4
+lod		
+max_distance	200	
+model_rigid		../../bi/data/models_building/BI_barb_barracks_lvl_4_lod1.cas
+lod		
+max_distance	400	
+model_rigid		../../bi/data/models_building/BI_barb_barracks_lvl_4_lod2.cas
+lod		
+max_distance	800	
+model_rigid		../../bi/data/models_building/BI_barb_barracks_lvl_4_lod3.cas
+lod		
+max_distance	1200	
+model_rigid		../../bi/data/models_building/BI_barb_barracks_lvl_4_lod4.cas
+
+type			BI_barb_barracks_lvl_4_rubble
+lod
+max_distance	500
+model_rigid		../../bi/data/models_building/BI_barb_barracks_lvl_4_rubble.CAS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		
+type			BI_barb_barracks_lvl_5
+lod		
+max_distance	100	
+model_rigid		../../bi/data/models_building/BI_barb_barracks_lvl_5_lod1.cas
+lod		
+max_distance	200	
+model_rigid		../../bi/data/models_building/BI_barb_barracks_lvl_5_lod2.cas
+lod		
+max_distance	600	
+model_rigid		../../bi/data/models_building/BI_barb_barracks_lvl_5_lod3.cas
+lod		
+max_distance	800	
+model_rigid		../../bi/data/models_building/BI_barb_barracks_lvl_5_lod4.cas
+lod		
+max_distance	1000	
+model_rigid		../../bi/data/models_building/BI_barb_barracks_lvl_5_lod5.cas
+
+		
+type			BI_barb_barracks_lvl_5_rubble
+lod
+max_distance	500
+model_rigid		../../bi/data/models_building/BI_barb_barracks_lvl_5_rubble.CAS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		
+type			BI_government_lvl_4
+lod		
+max_distance	100	
+model_rigid		../../bi/data/models_building/BI_barb_government_lvl_4_lod1.cas
+lod		
+max_distance	200	
+model_rigid		../../bi/data/models_building/BI_barb_government_lvl_4_lod2.cas
+lod		
+max_distance	600	
+model_rigid		../../bi/data/models_building/BI_barb_government_lvl_4_lod3.cas
+lod		
+max_distance	800	
+model_rigid		../../bi/data/models_building/BI_barb_government_lvl_4_lod4.cas
+lod		
+max_distance	1000	
+model_rigid		../../bi/data/models_building/BI_barb_government_lvl_4_lod5.cas
+
+
+type			BI_government_lvl_4_rubble
+lod	
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_barb_government_lvl_4_rubble.CAS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type			BI_government_lvl_5
+lod		
+max_distance	100	
+model_rigid		../../bi/data/models_building/BI_barb_government_lvl_5_lod1.cas
+lod		
+max_distance	200	
+model_rigid		../../bi/data/models_building/BI_barb_government_lvl_5_lod2.cas
+lod		
+max_distance	600	
+model_rigid		../../bi/data/models_building/BI_barb_government_lvl_5_lod3.cas
+lod		
+max_distance	800	
+model_rigid		../../bi/data/models_building/BI_barb_government_lvl_5_lod4.cas
+lod		
+max_distance	1000	
+model_rigid		../../bi/data/models_building/BI_barb_government_lvl_5_lod5.cas
+
+	
+type			BI_government_lvl_5_rubble
+lod	
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_barb_government_lvl_5_rubble.CAS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;	
+
+	
+type			BI_barb_religious_lvl_1
+lod		
+max_distance	200	
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_1_lod1.cas
+lod		
+max_distance	400	
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_1_lod2.cas
+lod		
+max_distance	800	
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_1_lod3.cas
+lod		
+max_distance	1200	
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_1_lod4.cas
+
+		
+type			BI_barb_religious_lvl_1_rubble
+lod
+max_distance	500
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_1_rubble.CAS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		
+type			BI_barb_religious_lvl_2
+
+lod		
+max_distance	200	
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_2_lod1.cas
+lod		
+max_distance	400	
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_2_lod2.cas
+lod		
+max_distance	800	
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_2_lod3.cas
+lod		
+max_distance	1200	
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_2_lod4.cas
+
+		
+type			BI_barb_religious_lvl_2_rubble
+lod
+max_distance	500
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_2_rubble.CAS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		
+type			BI_barb_religious_lvl_3
+
+lod		
+max_distance	200	
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_3_lod1.cas
+lod		
+max_distance	400	
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_3_lod2.cas
+lod		
+max_distance	800	
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_3_lod3.cas
+lod		
+max_distance	1200	
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_3_lod4.cas
+
+		
+type			BI_barb_religious_lvl_3_rubble
+lod
+max_distance	500
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_3_rubble.CAS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		
+type			BI_barb_religious_lvl_4
+
+lod		
+max_distance	200	
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_4_lod1.cas
+lod		
+max_distance	400	
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_4_lod2.cas
+lod		
+max_distance	800	
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_4_lod3.cas
+lod		
+max_distance	1200	
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_4_lod4.cas
+
+		
+type			BI_barb_religious_lvl_4_rubble
+lod
+max_distance	500
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_4_rubble.CAS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		
+type			BI_barb_religious_lvl_5
+
+lod		
+max_distance	200	
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_5_lod1.cas
+lod		
+max_distance	400	
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_5_lod2.cas
+lod		
+max_distance	600	
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_5_lod3.cas
+lod		
+max_distance	800	
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_5_lod4.cas
+lod	1000	
+max_distance		
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_5_lod5.cas
+lod		
+max_distance	1200	
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_5_lod6.cas
+		
+type			BI_barb_religious_lvl_5_rubble
+lod
+max_distance	500
+model_rigid		../../bi/data/models_building/BI_barb_religious_lvl_5_rubble.CAS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type			BI_barb_stables_lvl_4
+lod
+max_distance		200
+model_rigid		../../bi/data/models_building/BI_barb_stables_lvl_4_lod1.CAS
+lod
+max_distance		300
+model_rigid		../../bi/data/models_building/BI_barb_stables_lvl_4_lod2.CAS
+lod
+max_distance		800
+model_rigid		../../bi/data/models_building/BI_barb_stables_lvl_4_lod3.CAS
+lod
+max_distance		1200
+model_rigid		../../bi/data/models_building/BI_barb_stables_lvl_4_lod4.CAS
+
+
+type			BI_barb_stables_lvl_4_rubble
+lod
+max_distance	500
+model_rigid		../../bi/data/models_building/BI_barb_stables_lvl_4_rubble.CAS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type			BI_barb_stables_lvl_5
+lod
+max_distance		200
+model_rigid		../../bi/data/models_building/BI_barb_stables_lvl_5_lod1.CAS
+lod
+max_distance		300
+model_rigid		../../bi/data/models_building/BI_barb_stables_lvl_5_lod2.CAS
+lod
+max_distance		800
+model_rigid		../../bi/data/models_building/BI_barb_stables_lvl_5_lod3.CAS
+lod
+max_distance		1200
+model_rigid		../../bi/data/models_building/BI_barb_stables_lvl_5_lod4.CAS
+
+
+type			BI_barb_stables_lvl_5_rubble
+lod
+max_distance	500
+model_rigid		../../bi/data/models_building/BI_barb_stables_lvl_5_rubble.CAS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;	AMIENT BUILDINGS
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+type			BI_barn
+lod
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_barn_high.CAS
+lod
+max_distance	400
+model_rigid		../../bi/data/models_building/BI_barn_med.CAS
+lod
+max_distance	800
+model_rigid		../../bi/data/models_building/BI_barn_low.CAS
+
+type			BI_barn_rubble
+lod
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_barn_rubble.CAS
+
+type			BI_cider_house
+lod
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_cider_house_high.CAS
+lod
+max_distance	400
+model_rigid		../../bi/data/models_building/BI_cider_house_med.CAS
+lod
+max_distance	800
+model_rigid		../../bi/data/models_building/BI_cider_house_low.CAS
+
+type			BI_cider_house_rubble
+lod
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_cider_house_rubble.CAS
+
+type			BI_fence_gate
+lod
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_fence_gate_high.CAS
+lod
+max_distance	400
+model_rigid		../../bi/data/models_building/BI_fence_gate_med.CAS
+
+
+type			BI_fence_gate_wood
+lod
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_fence_gate_wood_high.CAS
+lod
+max_distance	400
+model_rigid		../../bi/data/models_building/BI_fence_gate_wood_med.CAS
+
+
+type			BI_fence_L_shape
+lod
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_fence_L_shape_high.CAS
+lod
+max_distance	400
+model_rigid		../../bi/data/models_building/BI_fence_L_shape_med.CAS
+
+
+type			BI_fence_L_shape_wood
+lod
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_fence_L_shape_wood_high.CAS
+lod
+max_distance	400
+model_rigid		../../bi/data/models_building/BI_fence_L_shape_wood_med.CAS
+
+
+type			BI_fence_straight
+lod
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_fence_straight_high.CAS
+lod
+max_distance	400
+model_rigid		../../bi/data/models_building/BI_fence_straight_med.CAS
+
+
+type			BI_fence_straight_wood
+lod
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_fence_straight_wood_high.CAS
+lod
+max_distance	400
+model_rigid		../../bi/data/models_building/BI_fence_straight_wood_med.CAS
+
+
+type			BI_house_half_wood
+lod
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_house_half_wood_high.CAS
+lod
+max_distance	400
+model_rigid		../../bi/data/models_building/BI_house_half_wood_med.CAS
+lod
+max_distance	800
+model_rigid		../../bi/data/models_building/BI_house_half_wood_low.CAS
+
+type			BI_house_half_wood_rubble
+lod
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_house_half_wood_rubble.CAS
+
+type			BI_houseA
+lod
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_houseA_high.CAS
+lod
+max_distance	400
+model_rigid		../../bi/data/models_building/BI_houseA_med.CAS
+lod
+max_distance	800
+model_rigid		../../bi/data/models_building/BI_houseA_low.CAS
+
+type			BI_houseA_rubble
+lod
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_houseA_rubble.CAS
+
+type			BI_houseB
+lod
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_houseB_high.CAS
+lod
+max_distance	400
+model_rigid		../../bi/data/models_building/BI_houseB_med.CAS
+lod
+max_distance	800
+model_rigid		../../bi/data/models_building/BI_houseB_low.CAS
+
+type			BI_houseB_rubble
+lod
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_houseB_rubble.CAS
+
+type			BI_houseC
+lod
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_houseC_high.CAS
+lod
+max_distance	400
+model_rigid		../../bi/data/models_building/BI_houseC_med.CAS
+lod
+max_distance	800
+model_rigid		../../bi/data/models_building/BI_houseC_low.CAS
+
+type			BI_houseC_rubble
+lod
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_houseC_rubble.CAS
+
+type			BI_houseD
+lod
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_houseD_high.CAS
+lod
+max_distance	400
+model_rigid		../../bi/data/models_building/BI_houseD_med.CAS
+lod
+max_distance	800
+model_rigid		../../bi/data/models_building/BI_houseD_low.CAS
+
+type			BI_houseD_rubble
+lod
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_houseD_rubble.CAS
+
+type			BI_menhir
+lod
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_menhir_high.CAS
+lod
+max_distance	400
+model_rigid		../../bi/data/models_building/BI_menhir_med.CAS
+
+type			BI_oast
+lod
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_oast_high.CAS
+lod
+max_distance	400
+model_rigid		../../bi/data/models_building/BI_oast_med.CAS
+lod
+max_distance	800
+model_rigid		../../bi/data/models_building/BI_oast_low.CAS
+
+type			BI_oast_rubble
+lod
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_oast_rubble.CAS
+
+type			BI_street_lamp
+lod
+max_distance	200
+model_rigid		../../bi/data/models_building/BI_street_lamp_high.CAS
+lod
+max_distance	400
+model_rigid		../../bi/data/models_building/BI_street_lamp_med.CAS
+lod
+max_distance	800
+model_rigid		../../bi/data/models_building/BI_street_lamp_low.CAS
+

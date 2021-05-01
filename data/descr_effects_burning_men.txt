@@ -1,0 +1,232 @@
+;
+; Burning man effects
+;
+
+effect burning_unit_flames
+{
+	type particle
+	{
+		texture			feral_textures/fire_anim_small.tga
+		sprite_origin	0.0, 0.0
+		sprite_size		1.0, 1.0
+		sprite_border	3.0, 3.0
+
+		size_range      0.4, 0.5
+		age_range       1.3, 1.4
+		grow_range		2.0, 2.1
+		vel_range  		0.0, 0.0
+	
+		keyframe_colour
+		{
+			0.0		255, 255, 255, 255
+			1.0		255, 255, 255, 255
+		}
+		
+		alpha_max	   				255			 ; maximum alpha value
+		alpha_scale					2
+		max_particles				2000
+		initial_size				0.2, 0.2
+		offset						0.0, 0.2, 0.0
+		blend_type					additive	
+		batched
+		allow_trigger_when_full
+		system_radius				2
+		randomly_flip_UVs
+
+		emitter skeleton
+		{
+			density					8 	     	; how many particles per second
+			emitter_falloff_dist	120			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			
+		}
+	}
+}
+
+effect burning_unit_flames_large ; Used for Elephants
+{
+	type particle
+	{
+		texture			feral_textures/fire_anim_small.tga
+		sprite_origin	0.0, 0.0
+		sprite_size		1.0, 1.0
+		sprite_border	3.0, 3.0
+
+		size_range      0.4, 0.5
+		age_range       1.3, 1.4
+		grow_range		5.0, 5.1
+		vel_range  		0.0, 0.0
+	
+		keyframe_colour
+		{
+			0.0		255, 255, 255, 255
+			1.0		255, 255, 255, 255
+		}
+		
+		alpha_max	   				255			 ; maximum alpha value
+		alpha_scale					2
+		max_particles				2000
+		initial_size				0.2, 0.2
+		offset						0.0, 0.2, 0.0
+		blend_type					additive	
+		batched
+		allow_trigger_when_full
+		system_radius				2
+		randomly_flip_UVs
+
+		emitter skeleton
+		{
+			density					10 	     	; how many particles per second
+			emitter_falloff_dist	120			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			
+		}
+	}
+}
+
+effect burning_unit_smoke
+{
+	type particle
+	{
+		texture			feral_textures/fire_anim_smoke.tga
+		sprite_origin	0.0, 0.0
+		sprite_size		1.0, 1.0
+		sprite_border	1.0, 1.0
+
+		size_range      1.0, 1.1
+		age_range       5.0, 5.1
+		grow_range		2.5, 2.6
+		vel_range  		0.3, 0.4
+	
+		keyframe_colour
+		{
+			0.0		0, 	 67, 70, 75
+			0.1		40,  67, 70, 75
+			1.0		0, 	 67, 70, 75
+		}
+		
+		alpha_max	   				255			 ; maximum alpha value
+		max_particles				2000
+		initial_size				0.5, 0.5
+		offset						0.0, 0.4, 0.0
+		batched
+		system_radius				10
+		randomly_flip_UVs
+		random_emit_radius  		0.0, 0.8
+
+		emitter time
+		{
+			density					2 	     	; how many particles per second
+			emitter_falloff_dist	120			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			
+		}
+	}
+}
+
+effect burning_animal_flames ; Used for incendiary pigs
+{
+	type particle
+	{
+		texture			feral_textures/fire_anim.tga
+		sprite_origin	0.0, 0.0
+		sprite_size		1.0, 1.0
+		sprite_border	3.0, 3.0
+
+		size_range      0.8, 0.9
+		size_range_w    0.6, 0.7
+		age_range       1.3, 1.4
+		grow_range		3.0, 3.1
+		vel_range  		1.0, 1.0
+	
+		keyframe_colour
+		{
+			0.0		70, 255, 255, 255
+			1.0		70, 255, 255, 255
+		}
+		
+		alpha_max	   				255			 ; maximum alpha value
+		alpha_scale					3
+		max_particles				2000
+		initial_size				0.95, 0.95
+		initial_size_w				0.65, 0.65
+		offset						0.0, 1.0, 0.0
+		blend_type					additive
+		batched
+		allow_trigger_when_full
+		system_radius				2
+		randomly_flip_UVs
+		random_emit_radius  		0.1, 0.3	
+		follow_emitter
+		follow_factor				0.2
+
+		emitter skeleton
+		{
+			density					4 	     	; how many particles per second
+			emitter_falloff_dist	120			; distance in meters to reduce emission over
+			emitter_falloff_bias	0.5			
+		}
+	}
+}
+
+effect burning_unit_light
+{
+	type light
+	{
+		fade_out_time   0.5
+		merge
+		keyframe_colour
+		{
+				0.05, 	240, 100, 0
+				0.1, 	240, 130, 0
+				0.15, 	240, 110, 0
+				0.2, 	240, 120, 0
+				0.25, 	240, 100, 0
+				0.3, 	240, 120, 0
+		}
+			
+		keyframe_radius
+		{
+				0.05, 	2
+				0.1, 	2.1
+				0.15, 	2.05				
+		}
+	}
+}
+
+effect_set flaming_man_effect
+{
+	lod 10000
+	{
+		burning_unit_flames
+	}
+}
+
+effect_set flaming_animal_effect
+{
+	lod 10000
+	{
+		burning_animal_flames
+	}
+}
+
+effect_set flaming_unit_effect_smoke
+{
+	lod 10000
+	{
+		burning_unit_smoke
+	}
+}
+
+effect_set dead_flaming_unit_effect
+{
+	lod 10000
+	{
+		burning_unit_flames
+	}
+}
+
+effect_set dead_flaming_unit_effect_large
+{
+	lod 10000
+	{
+		burning_unit_flames_large
+	}
+}

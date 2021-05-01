@@ -1,0 +1,22 @@
+script
+	
+	; Stop any other advice triggering
+	suspend_unscripted_advice true
+	
+	ui_flash_stop ; stop any flashing going on
+	
+	disable_ui feral_help_dismiss_button
+
+	disable_ui help_dialog_pause_button
+	
+	; Alter script to allow all pieces of advice to turn up at start if required.
+	advance_advice_thread Feral_Game_Start_Thread_Two   no_dismiss ; Show 02
+	advance_advice_thread Feral_Game_Start_Thread_Three no_dismiss ; Show 03
+	advance_advice_thread Feral_Game_Start_Thread_Four  no_dismiss ; Show 04
+	advance_advice_thread Feral_Game_Start_Thread_Five  no_dismiss ; Show 05
+	advance_advice_thread Feral_Game_Start_Thread_Six   no_dismiss ; Show 06
+
+	; Reenable advice
+	suspend_unscripted_advice false
+	
+end_script

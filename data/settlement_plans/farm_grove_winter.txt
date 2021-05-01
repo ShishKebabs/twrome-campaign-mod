@@ -1,0 +1,10 @@
+plan
+
+{
+
+floor	         farm_grove_underlay.CAS	farm_grove_winter_overlay.CAS
+	borders	border_limits_64m_diameter.CAS		
+;				x,		y,		rot,	z,
+farm_grove_winter,		        0,	        0,	        0,	0
+
+	}

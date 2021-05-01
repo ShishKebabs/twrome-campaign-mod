@@ -1,0 +1,115 @@
+Loading from file bi/data/world/maps/battle/custom/Badon_Hill/descr_battle.txt
+Created faction saxons from file
+	Creating army controlled by Sido at 0x834c1f8 from script
+		Creating unit (Saxon Hearth Troops) at 0x8296f78
+		Creating unit (Levy Spearmen) at 0x82d6268
+		Creating unit (Saxon Hearth Troops) at 0x3307b90
+		Creating unit (Levy Spearmen) at 0x3308060
+		Creating unit (Warlord) at 0x3308670
+		Creating unit (Levy Spearmen) at 0x33088b8
+		Creating unit (Levy Spearmen) at 0x3308ec8
+		Creating unit (Levy Spearmen) at 0x33094d8
+		Creating unit (Saxon Hearth Troops) at 0x3309720
+		Creating unit (Hunters) at 0x33154a0
+		Creating unit (Hunters) at 0x3315970
+		Creating unit (Levy Spearmen) at 0x3315e40
+		Creating unit (Saxon Keel) at 0x3316450
+		Creating unit (Saxon Keel) at 0x3316698
+		Creating unit (Saxon Keel) at 0x33168e0
+	Creating army controlled by Marcuui at 0x3316b28 from script
+		Creating unit (Warlord) at 0x33175a8
+		Creating unit (Saxon Hearth Troops) at 0x33177f0
+		Creating unit (Levy Spearmen) at 0x33184b8
+		Creating unit (Levy Spearmen) at 0x3318ac8
+		Creating unit (Mounted Nobles) at 0x3318d10
+		Creating unit (Hunters) at 0x331a280
+		Creating unit (Hunters) at 0x331a750
+Created faction romano_british from file
+	Creating army controlled by Artorius Castus at 0x331af48 from script
+		Creating unit (Warlord) at 0x331b030
+		Creating unit (Sarmatian Auxilia) at 0x331b408
+		Creating unit (Coastal Levies) at 0x331b808
+		Creating unit (Sarmatian Auxilia) at 0x331bcd8
+		Creating unit (Bucellarii) at 0x331c0d8
+		Creating unit (Monks) at 0x331c6b0
+		Creating unit (Mercenary Equites Veteranii) at 0x331c9c0
+		Creating unit (Hounds of Culann) at 0x331cdc0
+		Creating unit (Bucellarii) at 0x331d218
+		Creating unit (Foederati Infantry) at 0x331d730
+		Creating unit (Sarmatian Auxilia) at 0x331dc00
+		Creating unit (Foederati Infantry) at 0x331e000
+		Creating unit (Sarmatian Auxilia) at 0x331e4d0
+		Creating unit (Hounds of Culann) at 0x331e8d0
+Created faction alemanni from file
+	Creating army controlled by Amalric at 0x331f058 from script
+		Creating unit (Chosen Warlord) at 0x331f168
+		Creating unit (Onagers) at 0x331f540
+		Creating unit (Onagers) at 0x331f890
+		Creating unit (Onagers) at 0x331fbe0
+		Creating unit (Onagers) at 0x331ff30
+		Creating unit (Onagers) at 0x3320280
+		Creating unit (Onagers) at 0x33205d0
+		Creating unit (Onagers) at 0x3320920
+		Creating unit (Onagers) at 0x3320c70
+		Creating unit (Spear Warband) at 0x3321008
+		Creating unit (Spear Warband) at 0x3321618
+		Creating unit (Spear Warband) at 0x3321c28
+		Creating unit (Spear Warband) at 0x3322238
+Adding unit (Saxon Hearth Troops) at 0x8296f78 to deployment area at 0x3285630
+Adding unit (Levy Spearmen) at 0x82d6268 to deployment area at 0x3285630
+Adding unit (Saxon Hearth Troops) at 0x3307b90 to deployment area at 0x3285630
+Adding unit (Levy Spearmen) at 0x3308060 to deployment area at 0x3285630
+Adding unit (Warlord) at 0x3308670 to deployment area at 0x3285630
+Adding unit (Levy Spearmen) at 0x33088b8 to deployment area at 0x3285630
+Adding unit (Levy Spearmen) at 0x3308ec8 to deployment area at 0x3285630
+Adding unit (Levy Spearmen) at 0x33094d8 to deployment area at 0x3285630
+Adding unit (Saxon Hearth Troops) at 0x3309720 to deployment area at 0x3285630
+Adding unit (Hunters) at 0x33154a0 to deployment area at 0x3285630
+Adding unit (Hunters) at 0x3315970 to deployment area at 0x3285630
+Adding unit (Levy Spearmen) at 0x3315e40 to deployment area at 0x3285630
+Adding unit (Saxon Keel) at 0x3316450 to deployment area at 0x3285630
+Adding unit (Saxon Keel) at 0x3316698 to deployment area at 0x3285630
+Adding unit (Saxon Keel) at 0x33168e0 to deployment area at 0x3285630
+Adding unit (Warlord) at 0x33175a8 to deployment area at 0x328566c
+Adding unit (Saxon Hearth Troops) at 0x33177f0 to deployment area at 0x328566c
+Adding unit (Levy Spearmen) at 0x33184b8 to deployment area at 0x328566c
+Adding unit (Levy Spearmen) at 0x3318ac8 to deployment area at 0x328566c
+Adding unit (Mounted Nobles) at 0x3318d10 to deployment area at 0x328566c
+Adding unit (Hunters) at 0x331a280 to deployment area at 0x32856a8
+Adding unit (Hunters) at 0x331a750 to deployment area at 0x32856a8
+Adding unit (Warlord) at 0x331b030 to deployment area at 0x32856e4
+Adding unit (Sarmatian Auxilia) at 0x331bcd8 to deployment area at 0x32856e4
+Adding unit (Sarmatian Auxilia) at 0x331dc00 to deployment area at 0x32856e4
+Adding unit (Sarmatian Auxilia) at 0x331e4d0 to deployment area at 0x32856e4
+Adding unit (Sarmatian Auxilia) at 0x331b408 to deployment area at 0x3285720
+Adding unit (Coastal Levies) at 0x331b808 to deployment area at 0x3285720
+Adding unit (Bucellarii) at 0x331c0d8 to deployment area at 0x3285720
+Adding unit (Monks) at 0x331c6b0 to deployment area at 0x3285720
+Adding unit (Mercenary Equites Veteranii) at 0x331c9c0 to deployment area at 0x3285720
+Adding unit (Hounds of Culann) at 0x331cdc0 to deployment area at 0x3285720
+Adding unit (Bucellarii) at 0x331d218 to deployment area at 0x3285720
+Adding unit (Foederati Infantry) at 0x331d730 to deployment area at 0x3285720
+Adding unit (Foederati Infantry) at 0x331e000 to deployment area at 0x3285720
+Adding unit (Hounds of Culann) at 0x331e8d0 to deployment area at 0x3285720
+Adding unit (Chosen Warlord) at 0x331f168 to deployment area at 0x328575c
+Adding unit (Spear Warband) at 0x3321008 to deployment area at 0x328575c
+Adding unit (Spear Warband) at 0x3321618 to deployment area at 0x328575c
+Adding unit (Spear Warband) at 0x3321c28 to deployment area at 0x328575c
+Adding unit (Spear Warband) at 0x3322238 to deployment area at 0x328575c
+Adding unit (Onagers) at 0x331f540 to deployment area at 0x3285798
+Adding unit (Onagers) at 0x331f890 to deployment area at 0x3285798
+Adding unit (Onagers) at 0x331fbe0 to deployment area at 0x3285798
+Adding unit (Onagers) at 0x331ff30 to deployment area at 0x3285798
+Adding unit (Onagers) at 0x3320280 to deployment area at 0x3285798
+Adding unit (Onagers) at 0x33205d0 to deployment area at 0x3285798
+Adding unit (Onagers) at 0x3320920 to deployment area at 0x3285798
+Adding unit (Onagers) at 0x3320c70 to deployment area at 0x3285798
+Load finished **************************
+
+
+DELETE_UNIT_FUNCTION::do_func() - Deleting unit (Onagers) at 0x3320c70 - was in army controlled by Amalric at 0x331f058 from alemanni and in deployment area at 0x3285798
+Removed unit (Onagers) at 0x3320c70 from deployment area at 0x3285798
+DELETE_UNIT_FUNCTION::do_func() - Deleting unit (Onagers) at 0x3320920 - was in army controlled by Amalric at 0x331f058 from alemanni and in deployment area at 0x3285798
+Removed unit (Onagers) at 0x3320920 from deployment area at 0x3285798
+DELETE_UNIT_FUNCTION::do_func() - Deleting unit (Onagers) at 0x33205d0 - was in army controlled by Amalric at 0x331f058 from alemanni and in deployment area at 0x3285798
+Removed unit (Onagers) at 0x33205d0 from deployment area at 0x3285798

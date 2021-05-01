@@ -1,0 +1,58 @@
+dimensions
+{
+	width	1021
+	height	800
+}
+
+heights
+{
+	min_sea_height	-500
+	max_land_height	3500
+}
+
+; from top left
+
+start_position		
+{
+	; coordinates are same as Photoshop - measured in pixels from top left.
+
+	; For a settlement to appear on the battle map, there must be a settlement placed on the 
+	; strategy map at the top of template.txt, and the battle coordinates further down in template.txt
+	; must match these coordinates, then the x and z coordinates below must be pointing to the
+	; converted version of the settlement's x and z strat-map coordinates, otherwise it won't appear.
+
+
+	; sandy seaside
+
+	;x	458
+	;z	643
+
+; grassy bit
+
+	;x   390
+	;z   226
+
+	; coords in game tiles are x = 275, z = 235
+	; double x and z coordinates to convert back to pixels, so x = 550 and z = 470
+	; flip z coord by deduction from 800, so z = 330
+
+	;x  550
+	;z  330
+
+; wales
+
+	x 189
+	z 144
+}
+
+roughness		
+{
+	min	50
+	max	200
+}
+
+fractal
+{
+	multiplier	0.5
+}
+

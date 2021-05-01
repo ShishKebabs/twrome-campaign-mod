@@ -1,0 +1,4247 @@
+;This file is generated from the Spreadsheet prologue.xls
+;Please modify the spreadsheet and re-xport the data, rather than editing this file directly
+
+;===============================================================
+;== ADVICE THREAD DATA STARTS HERE ==
+;===============================================================
+
+;------------------------------------------
+AdviceThread Introduction_Victoria
+	GameArea Tutorial
+
+	Item Test_prologue
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial001_Welcome
+	Text RemasteredTutorial002_IAmVictoria
+
+
+;------------------------------------------
+AdviceThread Example_thread_type_b
+	GameArea Tutorial
+
+	Item Test_prologue
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command Command_test
+	Title Test_prologue_title
+	Text Test_prologue_text
+	Task
+		TaskText Side_text_test
+		TaskIcon data/menu/flag.tga
+	Task
+		TaskText Side_text_test
+		TaskIcon data/menu/flag.tga
+		AdditionalText RemasteredTutorial002_IAmVictoria
+	Task
+		TaskText Side_text_test
+		TaskIcon data/menu/flag.tga
+;This final task won't be read in because a task with additional text has to be the final task given.
+
+
+;------------------------------------------
+AdviceThread Example_thread_type_c
+	GameArea Tutorial
+
+	Item Test_prologue
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Highlight
+		Type ui, faction_button
+		Title Highlight_text_test_title
+		Body Highlight_text_test_body
+	Highlight
+		Type settlement, Ariminum
+		Title Highlight_text_test_title
+		Body Highlight_text_test_body
+	Highlight
+		Type character, Character Name
+		Title Highlight_text_test_title
+		Body Highlight_text_test_body
+	Title Test_prologue_title
+	Text Test_prologue_text
+
+
+;------------------------------------------
+AdviceThread Example_thread_type_d
+	GameArea Tutorial
+
+	Item Test_prologue
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title Test_prologue_title
+	Text Test_prologue_text
+	Task
+		TaskText Side_text_test
+		TaskIcon data/menu/flag.tga
+	Task
+		TaskText Side_text_test
+		TaskIcon data/menu/flag.tga
+		AdditionalText RemasteredTutorial002_IAmVictoria
+
+
+;------------------------------------------
+AdviceThread Example_thread_type_e
+	GameArea Tutorial
+
+	Item Test_prologue
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Page
+		Title Test_prologue_title
+		Body RemasteredTutorial004_ThisIsRome
+		Command RemasteredTutorial263_PracticeCamera
+	EndPage
+	Page
+		Title Test_prologue_title
+		Body RemasteredTutorial005_YouPlayAsJulii
+		Command null
+		Task
+			TaskText Side_text_test
+			TaskIcon data/ui/icons/tutorial/mouse_left.tga
+		Task
+			TaskText Side_text_test
+			TaskIcon data/ui/icons/tutorial/mouse_right_dbl.tga
+			AdditionalText RemasteredTutorial002_IAmVictoria
+		EndTasks
+	EndPage
+	Page
+		Title Test_prologue_title
+		Body RemasteredTutorial002_IAmVictoria
+		Command RemasteredTutorial263_PracticeCamera
+	EndPage
+
+
+;------------------------------------------
+AdviceThread Sons_of_Mars_and_Rome_1
+	GameArea Tutorial
+
+	Item Sons_of_Mars_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial003_SonsOfMars
+	Text RemasteredTutorial004_ThisIsRome
+
+
+;------------------------------------------
+AdviceThread Sons_of_Mars_and_Rome_1_type_c
+	GameArea Tutorial
+
+	Item Sons_of_Mars_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Highlight
+		Type settlement, Rome
+		Title RemasteredTutorial258_CityOfRome
+		Body RemasteredTutorial259_AllRoads
+	Title RemasteredTutorial003_SonsOfMars
+	Text RemasteredTutorial004_ThisIsRome
+
+
+;------------------------------------------
+AdviceThread Sons_of_Mars_and_Rome_2
+	GameArea Tutorial
+
+	Item Sons_of_Mars_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial003_SonsOfMars
+	Text RemasteredTutorial005_YouPlayAsJulii
+
+
+;------------------------------------------
+AdviceThread Sons_of_Mars_and_Rome_2_type_c
+	GameArea Tutorial
+
+	Item Sons_of_Mars_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Highlight
+		Type settlement, Ariminum
+		Title RemasteredTutorial261_Ariminum
+		Body RemasteredTutorial350_LargeTown
+	Highlight
+		Type settlement, Arretium
+		Title RemasteredTutorial260_Arretium
+		Body RemasteredTutorial262_CapitalCity
+	Title RemasteredTutorial003_SonsOfMars
+	Text RemasteredTutorial005_YouPlayAsJulii
+
+
+;------------------------------------------
+AdviceThread Sons_of_Mars_and_Rome_3
+	GameArea Tutorial
+
+	Item Sons_of_Mars_3
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial003_SonsOfMars
+	Text RemasteredTutorial007_AreaAroundRome
+
+
+;------------------------------------------
+AdviceThread Sons_of_Mars_and_Rome_type_e
+	GameArea Tutorial
+
+	Item Sons_of_Mars_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Page
+		Title RemasteredTutorial003_SonsOfMars
+		Body RemasteredTutorial004_ThisIsRome
+		Command null
+	EndPage
+	Page
+		Title RemasteredTutorial003_SonsOfMars
+		Body RemasteredTutorial005_YouPlayAsJulii
+		Command null
+	EndPage
+	Page
+		Title RemasteredTutorial003_SonsOfMars
+		Body RemasteredTutorial007_AreaAroundRome
+		Command null
+	EndPage
+
+
+;------------------------------------------
+AdviceThread Campaign_Map_Basics_1
+	GameArea Tutorial
+
+	Item Map_Basics_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial008_CampaignMapBasics
+	Text RemasteredTutorial009_MovingCamera
+
+
+;------------------------------------------
+AdviceThread Campaign_Map_Basics_1_type_b
+	GameArea Tutorial
+
+	Item Map_Basics_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial263_PracticeCamera
+	Title RemasteredTutorial008_CampaignMapBasics
+	Text RemasteredTutorial009_MovingCamera
+	Task
+		TaskText RemasteredTutorial264_KeyboardControls
+		TaskIcon fr data/ui/icons/tutorial/pan_camera_fr.tga
+				 data/ui/icons/tutorial/pan_camera.tga
+	Task
+		TaskText RemasteredTutorial264_KeyboardControls_Task2
+		TaskIcon data/ui/icons/tutorial/mouse_scroll.tga
+	Task
+		TaskText RemasteredTutorial264_KeyboardControls_Task3
+		TaskIcon fr data/ui/icons/tutorial/rotate_fr.tga
+				 data/ui/icons/tutorial/rotate.tga
+
+
+;------------------------------------------
+AdviceThread Campaign_Map_Basics_1_type_d
+	GameArea Tutorial
+
+	Item Map_Basics_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial008_CampaignMapBasics
+	Text RemasteredTutorial009_MovingCamera
+	Task
+		TaskText RemasteredTutorial264_KeyboardControls
+		TaskIcon fr data/ui/icons/tutorial/pan_camera_fr.tga
+				 data/ui/icons/tutorial/pan_camera.tga
+	Task
+		TaskText RemasteredTutorial264_KeyboardControls_Task2
+		TaskIcon data/ui/icons/tutorial/mouse_scroll.tga
+	Task
+		TaskText RemasteredTutorial264_KeyboardControls_Task3
+		TaskIcon fr data/ui/icons/tutorial/rotate_fr.tga
+				 data/ui/icons/tutorial/rotate.tga
+
+
+;------------------------------------------
+AdviceThread New_Mission_Assigned_1
+	GameArea Tutorial
+
+	Item Mission_Assigned_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial011_NewMission
+	Text RemasteredTutorial012_TakeSegesta
+
+;------------------------------------------
+AdviceThread New_Mission_Assigned_1_type_b
+	GameArea Tutorial
+
+	Item Mission_Assigned_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial441_SenateCommand
+	Title RemasteredTutorial011_NewMission
+	Text RemasteredTutorial012_TakeSegesta
+	Task
+		TaskText RemasteredTutorial438_LeftClickSenate
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+	Task
+		TaskText RemasteredTutorial439_LeftLocateTarget
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+	Task
+		TaskText RemasteredTutorial440_CloseSenateTab
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+;------------------------------------------
+AdviceThread How_To_Attack_A_Settlement_1
+	GameArea Tutorial
+
+	Item Attack_Settlement_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial013_HowToAttackSettlements
+	Text RemasteredTutorial014_AttackBesiegeSettlement
+
+;------------------------------------------
+AdviceThread How_To_Attack_A_Settlement_1_type_b
+	GameArea Tutorial
+
+	Item Attack_Settlement_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial265_AttackSegesta
+	Title RemasteredTutorial013_HowToAttackSettlements
+	Text RemasteredTutorial014_AttackBesiegeSettlement
+	Task
+		TaskText RemasteredTutorial266_SelectArmy
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+	Task
+		TaskText RemasteredTutorial266_SelectArmy_Task2
+		TaskIcon data/ui/icons/tutorial/mouse_right.tga
+
+
+;------------------------------------------
+AdviceThread Siege_Overview_1
+	GameArea Tutorial
+
+	Item Siege_Overview_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial015_SiegeOverview
+	Text RemasteredTutorial016_SiegeOverviewPanel
+
+
+;------------------------------------------
+AdviceThread Siege_Overview_1_type_b
+	GameArea Tutorial
+
+	Item Siege_Overview_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial388_AssaultButton
+	Title RemasteredTutorial015_SiegeOverview
+	Text RemasteredTutorial016_SiegeOverviewPanel
+	;;Task
+	;;	TaskText RemasteredTutorial356_ClickButton
+	;;	TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Siege_Overview_1_type_e
+	GameArea Tutorial
+
+	Item Siege_Overview_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Page
+		Title RemasteredTutorial015_SiegeOverview
+		Body RemasteredTutorial016_SiegeOverviewPanel
+		Command RemasteredTutorial388_AssaultButton
+	EndPage
+
+;------------------------------------------
+AdviceThread Battle_Details_1
+	GameArea Tutorial
+
+	Item Battle_Details_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial017_BattleDetails
+	Text RemasteredTutorial018_BattleDetailScreen
+
+
+;------------------------------------------
+AdviceThread Battle_Details_1_type_b
+	GameArea Tutorial
+
+	Item Battle_Details_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial389_FightButton
+	Title RemasteredTutorial017_BattleDetails
+	Text RemasteredTutorial018_BattleDetailScreen
+	;;Task
+	;;	TaskText RemasteredTutorial356_ClickButton
+	;;	TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Battle_Details_1_type_e
+	GameArea Tutorial
+
+	Item Battle_Details_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Page
+		Title RemasteredTutorial017_BattleDetails
+		Body RemasteredTutorial018_BattleDetailScreen
+		Command RemasteredTutorial389_FightButton
+	EndPage
+
+
+;------------------------------------------
+AdviceThread Advisor_Introduction_1
+	GameArea Tutorial
+
+	Item Advisor_Introduction_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial020_AdvisorInstruction
+	Text RemasteredTutorial021_PrepareForBattle
+
+
+;------------------------------------------
+AdviceThread Moving_The_Camera_1
+	GameArea Tutorial
+
+	Item Moving_Camera_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial026_MovingCameraHeader
+	Text RemasteredTutorial027_CameraControls
+
+
+
+;------------------------------------------
+AdviceThread Moving_The_Camera_1_type_b
+	GameArea Tutorial
+
+	Item Moving_Camera_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial028_PracticeCameraControls
+	Title RemasteredTutorial026_MovingCameraHeader
+	Text RemasteredTutorial027_CameraControls
+	Task
+		TaskText RemasteredTutorial267_KeyboardControls
+		TaskIcon fr data/ui/icons/tutorial/pan_camera_fr.tga
+				 data/ui/icons/tutorial/pan_camera.tga
+	Task
+		TaskText RemasteredTutorial267_KeyboardControls_Task2
+		TaskIcon fr data/ui/icons/tutorial/rotate_fr.tga
+				 data/ui/icons/tutorial/rotate.tga
+	Task
+		TaskText RemasteredTutorial267_KeyboardControls_Task3
+		TaskIcon fr data/ui/icons/tutorial/camera_height_fr.tga
+				 data/ui/icons/tutorial/camera_height.tga
+	Task
+		TaskText RemasteredTutorial267_KeyboardControls_Task4
+		TaskIcon data/ui/icons/tutorial/camera_tilt.tga
+
+
+;------------------------------------------
+AdviceThread Moving_The_Camera_1_type_d
+	GameArea Tutorial
+
+	Item Map_Basics_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial026_MovingCameraHeader
+	Text RemasteredTutorial027_CameraControls
+	Task
+		TaskText RemasteredTutorial267_KeyboardControls
+		TaskIcon fr data/ui/icons/tutorial/pan_camera_fr.tga
+				 data/ui/icons/tutorial/pan_camera.tga
+	Task
+		TaskText RemasteredTutorial267_KeyboardControls_Task2
+		TaskIcon fr data/ui/icons/tutorial/rotate_fr.tga
+				 data/ui/icons/tutorial/rotate.tga
+	Task
+		TaskText RemasteredTutorial267_KeyboardControls_Task3
+		TaskIcon fr data/ui/icons/tutorial/camera_height_fr.tga
+				 data/ui/icons/tutorial/camera_height.tga
+	Task
+		TaskText RemasteredTutorial267_KeyboardControls_Task4
+		TaskIcon data/ui/icons/tutorial/camera_tilt.tga
+
+
+;------------------------------------------
+AdviceThread Select_Units_1
+	GameArea Tutorial
+
+	Item Select_Units_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial030_SelectUnitsHeader
+	Text RemasteredTutorial031_PracticeCommands
+
+
+;------------------------------------------
+AdviceThread Select_Units_1_type_b
+	GameArea Tutorial
+
+	Item Select_Units_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial268_SelectTriarii
+	Title RemasteredTutorial030_SelectUnitsHeader
+	Text RemasteredTutorial031_PracticeCommands
+	Task
+		TaskText RemasteredTutorial269_SelectUnitCard
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+		AdditionalText RemasteredTutorial033_CantSeeUnit
+
+
+;------------------------------------------
+AdviceThread Your_Unit_Cards_1
+	GameArea Tutorial
+
+	Item Your_Unit_Cards_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial034_UnitCardsHeader
+	Text RemasteredTutorial035_UnitCards
+
+
+;------------------------------------------
+AdviceThread Move_Your_Units_1
+	GameArea Tutorial
+
+	Item Move_Units_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial036_MoveUnitsHeader
+	Text RemasteredTutorial037_MoveSpearmen
+
+
+;------------------------------------------
+AdviceThread Move_Your_Units_1_type_b
+	GameArea Tutorial
+
+	Item Move_Units_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial270_MoveTriarii
+	Title RemasteredTutorial036_MoveUnitsHeader
+	Text RemasteredTutorial037_MoveSpearmen
+	Task
+		TaskText RemasteredTutorial271_SelectUnit
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Move_Your_Units_2_type_b
+	GameArea Tutorial
+
+	Item Move_Units_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial422_HastatiCommand
+	Title RemasteredTutorial036_MoveUnitsHeader
+	Text RemasteredTutorial421_MoveHastati
+	Task
+		TaskText RemasteredTutorial271_SelectUnit
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Speed_Up_Battle_1
+	GameArea Tutorial
+
+	Item Speed_Up_Battle_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial036_MoveUnitsHeader
+	Text RemasteredTutorial038_2_ScreenFromCharges
+
+
+;------------------------------------------
+AdviceThread Move_Your_Units_And_Speed_Up_Battle_type_e
+	GameArea Tutorial
+
+	Item Move_Units_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Page
+		Title RemasteredTutorial036_MoveUnitsHeader
+		Body RemasteredTutorial037_MoveSpearmen
+		Command RemasteredTutorial270_MoveTriarii
+		Task
+			TaskText RemasteredTutorial271_SelectUnit
+			TaskIcon data/ui/icons/tutorial/mouse_left.tga
+		Task
+			TaskText RemasteredTutorial271_SelectUnit_Task2
+			TaskIcon data/ui/icons/tutorial/mouse_right.tga
+			AdditionalText RemasteredTutorial271_SelectUnit_AdditionalText
+		EndTasks
+	EndPage
+	Page
+		Title RemasteredTutorial036_MoveUnitsHeader
+		Body RemasteredTutorial038_2_ScreenFromCharges
+		Command null
+		Task
+			TaskText RemasteredTutorial271_SelectUnit
+			TaskIcon data/ui/icons/tutorial/mouse_left.tga
+		Task
+			TaskText RemasteredTutorial271_SelectUnit_Task2
+			TaskIcon data/ui/icons/tutorial/mouse_right.tga
+			AdditionalText RemasteredTutorial271_SelectUnit_AdditionalText
+		EndTasks
+	EndPage
+	Page
+		Title RemasteredTutorial036_MoveUnitsHeader
+		Body RemasteredTutorial421_MoveHastati
+		Command RemasteredTutorial422_HastatiCommand
+		Task
+			TaskText RemasteredTutorial271_SelectUnit
+			TaskIcon data/ui/icons/tutorial/mouse_left.tga
+		Task
+			TaskText RemasteredTutorial271_SelectUnit_Task2
+			TaskIcon data/ui/icons/tutorial/mouse_right.tga
+			AdditionalText RemasteredTutorial271_SelectUnit_AdditionalText
+		EndTasks
+	EndPage
+
+;------------------------------------------
+AdviceThread Set_A_Formation_1
+	GameArea Tutorial
+
+	Item Set_Formation_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial039_SetFormationHeader
+	Text RemasteredTutorial040_PositionArchersBehind
+
+
+;------------------------------------------
+AdviceThread Set_A_Formation_1_type_b
+	GameArea Tutorial
+
+	Item Set_Formation_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial432_MoveArchers
+	Title RemasteredTutorial039_SetFormationHeader
+	Text RemasteredTutorial040_PositionArchersBehind
+	Task
+		TaskText RemasteredTutorial271_SelectUnit
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Set_A_Formation_2
+	GameArea Tutorial
+
+	Item Set_Formation_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial039_SetFormationHeader
+	Text RemasteredTutorial042_MoveGeneralsBodyguard
+
+
+;------------------------------------------
+AdviceThread Set_A_Formation_2_type_b
+	GameArea Tutorial
+
+	Item Set_Formation_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial274_MoveGeneral
+	Title RemasteredTutorial039_SetFormationHeader
+	Text RemasteredTutorial042_MoveGeneralsBodyguard
+	Task
+		TaskText RemasteredTutorial271_SelectUnit
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Set_A_Formation_type_e
+	GameArea Tutorial
+
+	Item Set_Formation_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Page
+		;SideText RemasteredTutorial271_SelectUnit
+		Title RemasteredTutorial039_SetFormationHeader
+		Body RemasteredTutorial040_PositionArchersBehind
+		Command RemasteredTutorial272_MoveArchers
+		Task
+			TaskText RemasteredTutorial271_SelectUnit
+			TaskIcon data/ui/icons/tutorial/mouse_left.tga
+		Task
+			TaskText RemasteredTutorial271_SelectUnit_Task2
+			TaskIcon data/ui/icons/tutorial/mouse_right.tga
+			AdditionalText RemasteredTutorial271_SelectUnit_AdditionalText
+		EndTasks
+	EndPage
+	Page
+		;SideText RemasteredTutorial271_SelectUnit
+		Title RemasteredTutorial039_SetFormationHeader
+		Body RemasteredTutorial042_MoveGeneralsBodyguard
+		Command RemasteredTutorial274_MoveGeneral
+		Task
+			TaskText RemasteredTutorial271_SelectUnit
+			TaskIcon data/ui/icons/tutorial/mouse_left.tga
+		Task
+			TaskText RemasteredTutorial271_SelectUnit_Task2
+			TaskIcon data/ui/icons/tutorial/mouse_right.tga
+			AdditionalText RemasteredTutorial271_SelectUnit_AdditionalText
+		EndTasks
+	EndPage
+
+
+;------------------------------------------
+AdviceThread Group_Selected_Units_1
+	GameArea Tutorial
+
+	Item Group_Units_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial044_GroupHeader
+	Text RemasteredTutorial046_GroupUnitsButton
+
+
+;------------------------------------------
+AdviceThread Group_Selected_Units_1_type_b
+	GameArea Tutorial
+
+	Item Group_Units_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial276_SelectAllUnits
+	Title RemasteredTutorial044_GroupHeader
+	Text RemasteredTutorial046_GroupUnitsButton
+	Task
+		TaskText RemasteredTutorial277_SelectBox
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+	Task
+		TaskText RemasteredTutorial277_SelectBox_Task2
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Lock_Formation_1
+	GameArea Tutorial
+
+	Item Lock_Formation_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial047_LockFormationHeader
+	Text RemasteredTutorial046_GroupUnitsButton
+
+
+;------------------------------------------
+AdviceThread Lock_Formation_1_type_b
+	GameArea Tutorial
+
+	Item Lock_Formation_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial278_LockGroup
+	Title RemasteredTutorial047_LockFormationHeader
+	Text RemasteredTutorial048_LockFormation
+	Task
+		TaskText RemasteredTutorial279_ClickLock
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Select_Location_1
+	GameArea Tutorial
+
+	Item Select_Location_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial050_SelectLocationHeader
+	Text RemasteredTutorial051_SelectLocation
+
+
+;------------------------------------------
+AdviceThread Select_Location_1_type_b
+	GameArea Tutorial
+
+	Item Select_Location_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial280_MoveGroup
+	Title RemasteredTutorial050_SelectLocationHeader
+	Text RemasteredTutorial051_SelectLocation
+	Task
+		TaskText RemasteredTutorial281_MoveGroup
+		TaskIcon data/ui/icons/tutorial/mouse_right.tga
+
+
+;------------------------------------------
+AdviceThread Attack_Enemy_Unit_1
+	GameArea Tutorial
+
+	Item Attack_Enemy_Unit_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial052_AttackEnemyHeader
+	Text RemasteredTutorial053_FaceEnemyTroops
+
+
+;------------------------------------------
+AdviceThread Attack_Enemy_Unit_1_type_b
+	GameArea Tutorial
+
+	Item Attack_Enemy_Unit_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial282_AttackTroops
+	Title RemasteredTutorial052_AttackEnemyHeader
+	Text RemasteredTutorial053_FaceEnemyTroops
+	Task
+		TaskText RemasteredTutorial283_ClickArchers
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+	Task
+		TaskText RemasteredTutorial283_ClickArchers_Task2
+		TaskIcon data/ui/icons/tutorial/mouse_right.tga
+
+
+;------------------------------------------
+AdviceThread Toggle_Speed_Unit_1
+	GameArea Tutorial
+
+	Item Toggle_Speed_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial055_UntiSpeedHeader
+	Text RemasteredTutorial056_CavalryCharge
+
+
+;------------------------------------------
+AdviceThread Toggle_Speed_Unit_1_type_b
+	GameArea Tutorial
+
+	Item Toggle_Speed_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial390_OrderCavalry
+	Title RemasteredTutorial055_UntiSpeedHeader
+	Text RemasteredTutorial056_CavalryCharge
+	Task
+		TaskText RemasteredTutorial391_SelectRun
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Toggle_Speed_Button_1
+	GameArea Tutorial
+
+	Item Toggle_Speed_Button_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial058_ToggleSpeedHeader
+	Text RemasteredTutorial059_ToggleSpeed
+
+
+;------------------------------------------
+AdviceThread Toggle_Speed_Unit_And_Button_type_e
+	GameArea Tutorial
+
+	Item Toggle_Speed_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Page
+		Title RemasteredTutorial055_UntiSpeedHeader
+		Body RemasteredTutorial056_CavalryCharge
+		;SideText RemasteredTutorial391_SelectRun
+		Command RemasteredTutorial390_OrderCavalry
+		Task
+			TaskText RemasteredTutorial271_SelectUnit
+			TaskIcon data/ui/icons/tutorial/mouse_left.tga
+		Task
+			TaskText RemasteredTutorial391_SelectRun
+			TaskIcon data/ui/icons/tutorial/mouse_right_dbl.tga
+			;;AdditionalText RemasteredTutorial271_SelectUnit_AdditionalText
+		EndTasks
+	EndPage
+	Page
+		Title RemasteredTutorial058_ToggleSpeedHeader
+		Body RemasteredTutorial059_ToggleSpeed
+		Command null
+		;;Task
+		;;	TaskText RemasteredTutorial271_SelectUnit
+		;;	TaskIcon data/ui/icons/tutorial/mouse_left.tga
+		;;Task
+		;;	TaskText RemasteredTutorial391_SelectRun
+		;;	TaskIcon data/ui/icons/tutorial/mouse_right_dbl.tga
+		;;	AdditionalText RemasteredTutorial271_SelectUnit_AdditionalText
+		;;EndTasks
+	EndPage
+
+
+;------------------------------------------
+AdviceThread Cavalry_Charge_Attack_1
+	GameArea Tutorial
+
+	Item Cavalry_Charge_Attack_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial060_CavalryChargeHeader
+	Text RemasteredTutorial061_CavalryCharge
+
+
+;------------------------------------------
+AdviceThread Cavalry_Charge_Attack_1_type_b
+	GameArea Tutorial
+
+	Item Cavalry_Charge_Attack_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial284_AttackArchers
+	Title RemasteredTutorial060_CavalryChargeHeader
+	Text RemasteredTutorial061_CavalryCharge
+	Task
+		TaskText RemasteredTutorial285_ClickGeneral_Task1
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+	Task
+		TaskText RemasteredTutorial285_ClickGeneral_Task2
+		TaskIcon data/ui/icons/tutorial/mouse_right_dbl.tga
+
+
+;------------------------------------------
+AdviceThread How_To_Use_Troops_1
+	GameArea Tutorial
+
+	Item Use_Troops_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial062_UseTroops
+	Text RemasteredTutorial063_CommandMultipleUnits
+
+
+;------------------------------------------
+AdviceThread How_To_Use_Troops_1_type_b
+	GameArea Tutorial
+
+	Item Use_Troops_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial286_AttackUnit
+	Title RemasteredTutorial062_UseTroops
+	Text RemasteredTutorial063_CommandMultipleUnits
+	Task
+		TaskText RemasteredTutorial287_SelectMultiple
+		TaskIcon data/ui/icons/tutorial/shift_click.tga
+	Task
+		TaskText RemasteredTutorial287_SelectMultiple_Task2
+		TaskIcon data/ui/icons/tutorial/mouse_right_dbl.tga
+
+
+;------------------------------------------
+AdviceThread Select_All_Button_1
+	GameArea Tutorial
+
+	Item Select_All_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial065_SelectAllHeader
+	Text RemasteredTutorial066_FinishThisBattle
+
+
+;------------------------------------------
+AdviceThread Select_All_Button_1_type_b
+	GameArea Tutorial
+
+	Item Select_All_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial288_RoutEnemies
+	Title RemasteredTutorial065_SelectAllHeader
+	Text RemasteredTutorial066_FinishThisBattle
+	Task
+		TaskText RemasteredTutorial289_ClickSelectAll
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+	Task
+		TaskText RemasteredTutorial289_ClickSelectAll_Task2
+		TaskIcon data/ui/icons/tutorial/mouse_right.tga
+
+
+;------------------------------------------
+AdviceThread Battle_Results_Screen_1
+	GameArea Tutorial
+
+	Item Battle_Results_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial067_BattleResultsHeader
+	Text RemasteredTutorial068_SegestaIsYours
+
+
+;------------------------------------------
+AdviceThread Battle_Results_Screen_1_type_b
+	GameArea Tutorial
+
+	Item Battle_Results_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial068_SegestaIsYoursClick
+	Title RemasteredTutorial067_BattleResultsHeader
+	Text RemasteredTutorial068_SegestaIsYours
+	;;Task
+	;;	TaskText RemasteredTutorial356_ClickButton
+	;;	TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Congratulations_1
+	GameArea Tutorial
+
+	Item Congratulations_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial069_Congratulations_Header
+	Text RemasteredTutorial070_TakenFirstSettlement
+
+
+;------------------------------------------
+AdviceThread What_Now_1
+	GameArea Tutorial
+
+	Item What_Now_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial071_WhatNowHeader
+	Text RemasteredTutorial072_SegestaDecisions
+
+
+;------------------------------------------
+AdviceThread What_Now_1_type_b
+	GameArea Tutorial
+
+	Item What_Now_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial292_EnslaveSettlement
+	Title RemasteredTutorial071_WhatNowHeader
+	Text RemasteredTutorial072_SegestaDecisions
+	Task
+		TaskText RemasteredTutorial293_SelectDecision
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread What_Now_1_type_e
+	GameArea Tutorial
+
+	Item What_Now_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Page
+		Title RemasteredTutorial071_WhatNowHeader
+		Body RemasteredTutorial072_SegestaDecisions
+		Command null
+	EndPage
+	Page
+		Title RemasteredTutorial071_WhatNowHeader
+		Body RemasteredTutorial073_Occupy
+		Command null
+	EndPage
+	Page
+		Title RemasteredTutorial071_WhatNowHeader
+		Body RemasteredTutorial074_Enslave
+		Command null
+	EndPage
+	Page
+		Title RemasteredTutorial071_WhatNowHeader
+		Body RemasteredTutorial075_Exterminate
+		Command null
+	EndPage
+	Page
+		Title RemasteredTutorial071_WhatNowHeader
+		Body RemasteredTutorial076_RecommendEnslave
+		Command RemasteredTutorial292_EnslaveSettlement
+	EndPage
+
+;------------------------------------------
+AdviceThread What_Now_2_type_b
+	GameArea Tutorial
+
+	Item What_Now_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial294_ClickSegesta
+	Title RemasteredTutorial078_ControlEmpireHeader
+	Text RemasteredTutorial077_DevelopSettlment
+	Task
+		TaskText RemasteredTutorial295_OpenOverview
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Controlling_Your_Empire_1
+	GameArea Tutorial
+
+	Item Controlling_Your_Empire_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial078_ControlEmpireHeader
+	Text RemasteredTutorial079_BottomPanel
+
+
+;------------------------------------------
+AdviceThread Construction_Basics_1
+	GameArea Tutorial
+
+	Item Construction_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial081_ConstructionBasicsHeader
+	Text RemasteredTutorial082_ConstructionBasics
+
+
+;------------------------------------------
+AdviceThread Construction_Basics_1_type_b
+	GameArea Tutorial
+
+	Item Construction_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial392_OpenConstruction
+	Title RemasteredTutorial081_ConstructionBasicsHeader
+	Text RemasteredTutorial082_ConstructionBasics
+	Task
+		TaskText RemasteredTutorial425_OpenConstruction
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Lets_Build_1
+	GameArea Tutorial
+
+	Item Build_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial085_LetsBuildHeader
+	Text RemasteredTutorial086_BuildGovernorsHouse
+
+
+;------------------------------------------
+AdviceThread Lets_Build_1_type_b
+	GameArea Tutorial
+
+	Item Build_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial_StartConstruction
+	Title RemasteredTutorial085_LetsBuildHeader
+	Text RemasteredTutorial086_BuildGovernorsHouse
+	Task
+		TaskText RemasteredTutorial433_BuildingPanel
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+	Task
+		TaskText RemasteredTutorial297_OpenDescription
+		TaskIcon data/ui/icons/tutorial/mouse_right.tga
+	Task
+		TaskText RemasteredTutorial296_AddGovernors
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+		AdditionalText RemasteredTutorial297_OpenDescription_AdditionalText
+
+
+;------------------------------------------
+AdviceThread Lets_Build_1_type_d
+	GameArea Tutorial
+
+	Item Build_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial085_LetsBuildHeader
+	Text RemasteredTutorial423_LetsBuild2
+	Task
+		TaskText RemasteredTutorial297_OpenDescription
+		TaskIcon data/ui/icons/tutorial/mouse_right.tga
+		;AdditionalText RemasteredTutorial297_OpenDescription_AdditionalText
+	Task
+		TaskText RemasteredTutorial296_AddGovernors
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+		AdditionalText RemasteredTutorial297_OpenDescription_AdditionalText
+
+;------------------------------------------
+AdviceThread End_Turn_1
+	GameArea Tutorial
+
+	Item End_Turn_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial090_EndTurnHeader
+	Text RemasteredTutorial091_AccomplishedMuch
+
+
+;------------------------------------------
+AdviceThread End_Turn_1_type_b
+GameArea Tutorial
+
+	Item End_Turn_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial093_PressEndTurn
+	Title RemasteredTutorial090_EndTurnHeader
+	Text RemasteredTutorial091_AccomplishedMuch
+	Task
+		TaskText RemasteredTutorial356_ClickButton
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Time_And_Seasons_1
+	GameArea Tutorial
+
+	Item Time_And_Seasons_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial094_TimeSeasonsHeader
+	Text RemasteredTutorial095_TimePassesSeasonsChange
+
+
+;------------------------------------------
+AdviceThread Senate_Mission_Rewards_1
+	GameArea Tutorial
+
+	Item Mission_Rewards_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial097_SenateRewardsHeader
+	Text RemasteredTutorial098_SenateReward
+
+
+;------------------------------------------
+AdviceThread Senate_Mission_Rewards_1_type_b
+	GameArea Tutorial
+
+	Item Mission_Rewards_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial357_SenateRewards
+	Title RemasteredTutorial097_SenateRewardsHeader
+	Text RemasteredTutorial098_SenateReward
+	Task
+		TaskText RemasteredTutorial376_SelectSettlement
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Economic_Buildings_1
+	GameArea Tutorial
+
+	Item Economic_Buildings_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial100_EconomicBuildHeader
+	Text RemasteredTutorial436_ThreeTypes
+
+
+;------------------------------------------
+AdviceThread Economic_Buildings_1_type_b
+	GameArea Tutorial
+
+	Item Economic_Buildings_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial298_AddPort
+	Title RemasteredTutorial100_EconomicBuildHeader
+	Text RemasteredTutorial101_TakeGaulishSettlements
+	Task
+		TaskText RemasteredTutorial433_BuildingPanel
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+	Task
+		TaskText RemasteredTutorial297_OpenDescription
+		TaskIcon data/ui/icons/tutorial/mouse_right.tga
+	Task
+		TaskText RemasteredTutorial_ClickHighlightedPort
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+		AdditionalText RemasteredTutorial297_OpenDescription_AdditionalText
+
+
+;------------------------------------------
+AdviceThread Military_Buildings_1
+	GameArea Tutorial
+
+	Item Military_Buildings_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial105_MilitaryBuildingsHeader
+	Text RemasteredTutorial106_MilitaryBuildings
+
+
+;------------------------------------------
+AdviceThread Military_Buildings_1_type_b
+	GameArea Tutorial
+
+	Item Military_Buildings_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial300_AddPractice
+	Title RemasteredTutorial105_MilitaryBuildingsHeader
+	Text RemasteredTutorial106_MilitaryBuildings
+	Task
+		TaskText RemasteredTutorial433_BuildingPanel
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+	Task
+		TaskText RemasteredTutorial297_OpenDescription
+		TaskIcon data/ui/icons/tutorial/mouse_right.tga
+	Task
+		TaskText RemasteredTutorial_ClickHighlightedPracticeRange
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+		AdditionalText RemasteredTutorial297_OpenDescription_AdditionalText
+
+
+;------------------------------------------
+AdviceThread Civic_Buildings_1
+	GameArea Tutorial
+
+	Item Civic_Buildings_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial108_CivicBuildHeader
+	Text RemasteredTutorial109_CivicBuildings
+
+
+;------------------------------------------
+AdviceThread Civic_Buildings_1_type_b
+	GameArea Tutorial
+
+	Item Civic_Buildings_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial302_AddFarm
+	Title RemasteredTutorial108_CivicBuildHeader
+	Text RemasteredTutorial109_CivicBuildings
+	Task
+		TaskText RemasteredTutorial297_OpenDescription
+		TaskIcon data/ui/icons/tutorial/mouse_right.tga
+	Task
+		TaskText RemasteredTutorial302_AddFarm
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+		AdditionalText RemasteredTutorial297_OpenDescription_AdditionalText
+
+
+;------------------------------------------
+AdviceThread Settlements_And_Garrisons_1
+	GameArea Tutorial
+
+	Item Settlements_And_Garrisons_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial112_SettlementGarrisonHeader
+	Text RemasteredTutorial113_TargetMediolanum
+
+
+;------------------------------------------
+AdviceThread Settlements_And_Garrisons_1_type_b
+	GameArea Tutorial
+
+	Item Settlements_And_Garrisons_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial304_AddTownWatch
+	Title RemasteredTutorial112_SettlementGarrisonHeader
+	Text RemasteredTutorial115_RecruitTownWatch
+	Task
+		TaskText RemasteredTutorial434_RecruitmentPanel
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+	Task
+		TaskText RemasteredTutorial437_RightClickUnits
+		TaskIcon data/ui/icons/tutorial/mouse_right.tga
+	Task
+		TaskText RemasteredTutorial_SelectUnitsToRecruit
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+		AdditionalText RemasteredTutorial297_OpenDescription_AdditionalText
+
+
+;------------------------------------------
+AdviceThread Send_Agent_Panel_1
+	GameArea Tutorial
+
+	Item Send_Agent_Panel_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial116_SendAgentHeader
+	Text RemasteredTutorial117_SendSpy
+
+
+;------------------------------------------
+AdviceThread Send_Agent_Panel_1_type_b
+	GameArea Tutorial
+
+	Item Send_Agent_Panel_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial351_SelectSpy
+	Title RemasteredTutorial116_SendAgentHeader
+	Text RemasteredTutorial117_SendSpy
+	Task
+		TaskText RemasteredTutorial352_ClickOnCharacter
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Send_Agent_Panel_1_type_c
+	GameArea Tutorial
+
+	Item Send_Agent_Panel_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Highlight
+		Type character, Decius Curtius
+		Title RemasteredTutorial306_Spy
+		Body RemasteredTutorial307_SelectAgent
+	Title RemasteredTutorial116_SendAgentHeader
+	Text RemasteredTutorial117_SendSpy
+
+
+;------------------------------------------
+AdviceThread Send_Agent_Panel_1_type_e
+	GameArea Tutorial
+
+	Item Send_Agent_Panel_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Page
+		Title RemasteredTutorial116_SendAgentHeader
+		Body RemasteredTutorial117_SendSpy
+		Command null
+	EndPage
+	Page
+		Title RemasteredTutorial116_SendAgentHeader
+		Body RemasteredTutorial119_MediolanumAgentMission
+		Command RemasteredTutorial353_SendSpyPanel
+		Task
+			TaskText RemasteredTutorial330_Select
+			TaskIcon data/ui/icons/tutorial/mouse_left.tga
+		Task
+			TaskText RemasteredTutorial426_ClickSendAgent
+			TaskIcon data/ui/icons/tutorial/mouse_left.tga
+		Task
+			TaskText RemasteredTutorial427_SelectSpy
+			TaskIcon data/ui/icons/tutorial/mouse_left.tga
+		Task
+			TaskText RemasteredTutorial428_ClickConfirm
+			TaskIcon data/ui/icons/tutorial/mouse_left.tga
+		EndTasks
+	EndPage
+	
+
+
+;------------------------------------------
+AdviceThread Send_Agent_Panel_2
+	GameArea Tutorial
+
+	Item Send_Agent_Panel_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial116_SendAgentHeader
+	Text RemasteredTutorial119_MediolanumAgentMission
+
+
+;------------------------------------------
+AdviceThread Send_Agent_Panel_2_type_b
+	GameArea Tutorial
+
+	Item Send_Agent_Panel_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial353_SendSpyPanel
+	Title RemasteredTutorial116_SendAgentHeader
+	Text RemasteredTutorial119_MediolanumAgentMission
+	Task
+		TaskText RemasteredTutorial354_SelectEnemySettlement
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Send_Agent_Panel_2_type_c
+	GameArea Tutorial
+
+	Item Send_Agent_Panel_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Highlight
+		Type settlement, Mediolanium
+		Title RemasteredTutorial308_Mediolanum
+		Body RemasteredTutorial309_SelectSettlement
+	Title RemasteredTutorial116_SendAgentHeader
+	Text RemasteredTutorial119_MediolanumAgentMission
+
+
+;------------------------------------------
+AdviceThread Send_Agent_Panel_3_type_b
+	GameArea Tutorial
+
+	Item Send_Agent_Panel_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial424_SelectArmyTab
+	Title RemasteredTutorial116_SendAgentHeader
+	Text RemasteredTutorial175_HireMercenaries1
+	Task
+		TaskText RemasteredTutorial354_SelectEnemySettlement
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Send_Agent_Panel_3_type_d
+	GameArea Tutorial
+
+	Item Send_Agent_Panel_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial_MissionSuccessful
+	Text RemasteredTutorial175_HireMercenaries1
+	;;Task
+	;;	TaskText RemasteredTutorial354_SelectEnemySettlement
+	;;	TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread End_Turn_2
+	GameArea Tutorial
+
+	Item End_Turn_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial121_EndTurnHeader
+	Text RemasteredTutorial122_EndTurnToProceed
+
+
+;------------------------------------------
+AdviceThread End_Turn_2_type_b
+	GameArea Tutorial
+
+	Item End_Turn_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial393_EndTurnTwo
+	Title RemasteredTutorial121_EndTurnHeader
+	Text RemasteredTutorial122_EndTurnToProceed
+	Task
+		TaskText RemasteredTutorial356_ClickButton
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Notifications_1
+	GameArea Tutorial
+
+	Item Notifications_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial123_NotificationHeader
+	Text RemasteredTutorial124_Notifications
+
+
+;------------------------------------------
+AdviceThread Notifications_1_type_b
+	GameArea Tutorial
+
+	Item Notifications_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial358_SenateNotif 
+	Title RemasteredTutorial123_NotificationHeader
+	Text RemasteredTutorial124_Notifications
+	Task
+		TaskText RemasteredTutorial356_ClickButton
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Notifications_2
+	GameArea Tutorial
+
+	Item Notifications_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial123_NotificationHeader
+	Text RemasteredTutorial125_SenateMissionNotification
+
+
+;------------------------------------------
+AdviceThread Notifications_2_type_b
+	GameArea Tutorial
+
+	Item Notifications_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial358_SenateNotif
+	Title RemasteredTutorial123_NotificationHeader
+	Text RemasteredTutorial125_SenateMissionNotification
+	Task
+		TaskText RemasteredTutorial356_ClickButton
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Notifications_3
+	GameArea Tutorial
+
+	Item Notifications_3
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial123_NotificationHeader
+	Text RemasteredTutorial128_AlertNotification
+
+
+;------------------------------------------
+AdviceThread Notifications_3_type_b
+	GameArea Tutorial
+
+	Item Notifications_3
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial359_AlertsNotif 
+	Title RemasteredTutorial123_NotificationHeader
+	Text RemasteredTutorial128_AlertNotification
+	Task
+		TaskText RemasteredTutorial356_ClickButton
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Notifications_3_type_c
+	GameArea Tutorial
+
+	Item Notifications_3
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Highlight
+		Type ui, show_alerts_tab
+		Title RemasteredTutorial310_Alerts
+		Body RemasteredTutorial311_OpenAlerts
+	Title RemasteredTutorial123_NotificationHeader
+	Text RemasteredTutorial128_AlertNotification
+
+
+;------------------------------------------
+AdviceThread Notifications_4
+	GameArea Tutorial
+
+	Item Notifications_4
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial123_NotificationHeader
+	Text RemasteredTutorial129_NewsNotification
+
+
+;------------------------------------------
+AdviceThread Notifications_4_type_b
+	GameArea Tutorial
+
+	Item Notifications_4
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial360_NewsNotif 
+	Title RemasteredTutorial123_NotificationHeader
+	Text RemasteredTutorial129_NewsNotification
+	Task
+		TaskText RemasteredTutorial356_ClickButton
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Notifications_4_type_c
+	GameArea Tutorial
+
+	Item Notifications_4
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Highlight
+		Type ui, show_news_tab
+		Title RemasteredTutorial312_News
+		Body Notifications_text_4_type_c
+	Title RemasteredTutorial123_NotificationHeader
+	Text RemasteredTutorial129_NewsNotification
+
+
+;------------------------------------------
+AdviceThread Notifications_5
+	GameArea Tutorial
+
+	Item Notifications_5
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial123_NotificationHeader
+	Text RemasteredTutorial130_ReportNotification
+
+
+;------------------------------------------
+AdviceThread Notifications_5_type_b
+	GameArea Tutorial
+
+	Item Notifications_5
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial361_ReportsNotif 
+	Title RemasteredTutorial123_NotificationHeader
+	Text RemasteredTutorial130_ReportNotification
+	Task
+		TaskText RemasteredTutorial356_ClickButton
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Notifications_5_type_c
+	GameArea Tutorial
+
+	Item Notifications_5
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Highlight
+		Type ui, show_reports_tab
+		Title RemasteredTutorial314_Reports
+		Body RemasteredTutorial315_OpenReports
+	Title RemasteredTutorial123_NotificationHeader
+	Text RemasteredTutorial129_NewsNotification
+
+
+;------------------------------------------
+AdviceThread Notifications_6
+	GameArea Tutorial
+
+	Item Notifications_6
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial123_NotificationHeader
+	Text RemasteredTutorial131_CurrentNotifications
+
+
+;------------------------------------------
+AdviceThread Notifications_6_type_b
+	GameArea Tutorial
+
+	Item Notifications_6
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial362_TabButton
+	Title RemasteredTutorial123_NotificationHeader
+	Text RemasteredTutorial131_CurrentNotifications
+	Task
+		TaskText RemasteredTutorial356_ClickButton
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Move_Troops_1
+	GameArea Tutorial
+
+	Item Move_Troops_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial132_MoveTroopsHeader
+	Text RemasteredTutorial133_MoveTownWatch
+
+
+;------------------------------------------
+AdviceThread Move_Troops_1_type_b
+	GameArea Tutorial
+
+	Item Move_Troops_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial363_MoveCaius
+	Title RemasteredTutorial132_MoveTroopsHeader
+	Text RemasteredTutorial133_MoveTownWatch
+	Task
+		TaskText RemasteredTutorial364_MoveMultipleUnits
+		TaskIcon data/menu/flag.tga
+
+
+;------------------------------------------
+AdviceThread Governors_1
+	GameArea Tutorial
+
+	Item Governors_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial134_GovernorsHeader
+	Text RemasteredTutorial135_GovernorSkills
+
+
+;------------------------------------------
+AdviceThread Move_Retinue_1
+	GameArea Tutorial
+
+	Item Move_Retinue_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial138_MoveRetinueHeader
+	Text RemasteredTutorial139_Retinues
+
+
+;------------------------------------------
+AdviceThread Move_Retinue_1_type_b
+	GameArea Tutorial
+
+	Item Move_Retinue_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial365_FactionButton
+	Title RemasteredTutorial138_MoveRetinueHeader
+	Text RemasteredTutorial139_Retinues
+	Task
+		TaskText RemasteredTutorial356_ClickButton
+		TaskIcon data/menu/flag.tga
+
+
+;------------------------------------------
+AdviceThread Move_Retinue_1_type_c
+	GameArea Tutorial
+
+	Item Move_Retinue_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Highlight
+		Type ui, faction_button
+		Title RemasteredTutorial316_Faction
+		Body RemasteredTutorial317_OpenFaction
+	Title RemasteredTutorial138_MoveRetinueHeader
+	Text RemasteredTutorial139_Retinues
+
+
+;------------------------------------------
+AdviceThread Move_Retinue_2
+	GameArea Tutorial
+
+	Item Move_Retinue_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial138_MoveRetinueHeader
+	Text RemasteredTutorial140_Retinues2
+
+
+;------------------------------------------
+AdviceThread Move_Retinue_2_type_b
+	GameArea Tutorial
+
+	Item Move_Retinue_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal 
+	Command RemasteredTutorial366_RetinueButton
+	Title RemasteredTutorial138_MoveRetinueHeader
+	Text RemasteredTutorial140_Retinues2
+	Task
+		TaskText RemasteredTutorial356_ClickButton
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+
+AdviceThread Move_Retinue_2_type_c
+	GameArea Tutorial
+
+	Item Move_Retinue_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Highlight
+		Type ui, faction_info_move_retinue_tab
+		Title RemasteredTutorial318_Retinue
+		Body RemasteredTutorial319_OpenRetinue
+	Title RemasteredTutorial138_MoveRetinueHeader
+	Text RemasteredTutorial140_Retinues2
+
+
+;------------------------------------------
+AdviceThread Move_Retinue_3
+	GameArea Tutorial
+
+	Item Move_Retinue_3
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial138_MoveRetinueHeader
+	Text RemasteredTutorial141_Retinues3
+
+
+;------------------------------------------
+AdviceThread Move_Retinue_3_type_b
+	GameArea Tutorial
+
+	Item Move_Retinue_3
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial320_TransferUnits
+	Title RemasteredTutorial138_MoveRetinueHeader
+	Text RemasteredTutorial141_Retinues3
+	Task
+		TaskText RemasteredTutorial321_ClickTick
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Move_Retinue_4
+	GameArea Tutorial
+
+	Item Move_Retinue_4
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial138_MoveRetinueHeader
+	Text RemasteredTutorial143_Retinues5
+
+
+;------------------------------------------
+AdviceThread Move_Retinue_4_type_b
+	GameArea Tutorial
+
+	Item Move_Retinue_4
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial322_TransferUnits
+	Title RemasteredTutorial138_MoveRetinueHeader
+	Text RemasteredTutorial143_Retinues5
+	Task
+		TaskText RemasteredTutorial356_ClickButton
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Moving_To_Mediolanum_1
+	GameArea Tutorial
+
+	Item Moving_To_Mediolanum_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial145_MoveMediolanumHeader
+	Text RemasteredTutorial146_RaiseArmyFromSegesat
+
+
+;------------------------------------------
+AdviceThread Moving_To_Mediolanum_1_type_b
+	GameArea Tutorial
+
+	Item Moving_To_Mediolanum_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial367_MoveFlavius
+	Title RemasteredTutorial145_MoveMediolanumHeader
+	Text RemasteredTutorial146_RaiseArmyFromSegesat
+	Task
+		TaskText RemasteredTutorial364_MoveMultipleUnits
+		TaskIcon data/menu/flag.tga
+
+
+;------------------------------------------
+AdviceThread Tax_Rate_1
+	GameArea Tutorial
+
+	Item Tax_Rate_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial149_TaxRateHeader
+	Text RemasteredTutorial150_TaxRate1
+
+
+;------------------------------------------
+AdviceThread Tax_Rate_1_type_c
+	GameArea Tutorial
+
+	Item Tax_Rate_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Highlight
+		Type settlement, Arretium
+		Title RemasteredTutorial324_Arretium
+		Body RemasteredTutorial325_SelectSettlement
+	Title RemasteredTutorial149_TaxRateHeader
+	Text RemasteredTutorial150_TaxRate1
+
+
+;------------------------------------------
+AdviceThread Tax_Rate_2
+	GameArea Tutorial
+
+	Item Tax_Rate_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial149_TaxRateHeader
+	Text RemasteredTutorial152_TaxRate2
+
+
+;------------------------------------------
+AdviceThread Tax_Rate_2_type_b
+	GameArea Tutorial
+
+	Item Tax_Rate_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial326_IncreaseTax
+	Title RemasteredTutorial149_TaxRateHeader
+	Text RemasteredTutorial152_TaxRate2
+	Task
+		TaskText RemasteredTutorial327_ClickArrow
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Tax_Rate_3
+	GameArea Tutorial
+
+	Item Tax_Rate_3
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial149_TaxRateHeader
+	Text RemasteredTutorial155_TaxRate4
+
+
+;------------------------------------------
+AdviceThread Tax_Rate_3_type_b
+	GameArea Tutorial
+
+	Item Tax_Rate_4
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial328_Switch
+	Title RemasteredTutorial149_TaxRateHeader
+	Text RemasteredTutorial155_TaxRate4
+	Task
+		TaskText RemasteredTutorial329_ClickArrow
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Tax_Rate_4
+	GameArea Tutorial
+
+	Item Tax_Rate_4
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial149_TaxRateHeader
+	Text RemasteredTutorial156_TaxRate5
+
+
+;------------------------------------------
+AdviceThread Tax_Rate_5
+	GameArea Tutorial
+
+	Item Tax_Rate_5
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial149_TaxRateHeader
+	Text RemasteredTutorial157_TaxRate6
+
+
+;------------------------------------------
+AdviceThread Use_Of_Diplomats_1
+	GameArea Tutorial
+
+	Item Use_Of_Diplomats_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial158_UseDiplomatsHeader
+	Text RemasteredTutorial159_UseDiplomats1
+
+
+;------------------------------------------
+AdviceThread Use_Of_Diplomats_1_type_e
+	GameArea Tutorial
+
+	Item Use_Of_Diplomats_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Page
+		Title RemasteredTutorial_EnteringNegotiations
+		Body RemasteredTutorial159_UseDiplomats1
+		Command null
+	EndPage
+	Page
+		Title RemasteredTutorial_EnteringNegotiations
+		Body RemasteredTutorial429_UseDiplomats3
+		Command null
+	EndPage
+
+
+;------------------------------------------
+AdviceThread Embark_Unit_1
+	GameArea Tutorial
+
+	Item Embark_Unit_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial161_EmbarkUnitHeader
+	Text RemasteredTutorial162_EmbarkUnit1
+
+
+;------------------------------------------
+AdviceThread Embark_Unit_1_type_b
+	GameArea Tutorial
+
+	Item Embark_Unit_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial368_EmbarkDiplomat
+	Title RemasteredTutorial161_EmbarkUnitHeader
+	Text RemasteredTutorial162_EmbarkUnit1
+	Task
+		TaskText RemasteredTutorial369_ClickCharacter
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+	Task
+		TaskText RemasteredTutorial369_ClickCharacter_Task2
+		TaskIcon data/ui/icons/tutorial/mouse_right.tga
+
+
+;------------------------------------------
+AdviceThread Navy_1
+	GameArea Tutorial
+
+	Item Navy_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial164_NavyHeader
+	Text RemasteredTutorial165_Navy1
+
+
+;------------------------------------------
+AdviceThread Navy_1_type_b
+	GameArea Tutorial
+
+	Item Navy_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial394_MoveFleet
+	Title RemasteredTutorial164_NavyHeader
+	Text RemasteredTutorial165_Navy1
+	Task
+		TaskText RemasteredTutorial395_SelectFleet
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+	Task
+		TaskText RemasteredTutorial395_SelectFleet_Task2
+		TaskIcon data/ui/icons/tutorial/mouse_right.tga
+
+
+;------------------------------------------
+AdviceThread Territory_Resources_1
+	GameArea Tutorial
+
+	Item Territory_Resources_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial167_TerritoryResourcesHeader
+	Text RemasteredTutorial168_TerritoryResources1
+
+
+;------------------------------------------
+AdviceThread Territory_Resources_1_type_b
+	GameArea Tutorial
+
+	Item Territory_Resources_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial396_OpenMap
+	Title RemasteredTutorial167_TerritoryResourcesHeader
+	Text RemasteredTutorial168_TerritoryResources1
+	Task
+		TaskText RemasteredTutorial356_ClickButton
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Territory_Resources_2
+	GameArea Tutorial
+
+	Item Territory_Resources_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial167_TerritoryResourcesHeader
+	Text RemasteredTutorial170_TerritoryResources3
+
+
+;------------------------------------------
+AdviceThread End_Turn_3_type_b
+	GameArea Tutorial
+
+	Item Territory_Resources_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial397_EndTurnThree
+	Title RemasteredTutorial121_EndTurnHeader
+	Text RemasteredTutorial122_EndTurnToProceed
+	Task
+		TaskText RemasteredTutorial356_ClickButton
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Reject_Marriage_Proposal_1
+	GameArea Tutorial
+
+	Item Reject_Marriage_Proposal_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial171_RejectMarriageHeader
+	Text RemasteredTutorial172_RejectMarriage1
+
+
+;------------------------------------------
+AdviceThread Reject_Marriage_Proposal_1_type_b
+	GameArea Tutorial
+
+	Item Reject_Marriage_Proposal_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial386_RejectProposal
+	Title RemasteredTutorial171_RejectMarriageHeader
+	Text RemasteredTutorial172_RejectMarriage1
+	Task
+		TaskText RemasteredTutorial387_ClickReject
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Hire_Mercenaries_1
+	GameArea Tutorial
+
+	Item Hire_Mercenaries_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial174_HireMercenariesHeader
+	Text RemasteredTutorial175_HireMercenaries1
+
+
+;------------------------------------------
+AdviceThread Hire_Mercenaries_1_type_b
+	GameArea Tutorial
+
+	Item Hire_Mercenaries_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial330_Select
+	Title RemasteredTutorial174_HireMercenariesHeader
+	Text RemasteredTutorial175_HireMercenaries1
+	Task
+		TaskText RemasteredTutorial376_SelectSettlement
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Hire_Mercenaries_2
+	GameArea Tutorial
+
+	Item Hire_Mercenaries_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial174_HireMercenariesHeader
+	Text RemasteredTutorial176_HireMercenaries2
+
+
+;------------------------------------------
+AdviceThread Hire_Mercenaries_3_type_b
+	GameArea Tutorial
+
+	Item Hire_Mercenaries_3
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial332_Recruit
+	Title RemasteredTutorial174_HireMercenariesHeader
+	Text RemasteredTutorial177_HireMercenaries3
+	Task
+		TaskText RemasteredTutorial333_OpenDescription
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Watchtowers_And_Forts_1
+	GameArea Tutorial
+
+	Item Watchtowers_And_Forts_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial179_WatchtowersFortsHeader
+	Text RemasteredTutorial180_WatchtowersForts1
+
+
+;------------------------------------------
+AdviceThread Watchtowers_And_Forts_1_type_b
+	GameArea Tutorial
+
+	Item Watchtowers_And_Forts_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial370_BuildWatchtower
+	Title RemasteredTutorial179_WatchtowersFortsHeader
+	Text RemasteredTutorial180_WatchtowersForts1
+	Task
+		TaskText RemasteredTutorial356_ClickButton
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Prepare_For_The_Siege_1
+	GameArea Tutorial
+
+	Item Prepare_For_The_Siege_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial183_PrepareForSiegeHeader
+	Text RemasteredTutorial184_PrepareForSiege1
+
+
+;------------------------------------------
+AdviceThread Prepare_For_The_Siege_1_type_b
+	GameArea Tutorial
+
+	Item Prepare_For_The_Siege_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial371_BuildRam
+	Title RemasteredTutorial183_PrepareForSiegeHeader
+	Text RemasteredTutorial184_PrepareForSiege1
+	Task
+		TaskText RemasteredTutorial356_ClickButton
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Diplomacy_1
+	GameArea Tutorial
+
+	Item Diplomacy_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial188_DiplomacyHeader
+	Text RemasteredTutorial189_Diplomacy1
+
+
+;------------------------------------------
+AdviceThread Diplomacy_1_type_b
+	GameArea Tutorial
+
+	Item Diplomacy_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial372_Disembark
+	Title RemasteredTutorial430_DisembarkHeader
+	Text RemasteredTutorial189_Diplomacy1
+	Task
+		TaskText RemasteredTutorial373_SelectFleet_Task3
+		TaskIcon data/ui/icons/tutorial/mouse_right.tga
+	;;Task
+	;;	TaskText RemasteredTutorial373_SelectFleet_Task3
+	;;	TaskIcon data/ui/icons/tutorial/mouse_right.tga
+
+
+;------------------------------------------
+AdviceThread Diplomacy_1_type_c
+	GameArea Tutorial
+
+	Item Diplomacy_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Highlight
+		Type settlement, Caralis
+		Title RemasteredTutorial334_Caralis
+		Body RemasteredTutorial335_CaralisDescription
+	Title RemasteredTutorial188_DiplomacyHeader
+	Text RemasteredTutorial189_Diplomacy1
+
+
+;------------------------------------------
+AdviceThread Diplomacy_2
+	GameArea Tutorial
+
+	Item Diplomacy_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial188_DiplomacyHeader
+	Text RemasteredTutorial190_Diplomacy2
+
+
+;------------------------------------------
+AdviceThread Diplomacy_2_type_b
+	GameArea Tutorial
+
+	Item Diplomacy_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial336_Negotiate
+	Title RemasteredTutorial188_DiplomacyHeader
+	Text RemasteredTutorial190_Diplomacy2
+	Task
+		TaskText RemasteredTutorial369_ClickCharacter
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+	Task
+		TaskText RemasteredTutorial431_ClickSettlement
+		TaskIcon data/ui/icons/tutorial/mouse_right.tga
+
+
+;------------------------------------------
+AdviceThread Diplomacy_3
+	GameArea Tutorial
+
+	Item Diplomacy_3
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial188_DiplomacyHeader
+	Text RemasteredTutorial191_Diplomacy3
+
+
+;------------------------------------------
+AdviceThread Diplomacy_3_type_b
+	GameArea Tutorial
+
+	Item Diplomacy_3
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial338_SelectOptions
+	Title RemasteredTutorial188_DiplomacyHeader
+	Text RemasteredTutorial191_Diplomacy3
+	Task
+		TaskText RemasteredTutorial339_AddToDeal
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+	Task
+		TaskText RemasteredTutorial339_AddToDeal_Task2
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+	Task
+		TaskText RemasteredTutorial339_AddToDeal_Task3
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+
+;------------------------------------------
+AdviceThread Diplomacy_3_type_e
+	GameArea Tutorial
+
+	Item Diplomacy_3
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Page
+		Title RemasteredTutorial188_DiplomacyHeader
+		Body RemasteredTutorial191_Diplomacy3
+		Command null
+	EndPage
+	Page
+		Title RemasteredTutorial188_DiplomacyHeader
+		Body RemasteredTutorial192_Diplomacy4
+		Command RemasteredTutorial338_SelectOptions
+		Task
+			TaskText RemasteredTutorial339_AddToDeal
+			TaskIcon data/ui/icons/tutorial/mouse_left.tga
+		EndTasks
+	EndPage
+	Page
+		Title RemasteredTutorial188_DiplomacyHeader
+		Body RemasteredTutorial194_Diplomacy6
+		Command RemasteredTutorial340_MakeOffer
+		Task
+			TaskText RemasteredTutorial339_AddToDeal_Task2
+			TaskIcon data/ui/icons/tutorial/mouse_left.tga
+		EndTasks
+	EndPage
+	Page
+		Title RemasteredTutorial188_DiplomacyHeader
+		Body RemasteredTutorial195_Diplomacy7
+		Command null
+	EndPage
+	Page
+		Title RemasteredTutorial188_DiplomacyHeader
+		Body RemasteredTutorial197_Diplomacy9
+		Command RemasteredTutorial398_CloseDiplomacy
+		Task
+			TaskText RemasteredTutorial339_AddToDeal_Task3
+			TaskIcon data/ui/icons/tutorial/mouse_left.tga
+		EndTasks
+	EndPage
+
+
+
+;------------------------------------------
+AdviceThread Diplomacy_4
+	GameArea Tutorial
+
+	Item Diplomacy_4
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial188_DiplomacyHeader
+	Text RemasteredTutorial194_Diplomacy6
+
+
+;------------------------------------------
+AdviceThread Diplomacy_4_type_b
+	GameArea Tutorial
+
+	Item Diplomacy_4
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial340_MakeOffer
+	Title RemasteredTutorial188_DiplomacyHeader
+	Text RemasteredTutorial194_Diplomacy6
+	Task
+		TaskText RemasteredTutorial341_SendProposal
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Diplomacy_5
+	GameArea Tutorial
+
+	Item Diplomacy_5
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial188_DiplomacyHeader
+	Text RemasteredTutorial195_Diplomacy7
+
+
+;------------------------------------------
+AdviceThread Diplomacy_5_type_b
+	GameArea Tutorial
+
+	Item Diplomacy_5
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial398_CloseDiplomacy
+	Title RemasteredTutorial188_DiplomacyHeader
+	Text RemasteredTutorial195_Diplomacy7
+	Task
+		TaskText RemasteredTutorial356_ClickButton
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Walls_1
+	GameArea Tutorial
+
+	Item Walls_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial198_Walls
+	Text RemasteredTutorial199_Walls1
+
+
+;------------------------------------------
+AdviceThread Walls_1_type_b
+	GameArea Tutorial
+
+	Item Walls_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial399_SegestaWalls
+	Title RemasteredTutorial198_Walls
+	Text RemasteredTutorial199_Walls1
+	Task
+		TaskText RemasteredTutorial376_SelectSettlement
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Whats_Next_1
+	GameArea Tutorial
+
+	Item Whats_Next_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial200_WhatsNextHeader
+	Text RemasteredTutorial201_WhatsNext1
+
+
+;------------------------------------------
+AdviceThread Whats_Next_1_type_b
+	GameArea Tutorial
+
+	Item Whats_Next_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial374_MoveHastati
+	Title RemasteredTutorial200_WhatsNextHeader
+	Text RemasteredTutorial201_WhatsNext1
+	Task
+		TaskText RemasteredTutorial364_MoveMultipleUnits
+		TaskIcon data/menu/flag.tga
+
+
+;------------------------------------------
+AdviceThread Roads_1
+	GameArea Tutorial
+
+	Item Roads_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial203_RoadsHeader
+	Text RemasteredTutorial204_Roads1
+
+
+;------------------------------------------
+AdviceThread Roads_1_type_b
+	GameArea Tutorial
+
+	Item Roads_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial375_UpgradeRoads
+	Title RemasteredTutorial203_RoadsHeader
+	Text RemasteredTutorial204_Roads1
+	Task
+		TaskText RemasteredTutorial376_SelectSettlement
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Ships_1
+	GameArea Tutorial
+
+	Item Ships_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial206_ShipsHeader
+	Text RemasteredTutorial207_Ships1
+
+
+;------------------------------------------
+AdviceThread Ships_1_type_b
+	GameArea Tutorial
+
+	Item Ships_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial377_CreateFleet
+	Title RemasteredTutorial206_ShipsHeader
+	Text RemasteredTutorial207_Ships1
+	Task
+		TaskText RemasteredTutorial376_SelectSettlement
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Ships_2
+	GameArea Tutorial
+
+	Item Ships_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial206_ShipsHeader
+	Text RemasteredTutorial209_Ships3
+
+
+;------------------------------------------
+AdviceThread Ships_2_type_b
+	GameArea Tutorial
+
+	Item Ships_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial400_EndTurnFour
+	Title RemasteredTutorial090_EndTurnHeader
+	Text RemasteredTutorial209_Ships3
+	Task
+		TaskText RemasteredTutorial356_ClickButton
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Marriage_Proposal_1
+	GameArea Tutorial
+
+	Item Marriage_Proposal_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial210_MarriageProposalHeader
+	Text RemasteredTutorial211_MarriageProposal1
+
+
+;------------------------------------------
+AdviceThread Marriage_Proposal_1_type_b
+	GameArea Tutorial
+
+	Item Marriage_Proposal_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial401_AcceptMarriage
+	Title RemasteredTutorial210_MarriageProposalHeader
+	Text RemasteredTutorial211_MarriageProposal1
+	Task
+		TaskText RemasteredTutorial356_ClickButton
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga
+
+
+;------------------------------------------
+AdviceThread Lay_Siege_1
+	GameArea Tutorial
+
+	Item Lay_Siege_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial212_LaySiegeHeader
+	Text RemasteredTutorial213_LaySiege1
+
+
+;------------------------------------------
+AdviceThread Lay_Siege_1_type_b
+	GameArea Tutorial
+
+	Item Lay_Siege_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial402_LaySiege
+	Title RemasteredTutorial212_LaySiegeHeader
+	Text RemasteredTutorial213_LaySiege1
+	Task
+		TaskText RemasteredTutorial403_UnitSiege
+		TaskIcon data/menu/flag.tga
+
+
+;------------------------------------------
+AdviceThread Introduction_1
+	GameArea Tutorial
+
+	Item Introduction_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial215_SiegeIntroHeader
+	Text RemasteredTutorial216_SiegeOfMedioLanum1
+
+
+;------------------------------------------
+AdviceThread Siege_Equipment_Sap_1
+	GameArea Tutorial
+
+	Item Sap_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial342_Sap
+	Text RemasteredTutorial343_SapDescription
+
+
+;------------------------------------------
+AdviceThread Pause_1
+	GameArea Tutorial
+
+	Item Pause_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial344_Pause
+	Text RemasteredTutorial216_2_SiegeOfMedioLanum1
+
+
+;------------------------------------------
+AdviceThread Pause_1_type_b
+	GameArea Tutorial
+
+	Item Pause_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	SideText RemasteredTutorial356_ClickButton
+	Command RemasteredTutorial404_PauseGame
+	Title RemasteredTutorial344_Pause
+	Text RemasteredTutorial216_2_SiegeOfMedioLanum1
+
+
+;------------------------------------------
+AdviceThread Siege_Equipment_Ram_1
+	GameArea Tutorial
+
+	Item Ram_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial217_RamHeader
+	Text RemasteredTutorial218_Ram1
+
+
+;------------------------------------------
+AdviceThread Siege_Equipment_Ram_1_type_b
+	GameArea Tutorial
+
+	Item Ram_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	SideText RemasteredTutorial405_UseSiegeEngine
+	Command RemasteredTutorial406_AttackGate
+	Title RemasteredTutorial217_RamHeader
+	Text RemasteredTutorial218_Ram1
+
+
+;------------------------------------------
+AdviceThread Siege_Equipment_Ladders_1
+	GameArea Tutorial
+
+	Item Ladders_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial346_Ladders
+	Text RemasteredTutorial347_LaddersDescription
+
+
+;------------------------------------------
+AdviceThread Siege_Equipment_Siege_Towers_1
+	GameArea Tutorial
+
+	Item Siege_Towers_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial348_Siege
+	Text RemasteredTutorial349_SiegeDescription
+
+
+;------------------------------------------
+AdviceThread Siege_Equipment_Siege_Artillery_1
+	GameArea Tutorial
+
+	Item Siege_Artillery_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial219_SiegeArtilleryHeader
+	Text RemasteredTutorial220_SiegeArtillery1
+
+
+;------------------------------------------
+AdviceThread Siege_Equipment_Siege_Artillery_1_type_b
+	GameArea Tutorial
+
+	Item Siege_Artillery_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	SideText RemasteredTutorial379_AttackWall
+	Command RemasteredTutorial378_SiegeArtillery
+	Title RemasteredTutorial219_SiegeArtilleryHeader
+	Text RemasteredTutorial220_SiegeArtillery1
+
+
+;------------------------------------------
+AdviceThread Speed_Up_Battle_2_type_b
+	GameArea Tutorial
+
+	Item Speed_Up_Battle_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	SideText RemasteredTutorial356_ClickButton
+	Command RemasteredTutorial420_UnpauseBattle
+	Title RemasteredTutorial219_SiegeArtilleryHeader
+	Text RemasteredTutorial220_2_SiegeArtillery1
+
+
+;------------------------------------------
+AdviceThread Use_Your_Cavalry_1
+	GameArea Tutorial
+
+	Item Use_Your_Cavalry_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial221_UseCavalryHeader
+	Text RemasteredTutorial222_UseCavalry
+
+
+;------------------------------------------
+AdviceThread Use_Your_Cavalry_1_type_b
+	GameArea Tutorial
+
+	Item Use_Your_Cavalry_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	SideText RemasteredTutorial408_MoveUnit
+	Command RemasteredTutorial407_SendCavalry
+	Title RemasteredTutorial221_UseCavalryHeader
+	Text RemasteredTutorial222_UseCavalry
+
+
+;------------------------------------------
+AdviceThread Take_The_Square_1
+	GameArea Tutorial
+
+	Item Take_The_Square_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial223_TakeSquareHeader
+	Text RemasteredTutorial224_TakeSquare1
+
+
+;------------------------------------------
+AdviceThread Take_The_Square_1_type_b
+	GameArea Tutorial
+
+	Item Take_The_Square_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	SideText RemasteredTutorial410_MoveUnit
+	Command RemasteredTutorial409_CaptureSettlement
+	Title RemasteredTutorial223_TakeSquareHeader
+	Text RemasteredTutorial224_TakeSquare1
+
+
+;------------------------------------------
+AdviceThread Victory_1
+	GameArea Tutorial
+
+	Item Victory_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial225_VictoryHeader
+	Text RemasteredTutorial226_MediolanumVictory1
+
+
+;------------------------------------------
+AdviceThread Victory_1_type_b
+	GameArea Tutorial
+
+	Item Victory_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	SideText RemasteredTutorial356_ClickButton
+	Command RemasteredTutorial290_ExitBattle
+	Title RemasteredTutorial225_VictoryHeader
+	Text RemasteredTutorial226_MediolanumVictory1
+
+
+;------------------------------------------
+AdviceThread Congratulations_2
+	GameArea Tutorial
+
+	Item Congratulations_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial227_CongratulationsHeader
+	Text RemasteredTutorial228_Congratulations1
+
+
+;------------------------------------------
+AdviceThread Congratulations_2_type_b
+	GameArea Tutorial
+
+	Item Congratulations_2
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	SideText RemasteredTutorial356_ClickButton
+	Command RemasteredTutorial292_EnslaveSettlement
+	Title RemasteredTutorial227_CongratulationsHeader
+	Text RemasteredTutorial228_Congratulations1
+
+
+;------------------------------------------
+AdviceThread Squalor_1
+	GameArea Tutorial
+
+	Item Squalor_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial232_SqualorHeader
+	Text RemasteredTutorial233_Squalor1
+
+
+;------------------------------------------
+AdviceThread Squalor_1_type_b
+	GameArea Tutorial
+
+	Item Squalor_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	SideText RemasteredTutorial376_SelectSettlement
+	Command RemasteredTutorial411_BuildSewers
+	Title RemasteredTutorial232_SqualorHeader
+	Text RemasteredTutorial233_Squalor1
+
+
+;------------------------------------------
+AdviceThread Quick_Lists_1
+	GameArea Tutorial
+
+	Item Quick_Lists_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial234_QuickListsHeader
+	Text RemasteredTutorial235_QuickLists1
+
+
+;------------------------------------------
+AdviceThread Quick_Lists_1_type_b
+	GameArea Tutorial
+
+	Item Quick_Lists_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	SideText RemasteredTutorial376_SelectSettlement
+	Command RemasteredTutorial412_EnsureProduction
+	Title RemasteredTutorial234_QuickListsHeader
+	Text RemasteredTutorial235_QuickLists1
+
+
+;------------------------------------------
+AdviceThread Moving_Troops_1
+	GameArea Tutorial
+
+	Item Moving_Troops_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial238_MovingTroopsHeader
+	Text RemasteredTutorial239_MovingTroops1
+
+
+;------------------------------------------
+AdviceThread Moving_Troops_1_type_b
+	GameArea Tutorial
+
+	Item Moving_Troops_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	SideText RemasteredTutorial381_BoardFleet
+	Command RemasteredTutorial380_EmbarkAssassin
+	Title RemasteredTutorial238_MovingTroopsHeader
+	Text RemasteredTutorial239_MovingTroops1
+
+
+;------------------------------------------
+AdviceThread New_Governor_1
+	GameArea Tutorial
+
+	Item New_Governor_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial240_NewGovenorHeader
+	Text RemasteredTutorial241_NewGovernor1
+
+
+;------------------------------------------
+AdviceThread New_Governor_1_type_b
+	GameArea Tutorial
+
+	Item New_Governor_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	SideText RemasteredTutorial376_SelectSettlement
+	Command RemasteredTutorial413_MoveLucius
+	Title RemasteredTutorial240_NewGovenorHeader
+	Text RemasteredTutorial241_NewGovernor1
+
+
+;------------------------------------------
+AdviceThread Next_Target_Patavium_1
+	GameArea Tutorial
+
+	Item Next_Target_Patavium_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial243_TargetPataviumHeader
+	Text RemasteredTutorial244_TargetPatavium1
+
+
+;------------------------------------------
+AdviceThread Next_Target_Patavium_1_type_b
+	GameArea Tutorial
+
+	Item Next_Target_Patavium_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	SideText RemasteredTutorial415_SelectAgentCard
+	Command RemasteredTutorial414_MoveSpy
+	Title RemasteredTutorial243_TargetPataviumHeader
+	Text RemasteredTutorial244_TargetPatavium1
+
+
+;------------------------------------------
+AdviceThread Use_Of_Assassin_1
+	GameArea Tutorial
+
+	Item Use_Of_Assassin_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial245_UseAssassinHeader
+	Text RemasteredTutorial246_UseAssassin1
+
+
+;------------------------------------------
+AdviceThread Use_Of_Assassin_1_type_b
+	GameArea Tutorial
+
+	Item Use_Of_Assassin_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	SideText RemasteredTutorial383_MoveFleet
+	Command RemasteredTutorial382_DisembarkAssassin
+	Title RemasteredTutorial245_UseAssassinHeader
+	Text RemasteredTutorial246_UseAssassin1
+
+
+;------------------------------------------
+AdviceThread Merge_Armies_1
+	GameArea Tutorial
+
+	Item Merge_Armies_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial247_MergeArmiesHeader
+	Text RemasteredTutorial248_MergeArmies1
+
+
+;------------------------------------------
+AdviceThread Merge_Armies_1_type_b
+	GameArea Tutorial
+
+	Item Merge_Armies_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	SideText RemasteredTutorial385_SelectAndMerge
+	Command RemasteredTutorial384_MergeArmy
+	Title RemasteredTutorial247_MergeArmiesHeader
+	Text RemasteredTutorial248_MergeArmies1
+
+
+;------------------------------------------
+AdviceThread The_Gates_Are_Open_1
+	GameArea Tutorial
+
+	Item The_Gates_Are_Open_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial250_GatesOpenHeader
+	Text RemasteredTutorial251_GatesOpen1
+
+
+;------------------------------------------
+AdviceThread The_Gates_Are_Open_1_type_b
+	GameArea Tutorial
+
+	Item The_Gates_Are_Open_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	SideText RemasteredTutorial417_AttackSettlement
+	Command RemasteredTutorial416_BesiegePatavium
+	Title RemasteredTutorial250_GatesOpenHeader
+	Text RemasteredTutorial251_GatesOpen1
+
+
+;------------------------------------------
+AdviceThread Auto_Resolve_1
+	GameArea Tutorial
+
+	Item Auto_Resolve_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial252_AutoResolveHeader
+	Text RemasteredTutorial253_AutoResolve1
+
+
+;------------------------------------------
+AdviceThread Auto_Resolve_1_type_b
+	GameArea Tutorial
+
+	Item Auto_Resolve_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	SideText RemasteredTutorial356_ClickButton
+	Command RemasteredTutorial418_AutoResolve
+	Title RemasteredTutorial252_AutoResolveHeader
+	Text RemasteredTutorial253_AutoResolve1
+
+
+;------------------------------------------
+AdviceThread End_Of_Tutorial_1
+	GameArea Tutorial
+
+	Item End_Of_Tutorial_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Title RemasteredTutorial254_EndTutorial
+	Text RemasteredTutorial255_EndTutorial1
+
+
+;------------------------------------------
+AdviceThread End_Of_Tutorial_1_type_b
+	GameArea Tutorial
+
+	Item End_Of_Tutorial_1
+	Verbosity  1
+	Threshold  1
+	MaxRepeats  0
+	RepeatInterval  1
+	Attitude Normal
+	Presentation Default
+	TextFormat Normal
+	Command RemasteredTutorial419_EndTurnSix
+	Title RemasteredTutorial254_EndTutorial
+	Text RemasteredTutorial255_EndTutorial1
+	Task
+		TaskText RemasteredTutorial356_ClickButton
+		TaskIcon data/ui/icons/tutorial/mouse_left.tga

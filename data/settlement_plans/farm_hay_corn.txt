@@ -1,0 +1,11 @@
+plan
+
+{
+
+floor	         farm_hay_corn_underlay.CAS	farm_hay_corn_overlay.CAS
+ground_types	ground_no_grass.tga	-64,	-32,	64,	32
+		
+;				x,		y,		rot,	z,
+farm_hay_corn,		        0,	        0,	        0,	0
+
+	}

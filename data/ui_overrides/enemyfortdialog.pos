@@ -1,0 +1,342 @@
+{
+	"frames": [
+		{
+			"size": {
+				"fullscreen":true
+			},
+			"priority": -1,
+			"fill": "black_curved"
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": -10
+			},
+			"size": {
+				"width": 618,
+				"height": 100
+			},
+			"collapsed_size": {
+				"width": 618,
+				"height": 40
+			},
+			"priority": 5,
+			"fill": "black_curved",
+			"tag":"tooltip",
+			"anchor": "TR",
+			"align":"TR",
+			"fill_left":true
+		},
+		{
+			"position": {
+				"x": 0,
+				"y": 80
+			},
+			"anchor":"TC",
+			"align":"TC",
+			"size": {
+				"width":554,
+				"height":432
+			},
+			"priority": -1,
+			"fill": "black_curved",
+			"scale_width":true
+		}
+	],
+	"tooltip": {
+		"x": 20,
+		"y": 42,
+		"width": 630,
+		"height": 80,
+		"anchor": "TC",
+		"align": "C",
+		"scale_width":true,
+		"font":"verdana_lrg"
+	},
+	"tooltip_ticker": {
+		"x": 38,
+		"y": 3,
+		"width": 624,
+		"height": 50,
+		"anchor": "TC",
+		"align": "TC",
+		"scale_width":true,
+		"font":"verdana_lrg",
+		"notch_override":{
+			"width": 636
+			}
+	},
+	"list": [
+		{
+			"name": "name_string",
+			"x": 510,
+			"y": -678,
+			"align":"C",
+            "size":{
+                "width":256,
+                "height":20
+            }
+        },
+		{
+			"name": "type_string",
+			"x": 510,
+			"y": -693,
+			"align":"C",
+            "size":{
+                "width":120,
+                "height":20
+            }
+        },
+		{
+			"name": "details_string",
+			"x": -758,
+			"y": 125,
+			"align":"C",
+			"anchor": "TL"
+		},
+		{
+			"name": "bodyguard_button",
+			"x": -180,
+			"y": -32,
+			"anchor": "BC",
+			"align": "C",
+			"scale_x_pos":true,
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			}
+		},
+		{
+			"name": "zoom_button",
+			"x": 180,
+			"y": -32,
+			"anchor": "BC",
+			"align": "C",
+			"scale_x_pos":true,
+			"annotation_id": "Rome.Annotations.units_npc_army-location",
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			}
+		},
+		{
+			"name": "unit_box",
+			"x": 75,
+			"y": 106,
+			"size":{
+                "width":530,
+                "height":100
+            },
+			"anchor": "TL",
+			"scale_width": true,
+			"scale_x_pos": true,
+			"annotation_id": "Rome.Annotations.units_npc_settlement-unit"
+		},
+		{
+			"name": "garrison_string",
+			"x": 70,
+			"y": 82,
+			"anchor": "TL",
+			"font":"verdana_med",
+			"font_colour":"ally_yellow",
+			"scale_x_pos": true
+		},
+		{
+			"name": "agent_box",
+			"x": 75,
+			"y": 250,
+			"size":{
+                "width":530,
+                "height":100
+            },
+			"anchor": "TL",
+			"scale_width": true,
+			"scale_x_pos": true,
+			"annotation_id": "Rome.Annotations.units_npc_army-agent"
+		},
+		{
+			"name": "agent_string",
+			"x": 70,
+			"y": 224,
+			"anchor": "TL",
+			"font":"verdana_med",
+			"font_colour":"ally_yellow",
+			"scale_x_pos": true
+		},
+		{
+			"name": "spy_details",
+			"x": 0,
+			"y": 56,
+			"size": {
+				"width": 200,
+				"height": 0
+			},
+			"align": "C",
+			"anchor": "TC",
+			"font":"verdana_med",
+			"font_colour": "white"
+		},
+		{
+			"name": "siege_duration_string",
+			"x": 60,
+			"y": 806,
+			"anchor": "TL"
+		},
+		{
+			"name": "open_gates_string",
+			"x": -465,
+			"y": 32,
+			"size": {
+				"width": 390,
+				"height": 0
+			},
+			"anchor": "TR"
+		},
+		{
+			"name": "settlement_stats",
+			"x": -1000,
+			"y": -1000
+		},
+		{
+			"name": "building_box",
+			"x": 70,
+			"y": 196,
+			"size":{
+                "width":540,
+                "height":111
+            },
+			"anchor": "TL",
+			"fill_left":true,
+			"fill_right":true
+		},
+		{
+			"name": "building_string",
+			"x": 65,
+			"y": 172,
+			"anchor": "TL"
+		},
+		{
+			"name": "z_unit_table",
+			"x": 577,
+			"y": 190,
+			"size": {
+				"width" : 360,
+				"height": 0
+			}
+		},
+		{
+			"name": "unit_image",
+			"x": 577,
+			"y": 185
+		},
+		{
+			"name": "unit_time",
+			"x": 570,
+			"y": 135
+		},
+		{
+			"name": "unit_cost",
+			"x": 920,
+			"y": 135
+		},
+		{
+			"name": "unit_name",
+			"x": 570,
+			"y": 125,
+			"size": {
+				"width": 400,
+				"height": 0
+			}
+		},
+		{
+			"name": "unit_info_display",
+			"x": 755,
+			"y": 155,
+			"size": {
+				"width": 190,
+				"height": 300
+			}
+		},
+		{
+			"name": "unit_description",
+			"x": 570,
+			"y": 422,
+			"size": {
+				"width": 398,
+				"height": 155
+			}
+		},
+		{
+			"name": "unit_disband_button",
+			"x": 740,
+			"y": -620
+		},
+		{
+			"name": "unit_zoom_button",
+			"x": 830,
+			"y": 840
+		},
+		{
+			"name": "agent_cost_string",
+			"x": 760,
+			"y": 200
+		},
+		{
+			"name": "agent_upkeep_string",
+			"x": 760,
+			"y": 220
+		},
+		{
+			"name": "agent_description",
+			"x": 570,
+			"y": 475
+		},
+		{
+			"name": "unit_box_slider",
+			"x": 75,
+			"y": 194,
+			"anchor": "TL"
+		},
+		{
+			"name": "agent_box_slider",
+			"x": 75,
+			"y": 334,
+			"anchor": "TL"
+		},
+		{
+			"name": "close_button",
+			"x": -60,
+			"y": -58,
+			"size": {
+				"width": 55,
+				"height": 55
+			},
+			"anchor": "BR",
+			"align":"TL",
+			"hitbox" : {
+				"left": -20,
+				"top":-20,
+				"right":20,
+				"bot":20
+			},
+			"notch_override": {
+				"x": -72
+			},
+			"annotation_id": "Rome.Annotations.units_npc_army-close"
+		},
+		{
+			"name": "help_button",
+			"x": 860,
+			"y": -620
+		},
+        {
+			"name": "advisor",
+			"x": -1,
+			"y": -1
+		}
+	]
+}

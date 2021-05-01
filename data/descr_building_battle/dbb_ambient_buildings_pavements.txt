@@ -1,0 +1,105 @@
+	pavement_domus
+	{
+		full_health 10
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_domus
+			physical_info	none
+		}
+	}
+
+	pavement_insulae_white
+	{
+		full_health 10
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_insulae_white
+			physical_info	none
+		}
+	}
+
+	pavement_praetorium
+	{
+		full_health 10
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_praetorium
+			physical_info	none
+		}
+	}
+
+	pavement_principium
+	{
+		full_health 10
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_principium
+			physical_info	none
+		}
+	}
+
+	pavement_hospital
+	{
+		full_health 10
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_hospital
+			physical_info	none
+		}
+	}
+
+	pavement_insulae_yellow
+	{
+		full_health 10
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_insulae_yellow
+			physical_info	none
+		}
+	}
+
+	pavement_officers_house
+	{
+		full_health 10
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_officers_house
+			physical_info	none
+		}
+	}
+
+	pavement_posthouse
+	{
+		full_health 10
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pavement_posthouse
+			physical_info	none
+		}
+	}
+
+	

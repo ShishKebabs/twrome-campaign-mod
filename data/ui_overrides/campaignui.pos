@@ -1,0 +1,1065 @@
+{
+	"tooltip": {
+		"x": 0,
+		"y": 3,
+		"width": 390,
+		"height": 80,
+		"anchor": "TC",
+		"align": "TC",
+		"scale_width":true,
+		"font":"verdana_lrg"
+	},
+	"tooltip_ticker": {
+		"x": 496 ,
+		"y": 3,
+		"width": 899 ,
+		"height": 50,
+		"font":"verdana_lrg"
+	},
+	"frames": [
+		
+
+		{
+			"name": "money_annotation",
+			"position": {
+				"x": -10,
+				"y": -10
+			},
+			"size": {
+				"width": 149,
+				"height": 41
+			},
+			"priority": 4,
+			"fill": "invisible",
+			"annotation_id": "Rome.Annotations.camp_status-money"
+		},
+		
+		{
+			"position": {
+				"x": 10,
+				"y": -10
+			},
+			"size": {
+				"width": 149,
+				"height": 41
+			},
+			"priority": 4,
+			"fill": "invisible",
+			"anchor":"TR",
+			"align":"TR",
+			"scale_width":true,
+			"annotation_id": "Rome.Annotations.camp_status-date"
+		},
+		{
+			"position": {
+				"x":0,
+				"y":-36,
+			},
+			"size": {
+				"width": 420 ,
+				"height": 280
+			},
+			"tags":[	"info_panel_no_build_browser"	],
+			"anchor": "BR",
+			"align": "BR",
+			"priority": 0,
+			"fill": "invisible"
+		},
+
+		{
+			"position": {
+			"x":0,
+			"y":0,
+			},
+			"size": {
+			"width": 364 ,
+			"height": 204 ,
+			},
+			"tags": [ "advisor_info" ],
+			"priority": 54,
+			"fill": "invisible"
+		},
+
+
+	],
+	"list": [
+		{
+			"name": "pause_button",
+			"x": 210 ,
+			"y": 30 ,
+			"size" : {
+				"height" : 48,
+				"width"  : 48
+			},
+			"anchor": "TL",
+			"align":"C",
+			"priority": 55
+		},
+
+		{
+			"name": "faction_button",
+			"x": 5,
+			"y": 5,
+			"size" : {
+				"height" : 82,
+				"width"  : 82
+			},
+			"priority": 55,
+			"anchor": "BL",
+			"align": "BL",
+			"annotation_id": "Rome.Annotations.camp_status-faction"
+		},
+		{
+			"name": "overlays_button",
+			"x": 0,
+			"y": 0,
+			"size" : {
+				"height" : 82,
+				"width"  : 82
+			},
+			"priority": 55,
+			"anchor": "TR",
+			"align": "TR",
+		},
+		{
+			"name": "radar",
+			"x": -382,
+			"y": -52,
+			"priority": 53,
+			"anchor": "TR"
+		},
+		{
+			"name": "enlarged_radar",
+			"x": 0,
+			"y": 0,
+			"priority": 53,
+			"anchor": "TL"
+		},
+		{
+			"name": "radar_globe",
+			"x": 6,
+			"y": -300,
+			"size" : {
+				"height" : 80,
+				"width"  : 80
+			},
+			"priority": 55,
+			"anchor": "TR",
+			"align": "TR",
+			"annotation_id": "Rome.Annotations.camp_general-map"
+		},
+		{
+			"name": "radar_close_button",
+			"x": -46,
+			"y": -46,
+			"priority": 55,
+			"anchor": "BR",
+			"align": "C"
+		},
+		{
+			"name": "corner_radar_close_button",
+			"priority": 2,
+		},
+		{
+			"name": "end_turn_button",
+			"x": -5,
+			"y": 5,
+			"size" : {
+				"height" : 82,
+				"width"  : 82
+			},
+			"anchor": "BR",
+			"align": "BR",
+			"annotation_id": "Rome.Annotations.camp_status-turn",
+			"priority": 10
+		},
+		{
+			"name": "end_turn_button_expanded",
+			"x": 5,
+			"y": 5,
+			"size" : {
+				"height" : 82,
+				"width"  : 82
+			},
+			"anchor": "BR",
+			"align": "BR",
+			"annotation_id": "Rome.Annotations.camp_status-turn"
+		},
+
+		{
+			"name": "build_q",
+			"x": -2000,
+			"y": -2000
+		},
+		{
+			"name": "train_q",
+			"x": -2000,
+			"y": -2000
+		},
+		{
+			"name": "cards",
+			"x": 546 ,
+			"y": -500,
+			"size" : {
+				"height" : 64,
+				"width": 1401 ,
+			},
+			"anchor": "BL",
+			"annotation_id": "Rome.Annotations.camp_tabs-bar"
+		},
+		{
+			"name": "no_cards_string",
+			"x": 0,
+			"y": -60,
+			"anchor": "BC",
+			"align" : "C"
+		},
+        {
+            "name": "cards_left_arrow",
+            "x": 30,
+            "y": 724,
+			"anchor": "TL"
+        },
+        {
+            "name": "cards_right_arrow",
+            "x": 670,
+            "y": 724,
+			"anchor": "TL"
+        },
+		{
+        	"name": "cards_left_arrow_expanded",
+        	"x": 0,
+        	"y": 450,
+			"priority" : 20
+    	},
+    	{
+        	"name": "cards_right_arrow_expanded",
+        	"x": -100,
+        	"y": 450,
+			"priority" : 20,
+			"anchor" : "TR"
+    	},
+		{
+			"name": "next_item",
+			"x": 186,
+			"y": -672,
+			"anchor": "TC",
+			"annotation_id": "Rome.Annotations.camp_general-ataglance"
+		},
+		{
+			"name": "prev_item",
+			"x": -212,
+			"y": -672,
+			"anchor": "TC",
+			"annotation_id": "Rome.Annotations.camp_general-ataglance"
+		},
+		{
+			"name": "selected_item_name_string",
+			"x": -2,
+			"y": -678,
+			"align":"C",
+            "size":{
+                "width":256,
+                "height":20
+            },
+			"anchor": "TC",
+			"annotation_id": "Rome.Annotations.camp_general-ataglance"
+        },
+        {
+			"name": "selected_item_type_string",
+			"x": -2,
+			"y": -693,
+			"align":"C",
+            "size":{
+                "width":120,
+                "height":20
+            },
+			"anchor": "TC"
+        },
+        {
+            "name": "unit_fort_string",
+            "x": 318,
+            "y": -678,
+            "size":{
+                "width":382,
+                "height":0
+            }
+        },
+		{
+			"name": "ap_bar",
+			"x": 2000,
+			"y": 2000
+		},
+		{
+			"name": "date_string",
+			"x": -240 ,
+			"y": 37,
+            "size":{
+                "width": 108
+            },
+			"priority": 53,
+			"align":"TL",
+			"anchor":"TR",
+			"font":"cinzel_sml_bold",
+			"font_colour":"dark_brown"
+		},
+		{
+			"name": "season_icon",
+			"x": -277 ,
+			"y": 33,
+			"size":{
+				"height": 40,
+                "width": 40
+            },
+			"priority": 53,
+			"align":"TL",
+			"anchor":"TR"
+		},
+		{
+			"name": "money_string",
+			"x": -239 ,
+			"y": 6,
+			"priority": 53,
+			"align":"TL",
+			"anchor":"TR",
+			"font":"cinzel_sml_bold",
+			"font_colour":"dark_brown"
+		},
+		{
+
+			"name": "money_icon",
+			"x": -282 ,
+			"y": -4,
+			"size":{
+				"height": 42,
+                "width": 42
+            },
+			"priority": 53,
+			"align":"TL",
+			"anchor":"TR"
+		},
+
+		{
+			"name": "income_string",
+			"x": 339,
+			"y": -678
+		},
+		{
+			"name": "income_icon",
+			"x": 319,
+			"y": -676
+		},
+		{
+			"name": "order_icon",
+			"x": 383,
+			"y": -677
+		},
+		{
+			"name": "recruiting_icon",
+			"x": 600,
+			"y": -676
+		},
+		{
+			"name": "building_icon",
+			"x": 575,
+			"y": -676
+		},
+		{
+			"name": "automanaged_icon",
+			"x": 620,
+			"y": -676
+		},
+		{
+			"name": "growth_icon",
+			"x": 399,
+			"y": -676
+		},
+		{
+			"name": "religion_icon",
+			"x": 459,
+			"y": -676
+		},
+		{
+			"name": "rioting_icon",
+			"x": 640,
+			"y": -676
+		},
+		{
+			"name": "sieged_icon",
+			"x": 660,
+			"y": -676
+		},
+		{
+			"name": "plagued_icon",
+			"x": 680,
+			"y": -676
+		},
+		{
+			"name": "gaming_icon",
+			"x": 425,
+			"y": -676
+		},
+		{
+			"name": "turn_display",
+			"x": 0,
+			"y": 100,
+			"anchor": "TC",
+			"align": "C"
+		},
+		{
+			"name": "advisor",
+			"x": -1,
+			"y": -1,
+			"size" : {
+				"height" : 80,
+				"width"  : 80
+			},
+			"anchor": "TL",
+			"align":"TL",
+			"priority": 55
+		},
+		{
+			"name": "advisor_manual",
+			"x": 109 ,
+			"y": 30 ,
+			"size" : {
+				"height" : 48,
+				"width"  : 48
+			},
+			"anchor": "TL",
+			"align":"C",
+			"priority": 53
+		},
+
+		{
+			"name": "advisor_zoom_to",
+			"x": 160 ,
+			"y": 30 ,
+			"size" : {
+				"height" : 48,
+				"width"  : 48
+			},
+			"anchor": "TL",
+			"align":"C",
+			"priority": 53
+		},
+		{
+			"name": "stop_tutorial_button",
+			"x": 168 ,
+			"y": 26 ,
+			"size" : {
+				"height" : 50,
+				"width"  : 50
+			},
+			"anchor": "TL",
+			"align":"C",
+			"priority": 60
+		},
+		{
+			"_comment": "up and awaaay",
+			"name": "advisor_hide_bubble",
+			"x": 223 ,
+			"y": -10026 ,
+			"size" : {
+				"height" : 50,
+				"width"  : 50
+			},
+			"anchor": "TL",
+			"align":"C",
+			"priority": 53
+		},
+
+		{
+			"name": "advisor_animated_frame",
+			"x": -229,
+			"y": -280,
+			"size" : {
+				"width"  : 405,
+				"height" : 280
+			},
+			"anchor": "TL",
+			"priority": 50
+		},
+
+		{
+			"name": "advisor_animated_background_frame_priority",
+			"priority": 40,
+        },
+
+		{
+			"name": "select_all_units_button",
+			"x": 1401 ,
+			"y": 59,
+			"size" : {
+				"width" : 45,
+				"height": 61
+			},
+			"align": "TR",
+			"anchor": "BL",
+			"annotation_id": "Rome.Annotations.battle_hud_general-toggle"
+		},
+		{
+			"name": "automerge_button",
+			"annotation_id" : "Rome.Annotations.camp_general_automerge",
+			"reference" : true
+		},
+		{
+			"name": "money_annotation",
+			"x": -10,
+			"y": -10,
+			"size": {
+				"width": 400 ,
+				"height": 41
+			},
+			"priority": 4,
+			"annotation_id": "Rome.Annotations.camp_status-money"
+		},
+		{
+			"name": "building_tab",
+			"x": -150 ,
+			"y": 0,
+			"size": {
+				"width": 80,
+				"height": 80
+			},
+			"anchor": "BC",
+			"align":"BC",
+			"priority": 3,
+			"annotation_id": "Rome.Annotations.camp_tabs-build"
+		},
+		{
+			"name": "army_tab",
+			"x": -50 ,
+			"y": 0,
+			"size": {
+				"width": 80,
+				"height": 80
+			},
+			"anchor": "BC",
+			"align":"BC",
+			"priority": 3,
+			"annotation_id": "Rome.Annotations.camp_tabs-army"
+		},
+		{
+			"name": "agent_tab",
+			"x": 50 ,
+			"y": 0,
+			"size": {
+				"width": 80,
+				"height": 80
+			},
+			"anchor": "BC",
+			"align":"BC",
+			"priority": 3,
+			"annotation_id": "Rome.Annotations.camp_tabs-agent"
+		},
+		{
+			"name": "navy_tab",
+			"x": 150 ,
+			"y": 0,
+			"size": {
+				"width": 80,
+				"height": 80
+			},
+			"anchor": "BC",
+			"align":"BC",
+			"priority": 3,
+			"annotation_id": "Rome.Annotations.camp_tabs-fleet"
+		},
+		{
+			"name": "tab_indicator",
+			"x": -2000,
+			"y": -2000
+		},
+
+		{
+			"name": "settlement_stats",
+			"x": 15,
+			"y": 810,
+			"size": {
+				"width": 1310 ,
+			},
+			"priority": 3,
+			"tags":[
+				"info_panel_own_settlement_building", "info_panel_foreign_settlement_building"
+			]
+		},
+		{
+			"name": "icon_revolting",
+			"size": {
+				"width": 40,
+				"height": 40
+			}
+		},
+		{
+			"name": "icon_under_siege",
+			"size": {
+				"width": 40,
+				"height": 40
+			}
+		},
+		{
+			"name": "icon_plague",
+			"size": {
+				"width": 40,
+				"height": 40
+			}
+		},
+
+
+		{
+			"name":"construction_queue",
+			"x": -416 ,
+			"y":-306,
+			"anchor": "BR",
+			"size":{
+				"width": 411 ,
+				"height":100
+			},
+			"tags":[
+				"info_panel_own_settlement"
+			],
+			"priority":3
+		},
+
+
+
+		{
+			"name":"training_queue_title",
+			"x": -218 ,
+			"y":-56,
+			"anchor": "BR",
+			"align": "C",
+			"tags":[
+				"info_panel_own_settlement"
+			]
+		},
+
+
+
+		{
+			"name":"recruitment_options_button",
+			"x": -230,
+			"y":-50,
+			"anchor": "BR",
+			"align": "C",
+			"size":{	"width":50, "height":50	},
+			"tags":[
+				"info_panel_own_settlement"
+			],
+			"triggers_show":[
+				"recruitment"
+			],
+			"triggers_hide":[
+				"construction",
+				"info_panel_no_build_browser"
+			],
+			"priority":3
+		},
+		{
+			"name":"construction_options_button",
+			"x":-300,
+			"y":-50,
+			"anchor": "BR",
+			"align": "C",
+			"size":{	"width":50, "height":50	},
+			"tags":[
+				"info_panel_own_settlement"
+			],
+			"triggers_show":[
+				"construction"
+			],
+			"triggers_hide":[
+				"recruitment",
+				"info_panel_no_build_browser"
+			],
+			"priority":3
+		},
+
+
+
+
+
+
+
+
+
+
+		{
+			"name":"building_browser_button",
+			"x": 1256 ,
+			"y": -65,
+			"anchor": "BL",
+			"align":"BR",
+			"priority": 3,
+			"tags":[
+				"info_panel_own_settlement_building"
+			]
+		},
+
+		{
+			"name": "corner_scroll",
+			"x": 0 ,
+			"y": -175,
+			"size":{
+				"width": 637 ,
+				"height": 665 ,
+			},
+			"anchor": "BL",
+			"align": "BL",
+			"priority": 3
+		},
+
+
+		{
+			"name":"recruitment_options_button_character",
+			"x": -230,
+			"y":-50,
+			"anchor": "BR",
+			"align": "C",
+			"size":{	"width":50, "height":50	},
+			"tags":[
+				"info_panel_own_character"
+			],
+			"triggers_show":[
+				"recruitment_own_character"
+			],
+			"triggers_hide":[
+				"construction_own_character",
+				"info_panel_no_build_browser_own_character"
+			],
+			"priority":3
+		},
+
+		{
+			"name":"construction_options_button_character",
+			"x":-300,
+			"y":-50,
+			"anchor": "BR",
+			"align": "C",
+			"size":{	"width":50, "height":50	},
+			"tags":[
+				"info_panel_own_character"
+			],
+			"triggers_show":[
+				"construction_own_character"
+			],
+			"triggers_hide":[
+				"recruitment_own_character",
+				"info_panel_no_build_browser_own_character"
+			],
+			"priority":3
+		},
+
+
+
+
+
+
+
+
+
+
+		{
+			"name":"city_view_button",
+			"x": 589 ,
+			"y": 710,
+			"size": {
+				"height": 30,
+				"width": 30
+			},
+			"tags":[
+				"settlement_summary"
+			],
+			"priority": 4
+		},
+		{
+			"name":"set_as_capital_button",
+			"x": 589 ,
+			"y": 745,
+			"size": {
+				"height": 30,
+				"width": 30
+			},
+			"tags":[
+				"settlement_summary"
+			],
+			"priority": 4
+		},
+
+		{
+			"name": "population_bar",
+			"x": 81 ,
+			"y": 270,
+			"align":"CL",
+			"size": {
+				"width": 409 ,
+			},
+			"tags":[
+				"settlement_summary"
+			],
+			"font":"verdana_sml",
+			"annotation_id": "Rome.Annotations.sett_details-factors"
+		},
+		{
+			"name": "order_bar",
+			"x": 81 ,
+			"y": 350,
+			"align":"CL",
+				"size": {
+				"width": 409 ,
+			},
+			"tags":[
+				"settlement_summary"
+			],
+			"font":"verdana_sml",
+			"annotation_id": "Rome.Annotations.sett_details-factors"
+		},
+		{
+			"name": "income_bar",
+			"x": 81 ,
+			"y": 430,
+			"align":"CL",
+			"size": {
+				"width": 409 ,
+			},
+			"tags":[
+				"settlement_summary"
+			],
+			"font":"verdana_sml",
+			"annotation_id": "Rome.Annotations.sett_details-factors"
+		},
+		{
+			"name": "siege_duration_string",
+			"x": 81 ,
+			"y": 510,
+			"align":"CL",
+			"size": {
+				"width": 464 ,
+			},
+			"tags":[
+				"settlement_summary"
+			],
+			"font":"verdana_sml"
+		},
+
+		{
+			"name": "trade_summary",
+			"x": 32 ,
+			"y": 375,
+			"size": {
+				"width": 637 ,
+				"height": 800
+			},
+			"align":"CL",
+			"tags":[
+				"trade_details"
+			],
+			"font":"verdana_sml",
+			"priority": 4
+		},
+
+		{
+			"name": "building_name",
+			"x": 309 ,
+			"y": 220,
+			"size": {
+				"width": 637 ,
+				"height": 600
+			},
+			"align":"C",
+			"font":"verdana_med",
+			"tags":[
+				"building_details"
+			],
+			"priority": 4
+		},
+
+		{
+			"name": "building_time",
+			"x": 91 ,
+			"y": 220,
+			"align":"C",
+			"font":"verdana_sml",
+			"tags":[
+				"building_details"
+			],
+			"priority": 4
+		},
+
+		{
+			"name": "building_cost",
+			"x": 527 ,
+			"y": 220,
+			"align":"C",
+			"font":"verdana_sml",
+			"tags":[
+			"building_details"
+			],
+			"priority": 4
+		},
+
+
+		{
+			"name": "building_image",
+			"x": 309 ,
+			"y": 240,
+
+			"align":"TC",
+			"tags":[
+				"building_details"
+			],
+			"priority": 4
+		},
+
+
+		{
+			"name": "building_description",
+			"x": 309 ,
+			"y": 410,
+			"size": {
+				"width": 473 ,
+				"height": 350
+			},
+			"align":"TC",
+			"tags":[
+				"building_details"
+			],
+			"priority": 4
+		},
+
+
+		{
+			"name": "building_zoom",
+			"x": 309 ,
+			"y": -380
+		},
+		{
+			"name": "building_destroy",
+			"x": 309 ,
+			"y": -380
+		},
+
+
+		{
+			"name": "unit_name",
+			"x": 309 ,
+			"y": 140,
+			"align":"C",
+			"font":"verdana_med",
+			"tags":[
+				"unit_details"
+			],
+			"priority": 4
+		},
+
+
+		{
+			"name": "unit_image",
+			"x": 182 ,
+			"y": 260,
+			"align":"C",
+			"tags":[
+				"unit_details"
+			],
+			"priority": 4
+		},
+
+
+		{
+			"_comment":"Manage settlement elements start here",
+		},
+
+		{
+			"name": "manage_settlement_button",
+			"x": -510,
+			"y": -70,
+			"anchor": "BR",
+			"align": "BR",
+			"tags": [ "info_panel_own_settlement_character" ],
+			"priority":3
+		},
+		
+		
+		
+		{
+			"_comment":"beige frames here",
+		},
+		
+		
+		{
+			"name": "beige_frame_center",
+			"x": 0 ,
+			"y": -48,
+			"size": {
+				"width": 1136 ,
+				"height" : 54
+			},
+			"anchor": "BC",
+			"align": "TC",
+			"priority": 1
+		},
+
+		{
+			"name": "beige_frame_left",
+			"x": -338 ,
+			"y": -48,
+			"size": {
+				"width": 680 ,
+				"height" : 54
+			},
+			"anchor": "BL",
+			"align": "TL",
+			"priority": 1
+		},
+
+		{
+			"name": "beige_frame_right",
+			"x": 338 ,
+			"y": -48,
+			"size": {
+				"width": 680 ,
+				"height" : 54
+			},
+			"anchor": "BR",
+			"align": "TR",
+			"priority": 1
+		},
+
+
+		{
+			"name": "toggle_tactical_map_bar_animated_frame",
+			"x": 0 ,
+			"y": -85,
+			"size": {
+				"width": 430 ,
+				"height": 80
+			},
+			"align": "TC",
+			"anchor": "TC",
+			"priority": 70
+		},
+		{
+			"name": "toggle_tactical_map_bar",
+			"x": 0 ,
+			"y": -50,
+			"size": {
+				"width": 402 ,
+				"height": 10
+			},
+			"align": "TC",
+			"anchor": "TC",
+			"priority": 71
+		},
+		{
+			"name": "toggle_tactical_map_bat_string",
+			"x": 0 ,
+			"y": -40,
+			"align": "TC",
+			"anchor": "TC",
+			"priority": 71
+		},
+
+
+	]
+}

@@ -1,0 +1,623 @@
+; ************** greek towns/cities
+
+
+;; greek ludus magna uses this academy_greek model
+	academy_greek
+	{
+		stat_cat large_stone
+		localised_name academy
+		level
+		{
+			min_health 1
+			battle_stats
+			item		academy_greek
+			physical_info	info_academy_roman.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_112x64
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+	base_greek_awesome_temple
+	{
+		stat_cat large_stone
+		localised_name awesome_temple
+		level
+		{
+			min_health 0
+			battle_stats
+			item		base_greek_awesome_temple
+			physical_info	info_base_greek_awesome_temple.cas
+		}
+	}
+
+	base_greek_large_temple
+	{
+		stat_cat medium_stone
+		localised_name large_temple
+		level
+		{
+			min_health 0
+			battle_stats
+			item		base_greek_large_temple
+			physical_info	info_base_greek_large_temple.cas
+		}
+	}
+	
+	bouleuterion
+	{
+		stat_cat medium_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		bouleuterion
+			physical_info	info_bouleuterion.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_rubble_bouleuterion
+			physical_info	info_greek_rubble_bouleuterion.cas
+		}
+	}
+
+	city_barracks_greek
+	{	
+		stat_cat medium_stone
+		localised_name city_barracks
+		level
+		{
+			min_health 1
+			battle_stats
+			item		city_barracks_greek
+			physical_info	info_city_barracks_roman.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		city_barracks_greek_rubble
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+
+	greek_ambush_building
+	{
+		stat_cat medium_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_ambush_building
+			physical_info	info_roman_ambush_building.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_52x18
+			physical_info	info_roman_rubble_52x18.cas
+		}
+	}
+
+;;; not quite sure if this is still being used as an ambient settlement.
+;;; definitely not used inside greek cities though.
+	greek_amphitheatre
+	{
+		stat_cat medium_stone
+		localised_name theatre
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_amphitheatre
+			physical_info	info_greek_amphitheatre.cas
+		}
+	}
+
+
+	greek_colonnaded_portico
+	{
+		stat_cat medium_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_colonnaded_portico
+			physical_info	info_greek_colonnaded_portico.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_17x13
+			physical_info	info_roman_rubble_17x13.cas
+		}
+	}
+
+
+	greek_councillors_chambers
+	{
+		stat_cat medium_stone
+		localised_name councillor's_chambers
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_councillors_chambers
+			physical_info	greek_councillors_chambers_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_councillors_chambers_rubble
+			physical_info	info_roman_rubble_256x192.cas
+		}
+	}
+
+	greek_fort_barracks_left
+	{
+		stat_cat medium_stone
+		localised_name ambient
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_fort_barracks_left
+			physical_info	info_greek_fort_barracks_left.cas
+		}
+	}
+
+	greek_fort_barracks_right
+	{
+		stat_cat medium_stone
+		localised_name ambient
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_fort_barracks_right
+			physical_info	info_greek_fort_barracks_right.cas
+		}
+	}
+
+
+	greek_governors_house
+	{
+		stat_cat medium_stone
+		localised_name governor's_house
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_governors_house
+			physical_info	info_greek_governors_house.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_48x32
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+	greek_governors_villa
+	{
+		stat_cat medium_stone
+		localised_name governor's_villa
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_governors_villa
+			physical_info	greek_governors_villa_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_governors_villa_rubble
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+
+	greek_granary
+	{
+		stat_cat small_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_granary
+			physical_info	info_white_granary.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_10x24
+			physical_info	info_roman_rubble_10x24.cas
+		}
+	}
+
+;; greek elite_cavalry_stables uses this greek_hippodrome model
+	greek_hippodrome
+	{
+		stat_cat large_stone
+		localised_name elite_cavalry_stables
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_hippodrome
+			physical_info	info_greek_hippodrome.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_112x64
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+;;; greek imperial palace is no longer used.
+;;; greek_royal_palace has replaced it.
+	greek_imperial_palace
+	{
+		stat_cat large_stone
+		localised_name royal_palace
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_imperial_palace
+			physical_info	info_greek_imperial_palace.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_256x192
+			physical_info	info_roman_rubble_256x192.cas
+		}
+		shadow_models
+		{
+                 	greek_imperial_palace_lower_shadow.cas
+			greek_imperial_palace_upper_shadow.cas
+            	}
+	}
+
+
+
+	greek_large_temple
+	{
+		stat_cat large_stone
+		localised_name large_temple
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_large_temple
+			physical_info	info_greek_large_temple.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_63x46
+			physical_info	info_roman_rubble_63x46.cas
+		}
+	}
+
+	greek_market_stall
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_market_stall
+			physical_info	none
+		}
+	}
+
+	
+
+
+	
+	greek_poor_house
+	{
+		stat_cat small_stone
+		localised_name ambient
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_poor_house
+			physical_info	info_greek_poor_house.cas
+		}
+	}
+
+
+	greek_rich_house
+	{
+		stat_cat small_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_rich_house
+			physical_info	info_greek_rich_house.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_24x22
+			physical_info	info_roman_rubble_24x22.cas
+		}
+	}
+
+	greek_royal_palace
+	{
+		stat_cat medium_stone
+		localised_name royal_palace
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_royal_palace
+			physical_info	greek_royal_palace_info.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_royal_palace_rubble
+			physical_info	info_roman_rubble_256x192.cas
+		}
+	}
+
+	greek_semidetached_house
+	{
+		stat_cat small_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_semidetached_house
+			physical_info	info_greek_semidetached_house.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_semidetached_house_rubble
+			physical_info	info_roman_rubble_32x32.cas
+		}
+	}
+
+
+	greek_small_temple
+	{
+		stat_cat small_stone
+		localised_name temple
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_small_temple
+			physical_info	info_greek_small_temple.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_small_temple_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+;;; not sure which greek_theatres are being used.
+	greek_theatre
+	{
+		stat_cat small_stone
+		localised_name theatre
+		level
+		{
+			min_health 1
+			battle_stats
+			item		greek_theatre
+			physical_info	info_greek_theatre.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_theatre_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+
+	greek_theatre_small
+	{
+		stat_cat medium_stone
+		localised_name theatre
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_theatre_small
+			physical_info	info_greek_theatre.cas
+		}
+	}
+
+
+	greek_walled_enclosure
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_walled_enclosure
+			physical_info	info_greek_walled_enclosure.cas
+		}
+	}
+
+;;; scriptorium uses this ludus_magnus_greek model
+	ludus_magnus_greek
+	{
+		stat_cat large_stone
+		localised_name ludus_magna
+		level
+		{
+			min_health 1
+			battle_stats
+			item		ludus_magnus_greek
+			physical_info	info_ludus_magnus_roman.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_48x32
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+
+	militia_barracks_greek
+	{
+		stat_cat medium_stone
+		localised_name militia_barracks
+		level
+		{
+			min_health 1
+			battle_stats
+			item		militia_barracks_greek
+			physical_info	info_militia_barracks_greek.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		militia_barracks_greek_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+
+	ruined_greek_temple
+	{
+		stat_cat indestructable
+		localised_name ambient
+		level
+		{
+			min_health 0
+			battle_stats
+			item		ruined_greek_temple
+			physical_info	info_ruined_greek_temple.cas
+		}
+	}
+
+;;; academy uses this scriptorium_greek model
+	scriptorium_greek
+	{
+		stat_cat large_stone
+		localised_name scriptorium
+		level
+		{
+			min_health 1
+			battle_stats
+			item		scriptorium_greek
+			physical_info	info_scriptorium_roman.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_48x32
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+
+	stoa
+	{
+		stat_cat medium_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		stoa
+			physical_info	info_stoa.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		stoa_rubble
+			physical_info	info_roman_rubble_50x20.cas
+		}
+	}
+
+
+	tholos_tomb
+	{
+		stat_cat indestructable
+		localised_name ambient
+		no_shadow
+		level
+		{
+			min_health 0
+			battle_stats
+			item		tholos_tomb
+			physical_info	info_tholos_tomb.cas
+		}
+	}
+
+	
+

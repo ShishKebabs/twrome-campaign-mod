@@ -1,0 +1,1976 @@
+
+	null
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		null
+			physical_info	none
+		}
+	}
+
+
+
+	academy_roman
+	{
+		stat_cat large_stone
+		localised_name academy
+		level
+		{
+			min_health 1
+			battle_stats
+			item		academy_roman
+			physical_info	info_academy_roman.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_112x64
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+;
+	;base_academy_roman
+	;{
+	;	stat_cat medium_stone
+	;	localised_name ambient
+	;	level
+	;	{
+	;		min_health 0
+	;		battle_stats
+	;		item		base_academy_roman
+	;		physical_info	none
+	;	}
+	;}
+
+	base_roman_awesome_temple
+	{
+		stat_cat large_stone
+		localised_name awesome_temple
+		level
+		{
+			min_health 1
+			battle_stats
+			item		base_roman_awesome_temple
+			physical_info	info_base_roman_awesome_temple.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item	base_roman_awesome_temple_rubble
+			physical_info	info_base_roman_awesome_temple.cas
+		}
+	}	
+
+	base_roman_large_temple
+	{
+		stat_cat large_stone
+		localised_name large_temple
+		ground_types ground_no_grass.tga -49 -31 51 30
+		level
+		{
+			min_health 0
+			battle_stats
+			item		base_roman_large_temple
+			physical_info	info_base_roman_large_temple.cas
+		}
+	}
+
+
+	base_roman_small_temple
+	{
+		stat_cat small_stone
+		localised_name temple
+		level
+		{
+			min_health 1
+			battle_stats
+			item		base_roman_small_temple
+			physical_info	info_base_roman_small_temple.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item	base_roman_small_temple_rubble
+			physical_info	info_base_roman_small_temple.cas
+		}
+	}
+
+;
+;	base_shrine_round_pavement
+;	{
+;		stat_cat small_stone
+;		localised_name shrine
+;		level
+;		{
+;			min_health 0
+;			battle_stats
+;			item		base_shrine_round_pavement
+;			physical_info	none
+;		}
+;	}
+
+	bath_house
+	{
+		stat_cat medium_stone
+		localised_name bath_house
+		level
+		{
+			min_health 0
+			battle_stats
+			item		bath_house
+			physical_info	info_bath_house.cas
+		}
+	}
+	
+
+	cart_B
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		cart_B
+			physical_info	info_cart_B.cas
+		}
+	}
+
+
+	centurions_tent
+	{
+		stat_cat tiny_wooden
+		localised_name none
+		level
+		{
+			min_health 1
+			battle_stats
+			item		centurions_tent
+			physical_info	info_centurions_tent.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		centurions_tent_rubble
+			physical_info	info_centurions_tent.cas
+		}
+	}
+
+
+	circus_maximus
+	{
+		stat_cat large_stone
+		localised_name circus_maximus
+		level
+		{
+			min_health 1
+			battle_stats
+			item		circus_maximus 	circus_maximus_props
+			physical_info	info_circus_maximus.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		circus_maximus_rubble
+			physical_info	info_roman_rubble_256x96.cas
+		}
+	}
+	
+	city_barracks_roman
+	{
+		stat_cat large_stone
+		localised_name city_barracks
+		level
+		{
+			min_health 1
+			battle_stats
+			item		city_barracks_roman city_barracks_roman_props
+			physical_info	info_city_barracks_roman.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		city_barracks_roman_rubble
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}	
+
+;;; city_steps is no longer used
+	city_steps	
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		city_steps
+			physical_info	info_city_steps.cas
+		}
+	}
+
+
+	colosseum
+	{
+		stat_cat large_stone
+		localised_name colosseum
+		level
+		{
+			min_health 1
+			battle_stats
+			item		colosseum
+			physical_info	info_colosseum.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		colosseum_rubble
+			physical_info	info_roman_rubble_256x192.cas
+		}
+	}
+
+
+	columbarium
+	{
+		stat_cat large_stone
+		localised_name ambient
+		level
+		{
+			min_health 0
+			battle_stats
+			item		columbarium
+			physical_info	info_columbarium.cas
+		}
+	}
+
+
+	corn_field_long
+	{
+		stat_cat indestructable
+		localised_name none
+		no_shadow
+        follow_terrain
+		unselectable
+		level
+		{
+			min_health 0
+			battle_stats
+			item		corn_field_long
+			physical_info	none
+		}
+	}
+
+
+	corn_field_square
+	{
+		stat_cat indestructable
+		localised_name none
+		no_shadow
+        follow_terrain
+		unselectable
+		level
+		{
+			min_health 0
+			battle_stats
+			item		corn_field_square
+			physical_info	none
+		}
+	}
+
+
+	crates
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		crates
+			physical_info	info_crates.cas
+		}
+	}
+
+
+	domus
+	{
+		stat_cat small_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		domus
+			physical_info	info_domus.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_58x34
+			physical_info	info_roman_rubble_58x34.cas
+		}
+	}
+
+;;; extras_roman_large_city is no longer used.
+	extras_roman_large_city
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		extras_roman_large_city
+			physical_info	info_extras_roman_large_city.cas
+		}
+	}
+
+;;; extras_roman_huge_city is no longer used
+	extras_roman_huge_city
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		extras_roman_huge_city
+			physical_info	info_extras_roman_huge_city.cas
+		}
+	}
+
+
+	farmhouse_thatched_A
+	{
+		stat_cat tiny_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		farmhouse_thatched_A
+			physical_info	info_farmhouse_thatched_A.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_6x8
+			physical_info	info_roman_rubble_6x8.cas
+		}
+	}
+	
+	farmhouse_thatched_round
+	{
+		stat_cat tiny_wooden
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		farmhouse_thatched_round
+			physical_info	info_farmhouse_thatched_round.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		farmhouse_thatched_round_rubble
+			physical_info	info_roman_rubble_6x6.cas
+		}
+	}
+
+	
+	fenced_area_double
+	{
+		stat_cat indestructable
+		localised_name none
+		no_shadow
+		level
+		{
+			min_health 0
+			battle_stats
+			item		fenced_area_double
+			physical_info	info_fenced_area_double.cas
+		}
+	}
+	
+
+	fenced_area_long
+	{
+		stat_cat indestructable
+		localised_name none
+		no_shadow
+		level
+		{
+			min_health 0
+			battle_stats
+			item		fenced_area_long
+			physical_info	info_fenced_area_long.cas
+		}
+	}
+
+	
+	fort_barracks_left
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		fort_barracks_left
+			physical_info	info_roman_fort_barracks_left.cas
+		}
+	}
+	
+
+	fort_barracks_right
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		fort_barracks_right
+			physical_info	info_roman_fort_barracks_right.cas
+		}
+	}
+
+
+	furrowed_soil
+	{
+		stat_cat indestructable
+		localised_name none
+		no_shadow
+        follow_terrain
+		level
+		{
+			min_health 0
+			battle_stats
+			item		furrowed_soil
+			physical_info	info_furrowed_soil.cas
+		}
+	}
+
+
+	generals_side_tent
+	{
+		stat_cat tiny_wooden
+		localised_name none
+		level
+		{
+			min_health 1
+
+			battle_stats
+			item		generals_side_tent
+			physical_info	info_generals_side_tent.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		generals_side_tent_rubble
+			physical_info	info_generals_side_tent.cas
+		}
+	}
+
+	
+	generals_stake_fence
+	{
+		stat_cat indestructable
+		localised_name none
+		no_shadow
+		level
+		{
+			min_health 0
+			battle_stats
+			item		generals_stake_fence
+			physical_info	info_generals_stake_fence.cas
+		}
+	}
+
+
+	generals_tent
+	{
+		stat_cat tiny_wooden
+		localised_name none
+		level
+		{
+			min_health 1
+			battle_stats
+			item		generals_tent
+			physical_info	info_generals_tent.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		generals_tent_rubble
+			physical_info	info_generals_tent.cas
+		}
+	}
+
+
+	granary
+	{
+		stat_cat large_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		granary
+			physical_info	info_granary.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_10x24
+			physical_info	info_roman_rubble_10x24.cas
+		}
+	}
+
+
+	great_forum
+	{
+		stat_cat large_stone
+		localised_name great_forum
+		level
+		{
+			min_health 1
+			battle_stats
+			item		great_forum
+			physical_info	info_great_forum.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_160x128
+			physical_info	info_roman_rubble_160x128.cas
+		}
+	}
+
+
+	greek_poor_house_roman_variant
+	{
+		stat_cat tiny_stone
+		localised_name ambient
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_poor_house_roman_variant
+			physical_info	info_greek_poor_house.cas
+		}
+	}
+	
+	greek_semidetached_house_roman_variant
+	{
+		stat_cat tiny_stone
+		localised_name ambient
+		level
+		{
+			min_health 0
+			battle_stats
+			item		greek_semidetached_house_roman_variant
+			physical_info	info_greek_semidetached_house.cas
+		}
+	}
+
+	hay_field_double
+	{
+		stat_cat indestructable
+		localised_name none
+		no_shadow
+        follow_terrain
+		unselectable
+		level
+		{
+			min_health 0
+			battle_stats
+			item		hay_field_double
+			physical_info	none
+		}
+	}
+
+	hay_field_harvested
+	{
+		stat_cat indestructable
+		localised_name none
+		no_shadow
+        follow_terrain
+		unselectable
+		level
+		{
+			min_health 0
+			battle_stats
+			item		hay_field_harvested
+			physical_info	none
+		}
+	}
+
+
+	hay_field_internal_double
+	{
+		stat_cat indestructable
+		localised_name none
+		no_shadow
+        follow_terrain
+		unselectable
+		level
+		{
+			min_health 0
+			battle_stats
+			item		hay_field_internal_double
+			physical_info	none
+		}
+	}
+
+
+
+	hay_field_long
+	{
+		stat_cat indestructable
+		localised_name none
+		no_shadow
+        follow_terrain
+		unselectable
+		level
+		{
+			min_health 0
+			battle_stats
+			item		hay_field_long
+			physical_info	none
+		}
+	}
+	
+
+	hay_field_square
+	{
+		stat_cat indestructable
+		localised_name none
+		no_shadow
+        follow_terrain
+		unselectable
+		level
+		{
+			min_health 0
+			battle_stats
+			item		hay_field_square
+			physical_info	none
+		}
+	}
+
+
+
+	hedgerow_corner
+	{
+		stat_cat indestructable
+		localised_name none
+		no_shadow
+		level
+		{
+			min_health 0
+			battle_stats
+			item		hedgerow_corner
+			physical_info	info_hedgerow_corner.cas
+		}
+	}
+
+	hedgerow_straight
+	{
+		stat_cat indestructable
+		localised_name none
+		no_shadow
+		level
+		{
+			min_health 0
+			battle_stats
+			item		hedgerow_straight
+			physical_info	info_hedgerow_straight.cas
+		}
+	}
+	
+	hedgerow_t-junction
+	{
+		stat_cat indestructable
+		localised_name none
+		no_shadow
+		level
+		{
+			min_health 0
+			battle_stats
+			item		hedgerow_t-junction
+			physical_info	info_hedgerow_t-junction.cas
+		}
+	}
+
+
+	hippodrome
+	{
+		stat_cat large_stone
+		localised_name hippodrome
+		level
+		{
+			min_health 1
+			battle_stats
+			item		hippodrome
+			physical_info	info_hippodrome.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		hippodrome_rubble
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+
+	hospital
+	{
+		stat_cat medium_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		hospital
+			physical_info	info_hospital.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_26x22
+			physical_info	info_roman_rubble_26x22.cas
+		}
+	}
+
+
+	insula_town_A
+	{
+		stat_cat small_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		insula_town_A
+			physical_info	info_insula_town_A.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_11x24
+			physical_info	info_roman_rubble_11x24.cas
+		}
+	}
+
+	
+	insula_town_B
+	{
+		stat_cat small_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		insula_town_B
+			physical_info	info_insula_town_B.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_10_7x27_4
+			physical_info	info_roman_rubble_10_7x27_4.cas
+		}
+	}
+
+
+	insulae_white
+	{
+		stat_cat small_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		insulae_white 	insulae_white_props
+			physical_info	info_insulae_white.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_11x24
+			physical_info	info_roman_rubble_11x24.cas
+		}
+	}
+
+
+
+	insulae_yellow
+	{
+		stat_cat small_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		insulae_yellow
+			physical_info	info_insulae_yellow.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_10_7x27_4
+			physical_info	info_roman_rubble_10_7x27_4.cas
+		}
+	}
+
+
+
+	legionary_tent_left_flap_open
+	{
+		stat_cat tiny_wooden
+		localised_name none
+		level
+		{
+			min_health 1
+			battle_stats
+			item		legionary_tent_left_flap_open
+			physical_info	info_legionary_tent.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		legionary_tent_left_flap_open_rubble
+			physical_info	info_legionary_tent.cas
+		}
+	}	 
+
+
+
+	legionary_tent_right_flap_open
+	{
+		stat_cat tiny_wooden
+		localised_name none
+		level
+		{
+			min_health 1
+			battle_stats
+			item		legionary_tent_right_flap_open
+			physical_info	info_legionary_tent.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		legionary_tent_right_flap_open_rubble
+			physical_info	info_legionary_tent.cas
+		}
+	}
+	
+
+
+	legionary_tent_both_flaps_open
+	{
+		stat_cat tiny_wooden
+		localised_name none
+		level
+		{
+			min_health 1
+			battle_stats
+			item		legionary_tent_both_flaps_open
+			physical_info	info_legionary_tent.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		legionary_tent_both_flaps_open_rubble
+			physical_info	info_legionary_tent.cas
+		}
+	}
+
+
+
+	legionary_tent_both_flaps_closed
+	{
+		stat_cat tiny_wooden
+		localised_name none
+		level
+		{
+			min_health 1
+			battle_stats
+			item		legionary_tent_both_flaps_closed
+			physical_info	info_legionary_tent.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		legionary_tent_both_flaps_closed_rubble
+			physical_info	info_legionary_tent.cas
+		}
+	}
+
+
+	lettuce_patch
+	{
+		stat_cat indestructable
+		localised_name none
+		no_shadow
+        follow_terrain
+		level
+		{
+			min_health 0
+			battle_stats
+			item		lettuce_patch
+			physical_info	none
+		}
+	}
+	
+;;; only used for an RTM
+	long_roman_street
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		long_roman_street
+			physical_info	none
+		}
+	}
+
+	
+	low_stone_wall
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		low_stone_wall
+			physical_info	info_low_stone_wall.cas
+		}
+	}
+
+;;; scriptorium uses this ludus_magnus_roman model.
+	ludus_magnus_roman
+	{
+		stat_cat large_stone
+		localised_name ludus_magna
+		level
+		{
+			min_health 1
+			battle_stats
+			item		ludus_magnus_roman
+			physical_info	info_ludus_magnus_roman.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_48x32
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+	militia_barracks_roman
+	{
+		stat_cat medium_stone
+		localised_name militia_barracks
+		level
+		{
+			min_health 1
+			battle_stats
+			item		militia_barracks_roman 	militia_barracks_roman_props
+			physical_info	info_militia_barracks_roman.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_48x32
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+	
+;;; barracks uses this muster_field_roman model
+	muster_field_roman
+	{
+		stat_cat medium_stone
+		localised_name barracks
+		no_shadow
+		level
+		{
+			min_health 1
+			battle_stats
+			item		muster_field_roman
+			physical_info	info_militia_barracks_roman.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_48x32
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+	officers_house
+	{
+		stat_cat small_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		officers_house
+			physical_info	info_officers_house.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_14x15
+			physical_info	info_roman_rubble_14x15.cas
+		}
+	}
+
+
+	officers_town_house
+	{
+		stat_cat small_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		officers_town_house
+			physical_info	info_officers_house.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_14x15
+			physical_info	info_roman_rubble_14x15.cas
+		}
+	}
+	
+
+	pile_of_logs
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pile_of_logs
+			physical_info	info_pile_of_logs.cas
+		}
+	}
+
+
+	planted_vines
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		planted_vines
+			physical_info	none
+		}
+	}
+
+
+	posthouse
+	{
+		stat_cat tiny_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		posthouse
+			physical_info	info_posthouse.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_24x22
+			physical_info	info_roman_rubble_24x22.cas
+		}
+	}
+
+	praetorium
+	{
+		stat_cat small_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		praetorium
+			physical_info	info_praetorium.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_30x27
+			physical_info	info_roman_rubble_30x27.cas
+		}
+	}
+
+
+	principium
+	{
+		stat_cat small_stone
+		localised_name ambient
+		level
+		{
+			min_health 0
+			battle_stats
+			item		principium
+			physical_info	info_principium.cas
+		}
+	}
+
+
+;;; public_gardens temporarily using 30x27 rubble, whilst awaiting specific rubble model.
+	public_gardens
+	{
+		stat_cat indestructable
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		public_gardens
+			physical_info	info_public_gardens.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_30x27
+			physical_info	info_roman_rubble_30x27.cas
+		}
+	}
+	
+
+	pumpkin_patch
+	{
+		stat_cat indestructable
+		localised_name none
+		no_shadow
+		follow_terrain
+		level
+		{
+			min_health 0
+			battle_stats
+			item		pumpkin_patch
+			physical_info	none
+		}
+	}
+
+
+	roman_ambush_building
+	{
+		stat_cat medium_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_ambush_building
+			physical_info	info_roman_ambush_building.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_52x18
+			physical_info	info_roman_rubble_52x18.cas
+		}
+	}
+
+
+	roman_awesome_temple
+	{
+		stat_cat large_stone
+		localised_name awesome_temple
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_awesome_temple
+			physical_info	info_roman_awesome_temple.cas
+		}
+;;; rubble is only 112x64, because the temple doesn't fill the slot, as the slot contains the plinth and other temples.
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_awesome_temple_rubble
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+;;; don't think this is being used any more. It was for the Circus Maximus RTM
+	roman_city_skyline
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_city_skyline
+			physical_info	none
+		}
+	}
+	
+
+
+	roman_colonnaded_portico
+	{
+		stat_cat small_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_colonnaded_portico
+			physical_info	info_roman_colonnaded_portico.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_17x13
+			physical_info	info_roman_rubble_17x13.cas
+		}
+	}
+
+	roman_country_villa
+	{
+		stat_cat tiny_stone
+		localised_name country_villa
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_country_villa
+			physical_info	info_roman_country_villa.cas
+		}
+	}
+
+
+
+	roman_farm_A
+	{
+		stat_cat tiny_stone
+		localised_name farm
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_farm_A
+			physical_info	info_roman_farm_A.cas
+		}
+	}
+
+
+	roman_farm_B
+	{
+		stat_cat tiny_stone
+		localised_name farm
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_farm_B
+			physical_info	info_roman_farm_B.cas
+		}
+	}
+
+
+	roman_governors_house
+	{
+		stat_cat small_stone
+		localised_name governor's_house
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_governors_house
+			physical_info	info_roman_governors_house.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_governors_house_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+
+	roman_governors_villa
+	{
+		stat_cat small_stone
+		localised_name governor's_villa
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_governors_villa
+			physical_info	info_roman_governors_villa.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_112x64
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+
+	roman_greek_standalone_watchtower
+	{
+		stat_cat indestructable
+		localised_name watchtower
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_greek_standalone_watchtower
+			physical_info	info_roman_greek_standalone_watchtower.cas
+		}
+	}
+
+
+	roman_hut
+	{
+		stat_cat small_wooden
+		localised_name hut
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_hut
+			physical_info	info_roman_hut.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_6x8
+			physical_info	info_roman_rubble_6x8.cas
+		}
+	}
+
+
+	roman_imperial_palace
+	{
+		stat_cat large_stone
+		localised_name imperial_palace
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_imperial_palace
+			physical_info	info_roman_imperial_palace.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_large_palace
+			physical_info	info_roman_rubble_large_palace.cas
+		}
+		;shadow_models
+;		{
+;			roman_imperial_palace_outer_shadow.cas
+;			roman_imperial_palace_inner_shadow.cas
+;		}
+	}
+
+
+	roman_large_temple
+	{
+		stat_cat large_stone
+		localised_name large_temple
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_large_temple
+			physical_info	info_roman_large_temple.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_112x64
+			physical_info	info_roman_rubble_112x64.cas
+		}
+	}
+
+;;; roman_main_plinth_bridge is no longer used. Was used in the old large_city.
+	;roman_main_plinth_bridge
+	;{
+	;	full_health 50000
+	;	localised_name ambient
+	;	level
+	;	{
+	;		min_health 0
+	;		battle_stats
+	;		item		roman_main_plinth_bridge
+	;		physical_info	info_roman_main_plinth_bridge_blocked.cas
+	;	}
+	;}
+
+
+
+	roman_pool_A
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_pool_A
+			physical_info	info_roman_pool_A.cas
+		}
+	}
+
+
+	roman_pyramid_tomb
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_pyramid_tomb
+			physical_info	info_roman_pyramid_tomb.cas
+		}
+	}
+
+
+	roman_sarcophagus
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_sarcophagus
+			physical_info	info_roman_sarcophagus.cas
+		}
+	}
+
+;;; roman plinth is supposed to be indestructable, although items on top of it aren't.
+	roman_small_ambient_plinth
+	{
+		stat_cat indestructable
+		localised_name ambient
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_small_ambient_plinth
+			physical_info	info_roman_small_ambient_plinth.cas
+		}
+	}
+
+
+	roman_small_plinth_bridge
+	{
+		stat_cat medium_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_small_plinth_bridge
+			physical_info	info_roman_small_plinth_bridge.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_small_plinth_bridge
+			physical_info	info_roman_rubble_small_plinth_bridge.cas
+		}
+	}
+
+
+	roman_small_temple
+	{
+		stat_cat small_stone
+		localised_name temple
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_small_temple
+			physical_info	info_roman_small_temple.cas
+		}
+;;; rubble is only same size as temple, not same size as slot, because the temple gets used on the awesome temple too.
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_small_temple_rubble
+			physical_info	info_roman_rubble_26x22.cas
+		}
+	}
+
+	roman_statue
+	{
+		stat_cat tiny_stone
+		localised_name statue
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_statue
+			physical_info	info_roman_statue.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_statue_rubble
+			physical_info	info_roman_statue.cas
+		}
+	}
+
+	roman_statue_halfsize
+	{
+		stat_cat tiny_stone
+		localised_name statue
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_statue_halfsize
+			physical_info	info_roman_statue_halfsize.cas
+		}
+	}
+
+
+
+	roman_tombstone_A
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_tombstone_A
+			physical_info	info_roman_tombstone_A.cas
+		}
+	}
+
+	roman_tombstone_B
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_tombstone_B
+			physical_info	info_roman_tombstone_B.cas
+		}
+	}
+
+
+	roman_triumphal_column
+	{
+		stat_cat medium_stone
+		localised_name triumphal_column
+		level
+		{
+			min_health 1
+			battle_stats
+			item		roman_triumphal_column
+			physical_info	info_roman_triumphal_column.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_triumphal_column
+			physical_info	info_roman_rubble_triumphal_column.cas
+		}
+		
+	}
+
+	
+;;; academy uses this scriptorium_roman model.
+	scriptorium_roman
+	{
+		stat_cat large_stone
+		localised_name scriptorium
+		level
+		{
+			min_health 1
+			battle_stats
+			item		scriptorium_roman
+			physical_info	info_scriptorium_roman.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_48x32
+			physical_info	info_roman_rubble_48x32.cas
+		}
+	}
+
+	shrine_round
+	{
+		stat_cat small_stone
+		localised_name shrine
+		level
+		{
+			min_health 1
+			battle_stats
+			item		shrine_round
+			physical_info	info_shrine_round.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		shrine_round_rubble
+			physical_info	info_roman_rubble_7_radius.cas
+		}
+	}
+	
+	stone_amphitheatre
+	{
+		stat_cat large_stone
+		localised_name arena
+		level
+		{
+			min_health 1
+			battle_stats
+			item		stone_amphitheatre
+			physical_info	info_stone_amphitheatre.cas
+			spot_fx			theatre_spot_fx.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		stone_amphitheatre_rubble
+			physical_info	info_roman_rubble_160x128.cas
+		}
+	}
+
+   	 stone_stables
+    	{
+       		stat_cat medium_stone
+        	localised_name stables
+        	level
+        	{
+           		 min_health 1
+            		battle_stats
+            		item           stone_stables
+            		physical_info  info_stone_stables.cas
+        	}
+        ;construction_level
+        ;{
+        ;    minimum 75
+        ;    battle_stats
+        ;    item           legionary_tent_both_flaps_closed
+        ;    physical_info  info_legionary_tent.cas
+        ;}
+        ;construction_level
+        ;{
+        ;    minimum 50
+        ;    battle_stats
+        ;    item           roman_statue
+        ;    physical_info  info_roman_statue.cas
+        ;}
+        ;construction_level
+        ;{
+        ;    minimum 25
+        ;    battle_stats
+        ;    item           stove
+        ;    physical_info  info_stove.cas
+        ;    spot_fx        spot_fx_stove.cas
+        ;}
+        ;construction_level
+        ;{
+        ;    minimum 0
+        ;    battle_stats
+        ;    item           pile_of_logs
+        ;    physical_info  info_pile_of_logs.cas
+        ;}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		stone_stables_rubble
+			physical_info	info_roman_rubble_48x32.cas
+		}
+    	}
+
+	stove
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		stove
+			physical_info	info_stove.cas
+			spot_fx		spot_fx_stove.cas
+		}
+	}
+
+
+;;; this roman theatre is no longer used.
+	theatre
+	{
+		stat_cat large_stone
+		localised_name theatre
+		level
+		{
+			min_health 0
+			battle_stats
+			item		theatre
+			physical_info	info_theatre.cas
+			spot_fx			theatre_spot_fx.cas
+		}
+	}
+
+
+	town_post_house
+	{
+		stat_cat tiny_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		town_post_house
+			physical_info	info_town_post_house.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_24x22
+			physical_info	info_roman_rubble_24x22.cas
+		}
+	}
+
+
+	tree_box
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		tree_box
+			physical_info	info_tree_box.cas
+		}
+	}
+
+	
+	triumphal_arch
+	{
+		stat_cat large_stone
+		localised_name triumphal_arch
+		level
+		{
+			min_health 1
+			battle_stats
+			item		triumphal_arch
+			physical_info	info_triumphal_arch.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		rubble_triumphal_arch
+			physical_info	info_rubble_triumphal_arch.cas
+		}
+	}
+
+;;; arena uses this urban_amphitheatre model
+	urban_amphitheatre
+	{
+		stat_cat large_stone
+		localised_name amphitheatre
+		level
+		{
+			min_health 1
+			battle_stats
+			item		urban_amphitheatre
+			physical_info	info_urban_amphitheatre.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		urban_amphitheatre_rubble
+			physical_info	info_roman_rubble_160x128.cas
+		}
+	}
+
+
+	
+	village_well
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		village_well
+			physical_info	info_village_well.cas
+		}
+	}
+
+
+	washing_line
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		washing_line
+			physical_info	none
+		}
+	}
+
+
+	white_granary
+	{
+		stat_cat small_stone
+		localised_name ambient
+		level
+		{
+			min_health 1
+			battle_stats
+			item		white_granary
+			physical_info	info_white_granary.cas
+		}
+		transition default_large_stone
+		level
+		{
+			min_health 0
+			battle_stats
+			item		roman_rubble_10x24
+			physical_info	info_roman_rubble_10x24.cas
+		}
+	}
+
+	
+	
+
+	
+

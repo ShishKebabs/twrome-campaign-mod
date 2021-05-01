@@ -1,0 +1,58 @@
+script
+	declare_show_me															; This is a show me script
+
+	declare_counter scroll_visible											; Track whether the settlement scroll is visible or not
+	declare_counter abandon
+
+	monitor_event ScrollClosed ScrollClosed own_settlement_info_scroll		; Catch the scroll closing
+		set_counter abandon 1
+	end_monitor
+
+	monitor_event AbandonShowMe TrueCondition								; Catch the AbandonShowMe event
+		set_counter abandon 1
+	end_monitor
+
+	monitor_event SettlementScrollAdviceRequested TrueCondition				; Catch the advice being requested again
+		set_counter abandon 1
+	end_monitor
+
+	monitor_conditions I_CompareCounter abandon = 1	
+		ui_flash_stop														; Stop the UI flash
+		enable_entire_ui
+		suspend_unscripted_advice	false									; Restore unscripted advice
+		if I_CompareCounter			scroll_visible = 1						; If the settlement scroll is visible...
+			simulate_mouse_click 	rclick_up								; ...dismiss the scroll
+		end_if
+		terminate_script													; All done
+	end_monitor
+
+	suspend_unscripted_advice true
+	disable_entire_ui
+	e_select_settlement														; Highlight the settlement
+	ui_flash_start			selected_item_button							; Flash the selected_item_button
+enable_ui selected_item_button
+	call_object_shortcut 	selected_item_button							; Bring the settlement to the centre of the screen
+disable_ui selected_item_button	
+	wait					3												; Wait 3 seconds
+
+set_counter scroll_visible 1
+
+enable_ui selected_item_button
+	select_ui_element 		selected_item_button							; Select the "selected_item_button"...
+	simulate_mouse_click 	rclick_up										; Bring up the settlement scroll
+	set_counter				scroll_visible 1								; Flag the scroll as visible
+disable_ui selected_item_button	
+	wait					2												; Wait for the scroll to finish appearing 
+
+	ui_flash_start			decrease_taxation_gadget						; Flash the decrease taxation gadget
+	wait					3												; Wait 3 seconds
+	
+	ui_flash_stop															; Stop flashing
+enable_ui decrease_taxation_gadget
+	simulate_mouse_click 	rclick_up										; Dismiss the scroll
+
+set_counter scroll_visible 0
+	
+	enable_entire_ui
+	suspend_unscripted_advice false
+end_script

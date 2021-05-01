@@ -1,0 +1,42 @@
+plan
+
+{
+	floor		underlay_roman_poor_farm_A.cas overlay_roman_poor_farm_A.cas
+
+ground_types		ground_roman_poor_farm_A.tga -32 -32 32 32
+	borders	border_limits_64m_diameter.CAS
+
+;				x,		y,		rot,	z,
+
+farmhouse_thatched_A,		-7.969,		18.269,		10,	0
+farmhouse_thatched_A,		20,		14,		-75,	0
+
+farmhouse_thatched_round,	7,		14,		-10,	0
+
+pile_of_logs,			1.152,		24.87,		0,	0
+pile_of_logs,			-17.986,	25.098,		70,	0
+pile_of_logs,			-23.52,		-20.141,	-150,	0
+
+tree_B,			-25,		16,		105,	0
+tree_B,			22,		26,		0,	0
+tree_B,			25,		-25,		75,	0
+
+tree_A,			-3,		-18,		45,	0
+
+bush_A,		10.761,		-25.486,	75,	0
+bush_A,		16.831,		-20.331,	-45,	0
+bush_A,		-26.368,	5.882,		50,	0
+bush_A,		12.188,		25.682,		-45,	0
+
+stove,				2,		3,		0,	0
+
+cart_B,				-14.162,	12.123,		0,	0
+
+village_well,			-6,		6,		25,	0
+
+pumpkin_patch,			19,		-6,		0,	0
+
+paddock,			-7.617,		-10.772,	130,	0
+
+
+}

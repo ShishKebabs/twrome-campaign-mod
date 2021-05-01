@@ -1,0 +1,747 @@
+macedonian_ruins
+{
+	summer
+	{
+		sunrise 6.7
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.2
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}
+
+ancrya
+{
+	summer
+	{
+		sunrise 6.7
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.6
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}
+
+rome
+{
+	summer
+	{
+		sunrise 6.7
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.2
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}
+
+cilician_hills
+{
+	summer
+	{
+		sunrise 6.6
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.1
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}
+
+syrian_flats
+{
+	summer
+	{
+		sunrise 6.7
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.2
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}
+
+grassy_flatland
+{
+	summer
+	{
+		sunrise 6.7
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.2
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}
+
+arretium
+{
+	summer
+	{
+		sunrise 6.7
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.2
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.9
+		night 22.8
+	}
+}
+
+illyrian_valley
+{
+	summer
+	{
+		sunrise 6.7
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.2
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}
+
+southwater
+{
+	summer
+	{
+		sunrise 6.7
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.7
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.2
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.9
+		night 22.8
+	}
+}
+
+londinium
+{
+	summer
+	{
+		sunrise 6.6
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.1
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}
+
+numidian_basin
+{
+	summer
+	{
+		sunrise 6.9
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.5
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.3
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.7
+		night 22.8
+	}
+}
+
+sarmation_mound
+{
+	summer
+	{
+		sunrise 6.6
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.1
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}
+
+thracian_foothills
+{
+	summer
+	{
+		sunrise 6.6
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.1
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}
+
+british_grassland
+{
+	summer
+	{
+		sunrise 6.7
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.2
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}
+
+gallic_countryside
+{
+	summer
+	{
+		sunrise 6.6
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.1
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}
+
+italian_lowland
+{
+	summer
+	{
+		sunrise 6.6
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.1
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}
+
+sahara_desert
+{
+	summer
+	{
+		sunrise 6.7
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.2
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}
+
+libyan_plains
+{
+	summer
+	{
+		sunrise 6.7
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.2
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}
+
+arabian_dunes
+{
+	summer
+	{
+		sunrise 6.6
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.1
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}
+
+germanic_forest
+{
+	summer
+	{
+		sunrise 6.7
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.1
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}
+
+nordic_woodland
+{
+	summer
+	{
+		sunrise 6.7
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.5
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.2
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}
+
+cappadocian_forest
+{
+	summer
+	{
+		sunrise 6.7
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.2
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}
+
+prippet_marshes
+{
+	summer
+	{
+		sunrise 6.6
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.5
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.1
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.9
+		night 22.8
+	}
+}
+
+sierra_nevada
+{
+	summer
+	{
+		sunrise 6.6
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.3
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.1
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.5
+		night 22.8
+	}
+}
+
+scottish_highland
+{
+	summer
+	{
+		sunrise 6.7
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.2
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}
+
+armenian_mountains
+{
+	summer
+	{
+		sunrise 6.6
+		morning 8.0
+		midday 13.0
+		evening 15.8
+		sunset 16.8
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.1
+		morning 8.0
+		midday 13.0
+		evening 15.8
+		sunset 17.0
+		night 22.8
+	}
+}
+
+pontic_peaks
+{
+	summer
+	{
+		sunrise 6.7
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.2
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}
+
+alpine_valley
+{
+	summer
+	{
+		sunrise 7.7
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.2
+		night 23.0
+	}
+	winter
+	{
+		sunrise 7.2
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.2
+		night 22.8
+	}
+}
+
+tuscan_bay
+{
+	summer
+	{
+		sunrise 7.1
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.8
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}
+
+greek_shore
+{
+	summer
+	{
+		sunrise 6.6
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.65
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.1
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.85
+		night 22.8
+	}
+}
+
+african_coast
+{
+	summer
+	{
+		sunrise 6.6
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.1
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}
+
+moon_river
+{
+	summer
+	{
+		sunrise 6.7
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.55
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.2
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.75
+		night 22.8
+	}
+}
+
+river_jordan
+{
+	summer
+	{
+		sunrise 6.7
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.2
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}
+
+nile_bridge
+{
+	summer
+	{
+		sunrise 6.6
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.6
+		night 23.0
+	}
+	winter
+	{
+		sunrise 6.1
+		morning 8.0
+		midday 13.0
+		evening 16.0
+		sunset 17.8
+		night 22.8
+	}
+}

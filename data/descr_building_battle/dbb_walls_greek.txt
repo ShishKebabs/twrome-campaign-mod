@@ -1,0 +1,2002 @@
+
+; greek town walls
+
+	greek_town_gateway
+	{
+		full_health 40
+		localised_name gateway
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_gateway
+			physical_info	info_walls/info_greek_town_gateway.cas
+		}
+	}
+
+	greek_town_wall_joiner_straight
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_wall_joiner_straight
+			physical_info	info_walls/info_roman_town_wall_joiner_straight.cas
+		}
+	}
+
+	greek_town_wall_joiner_diagonal
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_wall_joiner_diagonal
+			physical_info	info_walls/info_roman_town_wall_joiner_diagonal.cas
+		}
+	}
+
+	greek_town_wall_external_corner
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_wall_external_corner
+			physical_info	info_walls/info_roman_town_wall_external_corner.cas
+		}
+	}
+
+	greek_town_wall_joiner_external_right
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_wall_joiner_external_right
+			physical_info	info_walls/info_roman_town_wall_joiner_external_right.cas
+		}
+	}
+
+
+	greek_town_wall_joiner_external_left
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_wall_joiner_external_left
+			physical_info	info_walls/info_roman_town_wall_joiner_external_left.cas
+		}
+	}
+
+	greek_town_wall_joiner_internal_right
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_wall_joiner_internal_right
+			physical_info	info_walls/info_roman_town_wall_joiner_internal_right.cas
+		}
+	}
+
+
+	greek_town_wall_joiner_internal_left
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_wall_joiner_internal_left
+			physical_info	info_walls/info_roman_town_wall_joiner_internal_left.cas
+		}
+	}
+
+	greek_town_wall_internal_corner
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_wall_internal_corner
+			physical_info	info_walls/info_roman_town_wall_internal_corner.cas
+		}
+	}
+
+
+
+; ******** wall and tower animations
+; ******** Kill zones go after duration line in transition scripts.  You can have 
+; ******** as many as you like.  Defined as 'kill_zone <tick> <cas>',
+; ******** eg 'kill_zone 20 my_kill_zone.cas', root directory is models_building/kill_zone.
+; Params for dust_anim command:
+; 	<start_tick> dust_anim <duration_ticks> <size> <quantity> <frequency> <start_anim_time> <end_anim_time>
+; Starting from start_tick, until start_tick + duration_ticks, every 'frequency' ticks this will add
+; 'quantity' dust clouds of radius 'size', at positions determined by the positions of geometries at the
+; appropriate time in the animation.  It picks geometries at random, and the time in the animation is
+; defined separately - ie it doesn't have to be the current positions, so you can create dust late or 
+; early if it looks wrong.
+; Wall damage:  collapse in five seconds, hold for two, then fade out over five.
+
+	greek_town_wall_straight
+	{
+		full_health 100
+		battle_stats flammability_none impact_damage_low
+		localised_name wall
+		level
+		{
+			min_health 81
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_wall_straight
+			physical_info	info_walls/info_roman_town_wall_straight.cas
+		}
+		transition ; undamaged to small damage
+		{
+			duration 120
+			; Kill zone files are numbered by frame - at 20fps, this is twice the tick.
+			; We add the zones in just before the kill time.
+			kill_zone 17 roman_town_wall_small_damage_kill_zone_40.cas
+			kill_zone 22 roman_town_wall_small_damage_kill_zone_50.cas
+			kill_zone 24 roman_town_wall_small_damage_kill_zone_55.cas
+			kill_zone 32 roman_town_wall_small_damage_kill_zone_70.cas
+			; Physical switch should come after the last kill zone
+			physical_switch 40
+			item greek_town_wall_small_damage
+			{
+				0 enable
+				120 disable
+			}
+			item greek_town_wall_small_damage_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+			item greek_town_wall_small_damage_remains
+			{
+				70 enable
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 61
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_wall_small_damage greek_town_wall_small_damage_remains
+			physical_info	info_walls/roman_town_wall_small_damage_info.cas
+		}
+		transition ; small damage to more damage
+		{
+			duration 120
+			kill_zone 15 roman_town_wall_more_damage_kill_zone_36.cas
+			kill_zone 22 roman_town_wall_more_damage_kill_zone_50.cas
+			kill_zone 24 roman_town_wall_more_damage_kill_zone_53.cas
+			physical_switch 30
+			item greek_town_wall_more_damage
+			{
+				0 enable
+				120 disable
+			}
+			item greek_town_wall_more_damage_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+			item greek_town_wall_small_damage_remains
+			{
+				0 enable
+				70 disable
+			}
+			item greek_town_wall_more_damage_remains
+			{
+				70 enable
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 41
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_wall_more_damage greek_town_wall_more_damage_remains
+			physical_info	info_walls/roman_town_wall_more_damage_info.cas
+		}
+		transition ; more damage to platform collapse
+		{
+			duration 120
+			kill_platform 0 roman_town_wall_platform_collapse_kill_zone_01p.cas
+			kill_platform 0 roman_town_wall_platform_collapse_kill_zone_02p.cas
+			kill_platform 0 roman_town_wall_platform_collapse_kill_zone_03p.cas
+			kill_platform 1 roman_town_wall_platform_collapse_kill_zone_04p.cas
+			kill_zone 7 roman_town_wall_platform_collapse_kill_zone_20.cas
+			kill_zone 11 roman_town_wall_platform_collapse_kill_zone_28.cas
+			kill_zone 13 roman_town_wall_platform_collapse_kill_zone_32.cas
+			kill_zone 16 roman_town_wall_platform_collapse_kill_zone_38.cas
+			kill_platform 17 roman_town_wall_platform_collapse_kill_zone_39p.cas
+			kill_zone 17 roman_town_wall_platform_collapse_kill_zone_40.cas
+			kill_zone 17 roman_town_wall_platform_collapse_kill_zone_41.cas
+			kill_zone 18 roman_town_wall_platform_collapse_kill_zone_42.cas
+			kill_platform 18 roman_town_wall_platform_collapse_kill_zone_43p.cas
+			kill_zone 19 roman_town_wall_platform_collapse_kill_zone_45.cas
+			kill_zone 21 roman_town_wall_platform_collapse_kill_zone_48.cas
+			kill_platform 22 roman_town_wall_platform_collapse_kill_zone_50p.cas
+			kill_zone 23 roman_town_wall_platform_collapse_kill_zone_53.cas
+			kill_zone 27 roman_town_wall_platform_collapse_kill_zone_60.cas
+			kill_platform 27 roman_town_wall_platform_collapse_kill_zone_61p.cas
+			kill_zone 28 roman_town_wall_platform_collapse_kill_zone_62.cas
+			kill_zone 32 roman_town_wall_platform_collapse_kill_zone_69.cas
+			kill_zone 35 roman_town_wall_platform_collapse_kill_zone_75.cas
+			physical_switch 40
+			item greek_town_wall_platform_collapse
+			{
+				0 enable
+				120 disable
+			}
+			item greek_town_wall_platform_collapse_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+			item greek_town_wall_more_damage_remains
+			{
+				0 enable
+				70 disable
+			}
+			item greek_town_wall_platform_collapse_remains
+			{
+				70 enable
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 21
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_wall_platform_collapse greek_town_wall_platform_collapse_remains
+			physical_info	info_walls/roman_town_wall_platform_collapse_info.cas
+		}
+		transition ; platform collapse to major collapse
+		{
+			duration 120
+			kill_platform 0 roman_town_wall_major_collapse_kill_zone_01p.cas
+			kill_platform 0 roman_town_wall_major_collapse_kill_zone_02p.cas
+			kill_zone 2 roman_town_wall_major_collapse_kill_zone_10.cas
+			kill_platform 5 roman_town_wall_major_collapse_kill_zone_15p.cas
+			kill_zone 7 roman_town_wall_major_collapse_kill_zone_20.cas
+			kill_zone 8 roman_town_wall_major_collapse_kill_zone_22.cas
+			kill_zone 10 roman_town_wall_major_collapse_kill_zone_26.cas
+			kill_zone 11 roman_town_wall_major_collapse_kill_zone_28.cas
+			kill_zone 12 roman_town_wall_major_collapse_kill_zone_29.cas
+			kill_platform 12 roman_town_wall_major_collapse_kill_zone_31p.cas
+			kill_zone 13 roman_town_wall_major_collapse_kill_zone_33.cas
+			kill_zone 16 roman_town_wall_major_collapse_kill_zone_38.cas
+			kill_zone 18 roman_town_wall_major_collapse_kill_zone_43.cas
+			kill_zone 19 roman_town_wall_major_collapse_kill_zone_44.cas
+			kill_zone 25 roman_town_wall_major_collapse_kill_zone_55.cas
+			physical_switch 30
+			item greek_town_wall_major_collapse
+			{
+				0 enable
+				120 disable
+			}
+			item greek_town_wall_major_collapse_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+			item greek_town_wall_platform_collapse_remains
+			{
+				0 enable
+				70 disable
+			}
+			item greek_town_wall_major_collapse_remains
+			{
+				70 enable
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 1
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_wall_major_collapse greek_town_wall_major_collapse_remains
+			physical_info	info_walls/roman_town_wall_major_collapse_info.cas
+		}
+		transition ; major collapse to final major collapse
+		{
+			duration 120
+			kill_zone 7 roman_town_wall_final_major_collapse_kill_zone_21.cas
+			kill_zone 10 roman_town_wall_final_major_collapse_kill_zone_25.cas
+			kill_zone 10 roman_town_wall_final_major_collapse_kill_zone_26.cas
+			kill_zone 11 roman_town_wall_final_major_collapse_kill_zone_28.cas
+			kill_zone 12 roman_town_wall_final_major_collapse_kill_zone_30.cas
+			kill_zone 17 roman_town_wall_final_major_collapse_kill_zone_40.cas
+			kill_zone 19 roman_town_wall_final_major_collapse_kill_zone_43.cas
+			kill_zone 20 roman_town_wall_final_major_collapse_kill_zone_46.cas
+			physical_switch 30
+			item greek_town_wall_final_major_collapse
+			{
+				0 enable
+				120 disable
+			}
+			item greek_town_wall_final_major_collapse_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+			item greek_town_wall_major_collapse_remains
+			{
+			; Fade out the old central rubble too this time...
+				0 enable
+				70 fade 50 1 0
+				120 disable
+			}
+			item greek_town_wall_final_major_collapse_remains
+			{
+				70 enable
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_wall_final_major_collapse greek_town_wall_final_major_collapse_remains
+			physical_info	none ; !!!info_walls/roman_town_wall_final_major_collapse_info.cas
+		}
+	}
+
+
+	greek_town_wall_watchtower
+	{
+		full_health 100
+		localised_name tower
+		level
+		{
+			min_health 71
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_wall_watchtower
+			physical_info	info_walls/info_roman_town_wall_watchtower.cas
+		}
+		transition ; undamaged to small damage
+		{
+			duration 120
+			physical_switch 30
+			item greek_town_tower_small_damage
+			{
+				0 enable
+				120 disable
+			}
+			item greek_town_tower_small_damage_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 41
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_tower_small_damage
+			physical_info	info_walls/roman_town_tower_small_damage_info.cas
+		}
+		transition ; small damage to more damage
+		{
+			duration 120
+			physical_switch 30
+			item greek_town_tower_more_damage
+			{
+				0 enable
+				120 disable
+			}
+			item greek_town_tower_more_damage_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 1
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_tower_more_damage
+			physical_info	info_walls/roman_town_tower_more_damage_info.cas
+		}
+		transition ; more damage to collapse
+		{
+			duration 120
+			physical_switch 30
+			item greek_town_tower_collapse
+			{
+				0 enable
+				120 disable
+			}
+			item greek_town_tower_collapse_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_tower_collapse
+			physical_info	info_walls/roman_town_tower_collapse_info.cas
+		}
+	}
+
+
+	greek_town_external_corner_watchtower
+	{
+		full_health 100
+		localised_name tower
+		level
+		{
+			min_health 71
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_external_corner_watchtower
+			physical_info	info_walls/info_roman_town_external_corner_watchtower.cas
+		}
+		transition ; undamaged to small damage
+		{
+			duration 120
+			physical_switch 30
+			item greek_town_tower_ec_small_damage
+			{
+				0 enable
+				120 disable
+			}
+			item greek_town_tower_ec_small_damage_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 41
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_tower_ec_small_damage
+			physical_info	none ; !!!info_walls/greek_town_tower_ec_small_damage_info.cas
+		}
+		transition ; small damage to more damage
+		{
+			duration 120
+			physical_switch 30
+			item greek_town_tower_ec_more_damage
+			{
+				0 enable
+				120 disable
+			}
+			item greek_town_tower_ec_more_damage_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 1
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_tower_ec_more_damage
+			physical_info	none ; !!!info_walls/greek_town_tower_ec_more_damage_info.cas
+		}
+		transition ; more damage to collapse
+		{
+			duration 120
+			physical_switch 30
+			item greek_town_tower_ec_collapse
+			{
+				0 enable
+				120 disable
+			}
+			item greek_town_tower_ec_collapse_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_tower_ec_collapse
+			physical_info	info_walls/greek_town_tower_ec_collapse_info.cas
+		}
+	}
+
+	greek_town_internal_corner_watchtower
+	{
+		full_health 100
+		localised_name tower
+		level
+		{
+			min_health 71
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_internal_corner_watchtower
+			physical_info	info_walls/info_roman_town_internal_corner_watchtower.cas
+		}
+		transition ; undamaged to small damage
+		{
+			duration 120
+			physical_switch 30
+			item greek_town_tower_ic_small_damage
+			{
+				0 enable
+				120 disable
+			}
+			item greek_town_tower_ic_small_damage_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 41
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_tower_ic_small_damage
+			physical_info	none ; !!info_walls/greek_town_tower_ic_small_damage_info.cas
+		}
+		transition ; small damage to more damage
+		{
+			duration 120
+			physical_switch 30
+			item greek_town_tower_ic_more_damage
+			{
+				0 enable
+				120 disable
+			}
+			item greek_town_tower_ic_more_damage_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 1
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_tower_ic_more_damage
+			physical_info	none ; !!!info_walls/greek_town_tower_ic_more_damage_info.cas
+		}
+		transition ; more damage to collapse
+		{
+			duration 120
+			physical_switch 30
+			item greek_town_tower_ic_collapse
+			{
+				0 enable
+				120 disable
+			}
+			item greek_town_tower_ic_collapse_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_town_tower_ic_collapse
+			physical_info	info_walls/greek_town_tower_ic_collapse_info.cas
+		}
+	}
+
+
+
+
+; GREEK CITY WALLS
+
+
+	greek_city_gateway
+	{
+		full_health 40
+		localised_name gateway
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_gateway
+			physical_info	info_walls/info_roman_city_gateway.cas
+		}
+	}
+
+	greek_city_wall_joiner_straight
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_wall_joiner_straight
+			physical_info	info_walls/info_roman_city_wall_joiner_straight.cas
+		}
+	}
+
+	greek_city_wall_joiner_diagonal
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_wall_joiner_diagonal
+			physical_info	info_walls/info_roman_city_wall_joiner_diagonal.cas
+		}
+	}
+
+	greek_city_wall_external_corner
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_wall_external_corner
+			physical_info	info_walls/info_roman_city_wall_external_corner.cas
+		}
+	}
+
+	greek_city_wall_joiner_external_right
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_wall_joiner_external_right
+			physical_info	info_walls/info_roman_city_wall_joiner_external_right.cas
+		}
+	}
+
+
+	greek_city_wall_joiner_external_left
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_wall_joiner_external_left
+			physical_info	info_walls/info_roman_city_wall_joiner_external_left.cas
+		}
+	}
+
+	greek_city_wall_joiner_internal_right
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_wall_joiner_internal_right
+			physical_info	info_walls/info_roman_city_wall_joiner_internal_right.cas
+		}
+	}
+
+
+	greek_city_wall_joiner_internal_left
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_wall_joiner_internal_left
+			physical_info	info_walls/info_roman_city_wall_joiner_internal_left.cas
+		}
+	}
+
+	greek_city_wall_internal_corner
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_wall_internal_corner
+			physical_info	info_walls/info_roman_city_wall_internal_corner.cas
+		}
+	}
+
+
+
+; ******** wall and tower animations
+; ******** Kill zones go after duration line in transition scripts.  You can have 
+; ******** as many as you like.  Defined as 'kill_zone <tick> <cas>',
+; ******** eg 'kill_zone 20 my_kill_zone.cas', root directory is models_building/kill_zone.
+; Params for dust_anim command:
+; 	<start_tick> dust_anim <duration_ticks> <size> <quantity> <frequency> <start_anim_time> <end_anim_time>
+; Starting from start_tick, until start_tick + duration_ticks, every 'frequency' ticks this will add
+; 'quantity' dust clouds of radius 'size', at positions determined by the positions of geometries at the
+; appropriate time in the animation.  It picks geometries at random, and the time in the animation is
+; defined separately - ie it doesn't have to be the current positions, so you can create dust late or 
+; early if it looks wrong.
+; Wall damage:  collapse in five seconds, hold for two, then fade out over five.
+
+	greek_city_wall_straight
+	{
+		full_health 100
+		battle_stats flammability_none impact_damage_low
+		localised_name wall
+		level
+		{
+			min_health 81
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_wall_straight
+			physical_info	info_walls/info_roman_city_wall_straight.cas
+		}
+		transition ; undamaged to small damage
+		{
+			duration 120
+			; Kill zone files are numbered by frame - at 20fps, this is twice the tick.
+			; We add the zones in just before the kill time.
+			kill_zone 13 roman_city_wall_small_damage_kill_zone_30.cas
+			kill_zone 14 roman_city_wall_small_damage_kill_zone_31.cas
+			kill_zone 16 roman_city_wall_small_damage_kill_zone_35.cas
+			; Physical switch should come after the last kill zone
+			physical_switch 40
+			item greek_city_wall_small_damage
+			{
+				0 enable
+				120 disable
+			}
+			item greek_city_wall_small_damage_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+			item greek_city_wall_small_damage_remains
+			{
+				70 enable
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 61
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_wall_small_damage greek_city_wall_small_damage_remains
+			physical_info	info_walls/roman_city_wall_small_damage_info.cas
+		}
+		transition ; small damage to more damage
+		{
+			duration 120
+			kill_zone 11 roman_city_wall_more_damage_kill_zone_28.cas
+			kill_zone 12 roman_city_wall_more_damage_kill_zone_29.cas
+			kill_zone 17 roman_city_wall_morel_damage_kill_zone_40.cas
+			physical_switch 30
+			item greek_city_wall_more_damage
+			{
+				0 enable
+				120 disable
+			}
+			item greek_city_wall_more_damage_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+			item greek_city_wall_small_damage_remains
+			{
+				0 enable
+				70 disable
+			}
+			item greek_city_wall_more_damage_remains
+			{
+				70 enable
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 41
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_wall_more_damage greek_city_wall_more_damage_remains
+			physical_info	info_walls/roman_city_wall_more_damage_info.cas
+		}
+		transition ; more damage to platform collapse
+		{
+			duration 120
+			kill_platform 0 roman_city_wall_platform_collapse_kill_zone_01p_1.cas
+			kill_platform 0 roman_city_wall_platform_collapse_kill_zone_01p_2.cas
+			kill_platform 0 roman_city_wall_platform_collapse_kill_zone_01p_3.cas
+			kill_platform 0 roman_city_wall_platform_collapse_kill_zone_01p_4.cas
+			kill_platform 0 roman_city_wall_platform_collapse_kill_zone_01p_5.cas
+			kill_platform 0 roman_city_wall_platform_collapse_kill_zone_02p.cas
+			kill_zone 2 roman_city_wall_platform_collapse_kill_zone_08.cas
+			kill_platform 2 roman_city_wall_platform_collapse_kill_zone_09p.cas
+			kill_zone 4 roman_city_wall_platform_collapse_kill_zone_13.cas
+			kill_zone 6 roman_city_wall_platform_collapse_kill_zone_16.cas
+			kill_platform 6 roman_city_wall_platform_collapse_kill_zone_017p.cas
+			kill_zone 7 roman_city_wall_platform_collapse_kill_zone_18.cas
+			kill_zone 7 roman_city_wall_platform_collapse_kill_zone_19.cas
+			kill_zone 8 roman_city_wall_platform_collapse_kill_zone_20.cas
+			kill_zone 8 roman_city_wall_platform_collapse_kill_zone_21.cas
+			kill_zone 10 roman_city_wall_platform_collapse_kill_zone_22.cas
+			kill_zone 10 roman_city_wall_platform_collapse_kill_zone_23.cas
+			kill_zone 11 roman_city_wall_platform_collapse_kill_zone_26.cas
+			kill_zone 12 roman_city_wall_platform_collapse_kill_zone_27.cas
+			kill_zone 12 roman_city_wall_platform_collapse_kill_zone_28.cas
+			kill_zone 13 roman_city_wall_platform_collapse_kill_zone_29.cas
+			kill_zone 19 roman_city_wall_platform_collapse_kill_zone_42.cas
+			physical_switch 40
+			item greek_city_wall_platform_collapse
+			{
+				0 enable
+				120 disable
+			}
+			item greek_city_wall_platform_collapse_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+			item greek_city_wall_more_damage_remains
+			{
+				0 enable
+				70 disable
+			}
+			item greek_city_wall_platform_collapse_remains
+			{
+				70 enable
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 21
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_wall_platform_collapse greek_city_wall_platform_collapse_remains
+			physical_info	info_walls/roman_city_wall_platform_collapse_info.cas
+		}
+		transition ; platform collapse to major collapse
+		{
+			duration 120
+			kill_zone 2 roman_city_wall_major_collapse_kill_zone_06.cas
+			kill_zone 7 roman_city_wall_major_collapse_kill_zone_20.cas
+			kill_zone 9 roman_city_wall_major_collapse_kill_zone_25.cas
+			kill_zone 11 roman_city_wall_major_collapse_kill_zone_28.cas
+			kill_zone 11 roman_city_wall_major_collapse_kill_zone_29.cas
+			kill_zone 12 roman_city_wall_major_collapse_kill_zone_30.cas
+			kill_zone 13 roman_city_wall_major_collapse_kill_zone_33.cas
+			kill_zone 15 roman_city_wall_major_collapse_kill_zone_37.cas
+			physical_switch 30
+			item greek_city_wall_major_collapse
+			{
+				0 enable
+				120 disable
+			}
+			item greek_city_wall_major_collapse_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+			item greek_city_wall_platform_collapse_remains
+			{
+				0 enable
+				70 disable
+			}
+			item greek_city_wall_major_collapse_remains
+			{
+				70 enable
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 1
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_wall_major_collapse greek_city_wall_major_collapse_remains
+			physical_info	info_walls/roman_city_wall_major_collapse_info.cas
+		}
+		transition ; major collapse to final major collapse
+		{
+			duration 120
+			kill_zone  0 roman_city_wall_final_major_collapse_kill_zone_02.cas
+			kill_zone  0 roman_city_wall_final_major_collapse_kill_zone_03.cas
+			kill_zone  2 roman_city_wall_final_major_collapse_kill_zone_08.cas
+			kill_zone  2 roman_city_wall_final_major_collapse_kill_zone_09.cas
+			kill_zone  3 roman_city_wall_final_major_collapse_kill_zone_10.cas
+			kill_zone  3 roman_city_wall_final_major_collapse_kill_zone_11.cas
+			kill_zone  6 roman_city_wall_final_major_collapse_kill_zone_16.cas
+			kill_zone  7 roman_city_wall_final_major_collapse_kill_zone_19.cas
+			kill_zone  7 roman_city_wall_final_major_collapse_kill_zone_20.cas
+			kill_zone  8 roman_city_wall_final_major_collapse_kill_zone_23.cas
+			physical_switch 30
+			item greek_city_wall_final_major_collapse
+			{
+				0 enable
+				120 disable
+			}
+			item greek_city_wall_final_major_collapse_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+			item greek_city_wall_major_collapse_remains
+			{
+			; Fade out the old central rubble too this time...
+				0 enable
+				70 fade 50 1 0
+				120 disable
+			}
+			item greek_city_wall_final_major_collapse_remains
+			{
+				70 enable
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_wall_final_major_collapse greek_city_wall_final_major_collapse_remains
+			physical_info	info_walls/roman_city_wall_final_major_collapse_info.cas
+		}
+	}
+
+
+	greek_city_wall_watchtower
+	{
+		full_health 100
+		localised_name tower
+		level
+		{
+			min_health 71
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_wall_watchtower
+			physical_info	info_walls/info_roman_city_wall_watchtower.cas
+		}
+		transition ; undamaged to small damage
+		{
+			duration 120
+			kill_zone  17 roman_city_tower_small_damage_kill_zone_40.cas
+			kill_zone  18 roman_city_tower_small_damage_kill_zone_43.cas
+			kill_zone  22 roman_city_tower_small_damage_kill_zone_50.cas
+			physical_switch 30
+			item greek_city_tower_small_damage
+			{
+				0 enable
+				120 disable
+			}
+			item greek_city_tower_small_damage_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 41
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_tower_small_damage
+			physical_info	info_walls/roman_city_tower_small_damage_info.cas
+		}
+		transition ; small damage to more damage
+		{
+			duration 120
+			kill_zone  17 roman_city_tower_more_damage_kill_zone_38.cas
+			kill_zone  17 roman_city_tower_more_damage_kill_zone_40.cas
+			kill_zone  18 roman_city_tower_more_damage_kill_zone_42.cas
+			kill_zone  21 roman_city_tower_more_damage_kill_zone_46.cas
+			physical_switch 30
+			item greek_city_tower_more_damage
+			{
+				0 enable
+				120 disable
+			}
+			item greek_city_tower_more_damage_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 1
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_tower_more_damage
+			physical_info	info_walls/roman_city_tower_more_damage_info.cas
+		}
+		transition ; more damage to collapse
+		{
+			duration 120
+			kill_zone  11 roman_city_tower_collapse_kill_zone_25.cas
+			kill_zone  11 roman_city_tower_collapse_kill_zone_26.cas
+			kill_zone  12 roman_city_tower_collapse_kill_zone_28.cas
+			kill_zone  13 roman_city_tower_collapse_kill_zone_30.cas
+			kill_zone  13 roman_city_tower_collapse_kill_zone_31.cas
+			kill_zone  14 roman_city_tower_collapse_kill_zone_33.cas
+			kill_zone  14 roman_city_tower_collapse_kill_zone_34.cas
+			kill_zone  15 roman_city_tower_collapse_kill_zone_35.cas
+			kill_zone  16 roman_city_tower_collapse_kill_zone_36.cas
+			kill_zone  17 roman_city_tower_collapse_kill_zone_37.cas
+			physical_switch 30
+			item greek_city_tower_collapse
+			{
+				0 enable
+				120 disable
+			}
+			item greek_city_tower_collapse_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_tower_collapse
+			physical_info	info_walls/roman_city_tower_collapse_info.cas
+		}
+	}
+
+
+	greek_city_external_corner_watchtower
+	{
+		full_health 100
+		localised_name tower
+		level
+		{
+			min_health 71
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_external_corner_watchtower
+			physical_info	none ; !!! info_walls/info_roman_city_external_corner_watchtower.cas
+		}
+		transition ; undamaged to small damage
+		{
+			duration 120
+			kill_zone  19 roman_city_tower_ec_small_damage_kill_zone_43.cas
+			kill_zone  23 roman_city_tower_ec_small_damage_kill_zone_50.cas
+			kill_zone  23 roman_city_tower_ec_small_damage_kill_zone_51.cas
+			physical_switch 30
+			item greek_city_tower_ec_small_damage
+			{
+				0 enable
+				120 disable
+			}
+			item greek_city_tower_ec_small_damage_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 41
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_tower_ec_small_damage
+			physical_info	info_walls/roman_city_tower_ec_small_damage_info.cas
+		}
+		transition ; small damage to more damage
+		{
+			duration 120
+			kill_zone  17 roman_city_tower_ec_more_damage_kill_zone_38.cas
+			kill_zone  18 roman_city_tower_ec_more_damage_kill_zone_40.cas
+			kill_zone  19 roman_city_tower_ec_more_damage_kill_zone_42.cas
+			physical_switch 30
+			item greek_city_tower_ec_more_damage
+			{
+				0 enable
+				120 disable
+			}
+			item greek_city_tower_ec_more_damage_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 1
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_tower_ec_more_damage
+			physical_info	info_walls/roman_city_tower_ec_more_damage_info.cas
+		}
+		transition ; more damage to collapse
+		{
+			duration 120
+			kill_zone  11 roman_city_tower_ec_collapse_kill_zone_25.cas
+			kill_zone  11 roman_city_tower_ec_collapse_kill_zone_26.cas
+			kill_zone  12 roman_city_tower_ec_collapse_kill_zone_28.cas
+			kill_zone  13 roman_city_tower_ec_collapse_kill_zone_30.cas
+			kill_zone  13 roman_city_tower_ec_collapse_kill_zone_31.cas
+			kill_zone  14 roman_city_tower_ec_collapse_kill_zone_33.cas
+			kill_zone  15 roman_city_tower_ec_collapse_kill_zone_34.cas
+			kill_zone  15 roman_city_tower_ec_collapse_kill_zone_35.cas
+			kill_zone  16 roman_city_tower_ec_collapse_kill_zone_37.cas
+			physical_switch 30
+			item greek_city_tower_ec_collapse
+			{
+				0 enable
+				120 disable
+			}
+			item greek_city_tower_ec_collapse_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_tower_ec_collapse
+			physical_info	info_walls/roman_city_tower_ec_collapse_info.cas
+		}
+	}
+
+	greek_city_internal_corner_watchtower
+	{
+		full_health 100
+		localised_name tower
+		level
+		{
+			min_health 71
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_internal_corner_watchtower
+			physical_info	none ; !!! info_walls/info_roman_city_internal_corner_watchtower.cas
+		}
+		transition ; undamaged to small damage
+		{
+			duration 120
+			kill_zone  19 roman_city_tower_ic_small_damage_kill_zone_43.cas
+			kill_zone  23 roman_city_tower_ic_small_damage_kill_zone_50.cas
+			kill_zone  23 roman_city_tower_ic_small_damage_kill_zone_51.cas
+			physical_switch 30
+			item greek_city_tower_ic_small_damage
+			{
+				0 enable
+				120 disable
+			}
+			item greek_city_tower_ic_small_damage_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 41
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_tower_ic_small_damage
+			physical_info	none ; !!info_walls/roman_city_tower_ic_small_damage_info.cas
+		}
+		transition ; small damage to more damage
+		{
+			duration 120
+			kill_zone  17 roman_city_tower_ic_more_damage_kill_zone_38.cas
+			kill_zone  18 roman_city_tower_ic_more_damage_kill_zone_40.cas
+			kill_zone  19 roman_city_tower_ic_more_damage_kill_zone_42.cas
+			physical_switch 30
+			item greek_city_tower_ic_more_damage
+			{
+				0 enable
+				120 disable
+			}
+			item greek_city_tower_ic_more_damage_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 1
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_tower_ic_more_damage
+			physical_info	info_walls/roman_city_tower_ic_more_damage_info.cas
+		}
+		transition ; more damage to collapse
+		{
+			duration 120
+			kill_zone  11 roman_city_tower_ic_collapse_kill_zone_25.cas
+			kill_zone  11 roman_city_tower_ic_collapse_kill_zone_26.cas
+			kill_zone  12 roman_city_tower_ic_collapse_kill_zone_28.cas
+			kill_zone  13 roman_city_tower_ic_collapse_kill_zone_30.cas
+			kill_zone  13 roman_city_tower_ic_collapse_kill_zone_31.cas
+			kill_zone  14 roman_city_tower_ic_collapse_kill_zone_33.cas
+			kill_zone  15 roman_city_tower_ic_collapse_kill_zone_34.cas
+			kill_zone  15 roman_city_tower_ic_collapse_kill_zone_35.cas
+			kill_zone  16 roman_city_tower_ic_collapse_kill_zone_36.cas
+			kill_zone  16 roman_city_tower_ic_collapse_kill_zone_37.cas
+			physical_switch 30
+			item greek_city_tower_ic_collapse
+			{
+				0 enable
+				120 disable
+			}
+			item greek_city_tower_ic_collapse_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_city_tower_ic_collapse
+			physical_info	info_walls/roman_city_tower_ic_collapse_info.cas
+		}
+	}
+
+
+
+; Roman huge walls
+
+	greek_huge_city_gateway
+	{
+		full_health 40
+		localised_name gateway
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_gateway
+			physical_info	info_walls/info_roman_huge_city_gateway.cas
+		}
+	}
+
+	greek_huge_city_wall_joiner_straight
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_wall_joiner_straight
+			physical_info	info_walls/info_roman_huge_city_wall_joiner_straight.cas
+		}
+	}
+
+	greek_huge_city_wall_joiner_diagonal
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_wall_joiner_diagonal
+			physical_info	info_walls/info_roman_huge_city_wall_joiner_diagonal.cas
+		}
+	}
+
+	greek_huge_city_wall_external_corner
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_wall_external_corner
+			physical_info	info_walls/info_roman_huge_city_wall_external_corner.cas
+		}
+	}
+
+	greek_huge_city_wall_joiner_external_right
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_wall_joiner_external_right
+			physical_info	info_walls/info_roman_huge_city_wall_joiner_external_right.cas
+		}
+	}
+
+
+	greek_huge_city_wall_joiner_external_left
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_wall_joiner_external_left
+			physical_info	info_walls/info_roman_huge_city_wall_joiner_external_left.cas
+		}
+	}
+
+	greek_huge_city_wall_joiner_internal_right
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_wall_joiner_internal_right
+			physical_info	info_walls/info_roman_huge_city_wall_joiner_internal_right.cas
+		}
+	}
+
+
+	greek_huge_city_wall_joiner_internal_left
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_wall_joiner_internal_left
+			physical_info	info_walls/info_roman_huge_city_wall_joiner_internal_left.cas
+		}
+	}
+
+	greek_huge_city_wall_internal_corner
+	{
+		full_health 10
+		localised_name wall
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_wall_internal_corner
+			physical_info	info_walls/info_roman_huge_city_wall_internal_corner.cas
+		}
+	}
+
+
+
+; ******** wall and tower animations
+; ******** Kill zones go after duration line in transition scripts.  You can have 
+; ******** as many as you like.  Defined as 'kill_zone <tick> <cas>',
+; ******** eg 'kill_zone 20 my_kill_zone.cas', root directory is models_building/kill_zone.
+; Params for dust_anim command:
+; 	<start_tick> dust_anim <duration_ticks> <size> <quantity> <frequency> <start_anim_time> <end_anim_time>
+; Starting from start_tick, until start_tick + duration_ticks, every 'frequency' ticks this will add
+; 'quantity' dust clouds of radius 'size', at positions determined by the positions of geometries at the
+; appropriate time in the animation.  It picks geometries at random, and the time in the animation is
+; defined separately - ie it doesn't have to be the current positions, so you can create dust late or 
+; early if it looks wrong.
+; Wall damage:  collapse in five seconds, hold for two, then fade out over five.
+
+	greek_huge_city_wall_straight
+	{
+		full_health 100
+		battle_stats flammability_none impact_damage_low
+		localised_name wall
+		level
+		{
+			min_health 81
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_wall_straight
+			physical_info	info_walls/info_roman_huge_city_wall_straight.cas
+		}
+		transition ; undamaged to small damage
+		{
+			duration 120
+			; Kill zone files are numbered by frame - at 20fps, this is twice the tick.
+			; We add the zones in just before the kill time.
+			kill_zone 30 roman_huge_city_wall_small_damage_kill_zone_64.cas
+			kill_zone 33 roman_huge_city_wall_small_damage_kill_zone_70.cas
+			kill_zone 36 roman_huge_city_wall_small_damage_kill_zone_77.cas
+			kill_zone 38 roman_huge_city_wall_small_damage_kill_zone_80.cas
+			; Physical switch should come after the last kill zone
+			physical_switch 40
+			item greek_huge_city_wall_small_damage
+			{
+				0 enable
+				120 disable
+			}
+			item greek_huge_city_wall_small_damage_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+			item greek_huge_city_wall_small_damage_remains
+			{
+				70 enable
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 61
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_wall_small_damage greek_huge_city_wall_small_damage_remains
+			physical_info	info_walls/roman_huge_city_wall_small_damage_info.cas
+		}
+		transition ; small damage to more damage
+		{
+			duration 120
+			kill_zone 30 roman_huge_city_wall_more_damage_kill_zone_65.cas
+			kill_zone 34 roman_huge_city_wall_more_damage_kill_zone_71.cas
+			physical_switch 30
+			item greek_huge_city_wall_more_damage
+			{
+				0 enable
+				120 disable
+			}
+			item greek_huge_city_wall_more_damage_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+			item greek_huge_city_wall_small_damage_remains
+			{
+				0 enable
+				70 disable
+			}
+			item greek_huge_city_wall_more_damage_remains
+			{
+				70 enable
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 41
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_wall_more_damage greek_huge_city_wall_more_damage_remains
+			physical_info	info_walls/roman_huge_city_wall_more_damage_info.cas
+		}
+		transition ; more damage to platform collapse
+		{
+			duration 120
+			kill_platform 0 roman_huge_city_wall_platform_collapse_kill_zone_01p.cas
+			kill_platform 0 roman_huge_city_wall_platform_collapse_kill_zone_02p.cas
+			kill_platform 5 roman_huge_city_wall_platform_collapse_kill_zone_12p.cas
+			kill_zone 11 roman_huge_city_wall_platform_collapse_kill_zone_26.cas
+			kill_zone 15 roman_huge_city_wall_platform_collapse_kill_zone_35.cas
+			kill_zone 19 roman_huge_city_wall_platform_collapse_kill_zone_42.cas
+			kill_zone 23 roman_huge_city_wall_platform_collapse_kill_zone_50.cas
+			kill_zone 24 roman_huge_city_wall_platform_collapse_kill_zone_53.cas
+			kill_zone 31 roman_huge_city_wall_platform_collapse_kill_zone_66.cas
+			physical_switch 40
+			item greek_huge_city_wall_platform_collapse
+			{
+				0 enable
+				120 disable
+			}
+			item greek_huge_city_wall_platform_collapse_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+			item greek_huge_city_wall_more_damage_remains
+			{
+				0 enable
+				70 disable
+			}
+			item greek_huge_city_wall_platform_collapse_remains
+			{
+				70 enable
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 21
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_wall_platform_collapse greek_huge_city_wall_platform_collapse_remains
+			physical_info	info_walls/roman_huge_city_wall_platform_collapse_info.cas
+		}
+		transition ; platform collapse to major collapse
+		{
+			duration 120
+			kill_platform 0 roman_huge_city_wall_major_collapse_kill_zone_01p.cas
+			kill_platform 0 roman_huge_city_wall_major_collapse_kill_zone_02p.cas
+			kill_platform 0 roman_huge_city_wall_major_collapse_kill_zone_03p.cas
+			kill_platform 1 roman_huge_city_wall_major_collapse_kill_zone_04p.cas
+			kill_zone 10 roman_huge_city_wall_major_collapse_kill_zone_25.cas
+			kill_zone 12 roman_huge_city_wall_major_collapse_kill_zone_28.cas
+			kill_zone 14 roman_huge_city_wall_major_collapse_kill_zone_33.cas
+			kill_zone 16 roman_huge_city_wall_major_collapse_kill_zone_37.cas
+			kill_zone 18 roman_huge_city_wall_major_collapse_kill_zone_40.cas
+			kill_zone 18 roman_huge_city_wall_major_collapse_kill_zone_41.cas
+			kill_zone 23 roman_huge_city_wall_major_collapse_kill_zone_50.cas
+			physical_switch 30
+			item greek_huge_city_wall_major_collapse
+			{
+				0 enable
+				120 disable
+			}
+			item greek_huge_city_wall_major_collapse_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+			item greek_huge_city_wall_platform_collapse_remains
+			{
+				0 enable
+				70 disable
+			}
+			item greek_huge_city_wall_major_collapse_remains
+			{
+				70 enable
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 1
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_wall_major_collapse greek_huge_city_wall_major_collapse_remains
+			physical_info	info_walls/roman_huge_city_wall_major_collapse_info.cas
+		}
+		transition ; major collapse to final major collapse
+		{
+			duration 120
+			kill_zone  2 roman_huge_city_wall_final_major_collapse_kill_zone_08.cas
+			kill_zone  4 roman_huge_city_wall_final_major_collapse_kill_zone_11.cas
+			kill_zone  4 roman_huge_city_wall_final_major_collapse_kill_zone_12.cas
+			kill_zone  4 roman_huge_city_wall_final_major_collapse_kill_zone_13.cas
+			kill_zone  5 roman_huge_city_wall_final_major_collapse_kill_zone_14.cas
+			kill_zone  7 roman_huge_city_wall_final_major_collapse_kill_zone_18.cas
+			kill_zone  7 roman_huge_city_wall_final_major_collapse_kill_zone_19.cas
+			physical_switch 30
+			item greek_huge_city_wall_final_major_collapse
+			{
+				0 enable
+				120 disable
+			}
+			item greek_huge_city_wall_final_major_collapse_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+			item greek_huge_city_wall_major_collapse_remains
+			{
+			; Fade out the old central rubble too this time...
+				0 enable
+				70 fade 50 1 0
+				120 disable
+			}
+			item greek_huge_city_wall_final_major_collapse_remains
+			{
+				70 enable
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_wall_final_major_collapse greek_huge_city_wall_final_major_collapse_remains
+			physical_info	info_walls/roman_huge_city_wall_final_major_collapse_info.cas
+		}
+	}
+
+
+	greek_huge_city_wall_watchtower
+	{
+		full_health 100
+		localised_name tower
+		level
+		{
+			min_health 71
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_wall_watchtower
+			physical_info	info_walls/info_roman_huge_city_wall_watchtower.cas
+		}
+		transition ; undamaged to small damage
+		{
+			duration 120
+			kill_zone  22 roman_huge_city_tower_small_damage_kill_zone_47.cas
+			kill_zone  23 roman_huge_city_tower_small_damage_kill_zone_51.cas
+			kill_zone  27 roman_huge_city_tower_small_damage_kill_zone_58.cas
+			physical_switch 30
+			item greek_huge_city_tower_small_damage
+			{
+				0 enable
+				120 disable
+			}
+			item greek_huge_city_tower_small_damage_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 41
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_tower_small_damage
+			physical_info	info_walls/roman_huge_city_tower_small_damage_info.cas
+		}
+		transition ; small damage to more damage
+		{
+			duration 120
+			kill_zone  21 roman_huge_city_tower_more_damage_kill_zone_46.cas
+			kill_zone  22 roman_huge_city_tower_more_damage_kill_zone_47.cas
+			kill_zone  23 roman_huge_city_tower_more_damage_kill_zone_49.cas
+			kill_zone  25 roman_huge_city_tower_more_damage_kill_zone_54.cas
+			physical_switch 30
+			item greek_huge_city_tower_more_damage
+			{
+				0 enable
+				120 disable
+			}
+			item greek_huge_city_tower_more_damage_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 1
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_tower_more_damage
+			physical_info	info_walls/roman_huge_city_tower_more_damage_info.cas
+		}
+		transition ; more damage to collapse
+		{
+			duration 120
+			kill_zone  15 roman_huge_city_tower_collapse_kill_zone_35.cas
+			physical_switch 30
+			item greek_huge_city_tower_collapse
+			{
+				0 enable
+				120 disable
+			}
+			item greek_huge_city_tower_collapse_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_tower_collapse
+			physical_info	info_walls/roman_huge_city_tower_collapse_info.cas
+		}
+	}
+
+
+	greek_huge_city_external_corner_watchtower
+	{
+		full_health 100
+		localised_name tower
+		level
+		{
+			min_health 71
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_external_corner_watchtower
+			physical_info	none ; !!! info_walls/info_roman_huge_city_external_corner_watchtower.cas
+		}
+		transition ; undamaged to small damage
+		{
+			duration 120
+			kill_zone  22 roman_huge_city_tower_ec_small_damage_kill_zone_47.cas
+			kill_zone  23 roman_huge_city_tower_ec_small_damage_kill_zone_51.cas
+			kill_zone  24 roman_huge_city_tower_ec_small_damage_kill_zone_53.cas
+			kill_zone  27 roman_huge_city_tower_ec_small_damage_kill_zone_58.cas
+			physical_switch 30
+			item greek_huge_city_tower_ec_small_damage
+			{
+				0 enable
+				120 disable
+			}
+			item greek_huge_city_tower_ec_small_damage_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 41
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_tower_ec_small_damage
+			physical_info	info_walls/roman_huge_city_tower_ec_small_damage_info.cas
+		}
+		transition ; small damage to more damage
+		{
+			duration 120
+			kill_zone  21 roman_huge_city_tower_ec_more_damage_kill_zone_46.cas
+			kill_zone  21 roman_huge_city_tower_ec_more_damage_kill_zone_47.cas
+			kill_zone  23 roman_huge_city_tower_ec_more_damage_kill_zone_49.cas
+			kill_zone  25 roman_huge_city_tower_ec_more_damage_kill_zone_54.cas
+			physical_switch 30
+			item greek_huge_city_tower_ec_more_damage
+			{
+				0 enable
+				120 disable
+			}
+			item greek_huge_city_tower_ec_more_damage_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 1
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_tower_ec_more_damage
+			physical_info	info_walls/roman_huge_city_tower_ec_more_damage_info.cas
+		}
+		transition ; more damage to collapse
+		{
+			duration 120
+			kill_zone  11 roman_huge_city_tower_ec_collapse_kill_zone_25.cas
+			kill_zone  11 roman_huge_city_tower_ec_collapse_kill_zone_26.cas
+			kill_zone  13 roman_huge_city_tower_ec_collapse_kill_zone_30.cas
+			kill_zone  13 roman_huge_city_tower_ec_collapse_kill_zone_31.cas
+			kill_zone  14 roman_huge_city_tower_ec_collapse_kill_zone_33.cas
+			kill_zone  15 roman_huge_city_tower_ec_collapse_kill_zone_34.cas
+			kill_zone  15 roman_huge_city_tower_ec_collapse_kill_zone_35.cas
+			kill_zone  15 roman_huge_city_tower_ec_collapse_kill_zone_36.cas
+			kill_zone  16 roman_huge_city_tower_ec_collapse_kill_zone_37.cas
+			kill_zone  16 roman_huge_city_tower_ec_collapse_kill_zone_38.cas
+			physical_switch 30
+			item greek_huge_city_tower_ec_collapse
+			{
+				0 enable
+				120 disable
+			}
+			item greek_huge_city_tower_ec_collapse_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_tower_ec_collapse
+			physical_info	info_walls/roman_huge_city_tower_ec_collapse_info.cas
+		}
+	}
+
+	greek_huge_city_internal_corner_watchtower
+	{
+		full_health 100
+		localised_name tower
+		level
+		{
+			min_health 71
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_internal_corner_watchtower
+			physical_info	none ; !!!info_walls/info_roman_huge_city_internal_corner_watchtower.cas
+		}
+		transition ; undamaged to small damage
+		{
+			duration 120
+			kill_zone  22 roman_huge_city_tower_ic_small_damage_kill_zone_47.cas
+			kill_zone  24 roman_huge_city_tower_ic_small_damage_kill_zone_51.cas
+			kill_zone  24 roman_huge_city_tower_ic_small_damage_kill_zone_53.cas
+			kill_zone  27 roman_huge_city_tower_ic_small_damage_kill_zone_58.cas
+			physical_switch 30
+			item greek_huge_city_tower_ic_small_damage
+			{
+				0 enable
+				120 disable
+			}
+			item greek_huge_city_tower_ic_small_damage_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 41
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_tower_ic_small_damage
+			physical_info	none ; !!info_walls/roman_huge_city_tower_ic_small_damage_info.cas
+		}
+		transition ; small damage to more damage
+		{
+			duration 120
+			kill_zone  21 roman_huge_city_tower_ic_more_damage_kill_zone_46.cas
+			kill_zone  22 roman_huge_city_tower_ic_more_damage_kill_zone_47.cas
+			kill_zone  23 roman_huge_city_tower_ic_more_damage_kill_zone_49.cas
+			kill_zone  25 roman_huge_city_tower_ic_more_damage_kill_zone_54.cas
+			physical_switch 30
+			item greek_huge_city_tower_ic_more_damage
+			{
+				0 enable
+				120 disable
+			}
+			item greek_huge_city_tower_ic_more_damage_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 1
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_tower_ic_more_damage
+			physical_info	info_walls/roman_huge_city_tower_ic_more_damage_info.cas
+		}
+		transition ; more damage to collapse
+		{
+			duration 120
+			kill_zone  11 roman_huge_city_tower_ic_collapse_kill_zone_25.cas
+			kill_zone  11 roman_huge_city_tower_ic_collapse_kill_zone_26.cas
+			kill_zone  13 roman_huge_city_tower_ic_collapse_kill_zone_30.cas
+			kill_zone  13 roman_huge_city_tower_ic_collapse_kill_zone_31.cas
+			kill_zone  14 roman_huge_city_tower_ic_collapse_kill_zone_33.cas
+			kill_zone  15 roman_huge_city_tower_ic_collapse_kill_zone_34.cas
+			kill_zone  15 roman_huge_city_tower_ic_collapse_kill_zone_35.cas
+			kill_zone  16 roman_huge_city_tower_ic_collapse_kill_zone_36.cas
+			kill_zone  16 roman_huge_city_tower_ic_collapse_kill_zone_37.cas
+			kill_zone  17 roman_huge_city_tower_ic_collapse_kill_zone_38.cas
+			physical_switch 30
+			item greek_huge_city_tower_ic_collapse
+			{
+				0 enable
+				120 disable
+			}
+			item greek_huge_city_tower_ic_collapse_anim
+			{
+				0 enable
+				0 anim 50 0 5
+				0 dust_anim 30 0.6 2 2 0 3
+				70 fade 50 1 0
+				120 disable
+			}
+		}
+		level
+		{
+			min_health 0
+			battle_stats flammability_none impact_damage_low
+			item		greek_huge_city_tower_ic_collapse
+			physical_info	info_walls/roman_huge_city_tower_ic_collapse_info.cas
+		}
+	}

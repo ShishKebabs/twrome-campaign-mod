@@ -1,0 +1,1115 @@
+{
+    "frames": [
+        {
+            "position": {
+                "x": 0,
+                "y": -50
+            },
+            "size": {
+                "width": 1009 ,
+                "height": 850
+            },
+            "priority": -1,
+            "fill": "black_curved",
+            "anchor": "C",
+            "align": "C",
+            "tag": "land"
+        },
+        {
+            "position": {
+                "x": 0,
+                "y": -71
+            },
+            "size": {
+                "width": 1009 ,
+                "height": 817
+            },
+            "priority": -1,
+            "fill": "black_curved",
+            "anchor": "C",
+            "align": "C",
+            "tag": "naval"
+        },
+    ],
+    "list": [
+        {
+            "name": "widthdraw_button",
+            "x": -166,
+            "y": 280,
+            "align": "C",
+            "anchor": "C",
+            "size": {
+                "width":80,
+                "height":80
+            },
+            "bi_override":{
+                "x": -166,
+                "y": 280
+            },
+            "annotation_id": "Rome.Annotations.battle_pre-withdraw"
+        },
+        {
+            "name": "fight_button",
+            "x": 0,
+			"y": 280,
+            "align": "C",
+            "anchor": "C",
+            "size": {
+                "width":80,
+                "height":80
+            },
+            "bi_override":{
+				"x": 0,
+				"y": 280
+            },
+            "annotation_id": "Rome.Annotations.battle_pre-engage"
+        },
+        {
+            "name": "autoresolve_button",
+            "x": 166,
+			"y": 280,
+            "align": "C",
+            "anchor": "C",
+            "size": {
+                "width":80,
+                "height":80
+            },
+            "bi_override":{
+				"x": 166,
+				"y": 280
+            },
+            "annotation_id": "Rome.Annotations.battle_pre-auto"
+        },
+        {
+            "name": "night_battle_check",
+            "x": 0 ,
+            "y": 340,
+            "align": "C",
+            "anchor": "C",
+            "size": {
+                "width":30,
+                "height":30
+            },
+            "annotation_id": "Rome.Annotations.battle_details-night"
+        },
+        
+
+        {
+            "name": "naval_autoresolve_button",
+            "x": 120,
+			"y": 280,
+            "align": "C",
+            "anchor": "C",
+            "size": {
+                "width":80,
+                "height":80
+            },
+            "annotation_id": "Rome.Annotations.battle_pre-auto"
+        },      
+        {
+            "name": "naval_widthdraw_button",
+            "x": -120,
+			"y": 280,
+            "align": "C",
+            "anchor": "C",
+            "size": {
+                "width":80,
+                "height":80
+            },
+            "annotation_id": "Rome.Annotations.battle_pre-withdraw"
+        },
+
+        
+        
+        {
+            "name": "zoom_to_button",
+            "x": 840,
+            "y": -620,
+            "annotation_id": "Rome.Annotations.battle_pre-location"
+        },
+        {
+            "name": "help_button",
+            "x": 120,
+            "y": -620,
+            "hidden": true
+        },
+  
+        {
+            "name": "strength_meter",
+            "x": 0 ,
+            "y": -254,
+            "align": "C",
+            "anchor": "C",
+            "size": {
+                "width": 175,
+                "height": 22
+            },
+            "annotation_id": "Rome.Annotations.battle_pre-bar"
+        },
+
+        
+        {
+            "name": "battleswords_icon",
+            "x": 0 ,
+            "y": -313,
+            "align": "TC",
+            "anchor": "C",
+            "size": {
+                "width": 45,
+                "height": 45
+            },
+            "annotation_id": "Rome.Annotations.battle_pre-bar"
+        },
+
+
+        {
+            "comment": "String describing the attack. Moved out of the way",
+            "name": "title_string",
+            "x": 0 ,
+            "y": -40220,
+            "size": {
+                "width": 1784 ,
+                "height": 0
+            },
+            "align":"C",
+            "anchor": "C",
+            "font":"verdana_med",
+            "font_colour":"black",
+        },
+        {
+            "name": "hd_title_string",
+            "x": 0 ,
+            "y": -440,
+            "size": {
+                "width": 1784 ,
+                "height": 0
+            },
+            "align":"C",
+            "anchor": "C",
+            "font":"cinzel",
+            "font_colour":"dark_brown",
+        },
+		{
+			"name": "relationship_subtitle",
+			"x": 0 ,
+			"y": -400,
+			"align":"C",
+			"anchor": "C",
+			"font":"verdana_med",
+		},
+        {
+            "name": "faction_name_0",
+            "x": -465 ,
+            "y": -406,
+            "size": {
+                "width": 290
+            },
+            "font_colour":"dark_brown",
+            "font":"cinzel",
+            "align":"TL",
+            "anchor": "C",
+        },
+
+        {
+            "name": "faction_name_1",
+            "x": 465 ,
+            "y": -406,
+            "size": {
+                "width": 290
+            },
+            "font_colour":"dark_brown",
+            "font":"cinzel",
+            "align":"TR",
+            "anchor": "C",
+        },
+
+        {
+            "name": "faction_logo_0",
+            "x": -185 ,
+            "y": -420,
+            "size": {
+                "width": 86 ,
+                "height": 86
+            },
+            "align":"TL",
+            "anchor": "C",
+        },
+
+        {
+            "name": "faction_logo_1",
+            "x": 185 ,
+            "y": -420,
+            "size": {
+                "width": 86 ,
+                "height": 86
+            },
+            "align":"TR",
+            "anchor": "C",
+        },
+
+        {
+            "name": "divider_0",
+            "x": -465 ,
+            "y": -366,
+            "size": {
+                "width": 430 ,
+                "height": 21
+            },
+            "align":"TL",
+            "anchor": "C",
+        },
+
+        {
+            "name": "divider_1",
+            "x": 465 ,
+            "y": -366,
+            "size": {
+                "width": 430 ,
+                "height": 21
+            },
+            "align":"TR",
+            "anchor": "C",
+        },
+
+        {
+            "name": "divider_2",
+            "x": 0 ,
+            "y": 235,
+            "size": {
+                "width": 950 ,
+                "height": 21
+            },
+            "align":"C",
+            "anchor": "C",
+        },
+{
+"_comment":" BATTLE DIALOG WITHOUT REINFORCEMENTS START "
+},
+        {
+            "name": "without_reinforces_general_0_heading_string",
+            "x": -340 ,
+            "y": -304,
+            "size": {
+                "width": 300 ,
+            },
+            "align":"TL",
+            "anchor": "C",
+            "font":"verdana_med",
+            "font_colour":"dark_brown",
+        },
+
+        {
+            "name": "without_reinforces_general_0_portrait",
+            "x": -404 ,
+            "y": -256,
+            "size": {
+                "width": 102 ,
+                "height": 142
+            },
+            "align":"C",
+            "anchor": "C"
+        },
+        
+        
+        {
+            "name": "without_reinforces_general_0_character_religion",
+            "x": -1000,
+            "y": -1000,
+        },
+
+        {
+            "name": "without_reinforces_left_fighting_to_death_icon",
+            "x": -445 ,
+            "y": -314,
+            "size": {
+                "width": 50 ,
+                "height": 50
+            },
+            "align":"C",
+            "anchor": "C"
+        },
+
+        {
+            "name": "without_reinforces_portrait_frame_0",
+            "x": -405 ,
+            "y": -255,
+            "size": {
+                "width": 126 ,
+                "height": 166
+            },
+            "align":"C",
+            "anchor": "C",
+            "priority":"-1",
+        },
+
+        {
+            "name": "without_reinforces_characters_details_button_0",
+            "x": -465 ,
+            "y": -219,
+            "align": "TL",
+            "anchor": "C",
+            "size": {
+                "width":48,
+                "height":48
+            },
+        },
+        
+        {
+            "name": "without_reinforces_close_characters_details_button_0",
+            "x": -465 ,
+            "y": -219,
+            "align": "TL",
+            "anchor": "C",
+            "size": {
+                "width":48,
+                "height":48
+            },
+        },
+
+        {
+            "name": "without_reinforces_general_0_title_string",
+            "x": -340 ,
+            "y": -330,
+            "align":"TL",
+            "anchor": "C",
+            "font":"cinzel_med",
+            "font_colour":"dark_brown",
+        },
+
+        {
+            "comment": "moved out of the way",
+            "name": "without_reinforces_general_0_location_string",
+            "x": -465 ,
+            "y": -5390,
+            "align":"TL",
+            "anchor": "C",
+            "font":"verdana",
+            "font_colour":"dark_brown",
+        },
+
+        {
+            "name": "without_reinforces_general_0_age_string",
+            "x": -340 ,
+            "y": -274,
+            "align":"TL",
+            "anchor": "C",
+            "font":"verdana_med",
+            "font_colour":"dark_brown",
+        },
+
+        {
+            "name": "without_reinforces_men_deployed_strings_0",
+            "x": -340 ,
+            "y": -244,
+            "align":"TL",
+            "anchor": "C",
+            "font":"verdana_med",
+            "font_colour":"dark_brown",
+        },
+
+        {
+            "name": "without_reinforces_general_0_character_points",
+            "x": -335 ,
+            "y": -214,
+            "font":"cinzel_med",
+            "font_colour":"dark_brown",
+            "size": {
+                "width": 240 ,
+                "height": 35
+            },
+            "align":"TL",
+            "anchor": "C"
+        },
+
+        {
+            "name": "without_reinforces_general_1_heading_string",
+            "x": 340 ,
+            "y": -304,
+            "size": {
+                "width": 300 ,
+            },
+            "align":"TR",
+            "anchor": "C",
+            "font":"verdana_med",
+            "font_colour":"dark_brown",
+        },
+
+        {
+            "name": "without_reinforces_general_1_portrait",
+            "x": 405 ,
+            "y": -256,
+            "size": {
+                "width": 102 ,
+                "height": 142
+            },
+            "align":"C",
+            "anchor": "C"
+        },
+
+        {
+            "name": "without_reinforces_general_1_character_religion",
+            "x": -1000,
+            "y": -1000,
+        },
+
+        {
+            "name": "without_reinforces_right_fighting_to_death_icon",
+            "x": 445 ,
+            "y": -314,
+            "size": {
+                "width": 50 ,
+                "height": 50
+            },
+            "align":"C",
+            "anchor": "C"
+        },
+
+        {
+            "name": "without_reinforces_portrait_frame_1",
+            "x": 405 ,
+            "y": -255,
+            "size": {
+                "width": 126 ,
+                "height": 166
+            },
+            "align":"C",
+            "anchor": "C",
+            "priority":"-1",
+        },
+
+        {
+            "name": "without_reinforces_characters_details_button_1",
+            "x": 465 ,
+            "y": -219,
+            "align": "TR",
+            "anchor": "C",
+            "size": {
+                "width":48,
+                "height":48
+            },
+        },
+        
+        {
+            "name": "without_reinforces_close_characters_details_button_1",
+            "x": 465 ,
+            "y": -219,
+            "align": "TR",
+            "anchor": "C",
+            "size": {
+                "width":48,
+                "height":48
+            },
+        },
+
+
+        {
+            "name": "without_reinforces_general_1_title_string",
+            "x": 340 ,
+            "y": -330,
+            "align":"TR",
+            "anchor": "C",
+            "font":"cinzel_med",
+            "font_colour":"dark_brown",
+        },
+
+        {
+            "name": "without_reinforces_general_1_location_string",
+            "x": 340 ,
+            "y": -5390,
+            "align":"TR",
+            "anchor": "C",
+            "font":"verdana",
+            "font_colour":"dark_brown",
+        },
+
+        {
+            "name": "without_reinforces_general_1_age_string",
+            "x": 340 ,
+            "y": -274,
+            "align":"TR",
+            "anchor": "C",
+            "font":"verdana_med",
+            "font_colour":"dark_brown",
+        },
+
+        {
+            "name": "without_reinforces_men_deployed_string_1",
+            "x": 340 ,
+            "y": -244,
+            "align":"TR",
+            "anchor": "C",
+            "font":"verdana_med",
+            "font_colour":"dark_brown",
+        },
+
+        {
+            "name": "without_reinforces_general_1_character_points",
+            "x": 340 ,
+            "y": -214,
+            "font":"cinzel_med",
+            "font_colour":"dark_brown",
+            "size": {
+                "width": 240 ,
+                "height": 35
+            },
+            "align":"TR",
+            "anchor": "C"
+        },
+
+        {
+            "name": "without_reinforces_your_reinforcements_string",
+            "x": -32 ,
+            "y": -159,
+            "align": "TR",
+            "anchor": "C",
+            "font":"cinzel_med",
+            "font_colour":"dark_brown",
+        },
+        
+        {
+            "name": "your_reinforcements_string_body",
+            "x": -244 ,
+            "y": 3,
+            "align": "TC",
+            "anchor": "C",
+            "font":"verdana_sml",
+            "font_colour":"dark_brown",
+        },
+        
+        {
+            "name": "without_reinforces_their_reinforcements_string",
+            "x": 32 ,
+            "y": -159,
+            "align": "TL",
+            "anchor": "C",
+            "font":"cinzel_med",
+            "font_colour":"dark_brown",
+        },
+        
+        {
+            "name": "their_reinforcements_string_body",
+            "x": 245 ,
+            "y": 3,
+            "align": "TC",
+            "anchor": "C",
+            "font":"verdana_sml",
+            "font_colour":"dark_brown",
+        },
+
+        {
+            "name": "without_reinforces_divider_3",
+            "x": -30 ,
+            "y": -137,
+            "size": {
+                "width": 430
+            },
+            "align": "TR",
+            "anchor": "C",
+        },
+
+        {
+            "name": "without_reinforces_divider_4",
+            "x": 30 ,
+            "y": -137,
+            "size": {
+                "width": 430
+            },
+            "align":"TL",
+            "anchor": "C",
+        },
+
+        {
+            "name": "without_reinforces_image",
+            "x": 0 ,
+            "y": 55,
+            "align": "C",
+            "anchor": "C",
+            "size": {
+                "width":890,
+                "height":284
+            },
+        },
+
+        {
+            "name": "without_reinforces_image_frame",
+            "x": 0 ,
+            "y": 56,
+            "align": "C",
+            "anchor": "C",
+            "size": {
+                "width":920,
+                "height":310
+            },
+        },
+
+{
+"_comment":" BATTLE DIALOG WITHOUT REINFORCEMENTS END "
+},
+
+{
+"_comment":" BATTLE DIALOG WITH REINFORCEMENTS START "
+},
+
+        {
+            "name": "with_reinforces_general_0_heading_string",
+            "x": -340 ,
+            "y": -325,
+            "size": {
+                "width": 300 ,
+            },
+            "align":"TL",
+            "anchor": "C",
+            "font":"verdana_med",
+            "font_colour":"dark_brown",
+        },
+
+        {
+            "name": "with_reinforces_general_0_portrait",
+            "x": -405 ,
+            "y": -277,
+            "size": {
+                "width": 102 ,
+                "height": 142
+            },
+            "align":"C",
+            "anchor": "C"
+        },
+        
+        {
+            "name": "with_reinforces_general_0_character_religion",
+            "x": -1000,
+            "y": -1000,
+        },
+
+
+        {
+            "name": "with_reinforces_left_fighting_to_death_icon",
+            "x": -445 ,
+            "y": -335,
+            "size": {
+                "width": 50 ,
+                "height": 50
+            },
+            "align":"C",
+            "anchor": "C"
+        },
+
+        {
+            "name": "with_reinforces_portrait_frame_0",
+            "x": -405 ,
+            "y": -276,
+            "size": {
+                "width": 126 ,
+                "height": 166
+            },
+            "align":"C",
+            "anchor": "C",
+            "priority":"-1",
+        },
+
+        {
+            "name": "with_reinforces_characters_details_button_0",
+            "x": -465 ,
+            "y": -240,
+            "align": "TL",
+            "anchor": "C",
+            "size": {
+                "width":48,
+                "height":48
+            },
+        },
+        
+        {
+            "name": "with_reinforces_close_characters_details_button_0",
+            "x": -465 ,
+            "y": -240,
+            "align": "TL",
+            "anchor": "C",
+            "size": {
+                "width":48,
+                "height":48
+            },
+        },
+
+        {
+            "name": "with_reinforces_general_0_title_string",
+            "x": -340 ,
+            "y": -352,
+            "align":"TL",
+            "anchor": "C",
+            "font":"cinzel_med",
+            "font_colour":"dark_brown",
+        },
+
+        {
+            "comment": "moved out of the way",
+            "name": "with_reinforces_general_0_location_string",
+            "x": -465 ,
+            "y": -5390,
+            "align":"TL",
+            "anchor": "C",
+            "font":"verdana",
+            "font_colour":"dark_brown",
+        },
+
+        {
+            "name": "with_reinforces_general_0_age_string",
+            "x": -340 ,
+            "y": -295,
+            "align":"TL",
+            "anchor": "C",
+            "font":"verdana_med",
+            "font_colour":"dark_brown",
+        },
+
+        {
+            "name": "with_reinforces_men_deployed_strings_0",
+            "x": -340 ,
+            "y": -265,
+            "align":"TL",
+            "anchor": "C",
+            "font":"verdana_med",
+            "font_colour":"dark_brown",
+        },
+
+        {
+            "name": "with_reinforces_general_0_character_points",
+            "x": -340 ,
+            "y": -235,
+            "font":"cinzel_med",
+            "font_colour":"dark_brown",
+            "size": {
+                "width": 240 ,
+                "height": 35
+            },
+            "align":"TL",
+            "anchor": "C"
+        },
+
+        {
+            "name": "with_reinforces_general_1_heading_string",
+            "x": 340 ,
+            "y": -325,
+            "size": {
+                "width": 300 ,
+            },
+            "align":"TR",
+            "anchor": "C",
+            "font":"verdana_med",
+            "font_colour":"dark_brown",
+        },
+
+        {
+            "name": "with_reinforces_general_1_portrait",
+            "x": 405 ,
+            "y": -277,
+            "size": {
+                "width": 102 ,
+                "height": 142
+            },
+            "align":"C",
+            "anchor": "C"
+        },
+        
+        {
+            "name": "with_reinforces_general_1_character_religion",
+            "x": -1000,
+            "y": -1000,
+        },
+
+        {
+            "name": "with_reinforces_right_fighting_to_death_icon",
+            "x": 445 ,
+            "y": -335,
+            "size": {
+                "width": 50 ,
+                "height": 50
+            },
+            "align":"C",
+            "anchor": "C"
+        },
+
+        {
+            "name": "with_reinforces_portrait_frame_1",
+            "x": 405 ,
+            "y": -276,
+            "size": {
+                "width": 126 ,
+                "height": 166
+            },
+            "align":"C",
+            "anchor": "C",
+            "priority":"-1",
+        },
+
+        {
+            "name": "with_reinforces_characters_details_button_1",
+            "x": 465 ,
+            "y": -240,
+            "align": "TR",
+            "anchor": "C",
+            "size": {
+                "width":48,
+                "height":48
+            },
+        },
+        
+        {
+            "name": "with_reinforces_close_characters_details_button_1",
+            "x": 465 ,
+            "y": -240,
+            "align": "TR",
+            "anchor": "C",
+            "size": {
+                "width":48,
+                "height":48
+            },
+        },
+
+
+        {
+            "name": "with_reinforces_general_1_title_string",
+            "x": 340 ,
+            "y": -352,
+            "align":"TR",
+            "anchor": "C",
+            "font":"cinzel_med",
+            "font_colour":"dark_brown",
+        },
+
+        {
+            "name": "with_reinforces_general_1_location_string",
+            "x": 340 ,
+            "y": -5390,
+            "align":"TR",
+            "anchor": "C",
+            "font":"verdana",
+            "font_colour":"dark_brown",
+        },
+
+        {
+            "name": "with_reinforces_general_1_age_string",
+            "x": 340 ,
+            "y": -295,
+            "align":"TR",
+            "anchor": "C",
+            "font":"verdana_med",
+            "font_colour":"dark_brown",
+        },
+
+        {
+            "name": "with_reinforces_men_deployed_string_1",
+            "x": 340 ,
+            "y": -265,
+            "align":"TR",
+            "anchor": "C",
+            "font":"verdana_med",
+            "font_colour":"dark_brown",
+        },
+
+        {
+            "name": "with_reinforces_general_1_character_points",
+            "x": 340 ,
+            "y": -235,
+            "font":"cinzel_med",
+            "font_colour":"dark_brown",
+            "size": {
+                "width": 240 ,
+                "height": 35
+            },
+            "align":"TR",
+            "anchor": "C"
+        },
+
+        {
+            "name": "with_reinforces_your_reinforcements_string",
+            "x": -32 ,
+            "y": -180,
+            "align": "TR",
+            "anchor": "C",
+            "font":"cinzel_med",
+            "font_colour":"dark_brown",
+        },
+        {
+            "name": "with_reinforces_their_reinforcements_string",
+            "x": 32 ,
+            "y": -180,
+            "align": "TL",
+            "anchor": "C",
+            "font":"cinzel_med",
+            "font_colour":"dark_brown",
+        },
+
+        {
+            "name": "with_reinforces_divider_3",
+            "x": -30 ,
+            "y": -158,
+            "size": {
+                "width": 430
+            },
+            "align": "TR",
+            "anchor": "C",
+        },
+
+        {
+            "name": "with_reinforces_divider_4",
+            "x": 30 ,
+            "y": -158,
+            "size": {
+                "width": 430
+            },
+            "align":"TL",
+            "anchor": "C",
+        },
+
+        {
+            "name": "with_reinforces_your_reinforcements_list",
+            "x": -460 ,
+            "y": -148,
+            "align": "TL",
+            "anchor": "C",
+            "size": {
+                "width": 432 ,
+                "height": 376
+            },
+            "font_colour":"dark_brown",
+        },
+
+        {
+            "name": "with_reinforces_their_reinforcements_list",
+            "x": 30 ,
+            "y": -148,
+            "align": "TL",
+            "anchor": "C",
+            "size": {
+                "width": 432 ,
+                "height": 376
+            },
+            "font_colour":"dark_brown",
+        },
+
+        {
+            "comment": "moved out of the way",
+            "name": "with_reinforces_image",
+            "x": -5500 ,
+            "y": 0,
+            "align": "C",
+            "anchor": "C",
+            "size": {
+                "width":600,
+                "height":225
+            },
+        },
+        {
+            "comment": "moved out of the way",
+            "name": "with_reinforces_image_frame",
+            "x": -5500 ,
+            "y": 0,
+            "align": "C",
+            "anchor": "C",
+            "size": {
+                "width":600,
+                "height":225
+            },
+        },
+
+
+{
+"_comment":" BATTLE DIALOG WITH REINFORCEMENTS END "
+},
+
+        {
+            "name": "cards",
+            "x": 15,
+            "y": 453,
+            "size" : {
+                "height" : 64,
+                "width"  : 573
+            },
+            "anchor": "BC",
+            "fill_right":true,
+            "annotation_id": "Rome.Annotations.battle_pre_units",
+        },
+        {
+            "name": "advisor",
+            "x": -1,
+            "y": -1
+        },
+
+
+
+        {
+            "name": "left_animated_frame",
+            "x": 0 ,
+            "y": -200,
+            "size" : {
+                "width": 363 ,
+                "height" : 495
+            },
+            "additional_clipping":
+            [
+                {
+                    "x": 0 ,
+                    "y": -410 ,
+                    "width": 18204 ,
+                    "height": 810 ,
+                    "anchor":"CL"
+                }
+            ],
+            "anchor": "C",
+            "align": "TR",
+            "priority": -2
+        },
+
+        {
+            "name": "right_animated_frame",
+            "x": -363,
+            "y": -200,
+            "size" : {
+                "width": 363,
+                "height" : 495
+            },
+            "additional_clipping":
+            [
+                {
+                    "x": 0 ,
+                    "y": -410 ,
+                    "width": 18204 ,
+                    "height": 810 ,
+                    "anchor":"CL"
+                }
+            ],
+            "anchor": "C",
+            "align": "TL",
+            "priority": -2
+        },
+        
+        
+        {
+            "name": "left_attacker_defender_icon",
+            "x": -133,
+            "y": -394,
+            "size" : {
+                "width": 42,
+                "height": 59
+            },
+            "anchor": "C",
+            "align": "TL",
+            "priority": 10
+        },
+
+        {
+            "name": "right_attacker_defender_icon",
+            "x": 133,
+            "y": -394,
+            "size" : {
+                "width": 42,
+                "height": 59
+            },
+            "anchor": "C",
+            "align": "TR",
+            "priority": 10
+        },
+    
+    ]
+}

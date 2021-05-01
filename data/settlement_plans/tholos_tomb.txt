@@ -1,0 +1,20 @@
+plan
+
+{
+
+floor	underlay_tholos_tomb.cas 	overlay_tholos_tomb.cas
+
+	ground_types	ground_no_grass.tga	-64,	-64,	64,	64
+	borders	border_limits_64m_diameter.CAS
+		
+tholos_tomb,	0,		0,		0,		0
+bush_A,		23.729,		-1.887,		33.75,		8.733
+bush_A,		9.112,		46.465,		-22.5,		6
+bush_A,		-24.969,	-10.429,	33.75,		11.234
+grass_A,	30.948,		18.317,		0,		8.734
+grass_A,	13.38,		-37.635,	0,		1.749
+grass_A,	-11.238,	-27.008,	0,		6.652
+grass_A,	-26.418,	33.801,		0,		10.042
+grass_A,	5.601,		-11.145,	0,		15.043
+
+	}

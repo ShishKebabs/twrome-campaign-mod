@@ -1,0 +1,10 @@
+plan
+
+{
+
+floor	        olive_grove_underlay.CAS	olive_grove_overlay.CAS
+ground_types	ground_no_grass.tga	-29,	-29,	29,	29
+		
+;				x,		y,		rot,	z,
+olive_grove,       0,	        0,	        0,	 0,
+}

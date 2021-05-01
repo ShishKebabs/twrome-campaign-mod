@@ -1,0 +1,140 @@
+plan
+
+{
+
+floor underlay_babylon.cas overlay_babylon.cas
+
+
+borders
+{
+
+gateway,	-0,	224,	-180,	0.50
+gateway,	-288,	0,	-90,	0.50
+gateway,	0,	-224,	0,	0.50
+
+straight,	64,	224,	-180,	0.50
+straight,	-64,	224,	-180,	0.50
+straight,	-128,	224,	-180,	0.50
+straight,	-192,	224,	-180,	0.50
+straight,	128,	224,	-180,	0.50
+straight,	192,	224,	-180,	0.50
+straight,	256,	224,	-180,	0.50
+straight,	-256,	224,	-180,	0.50
+straight,	288,	192,	90,	0.50
+straight,	288,	-64,	90,	0.50
+straight,	288,	-128,	90,	0.50
+straight,	288,	64,	90,	0.50
+straight,	288,	128,	90,	0.50
+straight,	-288,	64,	-90,	0.50
+straight,	-288,	-64,	-90,	0.50
+straight,	-288,	192,	-90,	0.50
+straight,	-288,	128,	-90,	0.50
+straight,	-288,	-128,	-90,	0.50
+straight,	256,	-224,	0,	0.50
+straight,	-256,	-224,	0,	0.50
+straight,	-192,	-224,	0,	0.50
+straight,	-128,	-224,	0,	0.50
+straight,	192,	-224,	0,	0.50
+straight,	-64,	-224,	0,	0.50
+straight,	64,	-224,	0,	0.50
+straight,	128,	-224,	0,	0.50
+straight,	288,	0,	90,	0.50
+straight,	288,	-192,	90,	0.50
+straight,	-288,	-192,	-90,	0.50
+
+tower_external_corner_link,	-288,	224,	-90,	0.50
+tower_external_corner_link,	288,	224,	-180,	0.50
+tower_external_corner_link,	288,	-224,	90,	0.50
+tower_external_corner_link,	-288,	-224,	0,	0.50
+
+straight_link,	-96,	224,	-180,	0.50
+straight_link,	-224,	224,	-180,	0.50
+straight_link,	96,	224,	-180,	0.50
+straight_link,	160,	224,	-180,	0.50
+straight_link,	-160,	224,	-180,	0.50
+straight_link,	288,	-96,	90,	0.50
+straight_link,	288,	96,	90,	0.50
+straight_link,	288,	160,	90,	0.50
+straight_link,	224,	224,	-180,	0.50
+straight_link,	-288,	96,	-90,	0.50
+straight_link,	-288,	-96,	-90,	0.50
+straight_link,	-288,	160,	-90,	0.50
+straight_link,	96,	-224,	0,	0.50
+straight_link,	224,	-224,	0,	0.50
+straight_link,	-224,	-224,	0,	0.50
+straight_link,	-160,	-224,	0,	0.50
+straight_link,	-96,	-224,	0,	0.50
+straight_link,	160,	-224,	0,	0.50
+straight_link,	288,	32,	90,	0.50
+straight_link,	288,	-32,	90,	0.50
+straight_link,	288,	-160,	90,	0.50
+straight_link,	-288,	-160,	-90,	0.50
+
+}
+
+
+hanging_gardens_of_babylon,	128,	-64,	0,	0
+
+ziggurat,			-140,	76,	0,	0
+
+eastern_workshop,	-120,	-88,	90,	0
+eastern_workshop,	-216,	-160,	-180,	0
+eastern_workshop,	75,	160,	-90,	0
+eastern_workshop,	217,	73,	0,	0
+
+egyptian_lake,	197,	157,	0,	0
+egyptian_lake,	-144,	-152,	0,	0
+
+eastern_governors_villa,	84,	88,	0,	0
+eastern_governors_villa,	-64,	-120,	90,	0
+
+eastern_temple,	-224,	-104,	-90,	0
+eastern_temple,	131,	166,	-180,	0
+
+eastern_rich_house_A,	-183,	-94,	180,	0
+eastern_rich_house_A,	230,	107,	90,	0
+eastern_rich_house_A,	-201,	-127,	-90,	0
+eastern_rich_house_A,	159,	119,	180,	0
+eastern_rich_house_A,	37,	139,	-90,	0
+
+eastern_rich_house_B,	182,	62,	0,	0
+eastern_rich_house_B,	-232,	-72,	-90,	0
+eastern_rich_house_B,	-156,	-113,	180,	0
+eastern_rich_house_B,	-156,	-95,	180,	0
+eastern_rich_house_B,	-232,	-132,	180,	0
+eastern_rich_house_B,	-211,	-73,	180,	0
+eastern_rich_house_B,	46,	167,	-90,	0
+eastern_rich_house_B,	176,	85,	-90,	0
+eastern_rich_house_B,	96,	154,	-90,	0
+eastern_rich_house_B,	120,	133,	-180,	0
+
+eastern_poor_house_C,	-128,	-120,	0,	0
+eastern_poor_house_C,	-112,	-120,	0,	0
+eastern_poor_house_C,	-200,	-62,	180,	0
+eastern_poor_house_C,	149,	81,	0,	0
+eastern_poor_house_C,	98,	177,	0,	0
+eastern_poor_house_C,	-145,	-61,	180,	0
+eastern_poor_house_C,	-214,	-62,	90,	0
+eastern_poor_house_C,	-175,	-119,	90,	0
+eastern_poor_house_C,	33,	167,	-90,	0
+eastern_poor_house_C,	34,	179,	-180,	0
+eastern_poor_house_C,	163,	81,	0,	0
+eastern_poor_house_C,	194,	95,	0,	0
+eastern_poor_house_C,	202,	123,	180,	0
+eastern_poor_house_C,	207,	95,	0,	0
+eastern_poor_house_C,	117,	144,	180,	0
+eastern_poor_house_C,	131,	144,	180,	0
+
+eastern_poor_house_D,	-184,	-64,	0,	0
+eastern_poor_house_D,	102,	135,	90,	0
+eastern_poor_house_D,	63,	128,	-180,	0
+eastern_poor_house_D,	153,	65,	0,	0
+eastern_poor_house_D,	-146,	-77,	90,	0
+eastern_poor_house_D,	-164,	-64,	0,	0
+eastern_poor_house_D,	153,	95,	0,	0
+eastern_poor_house_D,	185,	119,	90,	0
+eastern_poor_house_D,	204,	109,	180,	0
+eastern_poor_house_D,	83,	128,	0,	0
+eastern_poor_house_D,	147,	139,	90,	0
+
+}

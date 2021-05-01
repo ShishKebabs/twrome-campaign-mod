@@ -1,0 +1,132 @@
+
+pool Britain
+	regions	Britannia_Inferior Britannia_Superior Hibernia Caledonia		
+	unit merc veteranii,			exp 2 cost 1230 replenish 0.06 - 0.19 max 1 initial 1
+	unit merc gallowglass,			exp 1 cost 650 replenish 0.06 - 0.19 max 1 initial 1
+	unit merc graal knights,			exp 3 cost 2900 replenish 0.03 - 0.08 max 1 initial 0
+	unit merc sarmatian armoured archers,	exp 2 cost 1250 replenish 0.06 - 0.19 max 1 initial 1
+	
+pool Germany
+	regions Germania_Inferior Germania_Superior Tribus_Chattii Tribus_Saxones Tribus_Alemanni Tribus_Franki Tribus_Frisii
+	unit merc golden band,			exp 1 cost 1000 replenish 0.06 - 0.44 max 1 initial 0
+	unit merc foederati infantry,			exp 0 cost 600 replenish 0.06 - 0.19 max 1 initial 1
+	unit merc foederati cavalry,			exp 0 cost 700 replenish 0.06 - 0.19 max 1 initial 1
+	unit merc veteranii,			exp 2 cost 1230 replenish 0.06 - 0.19 max 1 initial 0
+
+pool Eastern_Europe
+	regions Tribus_Burgundii Tribus_Lombardi Tribus_Marcomanni Tribus_Quaddi
+	unit merc golden band,			exp 2 cost 1200 replenish 0.06 - 0.44 max 2 initial 1
+	unit merc sarmatian armoured archers,	exp 2 cost 1250 replenish 0.06 - 0.19 max 1 initial 0
+	
+pool Steppes
+	regions Tribus_Sakae Tribus_Alanni Tribus_Vandali Locus_Sarmatae Locus_Barbaricum Tribus_Roxolani			
+	unit merc alan horse archers,			exp 1 cost 825 replenish 0.12 - 0.38 max 2 initial 1
+	unit merc vandal lancers,			exp 1 cost 800 replenish 0.03 - 0.05 max 1 initial 0
+	unit merc vandal raiders,			exp 1 cost 575 replenish 0.03 - 0.05 max 1 initial 0
+	unit merc sarmatian armoured archers,	exp 2 cost 1250 replenish 0.06 - 0.19 max 2 initial 1
+	
+pool Central_Europe
+	regions Tribus_Iazyges Sarmatia Dacia			
+	unit merc alan noble cavalry,			exp 1 cost 1350 replenish 0.1 - 0.15 max 1 initial 0
+	unit merc alan horse archers,			exp 1 cost 825 replenish 0.12 - 0.38 max 1 initial 1
+	unit merc sarmatian armoured archers,	exp 2 cost 1250 replenish 0.06 - 0.19 max 2 initial 1
+
+pool Gaul
+	regions Belgica Aquitania Lugdinensis Narbonensis			
+	unit merc foederati infantry,			exp 0 cost 600 replenish 0.06 - 0.19 max 2 initial 1
+	unit merc foederati cavalry,			exp 0 cost 700 replenish 0.06 - 0.19 max 1 initial 1
+	unit merc veteranii,				exp 2 cost 1230 replenish 0.06 - 0.19 max 1 initial 0
+	unit merc equites veteranii,			exp 2 cost 950 replenish 0.06 - 0.19 max 1 initial 0
+	unit merc graal knights,			exp 3 cost 2900 replenish 0.03 - 0.08 max 1 initial 0
+
+pool Armenia
+	regions Colchis Atropatene Armenia Cappadocia			
+	unit merc equites veteranii,			exp 2 cost 950 replenish 0.06 - 0.19 max 1 initial 0
+	unit merc alan horse archers,			exp 1 cost 825 replenish 0.12 - 0.38 max 2 initial 1
+	unit merc hippo toxotai,			exp 0 cost 1200 replenish 0.06 - 0.19 max 1 initial 0
+	unit merc sarmatian armoured archers,	exp 2 cost 1250 replenish 0.06 - 0.19 max 1 initial 0
+
+pool Cisapline_Gaul
+	regions Alpes_Maritimae_et_Cottinae Aemilia_et_Liguria Venetia Noricum				
+	unit merc veteranii,				exp 2 cost 1230 replenish 0.06 - 0.19 max 2 initial 1
+	unit merc equites veteranii,			exp 2 cost 950 replenish 0.06 - 0.19 max 1 initial 1
+	unit merc alan horse archers,			exp 1 cost 825 replenish 0.12 - 0.38 max 1 initial 0
+	unit merc bucellarii,				exp 0 cost 575 replenish 0.12 - 0.38 max 1 initial 0
+	
+pool Illyria
+	regions Illyricum_et_Dalmatia Pannonia			
+	unit merc veteranii,			exp 2 cost 1230 replenish 0.06 - 0.19 max 2 initial 1
+	unit merc equites veteranii,			exp 2 cost 950 replenish 0.06 - 0.19 max 1 initial 1
+	unit merc bucellarii,				exp 0 cost 575 replenish 0.12 - 0.38 max 1 initial 0
+	
+pool Thrace
+	regions Thracia Moesia Pontus_et_Bithynia			
+	unit merc bosphoran infantry,			exp 1 cost 760 replenish 0.06 - 0.19 max 1 initial 1
+	unit merc veteranii,			exp 2 cost 1230 replenish 0.06 - 0.19 max 2 initial 1
+	unit merc bucellarii,				exp 0 cost 575 replenish 0.12 - 0.38 max 1 initial 0
+	unit merc hippo toxotai,			exp 0 cost 1200 replenish 0.06 - 0.19 max 1 initial 0
+
+pool Spain
+	regions Taraconensis Lusitania Carthaginiensis Baetica				
+	unit merc moorish raiders,			exp 0 cost 575 replenish 0.125 - 0.25 max 2 initial 1
+	unit merc equites veteranii,			exp 2 cost 950 replenish 0.06 - 0.19 max 1 initial 0
+	unit merc veteranii,			exp 2 cost 1230 replenish 0.06 - 0.19 max 1 initial 0
+
+pool Greece
+	regions Macedonia Achaea Creta			
+	unit merc hippo toxotai,			exp 0 cost 1200 replenish 0.06 - 0.19 max 1 initial 1
+	unit merc equites veteranii,			exp 2 cost 950 replenish 0.06 - 0.19 max 2 initial 0
+	unit merc veteranii,			exp 2 cost 1230 replenish 0.06 - 0.19 max 1 initial 1
+
+pool Italy
+	regions Northern_Italy Southern_Italy				
+	unit merc equites veteranii,			exp 2 cost 950 replenish 0.06 - 0.19 max 2 initial 0
+	unit merc veteranii,				exp 2 cost 1230 replenish 0.06 - 0.19 max 1 initial 1
+	unit merc bucellarii,				exp 0 cost 575 replenish 0.12 - 0.38 max 1 initial 0
+	unit merc ballistae,				exp 0 cost 600 replenish 0.125 - 0.25 max 1 initial 0
+	
+pool Persia
+	regions Media Babylonia Assyria				
+	unit merc ballistae,			exp 0 cost 600 replenish 0.125 - 0.25 max 1 initial 0
+	unit merc armoured camel riders,	exp 0 cost 1450 replenish 0.125 - 0.25 max 1 initial 1
+	unit merc camel raiders,			exp 0 cost 500 replenish 0.1 - 0.15 max 2 initial 1
+	unit merc elephants,				exp 0 cost 2700 replenish 0.005 - 0.015 max 1 initial 0
+
+pool Galatia
+	regions Galatia Asiana Cilicia_et_Lycia Cyprus			
+	unit merc hippo toxotai,			exp 0 cost 1200 replenish 0.06 - 0.19 max 1 initial 0
+	unit merc equites veteranii,			exp 2 cost 950 replenish 0.06 - 0.19 max 1 initial 0
+	unit merc veteranii,			exp 2 cost 1230 replenish 0.06 - 0.19 max 1 initial 1
+	
+pool Syria
+	regions Syria_Coele Phoenicia Palaestina							
+	unit merc camel raiders,			exp 0 cost 500 replenish 0.1 - 0.15 max 1 initial 1
+	unit merc ballistae,			exp 0 cost 600 replenish 0.125 - 0.25 max 1 initial 0
+	unit merc bucellarii,				exp 0 cost 575 replenish 0.12 - 0.38 max 1 initial 0
+
+pool Balearics
+	regions Sardinia			
+	unit merc veteranii,				exp 2 cost 1230 replenish 0.06 - 0.19 max 1 initial 1
+	unit merc bucellarii,				exp 0 cost 575 replenish 0.12 - 0.38 max 1 initial 0
+	unit merc ballistae,				exp 0 cost 600 replenish 0.125 - 0.25 max 1 initial 0
+
+pool North_Africa
+	regions Mauretania Africa Sahara Tripolitania				
+	unit merc camel raiders,			exp 0 cost 500 replenish 0.1 - 0.15 max 2 initial 1
+	unit merc armoured camel riders,	exp 0 cost 1450 replenish 0.125 - 0.25 max 1 initial 0
+	unit merc equites veteranii,			exp 2 cost 950 replenish 0.06 - 0.19 max 2 initial 1
+	unit merc bucellarii,				exp 0 cost 575 replenish 0.12 - 0.38 max 1 initial 0
+
+pool Arabia
+	regions Arabia_Superior Arabia_Inferior Nabataea				
+	unit merc armoured camel riders,	exp 0 cost 1450 replenish 0.125 - 0.25 max 1 initial 0
+	unit merc camel raiders,			exp 0 cost 500 replenish 0.1 - 0.15 max 2 initial 1
+	unit merc elephants,				exp 0 cost 2700 replenish 0.005 - 0.015 max 1 initial 0
+	unit merc hippo toxotai,			exp 0 cost 1200 replenish 0.06 - 0.19 max 1 initial 1
+
+pool Libya
+	regions Cyrenaica Aegyptus			
+	unit merc camel raiders,			exp 0 cost 500 replenish 0.1 - 0.15 max 2 initial 1
+	unit merc armoured camel riders,	exp 0 cost 1450 replenish 0.125 - 0.25 max 1 initial 0
+	unit merc equites veteranii,			exp 2 cost 950 replenish 0.06 - 0.19 max 1 initial 0
+	unit merc hippo toxotai,			exp 0 cost 1200 replenish 0.06 - 0.19 max 1 initial 0

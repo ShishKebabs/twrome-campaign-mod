@@ -1,0 +1,107 @@
+plan
+
+	{
+floor		underlay_giza.cas
+
+
+
+pyramid_of_khufu,	20,	330,	0,	0
+
+pyramid_of_khafre,	-300,	0,	0,	0
+
+pyramid_of_menkaure,	-535,	-364,	0,	0
+
+great_sphinx,	295,	-70,	90,	0
+
+valley_temple_of_khafre,	355,	-130,	90,	0
+valley_temple_of_khafre,	110,	-378,	90,	0
+
+tree_C,	140.86,	-36.57,	0,	0
+tree_C,	240.93,	-46,	0,	0
+tree_C,	225.72,	-51.34,	0,	0
+tree_C,	306.44,	-139.07,	0,	0
+tree_C,	270.84,	-155.14,	0,	0
+tree_C,	174.28,	201.50,	0,	0
+tree_C,	316.33,	151.13,	0,	0
+tree_C,	329.51,	159.09,	0,	0
+tree_C,	-255,	-181.26,	0,	0
+tree_C,	-231.81,	-144.42,	0,	0
+tree_C,	-242.53,	-145.58,	0,	0
+tree_C,	-235.62,	-157.58,	0,	0
+tree_C,	-383.21,	-318.64,	0,	0
+tree_C,	-392.44,	-334.49,	0,	0
+tree_C,	-449.08,	-323.21,	0,	0
+tree_C,	-479.93,	-272.64,	0,	0
+tree_C,	-455.18,	-429.49,	0,	0
+
+small_pyramid,	-300,	-160,	0,	0
+small_pyramid,	220,	280,	0,	0
+small_pyramid,	220,	240,	0,	0
+small_pyramid,	220,	200,	0,	0
+small_pyramid,	-530,	-460,	0,	0
+
+small_step_pyramid,	-580,	-460,	0,	0
+small_step_pyramid,	-630,	-460,	0,	0
+
+mastaba,	140,	170,	0,	0
+mastaba,	120,	170,	0,	0
+mastaba,	100,	170,	0,	0
+mastaba,	80,	170,	0,	0
+mastaba,	60,	170,	0,	0
+mastaba,	40,	170,	0,	0
+mastaba,	20,	170,	0,	0
+mastaba,	-140,	240,	0,	0
+mastaba,	-160.66,	240,	0,	0
+mastaba,	-140.66,	270,	0,	0
+mastaba,	-160.66,	270,	0,	0
+mastaba,	-180.66,	270,	0,	0
+mastaba,	-180.66,	300,	0,	0
+mastaba,	-160.66,	300,	0,	0
+mastaba,	-140.66,	300,	0,	0
+mastaba,	-140.66,	330,	0,	0
+mastaba,	-160.66,	330,	0,	0
+mastaba,	-180.66,	330,	0,	0
+mastaba,	-200.66,	330,	0,	0
+mastaba,	-220.66,	330,	0,	0
+mastaba,	-220.66,	360,	0,	0
+mastaba,	-240.66,	360,	0,	0
+mastaba,	-260.66,	360,	0,	0
+mastaba,	-240.66,	330,	0,	0
+mastaba,	-260.66,	330,	0,	0
+mastaba,	-200.66,	300,	0,	0
+mastaba,	-200.66,	360,	0,	0
+mastaba,	-180.66,	360,	0,	0
+mastaba,	-160.66,	360,	0,	0
+mastaba,	-140.66,	360,	0,	0
+mastaba,	-140.66,	390,	0,	0
+mastaba,	-180.66,	390,	0,	0
+mastaba,	-220.66,	240,	0,	0
+mastaba,	-0.66,	170,	0,	0
+mastaba,	289.34,	280,	0,	0
+mastaba,	289.34,	240,	0,	0
+mastaba,	289.34,	200,	0,	0
+mastaba,	309.34,	200,	0,	0
+mastaba,	309.34,	240,	0,	0
+mastaba,	309.34,	280,	0,	0
+mastaba,	329.34,	280,	0,	0
+mastaba,	349.34,	280,	0,	0
+mastaba,	369.34,	280,	0,	0
+mastaba,	329.34,	240,	0,	0
+
+valley_causeway_straight,	-365,	-364,	0,	0
+valley_causeway_straight,	-265,	-364,	0,	0
+valley_causeway_straight,	-165,	-364,	0,	0
+valley_causeway_straight,	-65,	-364,	0,	0
+valley_causeway_straight,	35,	-364,	0,	0
+
+valley_causeway_skewed,	-20,	0,	0,	0
+valley_causeway_skewed,	80,	-30,	0,	0
+valley_causeway_skewed,	180,	-60,	0,	0
+valley_causeway_skewed,	280,	-90,	0,	0
+
+valley_causeway_skewed_flipped,	245,	330,	0,	0
+valley_causeway_skewed_flipped,	345,	360,	0,	0
+
+valley_causeway_gateway,	395,	390,	90,	0
+
+	}

@@ -1,0 +1,25 @@
+plan
+
+{
+	floor		underlay_egyptian_farm_B.cas overlay_egyptian_farm_B.cas
+
+	ground_types	ground_no_grass.tga	-64,	-64,	64,	64
+	borders	border_limits_64m_diameter.CAS
+;				x,	y,	rot,	z,
+
+;furrowed_soil,			32,	-32,	0,	0
+hay_field_square,			32,	32,	0,	0
+corn_field_square,			-32,	32,	0,	0
+egyptian_grain_threshing_pit,	-30,	-13,	0,	0
+egyptian_farm_granary,		-37,	-36,	160,	0
+cow_stall_group,			-53,	-46,	120,	0
+bush_A,				-40,	-50,	0,	0
+bush_A,				-8,	-16,	60,	0
+egyptian_haystack,		-50,	-10,	-90,	0
+egyptian_haystack,		-18,	-34,	0,	0
+tree_A,				-56,	-30,	55,	0
+tree_A,				-11,	-52,	-75,	0
+tree_A,				-16,	50,	-75,	0
+
+
+}

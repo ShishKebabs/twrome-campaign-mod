@@ -1,0 +1,35 @@
+script
+	declare_show_me						; This is a show me script
+
+	monitor_event AbandonShowMe	TrueCondition	; Catch the AbandonShowMe event
+		ui_flash_stop					; Stop the UI highlighting
+		suspend_unscripted_advice false		; Restore unscripted advice
+		terminate_script					; Shut down the show me script
+	end_monitor	
+
+	suspend_unscripted_advice true
+	ui_flash_start show_hide_group_formations
+	wait 3
+	select_ui_element show_hide_group_formations
+	simulate_mouse_click lclick_down
+	simulate_mouse_click lclick_up
+	ui_flash_stop
+	ui_flash_start formation_1
+	wait 2
+	ui_flash_start formation_2
+	wait 2
+	ui_flash_start formation_3
+	wait 2
+	ui_flash_start formation_4
+	wait 2
+	ui_flash_start formation_5
+	wait 2
+	ui_flash_start formation_6
+	wait 2
+	ui_flash_start formation_7
+	wait 2
+	ui_flash_start formation_8
+	wait 2
+	ui_flash_stop
+	suspend_unscripted_advice false
+end_script

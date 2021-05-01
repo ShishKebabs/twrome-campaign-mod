@@ -1,0 +1,101 @@
+{
+	"frames": [
+		{
+			"name":"background_frame",
+			"position": {
+				"x": 0,
+				"y": 0
+			},
+			"size": {
+				"width": 476,
+				"height": 440
+			},
+			"priority": -1,
+			"fill": "decorated",
+			"anchor": "C",
+			"align": "C",
+			"scale_width":true
+		}
+	],
+	"list": [
+		{
+			"name": "eagle_icon",
+			"x": 0,
+			"y": -330,
+			"size": {
+				"width": 166,
+				"height": 140
+			},
+			"align": "TC",
+			"anchor": "C"
+		},
+		{
+			"name": "title_string",
+			"x": 0,
+			"y": -180,
+			"align": "TC",
+			"anchor": "C",
+			"font_colour": "dark_brown",
+			"font":"cinzel"
+		},
+		{
+			"name": "text_block",
+			"x": 0,
+			"y": -20,
+			"align":"C",
+			"size": {
+				"width": 400,
+				"height": 200
+			},
+			"anchor": "C",
+			"scale_width":true,
+			"font_colour": "dark_brown",
+			"font":"verdana_lrg"
+		},
+		
+		{
+            "name": "blockade_text",
+            "x": 0,
+            "y": -60,
+            "align": "C",
+            "size": {
+                "width": 400,
+                "height": 200
+            },
+            "anchor": "C",
+            "scale_width": true,
+            "font": "verdana_lrg"
+        },
+		{
+			"name": "accept_button",
+			"x": -120,
+			"y": 130,
+            "size": {
+                "width": 80,
+                "height": 80
+            },
+			"align": "C",
+			"anchor": "C",
+		},
+		{
+			"name": "cancel_button",
+			"x": 120,
+			"y": 130,
+            "size": {
+                "width": 80,
+                "height": 80
+            },
+			"align": "C",
+			"anchor": "C",
+		},
+		{
+			"name": "help_button",
+			"x": 315,
+			"y": -150,
+			"size": {
+				"width": 42,
+				"height": 42
+			}
+		}
+	]
+}

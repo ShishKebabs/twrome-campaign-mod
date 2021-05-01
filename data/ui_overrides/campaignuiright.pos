@@ -1,0 +1,271 @@
+{
+	"frames": [
+
+
+
+	],
+	"list": [
+
+		{
+			"name": "base_frame",
+			"x": 36 ,
+			"y": 15,
+			"size": {
+				"width": 371 ,
+				"height" : 350
+			},
+			"additional_clipping":
+			[
+				{ 
+					"x": 0 ,
+					"y":-20, 
+					"width": 1820 ,
+					"height":840, 
+					"anchor":"BR", 
+					"align":"BR" 
+				},
+			],
+			"anchor": "BR",
+			"align": "BR",
+			"priority": 0
+		},
+
+
+		{
+			"name": "animated_frame",
+			"x": 33 ,
+			"y": 270,
+			"size" : {
+				"width": 367 ,
+				"height" : 505
+			},
+			"additional_clipping":
+			[
+				{ 
+					"x": 0 ,
+					"y":-20, 
+					"width": 1820 ,
+					"height":840, 
+					"anchor":"BR", 
+					"align":"BR" 
+				},
+			],
+			"anchor": "BR",
+			"align": "BR",
+			"priority": -1
+		},
+
+		{
+			"name": "construction_options_btn",
+			"x": -210 ,
+			"y":-35,
+			"size" : {
+				"width"  : 55,
+				"height" : 55
+			},
+			"anchor": "BR",
+			"align": "C",
+			"priority": 2
+		},
+
+		{
+			"name": "reqruitements_options_btn",
+			"x": -285 ,
+			"y":-35,
+			"size" : {
+				"width"  : 55,
+				"height" : 55
+			},
+			"anchor": "BR",
+			"align": "C",
+			"priority": 2
+		},
+
+		{
+			"name": "building_browser_btn",
+			"x": -135 ,
+			"y":-35,
+			"size" : {
+				"width"  : 55,
+				"height" : 55
+			},
+			"anchor": "BR",
+			"align": "C",
+			"priority": 2
+		},
+
+
+		{
+			"name": "field_construction_cost_string",
+			"x": -10 ,
+			"y": -315,
+			"font":"verdana_sml",
+			"anchor": "BR",
+			"align":"TR",
+			"priority": 2
+		},
+
+		{
+			"name": "construction_queue",
+			"x": -7 ,
+			"y": -310,
+			"size" : {
+				"width": 312 ,
+				"height" : 116
+			},
+			"anchor": "BR",
+			"align": "TR",
+			"priority": 2
+		},
+		
+		{
+			"name": "field_construction_queue",
+			"x": -6 ,
+			"y": -290,
+			"size" : {
+				"width": 315 ,
+				"height" : 80
+			},
+			"anchor": "BR",
+			"align": "TR",
+			"priority": 2
+		},
+
+
+		{
+			"name": "mercenary_hiring_cost_string",
+			"x": -10 ,
+			"y": -198,
+			"font":"verdana_sml",
+			"anchor": "BR",
+			"align":"TR",
+			"priority": 2
+		},
+		{
+			"name": "recruitement_queue",
+			"x": -5 ,
+			"y": -190,
+			"size" : {
+				"width": 315 ,
+				"height" : 125
+			},
+			"anchor": "BR",
+			"align": "TR",
+			"priority": 2
+		},
+		{
+			"comment": "Hiring queue handles the frame and the cards, width is the width of 20 cards",
+			"name": "hiring_queue",
+			"x": -7 ,
+			"y": -165,
+			"size" : {
+				"width": 315 ,
+				"height" : 60
+			},
+			"anchor": "BR",
+			"align": "TR",
+			"priority": 2
+		},
+		{
+			"comment": "Hold hiring queue in a list to hide the slider",
+			"name": "hiring_queue_list",
+			"x": -7 ,
+			"y": -165,
+			"size" : {
+				"width": 314 ,
+				"height" : 80
+			},
+			"anchor": "BR",
+			"align": "TR",
+			"priority": 2
+		},
+
+		{
+			"name": "mercenaries_string",
+			"x": -315 ,
+			"y": -198,
+			"font_colour":"dark_brown",
+			"anchor": "BR",
+			"align": "TL",
+		},
+		{
+			"name": "field_construction_string",
+			"x": -315 ,
+			"y": -315,
+			"font_colour":"dark_brown",
+			"anchor": "BR",
+			"align": "TL",
+		},
+		{
+			"name": "dividers_0",
+			"x": 0 ,
+			"y": -290,
+			"size" : {
+				"width": 325 ,
+				"height" : 16
+			},
+			"anchor": "BR",
+			"align": "BR",
+		},
+		{
+			"name": "dividers_1",
+			"x": 0,
+			"y": -165,
+			"size" : {
+				"width": 325 ,
+				"height" : 16
+			},
+			"anchor": "BR",
+			"align": "BR",
+		},
+		{
+			"name": "dividers_2",
+			"x": -10,
+			"y": -95,
+			"size" : {
+				"width": 305 ,
+				"height": 10
+			},
+			"anchor": "BR",
+			"align": "BR",
+		},
+		{
+			"name": "gold_icon_elements_0",
+			"x": -40,
+			"y": -320,
+			"size" : {
+				"width": 30 ,
+				"height" : 30
+			},
+			"anchor": "BR",
+			"align": "TR",
+		},
+		{
+			"name": "gold_icon_elements_1",
+			"x": -40,
+			"y": -203,
+			"size" : {
+				"width": 30 ,
+				"height" : 30
+			},
+			"anchor": "BR",
+			"align": "TR",
+		},
+
+
+		{
+			"name": "field_construction_and_hiring_confirm_btn",
+			"x": -165 ,
+			"y": -55,
+			"size" : {
+				"width": 160,
+				"height" : 40
+			},
+			"anchor": "BR",
+			"align": "BC",
+			"priority": 1
+		},
+
+
+	]
+}

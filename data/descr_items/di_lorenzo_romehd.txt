@@ -1,0 +1,553 @@
+type			hides_01
+lod
+max_distance	10
+model_rigid		hides_01_lod0.cas
+
+
+
+type			hides_02
+lod
+max_distance	10
+model_rigid		hides_02_lod0.cas
+
+
+
+type			wine_01
+lod
+max_distance	10
+model_rigid		wine_01_lod0.cas
+
+
+
+type			wine_02
+lod
+max_distance	10
+model_rigid		wine_02_lod0.cas
+
+
+
+type			wine_03
+lod
+max_distance	10
+model_rigid		wine_03_lod0.cas
+
+
+
+type			wine_broken
+lod
+max_distance	10
+model_rigid		wine_broken_lod0.cas
+
+
+
+type			olive_oil_02
+lod
+max_distance	10
+model_rigid		olive_oil_02_lod0.cas
+
+
+
+type			olive_oil_03
+lod
+max_distance	10
+model_rigid		olive_oil_03_lod0.cas
+
+
+
+type			olive_oil_broken
+lod
+max_distance	10
+model_rigid		olive_oil_broken_lod0.cas
+
+
+
+type			olive_oil
+lod
+max_distance	10
+model_rigid		olive_oil_lod0.cas
+
+
+
+type			incense_02
+lod
+max_distance	10
+model_rigid		incense_02_lod0.cas
+
+
+
+type			incense_03
+lod
+max_distance	10
+model_rigid		incense_03_lod0.cas
+
+
+
+type			incense
+lod
+max_distance	10
+model_rigid		incense_lod0.cas
+
+
+
+type			glass_02
+lod
+max_distance	10
+model_rigid		glass_02_lod0.cas
+
+
+
+type			glass_03
+lod
+max_distance	10
+model_rigid		glass_03_lod0.cas
+
+
+
+type			glass_broken
+lod
+max_distance	10
+model_rigid		glass_broken_lod0.cas
+
+
+
+type			glass
+lod
+max_distance	10
+model_rigid		glass_lod0.cas
+
+
+
+type			pottery_02
+lod
+max_distance	10
+model_rigid		pottery_02_lod0.cas
+
+
+
+type			pottery_03
+lod
+max_distance	10
+model_rigid		pottery_03_lod0.cas
+
+
+
+type			pottery
+lod
+max_distance	10
+model_rigid		pottery_lod0.cas
+
+
+
+type			grain_02
+lod
+max_distance	10
+model_rigid		grain_02_lod0.cas
+
+
+
+type			grain_03
+lod
+max_distance	10
+model_rigid		grain_03_lod0.cas
+
+
+
+type			grain
+lod
+max_distance	10
+model_rigid		grain_lod0.cas
+
+
+
+type			purple_dye_02
+lod
+max_distance	10
+model_rigid		purple_dye_02_lod0.cas
+
+
+
+type			purple_dye_03
+lod
+max_distance	10
+model_rigid		purple_dye_03_lod0.cas
+
+
+
+type			purple_dye
+lod
+max_distance	10
+model_rigid		purple_dye_lod0.cas
+
+
+
+type			food_01
+lod
+max_distance	10
+model_rigid		food_01_lod0.cas
+
+
+
+type			food_02
+lod
+max_distance	10
+model_rigid		food_02_lod0.cas
+
+
+
+type			food_03
+lod
+max_distance	10
+model_rigid		food_03_lod0.cas
+
+
+
+type			food_04
+lod
+max_distance	10
+model_rigid		food_04_lod0.cas
+
+
+
+type			food_05
+lod
+max_distance	10
+model_rigid		food_05_lod0.cas
+
+
+
+type			food_06
+lod
+max_distance	10
+model_rigid		food_06_lod0.cas
+
+
+
+type			broken_food_boxes
+lod
+max_distance	10
+model_rigid		broken_food_boxes_lod0.cas
+
+
+
+type			market_stall_01
+lod
+max_distance	10
+model_rigid		market_stall_01_lod0.cas
+
+
+
+type			market_stall_02
+lod
+max_distance	10
+model_rigid		market_stall_02_lod0.cas
+
+
+
+type			market_stall_03
+lod
+max_distance	10
+model_rigid		market_stall_03_lod0.cas
+
+
+
+type			broken_market_stall_01
+lod
+max_distance	10
+model_rigid		broken_market_stall_01_lod0.cas
+
+
+
+type			broken_market_stall_02
+lod
+max_distance	10
+model_rigid		broken_market_stall_02_lod0.cas
+
+
+
+type			broken_market_stall_03
+lod
+max_distance	10
+model_rigid		broken_market_stall_03_lod0.cas
+
+
+
+type			foodstall_01
+lod
+max_distance	10
+model_rigid		foodstall_01_lod0.cas
+
+
+
+type			wolf_stall
+lod
+max_distance	10
+model_rigid		wolf_stall_lod0.cas
+
+
+
+type			wagon_stall
+lod
+max_distance	10
+model_rigid		wagon_stall_lod0.cas
+
+
+
+type			carpet_stall_01
+lod
+max_distance	10
+model_rigid		carpet_stall_01_lod0.cas
+
+
+
+type			carpet_stall_02
+lod
+max_distance	10
+model_rigid		carpet_stall_02_lod0.cas
+
+
+
+type			carpet_stall_03
+lod
+max_distance	10
+model_rigid		carpet_stall_03_lod0.cas
+
+
+
+type			carpet_stall_04
+lod
+max_distance	10
+model_rigid		carpet_stall_04_lod0.cas
+
+
+
+type			carpet_stall_05
+lod
+max_distance	10
+model_rigid		carpet_stall_05_lod0.cas
+
+
+
+type			food_stall
+lod
+max_distance	10
+model_rigid		food_stall_lod0.cas
+
+
+
+type			prop_bush_03
+lod
+max_distance	10
+model_rigid		prop_bush_03_lod0.cas
+
+
+
+type			prop_tree_02
+lod
+max_distance	10
+model_rigid		prop_tree_02_lod0.cas
+
+
+
+type			prop_bush_01
+lod
+max_distance	10
+model_rigid		prop_bush_01_lod0.cas
+
+
+
+type			prop_bush_02
+lod
+max_distance	10
+model_rigid		prop_bush_02_lod0.cas
+
+
+
+type			prop_tree_01
+lod
+max_distance	10
+model_rigid		prop_tree_01_lod0.cas
+
+
+
+type			chest_01
+lod
+max_distance	10
+model_rigid		chest_01_lod0.cas
+
+
+
+type			chest_02
+lod
+max_distance	10
+model_rigid		chest_02_lod0.cas
+
+
+
+type			log_pile_01
+lod
+max_distance	10
+model_rigid		log_pile_01_lod0.cas
+
+
+
+type			log_pile_02
+lod
+max_distance	10
+model_rigid		log_pile_02_lod0.cas
+
+
+
+type			log_pile_03
+lod
+max_distance	10
+model_rigid		log_pile_03_lod0.cas
+
+
+
+type			log_pile_04
+lod
+max_distance	10
+model_rigid		log_pile_04_lod0.cas
+
+
+
+type			log_pile_05
+lod
+max_distance	10
+model_rigid		log_pile_05_lod0.cas
+
+
+
+type			log_pile_06
+lod
+max_distance	10
+model_rigid		log_pile_06_lod0.cas
+
+
+
+type			wagon_1
+lod
+max_distance	10
+model_rigid		wagon_1_lod0.cas
+
+
+
+type			wagon_2
+lod
+max_distance	10
+model_rigid		wagon_2_lod0.cas
+
+
+
+type			wagon_3
+lod
+max_distance	10
+model_rigid		wagon_3_lod0.cas
+
+
+
+type			wagon_chest_bags
+lod
+max_distance	10
+model_rigid		wagon_chest_bags_lod0.cas
+
+
+
+type			wagon_barrels
+lod
+max_distance	10
+model_rigid		wagon_barrels_lod0.cas
+
+
+
+type			wagon_crates
+lod
+max_distance	10
+model_rigid		wagon_crates_lod0.cas
+
+
+
+type			wagon_log_and_bags
+lod
+max_distance	10
+model_rigid		wagon_log_and_bags_lod0.cas
+
+
+
+type			haystack_flat01
+lod
+max_distance	10
+model_rigid		haystack_flat01_lod0.cas
+
+
+
+type			haystack_flat02
+lod
+max_distance	10
+model_rigid		haystack_flat02_lod0.cas
+
+
+
+type			haystack_flat03
+lod
+max_distance	10
+model_rigid		haystack_flat03_lod0.cas
+
+
+
+type			barrels
+lod
+max_distance	10
+model_rigid		barrels_lod0.cas
+
+
+
+type			boxes_and_crates_01
+lod
+max_distance	10
+model_rigid		boxes_and_crates_01_lod0.cas
+
+
+
+type			boxes_and_crates_02
+lod
+max_distance	10
+model_rigid		boxes_and_crates_02_lod0.cas
+
+
+
+type			boxes_and_crates_04
+lod
+max_distance	10
+model_rigid		boxes_and_crates_04_lod0.cas
+
+
+
+type			boxes_and_crates_03
+lod
+max_distance	10
+model_rigid		boxes_and_crates_03_lod0.cas
+
+
+
+type			lightpost_01
+lod
+max_distance	10
+model_rigid		lightpost_01_lod0.cas
+
+
+
+type			lightpost_02
+lod
+max_distance	10
+model_rigid		lightpost_02_lod0.cas
+
+
+
+type			scaffolding1
+lod
+max_distance	10
+model_rigid		scaffolding1_lod0.cas
+
+
+

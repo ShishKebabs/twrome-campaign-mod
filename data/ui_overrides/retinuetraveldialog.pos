@@ -1,0 +1,265 @@
+{
+	"frames": [
+		{
+			"size": {
+				"fullscreen":true
+			},
+			"priority": -1,
+			"fill": "black_curved"
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 261
+			},
+			"size": {
+				"width": 332,
+				"height": 185
+			},
+			"priority": -1,
+			"fill": "black_curved",
+			"align": "TR",
+			"anchor": "TC",
+			"fill_left":true
+		},
+		{
+			"position": {
+				"x": -4,
+				"y": 75
+			},
+			"size": {
+				"width": 332,
+				"height": 185
+			},
+			"priority": -1,
+			"fill": "black_curved",
+			"align": "TR",
+			"anchor": "TC",
+			"fill_left":true
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 311
+			},
+			"size": {
+				"width": 332,
+				"height": 135
+			},
+			"priority": -1,
+			"fill": "black_curved",
+			"align": "TL",
+			"anchor": "TC",
+			"fill_right":true
+		},
+		{
+			"position": {
+				"x": 4,
+				"y": 75
+			},
+			"size": {
+				"width": 332,
+				"height": 235
+			},
+			"priority": -1,
+			"fill": "black_curved",
+			"align": "TL",
+			"anchor": "TC",
+			"fill_right":true
+		},
+		{
+			"position": {
+				"x": 10,
+				"y": -10
+			},
+			"size": {
+				"width": 555,
+				"height": 100
+			},
+			"collapsed_size": {
+				"width": 555,
+				"height": 41
+			},
+			"priority": 5,
+			"fill": "black_curved",
+			"tag":"tooltip",
+			"anchor": "TR",
+			"align":"TR",
+			"fill_left":true
+		}
+	],
+	"tooltip": {
+		"x": 140,
+		"y": 4,
+		"width": 538,
+		"height": 80,
+		"anchor": "TL",
+		"fill_right":true,
+		"font":"verdana_lrg"
+	},
+	"tooltip_ticker": {
+		"x": 140,
+		"y": 4,
+		"width": 538,
+		"height": 50,
+		"anchor": "TL",
+		"fill_right":true,
+		"font":"verdana_lrg"
+	},
+	"list": [
+        	{
+			"name": "retinue_string",
+			"x": 20,
+			"y": 107,
+			"align": "BL",
+			"anchor": "TL",
+			"font":"verdana_lrg"
+		},
+		{
+			"name": "retinue_description",
+			"x": 15,
+			"y": 85,
+			"size": {
+				"width" : 315,
+				"height": 145
+			},
+			"align": "TL",
+			"anchor": "TC",
+			"fill_right":true,
+			"font":"verdana_med"
+		},
+        	{
+			"name": "character_string",
+			"x": 20,
+			"y": 293,
+			"align": "BL",
+			"anchor": "TL",
+			"font":"verdana_lrg"
+		},
+        	{
+			"name": "character_info",
+			"x": 15,
+			"y": 318,
+			"size": {
+				"width" : 320,
+				"height": 125
+			},
+			"align": "TL",
+			"anchor": "TC",
+			"font":"verdana_lrg",
+			"fill_right":true,
+			"priority":50
+		},
+		{
+			"name": "retinue_status_string",
+			"x": 170,
+			"y": 265,
+			"align": "BC",
+			"anchor": "TC",
+			"font":"verdana_lrg",
+			"scale_x_pos":true
+		},
+		{
+			"name": "travel_option_string",
+			"x": 170,
+			"y": 296,
+			"align": "BC",
+			"anchor": "TC",
+			"font":"verdana_lrg",
+			"scale_x_pos":true
+		},
+		{
+			"name": "character_location_string",
+			"x": -20,
+			"y": 346,
+			"align": "BR",
+			"anchor": "TR",
+			"font":"verdana_lrg"
+		},
+        	{
+            		"name": "retinue_list",
+            		"x": -10,
+            		"y": 110,
+            		"size": {
+                		"width" : 245,
+                		"height": 125
+            		},
+            		"align": "TR",
+            		"anchor": "TC",
+			"fill_left":true
+        	},
+		{
+            		"name": "retinue_list_slider",
+            		"x": -10,
+            		"y": 235,
+            		"size": {
+                		"width" : 320
+            		},
+            		"align": "TR",
+            		"anchor": "TC",
+			"fill_left":true
+        	},
+		{
+			"name": "character_list",
+			"x": -10,
+			"y": 296,
+			"size": {
+				"width" : 320,
+				"height": 125
+			},
+			"align": "TR",
+			"anchor": "TC",
+			"fill_left":true
+		},
+		{
+			"name": "character_list_slider",
+			"x": -10,
+			"y": 421,
+			"size": {
+				"width" : 320
+			},
+			"align": "TR",
+			"anchor": "TC",
+			"fill_left":true
+		},
+		{
+			"name": "travel_button",
+			"x": 0,
+			"y": -60,
+			"size": {
+				"width": 55,
+				"height": 55
+			},
+			"anchor": "BC",
+			"align":"TC"
+		},
+		{
+			"name": "filter_button",
+			"x": 11,
+			"y": 172,
+			"size": {
+				"width": 70,
+				"height": 70
+			},
+			"anchor": "TL",
+			"align":"CL"
+		},
+        	{
+			"name": "close_button",
+			"x": -60,
+			"y": -60,
+			"size": {
+				"width": 55,
+				"height": 55
+			},
+			"anchor": "BR",
+			"align":"TL",
+			"priority":50
+		},
+        {
+			"name": "advisor",
+			"x": -1,
+			"y": -1
+		}
+	]
+}

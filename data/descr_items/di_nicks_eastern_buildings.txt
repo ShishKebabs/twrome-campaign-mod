@@ -1,0 +1,503 @@
+type			academy_eastern
+lod
+max_distance	200
+model_rigid		academy_eastern_high.cas
+lod
+max_distance	4000
+model_rigid		academy_eastern_med.cas
+lod
+max_distance	4000
+model_rigid		academy_eastern_low.cas
+
+
+type			base_academy_eastern
+lod
+max_distance	4000
+model_rigid		base_academy_eastern.cas
+
+
+
+
+type			eastern_great_forum
+lod
+max_distance	300
+model_rigid		eastern_great_forum_high.cas
+lod
+max_distance	500
+model_rigid		eastern_great_forum_med.cas
+lod
+max_distance	1000
+model_rigid		eastern_great_forum_low.cas
+
+
+
+
+type			ludus_magnus_eastern
+lod
+max_distance	200
+model_rigid		ludus_magnus_eastern_high.cas
+lod
+max_distance	4000
+model_rigid		ludus_magnus_eastern_med.cas
+lod
+max_distance	4000
+model_rigid		ludus_magnus_eastern_low.cas
+
+
+
+type			scriptorium_eastern
+lod
+max_distance	200
+model_rigid		scriptorium_eastern_high.cas
+lod
+max_distance	4000
+model_rigid		scriptorium_eastern_med.cas
+lod
+max_distance	4000
+model_rigid		scriptorium_eastern_low.cas
+
+
+
+type			city_barracks_eastern
+lod
+max_distance	200
+model_rigid		city_barracks_eastern_high.cas
+lod
+max_distance	1000
+model_rigid		city_barracks_eastern_low.cas
+
+
+
+type			militia_barracks_eastern
+lod
+max_distance	200
+model_rigid		militia_barracks_eastern_high.cas
+lod
+max_distance	300
+model_rigid		militia_barracks_eastern_med.cas
+lod
+max_distance	4000
+model_rigid		militia_barracks_eastern_low.cas
+
+
+
+type			eastern_park_building
+lod
+max_distance	4000
+model_rigid		eastern_park_building_high.cas
+
+
+
+type			eastern_park_pillar
+lod
+max_distance	4000
+model_rigid		eastern_park_pillar.cas
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;; FAST DRAW AMBIENT BUILDINGS ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;	
+
+
+type			east_tenamentA
+lod
+max_distance	150
+model_rigid		east_tenamentA_high.cas
+lod
+max_distance	300
+model_rigid		east_tenamentA_med.cas
+lod
+max_distance	600
+model_rigid		east_tenamentA_med_low.cas
+lod
+max_distance	1000
+model_rigid		east_tenamentA_low.cas
+
+
+type			east_tenament_A_props_big
+lod
+max_distance	200
+model_rigid		east_tenament_A_props_big_high.CAS
+lod
+max_distance	400
+model_rigid		east_tenament_A_props_big_med.CAS
+lod
+max_distance	800
+model_rigid		east_tenament_A_props_big_low.CAS
+
+
+type			east_tenament_A_props_medium
+lod
+max_distance	200
+model_rigid		east_tenament_A_props_medium_high.CAS
+lod
+max_distance	400
+model_rigid		east_tenament_A_props_medium_med.CAS
+lod
+max_distance	800
+model_rigid		east_tenament_A_props_medium_low.CAS
+
+
+type			east_tenament_A_props_small
+lod
+max_distance	200
+model_rigid		east_tenament_A_props_small_high.CAS
+lod
+max_distance	400
+model_rigid		east_tenament_A_props_small_med.CAS
+lod
+max_distance	800
+model_rigid		east_tenament_A_props_small_low.CAS
+
+
+type			east_tenamentB
+lod
+max_distance	150
+model_rigid		east_tenamentB_high.cas
+lod
+max_distance	300
+model_rigid		east_tenamentB_med.cas
+lod
+max_distance	600
+model_rigid		east_tenamentB_med_low.cas
+lod
+max_distance	1000
+model_rigid		east_tenamentB_low.cas
+lod
+max_distance	4000
+model_rigid		east_tenamentB_lowest.cas
+
+
+type			east_tenamentB_props
+lod
+max_distance	150
+model_rigid		east_tenamentb_props_high.cas
+lod
+max_distance	300
+model_rigid		east_tenamentb_props_med.cas
+lod
+max_distance	600
+model_rigid		east_tenamentb_props_med_low.cas
+
+
+type			east_tenamentC
+lod
+max_distance	150
+model_rigid		east_tenamentC_high.cas
+lod
+max_distance	300
+model_rigid		east_tenamentC_med.cas
+lod
+max_distance	600
+model_rigid		east_tenamentC_med_low.cas
+lod
+max_distance	1000
+model_rigid		east_tenamentC_low.cas
+lod
+max_distance	4000
+model_rigid		east_tenamentC_lowest.cas
+
+
+type			east_tenament_C_props_big
+lod
+max_distance	200
+model_rigid		east_tenament_C_props_big_high.CAS
+lod
+max_distance	400
+model_rigid		east_tenament_C_props_big_med.CAS
+lod
+max_distance	800
+model_rigid		east_tenament_C_props_big_low.CAS
+
+
+type			east_tenament_C_props_medium
+lod
+max_distance	200
+model_rigid		east_tenament_C_props_medium_high.CAS
+lod
+max_distance	400
+model_rigid		east_tenament_C_props_medium_med.CAS
+lod
+max_distance	800
+model_rigid		east_tenament_C_props_medium_low.CAS
+
+
+type			east_tenament_C_props_small
+lod
+max_distance	200
+model_rigid		east_tenament_C_props_small_high.CAS
+lod
+max_distance	400
+model_rigid		east_tenament_C_props_small_med.CAS
+lod
+max_distance	800
+model_rigid		east_tenament_C_props_small_low.CAS
+
+
+type			east_tenamentD
+lod
+max_distance	150
+model_rigid		east_tenamentD_high.cas
+lod
+max_distance	300
+model_rigid		east_tenamentD_med.cas
+lod
+max_distance	600
+model_rigid		east_tenamentD_med_low.cas
+lod
+max_distance	1000
+model_rigid		east_tenamentD_low.cas
+lod
+max_distance	4000
+model_rigid		east_tenamentD_lowest.cas
+
+
+type			east_tenament_D_props_big
+lod
+max_distance	200
+model_rigid		east_tenament_D_props_big_high.CAS
+lod
+max_distance	400
+model_rigid		east_tenament_D_props_big_med.CAS
+lod
+max_distance	800
+model_rigid		east_tenament_D_props_big_low.CAS
+
+
+type			east_tenament_D_props_medium
+lod
+max_distance	200
+model_rigid		east_tenament_D_props_medium_high.CAS
+lod
+max_distance	400
+model_rigid		east_tenament_D_props_medium_med.CAS
+lod
+max_distance	800
+model_rigid		east_tenament_D_props_medium_low.CAS
+
+
+type			east_tenament_D_props_small
+lod
+max_distance	200
+model_rigid		east_tenament_D_props_small_high.CAS
+lod
+max_distance	400
+model_rigid		east_tenament_D_props_small_med.CAS
+lod
+max_distance	800
+model_rigid		east_tenament_D_props_small_low.CAS
+
+
+type			egyptian_tenamentA
+lod
+max_distance	150
+model_rigid		egyptian_tenamentA_high.cas
+lod
+max_distance	300
+model_rigid		egyptian_tenamentA_med.cas
+lod
+max_distance	600
+model_rigid		egyptian_tenamentA_med_low.cas
+lod
+max_distance	1000
+model_rigid		egyptian_tenamentA_low.cas
+lod
+max_distance	4000
+model_rigid		egyptian_tenamentA_lowest.cas
+
+
+type			egyptian_tenament_A_props_big
+lod
+max_distance	200
+model_rigid		egyptian_tenament_A_props_big_high.CAS
+lod
+max_distance	400
+model_rigid		egyptian_tenament_A_props_big_med.CAS
+lod
+max_distance	800
+model_rigid		egyptian_tenament_A_props_big_low.CAS
+
+
+type			egyptian_tenament_A_props_medium
+lod
+max_distance	200
+model_rigid		egyptian_tenament_A_props_medium_high.CAS
+lod
+max_distance	400
+model_rigid		egyptian_tenament_A_props_medium_med.CAS
+lod
+max_distance	800
+model_rigid		egyptian_tenament_A_props_medium_low.CAS
+
+
+type			egyptian_tenament_A_props_small
+lod
+max_distance	200
+model_rigid		egyptian_tenament_A_props_small_high.CAS
+lod
+max_distance	400
+model_rigid		egyptian_tenament_A_props_small_med.CAS
+lod
+max_distance	800
+model_rigid		egyptian_tenament_A_props_small_low.CAS
+
+
+type			egyptian_tenamentB
+lod
+max_distance	150
+model_rigid		egyptian_tenamentB_high.cas
+lod
+max_distance	300
+model_rigid		egyptian_tenamentB_med.cas
+lod
+max_distance	600
+model_rigid		egyptian_tenamentB_med_low.cas
+lod
+max_distance	1000
+model_rigid		egyptian_tenamentB_low.cas
+lod
+max_distance	4000
+model_rigid		egyptian_tenamentB_lowest.cas
+
+
+type			egyptian_tenamentB_props
+lod
+max_distance	150
+model_rigid		egyptian_tenamentb_props_high.cas
+lod
+max_distance	300
+model_rigid		egyptian_tenamentb_props_med.cas
+lod
+max_distance	600
+model_rigid		egyptian_tenamentb_props_med_low.cas
+
+
+
+type			egyptian_tenamentC
+lod
+max_distance	150
+model_rigid		egyptian_tenamentC_high.cas
+lod
+max_distance	300
+model_rigid		egyptian_tenamentC_med.cas
+lod
+max_distance	600
+model_rigid		egyptian_tenamentC_med_low.cas
+lod
+max_distance	1000
+model_rigid		egyptian_tenamentC_low.cas
+lod
+max_distance	4000
+model_rigid		egyptian_tenamentC_lowest.cas
+
+
+type			egyptian_tenament_C_props_big
+lod
+max_distance	200
+model_rigid		egyptian_tenament_C_props_big_high.CAS
+lod
+max_distance	400
+model_rigid		egyptian_tenament_C_props_big_med.CAS
+lod
+max_distance	800
+model_rigid		egyptian_tenament_C_props_big_low.CAS
+
+
+type			egyptian_tenament_C_props_medium
+lod
+max_distance	200
+model_rigid		egyptian_tenament_C_props_medium_high.CAS
+lod
+max_distance	400
+model_rigid		egyptian_tenament_C_props_medium_med.CAS
+lod
+max_distance	800
+model_rigid		egyptian_tenament_C_props_medium_low.CAS
+
+
+type			egyptian_tenament_C_props_small
+lod
+max_distance	200
+model_rigid		egyptian_tenament_C_props_small_high.CAS
+lod
+max_distance	400
+model_rigid		egyptian_tenament_C_props_small_med.CAS
+lod
+max_distance	800
+model_rigid		egyptian_tenament_C_props_small_low.CAS
+
+
+type			egyptian_tenamentD
+lod
+max_distance	150
+model_rigid		egyptian_tenamentD_high.cas
+lod
+max_distance	300
+model_rigid		egyptian_tenamentD_med.cas
+lod
+max_distance	600
+model_rigid		egyptian_tenamentD_med_low.cas
+lod
+max_distance	1000
+model_rigid		egyptian_tenamentD_low.cas
+lod
+max_distance	4000
+model_rigid		egyptian_tenamentD_lowest.cas
+
+
+type			egyptian_tenament_D_props_big
+lod
+max_distance	200
+model_rigid		egyptian_tenament_D_props_big_high.CAS
+lod
+max_distance	400
+model_rigid		egyptian_tenament_D_props_big_med.CAS
+lod
+max_distance	800
+model_rigid		egyptian_tenament_D_props_big_low.CAS
+
+
+type			egyptian_tenament_D_props_medium
+lod
+max_distance	200
+model_rigid		egyptian_tenament_D_props_medium_high.CAS
+lod
+max_distance	400
+model_rigid		egyptian_tenament_D_props_medium_med.CAS
+lod
+max_distance	800
+model_rigid		egyptian_tenament_D_props_medium_low.CAS
+
+
+type			egyptian_tenament_D_props_small
+lod
+max_distance	200
+model_rigid		egyptian_tenament_D_props_small_high.CAS
+lod
+max_distance	400
+model_rigid		egyptian_tenament_D_props_small_med.CAS
+lod
+max_distance	800
+model_rigid		egyptian_tenament_D_props_small_low.CAS
+
+
+;;;;;;;;;;;;;;;;;;;;Egyptian_village_buildings
+type			egyptian_village_compound_wall
+lod
+max_distance	150
+model_rigid		egyptian_village_compound_wall_high.CAS
+lod
+max_distance	300
+model_rigid		egyptian_village_compound_wall_med.CAS
+lod
+max_distance	600
+model_rigid		egyptian_village_compound_wall_low.CAS
+lod
+max_distance	1000
+model_rigid		egyptian_village_compound_wall_lowest.CAS
+
+;this is an invisible item, used for attaching helper collision files to in dbb files
+
+type			dummy
+lod
+max_distance	150
+model_rigid		dummy.CAS
+

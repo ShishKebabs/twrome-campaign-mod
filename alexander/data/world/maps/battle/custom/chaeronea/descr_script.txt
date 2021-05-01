@@ -1,0 +1,3956 @@
+script
+	prepare_for_battle
+	heed_pause on
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;
+	;;;	label our units
+	;;;
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	label_unit 0 0 0	PLAYER_GENERAL
+	label_unit 0 0 1	PLAYER_CAVALRY1
+	label_unit 0 0 2	PLAYER_CAVALRY2
+	label_unit 0 0 3	PLAYER_CAVALRY3
+	label_unit 0 0 4	PLAYER_CAVALRY4
+
+	label_unit 0 1 0	PHILIP_GENERAL
+	label_unit 0 1 1	PHILIP_PELTASTS1
+	label_unit 0 1 2	PHILIP_PELTASTS2
+	label_unit 0 1 3	PHILIP_PHALANX1
+	label_unit 0 1 4	PHILIP_PHALANX2
+	label_unit 0 1 5	PHILIP_PHALANX3
+	label_unit 0 1 6	PHILIP_PHALANX4
+	label_unit 0 1 7	PHILIP_PHALANX5
+  	label_unit 0 1 8	PHILIP_PHALANX6
+	label_unit 0 1 9	PHILIP_PHALANX7
+  	label_unit 0 1 10	PHILIP_PHALANX8
+	label_unit 0 1 11	PHILIP_PHALANX9
+
+	label_unit 1 0 0	AI_GENERAL
+	label_unit 1 0 1	AI_PELTASTS1
+	label_unit 1 0 2	AI_PELTASTS2
+	label_unit 1 0 3	AI_PHALANX1
+	label_unit 1 0 4	AI_PHALANX2
+	label_unit 1 0 5	AI_PHALANX3
+	label_unit 1 0 6	AI_PHALANX4
+	label_unit 1 0 7	AI_PHALANX5
+	label_unit 1 0 8	AI_PHALANX6
+	label_unit 1 0 9	AI_PHALANX7
+  	label_unit 1 0 10	AI_PHALANX8
+   	label_unit 1 0 11	AI_PHALANX9
+	label_unit 1 0 12	AI_PHALANX10
+	label_unit 1 0 13	AI_SACRED_BAND1
+	label_unit 1 0 14	AI_SACRED_BAND2
+	label_unit 1 0 15	AI_SACRED_BAND3
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;
+	;;;	disable the UI, AI, and wait for deployment to finish
+	;;;
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	disable_cursor
+	suspend_unscripted_advice true
+	disable_shortcuts true
+	disable_entire_ui
+	inhibit_camera_input true
+	camera_restrictions_set off
+	camera_default_mode_set tw
+	hide_ui
+	ai_active_set off
+
+	while ! I_BattleStarted
+	end_while
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;
+	;;;	set the music and the camera
+	;;;
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	battle_default_camera
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;
+	;;;	Suppress morale/unit behaviour
+	;;;
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	unit_set_morale PLAYER_GENERAL high
+	unit_set_morale PLAYER_CAVALRY1 high
+	unit_set_morale PLAYER_CAVALRY2 high
+	unit_set_morale PLAYER_CAVALRY3 high
+	unit_set_morale PLAYER_CAVALRY4 high
+
+	unit_set_morale PHILIP_GENERAL high
+	unit_set_morale PHILIP_PHALANX2 high
+	unit_set_morale PHILIP_PHALANX3 high
+	unit_set_morale PHILIP_PHALANX4 high
+	unit_set_morale PHILIP_PHALANX5 high
+	unit_set_morale PHILIP_PHALANX6 high
+	unit_set_morale PHILIP_PHALANX7 high
+	unit_set_morale PHILIP_PHALANX8 high
+	unit_set_morale PHILIP_PHALANX9 high
+	unit_set_morale PHILIP_PHALANX1 high
+	unit_set_morale PHILIP_PELTASTS1 high
+	unit_set_morale PHILIP_PELTASTS2 high
+
+	unit_set_morale AI_GENERAL high
+	unit_set_morale AI_PELTASTS1 high
+	unit_set_morale AI_PHALANX1 high
+	unit_set_morale AI_PHALANX2 high
+	unit_set_morale AI_PHALANX3 high
+	unit_set_morale AI_PHALANX4 high
+	unit_set_morale AI_PHALANX5 high
+	unit_set_morale AI_PHALANX6 high
+	unit_set_morale AI_PHALANX7 high
+	unit_set_morale AI_PHALANX8 high
+	unit_set_morale AI_PHALANX9 high
+	unit_set_morale AI_PHALANX10 high
+	unit_set_morale AI_PELTASTS2 high
+
+	unit_set_morale AI_SACRED_BAND1 high
+	unit_set_morale AI_SACRED_BAND2 high
+	unit_set_morale AI_SACRED_BAND3 high
+
+	unit_set_skirmish_mode		PHILIP_PELTASTS1		off
+	unit_set_skirmish_mode		PHILIP_PELTASTS2		off
+	unit_set_skirmish_mode		AI_PELTASTS1			off
+	unit_set_skirmish_mode		AI_PELTASTS2			off
+
+	unit_set_fire_at_will_mode	PHILIP_PELTASTS1		off
+	unit_set_fire_at_will_mode	PHILIP_PELTASTS2		off
+	unit_set_fire_at_will_mode	AI_PELTASTS1			off
+	unit_set_fire_at_will_mode	AI_PELTASTS2			off
+
+	define_unit_group GRP_AI_SACRED_BAND AI_SACRED_BAND1 AI_SACRED_BAND2 AI_SACRED_BAND3
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;
+	;;;	Set up global counters and positions
+	;;;
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	steal_esc_key
+	declare_counter go_to_end_phase
+	declare_counter battle_has_started
+	declare_counter dont_reposition_players_cavalry
+	declare_counter sacred_band_progress_points
+	declare_counter sacred_band_routing
+	declare_counter release_sacred_band
+	declare_counter ai_general_is_released
+	declare_counter philip_general_is_released
+	declare_counter ai_general_patrol_direction
+	declare_counter philip_general_patrol_direction
+	declare_counter player_has_attacked_ai_main_army
+	declare_counter philip_routing_points
+	declare_counter philip_phalanx_experience
+	declare_counter naughty_player
+	declare_counter ai_phalanx_routing
+	declare_counter player_loses
+	declare_counter unset_philips_morale
+	declare_counter keep_sacred_band_moving_thread_trigger
+	declare_counter player_is_doing_an_end_run
+	declare_counter sacred_band_one_has_turned
+	declare_counter sacred_band_two_has_turned
+	declare_counter sacred_band_three_has_turned
+	declare_counter sacred_band_one_has_routed
+	declare_counter sacred_band_two_has_routed
+	declare_counter sacred_band_three_has_routed
+
+	set_counter philip_phalanx_experience 5
+
+	label_location 122.4 321.37 end_run_trigger_a
+	label_location 22.7 91.55 end_run_trigger_b
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;
+	;;;	Set up global monitors
+	;;;
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	EscPressed event monitor, jumps the script to the 
+	;;;	the end phase when ESC is pressed during opening
+	;;;	cutscene
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	monitor_event EscPressed TrueCondition
+		set_counter go_to_end_phase 1
+		terminate_monitor
+	end_monitor
+
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	Make Alexander mortal after his unit sustains
+	;;;	a certain number of casualties.
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	
+	monitor_conditions I_PercentageUnitKilled PLAYER_GENERAL > 80
+		console_command vulnerable_general "Alexander"	
+
+		terminate_monitor
+	end_monitor
+
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	These monitors make the AI general march up
+	;;;	and down behind his own line until he gets
+	;;;	tangled with someone
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	monitor_conditions I_UnitDistanceFromPosition AI_GENERAL 125, -61 < 10
+		and I_CompareCounter ai_general_patrol_direction = 0
+
+		if I_CompareCounter ai_general_is_released = 1
+			terminate_monitor
+		end_if
+
+		set_counter ai_general_patrol_direction 1
+
+		unit_order_move AI_GENERAL 41, -11 run
+
+		battle_wait 7
+
+		unit_order_move AI_GENERAL 41, -11
+	end_monitor
+
+
+	monitor_conditions I_UnitDistanceFromPosition AI_GENERAL 41, -11 < 10
+		and I_CompareCounter ai_general_patrol_direction = 1
+
+		if I_CompareCounter ai_general_is_released = 1
+			terminate_monitor
+		end_if
+
+		set_counter ai_general_patrol_direction 0
+
+		unit_order_move AI_GENERAL 125, -61 run
+
+		battle_wait 6
+
+		unit_order_move AI_GENERAL 125, -61
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngaged AI_GENERAL
+		release_unit AI_GENERAL
+
+		set_counter ai_general_is_released 1
+
+		terminate_monitor
+	end_monitor
+
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	These monitors make Philip march up and
+	;;;	down behind his own line until he gets
+	;;;	tangled with someone
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+	monitor_conditions I_UnitDistanceFromPosition PHILIP_GENERAL 169, -33 < 10
+		and I_CompareCounter philip_general_patrol_direction = 0
+
+		if I_CompareCounter philip_general_is_released = 1
+			terminate_monitor
+		end_if
+
+		set_counter philip_general_patrol_direction 1
+
+		unit_order_move PHILIP_GENERAL 92, 37 run
+
+		battle_wait 5
+
+		unit_order_move PHILIP_GENERAL 92, 37
+	end_monitor
+
+
+	monitor_conditions I_UnitDistanceFromPosition PHILIP_GENERAL 92, 37 < 10
+		and I_CompareCounter philip_general_patrol_direction = 1
+
+		if I_CompareCounter philip_general_is_released = 1
+			terminate_monitor
+		end_if
+
+		set_counter philip_general_patrol_direction 0
+
+		unit_order_move PHILIP_GENERAL 169, -33 run
+
+		battle_wait 5
+
+		unit_order_move PHILIP_GENERAL 169, -33
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngaged PHILIP_GENERAL
+		release_unit PHILIP_GENERAL
+
+		set_counter philip_general_is_released 1
+
+		terminate_monitor
+	end_monitor
+
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	Make Chares mortal once his unit gets below a
+	;;;	certain size
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	monitor_conditions I_PercentageUnitKilled AI_GENERAL > 80
+		console_command vulnerable_general "Chares"
+
+		terminate_monitor
+	end_monitor
+
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	Auto-rout Philip when his unit gets below a
+	;;;	certain size - he does stuff after this
+	;;;	battle so he can't die
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	monitor_conditions I_PercentageUnitKilled PHILIP_GENERAL > 90
+		unit_set_morale PHILIP_GENERAL routing
+
+		terminate_monitor
+	end_monitor
+
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	These monitors force the sacred band to rout after 
+	;;;	sustaining ~80% casualties, as they have a tendency 
+	;;;	to fight to the bitter end on occasion
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	monitor_conditions I_PercentageUnitKilled AI_SACRED_BAND1 > 78
+		unit_set_morale AI_SACRED_BAND1 routing
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_PercentageUnitKilled AI_SACRED_BAND2 > 81
+		unit_set_morale AI_SACRED_BAND2 routing
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_PercentageUnitKilled AI_SACRED_BAND3 > 76
+		unit_set_morale AI_SACRED_BAND3 routing
+		terminate_monitor
+	end_monitor
+
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	Catch when the sacred band are routing and
+	;;;	increase the longevity of the allied phalanx.
+	;;;	When all three sacred band units have been
+	;;;	routed, unset the AI phalanx' morale
+	;;;	(i.e. they can now rout)
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	monitor_conditions I_IsUnitRouting AI_SACRED_BAND1
+		unit_set_morale AI_SACRED_BAND1 routing
+		inc_counter sacred_band_routing 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitRouting AI_SACRED_BAND2
+		unit_set_morale AI_SACRED_BAND2 routing
+		inc_counter sacred_band_routing 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitRouting AI_SACRED_BAND3
+		unit_set_morale AI_SACRED_BAND3 routing
+		inc_counter sacred_band_routing 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_CompareCounter sacred_band_routing = 1
+		if I_CompareCounter sacred_band_one_has_routed = 0
+			set_counter sacred_band_one_has_routed 1
+
+			stop_sound_event CHAERONEA_SPEECH_10
+
+			battle_wait 1 
+
+			play_sound_event CHAERONEA_SPEECH_11 tag = CHAERONEA_SPEECH_11
+
+			unit_set_armour_upgrade AI_GENERAL 2
+			unit_set_armour_upgrade AI_PELTASTS1 2
+			unit_set_armour_upgrade AI_PHALANX3 2
+			unit_set_armour_upgrade AI_PHALANX4 2
+			unit_set_armour_upgrade AI_PHALANX5 2
+			unit_set_armour_upgrade AI_PHALANX6 2
+			unit_set_armour_upgrade AI_PHALANX7 2
+			unit_set_armour_upgrade AI_PHALANX8 2
+			unit_set_armour_upgrade AI_PHALANX9 2
+			unit_set_armour_upgrade AI_PHALANX10 2
+			unit_set_armour_upgrade AI_SACRED_BAND1 2
+			unit_set_armour_upgrade AI_SACRED_BAND2 2
+			unit_set_armour_upgrade AI_SACRED_BAND3 2
+			unit_set_armour_upgrade AI_PHALANX2 2
+			unit_set_armour_upgrade AI_PHALANX1 2
+
+			unit_set_weapon_upgrade PHILIP_GENERAL 1
+			unit_set_weapon_upgrade PHILIP_PELTASTS1 1
+			unit_set_weapon_upgrade PHILIP_PHALANX2 1
+			unit_set_weapon_upgrade PHILIP_PHALANX3 1
+			unit_set_weapon_upgrade	PHILIP_PHALANX4 1
+			unit_set_weapon_upgrade	PHILIP_PHALANX5 1
+			unit_set_weapon_upgrade PHILIP_PHALANX6 1
+  			unit_set_weapon_upgrade PHILIP_PHALANX7 1
+		   	unit_set_weapon_upgrade PHILIP_PELTASTS2 1
+			unit_set_weapon_upgrade PHILIP_PHALANX8 1
+		  	unit_set_weapon_upgrade PHILIP_PHALANX9 1
+			unit_set_weapon_upgrade PHILIP_PHALANX1 1
+
+			if I_CompareCounter philip_phalanx_experience = 8
+				unit_set_experience PHILIP_PHALANX2 9
+				unit_set_experience PHILIP_PHALANX3 9
+				unit_set_experience PHILIP_PHALANX4 9
+				unit_set_experience PHILIP_PHALANX5 9
+				unit_set_experience PHILIP_PHALANX6 9
+  				unit_set_experience PHILIP_PHALANX7 9
+				unit_set_experience PHILIP_PHALANX8 9
+		  		unit_set_experience PHILIP_PHALANX9 9
+				unit_set_experience PHILIP_PHALANX1 9
+			
+				set_counter philip_phalanx_experience 9
+			end_if
+			if I_CompareCounter philip_phalanx_experience = 7
+				unit_set_experience PHILIP_PHALANX2 8
+				unit_set_experience PHILIP_PHALANX3 8
+				unit_set_experience PHILIP_PHALANX4 8
+				unit_set_experience PHILIP_PHALANX5 8
+				unit_set_experience PHILIP_PHALANX6 8
+  				unit_set_experience PHILIP_PHALANX7 8
+				unit_set_experience PHILIP_PHALANX8 8
+		  		unit_set_experience PHILIP_PHALANX9 8
+				unit_set_experience PHILIP_PHALANX1 8
+			
+				set_counter philip_phalanx_experience 8
+			end_if
+			if I_CompareCounter philip_phalanx_experience = 6
+				unit_set_experience PHILIP_PHALANX2 7
+				unit_set_experience PHILIP_PHALANX3 7
+				unit_set_experience PHILIP_PHALANX4 7
+				unit_set_experience PHILIP_PHALANX5 7
+				unit_set_experience PHILIP_PHALANX6 7
+  				unit_set_experience PHILIP_PHALANX7 7
+				unit_set_experience PHILIP_PHALANX8 7
+		  		unit_set_experience PHILIP_PHALANX9 7
+				unit_set_experience PHILIP_PHALANX1 7
+			
+				set_counter philip_phalanx_experience 7
+			end_if
+			if I_CompareCounter philip_phalanx_experience = 5
+				unit_set_experience PHILIP_PHALANX2 6
+				unit_set_experience PHILIP_PHALANX3 6
+				unit_set_experience PHILIP_PHALANX4 6
+				unit_set_experience PHILIP_PHALANX5 6
+				unit_set_experience PHILIP_PHALANX6 6
+				unit_set_experience PHILIP_PHALANX7 6
+				unit_set_experience PHILIP_PHALANX8 6
+		  		unit_set_experience PHILIP_PHALANX9 6
+				unit_set_experience PHILIP_PHALANX1 6
+			
+				set_counter philip_phalanx_experience 6
+			end_if
+			if I_CompareCounter philip_phalanx_experience = 4
+				unit_set_experience PHILIP_PHALANX2 5
+				unit_set_experience PHILIP_PHALANX3 5
+				unit_set_experience PHILIP_PHALANX4 5
+				unit_set_experience PHILIP_PHALANX5 5
+				unit_set_experience PHILIP_PHALANX6 5
+  				unit_set_experience PHILIP_PHALANX7 5
+				unit_set_experience PHILIP_PHALANX8 5
+		  		unit_set_experience PHILIP_PHALANX9 5
+				unit_set_experience PHILIP_PHALANX1 5
+			
+				set_counter philip_phalanx_experience 5
+			end_if
+			if I_CompareCounter philip_phalanx_experience = 3
+				unit_set_experience PHILIP_PHALANX2 4
+				unit_set_experience PHILIP_PHALANX3 4
+				unit_set_experience PHILIP_PHALANX4 4
+				unit_set_experience PHILIP_PHALANX5 4
+				unit_set_experience PHILIP_PHALANX6 4
+  				unit_set_experience PHILIP_PHALANX7 4
+				unit_set_experience PHILIP_PHALANX8 4
+		  		unit_set_experience PHILIP_PHALANX9 4
+				unit_set_experience PHILIP_PHALANX1 4
+		
+				set_counter philip_phalanx_experience 4
+			end_if
+			if I_CompareCounter philip_phalanx_experience = 2
+				unit_set_experience PHILIP_PHALANX2 3
+				unit_set_experience PHILIP_PHALANX3 3
+				unit_set_experience PHILIP_PHALANX4 3
+				unit_set_experience PHILIP_PHALANX5 3
+				unit_set_experience PHILIP_PHALANX6 3
+  				unit_set_experience PHILIP_PHALANX7 3
+				unit_set_experience PHILIP_PHALANX8 3
+		  		unit_set_experience PHILIP_PHALANX9 3
+				unit_set_experience PHILIP_PHALANX1 3
+			
+				set_counter philip_phalanx_experience 3
+			end_if
+	
+			terminate_monitor
+		end_if
+	end_monitor
+
+
+	monitor_conditions I_CompareCounter sacred_band_routing = 2
+		if I_CompareCounter sacred_band_two_has_routed = 0
+			set_counter sacred_band_two_has_routed 1
+
+			stop_sound_event CHAERONEA_SPEECH_10
+			stop_sound_event CHAERONEA_SPEECH_11
+
+			battle_wait 1
+
+			play_sound_event CHAERONEA_SPEECH_12 tag = CHAERONEA_SPEECH_12
+
+			unit_set_armour_upgrade AI_GENERAL 1
+			unit_set_armour_upgrade AI_PELTASTS1 1
+			unit_set_armour_upgrade AI_PHALANX3 1
+			unit_set_armour_upgrade AI_PHALANX4 1
+			unit_set_armour_upgrade AI_PHALANX5 1
+			unit_set_armour_upgrade AI_PHALANX6 1
+			unit_set_armour_upgrade AI_PHALANX7 1
+			unit_set_armour_upgrade AI_PHALANX8 1
+			unit_set_armour_upgrade AI_PHALANX9 1
+			unit_set_armour_upgrade AI_PHALANX10 1
+			unit_set_armour_upgrade AI_SACRED_BAND1 1
+			unit_set_armour_upgrade AI_SACRED_BAND2 1
+			unit_set_armour_upgrade AI_SACRED_BAND3 1
+			unit_set_armour_upgrade AI_PHALANX2 1
+			unit_set_armour_upgrade AI_PHALANX1 1
+
+			unit_set_weapon_upgrade PHILIP_GENERAL 2
+			unit_set_weapon_upgrade PHILIP_PELTASTS1 2
+			unit_set_weapon_upgrade PHILIP_PHALANX2 2
+			unit_set_weapon_upgrade PHILIP_PHALANX3 2
+			unit_set_weapon_upgrade	PHILIP_PHALANX4 2
+			unit_set_weapon_upgrade	PHILIP_PHALANX5 2
+			unit_set_weapon_upgrade PHILIP_PHALANX6 2
+  			unit_set_weapon_upgrade PHILIP_PHALANX7 2
+		   	unit_set_weapon_upgrade PHILIP_PELTASTS2 2
+			unit_set_weapon_upgrade PHILIP_PHALANX8 2
+		  	unit_set_weapon_upgrade PHILIP_PHALANX9 2
+			unit_set_weapon_upgrade PHILIP_PHALANX1 2
+
+			if I_CompareCounter philip_phalanx_experience = 8
+				unit_set_experience PHILIP_PHALANX2 9
+				unit_set_experience PHILIP_PHALANX3 9
+				unit_set_experience PHILIP_PHALANX4 9
+				unit_set_experience PHILIP_PHALANX5 9
+				unit_set_experience PHILIP_PHALANX6 9
+  				unit_set_experience PHILIP_PHALANX7 9
+				unit_set_experience PHILIP_PHALANX8 9
+		  		unit_set_experience PHILIP_PHALANX9 9
+				unit_set_experience PHILIP_PHALANX1 9
+			
+				set_counter philip_phalanx_experience 9
+			end_if
+			if I_CompareCounter philip_phalanx_experience = 7
+				unit_set_experience PHILIP_PHALANX2 8
+				unit_set_experience PHILIP_PHALANX3 8
+				unit_set_experience PHILIP_PHALANX4 8
+				unit_set_experience PHILIP_PHALANX5 8
+				unit_set_experience PHILIP_PHALANX6 8
+  				unit_set_experience PHILIP_PHALANX7 8
+				unit_set_experience PHILIP_PHALANX8 8
+		  		unit_set_experience PHILIP_PHALANX9 8
+				unit_set_experience PHILIP_PHALANX1 8
+			
+				set_counter philip_phalanx_experience 8
+			end_if
+			if I_CompareCounter philip_phalanx_experience = 6
+				unit_set_experience PHILIP_PHALANX2 7
+				unit_set_experience PHILIP_PHALANX3 7
+				unit_set_experience PHILIP_PHALANX4 7
+				unit_set_experience PHILIP_PHALANX5 7
+				unit_set_experience PHILIP_PHALANX6 7
+  				unit_set_experience PHILIP_PHALANX7 7
+				unit_set_experience PHILIP_PHALANX8 7
+		  		unit_set_experience PHILIP_PHALANX9 7
+				unit_set_experience PHILIP_PHALANX1 7
+			
+				set_counter philip_phalanx_experience 7
+			end_if
+			if I_CompareCounter philip_phalanx_experience = 5
+				unit_set_experience PHILIP_PHALANX2 6
+				unit_set_experience PHILIP_PHALANX3 6
+				unit_set_experience PHILIP_PHALANX4 6
+				unit_set_experience PHILIP_PHALANX5 6
+				unit_set_experience PHILIP_PHALANX6 6
+  				unit_set_experience PHILIP_PHALANX7 6
+				unit_set_experience PHILIP_PHALANX8 6
+		  		unit_set_experience PHILIP_PHALANX9 6
+				unit_set_experience PHILIP_PHALANX1 6
+		
+				set_counter philip_phalanx_experience 6
+			end_if
+			if I_CompareCounter philip_phalanx_experience = 4
+				unit_set_experience PHILIP_PHALANX2 5
+				unit_set_experience PHILIP_PHALANX3 5
+				unit_set_experience PHILIP_PHALANX4 5
+				unit_set_experience PHILIP_PHALANX5 5
+				unit_set_experience PHILIP_PHALANX6 5
+  				unit_set_experience PHILIP_PHALANX7 5
+				unit_set_experience PHILIP_PHALANX8 5
+		  		unit_set_experience PHILIP_PHALANX9 5
+				unit_set_experience PHILIP_PHALANX1 5
+			
+				set_counter philip_phalanx_experience 5
+			end_if
+			if I_CompareCounter philip_phalanx_experience = 3
+				unit_set_experience PHILIP_PHALANX2 4
+				unit_set_experience PHILIP_PHALANX3 4
+				unit_set_experience PHILIP_PHALANX4 4
+				unit_set_experience PHILIP_PHALANX5 4
+				unit_set_experience PHILIP_PHALANX6 4
+  				unit_set_experience PHILIP_PHALANX7 4
+				unit_set_experience PHILIP_PHALANX8 4
+		  		unit_set_experience PHILIP_PHALANX9 4
+				unit_set_experience PHILIP_PHALANX1 4
+		
+				set_counter philip_phalanx_experience 4
+			end_if
+			if I_CompareCounter philip_phalanx_experience = 2
+				unit_set_experience PHILIP_PHALANX2 3
+				unit_set_experience PHILIP_PHALANX3 3
+				unit_set_experience PHILIP_PHALANX4 3
+				unit_set_experience PHILIP_PHALANX5 3
+				unit_set_experience PHILIP_PHALANX6 3
+  				unit_set_experience PHILIP_PHALANX7 3
+				unit_set_experience PHILIP_PHALANX8 3
+		  		unit_set_experience PHILIP_PHALANX9 3
+				unit_set_experience PHILIP_PHALANX1 3
+
+				set_counter philip_phalanx_experience 3
+			end_if
+
+			terminate_monitor
+		end_if
+	end_monitor
+
+	monitor_conditions I_CompareCounter sacred_band_routing = 3
+		inc_counter sacred_band_routing 1
+
+		stop_sound_event CHAERONEA_SPEECH_10
+		stop_sound_event CHAERONEA_SPEECH_11
+		stop_sound_event CHAERONEA_SPEECH_12
+
+		battle_wait 1
+
+		play_sound_event CHAERONEA_SPEECH_13 tag = CHAERONEA_SPEECH_13
+
+		unit_set_armour_upgrade AI_GENERAL 0
+		unit_set_armour_upgrade AI_PELTASTS1 0
+		unit_set_armour_upgrade AI_PHALANX3 0
+		unit_set_armour_upgrade AI_PHALANX4 0
+		unit_set_armour_upgrade AI_PHALANX5 0
+		unit_set_armour_upgrade AI_PHALANX6 0
+		unit_set_armour_upgrade AI_PHALANX7 0
+		unit_set_armour_upgrade AI_PHALANX8 0
+		unit_set_armour_upgrade AI_PHALANX9 0
+		unit_set_armour_upgrade AI_PHALANX10 0
+		unit_set_armour_upgrade AI_SACRED_BAND1 0
+		unit_set_armour_upgrade AI_SACRED_BAND2 0
+		unit_set_armour_upgrade AI_SACRED_BAND3 0
+		unit_set_armour_upgrade AI_PHALANX2 0
+		unit_set_armour_upgrade AI_PHALANX1 0
+
+		unit_set_weapon_upgrade PHILIP_GENERAL 3
+		unit_set_weapon_upgrade PHILIP_PELTASTS1 3
+		unit_set_weapon_upgrade PHILIP_PHALANX2 3
+		unit_set_weapon_upgrade PHILIP_PHALANX3 3
+		unit_set_weapon_upgrade	PHILIP_PHALANX4 3
+		unit_set_weapon_upgrade	PHILIP_PHALANX5 3
+		unit_set_weapon_upgrade PHILIP_PHALANX6 3
+		unit_set_weapon_upgrade PHILIP_PHALANX7 3
+	   	unit_set_weapon_upgrade PHILIP_PELTASTS2 3
+		unit_set_weapon_upgrade PHILIP_PHALANX8 3
+	  	unit_set_weapon_upgrade PHILIP_PHALANX9 3
+		unit_set_weapon_upgrade PHILIP_PHALANX1 3
+
+		if I_CompareCounter philip_phalanx_experience = 8
+			unit_set_experience PHILIP_PHALANX2 9
+			unit_set_experience PHILIP_PHALANX3 9
+			unit_set_experience PHILIP_PHALANX4 9
+			unit_set_experience PHILIP_PHALANX5 9
+			unit_set_experience PHILIP_PHALANX6 9
+			unit_set_experience PHILIP_PHALANX7 9
+			unit_set_experience PHILIP_PHALANX8 9
+	  		unit_set_experience PHILIP_PHALANX9 9
+			unit_set_experience PHILIP_PHALANX1 9
+			
+			set_counter philip_phalanx_experience 9
+		end_if
+		if I_CompareCounter philip_phalanx_experience = 7
+			unit_set_experience PHILIP_PHALANX2 8
+			unit_set_experience PHILIP_PHALANX3 8
+			unit_set_experience PHILIP_PHALANX4 8
+			unit_set_experience PHILIP_PHALANX5 8
+			unit_set_experience PHILIP_PHALANX6 8
+			unit_set_experience PHILIP_PHALANX7 8
+			unit_set_experience PHILIP_PHALANX8 8
+	  		unit_set_experience PHILIP_PHALANX9 8
+			unit_set_experience PHILIP_PHALANX1 8
+			
+			set_counter philip_phalanx_experience 8
+		end_if
+		if I_CompareCounter philip_phalanx_experience = 6
+			unit_set_experience PHILIP_PHALANX2 7
+			unit_set_experience PHILIP_PHALANX3 7
+			unit_set_experience PHILIP_PHALANX4 7
+			unit_set_experience PHILIP_PHALANX5 7
+			unit_set_experience PHILIP_PHALANX6 7
+			unit_set_experience PHILIP_PHALANX7 7
+			unit_set_experience PHILIP_PHALANX8 7
+	  		unit_set_experience PHILIP_PHALANX9 7
+			unit_set_experience PHILIP_PHALANX1 7
+
+			set_counter philip_phalanx_experience 7
+		end_if
+		if I_CompareCounter philip_phalanx_experience = 5
+			unit_set_experience PHILIP_PHALANX2 6
+			unit_set_experience PHILIP_PHALANX3 6
+			unit_set_experience PHILIP_PHALANX4 6
+			unit_set_experience PHILIP_PHALANX5 6
+			unit_set_experience PHILIP_PHALANX6 6
+			unit_set_experience PHILIP_PHALANX7 6
+			unit_set_experience PHILIP_PHALANX8 6
+	  		unit_set_experience PHILIP_PHALANX9 6
+			unit_set_experience PHILIP_PHALANX1 6
+			
+			set_counter philip_phalanx_experience 6
+		end_if
+		if I_CompareCounter philip_phalanx_experience = 4
+			unit_set_experience PHILIP_PHALANX2 5
+			unit_set_experience PHILIP_PHALANX3 5
+			unit_set_experience PHILIP_PHALANX4 5
+			unit_set_experience PHILIP_PHALANX5 5
+			unit_set_experience PHILIP_PHALANX6 5
+			unit_set_experience PHILIP_PHALANX7 5
+			unit_set_experience PHILIP_PHALANX8 5
+	  		unit_set_experience PHILIP_PHALANX9 5
+			unit_set_experience PHILIP_PHALANX1 5
+
+			set_counter philip_phalanx_experience 5
+		end_if
+		if I_CompareCounter philip_phalanx_experience = 3
+			unit_set_experience PHILIP_PHALANX2 4
+			unit_set_experience PHILIP_PHALANX3 4
+			unit_set_experience PHILIP_PHALANX4 4
+			unit_set_experience PHILIP_PHALANX5 4
+			unit_set_experience PHILIP_PHALANX6 4
+  			unit_set_experience PHILIP_PHALANX7 4
+			unit_set_experience PHILIP_PHALANX8 4
+	  		unit_set_experience PHILIP_PHALANX9 4
+			unit_set_experience PHILIP_PHALANX1 4
+
+			set_counter philip_phalanx_experience 4
+		end_if
+		if I_CompareCounter philip_phalanx_experience = 2
+			unit_set_experience PHILIP_PHALANX2 3
+			unit_set_experience PHILIP_PHALANX3 3
+			unit_set_experience PHILIP_PHALANX4 3
+			unit_set_experience PHILIP_PHALANX5 3
+			unit_set_experience PHILIP_PHALANX6 3
+			unit_set_experience PHILIP_PHALANX7 3
+			unit_set_experience PHILIP_PHALANX8 3
+			unit_set_experience PHILIP_PHALANX9 3
+			unit_set_experience PHILIP_PHALANX1 3
+			
+			set_counter philip_phalanx_experience 3
+		end_if
+
+		unit_unset_morale AI_PELTASTS1
+		unit_unset_morale AI_PHALANX1
+		unit_unset_morale AI_PHALANX2
+		unit_unset_morale AI_PHALANX3
+		unit_unset_morale AI_PHALANX4
+		unit_unset_morale AI_PHALANX5
+		unit_unset_morale AI_PHALANX6
+		unit_unset_morale AI_PHALANX7
+		unit_unset_morale AI_PHALANX8
+		unit_unset_morale AI_PHALANX9
+		unit_unset_morale AI_PHALANX10
+
+		release_unit AI_GENERAL
+		release_unit PHILIP_GENERAL
+
+		set_counter ai_general_is_released 1
+		set_counter philip_general_is_released 1
+
+		terminate_monitor
+	end_monitor
+
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	Catch the AI phalanx routing.
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	monitor_conditions I_IsUnitRouting AI_PHALANX1
+		unit_set_morale AI_PHALANX1 routing
+		inc_counter ai_phalanx_routing 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_UnitDestroyed AI_PHALANX1
+		and I_CompareCounter battle_has_started = 1
+
+		if I_CompareCounter sacred_band_routing < 3
+			inc_counter ai_phalanx_routing 1
+		end_if
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitRouting AI_PHALANX2
+		unit_set_morale AI_PHALANX2 routing
+		inc_counter ai_phalanx_routing 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_UnitDestroyed AI_PHALANX2
+		and I_CompareCounter battle_has_started = 1
+
+		if I_CompareCounter sacred_band_routing < 3
+			inc_counter ai_phalanx_routing 1
+		end_if
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitRouting AI_PHALANX3
+		unit_set_morale AI_PHALANX3 routing
+		inc_counter ai_phalanx_routing 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_UnitDestroyed AI_PHALANX3
+		and I_CompareCounter battle_has_started = 1
+
+		if I_CompareCounter sacred_band_routing < 3
+			inc_counter ai_phalanx_routing 1
+		end_if
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitRouting AI_PHALANX4
+		unit_set_morale AI_PHALANX4 routing
+		inc_counter ai_phalanx_routing 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_UnitDestroyed AI_PHALANX4
+		and I_CompareCounter battle_has_started = 1
+
+		if I_CompareCounter sacred_band_routing < 3
+			inc_counter ai_phalanx_routing 1
+		end_if
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitRouting AI_PHALANX5
+		unit_set_morale AI_PHALANX5 routing
+		inc_counter ai_phalanx_routing 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_UnitDestroyed AI_PHALANX5
+		and I_CompareCounter battle_has_started = 1
+
+		if I_CompareCounter sacred_band_routing < 3
+			inc_counter ai_phalanx_routing 1
+		end_if
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitRouting AI_PHALANX6
+		unit_set_morale AI_PHALANX6 routing
+		inc_counter ai_phalanx_routing 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_UnitDestroyed AI_PHALANX6
+		and I_CompareCounter battle_has_started = 1
+
+		if I_CompareCounter sacred_band_routing < 3
+			inc_counter ai_phalanx_routing 1
+		end_if
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitRouting AI_PHALANX7
+		unit_set_morale AI_PHALANX7 routing
+		inc_counter ai_phalanx_routing 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_UnitDestroyed AI_PHALANX7
+		and I_CompareCounter battle_has_started = 1
+
+		if I_CompareCounter sacred_band_routing < 3
+			inc_counter ai_phalanx_routing 1
+		end_if
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitRouting AI_PHALANX8
+		unit_set_morale AI_PHALANX8 routing
+		inc_counter ai_phalanx_routing 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_UnitDestroyed AI_PHALANX8
+		and I_CompareCounter battle_has_started = 1
+
+		if I_CompareCounter sacred_band_routing < 3
+			inc_counter ai_phalanx_routing 1
+		end_if
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitRouting AI_PHALANX9
+		unit_set_morale AI_PHALANX9 routing
+		inc_counter ai_phalanx_routing 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_UnitDestroyed AI_PHALANX9
+		and I_CompareCounter battle_has_started = 1
+
+		if I_CompareCounter sacred_band_routing < 3
+			inc_counter ai_phalanx_routing 1
+		end_if
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitRouting AI_PHALANX10
+		unit_set_morale AI_PHALANX10 routing
+		inc_counter ai_phalanx_routing 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_UnitDestroyed AI_PHALANX10
+		and I_CompareCounter battle_has_started = 1
+
+		if I_CompareCounter sacred_band_routing < 3
+			inc_counter ai_phalanx_routing 1
+		end_if
+		terminate_monitor
+	end_monitor
+
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	Victory is gained when more than seven of the
+	;;;	enemy phalanx are routed (not including the
+	;;;	sacred band), but they cannot rout until
+	;;;	all three sacred band units are routed.
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	monitor_conditions I_CompareCounter ai_phalanx_routing > 7
+		set_counter ai_phalanx_routing 0
+
+		stop_sound_event CHAERONEA_SPEECH_10
+		stop_sound_event CHAERONEA_SPEECH_11
+		stop_sound_event CHAERONEA_SPEECH_12
+		stop_sound_event CHAERONEA_SPEECH_13
+
+		battle_wait 2
+
+		unit_set_morale AI_SACRED_BAND1 routing
+		unit_set_morale AI_SACRED_BAND2 routing
+		unit_set_morale AI_SACRED_BAND3 routing
+		unit_set_morale AI_PHALANX1 routing
+		unit_set_morale AI_PELTASTS1 routing
+
+		battle_wait 1
+
+		unit_set_morale AI_PHALANX2 routing
+		unit_set_morale AI_PELTASTS2 routing
+
+		battle_wait 1
+
+		unit_set_morale AI_PHALANX3 routing
+		if I_CompareCounter ai_phalanx_routing = 2
+			unit_set_morale AI_GENERAL routing
+		end_if
+			
+		battle_wait 1
+
+		unit_set_morale AI_PHALANX4 routing
+		if I_CompareCounter ai_phalanx_routing = 2
+			unit_set_morale AI_GENERAL routing
+		end_if
+
+		battle_wait 1
+
+		unit_set_morale AI_PHALANX5 routing
+		if I_CompareCounter ai_phalanx_routing = 2
+			unit_set_morale AI_GENERAL routing
+		end_if
+
+		battle_wait 1
+
+		unit_set_morale AI_PHALANX6 routing
+		if I_CompareCounter ai_phalanx_routing = 2
+			unit_set_morale AI_GENERAL routing
+		end_if
+
+		battle_wait 1
+
+		unit_set_morale AI_PHALANX7 routing
+		if I_CompareCounter ai_phalanx_routing = 2
+			unit_set_morale AI_GENERAL routing
+		end_if
+
+		battle_wait 1
+
+		unit_set_morale AI_PHALANX8 routing
+		if I_CompareCounter ai_phalanx_routing = 2
+			unit_set_morale AI_GENERAL routing
+		end_if
+
+		battle_wait 1
+
+		unit_set_morale AI_PHALANX9 routing
+		if I_CompareCounter ai_phalanx_routing = 2
+			unit_set_morale AI_GENERAL routing
+		end_if
+
+		battle_wait 1
+
+		unit_set_morale AI_PHALANX10 routing
+		unit_set_morale AI_GENERAL routing
+
+		terminate_monitor
+	end_monitor
+
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	Catch the allied phalanx routing.
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	monitor_conditions I_IsUnitRouting PHILIP_PHALANX1
+		unit_set_morale PHILIP_PHALANX1 routing
+		inc_counter philip_routing_points 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitRouting PHILIP_PHALANX2
+		unit_set_morale PHILIP_PHALANX2 routing
+		inc_counter philip_routing_points 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitRouting PHILIP_PHALANX3
+		unit_set_morale PHILIP_PHALANX3 routing
+		inc_counter philip_routing_points 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitRouting PHILIP_PHALANX4
+		unit_set_morale PHILIP_PHALANX4 routing
+		inc_counter philip_routing_points 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitRouting PHILIP_PHALANX5
+		unit_set_morale PHILIP_PHALANX5 routing
+		inc_counter philip_routing_points 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitRouting PHILIP_PHALANX6
+		unit_set_morale PHILIP_PHALANX6 routing
+		inc_counter philip_routing_points 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitRouting PHILIP_PHALANX7
+		unit_set_morale PHILIP_PHALANX7 routing
+		inc_counter philip_routing_points 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitRouting PHILIP_PHALANX8
+		unit_set_morale PHILIP_PHALANX8 routing
+		inc_counter philip_routing_points 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitRouting PHILIP_PHALANX9
+		unit_set_morale PHILIP_PHALANX9 routing
+		inc_counter philip_routing_points 1
+		terminate_monitor
+	end_monitor
+
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	Defeat occurs when more than seven
+	;;;	of the allied phalanx are routing.
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	monitor_conditions I_CompareCounter philip_routing_points > 7
+		set_counter player_loses 1
+		
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_CompareCounter player_loses = 1
+		inc_counter player_loses 1
+
+		stop_sound_event CHAERONEA_SPEECH_10
+		stop_sound_event CHAERONEA_SPEECH_11
+		stop_sound_event CHAERONEA_SPEECH_12
+		stop_sound_event CHAERONEA_SPEECH_13
+
+		battle_wait 2
+
+		unit_set_morale PHILIP_GENERAL routing
+		unit_set_morale PHILIP_PELTASTS1 routing
+		unit_set_morale PHILIP_PELTASTS2 routing
+		unit_set_morale PHILIP_PHALANX1 routing
+		unit_set_morale PHILIP_PHALANX2 routing
+		unit_set_morale PHILIP_PHALANX3 routing
+		unit_set_morale PHILIP_PHALANX4 routing
+		unit_set_morale PHILIP_PHALANX5 routing
+		unit_set_morale PHILIP_PHALANX6 routing
+		unit_set_morale PHILIP_PHALANX7 routing
+		unit_set_morale PHILIP_PHALANX8 routing
+		unit_set_morale PHILIP_PHALANX9 routing
+
+		battle_wait 1
+
+		unit_set_morale PLAYER_CAVALRY4 routing
+
+		battle_wait 1
+
+		unit_set_morale PLAYER_CAVALRY3 routing
+
+		battle_wait 1
+
+		unit_set_morale PLAYER_CAVALRY2 routing
+
+		battle_wait 1
+
+		unit_set_morale PLAYER_CAVALRY1 routing
+
+		battle_wait 1
+
+		unit_set_morale PLAYER_GENERAL routing
+
+		terminate_monitor
+	end_monitor
+
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	Detect if the player is trying to run around the
+	;;;	other end of the phalanx line to get behind the
+	;;;	sacred band. The allied phalanx will be able to
+	;;;	rout much sooner if the player tries this
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	monitor_conditions I_UnitDistanceFromLine PLAYER_GENERAL end_run_trigger_a end_run_trigger_b > 0
+		set_counter player_is_doing_an_end_run 1
+	end_monitor
+
+
+	monitor_conditions I_UnitDistanceFromLine PLAYER_CAVALRY1 end_run_trigger_a end_run_trigger_b > 0
+		set_counter player_is_doing_an_end_run 1
+	end_monitor
+
+
+	monitor_conditions I_UnitDistanceFromLine PLAYER_CAVALRY2 end_run_trigger_a end_run_trigger_b > 0
+		set_counter player_is_doing_an_end_run 1
+	end_monitor
+
+
+	monitor_conditions I_UnitDistanceFromLine PLAYER_CAVALRY3 end_run_trigger_a end_run_trigger_b > 0
+		set_counter player_is_doing_an_end_run 1
+	end_monitor
+
+
+	monitor_conditions I_UnitDistanceFromLine PLAYER_CAVALRY4 end_run_trigger_a end_run_trigger_b > 0
+		set_counter player_is_doing_an_end_run 1
+	end_monitor
+
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	These monitors detect when the player engages the
+	;;;	sacred band, and directs the sacred band units to
+	;;;	all attack. Otherwise they'll just sit there in a
+	;;;	line not helping each other (and if released to AI
+	;;;	control they usually pile straight into the main
+	;;;	phalanx)
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_GENERAL AI_SACRED_BAND1
+		inc_counter release_sacred_band 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_GENERAL AI_SACRED_BAND2
+		inc_counter release_sacred_band 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_GENERAL AI_SACRED_BAND3
+		inc_counter release_sacred_band 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY1 AI_SACRED_BAND1
+		inc_counter release_sacred_band 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY1 AI_SACRED_BAND2
+		inc_counter release_sacred_band 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY1 AI_SACRED_BAND3
+		inc_counter release_sacred_band 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY2 AI_SACRED_BAND1
+		inc_counter release_sacred_band 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY2 AI_SACRED_BAND2
+		inc_counter release_sacred_band 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY2 AI_SACRED_BAND3
+		inc_counter release_sacred_band 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY3 AI_SACRED_BAND1
+		inc_counter release_sacred_band 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY3 AI_SACRED_BAND2
+		inc_counter release_sacred_band 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY3 AI_SACRED_BAND3
+		inc_counter release_sacred_band 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY4 AI_SACRED_BAND1
+		inc_counter release_sacred_band 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY4 AI_SACRED_BAND2
+		inc_counter release_sacred_band 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY4 AI_SACRED_BAND3
+		inc_counter release_sacred_band 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_CompareCounter release_sacred_band = 2
+		inc_counter release_sacred_band 1
+
+		unit_order_attack_unit AI_SACRED_BAND1 PLAYER_GENERAL
+		unit_order_attack_unit AI_SACRED_BAND2 PLAYER_GENERAL
+		unit_order_attack_unit AI_SACRED_BAND3 PLAYER_GENERAL
+
+		battle_wait 20
+
+		define_unit_group GRP_PLAYER PLAYER_GENERAL PLAYER_CAVALRY1 PLAYER_CAVALRY2 PLAYER_CAVALRY3 PLAYER_CAVALRY4
+		unit_group_enable_automation GRP_AI_SACRED_BAND true
+
+		battle_wait 0.2
+
+		unit_group_order_attack_group GRP_AI_SACRED_BAND GRP_PLAYER
+
+		terminate_monitor
+	end_monitor
+
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	If the player attacks the sacred band, assume
+	;;;	that they won't be coming round the other end of
+	;;;	the battle line
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+	monitor_conditions I_CompareCounter release_sacred_band > 0
+		unit_order_attack_unit AI_PHALANX1 PHILIP_PHALANX9
+
+		terminate_monitor
+	end_monitor
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	This monitor keeps the sacred band moving forward.
+	;;;	Without this, if the player tangled with one of
+	;;;	the sacred band it would stop and not make it to 
+	;;;	its final position, causing a gap in the line.
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	monitor_conditions I_CompareCounter keep_sacred_band_moving_thread_trigger = 1
+		set_counter keep_sacred_band_moving_thread_trigger 0
+
+		while I_CompareCounter release_sacred_band < 2
+			if I_CompareCounter release_sacred_band < 2
+				if I_UnitDistanceFromPosition AI_SACRED_BAND1 250.31, -147.97 > 5
+					unit_order_move AI_SACRED_BAND1 250.31, -147.97
+				end_if
+
+				if I_CompareCounter sacred_band_one_has_turned = 0
+					if I_UnitDistanceFromPosition AI_SACRED_BAND1 250.31, -147.97 < 5
+						unit_order_turn AI_SACRED_BAND1 70
+						set_counter sacred_band_one_has_turned 1
+					end_if
+				end_if
+			end_if
+
+			battle_wait 1
+
+			if I_CompareCounter release_sacred_band < 2
+				if I_UnitDistanceFromPosition AI_SACRED_BAND2 258.59, -174.29 > 5
+					unit_order_move AI_SACRED_BAND2 258.59, -174.29
+				end_if
+
+				if I_CompareCounter sacred_band_two_has_turned = 0
+					if I_UnitDistanceFromPosition AI_SACRED_BAND2 258.59, -174.29 < 5
+						unit_order_turn AI_SACRED_BAND2 70
+						set_counter sacred_band_two_has_turned 1
+					end_if
+				end_if
+			end_if
+
+			battle_wait 1
+
+			if I_CompareCounter release_sacred_band < 2			
+				if I_UnitDistanceFromPosition AI_SACRED_BAND3 266.86, -200.61 > 5
+					unit_order_move AI_SACRED_BAND3 266.86, -200.61
+				end_if
+
+				if I_CompareCounter sacred_band_three_has_turned = 0
+					if I_UnitDistanceFromPosition AI_SACRED_BAND3 266.86, -200.61 < 5
+						unit_order_turn AI_SACRED_BAND3 70
+						set_counter sacred_band_three_has_turned 1
+					end_if
+				end_if
+			end_if
+
+			battle_wait 1
+		end_while
+
+		terminate_monitor
+	end_monitor
+
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	Detect if/when the player tangles with the main
+	;;;	army.
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_GENERAL AI_PHALANX1
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_GENERAL AI_PHALANX2
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_GENERAL AI_PHALANX3
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_GENERAL AI_PHALANX4
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_GENERAL AI_PHALANX5
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_GENERAL AI_PHALANX6
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_GENERAL AI_PHALANX7
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_GENERAL AI_PHALANX8
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+	
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_GENERAL AI_PELTASTS1
+		if I_CompareCounter naughty_player = 0
+			unit_unset_morale AI_PELTASTS1
+		end_if
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY1 AI_PHALANX1
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY1 AI_PHALANX2
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY1 AI_PHALANX3
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY1 AI_PHALANX4
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY1 AI_PHALANX5
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY1 AI_PHALANX6
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY1 AI_PHALANX7
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY1 AI_PHALANX8
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY1 AI_PELTASTS1
+		if I_CompareCounter naughty_player = 0
+			unit_unset_morale AI_PELTASTS1
+		end_if
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY2 AI_PHALANX1
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY2 AI_PHALANX2
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY2 AI_PHALANX3
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY2 AI_PHALANX4
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY2 AI_PHALANX5
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY2 AI_PHALANX6
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY2 AI_PHALANX7
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY2 AI_PHALANX8
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY2 AI_PELTASTS1
+		if I_CompareCounter naughty_player = 0
+			unit_unset_morale AI_PELTASTS1
+		end_if
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY3 AI_PHALANX1
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY3 AI_PHALANX2
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY3 AI_PHALANX3
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY3 AI_PHALANX4
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY3 AI_PHALANX5
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY3 AI_PHALANX6
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY3 AI_PHALANX7
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY3 AI_PHALANX8
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY3 AI_PELTASTS1
+		if I_CompareCounter naughty_player = 0
+			unit_unset_morale AI_PELTASTS1
+		end_if
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY4 AI_PHALANX1
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY4 AI_PHALANX2
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY4 AI_PHALANX3
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY4 AI_PHALANX4
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY4 AI_PHALANX5
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY4 AI_PHALANX6
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY4 AI_PHALANX7
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY4 AI_PHALANX8
+		inc_counter player_has_attacked_ai_main_army 1
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_IsUnitEngagedWithUnit PLAYER_CAVALRY4 AI_PELTASTS1
+		if I_CompareCounter naughty_player = 0
+			unit_unset_morale AI_PELTASTS1
+		end_if
+		terminate_monitor
+	end_monitor
+
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	Handle the player attacking the main enemy phalanx.
+	;;;	If the player does this before routing all (well,
+	;;;	at least two) of the sacred band units then go to
+	;;;	every length to ensure the player loses - set the
+	;;;	opposition strength to maximum, allied strength to
+	;;;	minimum, and slyly start killing off bits of the
+	;;;	allied phalanx until they get under their 40%
+	;;;	limits and rout (see below).
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	monitor_conditions I_CompareCounter player_has_attacked_ai_main_army = 2
+		set_counter player_has_attacked_ai_main_army 3
+
+		if I_CompareCounter release_sacred_band < 2
+			set_counter release_sacred_band 2
+		end_if
+
+		if I_CompareCounter sacred_band_routing < 2
+			set_counter naughty_player 1
+
+			play_sound_event CHAERONEA_SPEECH_10 tag = CHAERONEA_SPEECH_10
+
+			unit_set_armour_upgrade AI_GENERAL 3
+			unit_set_armour_upgrade AI_PELTASTS1 3
+			unit_set_armour_upgrade AI_PHALANX3 3
+			unit_set_armour_upgrade AI_PHALANX4 3
+			unit_set_armour_upgrade AI_PHALANX5 3
+			unit_set_armour_upgrade AI_PHALANX6 3
+			unit_set_armour_upgrade AI_PHALANX7 3
+			unit_set_armour_upgrade AI_PHALANX8 3
+			unit_set_armour_upgrade AI_PHALANX9 3
+			unit_set_armour_upgrade AI_PHALANX10 3
+			unit_set_armour_upgrade AI_SACRED_BAND1 3
+			unit_set_armour_upgrade AI_SACRED_BAND2 3
+			unit_set_armour_upgrade AI_SACRED_BAND3 3
+			unit_set_armour_upgrade AI_PHALANX2 3
+			unit_set_armour_upgrade AI_PHALANX1 3
+
+			unit_set_weapon_upgrade AI_GENERAL 3
+			unit_set_weapon_upgrade AI_PELTASTS1 3
+			unit_set_weapon_upgrade AI_PHALANX3 3
+			unit_set_weapon_upgrade AI_PHALANX4 3
+			unit_set_weapon_upgrade AI_PHALANX5 3
+			unit_set_weapon_upgrade AI_PHALANX6 3
+			unit_set_weapon_upgrade AI_PHALANX7 3
+			unit_set_weapon_upgrade AI_PHALANX8 3
+			unit_set_weapon_upgrade AI_PHALANX9 3
+			unit_set_weapon_upgrade AI_PHALANX10 3
+			unit_set_weapon_upgrade AI_SACRED_BAND1 3
+			unit_set_weapon_upgrade AI_SACRED_BAND2 3
+			unit_set_weapon_upgrade AI_SACRED_BAND3 3
+			unit_set_weapon_upgrade AI_PHALANX2 3
+			unit_set_weapon_upgrade AI_PHALANX1 3
+
+			unit_set_experience AI_GENERAL 9
+			unit_set_experience AI_PELTASTS1 9
+			unit_set_experience AI_PHALANX3 9
+			unit_set_experience AI_PHALANX4 9
+			unit_set_experience AI_PHALANX5 9
+			unit_set_experience AI_PHALANX6 9
+			unit_set_experience AI_PHALANX7 9
+			unit_set_experience AI_PHALANX8 9
+			unit_set_experience AI_PHALANX9 9
+			unit_set_experience AI_PHALANX10 9
+			unit_set_experience AI_SACRED_BAND1 9
+			unit_set_experience AI_SACRED_BAND2 9
+			unit_set_experience AI_SACRED_BAND3 9
+			unit_set_experience AI_PHALANX2 9
+			unit_set_experience AI_PHALANX1 9
+
+			unit_set_armour_upgrade PHILIP_GENERAL 0
+			unit_set_armour_upgrade PHILIP_PELTASTS1 0
+			unit_set_armour_upgrade PHILIP_PHALANX2 0
+			unit_set_armour_upgrade PHILIP_PHALANX3 0
+			unit_set_armour_upgrade	PHILIP_PHALANX4 0
+			unit_set_armour_upgrade	PHILIP_PHALANX5 0
+			unit_set_armour_upgrade PHILIP_PHALANX6 0
+	  		unit_set_armour_upgrade PHILIP_PHALANX7 0
+		   	unit_set_armour_upgrade PHILIP_PELTASTS2 0
+			unit_set_armour_upgrade PHILIP_PHALANX8 0
+		  	unit_set_armour_upgrade PHILIP_PHALANX9 0
+			unit_set_armour_upgrade PHILIP_PHALANX1 0
+
+			unit_set_weapon_upgrade PHILIP_GENERAL 0
+			unit_set_weapon_upgrade PHILIP_PELTASTS1 0
+			unit_set_weapon_upgrade PHILIP_PHALANX2 0
+			unit_set_weapon_upgrade PHILIP_PHALANX3 0
+			unit_set_weapon_upgrade	PHILIP_PHALANX4 0
+			unit_set_weapon_upgrade	PHILIP_PHALANX5 0
+			unit_set_weapon_upgrade PHILIP_PHALANX6 0
+	  		unit_set_weapon_upgrade PHILIP_PHALANX7 0
+		   	unit_set_weapon_upgrade PHILIP_PELTASTS2 0
+			unit_set_weapon_upgrade PHILIP_PHALANX8 0
+		  	unit_set_weapon_upgrade PHILIP_PHALANX9 0
+			unit_set_weapon_upgrade PHILIP_PHALANX1 0
+
+			unit_set_experience PHILIP_GENERAL 0
+			unit_set_experience PHILIP_PELTASTS1 0
+			unit_set_experience PHILIP_PHALANX2 0
+			unit_set_experience PHILIP_PHALANX3 0
+			unit_set_experience PHILIP_PHALANX4 0
+			unit_set_experience PHILIP_PHALANX5 0
+			unit_set_experience PHILIP_PHALANX6 0
+	  		unit_set_experience PHILIP_PHALANX7 0
+		   	unit_set_experience PHILIP_PELTASTS2 0
+			unit_set_experience PHILIP_PHALANX8 0
+		  	unit_set_experience PHILIP_PHALANX9 0
+			unit_set_experience PHILIP_PHALANX1 0
+
+			unit_set_morale AI_PHALANX1 high
+			unit_set_morale AI_PHALANX2 high
+			unit_set_morale AI_PHALANX3 high
+			unit_set_morale AI_PHALANX4 high
+			unit_set_morale AI_PHALANX5 high
+			unit_set_morale AI_PHALANX6 high
+			unit_set_morale AI_PHALANX7 high
+			unit_set_morale AI_PHALANX8 high
+			unit_set_morale AI_PHALANX9 high
+			unit_set_morale AI_PHALANX10 high
+			unit_set_morale AI_PELTASTS1 high
+			unit_set_morale AI_GENERAL high
+
+			unit_set_morale PHILIP_GENERAL shaken
+			unit_set_morale PHILIP_PELTASTS1 shaken
+			unit_set_morale PHILIP_PHALANX2 shaken
+			unit_set_morale PHILIP_PHALANX3 shaken
+			unit_set_morale PHILIP_PHALANX4 shaken
+			unit_set_morale PHILIP_PHALANX5 shaken
+			unit_set_morale PHILIP_PHALANX6 shaken
+	  		unit_set_morale PHILIP_PHALANX7 shaken
+			unit_set_morale PHILIP_PHALANX8 shaken
+			unit_set_morale PHILIP_PHALANX9 shaken
+			unit_set_morale PHILIP_PHALANX1 shaken
+		   	unit_set_morale PHILIP_PELTASTS2 shaken
+		  	
+			set_counter unset_philips_morale 1
+
+			battle_wait 1
+
+			if not I_IsUnitRouting PHILIP_PHALANX2
+				reduce_unit_strength PHILIP_PHALANX2 80
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX3
+				reduce_unit_strength PHILIP_PHALANX3 80
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX4
+				reduce_unit_strength PHILIP_PHALANX4 80
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX5
+				reduce_unit_strength PHILIP_PHALANX5 80
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX6
+				reduce_unit_strength PHILIP_PHALANX6 80
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX7
+				reduce_unit_strength PHILIP_PHALANX7 80
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX8
+				reduce_unit_strength PHILIP_PHALANX8 80
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX9
+  				reduce_unit_strength PHILIP_PHALANX9 80
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX1
+  				reduce_unit_strength PHILIP_PHALANX1 80
+			end_if
+
+			battle_wait 1.5
+
+			if not I_IsUnitRouting PHILIP_PHALANX2
+				reduce_unit_strength PHILIP_PHALANX2 78
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX3
+				reduce_unit_strength PHILIP_PHALANX3 78
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX4
+				reduce_unit_strength PHILIP_PHALANX4 78
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX5
+				reduce_unit_strength PHILIP_PHALANX5 78
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX6
+				reduce_unit_strength PHILIP_PHALANX6 78
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX7
+				reduce_unit_strength PHILIP_PHALANX7 78
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX8
+				reduce_unit_strength PHILIP_PHALANX8 78
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX9
+  				reduce_unit_strength PHILIP_PHALANX9 78
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX1
+  				reduce_unit_strength PHILIP_PHALANX1 78
+			end_if
+
+			battle_wait 1.5
+
+			if not I_IsUnitRouting PHILIP_PHALANX2
+				reduce_unit_strength PHILIP_PHALANX2 76
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX3
+				reduce_unit_strength PHILIP_PHALANX3 76
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX4
+				reduce_unit_strength PHILIP_PHALANX4 76
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX5
+				reduce_unit_strength PHILIP_PHALANX5 76
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX6
+				reduce_unit_strength PHILIP_PHALANX6 76
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX7
+				reduce_unit_strength PHILIP_PHALANX7 76
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX8
+				reduce_unit_strength PHILIP_PHALANX8 76
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX9
+				reduce_unit_strength PHILIP_PHALANX9 76
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX1
+  				reduce_unit_strength PHILIP_PHALANX1 76
+			end_if
+
+			battle_wait 1.5
+
+			if not I_IsUnitRouting PHILIP_PHALANX2
+				reduce_unit_strength PHILIP_PHALANX2 74
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX3
+				reduce_unit_strength PHILIP_PHALANX3 74
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX4
+				reduce_unit_strength PHILIP_PHALANX4 74
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX5
+				reduce_unit_strength PHILIP_PHALANX5 74
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX6
+				reduce_unit_strength PHILIP_PHALANX6 74
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX7
+				reduce_unit_strength PHILIP_PHALANX7 74
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX8
+				reduce_unit_strength PHILIP_PHALANX8 74
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX9
+  				reduce_unit_strength PHILIP_PHALANX9 74
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX1
+  				reduce_unit_strength PHILIP_PHALANX1 74
+			end_if
+
+			battle_wait 1.5
+
+			if not I_IsUnitRouting PHILIP_PHALANX2
+				reduce_unit_strength PHILIP_PHALANX2 72
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX3
+				reduce_unit_strength PHILIP_PHALANX3 72
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX4
+				reduce_unit_strength PHILIP_PHALANX4 72
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX5
+				reduce_unit_strength PHILIP_PHALANX5 72
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX6
+				reduce_unit_strength PHILIP_PHALANX6 72
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX7
+				reduce_unit_strength PHILIP_PHALANX7 72
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX8
+				reduce_unit_strength PHILIP_PHALANX8 72
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX9
+  				reduce_unit_strength PHILIP_PHALANX9 72
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX1
+  				reduce_unit_strength PHILIP_PHALANX1 72
+			end_if
+
+			battle_wait 1.5
+
+			if not I_IsUnitRouting PHILIP_PHALANX2
+				reduce_unit_strength PHILIP_PHALANX2 70
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX3
+				reduce_unit_strength PHILIP_PHALANX3 70
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX4
+				reduce_unit_strength PHILIP_PHALANX4 70
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX5
+				reduce_unit_strength PHILIP_PHALANX5 70	
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX6
+				reduce_unit_strength PHILIP_PHALANX6 70
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX7
+				reduce_unit_strength PHILIP_PHALANX7 70
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX8
+				reduce_unit_strength PHILIP_PHALANX8 70
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX9
+		  		reduce_unit_strength PHILIP_PHALANX9 70
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX1
+  				reduce_unit_strength PHILIP_PHALANX1 70
+			end_if
+
+			battle_wait 1.5
+
+			if not I_IsUnitRouting PHILIP_PHALANX2
+				reduce_unit_strength PHILIP_PHALANX2 68
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX3
+				reduce_unit_strength PHILIP_PHALANX3 68
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX4
+				reduce_unit_strength PHILIP_PHALANX4 68
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX5
+				reduce_unit_strength PHILIP_PHALANX5 68
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX6
+				reduce_unit_strength PHILIP_PHALANX6 68
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX7
+  				reduce_unit_strength PHILIP_PHALANX7 68
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX8
+				reduce_unit_strength PHILIP_PHALANX8 68
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX9
+		  		reduce_unit_strength PHILIP_PHALANX9 68
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX1
+  				reduce_unit_strength PHILIP_PHALANX1 68
+			end_if
+
+			battle_wait 1.5
+
+			if not I_IsUnitRouting PHILIP_PHALANX2
+				reduce_unit_strength PHILIP_PHALANX2 66
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX3
+				reduce_unit_strength PHILIP_PHALANX3 66
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX4
+				reduce_unit_strength PHILIP_PHALANX4 66
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX5
+				reduce_unit_strength PHILIP_PHALANX5 66
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX6
+				reduce_unit_strength PHILIP_PHALANX6 66
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX7
+  				reduce_unit_strength PHILIP_PHALANX7 66
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX8
+				reduce_unit_strength PHILIP_PHALANX8 66
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX9
+		  		reduce_unit_strength PHILIP_PHALANX9 66
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX1
+  				reduce_unit_strength PHILIP_PHALANX1 66
+			end_if
+
+			battle_wait 1.5
+
+			if not I_IsUnitRouting PHILIP_PHALANX2
+				reduce_unit_strength PHILIP_PHALANX2 64
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX3
+				reduce_unit_strength PHILIP_PHALANX3 64
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX4
+				reduce_unit_strength PHILIP_PHALANX4 64
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX5
+				reduce_unit_strength PHILIP_PHALANX5 64
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX6
+				reduce_unit_strength PHILIP_PHALANX6 64
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX7
+  				reduce_unit_strength PHILIP_PHALANX7 64
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX8
+				reduce_unit_strength PHILIP_PHALANX8 64
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX9
+		  		reduce_unit_strength PHILIP_PHALANX9 64
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX1
+  				reduce_unit_strength PHILIP_PHALANX1 64
+			end_if
+
+			battle_wait 1.5
+
+			if not I_IsUnitRouting PHILIP_PHALANX2
+				reduce_unit_strength PHILIP_PHALANX2 62
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX3
+				reduce_unit_strength PHILIP_PHALANX3 62
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX4
+				reduce_unit_strength PHILIP_PHALANX4 62
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX5
+				reduce_unit_strength PHILIP_PHALANX5 62
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX6
+				reduce_unit_strength PHILIP_PHALANX6 62
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX7
+  				reduce_unit_strength PHILIP_PHALANX7 62
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX8
+				reduce_unit_strength PHILIP_PHALANX8 62
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX9
+		  		reduce_unit_strength PHILIP_PHALANX9 62
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX1
+  				reduce_unit_strength PHILIP_PHALANX1 62
+			end_if
+
+			battle_wait 1.5
+
+			if not I_IsUnitRouting PHILIP_PHALANX2
+				reduce_unit_strength PHILIP_PHALANX2 60
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX3
+				reduce_unit_strength PHILIP_PHALANX3 60
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX4
+				reduce_unit_strength PHILIP_PHALANX4 60
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX5
+				reduce_unit_strength PHILIP_PHALANX5 60
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX6
+				reduce_unit_strength PHILIP_PHALANX6 60
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX7
+  				reduce_unit_strength PHILIP_PHALANX7 60
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX8
+				reduce_unit_strength PHILIP_PHALANX8 60
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX9
+		  		reduce_unit_strength PHILIP_PHALANX9 60
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX1
+  				reduce_unit_strength PHILIP_PHALANX1 60
+			end_if
+
+			battle_wait 1.5
+
+			if not I_IsUnitRouting PHILIP_PHALANX2
+				reduce_unit_strength PHILIP_PHALANX2 58
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX3
+				reduce_unit_strength PHILIP_PHALANX3 58
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX4
+				reduce_unit_strength PHILIP_PHALANX4 58
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX5
+				reduce_unit_strength PHILIP_PHALANX5 58
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX6
+				reduce_unit_strength PHILIP_PHALANX6 58
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX7
+  				reduce_unit_strength PHILIP_PHALANX7 58
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX8
+				reduce_unit_strength PHILIP_PHALANX8 58
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX9
+		  		reduce_unit_strength PHILIP_PHALANX9 58
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX1
+  				reduce_unit_strength PHILIP_PHALANX1 58
+			end_if
+
+			battle_wait 1.5
+
+			if not I_IsUnitRouting PHILIP_PHALANX2
+				reduce_unit_strength PHILIP_PHALANX2 56
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX3
+				reduce_unit_strength PHILIP_PHALANX3 56
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX4
+				reduce_unit_strength PHILIP_PHALANX4 56
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX5
+				reduce_unit_strength PHILIP_PHALANX5 56
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX6
+				reduce_unit_strength PHILIP_PHALANX6 56
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX7
+  				reduce_unit_strength PHILIP_PHALANX7 56
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX8
+				reduce_unit_strength PHILIP_PHALANX8 56
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX9
+		  		reduce_unit_strength PHILIP_PHALANX9 56
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX1
+  				reduce_unit_strength PHILIP_PHALANX1 56
+			end_if
+
+			battle_wait 1.5
+
+			if not I_IsUnitRouting PHILIP_PHALANX2
+				reduce_unit_strength PHILIP_PHALANX2 54
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX3
+				reduce_unit_strength PHILIP_PHALANX3 54
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX4
+				reduce_unit_strength PHILIP_PHALANX4 54
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX5
+				reduce_unit_strength PHILIP_PHALANX5 54
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX6
+				reduce_unit_strength PHILIP_PHALANX6 54
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX7
+  				reduce_unit_strength PHILIP_PHALANX7 54
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX8
+				reduce_unit_strength PHILIP_PHALANX8 54
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX9
+		  		reduce_unit_strength PHILIP_PHALANX9 54
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX1
+  				reduce_unit_strength PHILIP_PHALANX1 54
+			end_if
+
+			battle_wait 1.5
+
+			if not I_IsUnitRouting PHILIP_PHALANX2
+				reduce_unit_strength PHILIP_PHALANX2 52
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX3
+				reduce_unit_strength PHILIP_PHALANX3 52
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX4
+				reduce_unit_strength PHILIP_PHALANX4 52
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX5
+				reduce_unit_strength PHILIP_PHALANX5 52
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX6
+				reduce_unit_strength PHILIP_PHALANX6 52
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX7
+  				reduce_unit_strength PHILIP_PHALANX7 52
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX8
+				reduce_unit_strength PHILIP_PHALANX8 52
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX9
+		  		reduce_unit_strength PHILIP_PHALANX9 52
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX1
+  				reduce_unit_strength PHILIP_PHALANX1 52
+			end_if
+
+			battle_wait 1.5
+
+			if not I_IsUnitRouting PHILIP_PHALANX2
+				reduce_unit_strength PHILIP_PHALANX2 50
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX3
+				reduce_unit_strength PHILIP_PHALANX3 50
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX4
+				reduce_unit_strength PHILIP_PHALANX4 50
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX5
+				reduce_unit_strength PHILIP_PHALANX5 50
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX6
+				reduce_unit_strength PHILIP_PHALANX6 50
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX7
+  				reduce_unit_strength PHILIP_PHALANX7 50
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX8
+				reduce_unit_strength PHILIP_PHALANX8 50
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX9
+		  		reduce_unit_strength PHILIP_PHALANX9 50
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX1
+  				reduce_unit_strength PHILIP_PHALANX1 50
+			end_if
+
+			battle_wait 1.5
+
+			if not I_IsUnitRouting PHILIP_PHALANX2
+				reduce_unit_strength PHILIP_PHALANX2 48
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX3
+				reduce_unit_strength PHILIP_PHALANX3 48
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX4
+				reduce_unit_strength PHILIP_PHALANX4 48
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX5
+				reduce_unit_strength PHILIP_PHALANX5 48
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX6
+				reduce_unit_strength PHILIP_PHALANX6 48
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX7
+  				reduce_unit_strength PHILIP_PHALANX7 48
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX8
+				reduce_unit_strength PHILIP_PHALANX8 48
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX9
+		  		reduce_unit_strength PHILIP_PHALANX9 48
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX1
+  				reduce_unit_strength PHILIP_PHALANX1 48
+			end_if
+
+			battle_wait 1.5
+
+			if not I_IsUnitRouting PHILIP_PHALANX2
+				reduce_unit_strength PHILIP_PHALANX2 46
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX3
+				reduce_unit_strength PHILIP_PHALANX3 46
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX4
+				reduce_unit_strength PHILIP_PHALANX4 46
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX5
+				reduce_unit_strength PHILIP_PHALANX5 46
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX6
+				reduce_unit_strength PHILIP_PHALANX6 46
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX7
+  				reduce_unit_strength PHILIP_PHALANX7 46
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX8
+				reduce_unit_strength PHILIP_PHALANX8 46
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX9
+		  		reduce_unit_strength PHILIP_PHALANX9 46
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX1
+  				reduce_unit_strength PHILIP_PHALANX1 46
+			end_if
+
+			battle_wait 1.5
+
+			if not I_IsUnitRouting PHILIP_PHALANX2
+				reduce_unit_strength PHILIP_PHALANX2 44
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX3
+				reduce_unit_strength PHILIP_PHALANX3 44
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX4
+				reduce_unit_strength PHILIP_PHALANX4 44
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX5
+				reduce_unit_strength PHILIP_PHALANX5 44
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX6
+				reduce_unit_strength PHILIP_PHALANX6 44
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX7
+  				reduce_unit_strength PHILIP_PHALANX7 44
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX8
+				reduce_unit_strength PHILIP_PHALANX8 44
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX9
+		  		reduce_unit_strength PHILIP_PHALANX9 44
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX1
+  				reduce_unit_strength PHILIP_PHALANX1 44
+			end_if
+
+			battle_wait 1.5
+
+			if not I_IsUnitRouting PHILIP_PHALANX2
+				reduce_unit_strength PHILIP_PHALANX2 42
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX3
+				reduce_unit_strength PHILIP_PHALANX3 42
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX4
+				reduce_unit_strength PHILIP_PHALANX4 42
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX5
+				reduce_unit_strength PHILIP_PHALANX5 42
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX6
+				reduce_unit_strength PHILIP_PHALANX6 42
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX7
+  				reduce_unit_strength PHILIP_PHALANX7 42
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX8
+				reduce_unit_strength PHILIP_PHALANX8 42
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX9
+		  		reduce_unit_strength PHILIP_PHALANX9 42
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX1
+  				reduce_unit_strength PHILIP_PHALANX1 42
+			end_if
+
+			battle_wait 1.5
+
+			if not I_IsUnitRouting PHILIP_PHALANX2
+				reduce_unit_strength PHILIP_PHALANX2 40
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX3
+				reduce_unit_strength PHILIP_PHALANX3 40
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX4
+				reduce_unit_strength PHILIP_PHALANX4 40
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX5
+				reduce_unit_strength PHILIP_PHALANX5 40
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX6
+				reduce_unit_strength PHILIP_PHALANX6 40
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX7
+  				reduce_unit_strength PHILIP_PHALANX7 40
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX8
+				reduce_unit_strength PHILIP_PHALANX8 40
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX9
+		  		reduce_unit_strength PHILIP_PHALANX9 40
+			end_if
+			if not I_IsUnitRouting PHILIP_PHALANX1
+  				reduce_unit_strength PHILIP_PHALANX1 40
+			end_if
+		end_if
+
+		set_counter unset_philips_morale 1
+
+		terminate_monitor
+	end_monitor
+
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	If the script thinks the player has been naughty
+	;;;	by attacking the main enemy phalanx before the
+	;;;	sacred band are destroyed, auto-rout the allied
+	;;;	phalanx units when they receive 60% casualties
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	monitor_conditions I_CompareCounter naughty_player = 1
+		and I_PercentageUnitKilled PHILIP_PHALANX1 > 60
+
+		unit_set_morale PHILIP_PHALANX1 routing
+
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_CompareCounter naughty_player = 1
+		and I_PercentageUnitKilled PHILIP_PHALANX2 > 60
+
+		unit_set_morale PHILIP_PHALANX2 routing
+
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_CompareCounter naughty_player = 1
+		and I_PercentageUnitKilled PHILIP_PHALANX3 > 60
+
+		unit_set_morale PHILIP_PHALANX3 routing
+
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_CompareCounter naughty_player = 1
+		and I_PercentageUnitKilled PHILIP_PHALANX4 > 60
+
+		unit_set_morale PHILIP_PHALANX4 routing
+
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_CompareCounter naughty_player = 1
+		and I_PercentageUnitKilled PHILIP_PHALANX5 > 60
+
+		unit_set_morale PHILIP_PHALANX5 routing
+
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_CompareCounter naughty_player = 1
+		and I_PercentageUnitKilled PHILIP_PHALANX5 > 60
+
+		unit_set_morale PHILIP_PHALANX5 routing
+
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_CompareCounter naughty_player = 1
+		and I_PercentageUnitKilled PHILIP_PHALANX6 > 60
+
+		unit_set_morale PHILIP_PHALANX6 routing
+
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_CompareCounter naughty_player = 1
+		and I_PercentageUnitKilled PHILIP_PHALANX7 > 60
+
+		unit_set_morale PHILIP_PHALANX7 routing
+
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_CompareCounter naughty_player = 1
+		and I_PercentageUnitKilled PHILIP_PHALANX8 > 60
+
+		unit_set_morale PHILIP_PHALANX8 routing
+
+		terminate_monitor
+	end_monitor
+
+
+	monitor_conditions I_CompareCounter naughty_player = 1
+		and I_PercentageUnitKilled PHILIP_PHALANX9 > 60
+
+		unit_set_morale PHILIP_PHALANX9 routing
+
+		terminate_monitor
+	end_monitor
+
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	This monitor acts as a handy function to unlock
+	;;;	the allied phalanx morale (they can rout after this
+	;;;	is called).
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	monitor_conditions I_CompareCounter unset_philips_morale = 1
+		unit_unset_morale PHILIP_PELTASTS1
+		unit_unset_morale PHILIP_PHALANX2
+		unit_unset_morale PHILIP_PHALANX3
+		unit_unset_morale PHILIP_PHALANX4
+		unit_unset_morale PHILIP_PHALANX5
+		unit_unset_morale PHILIP_PHALANX6
+  		unit_unset_morale PHILIP_PHALANX7
+	   	unit_unset_morale PHILIP_PELTASTS2
+		unit_unset_morale PHILIP_PHALANX8
+	  	unit_unset_morale PHILIP_PHALANX9
+		unit_unset_morale PHILIP_PHALANX1
+
+		terminate_monitor
+	end_monitor
+
+	
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;
+	;;;	End phase of opening cinematics - jump to here if the user presses ESC
+	;;;
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	monitor_conditions I_CompareCounter go_to_end_phase > 0
+
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;;;	Stop sounds
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+		stop_sound_event CHAERONEA_SPEECH_01
+		stop_sound_event CHAERONEA_SPEECH_02
+		stop_sound_event CHAERONEA_SPEECH_03
+		stop_sound_event CHAERONEA_SPEECH_04
+		stop_sound_event CHAERONEA_SPEECH_05
+		stop_sound_event CHAERONEA_SPEECH_06
+		stop_sound_event CHAERONEA_SPEECH_07
+		stop_sound_event CHAERONEA_SPEECH_08
+		;stop_sound_event CHAERONEA_INTRO_MOVIE_SPEECH_09
+
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;;;	Place all units. 
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+		undefine_unit_group GRP_PHILIP
+
+		if I_CompareCounter dont_reposition_players_cavalry = 0
+			unit_immediate_place PLAYER_GENERAL 302.251, -157.179 -124 15.215
+			unit_immediate_place PLAYER_CAVALRY1 336.777, -153.405 -122 15.893
+			unit_immediate_place PLAYER_CAVALRY2 319.447, -126.481 -122 15.843
+			unit_immediate_place PLAYER_CAVALRY3 370.228, -133.156 -121 17.993
+			unit_immediate_place PLAYER_CAVALRY4 353.601, -106.605 -123 17.950
+		end_if
+
+		if I_CompareCounter go_to_end_phase = 1
+			unit_immediate_place AI_GENERAL 53.150, -34.926 57 10
+			unit_immediate_place AI_PELTASTS1 49.5, 8.5 60 31.976
+			unit_immediate_place AI_PELTASTS2 155.234, -156.180 57 35.442
+			unit_immediate_place AI_PHALANX1 45.5, 24.24 30 28
+			unit_immediate_place AI_PHALANX2 72.569, 5.874 58 21.907
+			unit_immediate_place AI_PHALANX3 84.995, -13.777 58 21.081
+			unit_immediate_place AI_PHALANX4 97.929, -34.351 59 21.308
+			unit_immediate_place AI_PHALANX5 110.964, -54.489 59 21.038
+			unit_immediate_place AI_PHALANX6 123.726, -75.951 60 21.251
+			unit_immediate_place AI_PHALANX7 136.641, -95.930 60 21.780
+			unit_immediate_place AI_PHALANX8 148.309, -115.371 60 21.805
+			unit_immediate_place AI_PHALANX9 160.632, -134.397 60 21.331
+			unit_immediate_place AI_PHALANX10 172.938, -155.291 60 21.904
+			unit_immediate_place AI_SACRED_BAND1 184.142, -173.996 60 21.602
+			unit_immediate_place AI_SACRED_BAND2 195.149, -193.590 59 21.282
+			unit_immediate_place AI_SACRED_BAND3 207.303, -213.311 58 21.163
+
+			unit_immediate_place PHILIP_GENERAL 126.972, 35.482 -127 10
+			unit_immediate_place PHILIP_PELTASTS1 283.768, -113.589 -125 35.715
+			unit_immediate_place PHILIP_PELTASTS2 98.052, 51.962 -130 35.673
+			unit_immediate_place PHILIP_PHALANX1 269.057, -113.488 -124 21.764
+			unit_immediate_place PHILIP_PHALANX2 249.075, -96.674 -124 21.818
+			unit_immediate_place PHILIP_PHALANX3 229.621, -80.172 -125 21.262
+			unit_immediate_place PHILIP_PHALANX4 208.982, -65.229 -126 21.424
+			unit_immediate_place PHILIP_PHALANX5 185.902, -53.338 -127 21.764
+			unit_immediate_place PHILIP_PHALANX6 162.167, -40.706 -128 21.639
+			unit_immediate_place PHILIP_PHALANX7 140.940, -27.141 -130 21.404
+			unit_immediate_place PHILIP_PHALANX8 118.617, -12.430 -130 21.281
+			unit_immediate_place PHILIP_PHALANX9 101.375, 7.592 -131 21.446
+		
+			camera_position 330.061, 172.445, -125.527 305.864, 153.301, -140.77
+		end_if
+
+		set_counter go_to_end_phase 0
+		set_counter battle_has_started 1
+
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;;;	Unsuppress morale and other unit behaviours
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+		unit_unset_morale AI_SACRED_BAND1
+		unit_unset_morale AI_SACRED_BAND2
+		unit_unset_morale AI_SACRED_BAND3
+
+		unit_set_skirmish_mode		PHILIP_PELTASTS1		on
+		unit_set_skirmish_mode		PHILIP_PELTASTS2		on
+		unit_set_skirmish_mode		AI_PELTASTS1			on
+		unit_set_skirmish_mode		AI_PELTASTS2			on
+
+		unit_set_fire_at_will_mode	PHILIP_PELTASTS1		on
+		unit_set_fire_at_will_mode	PHILIP_PELTASTS2		on
+		unit_set_fire_at_will_mode	AI_PELTASTS1			on
+		unit_set_fire_at_will_mode	AI_PELTASTS2			on
+
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;;;	Re-enable the UI
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+		battle_wait 1
+    
+		steal_esc_key off
+
+		camera_default_mode_set user_pref
+		camera_restrictions_set on
+		enable_cursor
+		suspend_unscripted_advice false
+		disable_shortcuts false
+		inhibit_camera_input false
+		show_ui
+		enable_entire_ui
+
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;;;	Engage the Macedonian and Greek Armies
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+		unit_order_attack_unit AI_PHALANX2 PHILIP_PHALANX9
+		unit_order_attack_unit AI_PHALANX3 PHILIP_PHALANX8
+		unit_order_attack_unit AI_PHALANX4 PHILIP_PHALANX7
+		unit_order_attack_unit AI_PHALANX5 PHILIP_PHALANX6
+		unit_order_attack_unit AI_PHALANX6 PHILIP_PHALANX5
+		unit_order_attack_unit AI_PHALANX7 PHILIP_PHALANX4
+		unit_order_attack_unit AI_PHALANX8 PHILIP_PHALANX3
+		unit_order_attack_unit AI_PHALANX9 PHILIP_PHALANX2
+		unit_order_attack_unit AI_PHALANX10 PHILIP_PHALANX1
+
+		unit_order_attack_unit PHILIP_PHALANX2 AI_PHALANX9
+		unit_order_attack_unit PHILIP_PHALANX3 AI_PHALANX8
+		unit_order_attack_unit PHILIP_PHALANX4 AI_PHALANX7
+		unit_order_attack_unit PHILIP_PHALANX5 AI_PHALANX6
+		unit_order_attack_unit PHILIP_PHALANX6 AI_PHALANX5
+		unit_order_attack_unit PHILIP_PHALANX7 AI_PHALANX4
+		unit_order_attack_unit PHILIP_PHALANX8 AI_PHALANX3
+		unit_order_attack_unit PHILIP_PHALANX9 AI_PHALANX2
+		unit_order_attack_unit PHILIP_PHALANX1 AI_PHALANX10
+		
+		unit_order_attack_unit AI_PELTASTS1 PHILIP_PELTASTS2
+		unit_order_attack_unit AI_PELTASTS2 PHILIP_PHALANX2
+		unit_order_attack_unit PHILIP_PELTASTS2 AI_PELTASTS1
+		unit_order_attack_unit PHILIP_PELTASTS1 AI_PHALANX10
+
+		unit_order_move AI_GENERAL 135, -71
+ 	
+		unit_order_move PHILIP_GENERAL 169, -33 run
+
+		console_command invulnerable_general "Alexander"
+		console_command invulnerable_general "Philip of_Pella"
+		console_command invulnerable_general "Chares"
+
+		set_counter keep_sacred_band_moving_thread_trigger 1
+
+		battle_wait 1.5
+
+		pause_battle
+
+		unit_order_change_formation AI_PHALANX10 square
+		unit_order_change_formation AI_PHALANX9 square
+
+		battle_wait 2
+
+		unit_order_move AI_PHALANX10 235.38, -124.166 run
+
+		battle_wait 2
+
+		unit_order_move AI_PHALANX9 251.087, -81.17 run
+
+		battle_wait 2
+
+		unit_order_attack_unit AI_PELTASTS2 PHILIP_PHALANX2 run
+		unit_order_change_formation AI_PHALANX8 square
+
+		battle_wait 1.2
+
+		unit_order_move AI_PHALANX8 228.199, -67.85 run
+		unit_order_change_formation AI_PHALANX7 square
+
+		battle_wait 1
+
+		unit_order_move AI_PHALANX7 206.82, -53.74 run
+		unit_order_change_formation AI_PHALANX6 square
+
+		battle_wait 0.8
+
+		unit_order_move AI_PHALANX6 178.29, -46 run
+		
+		battle_wait 1
+
+		unit_order_change_formation AI_PHALANX6 phalanx
+
+		battle_wait 1
+
+		unit_order_attack_unit AI_PHALANX6 PHILIP_PHALANX5
+		unit_order_change_formation AI_PHALANX7 phalanx
+
+		battle_wait 1
+
+		unit_order_attack_unit AI_PHALANX7 PHILIP_PHALANX4
+
+		battle_wait 2
+
+		unit_order_change_formation AI_PHALANX8 phalanx
+
+		battle_wait 1
+
+		unit_order_attack_unit AI_PHALANX8 PHILIP_PHALANX3
+		unit_order_change_formation AI_PHALANX9 phalanx
+		unit_order_move AI_PHALANX10 235.38, -124.166
+
+		battle_wait 1
+
+		unit_order_attack_unit AI_PHALANX9 PHILIP_PHALANX2
+		
+		battle_wait 1
+
+		unit_order_change_formation AI_PHALANX10 phalanx
+
+		battle_wait 1
+
+		unit_order_attack_unit AI_PHALANX10 PHILIP_PHALANX1
+
+		battle_wait 15
+
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;;;	The armies should be fully engaged now, so give
+		;;;	the AI control back now there's no chance it can
+		;;;	screw things up
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+		release_unit PHILIP_PELTASTS1
+		release_unit PHILIP_PELTASTS2
+
+		battle_wait 15
+
+		release_unit PHILIP_PHALANX1
+		release_unit PHILIP_PHALANX2
+		release_unit PHILIP_PHALANX3
+		release_unit PHILIP_PHALANX4
+		release_unit PHILIP_PHALANX5
+		release_unit PHILIP_PHALANX6
+		release_unit PHILIP_PHALANX7
+		release_unit PHILIP_PHALANX8
+		release_unit PHILIP_PHALANX9
+
+		release_unit AI_PHALANX2
+		release_unit AI_PHALANX3
+		release_unit AI_PHALANX4
+		release_unit AI_PHALANX5
+		release_unit AI_PHALANX6
+		release_unit AI_PHALANX7
+		release_unit AI_PHALANX8
+		release_unit AI_PHALANX9
+		release_unit AI_PELTASTS1
+		release_unit AI_PELTASTS2
+
+		battle_wait 20
+
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;;;	Wait a while, unless the player is trying to run
+		;;;	round the end of the main battle
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+		if I_CompareCounter player_is_doing_an_end_run = 0
+			battle_wait 10
+		end_if
+
+		if I_CompareCounter player_is_doing_an_end_run = 0
+			battle_wait 10
+		end_if
+
+		if I_CompareCounter player_is_doing_an_end_run = 0
+			battle_wait 10
+		end_if
+
+		release_unit AI_PHALANX1
+
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;;;	Wait longer, depending on how many of the 
+		;;;	sacred band the player has routed.
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+		;;; Tot up roughly how much of the sacred band have been killed
+
+		if I_PercentageUnitKilled AI_SACRED_BAND1 > 33
+			if I_PercentageUnitKilled AI_SACRED_BAND1 > 66
+				if I_IsUnitRouting AI_SACRED_BAND1
+					inc_counter sacred_band_progress_points 1
+				end_if
+
+				if I_UnitDestroyed AI_SACRED_BAND1
+					inc_counter sacred_band_progress_points 1
+				end_if
+
+				inc_counter sacred_band_progress_points 1
+			end_if
+
+			inc_counter sacred_band_progress_points 1
+		end_if
+
+		if I_PercentageUnitKilled AI_SACRED_BAND2 > 33
+			if I_PercentageUnitKilled AI_SACRED_BAND2 > 66
+				if I_IsUnitRouting AI_SACRED_BAND2
+					inc_counter sacred_band_progress_points 1
+				end_if
+
+				if I_UnitDestroyed AI_SACRED_BAND2
+					inc_counter sacred_band_progress_points 1
+				end_if
+
+				inc_counter sacred_band_progress_points 1
+			end_if
+
+			inc_counter sacred_band_progress_points 1
+		end_if
+
+		if I_PercentageUnitKilled AI_SACRED_BAND3 > 33
+			if I_PercentageUnitKilled AI_SACRED_BAND3 > 66
+				if I_IsUnitRouting AI_SACRED_BAND3
+					inc_counter sacred_band_progress_points 1
+				end_if
+
+				if I_UnitDestroyed AI_SACRED_BAND3
+					inc_counter sacred_band_progress_points 1
+				end_if
+
+				inc_counter sacred_band_progress_points 1
+			end_if
+
+			inc_counter sacred_band_progress_points 1
+		end_if
+
+		if I_CompareCounter sacred_band_progress_points > 2
+			battle_wait 40
+
+			;;; Tot up roughly how much of the sacred band have been killed again
+
+			set_counter sacred_band_progress_points 0
+
+			if I_PercentageUnitKilled AI_SACRED_BAND1 > 33
+				if I_PercentageUnitKilled AI_SACRED_BAND1 > 66
+					if I_IsUnitRouting AI_SACRED_BAND1
+						inc_counter sacred_band_progress_points 1
+					end_if
+
+					if I_UnitDestroyed AI_SACRED_BAND1
+						inc_counter sacred_band_progress_points 1
+					end_if
+
+					inc_counter sacred_band_progress_points 1
+				end_if
+
+				inc_counter sacred_band_progress_points 1
+			end_if
+
+			if I_PercentageUnitKilled AI_SACRED_BAND2 > 33
+				if I_PercentageUnitKilled AI_SACRED_BAND2 > 66
+					if I_IsUnitRouting AI_SACRED_BAND2
+						inc_counter sacred_band_progress_points 1
+					end_if
+
+					if I_UnitDestroyed AI_SACRED_BAND2
+						inc_counter sacred_band_progress_points 1
+					end_if
+
+					inc_counter sacred_band_progress_points 1
+				end_if
+
+				inc_counter sacred_band_progress_points 1
+			end_if
+
+			if I_PercentageUnitKilled AI_SACRED_BAND3 > 33
+				if I_PercentageUnitKilled AI_SACRED_BAND3 > 66
+					if I_IsUnitRouting AI_SACRED_BAND3
+						inc_counter sacred_band_progress_points 1
+					end_if
+
+					if I_UnitDestroyed AI_SACRED_BAND3
+						inc_counter sacred_band_progress_points 1
+					end_if
+
+					inc_counter sacred_band_progress_points 1
+				end_if
+
+				inc_counter sacred_band_progress_points 1
+			end_if
+
+			if I_CompareCounter sacred_band_progress_points > 5
+				battle_wait 40
+
+				set_counter sacred_band_progress_points 0
+
+				if I_PercentageUnitKilled AI_SACRED_BAND1 > 33
+					if I_PercentageUnitKilled AI_SACRED_BAND1 > 66
+						if I_IsUnitRouting AI_SACRED_BAND1
+							inc_counter sacred_band_progress_points 1
+						end_if
+
+						if I_UnitDestroyed AI_SACRED_BAND1
+							inc_counter sacred_band_progress_points 1
+						end_if
+
+						inc_counter sacred_band_progress_points 1
+					end_if
+
+					inc_counter sacred_band_progress_points 1
+				end_if
+
+				if I_PercentageUnitKilled AI_SACRED_BAND2 > 33
+					if I_PercentageUnitKilled AI_SACRED_BAND2 > 66
+						if I_IsUnitRouting AI_SACRED_BAND2
+							inc_counter sacred_band_progress_points 1
+						end_if
+
+						if I_UnitDestroyed AI_SACRED_BAND2
+							inc_counter sacred_band_progress_points 1
+						end_if
+
+						inc_counter sacred_band_progress_points 1
+					end_if
+
+					inc_counter sacred_band_progress_points 1
+				end_if
+
+				if I_PercentageUnitKilled AI_SACRED_BAND3 > 33
+					if I_PercentageUnitKilled AI_SACRED_BAND3 > 66
+						if I_IsUnitRouting AI_SACRED_BAND3
+							inc_counter sacred_band_progress_points 1
+						end_if
+
+						if I_UnitDestroyed AI_SACRED_BAND3
+							inc_counter sacred_band_progress_points 1
+						end_if
+
+						inc_counter sacred_band_progress_points 1
+					end_if
+
+					inc_counter sacred_band_progress_points 1
+				end_if
+
+				if I_CompareCounter sacred_band_progress_points > 8
+					battle_wait 40
+				end_if
+			end_if		
+		end_if
+
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;;;	If the sacred band haven't been released by now
+		;;;	the player is hanging back, so release the
+		;;;	sacred band to the AI
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		
+		if I_CompareCounter release_sacred_band = 0
+			set_counter release_sacred_band 3
+
+			release_unit AI_SACRED_BAND1
+			release_unit AI_SACRED_BAND2
+			release_unit AI_SACRED_BAND3
+		end_if
+
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;;;	Demote the allied phalanx' experience, depending
+		;;;	on how well the player has done so far
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+		if I_CompareCounter naughty_player = 0
+			if I_CompareCounter sacred_band_routing = 0
+				if I_CompareCounter philip_phalanx_experience = 5
+					unit_set_experience PHILIP_PHALANX2 2
+					unit_set_experience PHILIP_PHALANX3 2
+					unit_set_experience PHILIP_PHALANX4 2
+					unit_set_experience PHILIP_PHALANX5 2
+					unit_set_experience PHILIP_PHALANX6 2
+  					unit_set_experience PHILIP_PHALANX7 2
+					unit_set_experience PHILIP_PHALANX8 2
+		  			unit_set_experience PHILIP_PHALANX9 2
+
+					set_counter philip_phalanx_experience 2
+				end_if
+				if I_CompareCounter philip_phalanx_experience = 6
+					unit_set_experience PHILIP_PHALANX2 3
+					unit_set_experience PHILIP_PHALANX3 3
+					unit_set_experience PHILIP_PHALANX4 3
+					unit_set_experience PHILIP_PHALANX5 3
+					unit_set_experience PHILIP_PHALANX6 3
+  					unit_set_experience PHILIP_PHALANX7 3
+					unit_set_experience PHILIP_PHALANX8 3
+		  			unit_set_experience PHILIP_PHALANX9 3
+
+					set_counter philip_phalanx_experience 3
+				end_if
+				if I_CompareCounter philip_phalanx_experience = 7
+					unit_set_experience PHILIP_PHALANX2 4
+					unit_set_experience PHILIP_PHALANX3 4
+					unit_set_experience PHILIP_PHALANX4 4
+					unit_set_experience PHILIP_PHALANX5 4
+					unit_set_experience PHILIP_PHALANX6 4
+  					unit_set_experience PHILIP_PHALANX7 4
+					unit_set_experience PHILIP_PHALANX8 4
+		  			unit_set_experience PHILIP_PHALANX9 4
+
+					set_counter philip_phalanx_experience 4
+				end_if
+				if I_CompareCounter philip_phalanx_experience = 8
+					unit_set_experience PHILIP_PHALANX2 5
+					unit_set_experience PHILIP_PHALANX3 5
+					unit_set_experience PHILIP_PHALANX4 5
+					unit_set_experience PHILIP_PHALANX5 5
+					unit_set_experience PHILIP_PHALANX6 5
+  					unit_set_experience PHILIP_PHALANX7 5
+					unit_set_experience PHILIP_PHALANX8 5
+		  			unit_set_experience PHILIP_PHALANX9 5
+
+					set_counter philip_phalanx_experience 5
+				end_if
+				if I_CompareCounter philip_phalanx_experience = 9
+					unit_set_experience PHILIP_PHALANX2 6
+					unit_set_experience PHILIP_PHALANX3 6
+					unit_set_experience PHILIP_PHALANX4 6
+					unit_set_experience PHILIP_PHALANX5 6
+					unit_set_experience PHILIP_PHALANX6 6
+  					unit_set_experience PHILIP_PHALANX7 6
+					unit_set_experience PHILIP_PHALANX8 6
+		  			unit_set_experience PHILIP_PHALANX9 6
+
+					set_counter philip_phalanx_experience 6
+				end_if
+
+				unit_set_experience AI_PHALANX1 7
+				unit_set_experience AI_PHALANX2 7
+				unit_set_experience AI_PHALANX3 7
+				unit_set_experience AI_PHALANX4 7
+				unit_set_experience AI_PHALANX5 7
+				unit_set_experience AI_PHALANX6 7
+				unit_set_experience AI_PHALANX7 7
+				unit_set_experience AI_PHALANX8 7
+				unit_set_experience AI_PHALANX9 7
+				unit_set_experience AI_PHALANX10 7
+			end_if
+
+			if I_CompareCounter sacred_band_routing = 1
+				if I_CompareCounter philip_phalanx_experience = 5
+					unit_set_experience PHILIP_PHALANX2 3
+					unit_set_experience PHILIP_PHALANX3 3
+					unit_set_experience PHILIP_PHALANX4 3
+					unit_set_experience PHILIP_PHALANX5 3
+					unit_set_experience PHILIP_PHALANX6 3
+  					unit_set_experience PHILIP_PHALANX7 3
+					unit_set_experience PHILIP_PHALANX8 3
+		  			unit_set_experience PHILIP_PHALANX9 3
+
+					set_counter philip_phalanx_experience 3
+				end_if
+				if I_CompareCounter philip_phalanx_experience = 6
+					unit_set_experience PHILIP_PHALANX2 4
+					unit_set_experience PHILIP_PHALANX3 4
+					unit_set_experience PHILIP_PHALANX4 4
+					unit_set_experience PHILIP_PHALANX5 4
+					unit_set_experience PHILIP_PHALANX6 4
+  					unit_set_experience PHILIP_PHALANX7 4
+					unit_set_experience PHILIP_PHALANX8 4
+		  			unit_set_experience PHILIP_PHALANX9 4
+
+					set_counter philip_phalanx_experience 4
+				end_if
+				if I_CompareCounter philip_phalanx_experience = 7
+					unit_set_experience PHILIP_PHALANX2 5
+					unit_set_experience PHILIP_PHALANX3 5
+					unit_set_experience PHILIP_PHALANX4 5
+					unit_set_experience PHILIP_PHALANX5 5
+					unit_set_experience PHILIP_PHALANX6 5
+  					unit_set_experience PHILIP_PHALANX7 5
+					unit_set_experience PHILIP_PHALANX8 5
+		  			unit_set_experience PHILIP_PHALANX9 5
+
+					set_counter philip_phalanx_experience 5
+				end_if
+				if I_CompareCounter philip_phalanx_experience = 8
+					unit_set_experience PHILIP_PHALANX2 6
+					unit_set_experience PHILIP_PHALANX3 6
+					unit_set_experience PHILIP_PHALANX4 6
+					unit_set_experience PHILIP_PHALANX5 6
+					unit_set_experience PHILIP_PHALANX6 6
+  					unit_set_experience PHILIP_PHALANX7 6
+					unit_set_experience PHILIP_PHALANX8 6
+		  			unit_set_experience PHILIP_PHALANX9 6
+
+					set_counter philip_phalanx_experience 6
+				end_if
+				if I_CompareCounter philip_phalanx_experience = 9
+					unit_set_experience PHILIP_PHALANX2 7
+					unit_set_experience PHILIP_PHALANX3 7
+					unit_set_experience PHILIP_PHALANX4 7
+					unit_set_experience PHILIP_PHALANX5 7
+					unit_set_experience PHILIP_PHALANX6 7
+  					unit_set_experience PHILIP_PHALANX7 7
+					unit_set_experience PHILIP_PHALANX8 7
+		  			unit_set_experience PHILIP_PHALANX9 7
+
+					set_counter philip_phalanx_experience 7
+				end_if
+
+				unit_set_experience AI_PHALANX1 6
+				unit_set_experience AI_PHALANX2 6
+				unit_set_experience AI_PHALANX3 6
+				unit_set_experience AI_PHALANX4 6
+				unit_set_experience AI_PHALANX5 6
+				unit_set_experience AI_PHALANX6 6
+				unit_set_experience AI_PHALANX7 6
+				unit_set_experience AI_PHALANX8 6
+				unit_set_experience AI_PHALANX9 6
+				unit_set_experience AI_PHALANX10 6
+			end_if
+
+			if I_CompareCounter sacred_band_routing = 2
+				if I_CompareCounter philip_phalanx_experience = 5
+					unit_set_experience PHILIP_PHALANX2 4
+					unit_set_experience PHILIP_PHALANX3 4
+					unit_set_experience PHILIP_PHALANX4 4
+					unit_set_experience PHILIP_PHALANX5 4
+					unit_set_experience PHILIP_PHALANX6 4
+  					unit_set_experience PHILIP_PHALANX7 4
+					unit_set_experience PHILIP_PHALANX8 4
+		  			unit_set_experience PHILIP_PHALANX9 4
+
+					set_counter philip_phalanx_experience 4
+				end_if
+				if I_CompareCounter philip_phalanx_experience = 6
+					unit_set_experience PHILIP_PHALANX2 5
+					unit_set_experience PHILIP_PHALANX3 5
+					unit_set_experience PHILIP_PHALANX4 5
+					unit_set_experience PHILIP_PHALANX5 5
+					unit_set_experience PHILIP_PHALANX6 5
+  					unit_set_experience PHILIP_PHALANX7 5
+					unit_set_experience PHILIP_PHALANX8 5
+		  			unit_set_experience PHILIP_PHALANX9 5
+
+					set_counter philip_phalanx_experience 5
+				end_if
+				if I_CompareCounter philip_phalanx_experience = 7
+					unit_set_experience PHILIP_PHALANX2 6
+					unit_set_experience PHILIP_PHALANX3 6
+					unit_set_experience PHILIP_PHALANX4 6
+					unit_set_experience PHILIP_PHALANX5 6
+					unit_set_experience PHILIP_PHALANX6 6
+  					unit_set_experience PHILIP_PHALANX7 6
+					unit_set_experience PHILIP_PHALANX8 6
+		  			unit_set_experience PHILIP_PHALANX9 6
+
+					set_counter philip_phalanx_experience 6
+				end_if
+				if I_CompareCounter philip_phalanx_experience = 8
+					unit_set_experience PHILIP_PHALANX2 7
+					unit_set_experience PHILIP_PHALANX3 7
+					unit_set_experience PHILIP_PHALANX4 7
+					unit_set_experience PHILIP_PHALANX5 7
+					unit_set_experience PHILIP_PHALANX6 7
+  					unit_set_experience PHILIP_PHALANX7 7
+					unit_set_experience PHILIP_PHALANX8 7
+		  			unit_set_experience PHILIP_PHALANX9 7
+
+					set_counter philip_phalanx_experience 7
+				end_if
+				if I_CompareCounter philip_phalanx_experience = 9
+					unit_set_experience PHILIP_PHALANX2 8
+					unit_set_experience PHILIP_PHALANX3 8
+					unit_set_experience PHILIP_PHALANX4 8
+					unit_set_experience PHILIP_PHALANX5 8
+					unit_set_experience PHILIP_PHALANX6 8
+  					unit_set_experience PHILIP_PHALANX7 8
+					unit_set_experience PHILIP_PHALANX8 8
+		  			unit_set_experience PHILIP_PHALANX9 8
+
+					set_counter philip_phalanx_experience 8
+				end_if
+			end_if
+		end_if
+
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;;;	Release the allied phalanx morale, and let the
+		;;;	battle run its course
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+		set_counter unset_philips_morale 1
+
+		while I_InBattle
+		end_while
+
+		terminate_monitor
+	end_monitor
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;
+	;;;	Intro Cinematic starts here
+	;;;
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;	battle_wait 0.1
+
+;	while I_CompareCounter battle_has_started = 1
+;	end_while
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	Intro shot of Philip moving through valley
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	camera_position 202.255, 207.092, 645.037 202.922, 205.363, 635.388
+
+	unit_immediate_place PHILIP_GENERAL 250.78, 626.76 140
+	unit_immediate_place PHILIP_PHALANX1 241.04, 637.85 139 8
+	unit_immediate_place PHILIP_PHALANX2 231.53, 627.98 140 8
+	unit_immediate_place PHILIP_PHALANX3 227.82, 652.95 140 8
+	unit_immediate_place PHILIP_PHALANX4 217.58, 644.4 140 8
+	unit_immediate_place PHILIP_PHALANX5 213.90, 668.98 141 8
+	unit_immediate_place PHILIP_PHALANX6 204.48, 659.73 141 8
+	unit_immediate_place PHILIP_PHALANX7 199.49, 686.36 142 8
+	unit_immediate_place PHILIP_PHALANX8 190.46, 677.10 142 8
+	unit_immediate_place PHILIP_PHALANX9 183.58, 703.68 143 20 
+	unit_immediate_place PHILIP_PELTASTS1 242.77, 652.87 140 4
+	unit_immediate_place PHILIP_PELTASTS2 209.12, 631.35 139 4
+
+	define_unit_group GRP_PHILIP PHILIP_GENERAL PHILIP_PHALANX1 PHILIP_PHALANX2 PHILIP_PHALANX3 PHILIP_PHALANX4 PHILIP_PHALANX5 PHILIP_PHALANX6 PHILIP_PHALANX7 PHILIP_PHALANX8 PHILIP_PHALANX9 PHILIP_PELTASTS1 PHILIP_PELTASTS2
+
+	unit_immediate_place PLAYER_GENERAL 830, 830 0
+	unit_immediate_place PLAYER_CAVALRY1 800, 830 0
+	unit_immediate_place PLAYER_CAVALRY2 770, 830 0
+	unit_immediate_place PLAYER_CAVALRY3 740, 830 0
+	unit_immediate_place PLAYER_CAVALRY4 710, 830 0
+
+	unit_immediate_place AI_GENERAL -87.2, -103.67 30
+	unit_immediate_place AI_PELTASTS1 -95.5, -23.5 75 15
+	unit_immediate_place AI_PELTASTS2 15.7, -186.78 30 15
+	unit_immediate_place AI_PHALANX1 -69.17, -43.77 65
+	unit_immediate_place AI_PHALANX2 -82.69, -58.48 55
+	unit_immediate_place AI_PHALANX3 -55.5, -81.80 45
+	unit_immediate_place AI_PHALANX4 -64.48, -121.15 35
+	unit_immediate_place AI_PHALANX5 -21.48, -111.43 35
+	unit_immediate_place AI_PHALANX6 -21.68, -140.64 30
+	unit_immediate_place AI_PHALANX7 2.28, -141.18 30
+	unit_immediate_place AI_PHALANX8 9.54, -167.72 30
+	unit_immediate_place AI_PHALANX9 24.26, -166.32 30
+	unit_immediate_place AI_PHALANX10 44.93, -170.57 30
+	unit_immediate_place AI_SACRED_BAND1 84.81, -194.28 30
+	unit_immediate_place AI_SACRED_BAND2 91.24, -219.18 30
+	unit_immediate_place AI_SACRED_BAND3 97.67, -244.08 30
+
+	battle_wait 1.5
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	unit_group_order_move_formed GRP_PHILIP 270.5, 530.77
+
+	battle_wait 1.5
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	play_sound_event CHAERONEA_SPEECH_01 tag = CHAERONEA_SPEECH_01
+
+	battle_wait 2
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	camera_zoom_to 223.619, 174.507, 682.898 224.286, 172.778, 673.249 15
+
+	battle_wait 5
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	camera_zoom_to 223.619, 174.507, 682.898 224.286, 172.778, 673.249 5
+
+	battle_wait 1.5
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	unit_order_attack_unit PHILIP_PELTASTS2 AI_GENERAL
+
+	battle_wait 0.5
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	Close-up of Philip
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	camera_position 265.648, 151.717, 599.986 257.129, 149.988, 604.565
+
+	battle_wait 0.2
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	camera_zoom_to 276.093, 152.928, 571.285 269.575, 147.935, 577.721 2.5
+
+	battle_wait 0.5
+
+	play_sound_event CHAERONEA_SPEECH_02 tag = CHAERONEA_SPEECH_02
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	unit_order_move PHILIP_PELTASTS2 245.97, 555.36
+
+	unit_order_move AI_GENERAL 53.150, -34.926
+	unit_order_move AI_PELTASTS1 23.2, -78.3
+	unit_order_move AI_PELTASTS2 155.234, -156.180
+	unit_order_move AI_PHALANX1 49.6, -59.6
+	unit_order_move AI_PHALANX2 49.6, -59.6
+	unit_order_move AI_PHALANX3 49.6, -59.6
+	unit_order_move AI_PHALANX4 97.929, -34.351
+	unit_order_move AI_PHALANX5 110.964, -54.489
+	unit_order_move AI_PHALANX6 123.726, -75.951
+	unit_order_move AI_PHALANX7 136.641, -95.930
+	unit_order_move AI_PHALANX8 148.309, -115.371
+	unit_order_move AI_PHALANX9 160.632, -134.397
+	unit_order_move AI_PHALANX10 172.938, -155.291
+	unit_order_move AI_SACRED_BAND1 184.142, -173.996
+	unit_order_move AI_SACRED_BAND2 195.149, -193.590
+	unit_order_move AI_SACRED_BAND3 207.303, -213.311
+
+	battle_wait 2.5
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	camera_zoom_to 268.914, 169.548, 565.901 264.401, 165.037, 572.834 7.5
+
+	battle_wait 5
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	camera_zoom_to 264.966, 165.984, 564.685 264.684, 165.688, 563.773 10
+
+	battle_wait 2
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	Zoom across to look at the Greeks
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	camera_zoom_to 148.746, 204.259, -94.2426 140.956, 200.023, -97.9708 300
+
+	battle_wait 1
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	play_sound_event CHAERONEA_SPEECH_03 tag = CHAERONEA_SPEECH_03
+
+	battle_wait 4
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	camera_track_unit AI_PHALANX10 200 25 15
+
+	battle_wait 3
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	camera_zoom_to 151.738, 165.645, -164.066 144.52, 160.726, -169.681 75
+
+	battle_wait 2.5
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	camera_zoom_to 172.386, 162.098, -228.738 164.286, 158.382, -232.196 5
+
+	battle_wait 9
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	Shot of Alexander cresting hill
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	unit_immediate_place PLAYER_GENERAL 604.26, 226.43 240
+	unit_immediate_place PLAYER_CAVALRY1 630.65, 219.39 240
+	unit_immediate_place PLAYER_CAVALRY2 600.64, 263.8 240
+	unit_immediate_place PLAYER_CAVALRY3 649.71, 222.78 240
+	unit_immediate_place PLAYER_CAVALRY4 626.95, 266.58 240
+
+	unit_order_move PLAYER_GENERAL 565.49, 221.79 run
+	unit_order_move PLAYER_CAVALRY1 560.40, 181.41 run
+	unit_order_move PLAYER_CAVALRY2 537.19, 242.31 run
+	unit_order_move PLAYER_CAVALRY3 581.32, 187.69 run
+	unit_order_move PLAYER_CAVALRY4 529.42, 266.36 run
+
+	unit_group_immediate_place GRP_PHILIP 263 292 170
+
+	battle_wait 2
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	camera_position 587.111, 197.265, 221.13 595.215, 193.673, 226.218
+
+	unit_group_order_move_formed GRP_PHILIP 285, 6
+
+	battle_wait 0.1
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	camera_zoom_to 559.184, 184.590, 202.961 559.987, 184.431, 203.535 3
+
+	battle_wait 3
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	play_sound_event CHAERONEA_SPEECH_04 tag = CHAERONEA_SPEECH_04
+
+	battle_wait 6.4
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	camera_zoom_to 605.136, 184.9116, 205.9394 604.192, 184.7516, 206.5134 0.1
+
+	battle_wait 5
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	unit_order_attack_unit PLAYER_CAVALRY4 AI_PHALANX10 run
+
+	battle_wait 1.5
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	unit_order_attack_unit PLAYER_CAVALRY1 AI_PELTASTS1 run
+	unit_order_attack_unit PLAYER_CAVALRY2 AI_PELTASTS1 run
+	unit_order_attack_unit PLAYER_CAVALRY3 AI_PELTASTS1 run
+	unit_order_attack_unit PLAYER_GENERAL AI_PELTASTS1 run
+
+	battle_wait 1.2
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	unit_immediate_place AI_SACRED_BAND1 132.01, -193.97 54
+	unit_immediate_place AI_SACRED_BAND2 146.95, -214.9 54
+	unit_immediate_place AI_SACRED_BAND3 161.89, -235.82 54
+
+	unit_order_change_formation AI_SACRED_BAND1 phalanx
+	unit_order_change_formation AI_SACRED_BAND2 phalanx
+	unit_order_change_formation AI_SACRED_BAND3 phalanx
+
+	battle_wait 1
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	camera_position 574.501, 193.328, 213.473 565.872, 190.51, 211.253
+	
+	battle_wait 1
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	camera_zoom_to 554.336, 220.527, 208.285 545.104, 215.699, 205.91 2
+
+	battle_wait 3
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	unit_order_move AI_SACRED_BAND1 184.142, -173.996
+	unit_order_move AI_SACRED_BAND2 195.149, -193.590
+	unit_order_move AI_SACRED_BAND3 207.303, -213.311
+
+	battle_wait 2
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	unit_immediate_place PHILIP_GENERAL 341.83, 152.54 170 8
+	unit_immediate_place PHILIP_PHALANX1 307.53, 63.09 205 15
+	unit_immediate_place PHILIP_PHALANX2 301.06, 85.92 210 15
+	unit_immediate_place PHILIP_PHALANX3 280.21, 104.07 215 15
+	unit_immediate_place PHILIP_PHALANX4 283.39, 87.38 220 15
+	unit_immediate_place PHILIP_PHALANX5 257.96, 101.29 235 15
+	unit_immediate_place PHILIP_PHALANX6 242.06, 128.6 242 15
+	unit_immediate_place PHILIP_PHALANX7 252.85, 140.76 245 15
+	unit_immediate_place PHILIP_PHALANX8 285.26, 184.91 240 15
+	unit_immediate_place PHILIP_PHALANX9 293.94, 206.68 240 15
+	unit_immediate_place PHILIP_PELTASTS1 246.4, 205 235 10
+	unit_immediate_place PHILIP_PELTASTS2 321.87, 202.72 240 10
+
+	unit_order_move PHILIP_PHALANX1 198, -107
+	unit_order_move PHILIP_PHALANX2 173, -87
+	unit_order_move PHILIP_PHALANX3 157, -59
+	unit_order_move PHILIP_PHALANX4 135, -36
+	unit_order_move PHILIP_PHALANX5 105, -4
+	unit_order_move PHILIP_PHALANX6 79, 22
+	unit_order_move PHILIP_PHALANX7 42, 49
+	unit_order_move PHILIP_PHALANX8 42, 49
+	unit_order_move PHILIP_PHALANX9 42, 49
+	unit_order_move PHILIP_PELTASTS1 71, 33
+	unit_order_move PHILIP_PELTASTS2 42, 49
+
+	unit_immediate_place PLAYER_GENERAL 360.92, 155.5 170 12
+	unit_immediate_place PLAYER_CAVALRY1 426.96, 148.84 200
+	unit_immediate_place PLAYER_CAVALRY2 403.9, 182.23 190
+	unit_immediate_place PLAYER_CAVALRY3 410.6, 215.82 190
+	unit_immediate_place PLAYER_CAVALRY4 370.27, 203.74 190
+
+	unit_immediate_place AI_GENERAL -20.08, -61.78 57
+	unit_immediate_place AI_PELTASTS1 -0.62, -67.5 60
+	unit_immediate_place AI_PHALANX1 7.2, -52.3 59
+	unit_immediate_place AI_PHALANX2 17.6, -35.9 58
+	unit_immediate_place AI_PHALANX3 31, -37.94 58
+	unit_immediate_place AI_PHALANX4 47.19, -57.13 59
+	unit_immediate_place AI_PHALANX5 55.42, -78.22 59
+	unit_immediate_place AI_PHALANX6 74.66, -90.94 60
+	unit_immediate_place AI_PHALANX7 84.74, -107.27 60
+	unit_immediate_place AI_PHALANX8 95.77, -132.5 60
+	unit_immediate_place AI_PHALANX9 103.7, -152.49 60
+	unit_immediate_place AI_PHALANX10 119.96, -174.84 60
+	unit_immediate_place AI_PELTASTS2 90.37, -198.72 60
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	Follow Sacred Band briefly
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	camera_position 157.015, 157.271, -218.651 149.962, 152.926, -224.726
+
+	battle_wait 0.2
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	camera_zoom_to 207.035, 157.841, -175.557 199.624, 156.493, -181.941 2.5
+
+	play_sound_event CHAERONEA_SPEECH_05 tag = CHAERONEA_SPEECH_05
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	battle_wait 7
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	unit_order_move PLAYER_GENERAL 380.09, 122.17
+	unit_order_move PHILIP_GENERAL 365.85, 111.20
+	unit_order_move PLAYER_CAVALRY1 404, -51
+	unit_order_move PLAYER_CAVALRY2 404, -51
+	unit_order_move PLAYER_CAVALRY3 404, -51
+	unit_order_move PLAYER_CAVALRY4 404, -51
+
+	battle_wait 2.5
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	unit_order_move AI_GENERAL 53.150, -34.926
+	unit_order_move AI_PELTASTS1 28.743, 50.743
+	unit_order_move AI_PELTASTS2 155.234, -156.180
+	unit_order_move AI_PHALANX1 60.212, 25.049
+	unit_order_move AI_PHALANX2 72.569, 5.874
+	unit_order_move AI_PHALANX3 84.995, -13.777
+	unit_order_move AI_PHALANX4 97.929, -34.351
+	unit_order_move AI_PHALANX5 110.964, -54.489
+	unit_order_move AI_PHALANX6 123.726, -75.951
+	unit_order_move AI_PHALANX7 136.641, -95.930
+	unit_order_move AI_PHALANX8 148.309, -115.371
+	unit_order_move AI_PHALANX9 160.632, -134.397
+	unit_order_move AI_PHALANX10 172.938, -155.291
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	Look at Alexander and Philip
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	camera_position 337.114, 167.367, 130.584 338.753, 163.381, 139.243
+
+	battle_wait 0.1
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	camera_zoom_to 338.564, 165.311, 142.48 330.036, 162.068, 150.912 1
+	
+	unit_order_move PHILIP_GENERAL 190.8, 137.5 run
+
+	battle_wait 0.5
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	play_sound_event CHAERONEA_SPEECH_06 tag = CHAERONEA_SPEECH_06
+
+	battle_wait 1.5
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	camera_zoom_to 330.624, 176.271, 158.814 322.791, 172.285, 154.776 18
+
+	battle_wait 3.5
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	unit_immediate_place PLAYER_GENERAL 365.08, 82.98 220
+	unit_immediate_place PLAYER_CAVALRY1 400.59, 90.32 220
+	unit_immediate_place PLAYER_CAVALRY2 358.52, 119.96 220
+	unit_immediate_place PLAYER_CAVALRY3 420.67, 121.98 220
+	unit_immediate_place PLAYER_CAVALRY4 396.3, 145.85 220
+
+	unit_order_move PLAYER_GENERAL 302.251, -157.179 run
+	unit_order_move PLAYER_CAVALRY1 336.777, -153.405 run
+	unit_order_move PLAYER_CAVALRY2 319.447, -126.481 run
+	unit_order_move PLAYER_CAVALRY3 370.228, -133.156 run
+	unit_order_move PLAYER_CAVALRY4 353.601, -106.605 run
+
+	battle_wait 2
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	unit_order_attack_unit PLAYER_GENERAL AI_SACRED_BAND1 run
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	Follow Alexander Running
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	camera_position 363.805, 162.481, 69.0027 363.585, 160.965, 78.6534
+
+	unit_immediate_place PHILIP_GENERAL 217.3, 50.26 -127
+	unit_immediate_place PHILIP_PELTASTS1 289.3, -34.18 -125 20
+	unit_immediate_place PHILIP_PELTASTS2 198.33, 63.69 -130 20
+	unit_immediate_place PHILIP_PHALANX1 285.93, -61.23 -123
+	unit_immediate_place PHILIP_PHALANX2 270.45, -52.52 -124 21.5
+	unit_immediate_place PHILIP_PHALANX3 256.66, -40.64 -124 21.5
+	unit_immediate_place PHILIP_PHALANX4 244.96, -29.76 -125 21.5
+	unit_immediate_place PHILIP_PHALANX5 233.49, -16.17 -126 21.5
+	unit_immediate_place PHILIP_PHALANX6 223.77, -3.23 -127 21.5
+	unit_immediate_place PHILIP_PHALANX7 215.71, 12.5 -128 21.5
+	unit_immediate_place PHILIP_PHALANX8 204.18, 28.86 -130 21.5
+	unit_immediate_place PHILIP_PHALANX9 196.14, 47.5 -130 21.5
+
+	unit_order_move PHILIP_PHALANX1 269.057, -113.488
+	unit_order_move PHILIP_PHALANX2 249.311, -96.21
+	unit_order_move PHILIP_PHALANX3 229.621, -80.172
+	unit_order_move PHILIP_PHALANX4 208.982, -65.229
+	unit_order_move PHILIP_PHALANX5 185.902, -53.338
+	unit_order_move PHILIP_PHALANX6 162.167, -40.706
+	unit_order_move PHILIP_PHALANX7 140.940, -27.141
+	unit_order_move PHILIP_PHALANX8 118.617, -12.430
+	unit_order_move PHILIP_PHALANX9 101.375, 7.592
+	unit_order_move PHILIP_PELTASTS1 64.88, 67.65
+	unit_order_move PHILIP_PELTASTS2 191.51, 59.63
+
+	battle_wait 0.2
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	camera_zoom_to 354.301, 160.441, -13.854 354.081, 158.925, -4.20327 10
+	unit_order_move PLAYER_GENERAL 302.251, -157.179 run
+
+	unit_immediate_place AI_GENERAL 53.150, -34.926 57
+	unit_immediate_place AI_PELTASTS1 48.9, 5.9 60
+	unit_immediate_place AI_PELTASTS2 155.234, -156.180 57
+	unit_immediate_place AI_PHALANX1 60.212, 25.049 59
+	unit_immediate_place AI_PHALANX2 72.569, 5.874 58
+	unit_immediate_place AI_PHALANX3 84.995, -13.777 58
+	unit_immediate_place AI_PHALANX4 97.929, -34.351 59
+	unit_immediate_place AI_PHALANX5 110.964, -54.489 59
+	unit_immediate_place AI_PHALANX6 123.726, -75.951 60
+	unit_immediate_place AI_PHALANX7 136.641, -95.930 60
+	unit_immediate_place AI_PHALANX8 148.309, -115.371 60
+	unit_immediate_place AI_PHALANX9 160.632, -134.397 60
+	unit_immediate_place AI_PHALANX10 172.938, -155.291 60
+
+	unit_immediate_place AI_SACRED_BAND1 178.01, -177.54 60
+	unit_immediate_place AI_SACRED_BAND2 189.09, -196.69 59
+	unit_immediate_place AI_SACRED_BAND3 201.37, -219.4 58
+
+	unit_order_move AI_SACRED_BAND1 188.96, -181.51
+	unit_order_move AI_SACRED_BAND2 200.78, -200.96
+	unit_order_move AI_SACRED_BAND3 212.95, -220.61
+
+	battle_wait 3
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	Cut across to Sacred Band
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	camera_position 189.469, 161.534, -214.461 198.125, 158.291, -206.161
+
+	battle_wait 0.1
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	camera_zoom_to 175.149, 161.184, -228.191 183.805, 157.941, -219.891 0.3
+
+	battle_wait 3
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	play_sound_event CHAERONEA_SPEECH_07 tag = CHAERONEA_SPEECH_07
+
+	battle_wait 1
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	Shot showing cavalry running forward
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	camera_position 376.1, 167.123, 66.3693 370.875, 164.402, 57.9139
+
+	battle_wait 0.1
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	camera_zoom_to 405.534, 166.511, 48.1807 399.098, 163.79, 40.6062 2
+
+	battle_wait 3
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	Cut to Philips army marching forward
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	camera_position 175.52, 161.206, 62.1871 172.276, 157.963, 50.6413
+
+	battle_wait 0.2
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	camera_zoom_to 128.826, 158.687, 38.0032 124.616, 155.444, 26.7738 2
+
+	battle_wait 1.5
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	camera_zoom_to 187.773, 171.428, 55.815 180.84, 168.185, 46.0289 9
+
+	battle_wait 5
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	unit_immediate_place PLAYER_GENERAL 306.37, -155.29 -124
+	unit_immediate_place PLAYER_CAVALRY1 342.86, -150.15 -122
+	unit_immediate_place PLAYER_CAVALRY2 326, -122.49 -122
+	unit_immediate_place PLAYER_CAVALRY3 370.228, -133.156 -121
+	unit_immediate_place PLAYER_CAVALRY4 353.601, -106.605 -123
+
+	unit_order_move PLAYER_GENERAL 298.22, -150.89
+	unit_order_move PLAYER_CAVALRY1 330.65, -142.98
+	unit_order_move PLAYER_CAVALRY2 313.61, -115.66
+
+	battle_wait 2
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;	Final pan round Alexander
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	camera_position 299.39, 154.277, -159.672 307.896, 150.15, -155.253
+
+	battle_wait 0.1
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	camera_zoom_to 303.556, 154.345, -162.149 302.249, 150.218, -152.654 0.4
+
+	unit_immediate_place AI_GENERAL 53.150, -34.926 57 10
+	unit_immediate_place AI_PELTASTS1 49.5, 8.5 60 31.976
+	unit_immediate_place AI_PELTASTS2 155.234, -156.180 57
+	unit_immediate_place AI_PHALANX1 45.5, 24.24 30 28
+	unit_immediate_place AI_PHALANX2 72.569, 5.874 58
+	unit_immediate_place AI_PHALANX3 84.995, -13.777 58
+	unit_immediate_place AI_PHALANX4 97.929, -34.351 59
+	unit_immediate_place AI_PHALANX5 110.964, -54.489 59
+	unit_immediate_place AI_PHALANX6 123.726, -75.951 60
+	unit_immediate_place AI_PHALANX7 136.641, -95.930 60
+	unit_immediate_place AI_PHALANX8 148.309, -115.371 60
+	unit_immediate_place AI_PHALANX9 160.632, -134.397 60
+	unit_immediate_place AI_PHALANX10 172.938, -155.291 60
+	unit_immediate_place AI_SACRED_BAND1 184.142, -173.996 60
+	unit_immediate_place AI_SACRED_BAND2 195.149, -193.590 59
+	unit_immediate_place AI_SACRED_BAND3 207.303, -213.311 58
+
+	unit_immediate_place PHILIP_GENERAL 141.895, 45.482 -127 10
+	unit_immediate_place PHILIP_PELTASTS1 298.691, -103.589 -125
+	unit_immediate_place PHILIP_PELTASTS2 112.975, 61.962 -130
+	unit_immediate_place PHILIP_PHALANX1 283.98, -93.423 -124 20
+	unit_immediate_place PHILIP_PHALANX2 263.998, -86.674 -124 20
+	unit_immediate_place PHILIP_PHALANX3 244.544, -70.172 -125 20
+	unit_immediate_place PHILIP_PHALANX4 223.94, -55.229 -126 20
+	unit_immediate_place PHILIP_PHALANX5 200.825, -43.338 -127 20
+	unit_immediate_place PHILIP_PHALANX6 177.09, -30.706 -128 20
+	unit_immediate_place PHILIP_PHALANX7 155.863, -17.141 -130 20
+	unit_immediate_place PHILIP_PHALANX8 133.54, -2.430 -130 20
+	unit_immediate_place PHILIP_PHALANX9 116.298, 17.592 -131 20
+
+	unit_order_move_relative PHILIP_PELTASTS1 0, 18
+	unit_order_move_relative PHILIP_PELTASTS2 0, 18
+	unit_order_move_relative PHILIP_PHALANX1 0, 18
+	unit_order_move_relative PHILIP_PHALANX2 0, 18
+	unit_order_move_relative PHILIP_PHALANX3 0, 18
+	unit_order_move_relative PHILIP_PHALANX4 0, 18
+	unit_order_move_relative PHILIP_PHALANX5 0, 18
+	unit_order_move_relative PHILIP_PHALANX6 0, 18
+	unit_order_move_relative PHILIP_PHALANX7 0, 18
+	unit_order_move_relative PHILIP_PHALANX8 0, 18
+	unit_order_move_relative PHILIP_PHALANX9 0, 18
+
+	battle_wait 3
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	play_sound_event CHAERONEA_SPEECH_08 tag = CHAERONEA_SPEECH_08
+
+	battle_wait 2
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	set_counter dont_reposition_players_cavalry 1
+
+	camera_zoom_to 331.957, 171.878, -128.568 305.817, 152.734, -140.167 8
+
+	battle_wait 7
+
+	while I_CompareCounter battle_has_started = 1
+	end_while
+
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	;;;
+	;;;	Intro Cinematic has finished, manually trigger the end phase
+	;;;
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	set_counter go_to_end_phase 2
+
+	while I_InBattle
+	end_while

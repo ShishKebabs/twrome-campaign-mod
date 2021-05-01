@@ -1,0 +1,656 @@
+{
+	"frames": [
+		{
+			"size": {
+				"fullscreen":true
+			},
+			"priority": -3,
+			"fill": "black_curved"
+		},
+		{
+			"position": {
+				"x": -18 ,
+				"y": -10
+			},
+			"size": {
+				"width": 400 ,
+				"height": 41
+			},
+			"priority": 5,
+			"fill": "black_curved"
+		},
+		{
+			"position": {
+				"x": 382 ,
+				"y": -10
+			},
+			"size": {
+				"width": 1456 ,
+				"height": 100
+			},
+			"collapsed_size": {
+				"width": 1456 ,
+				"height": 41
+			},
+			"priority": 5,
+			"fill": "black_curved",
+			"tag":"tooltip"
+		},
+		{
+			"position": {
+				"x": 0 ,
+				"y": 0
+			},
+			"size": {
+				"width": 910 ,
+				"height":452
+			},
+			"priority": -2,
+			"fill": "black_curved",
+			"notch%": true,
+			"lock_left": true
+		},
+		{
+			"position": {
+				"x": 910 ,
+				"y": 0
+			},
+			"size": {
+				"width": 910 ,
+				"height":452
+			},
+			"priority": -2,
+			"fill": "black_curved",
+			"notch%": true,
+			"lock_right": true
+		}
+	],
+	"tooltip": {
+		"x": 391 ,
+		"y": 5,
+		"width": 1401 ,
+		"height": 80,
+		"font":"verdana_lrg"
+	},
+	"tooltip_ticker": {
+		"x": 391 ,
+		"y": 4,
+		"width": 1429 ,
+		"height": 50,
+		"font":"verdana_lrg"
+	},
+	"list": [
+		{
+			"name": "name_string",
+			"x": 455 ,
+			"y": 160,
+			"align":"C",
+			"notch%": true,
+			"hidden":true
+		},
+		{
+			"name": "mode_string",
+			"x": -620,
+			"y": -300,
+			"anchor": "CR"
+		},
+		{
+			"name": "siege_duration",
+			"x": 100,
+			"y": 250
+		},
+		{
+			"name": "mercenary_cost",
+			"x": 937 ,
+			"y": 300,
+			"font":"verdana_med",
+			"notch%": true
+		},
+		{
+			"name": "recruitment_frame",
+			"x": 937 ,
+			"y": 110,
+			"size": {
+				"width": 855 ,
+				"height": 180
+			},
+			"annotation_id": "Rome.Annotations.bnh-merc_list",
+			"notch%": true
+		},
+		{
+			"name": "recruitment_queue",
+			"x": 937 ,
+			"y": 330,
+			"size": {
+				"width": 855 ,
+				"height": 90
+			},
+			"annotation_id": "Rome.Annotations.bnh-merc_queue",
+			"notch%": true
+		},
+		{
+			"name": "prev_button",
+			"x": 100,
+			"y": 200,
+			"hidden": true
+		},
+		{
+			"name": "next_button",
+			"x": 100,
+			"y": 200,
+			"hidden": true
+		},
+		{
+			"name": "zoom_button",
+			"x": 63,
+			"y": 56,
+			"anchor": "CR",
+			"annotation_id": "Rome.Annotations.units_general-location",
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			}
+		},
+		{
+			"name": "hire_button",
+			"x": 63,
+			"y": -174,
+			"anchor": "CR",
+			"annotation_id": "Rome.Annotations.units_general-mercs",
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			}
+		},
+		{
+			"name": "unit_disband_button",
+			"x": 63,
+			"y": -21,
+			"anchor": "CR",
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			},
+			"annotation_id": "Rome.Annotations.units_selected-disband"
+		},
+		{
+			"name": "retinue_swap_button",
+			"x": 63,
+			"y": -97,
+			"anchor": "CR",
+			"annotation_id": "Rome.Annotations.units_general-swap",
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			}
+		},
+		{
+			"name": "close_button",
+			"x": -60,
+			"y": -58,
+			"size": {
+				"width": 55,
+				"height": 55
+			},
+			"anchor": "BR",
+			"priority":50,
+			"annotation_id": "Rome.Annotations.units_general-close",
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			},
+			"notch_override": {
+				"x": -72
+			}
+		},
+		{
+			"name": "general_unit_button",
+			"x": 63,
+			"y": -250,
+			"anchor": "CR",
+			"annotation_id": "Rome.Annotations.units_general-bodyg"
+		},
+		{
+			"name": "character_frame",
+			"x": 40,
+			"y": 32,
+			"size": {
+				"width": 300,
+				"height": 130
+			},
+			"anchor": "TL",
+			"tags": [
+				"char_info"
+			],
+			"scale_width":true,
+			"scale_x_pos":true,
+			"font":"verdana_med",
+			"font_colour":"dark_brown",
+			"annotation_id": "Rome.Annotations.units_general-char"
+		},
+		{
+			"name": "character_info",
+			"x": 10,
+			"y": 193,
+			"size": {
+				"width": 340,
+				"height": 250
+			},
+			"anchor": "TL",
+			"tags": [
+				"char_info"
+			],
+			"scale_width":true,
+			"scale_x_pos":true,
+			"font":"verdana_med",
+			"notch_left_resize":true
+		},
+		{
+			"name": "traits_string",
+			"x": 10,
+			"y": -92,
+			"anchor": "CL",
+			"tags": [
+				"char_info"
+			],
+			"scale_width":true,
+			"scale_x_pos":true,
+			"font":"verdana_lrg",
+			"font_colour":"gold",
+			"notch_left_move":true,
+			"annotation_id": "Rome.Annotations.sett_character-traits"
+		},
+		{
+			"name": "retinue_string",
+			"x": 180,
+			"y": -92,
+			"anchor": "CL",
+			"tags": [
+				"char_info"
+			],
+			"scale_x_pos":true,
+			"font":"verdana_lrg",
+			"font_colour":"gold",
+			"notch_left_move":true,
+			"annotation_id": "Rome.Annotations.sett_character-assistants"
+		},
+		{
+			"name": "options_string",
+			"x": 60,
+			"y": -380
+		},
+		{
+			"name": "queue_string",
+			"x": -260,
+			"y": 530
+		},
+        {
+            "name": "cannot_build_string",
+						"x": 1365 ,
+						"y": 345,
+						"size": {
+							"width": 200,
+							"height": 150
+						},
+						"align":"C",
+						"annotation_id": "Rome.Annotations.bnh-build_queue",
+						"notch%": true
+        },
+		{
+			"name": "unit_info",
+			"x": 18 ,
+			"y": 100,
+			"size": {
+				"width": 892 ,
+				"height": 350
+			},
+			"tags": [
+				"unit_info"
+			],
+			"annotation_id": "Rome.Annotations.units_selected-details",
+			"notch%": true
+		},
+		{
+			"name": "z_unit_table",
+			"x": 18 ,
+			"y": 140,
+			"size": {
+				"width": 892 ,
+				"height": 0
+			},
+			"tags": [
+				"unit_info"
+			],
+			"notch%": true
+		},
+		{
+			"name": "unit_image",
+			"x": 18 ,
+			"y": 120,
+			"size": {
+				"width" : 170,
+				"height": 220
+			},
+			"notch%": true
+		},
+		{
+			"name": "unit_time",
+			"x": 314,
+			"y": 130,
+			"align":"CR",
+			"scale_x_pos":true,
+			"tags": [
+				"unit_info"
+			],
+			"notch%": true
+		},
+		{
+			"name": "unit_cost",
+			"x": 150,
+			"y": 84,
+			"align":"CL",
+			"tags": [
+				"unit_info"
+			],
+			"notch%": true
+		},
+		{
+			"name": "unit_name",
+			"x": 455 ,
+			"y": 60,
+			"size": {
+				"width": 728 ,
+				"height": 100
+			},
+			"align":"C",
+			"tags": [
+				"unit_info"
+			],
+			"notch%": true
+		},
+		{
+			"name": "unit_info_display",
+			"x": 327 ,
+			"y": 95,
+			"size": {
+				"width": 491 ,
+				"height": 300
+			},
+			"font":"verdana_med",
+			"notch%": true
+		},
+		{
+			"name": "unit_description",
+			"x": 18 ,
+			"y": 500,
+			"size": {
+				"width": 828 ,
+				"height": 0
+			},
+			"notch%": true
+		},
+		{
+			"name": "unit_zoom_button",
+			"x": 1520,
+			"y": 415
+		},
+		{
+			"name": "agent_cost_string",
+			"x": 600,
+			"y": 180
+		},
+		{
+			"name": "agent_upkeep_string",
+			"x": 600,
+			"y": 180
+		},
+		{
+			"name": "agent_description",
+			"x": 600,
+			"y": 180
+		},
+		{
+			"name": "tab_group",
+			"x": -600,
+			"y": -180
+		},
+		{
+			"name": "construction_tab",
+			"x": 1165 ,
+			"y": 70,
+			"align":"C",
+			"annotation_id": "Rome.Annotations.bnh-build_button",
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			},
+			"notch%": true
+		},
+		{
+			"name": "recruitment_tab",
+			"x": 1565 ,
+			"y": 70,
+			"align":"C",
+			"annotation_id": "Rome.Annotations.bnh-merc_button",
+			"hitbox" : {
+    			"left": -20,
+    			"top":-20,
+    			"right":20,
+    			"bot":20
+			},
+			"notch%": true
+		},
+		{
+			"name": "watchtower_description",
+			"x": 91 ,
+			"y": 240,
+			"size": {
+				"width": 728 ,
+				"height": 225
+			},
+			"tags": [
+				"watchtower_info"
+			],
+			"font":"verdana_med",
+			"notch%": true
+		},
+		{
+			"name": "watchtower_cost_icon",
+			"x": 819 ,
+			"y": 83,
+			"align":"CR",
+			"tags": [
+				"watchtower_info"
+			],
+			"notch%": true
+		},
+		{
+			"name": "watchtower_cost_string",
+			"x": 773 ,
+			"y": 83,
+			"align":"CR",
+			"tags": [
+				"watchtower_info"
+			],
+			"font":"verdana_med",
+			"notch%": true
+		},
+		{
+			"name": "watchtower_title",
+			"x": 455 ,
+			"y": 83,
+			"align":"C",
+			"tags": [
+				"watchtower_info"
+			],
+			"font":"verdana_med",
+			"notch%": true
+		},
+		{
+			"name": "fort_description",
+			"x": 91 ,
+			"y": 240,
+			"size": {
+				"width": 728 ,
+				"height": 225
+			},
+			"tags": [
+				"fort_info"
+			],
+			"font":"verdana_med",
+			"notch%": true
+		},
+		{
+			"name": "fort_cost_icon",
+			"x": 819 ,
+			"y": 83,
+			"align":"CR",
+			"tags": [
+				"fort_info"
+			],
+			"notch%": true
+		},
+		{
+			"name": "fort_cost_string",
+			"x": 773 ,
+			"y": 83,
+			"align":"CR",
+			"tags": [
+				"fort_info"
+			],
+			"font":"verdana_med",
+			"notch%": true
+		},
+		{
+			"name": "fort_title",
+			"x": 455 ,
+			"y": 83,
+			"align":"C",
+			"tags": [
+				"fort_info"
+			],
+			"font":"verdana_med",
+			"notch%": true
+		},
+		{
+			"name": "selected_image",
+			"x": 455 ,
+			"y": 110,
+			"size": {
+				"width": 263,
+				"height": 119
+			},
+			"align":"TC",
+			"priority":10,
+			"tags": [
+				"watchtower_info",
+				"fort_info"
+			],
+			"notch%": true
+		},
+		{
+			"name": "help_button",
+			"x": 879,
+			"y": -626
+		},
+		{
+			"name": "construction_frame",
+			"x": 937 ,
+			"y": 110,
+			"size": {
+				"width": 855 ,
+				"height": 130
+			},
+			"annotation_id": "Rome.Annotations.bnh-build_list",
+			"notch%": true
+		},
+		{
+			"name": "construction_queue",
+			"x": 1365 ,
+			"y": 270,
+			"size": {
+				"width": 200,
+				"height": 150
+			},
+			"align":"TC",
+			"annotation_id": "Rome.Annotations.bnh-build_queue",
+			"notch%": true
+		},
+		{
+			"name": "cards",
+			"x": 65,
+			"y": -59,
+			"size" : {
+				"height" : 64,
+				"width"  : 552
+			},
+			"anchor": "BL",
+			"fill_right":true,
+			"annotation_id": "Rome.Annotations.camp_tabs-bar"
+		},
+		{
+			"name": "cards_expanded",
+			"x": 65,
+			"y": -120,
+			"size" : {
+				"height" : 128,
+				"width"  : 552
+			},
+			"fill_right":true,
+			"anchor": "BL",
+			"annotation_id": "Rome.Annotations.camp_tabs-bar",
+			"notch_override": {
+				"x": 72,
+				"size" : {
+					"width"  : 535
+				}
+			}
+		},
+        {
+			"name": "advisor",
+            "x": 0,
+            "y": 28,
+			"anchor": "TL"
+		},
+		{
+			"name": "money_string",
+			"x": 60,
+			"y": 14,
+			"priority": 10,
+			"anchor": "TL",
+			"align":"CL",
+			"font":"verdana_lrg"
+		},
+		{
+			"name": "money_icon",
+			"x": 40,
+			"y": 14,
+			"priority": 10,
+			"anchor": "TL",
+			"align":"C"
+		},
+		{
+			"name": "money_annotation",
+			"x": -10,
+			"y": -10,
+			"size": {
+				"width": 400 ,
+				"height": 41
+			},
+			"priority": 15,
+			"annotation_id": "Rome.Annotations.camp_status-money"
+		}
+	]
+}

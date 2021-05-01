@@ -1,0 +1,41 @@
+;	road_joiner_paved_road_into_roman_town
+;	{
+;		full_health 10
+;		localised_name road
+;		level
+;		{
+;			min_health 0
+;			battle_stats
+;			item		road_joiner_paved_road_into_roman_town
+;			physical_info	none
+;		}
+;	}
+
+	road_joiner_muddy_path_into_roman_town
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		road_joiner_muddy_path_into_roman_town
+			physical_info	none
+		}
+	}
+
+	road_joiner_no_road_into_roman_town
+	{
+		stat_cat indestructable
+		localised_name none
+		level
+		{
+			min_health 0
+			battle_stats
+			item		road_joiner_no_road_into_roman_town
+			physical_info	none
+		}
+	}
+
+
+	

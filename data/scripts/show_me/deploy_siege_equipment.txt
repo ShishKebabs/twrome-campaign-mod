@@ -1,0 +1,34 @@
+script
+	declare_show_me						; This is a show me script
+
+	monitor_event AbandonShowMe	TrueCondition	; Catch the AbandonShowMe event
+		suspend_unscripted_advice false		; Restore unscripted advice
+		terminate_script					; Shut down the show me script
+	end_monitor	
+
+	dismiss_advice
+	while I_AdvisorVisible
+	end_while
+
+	suspend_unscripted_advice true
+	advance_advice_thread Siege_Advice_Attack_Objectives_Thread
+	while I_AdvisorVisible
+	end_while
+
+	advance_advice_thread Siege_Advice_Equipment_Attack_Battering_Rams_Thread
+	while I_AdvisorVisible
+	end_while
+
+	advance_advice_thread Siege_Advice_Equipment_Attack_Ladders_Thread
+	while I_AdvisorVisible
+	end_while
+
+	advance_advice_thread Siege_Advice_Equipment_Attack_Towers_Thread
+	while I_AdvisorVisible
+	end_while
+
+	advance_advice_thread Siege_Advice_Equipment_Attack_Sapping_Thread
+	while I_AdvisorVisible
+	end_while
+	suspend_unscripted_advice false
+end_script

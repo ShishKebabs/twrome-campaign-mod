@@ -1,0 +1,205 @@
+{
+	"frames": [ ],
+
+	"list": [
+
+		{
+			"name": "portrait",
+			"x": 45 ,
+			"y": -260,
+			"anchor":"C",
+			"align":"TL",
+			"size" : {
+				"width"  : 72,
+				"height" : 100
+			},
+			"priority":5
+		},
+
+		{
+			"name": "portrait_frame",
+			"x": 33 ,
+			"y": -270,
+			"anchor":"C",
+			"align":"TL",
+			"size" : {
+				"width"  : 94,
+				"height" : 122
+			},
+			"priority":5
+		},
+
+		{
+			"comment": "General's Role",
+			"name": "title_string",
+			"x": 145 ,
+			"y": -255,
+			"anchor":"C",
+			"align":"TL",
+			"priority":5,
+			"font":"verdana_med",
+			"font_colour":"dark_brown",
+		},
+
+		{
+			"comment": "General's Name",
+			"name": "heading_string",
+			"x": 18 ,
+			"y": -305,
+			"size" : {
+				"width": 250
+			},
+			"anchor":"C",
+			"align":"CL",
+			"font":"cinzel_med",
+			"font_colour":"dark_brown",
+		},
+
+		{
+			"comment": "General's Location",
+			"name": "location_string",
+			"x": 145 ,
+			"y": -195,
+			"anchor":"C",
+			"align":"TL",
+			"priority":5,
+			"font":"verdana_med",
+			"font_colour":"dark_brown",
+		},
+
+		{
+			"comment": "General's Age",
+			"name": "age_string",
+			"x": 145 ,
+			"y": -225,
+			"anchor":"C",
+			"align":"TL",
+			"priority":5,
+			"font":"verdana_med",
+			"font_colour":"dark_brown",
+		},
+
+		{
+			"comment": "General's Basic Stats",
+			"name": "character_points",
+			"x": 510 ,
+			"y": -325,
+			"size": {
+				"width": 200 ,
+				"height": 34
+			},
+			"priority":5,
+			"anchor":"C",
+			"align":"TR",
+			"bi_override":{
+				"x": 510,
+				"y": -325
+			},
+			"font":"cinzel_med",
+			"font_colour":"dark_brown",
+		},
+
+		{
+			"name": "character_religion",
+			"x": 45 ,
+			"y": -195,
+			"size": {
+				"width": 35 ,
+				"height": 35
+			},
+			"priority":5,
+			"anchor":"C",
+			"align":"TL",
+		},
+
+		{
+			"name": "x_men_string",
+			"x": 18 ,
+			"y": -3180,
+			"size": {
+				"width": 300 ,
+				"height": 110
+			},
+			"priority":5,
+			"font":"verdana_med",
+			"font_colour":"dark_brown",
+		},
+
+
+		{
+			"comment": "Traits header",
+			"name": "trb_traits_string",
+			"x": 45 ,
+			"y": -125,
+			"align":"TL",
+			"anchor":"C",
+			"priority":5,
+			"font":"verdana_sml_bold",
+			"font_colour":"dark_brown",
+		},
+		{
+			"comment": "Retinues header",
+			"name": "trb_retinue_string",
+			"x": 275 ,
+			"y": -125,
+			"align":"TL",
+			"anchor":"C",
+			"priority":5,
+			"font":"verdana_sml_bold",
+			"font_colour":"dark_brown",
+		},
+
+
+
+		{
+			"comment": "Combined list of traits and retinues",
+			"name": "trb_traits_retinue",
+			"x": 45 ,
+			"y": -100,
+			"size": {
+				"width": 440 ,
+				"height": 235
+			},
+			"priority":5,
+			"font":"verdana_sml",
+			"align":"TL",
+			"anchor":"C"
+		},
+		
+		{
+			"_comment":"move this far away from the visible screen",
+			"name": "trb_label",
+			"x": -10000,
+			"y": -10000
+		},
+		
+		{
+			"name": "vertical_divider",
+			"x": 266 ,
+			"y": -125,
+			"size": {
+				"width": 15 ,
+				"height": 260
+			},
+			"priority":5,
+			"align":"TL",
+			"anchor":"C"
+		},
+
+		{
+			"name": "horizontal_divider",
+			"x": -9266 ,
+			"y": -9125,
+			"size": {
+				"width": 150 ,
+				"height": 260
+			},
+			"priority":5,
+			"align":"TL",
+			"anchor":"C"
+		},
+
+	]
+}
+
+
