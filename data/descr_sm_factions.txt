@@ -4,7 +4,7 @@ ethnicity					mediterranean
 symbol						models_strat/symbol_julii.CAS
 rebel_symbol				models_strat/symbol_slaves.CAS
 primary_colour				red 165, green 20, blue 20
-secondary_colour			red 0, green 0, blue 0
+secondary_colour			red 165, green 20, blue 20
 ftree_background_colour			red 96, green 17, blue 15
 ftree_font_colour				red 255, green 255, blue 255
 ftree_selected_line_colour		red 255, green 255, blue 255
@@ -79,7 +79,7 @@ ethnicity					mediterranean
 symbol						models_strat/symbol_senate.CAS
 rebel_symbol				models_strat/symbol_slaves.CAS
 primary_colour				red 150, green 80, blue 205
-secondary_colour			red 255, green 255, blue 255
+secondary_colour			red 150, green 80, blue 205
 ftree_background_colour			red 0, green 0, blue 0
 ftree_font_colour				red 255, green 255, blue 255
 ftree_selected_line_colour		red 255, green 255, blue 255
