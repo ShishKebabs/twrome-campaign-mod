@@ -72,3 +72,4 @@ package-lock.json
 /**/*.wfc
 /**/*.max
 textures/
+eventpics/
