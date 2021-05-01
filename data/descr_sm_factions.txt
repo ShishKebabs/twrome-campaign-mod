@@ -28,9 +28,9 @@ culture						roman
 ethnicity					mediterranean
 symbol						models_strat/symbol_brutii.CAS
 rebel_symbol				models_strat/symbol_slaves.CAS
-primary_colour				red 85, green 135, blue 65
-secondary_colour			red 255, green 250, blue 200
-ftree_background_colour			red 51, green 91, blue 30
+primary_colour				red 165, green 20, blue 20
+secondary_colour			red 85, green 135, blue 65
+ftree_background_colour			red 96, green 17, blue 15
 ftree_font_colour				red 255, green 255, blue 255
 ftree_selected_line_colour		red 255, green 255, blue 255
 ftree_unselected_line_colour	red 200, green 187, blue 187
@@ -53,9 +53,9 @@ culture						roman
 ethnicity					mediterranean
 symbol						models_strat/symbol_scipii.CAS
 rebel_symbol				models_strat/symbol_slaves.CAS
-primary_colour				red 35, green 95, blue 175
-secondary_colour			red 240, green 220, blue 180
-ftree_background_colour			red 21, green 51, blue 73
+primary_colour				red 165, green 20, blue 20
+secondary_colour			red 35, green 95, blue 175
+ftree_background_colour			red 96, green 17, blue 15
 ftree_font_colour				red 255, green 255, blue 255
 ftree_selected_line_colour		red 255, green 255, blue 255
 ftree_unselected_line_colour	red 200, green 187, blue 187
