@@ -643,7 +643,7 @@ building equestrian
                 recruit "greek elephant african"  0  requires factions { seleucid, }  and resource elephants
                 recruit "roman cavalry auxillia"  0  requires factions { roman, }
                 recruit "roman light cavalry"  1  requires factions { roman, }  and not marian_reforms
-                recruit "roman medium cavalry"  2  requires factions { roman, }  and marian_reforms
+                recruit "roman medium cavalry"  0  requires factions { roman, }  and marian_reforms
                 recruit "roman heavy cavalry"  0  requires factions { roman, }  and marian_reforms
                 stage_races 1 requires factions { roman,}
             }
@@ -655,7 +655,7 @@ building equestrian
                 circus_maximus
             }
         }
-        circus_maximus requires factions { carthage, parthia, macedon, seleucid, roman, }
+        circus_maximus requires factions { carthage, parthia, macedon, seleucid }
         {
             capability
             {
@@ -703,8 +703,8 @@ building equestrian
                 recruit "greek elephant cataphract"  0  requires factions { seleucid, }  and resource elephants
                 recruit "roman cavalry auxillia"  0  requires factions { roman, }
                 recruit "roman light cavalry"  2  requires factions { roman, }  and not marian_reforms
-                recruit "roman medium cavalry"  3  requires factions { roman, }  and marian_reforms
-                recruit "roman heavy cavalry"  1  requires factions { roman, }  and marian_reforms
+                recruit "roman medium cavalry"  2  requires factions { roman, }  and marian_reforms
+                recruit "roman heavy cavalry"  0  requires factions { roman, }  and marian_reforms
                 stage_races 2 requires factions { roman,}
             }
             construction  7
@@ -832,7 +832,7 @@ building missiles
                 recruit "greek onager"  0  requires factions { greek, }
                 recruit "roman velite"  0  requires factions { roman, }  and not marian_reforms
                 recruit "roman light infantry auxillia"  0  requires factions { roman, }  and marian_reforms
-                recruit "roman archer"  1  requires factions { roman, }
+                recruit "roman archer"  0  requires factions { roman, }
                 recruit "roman ballista"  0  requires factions { roman, }
                 recruit "roman scorpion"  0  requires factions { roman, }
                 recruit "roman onager"  0  requires factions { roman, }
@@ -886,7 +886,7 @@ building missiles
                 recruit "greek heavy onager"  0  requires factions { macedon, greek_cities, }
                 recruit "roman velite"  0  requires factions { roman, }  and not marian_reforms
                 recruit "roman light infantry auxillia"  0  requires factions { roman, }  and marian_reforms
-                recruit "roman archer"  2  requires factions { roman, }
+                recruit "roman archer"  0  requires factions { roman, }
                 recruit "roman ballista"  0  requires factions { roman, }
                 recruit "roman scorpion"  0  requires factions { roman, }
                 recruit "roman onager"  0  requires factions { roman, }
