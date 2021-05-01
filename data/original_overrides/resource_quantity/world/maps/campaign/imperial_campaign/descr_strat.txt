@@ -1946,10 +1946,6 @@ settlement
 	}
 	building
 	{
-		type defenses wooden_wall
-	}
-	building
-	{
 		type barracks muster_field
 	}
 }
@@ -1966,10 +1962,6 @@ settlement
 	building
 	{
 		type core_building governors_villa
-	}
-	building
-	{
-		type defenses wooden_wall
 	}
 	building
 	{
@@ -1993,10 +1985,6 @@ settlement
 	building
 	{
 		type equestrian stables
-	}
-	building
-	{
-		type defenses wooden_wall
 	}
 	building
 	{
