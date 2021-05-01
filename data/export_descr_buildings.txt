@@ -202,7 +202,7 @@ building defenses
                 stone_wall
             }
         }
-        stone_wall requires factions { carthaginian, eastern, parthia, egyptian, greek, roman, }
+        stone_wall requires factions { barbarian, carthaginian, eastern, parthia, egyptian, greek, roman, }
         {
             capability
             {
@@ -986,7 +986,7 @@ building market
                 great_forum
             }
         }
-        great_forum requires factions { carthaginian, eastern, parthia, egyptian, greek, roman, }
+        great_forum requires factions { barbarian, carthaginian, eastern, parthia, egyptian, greek, roman, }
         {
             capability
             {
@@ -1020,7 +1020,7 @@ building market
                 curia
             }
         }
-        curia requires factions { carthaginian, eastern, parthia, egyptian, greek, roman, }
+        curia requires factions { barbarian, carthaginian, eastern, parthia, egyptian, greek, roman, }
         {
             capability
             {
@@ -1108,7 +1108,7 @@ building smith
                 foundry
             }
         }
-        foundry requires factions { carthaginian, eastern, parthia, egyptian, greek, roman, }  and building_present_min_level market great_forum
+        foundry requires factions { barbarian, carthaginian, eastern, parthia, egyptian, greek, roman, }  and building_present_min_level market great_forum
         {
             capability
             {
@@ -1187,7 +1187,7 @@ building port_buildings
                 dockyard
             }
         }
-        dockyard requires factions { carthaginian, eastern, parthia, greek, roman, }
+        dockyard requires factions { barbarian, carthaginian, eastern, parthia, egyptian, greek, roman, }
         {
             capability
             {
@@ -1318,7 +1318,7 @@ building hinterland_farms
                 farms+2
             }
         }
-        farms+2 requires factions { carthaginian, eastern, parthia, egyptian, greek, roman, }
+        farms+2 requires factions { barbarian, carthaginian, eastern, parthia, egyptian, greek, roman, }
         {
             capability
             {
@@ -1332,7 +1332,7 @@ building hinterland_farms
                 farms+3
             }
         }
-        farms+3 requires factions { carthaginian, eastern, parthia, egyptian, greek, roman, }
+        farms+3 requires factions { barbarian, carthaginian, eastern, parthia, egyptian, greek, roman, }
         {
             capability
             {
@@ -1346,7 +1346,7 @@ building hinterland_farms
                 farms+4
             }
         }
-        farms+4 requires factions { carthaginian, egyptian, roman, }
+        farms+4 requires factions { barbarian, carthaginian, egyptian, roman, }
         {
             capability
             {
