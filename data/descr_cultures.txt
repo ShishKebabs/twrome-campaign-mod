@@ -104,6 +104,7 @@ city
 	normal				data/models_strat/residences/barb_city_buildings.CAS,			settlement_barbarian_level_2
 	wall				data/models_strat/residences/barb_city_wall_1.CAS,				settlement_barbarian_walled_level_4
 	wall				data/models_strat/residences/barb_city_wall_2.CAS,				settlement_barbarian_walled_level_4
+	wall				data/models_strat/residences/roman_large_town_wall_3.CAS,		settlement_roman_walled_level_3
 	card				data/ui/barbarian/cities/barbarian_city.tga
 }
 }

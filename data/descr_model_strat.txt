@@ -1742,9 +1742,9 @@ medieval_features no
 tired No
 aged 0.00
 pbr_texture data/characters/textures/Alex_roman_general_romans_brutii_pbr.tga
-texture data/characters/textures/Alex_roman_general_romans_brutii.tga
+texture data/characters/textures/Alex_roman_general_romans_julii.tga
 texture romans_julii, data/characters/textures/Alex_roman_general_romans_julii.tga
-texture romans_scipii, data/characters/textures/Alex_roman_general_romans_scipii.tga
+texture romans_scipii, data/characters/textures/Alex_roman_general_romans_julii.tga
 texture romans_senate, data/characters/textures/Alex_roman_general_romans_senate.tga
 model African data/characters/strat_sm_roman_general_romans_brutii_African
 model romans_julii, African data/characters/Alex_roman_general_romans_brutii_African
@@ -1807,9 +1807,9 @@ medieval_features no
 tired No
 aged 0.00
 pbr_texture data/characters/textures/strat_sm_roman_lesser_general_romans_brutii_pbr.tga
-texture data/characters/textures/strat_sm_roman_lesser_general_romans_brutii.tga
+texture data/characters/textures/strat_sm_roman_lesser_general_romans_julii.tga
 texture romans_julii, data/characters/textures/strat_sm_roman_lesser_general_romans_julii.tga
-texture romans_scipii, data/characters/textures/strat_sm_roman_lesser_general_romans_scipii.tga
+texture romans_scipii, data/characters/textures/strat_sm_roman_lesser_general_romans_julii.tga
 texture romans_senate, data/characters/textures/strat_sm_roman_lesser_general_romans_senate.tga
 model African data/characters/strat_sm_roman_lesser_general_romans_brutii_African
 model romans_julii, African data/characters/strat_sm_roman_lesser_general_romans_julii_African

@@ -256,7 +256,7 @@ Colchis
 	armenia
 	Colchians
 	199 31 143
-	gold, slaves, dogs, pigs
+	gold, slaves, dogs, pigs, elephants
 	5
 	4
 Atropatene
@@ -264,7 +264,7 @@ Atropatene
 	parthia
 	Medes
 	61 239 246
-	slaves
+	slaves, elephants
 	5
 	4
 Cisalpine_Gaul
@@ -320,7 +320,7 @@ Armenia
 	armenia
 	Cappadocians
 	202 61 17
-	iron, wine, slaves, dogs, pigs
+	iron, wine, slaves, dogs, pigs, elephants
 	5
 	5
 Dalmatia
@@ -360,7 +360,7 @@ Pontus
 	pontus
 	Paphlagonians
 	202 156 17
-	silver, timber, iron, slaves, dogs, pigs
+	silver, timber, iron, slaves, dogs, pigs, elephants
 	5
 	10
 Paionia
@@ -432,7 +432,7 @@ Cappadocia
 	pontus
 	Cappadocians
 	177 58 148
-	slaves, lead
+	slaves, lead, elephants
 	5
 	8
 Propontis
@@ -448,7 +448,7 @@ Bithynia
 	macedon
 	Bithynians
 	202 17 122
-	wine, slaves, dogs
+	wine, slaves, dogs, elephants
 	5
 	11
 Epirus
@@ -469,10 +469,10 @@ Macedonia
 	10
 Galatia
 	Ancyra
-	gauls
+	parthia
 	Galatians
 	17 165 202
-	slaves, textiles, dogs
+	slaves, textiles, dogs, elephants
 	5
 	8
 Hispania
@@ -520,7 +520,7 @@ Phrygia
 	macedon
 	Lesbians
 	33 59 131
-	silver, timber, wine, slaves, textiles, dogs, pigs
+	silver, timber, wine, slaves, textiles, dogs, pigs, elephants
 	5
 	12
 Cilicia
@@ -528,7 +528,7 @@ Cilicia
 	seleucid
 	Cilicians
 	17 202 52
-	silver, pottery, timber, slaves
+	silver, pottery, timber, slaves, elephants
 	5
 	12
 Thessalia
@@ -560,7 +560,7 @@ Ionia
 	seleucid
 	Ionians
 	149 109 127
-	silver, timber, slaves, marble, textiles, dogs, pigs
+	silver, timber, slaves, marble, textiles, dogs, pigs, elephants
 	5
 	10
 Babylonia
@@ -608,7 +608,7 @@ Lycia
 	macedon
 	Lycians
 	131 83 77
-	olive_oil, slaves, textiles
+	olive_oil, slaves, textiles, elephants
 	5
 	10
 Peloponnesus
@@ -656,7 +656,7 @@ Regnum_Palmyrae
 	armenia
 	Palmyrans
 	175 171 244
-	slaves, incense, camels
+	slaves, incense, camels, elephants
 	5
 	7
 Phoenicia
@@ -664,7 +664,7 @@ Phoenicia
 	seleucid
 	Phoenicians
 	33 131 128
-	timber, slaves, glass
+	timber, slaves, glass, elephants
 	5
 	9
 Numidia
@@ -720,7 +720,7 @@ Arabia
 	parthia
 	Nabataeans
 	13 171 244
-	slaves, camels
+	slaves, camels, elephants
 	5
 	3
 Byzacium
@@ -744,7 +744,7 @@ Judaea
 	parthia
 	Judaeans
 	244 13 29
-	olive_oil, wine, slaves, purple_dye, camels
+	olive_oil, wine, slaves, purple_dye, camels, elephants
 	5
 	8
 Nabataea
@@ -752,7 +752,7 @@ Nabataea
 	parthia
 	Nabataeans
 	13 244 160
-	slaves, incense, camels
+	slaves, incense, camels, elephants
 	5
 	5
 Gaetulia
@@ -768,7 +768,7 @@ Tripolitania
 	carthage
 	Poeni
 	202 17 48
-	slaves, purple_dye, wild_animals, camels
+	slaves, purple_dye, wild_animals, camels, elephants
 	5
 	5
 Cyrenaica
@@ -776,7 +776,7 @@ Cyrenaica
 	macedon
 	Libyans
 	244 171 13
-	timber, slaves, camels
+	timber, slaves, camels, elephants
 	5
 	4
 Nile_Delta
@@ -784,7 +784,7 @@ Nile_Delta
 	egypt
 	Libyans
 	244 13 214
-	grain, slaves, glass, textiles, camels
+	grain, slaves, glass, textiles, camels, elephants
 	5
 	12
 Sinai
@@ -792,7 +792,7 @@ Sinai
 	parthia
 	Nabataeans
 	35 244 13
-	slaves, incense, camels
+	slaves, incense, camels, elephants
 	5
 	4
 Libya
@@ -800,7 +800,7 @@ Libya
 	egypt
 	Libyans
 	42 232 77
-	slaves, camels
+	slaves, camels, elephants
 	5
 	2
 Middle_Egypt
@@ -808,7 +808,7 @@ Middle_Egypt
 	egypt
 	Libyans
 	122 13 244
-	grain, slaves, incense, camels
+	grain, slaves, incense, camels, elephants
 	5
 	10
 Sahara
@@ -816,7 +816,7 @@ Sahara
 	numidia
 	Gaetuli
 	41 86 232
-	slaves, camels
+	slaves, camels, elephants
 	5
 	1
 Thebais
@@ -824,6 +824,6 @@ Thebais
 	egypt
 	Libyans
 	241 244 13
-	gold, slaves, wild_animals, camels
+	gold, slaves, wild_animals, camels, elephants
 	5
 	8

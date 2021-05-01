@@ -202,7 +202,7 @@ building defenses
                 stone_wall
             }
         }
-        stone_wall requires factions { carthaginian, eastern, parthia, egyptian, greek, roman, }
+        stone_wall requires factions { barbarian, carthaginian, eastern, parthia, egyptian, greek, roman, }
         {
             capability
             {
@@ -538,11 +538,6 @@ building equestrian
                 recruit "barb cavalry german"  0  requires factions { germans, }
                 recruit "barb cavalry dacian"  0  requires factions { dacia, }
                 recruit "barb cavalry scythian"  0  requires factions { scythia, }
-                recruit "barb wardogs briton"  0  requires factions {  britons, }
-                recruit "barb wardogs dacian"  0  requires factions { dacia, }
-                recruit "barb wardogs gaul"  0  requires factions { gauls, }
-                recruit "barb wardogs german"  0  requires factions { germans, }
-                recruit "barb wardogs scythian"  0  requires factions { scythia, }
                 recruit "carthaginian cavalry"  0  requires factions { carthage, }
                 recruit "numidian cavalry"  0  requires factions { numidia, }
                 recruit "east cavalry"  0  requires factions { pontus, }
@@ -552,7 +547,6 @@ building equestrian
                 recruit "greek cavalry"  0  requires factions { seleucid, thrace, greek_cities, }
                 recruit "roman medium cavalry"  0  requires factions { roman, }  and marian_reforms
                 recruit "roman light cavalry"  0  requires factions { roman, }  and not marian_reforms
-                recruit "roman wardogs"  0  requires factions { roman, }
             }
             construction  3
             cost  1200
@@ -573,11 +567,6 @@ building equestrian
                 recruit "barb cavalry german"  0  requires factions { germans, }
                 recruit "barb cavalry dacian"  0  requires factions { dacia, }
                 recruit "barb cavalry scythian"  0  requires factions { scythia, }
-                recruit "barb wardogs briton"  0  requires factions {  britons, }
-                recruit "barb wardogs dacian"  0  requires factions { dacia, }
-                recruit "barb wardogs gaul"  0  requires factions { gauls, }
-                recruit "barb wardogs german"  0  requires factions { germans, }
-                recruit "barb wardogs scythian"  0  requires factions { scythia, }
                 recruit "barb noble cavalry gaul"  0  requires factions { gauls, }
                 recruit "barb noble cavalry german"  0  requires factions { germans, }
                 recruit "barb noble cavalry dacian"  0  requires factions { dacia, }
@@ -602,7 +591,6 @@ building equestrian
                 recruit "roman cavalry auxillia"  0  requires factions { roman, }
                 recruit "roman light cavalry"  0  requires factions { roman, }  and not marian_reforms
                 recruit "roman medium cavalry"  0  requires factions { roman, }  and marian_reforms
-                recruit "roman wardogs"  0  requires factions { roman, }
             }
             construction  4
             cost  2400
@@ -623,11 +611,6 @@ building equestrian
                 recruit "barb cavalry german"  0  requires factions { germans, }
                 recruit "barb cavalry dacian"  0  requires factions { dacia, }
                 recruit "barb cavalry scythian"  0  requires factions { scythia, }
-                recruit "barb wardogs briton"  0  requires factions {  britons, }
-                recruit "barb wardogs dacian"  0  requires factions { dacia, }
-                recruit "barb wardogs gaul"  0  requires factions { gauls, }
-                recruit "barb wardogs german"  0  requires factions { germans, }
-                recruit "barb wardogs scythian"  0  requires factions { scythia, }
                 recruit "barb noble cavalry gaul"  0  requires factions { gauls, }
                 recruit "barb noble cavalry german"  0  requires factions { germans, }
                 recruit "barb noble cavalry dacian"  0  requires factions { dacia, }
@@ -658,13 +641,9 @@ building equestrian
                 recruit "greek heavy cavalry"  0  requires factions { macedon, }
                 recruit "east heavy cataphract"  0  requires factions { seleucid, }
                 recruit "greek elephant african"  0  requires factions { seleucid, }  and resource elephants
-                recruit "greek incendiary pigs"  0  requires factions { greek_cities, }
                 recruit "roman cavalry auxillia"  0  requires factions { roman, }
                 recruit "roman light cavalry"  1  requires factions { roman, }  and not marian_reforms
-                recruit "roman medium cavalry"  0  requires factions { roman, }  and marian_reforms
-                recruit "roman heavy cavalry"  0  requires factions { roman, }  and marian_reforms
-                recruit "roman wardogs"  0  requires factions { roman, }
-                recruit "roman pigs"  0  requires factions { roman, }
+                recruit "roman medium cavalry"  1  requires factions { roman, }  and marian_reforms
                 stage_races 1 requires factions { roman,}
             }
             construction  6
@@ -675,7 +654,7 @@ building equestrian
                 circus_maximus
             }
         }
-        circus_maximus requires factions { carthage, parthia, macedon, seleucid, roman, }
+        circus_maximus requires factions { carthage, parthia, macedon, seleucid, roman,}
         {
             capability
             {
@@ -686,11 +665,6 @@ building equestrian
                 recruit "barb cavalry german"  0  requires factions { germans, }
                 recruit "barb cavalry dacian"  0  requires factions { dacia, }
                 recruit "barb cavalry scythian"  0  requires factions { scythia, }
-                recruit "barb wardogs briton"  0  requires factions {  britons, }
-                recruit "barb wardogs dacian"  0  requires factions { dacia, }
-                recruit "barb wardogs gaul"  0  requires factions { gauls, }
-                recruit "barb wardogs german"  0  requires factions { germans, }
-                recruit "barb wardogs scythian"  0  requires factions { scythia, }
                 recruit "barb noble cavalry gaul"  0  requires factions { gauls, }
                 recruit "barb noble cavalry german"  0  requires factions { germans, }
                 recruit "barb noble cavalry dacian"  0  requires factions { dacia, }
@@ -726,14 +700,10 @@ building equestrian
                 recruit "greek elephant african"  0  requires factions { seleucid, }  and resource elephants
                 recruit "greek royal cavalry"  0  requires factions { seleucid, macedon, }
                 recruit "greek elephant cataphract"  0  requires factions { seleucid, }  and resource elephants
-                recruit "greek incendiary pigs"  0  requires factions { greek_cities, }
                 recruit "roman cavalry auxillia"  0  requires factions { roman, }
                 recruit "roman light cavalry"  2  requires factions { roman, }  and not marian_reforms
-                recruit "roman medium cavalry"  0  requires factions { roman, }  and marian_reforms
+                recruit "roman medium cavalry"  1  requires factions { roman, }  and marian_reforms
                 recruit "roman heavy cavalry"  0  requires factions { roman, }  and marian_reforms
-                recruit "roman praetorian cavalry"  0  requires factions { roman, }  and marian_reforms
-                recruit "roman wardogs"  0  requires factions { roman, }
-                recruit "roman pigs"  0  requires factions { roman, }
                 stage_races 2 requires factions { roman,}
             }
             construction  7
@@ -812,8 +782,7 @@ building missiles
                 recruit "greek ballista"  0  requires factions { macedon, greek_cities, }
                 recruit "roman velite"  0  requires factions { roman, }  and not marian_reforms
                 recruit "roman light infantry auxillia"  0  requires factions { roman, }  and marian_reforms
-                recruit "roman archer"  0  requires factions { roman, }  and not marian_reforms
-                recruit "roman archer auxillia"  0  requires factions { roman, }  and marian_reforms
+                recruit "roman archer"  0  requires factions { roman, }
                 recruit "roman ballista"  0  requires factions { roman, }
             }
             construction  4
@@ -862,8 +831,7 @@ building missiles
                 recruit "greek onager"  0  requires factions { greek, }
                 recruit "roman velite"  0  requires factions { roman, }  and not marian_reforms
                 recruit "roman light infantry auxillia"  0  requires factions { roman, }  and marian_reforms
-                recruit "roman archer"  0  requires factions { roman, }  and not marian_reforms
-                recruit "roman archer auxillia"  0  requires factions { roman, }  and marian_reforms
+                recruit "roman archer"  0  requires factions { roman, }
                 recruit "roman ballista"  0  requires factions { roman, }
                 recruit "roman scorpion"  0  requires factions { roman, }
                 recruit "roman onager"  0  requires factions { roman, }
@@ -917,8 +885,7 @@ building missiles
                 recruit "greek heavy onager"  0  requires factions { macedon, greek_cities, }
                 recruit "roman velite"  0  requires factions { roman, }  and not marian_reforms
                 recruit "roman light infantry auxillia"  0  requires factions { roman, }  and marian_reforms
-                recruit "roman archer"  0  requires factions { roman, }  and not marian_reforms
-                recruit "roman archer auxillia"  0  requires factions { roman, }  and marian_reforms
+                recruit "roman archer"  0  requires factions { roman, }
                 recruit "roman ballista"  0  requires factions { roman, }
                 recruit "roman scorpion"  0  requires factions { roman, }
                 recruit "roman onager"  0  requires factions { roman, }
@@ -2036,7 +2003,6 @@ building temple_of_fertility
         {
             capability
             {
-                recruit "barb screeching women german"  0  requires factions { germans, }
                 happiness_bonus bonus 1
                 population_growth_bonus bonus 1
             }
@@ -2052,7 +2018,6 @@ building temple_of_fertility
         {
             capability
             {
-                recruit "barb screeching women german"  0  requires factions { germans, }
                 happiness_bonus bonus 2
                 population_growth_bonus bonus 2
             }
@@ -2068,7 +2033,6 @@ building temple_of_fertility
         {
             capability
             {
-                recruit "barb screeching women german"  0  requires factions { germans, }
                 happiness_bonus bonus 3
                 population_growth_bonus bonus 3
             }
@@ -2084,7 +2048,6 @@ building temple_of_fertility
         {
             capability
             {
-                recruit "barb screeching women german"  0  requires factions { germans, }
                 happiness_bonus bonus 4
                 population_growth_bonus bonus 4
             }
@@ -2100,7 +2063,6 @@ building temple_of_fertility
         {
             capability
             {
-                recruit "barb screeching women german"  0  requires factions { germans, }
                 happiness_bonus bonus 7
                 population_growth_bonus bonus 5
                 law_bonus bonus 2
