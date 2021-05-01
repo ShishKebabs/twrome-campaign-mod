@@ -50,6 +50,7 @@ vegetation/
 /**/*.xsddelta
 /**/*.dds
 banners/
+interface/
 /**/*.wfc
 /**/*.cas
 /**/*.item
