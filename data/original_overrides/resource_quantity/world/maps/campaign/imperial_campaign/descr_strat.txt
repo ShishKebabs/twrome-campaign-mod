@@ -30,7 +30,7 @@ nonplayable
 end
 
 
-start_date	-270 summer
+start_date	-290 summer
 end_date	14 summer
 
 brigand_spawn_value 10
@@ -458,7 +458,7 @@ settlement
 	region Etruria
 
 	year_founded 0
-	population 4000
+	population 1000
 	plan_set default_set
 	faction_creator romans_julii
 	building
@@ -493,7 +493,7 @@ settlement
 	region Umbria
 
 	year_founded 0
-	population 3500
+	population 1000
 	plan_set default_set
 	faction_creator romans_julii
 	building
@@ -591,7 +591,7 @@ settlement
 	region Apulia
 
 	year_founded 0
-	population 4500
+	population 1000
 	plan_set default_set
 	faction_creator romans_julii
 	building
@@ -630,7 +630,7 @@ settlement
 	region Bruttium
 
 	year_founded 0
-	population 4300
+	population 1000
 	plan_set default_set
 	faction_creator romans_julii
 	building
@@ -725,7 +725,7 @@ settlement
 	region Campania
 
 	year_founded 0
-	population 4800
+	population 1000
 	plan_set default_set
 	faction_creator romans_julii
 	building
@@ -756,7 +756,7 @@ settlement
 	region Sicilia_Romanus
 
 	year_founded 0
-	population 3500
+	population 1000
 	plan_set default_set
 	faction_creator romans_julii
 	building
@@ -843,7 +843,7 @@ settlement
 	region Latium
 
 	year_founded 0
-	population 7500
+	population 1000
 	plan_set default_set
 	faction_creator romans_julii
 	building
@@ -946,7 +946,7 @@ settlement
 	region Macedonia
 
 	year_founded 0
-	population 6000
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -985,7 +985,7 @@ settlement
 	region Paionia
 
 	year_founded 0
-	population 2700
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -1016,7 +1016,7 @@ settlement
 	region Thessalia
 
 	year_founded 0
-	population 3000
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -1047,7 +1047,7 @@ settlement
 	region Peloponnesus
 
 	year_founded 0
-	population 3000
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -1148,7 +1148,7 @@ settlement
 	region Nile_Delta
 
 	year_founded 0
-	population 3500
+	population 1000
 	plan_set default_set
 	faction_creator egypt
 	building
@@ -1183,7 +1183,7 @@ settlement
 	region Middle_Egypt
 
 	year_founded 0
-	population 6000
+	population 1000
 	plan_set default_set
 	faction_creator egypt
 	building
@@ -1226,7 +1226,7 @@ settlement
 	region Thebais
 
 	year_founded 0
-	population 4500
+	population 1000
 	plan_set default_set
 	faction_creator egypt
 	building
@@ -1261,7 +1261,7 @@ settlement
 	region Cyprus
 
 	year_founded 0
-	population 1600
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -1280,7 +1280,7 @@ settlement
 	region Judaea
 
 	year_founded 0
-	population 3000
+	population 1000
 	plan_set default_set
 	faction_creator parthia
 	building
@@ -1311,7 +1311,7 @@ settlement
 	region Phoenicia
 
 	year_founded 0
-	population 4500
+	population 1000
 	plan_set default_set
 	faction_creator parthia
 	building
@@ -1445,7 +1445,7 @@ settlement
 	region Syria
 
 	year_founded 0
-	population 5000
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -1480,7 +1480,7 @@ settlement
 	region Coele_Syria
 
 	year_founded 0
-	population 1500
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -1503,7 +1503,7 @@ settlement
 	region Cilicia
 
 	year_founded 0
-	population 1200
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -1522,7 +1522,7 @@ settlement
 	region Assyria
 
 	year_founded 0
-	population 1200
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -1545,7 +1545,7 @@ settlement
 	region Babylonia
 
 	year_founded 0
-	population 4000
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -1576,7 +1576,7 @@ settlement
 	region Ionia
 
 	year_founded 0
-	population 1500
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -1691,7 +1691,7 @@ settlement
 	region Africa
 
 	year_founded 0
-	population 6000
+	population 1000
 	plan_set default_set
 	faction_creator carthage
 	building
@@ -1734,7 +1734,7 @@ settlement
 	region Sicilia_Poeni
 
 	year_founded 0
-	population 3000
+	population 1000
 	plan_set default_set
 	faction_creator carthage
 	building
@@ -1761,7 +1761,7 @@ settlement
 	region Byzacium
 
 	year_founded 0
-	population 3000
+	population 1000
 	plan_set default_set
 	faction_creator carthage
 	building
@@ -1818,7 +1818,7 @@ settlement
 	region Baetica
 
 	year_founded 0
-	population 1400
+	population 1000
 	plan_set default_set
 	faction_creator carthage
 	building
@@ -1947,7 +1947,7 @@ settlement
 	region Media
 
 	year_founded 0
-	population 3600
+	population 1000
 	plan_set default_set
 	faction_creator parthia
 	building
@@ -1978,7 +1978,7 @@ settlement
 	region Elymais
 
 	year_founded 0
-	population 6300
+	population 1000
 	plan_set default_set
 	faction_creator parthia
 	building
@@ -2013,7 +2013,7 @@ settlement
 	region Tribus_Sakae
 
 	year_founded 0
-	population 4600
+	population 1000
 	plan_set default_set
 	faction_creator parthia
 	building
@@ -2106,7 +2106,7 @@ settlement
 	region Pontus
 
 	year_founded 0
-	population 5000
+	population 1000
 	plan_set default_set
 	faction_creator parthia
 	building
@@ -2141,7 +2141,7 @@ settlement
 	region Cappadocia
 
 	year_founded 0
-	population 2400
+	population 1000
 	plan_set default_set
 	faction_creator parthia
 	building
@@ -2225,7 +2225,7 @@ settlement
 	region Central_Gaul
 
 	year_founded 0
-	population 3400
+	population 1000
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -2256,7 +2256,7 @@ settlement
 	region Venetia
 
 	year_founded 0
-	population 2500
+	population 1000
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -2283,7 +2283,7 @@ settlement
 	region Cisalpine_Gaul
 
 	year_founded 0
-	population 2477
+	population 1000
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -2306,7 +2306,7 @@ settlement
 	region Celtiberia
 
 	year_founded 0
-	population 3000
+	population 1000
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -2333,7 +2333,7 @@ settlement
 	region Aquitania
 
 	year_founded 0
-	population 1400
+	population 1000
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -2356,7 +2356,7 @@ settlement
 	region Armorica
 
 	year_founded 0
-	population 1300
+	population 1000
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -2375,7 +2375,7 @@ settlement
 	region Narbonensis
 
 	year_founded 0
-	population 1300
+	population 1000
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -2500,7 +2500,7 @@ settlement
 	region Tribus_Chattii
 
 	year_founded 0
-	population 3000
+	population 1000
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -2527,7 +2527,7 @@ settlement
 	region Agri_Decumates
 
 	year_founded 0
-	population 2800
+	population 1000
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -2546,7 +2546,7 @@ settlement
 	region Germania_Superior
 
 	year_founded 0
-	population 1200
+	population 1000
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -2672,7 +2672,7 @@ settlement
 	region Britannia_Superior
 
 	year_founded 0
-	population 2800
+	population 1000
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -2695,7 +2695,7 @@ settlement
 	region Belgica
 
 	year_founded 0
-	population 1600
+	population 1000
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -2830,7 +2830,7 @@ settlement
 	region Armenia
 
 	year_founded 0
-	population 5000
+	population 1000
 	plan_set default_set
 	faction_creator parthia
 	building
@@ -2861,7 +2861,7 @@ settlement
 	region Colchis
 
 	year_founded 0
-	population 4500
+	population 1000
 	plan_set default_set
 	faction_creator parthia
 	building
@@ -2943,7 +2943,7 @@ settlement
 	region Dacia
 
 	year_founded 0
-	population 5252
+	population 1000
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -2974,7 +2974,7 @@ settlement
 	region Tribus_Iazyges
 
 	year_founded 0
-	population 2800
+	population 1000
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -3046,7 +3046,7 @@ settlement
 	region Laconia
 
 	year_founded 0
-	population 5000
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -3077,7 +3077,7 @@ settlement
 	region Rhodos
 
 	year_founded 0
-	population 3900
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -3112,7 +3112,7 @@ settlement
 	region Phrygia
 
 	year_founded 0
-	population 2800
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -3139,7 +3139,7 @@ settlement
 	region Aetolia
 
 	year_founded 0
-	population 2000
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -3162,7 +3162,7 @@ settlement
 	region Sicilia_Graecus
 
 	year_founded 0
-	population 6000
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -3283,7 +3283,7 @@ settlement
 	region Numidia
 
 	year_founded 0
-	population 3200
+	population 1000
 	plan_set default_set
 	faction_creator carthage
 	building
@@ -3310,7 +3310,7 @@ settlement
 	region Mauretania
 
 	year_founded 0
-	population 2700
+	population 1000
 	plan_set default_set
 	faction_creator carthage
 	building
@@ -3333,7 +3333,7 @@ settlement
 	region Gaetulia
 
 	year_founded 0
-	population 1800
+	population 1000
 	plan_set default_set
 	faction_creator carthage
 	building
@@ -3352,7 +3352,7 @@ settlement
 	region Libya
 
 	year_founded 0
-	population 2300
+	population 1000
 	plan_set default_set
 	faction_creator egypt
 	building
@@ -3444,7 +3444,7 @@ settlement
 	region Scythia
 
 	year_founded 0
-	population 2500
+	population 1000
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -3471,7 +3471,7 @@ settlement
 	region Tribus_Alanni
 
 	year_founded 0
-	population 1800
+	population 1000
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -3490,7 +3490,7 @@ settlement
 	region Tribus_Sarmatae
 
 	year_founded 0
-	population 1800
+	population 1000
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -3509,7 +3509,7 @@ settlement
 	region Maeotis
 
 	year_founded 0
-	population 1800
+	population 1000
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -3593,7 +3593,7 @@ settlement
 	region Gallaecia
 
 	year_founded 0
-	population 2500
+	population 1000
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -3616,7 +3616,7 @@ settlement
 	region Lusitania
 
 	year_founded 0
-	population 2200
+	population 1000
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -3639,7 +3639,7 @@ settlement
 	region Hispania
 
 	year_founded 0
-	population 2000
+	population 1000
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -3662,7 +3662,7 @@ settlement
 	region Taraconenis
 
 	year_founded 0
-	population 1500
+	population 1000
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -3748,7 +3748,7 @@ settlement
 	region Thrace
 
 	year_founded 0
-	population 4000
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -3775,7 +3775,7 @@ settlement
 	region Tribus_Getae
 
 	year_founded 0
-	population 3500
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -3857,7 +3857,7 @@ settlement
 	region Hibernia
 
 	year_founded 0
-	population 1152
+	population 1000
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -3880,7 +3880,7 @@ settlement
 	region Hyperboria
 
 	year_founded 0
-	population 1500
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -3903,7 +3903,7 @@ settlement
 	region Bosphorus
 
 	year_founded 0
-	population 1200
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -3926,7 +3926,7 @@ settlement
 	region Lugdinensis
 
 	year_founded 0
-	population 1200
+	population 1000
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -3949,7 +3949,7 @@ settlement
 	region Transalpine_Gaul
 
 	year_founded 0
-	population 1200
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -3968,7 +3968,7 @@ settlement
 	region Illyria
 
 	year_founded 0
-	population 1400
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -3991,7 +3991,7 @@ settlement
 	region Propontis
 
 	year_founded 0
-	population 2000
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -4014,7 +4014,7 @@ settlement
 	region Attica
 
 	year_founded 0
-	population 3000
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -4045,7 +4045,7 @@ settlement
 	region Lycia
 
 	year_founded 0
-	population 1200
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -4064,7 +4064,7 @@ settlement
 	region Regnum_Palmyrae
 
 	year_founded 0
-	population 1200
+	population 1000
 	plan_set default_set
 	faction_creator parthia
 	building
@@ -4091,7 +4091,7 @@ settlement
 	region Cyrenaica
 
 	year_founded 0
-	population 1200
+	population 1000
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -4114,7 +4114,7 @@ settlement
 	region Sinai
 
 	year_founded 0
-	population 1200
+	population 1000
 	plan_set default_set
 	faction_creator parthia
 	building
