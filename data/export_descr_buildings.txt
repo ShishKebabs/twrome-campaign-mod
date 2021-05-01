@@ -1181,7 +1181,6 @@ building port_buildings
             construction  3
             cost  1600
             settlement_min city
-
             upgrades
             {
                 dockyard
