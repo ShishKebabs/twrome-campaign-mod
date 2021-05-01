@@ -524,7 +524,6 @@ character	Oppius Clausus, admiral, age 29, , x 86, y 78
 
 army
 unit		naval biremes				exp 0 armour 0 weapon_lvl 0
-unit		naval biremes				exp 0 armour 0 weapon_lvl 0
 
 character	Vibius Julius, named character, age 28, , x 88, y 81
 traits GoodCommander 1 , PoliticsSkill 2 , GoodAdministrator 2 , MathematicsSkill 1
@@ -616,6 +615,7 @@ unit		roman velite				exp 0 armour 0 weapon_lvl 0
 character	Marcus Attius, admiral, age 29, , x 120, y 64
 
 army
+unit		naval biremes				exp 0 armour 0 weapon_lvl 0
 unit		naval biremes				exp 0 armour 0 weapon_lvl 0
 unit		naval biremes				exp 0 armour 0 weapon_lvl 0
 unit		naval biremes				exp 0 armour 0 weapon_lvl 0
@@ -730,7 +730,9 @@ traits GoodSpy 3
 character	Aulus Volesus, admiral, age 22, , x 101, y 64
 
 army
-unit		naval biremes				exp 1 armour 0 weapon_lvl 0
+unit		naval biremes				exp 0 armour 0 weapon_lvl 0
+unit		naval biremes				exp 0 armour 0 weapon_lvl 0
+unit		naval biremes				exp 0 armour 0 weapon_lvl 0
 unit		naval biremes				exp 0 armour 0 weapon_lvl 0
 
 character	Gaius Scipio, named character, age 29, , x 101, y 67
