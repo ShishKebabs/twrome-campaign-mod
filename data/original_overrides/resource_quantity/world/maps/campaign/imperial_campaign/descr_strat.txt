@@ -449,7 +449,7 @@ resource	silver,         1,         111,  82
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; >>>> start of factions section <<<<
 
-faction	romans_julii, comfortable_caesar
+faction	romans_julii, balanced_smith
 superfaction romans_senate
 denari	5000
 settlement
@@ -469,22 +469,6 @@ settlement
 	{
 		type core_building governors_villa
 	}
-	building
-	{
-		type port_buildings port
-	}
-	building
-	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
-		type hinterland_farms farms
-	}
-	building
-	{
-		type hinterland_roads roads
-	}
 }
 
 settlement
@@ -503,18 +487,6 @@ settlement
 	building
 	{
 		type core_building governors_villa
-	}
-	building
-	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
-		type hinterland_roads roads
-	}
-	building
-	{
-		type hinterland_farms farms
 	}
 }
 
@@ -582,7 +554,7 @@ relative 	Quintus Julius, 	Alypia,		Amulius Julius,	end
 relative 	Vibius Julius, 	Claudia,		Manius Julius,	end
 
 
-faction	romans_brutii, balanced_stalin
+faction	romans_brutii, balanced_smith
 superfaction romans_senate
 denari	5000
 settlement
@@ -606,27 +578,11 @@ settlement
 	{
 		type barracks muster_field
 	}
-	building
-	{
-		type port_buildings port
-	}
-	building
-	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
-		type hinterland_roads roads
-	}
-	building
-	{
-		type hinterland_farms farms
-	}
 }
 
 settlement
 {
-	level large_town
+	level town
 	region Bruttium
 
 	year_founded 0
@@ -639,19 +595,7 @@ settlement
 	}
 	building
 	{
-		type core_building governors_villa
-	}
-	building
-	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
-		type hinterland_roads roads
-	}
-	building
-	{
-		type hinterland_farms farms
+		type core_building governors_house
 	}
 }
 
@@ -716,7 +660,7 @@ relative 	Aulus Brutus, 	Hostia,		Paulina,	Titus Brutus,	Oppius Brutus,	end
 relative 	Amulius Brutus, 	Lucilla,		Cassius Brutus,	Cornelius Brutus,	end
 
 
-faction	romans_scipii, bureaucrat_napoleon
+faction	romans_scipii, balanced_smith
 superfaction romans_senate
 denari	5000
 settlement
@@ -736,18 +680,6 @@ settlement
 	{
 		type core_building governors_villa
 	}
-	building
-	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
-		type hinterland_roads roads
-	}
-	building
-	{
-		type hinterland_farms farms+1
-	}
 }
 
 settlement
@@ -766,14 +698,6 @@ settlement
 	building
 	{
 		type core_building governors_villa
-	}
-	building
-	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
-		type hinterland_roads roads
 	}
 }
 
@@ -835,11 +759,11 @@ relative 	Julianus Scipio, 	Antistia,		Flavius Scipio,	Lucius Scipio,	end
 relative 	Quintus Scipio, 	Crispina,		Placidia,	Publius Scipio,	end
 
 
-faction	romans_senate, comfortable_napoleon
-denari	5000
+faction	romans_senate, balanced_smith
+denari	10000000
 settlement
 {
-	level city
+	level large_town
 	region Latium
 
 	year_founded 0
@@ -856,89 +780,90 @@ settlement
 	}
 	building
 	{
-		type amphitheatres stone_amphitheatre
+		type market curia
 	}
 	building
 	{
-		type barracks city_barracks
+		type hinterland_farms farms+4
 	}
 	building
 	{
-		type missiles practice_field
-	}
-	building
-	{
-		type smith blacksmith
-	}
-	building
-	{
-		type market forum
-	}
-	building
-	{
-		type hinterland_roads roads
-	}
-	building
-	{
-		type hinterland_farms farms+2
+		type port_buildings port
 	}
 	building
 	{
 		type hinterland_mines mines+1
 	}
+	building
+	{
+		type amphitheatres great_amphitheatre
+	}
+	building
+	{
+		type barracks royal_barracks
+	}
+	building
+	{
+		type smith foundry
+	}
 }
 
-character	Decius Maxentius, named character, leader, age 60, , x 95, y 71
+character	Decius Maxentius, named character, leader, age 40, , x 95, y 71
 traits GoodCommander 1 , PoliticsSkill 2 , GoodAdministrator 2 , Austere 1
 ancillaries doctor
 army
 unit		roman generals guard cavalry early				exp 0 armour 0 weapon_lvl 0
-unit		roman hastati				exp 3 armour 1 weapon_lvl 0
-unit		roman hastati				exp 3 armour 1 weapon_lvl 0
-unit		roman princeps				exp 3 armour 1 weapon_lvl 0
-unit		roman princeps				exp 3 armour 1 weapon_lvl 0
-unit		roman velite				exp 3 armour 1 weapon_lvl 0
-unit		roman velite				exp 3 armour 1 weapon_lvl 0
-unit		roman triarii				exp 3 armour 1 weapon_lvl 0
+unit		roman princeps				exp 9 armour 3 weapon_lvl 3
+unit		roman princeps				exp 9 armour 3 weapon_lvl 3
+unit		roman princeps				exp 9 armour 3 weapon_lvl 3
+unit		roman princeps				exp 9 armour 3 weapon_lvl 3
+unit		roman princeps				exp 9 armour 3 weapon_lvl 3
+unit		roman archer				exp 9 armour 3 weapon_lvl 3
+unit		roman archer				exp 9 armour 3 weapon_lvl 3
+unit		roman archer				exp 9 armour 3 weapon_lvl 3
+unit		roman archer				exp 9 armour 3 weapon_lvl 3
+unit		roman triarii				exp 9 armour 3 weapon_lvl 3
+unit		roman triarii				exp 9 armour 3 weapon_lvl 3
 
-character	Marcus Maxentius, named character, heir, age 30, , x 93, y 73
+character	Marcus Maxentius, named character, heir, age 20, , x 93, y 73
 traits GoodCommander 2 , NaturalMilitarySkill 2 , PoliticsSkill 1 , GoodAdministrator 1 , Intelligent 1
 ancillaries bodyguard
 army
 unit		roman generals guard cavalry early				exp 0 armour 0 weapon_lvl 0
-unit		roman triarii				exp 3 armour 1 weapon_lvl 0
-unit		roman velite				exp 3 armour 1 weapon_lvl 0
-unit		roman hastati				exp 3 armour 1 weapon_lvl 0
+unit		roman archer				exp 9 armour 3 weapon_lvl 3
+unit		roman princeps				exp 9 armour 3 weapon_lvl 3
+unit		roman princeps				exp 9 armour 3 weapon_lvl 3
+unit		roman triarii				exp 9 armour 3 weapon_lvl 3
 
 character	Flavius Nepos, diplomat, age 30, , x 96, y 69
 traits GoodDiplomat 5
 
-character	Servius Maxentius, named character, age 36, , x 94, y 69
+character	Servius Maxentius, named character, age 26, , x 94, y 69
 traits GoodCommander 1 , NaturalMilitarySkill 1 , PublicFaith 2 , GoodAdministrator 1 , Intelligent 1
 ancillaries scribe_ancillary
 army
 unit		roman generals guard cavalry early				exp 0 armour 0 weapon_lvl 0
-unit		roman velite				exp 3 armour 1 weapon_lvl 0
-unit		roman hastati				exp 3 armour 0 weapon_lvl 0
-unit		roman princeps				exp 3 armour 1 weapon_lvl 0
-unit		roman triarii				exp 3 armour 0 weapon_lvl 0
+unit		roman archer				exp 9 armour 3 weapon_lvl 3
+unit		roman princeps				exp 9 armour 3 weapon_lvl 3
+unit		roman princeps				exp 9 armour 3 weapon_lvl 3
+unit		roman triarii				exp 9 armour 3 weapon_lvl 3
 
 
-character_record		Gaius Maxentius, 	male, command 0, influence 0, management 0, subterfuge 0, age 11, alive, never_a_leader
+character_record		Gaius Maxentius, 	male, command 0, influence 0, management 0, subterfuge 0, age 1, alive, never_a_leader
 character_record		Lentulus Maxentius, 	male, command 0, influence 0, management 0, subterfuge 0, age 7, alive, never_a_leader
-character_record		Publius Maxentius, 	male, command 0, influence 0, management 0, subterfuge 0, age 13, alive, never_a_leader
-character_record		Honoria, 	female, command 0, influence 0, management 0, subterfuge 0, age 50, alive, never_a_leader
-character_record		Licinia, 	female, command 0, influence 0, management 0, subterfuge 0, age 29, alive, never_a_leader
-character_record		Marciana, 	female, command 0, influence 0, management 0, subterfuge 0, age 34, alive, never_a_leader
-character_record		Papiria, 	female, command 0, influence 0, management 0, subterfuge 0, age 5, alive, never_a_leader
-character_record		Prisca, 	female, command 0, influence 0, management 0, subterfuge 0, age 19, alive, never_a_leader
+character_record		Publius Maxentius, 	male, command 0, influence 0, management 0, subterfuge 0, age 3, alive, never_a_leader
+character_record		Honoria, 	female, command 0, influence 0, management 0, subterfuge 0, age 30, alive, never_a_leader
+character_record		Licinia, 	female, command 0, influence 0, management 0, subterfuge 0, age 19, alive, never_a_leader
+character_record		Marciana, 	female, command 0, influence 0, management 0, subterfuge 0, age 24, alive, never_a_leader
+character_record		Papiria, 	female, command 0, influence 0, management 0, subterfuge 0, age 1, alive, never_a_leader
+character_record		Prisca, 	female, command 0, influence 0, management 0, subterfuge 0, age 9, alive, never_a_leader
 
 relative 	Decius Maxentius, 	Honoria,		Servius Maxentius,	Marcus Maxentius,	Prisca,	end
 relative 	Marcus Maxentius, 	Licinia,		Publius Maxentius,	Gaius Maxentius,	end
 relative 	Servius Maxentius, 	Marciana,		Lentulus Maxentius,	Papiria,	end
 
 
-faction	macedon, fortified_napoleon
+faction	macedon, balanced_smith
 denari	5000
 settlement
 {
@@ -946,7 +871,7 @@ settlement
 	region Macedonia
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -959,23 +884,7 @@ settlement
 	}
 	building
 	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
 		type barracks militia_barracks
-	}
-	building
-	{
-		type hinterland_roads roads
-	}
-	building
-	{
-		type hinterland_farms farms
-	}
-	building
-	{
-		type port_buildings port
 	}
 }
 
@@ -996,18 +905,6 @@ settlement
 	{
 		type core_building governors_house
 	}
-	building
-	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
-		type hinterland_roads roads
-	}
-	building
-	{
-		type hinterland_farms farms
-	}
 }
 
 settlement
@@ -1027,18 +924,6 @@ settlement
 	{
 		type equestrian stables
 	}
-	building
-	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
-		type hinterland_roads roads
-	}
-	building
-	{
-		type hinterland_farms farms
-	}
 }
 
 settlement
@@ -1057,18 +942,6 @@ settlement
 	building
 	{
 		type defenses stone_wall
-	}
-	building
-	{
-		type market trader
-	}
-	building
-	{
-		type hinterland_roads roads
-	}
-	building
-	{
-		type hinterland_farms farms
 	}
 }
 
@@ -1140,11 +1013,11 @@ relative 	Gyras, 	Alkmena,		Aloeus,	Abreas,	end
 relative 	Euenus, 	Pervica,		Caleope,	Deukalos,	end
 
 
-faction	egypt, religious_caesar
+faction	egypt, balanced_smith
 denari	5000
 settlement
 {
-	level large_town
+	level town
 	region Nile_Delta
 
 	year_founded 0
@@ -1153,33 +1026,13 @@ settlement
 	faction_creator egypt
 	building
 	{
-		type core_building governors_villa
-	}
-	building
-	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
-		type port_buildings port
-	}
-	building
-	{
-		type market trader
-	}
-	building
-	{
-		type hinterland_roads roads
-	}
-	building
-	{
-		type hinterland_farms farms
+		type core_building governors_house
 	}
 }
 
 settlement
 {
-	level city
+	level town
 	region Middle_Egypt
 
 	year_founded 0
@@ -1188,11 +1041,7 @@ settlement
 	faction_creator egypt
 	building
 	{
-		type core_building governors_palace
-	}
-	building
-	{
-		type defenses stone_wall
+		type core_building governors_house
 	}
 	building
 	{
@@ -1202,27 +1051,11 @@ settlement
 	{
 		type missiles practice_field
 	}
-	building
-	{
-		type market trader
-	}
-	building
-	{
-		type temple_of_law temple_of_law_shrine
-	}
-	building
-	{
-		type hinterland_roads roads
-	}
-	building
-	{
-		type hinterland_farms farms
-	}
 }
 
 settlement
 {
-	level large_town
+	level town
 	region Thebais
 
 	year_founded 0
@@ -1231,7 +1064,7 @@ settlement
 	faction_creator egypt
 	building
 	{
-		type core_building governors_villa
+		type core_building governors_house
 	}
 	building
 	{
@@ -1240,18 +1073,6 @@ settlement
 	building
 	{
 		type missiles practice_field
-	}
-	building
-	{
-		type temple_of_justice temple_of_justice_shrine
-	}
-	building
-	{
-		type hinterland_roads roads
-	}
-	building
-	{
-		type hinterland_farms farms
 	}
 }
 
@@ -1276,7 +1097,7 @@ settlement
 
 settlement
 {
-	level large_town
+	level town
 	region Judaea
 
 	year_founded 0
@@ -1285,29 +1106,17 @@ settlement
 	faction_creator parthia
 	building
 	{
-		type core_building governors_villa
-	}
-	building
-	{
-		type defenses wooden_pallisade
+		type core_building governors_house
 	}
 	building
 	{
 		type missiles practice_field
 	}
-	building
-	{
-		type temple_of_law temple_of_law_shrine
-	}
-	building
-	{
-		type hinterland_roads roads
-	}
 }
 
 settlement
 {
-	level large_town
+	level town
 	region Phoenicia
 
 	year_founded 0
@@ -1316,27 +1125,11 @@ settlement
 	faction_creator parthia
 	building
 	{
-		type core_building governors_villa
-	}
-	building
-	{
-		type defenses wooden_wall
+		type core_building governors_house
 	}
 	building
 	{
 		type barracks muster_field
-	}
-	building
-	{
-		type port_buildings port
-	}
-	building
-	{
-		type market market
-	}
-	building
-	{
-		type hinterland_roads roads
 	}
 }
 
@@ -1437,7 +1230,7 @@ relative 	Ptahhotep, 	Satsobek,		Arsinoe,	Tanutamun,	end
 relative 	Kiya, 	Pedibastet,		Heruben,	end
 
 
-faction	seleucid, balanced_stalin
+faction	seleucid, balanced_smith
 denari	3000
 settlement
 {
@@ -1445,7 +1238,7 @@ settlement
 	region Syria
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -1454,7 +1247,7 @@ settlement
 	}
 	building
 	{
-		type defenses wooden_wall
+		type defenses stone_wall
 	}
 	building
 	{
@@ -1463,14 +1256,6 @@ settlement
 	building
 	{
 		type equestrian stables
-	}
-	building
-	{
-		type hinterland_roads roads
-	}
-	building
-	{
-		type port_buildings port
 	}
 }
 
@@ -1489,7 +1274,7 @@ settlement
 	}
 	building
 	{
-		type defenses wooden_pallisade
+		type defenses stone_wall
 	}
 	building
 	{
@@ -1512,7 +1297,7 @@ settlement
 	}
 	building
 	{
-		type hinterland_roads roads
+		type defenses stone_wall
 	}
 }
 
@@ -1531,11 +1316,7 @@ settlement
 	}
 	building
 	{
-		type market trader
-	}
-	building
-	{
-		type hinterland_roads roads
+		type defenses stone_wall
 	}
 }
 
@@ -1558,15 +1339,7 @@ settlement
 	}
 	building
 	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
-		type hinterland_farms farms
-	}
-	building
-	{
-		type hinterland_roads roads
+		type defenses stone_wall
 	}
 }
 
@@ -1589,15 +1362,11 @@ settlement
 	}
 	building
 	{
-		type hinterland_roads roads
-	}
-	building
-	{
-		type defenses wooden_pallisade
+		type defenses stone_wall
 	}
 }
 
-character	Antiochus, named character, leader, age 60, , x 200, y 55
+character	Antiochus, named character, leader, age 55, , x 200, y 55
 traits GoodCommander 2 , NaturalMilitarySkill 1 , PublicFaith 2 , GoodAdministrator 2
 ancillaries heroic_saviour
 army
@@ -1669,7 +1438,7 @@ character_record		Cleitos, 	male, command 0, influence 0, management 0, subterfu
 character_record		Gyras, 	male, command 0, influence 0, management 0, subterfuge 0, age 9, alive, never_a_leader
 character_record		Kassandros, 	male, command 0, influence 0, management 0, subterfuge 0, age 4, alive, never_a_leader
 character_record		Zeuxis, 	male, command 0, influence 0, management 0, subterfuge 0, age 10, alive, never_a_leader
-character_record		Alkmena, 	female, command 0, influence 0, management 0, subterfuge 0, age 58, alive, never_a_leader
+character_record		Alkmena, 	female, command 0, influence 0, management 0, subterfuge 0, age 55, alive, never_a_leader
 character_record		Aspasia, 	female, command 0, influence 0, management 0, subterfuge 0, age 30, alive, never_a_leader
 character_record		Parthenope, 	female, command 0, influence 0, management 0, subterfuge 0, age 28, alive, never_a_leader
 character_record		Athena, 	female, command 0, influence 0, management 0, subterfuge 0, age 24, alive, never_a_leader
@@ -1691,7 +1460,7 @@ settlement
 	region Africa
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator carthage
 	building
@@ -1709,22 +1478,6 @@ settlement
 	building
 	{
 		type barracks militia_barracks
-	}
-	building
-	{
-		type port_buildings port
-	}
-	building
-	{
-		type market market
-	}
-	building
-	{
-		type temple_of_justice temple_of_justice_temple
-	}
-	building
-	{
-		type hinterland_farms farms
 	}
 }
 
@@ -1749,10 +1502,6 @@ settlement
 	{
 		type barracks muster_field
 	}
-	building
-	{
-		type market trader
-	}
 }
 
 settlement
@@ -1771,14 +1520,6 @@ settlement
 	building
 	{
 		type barracks muster_field
-	}
-	building
-	{
-		type market trader
-	}
-	building
-	{
-		type hinterland_farms farms
 	}
 }
 
@@ -1827,15 +1568,11 @@ settlement
 	}
 	building
 	{
-		type market trader
-	}
-	building
-	{
 		type core_building governors_house
 	}
 }
 
-character	Hanno, named character, leader, age 65, , x 96, y 49
+character	Hanno, named character, leader, age 61, , x 96, y 49
 traits GoodCommander 2 , GoodDefender 1 , PublicFaith 1 , GoodAdministrator 2 , GoodTrader 1
 ancillaries spymaster
 army
@@ -1926,7 +1663,7 @@ traits GoodDiplomat 3
 
 character_record		Bomilkar, 	male, command 0, influence 0, management 0, subterfuge 0, age 13, alive, never_a_leader
 character_record		Bisaltes, 	male, command 0, influence 0, management 0, subterfuge 0, age 9, alive, never_a_leader
-character_record		Actaee, 	female, command 0, influence 0, management 0, subterfuge 0, age 60, alive, never_a_leader
+character_record		Actaee, 	female, command 0, influence 0, management 0, subterfuge 0, age 55, alive, never_a_leader
 character_record		Althaia, 	female, command 0, influence 0, management 0, subterfuge 0, age 36, alive, never_a_leader
 character_record		Polymede, 	female, command 0, influence 0, management 0, subterfuge 0, age 40, alive, never_a_leader
 character_record		Xanthe, 	female, command 0, influence 0, management 0, subterfuge 0, age 22, alive, never_a_leader
@@ -1939,7 +1676,7 @@ relative 	Burrhus, 	Polymede,		Theages,	Theodekles,	Roxane,	end
 relative 	Theages, 	Xanthe,		end
 
 
-faction	parthia, balanced_genghis
+faction	parthia, balanced_smith
 denari	5000
 settlement
 {
@@ -1953,14 +1690,6 @@ settlement
 	building
 	{
 		type barracks muster_field
-	}
-	building
-	{
-		type market trader
-	}
-	building
-	{
-		type temple_of_one_god temple_of_one_god_shrine
 	}
 	building
 	{
@@ -1978,7 +1707,7 @@ settlement
 	region Elymais
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator parthia
 	building
@@ -1991,19 +1720,7 @@ settlement
 	}
 	building
 	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
 		type barracks muster_field
-	}
-	building
-	{
-		type hinterland_roads roads
-	}
-	building
-	{
-		type hinterland_farms farms
 	}
 }
 
@@ -2024,13 +1741,9 @@ settlement
 	{
 		type equestrian stables
 	}
-	building
-	{
-		type defenses wooden_pallisade
-	}
 }
 
-character	Arsaces, named character, leader, age 60, , x 252, y 78
+character	Arsaces, named character, leader, age 55, , x 252, y 78
 traits GoodCommander 2 , NaturalMilitarySkill 1 , PublicFaith 1 , GoodAdministrator 2 , Austere 1
 ancillaries foodtaster
 army
@@ -2088,7 +1801,7 @@ ancillaries dancer
 character_record		Arses, 	male, command 0, influence 0, management 0, subterfuge 0, age 12, alive, never_a_leader
 character_record		Thuxra, 	male, command 0, influence 0, management 0, subterfuge 0, age 4, alive, never_a_leader
 character_record		Achaemenes, 	male, command 0, influence 0, management 0, subterfuge 0, age 15, alive, never_a_leader
-character_record		Roxanna, 	female, command 0, influence 0, management 0, subterfuge 0, age 58, alive, never_a_leader
+character_record		Roxanna, 	female, command 0, influence 0, management 0, subterfuge 0, age 55, alive, never_a_leader
 character_record		Ariyamna, 	female, command 0, influence 0, management 0, subterfuge 0, age 35, alive, never_a_leader
 character_record		Nabunaita, 	female, command 0, influence 0, management 0, subterfuge 0, age 24, alive, never_a_leader
 character_record		Bardiya, 	female, command 0, influence 0, management 0, subterfuge 0, age 8, alive, never_a_leader
@@ -2098,7 +1811,7 @@ relative 	Ardumanish, 	Ariyamna,		Achaemenes,	Arses,	Bardiya,	end
 relative 	Phraotes, 	Nabunaita,		Thuxra,	end
 
 
-faction	pontus, trader_napoleon
+faction	pontus, balanced_smith
 denari	3000
 settlement
 {
@@ -2115,23 +1828,11 @@ settlement
 	}
 	building
 	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
 		type equestrian stables
 	}
 	building
 	{
 		type barracks muster_field
-	}
-	building
-	{
-		type market trader
-	}
-	building
-	{
-		type port_buildings port
 	}
 }
 
@@ -2150,19 +1851,11 @@ settlement
 	}
 	building
 	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
 		type missiles practice_field
-	}
-	building
-	{
-		type market trader
 	}
 }
 
-character	Mithradates, named character, leader, age 60, , x 190, y 80
+character	Mithradates, named character, leader, age 55, , x 190, y 80
 traits GoodCommander 2 , PublicFaith 1 , Intelligent 2
 ancillaries aged_retainer, chief_eunuch
 army
@@ -2217,7 +1910,7 @@ relative 	Pharnaces, 	Pythodoris,		Dynamis,	Gepaepyris,	Paerisades,	end
 relative 	Herakles, 	Antonia,		Dionysos,	Rhescuporis,	end
 
 
-faction	gauls, religious_smith
+faction	gauls, balanced_smith
 denari	5000
 settlement
 {
@@ -2234,19 +1927,11 @@ settlement
 	}
 	building
 	{
-		type defenses wooden_wall
-	}
-	building
-	{
 		type barracks muster_field
 	}
 	building
 	{
 		type equestrian stables
-	}
-	building
-	{
-		type hinterland_farms farms
 	}
 }
 
@@ -2265,15 +1950,11 @@ settlement
 	}
 	building
 	{
-		type defenses wooden_pallisade
+		type defenses wooden_wall
 	}
 	building
 	{
 		type barracks muster_field
-	}
-	building
-	{
-		type market trader
 	}
 }
 
@@ -2292,7 +1973,7 @@ settlement
 	}
 	building
 	{
-		type defenses wooden_pallisade
+		type defenses wooden_wall
 	}
 	building
 	{
@@ -2339,10 +2020,6 @@ settlement
 	building
 	{
 		type core_building governors_house
-	}
-	building
-	{
-		type defenses wooden_pallisade
 	}
 	building
 	{
@@ -2492,7 +2169,7 @@ relative 	Rianorix, 	Esselt,		Lucco,	end
 relative 	Vindex, 	Keyne,		Meriadoc,	Verica,	end
 
 
-faction	germans, balanced_mao
+faction	germans, balanced_smith
 denari	5000
 settlement
 {
@@ -2509,10 +2186,6 @@ settlement
 	}
 	building
 	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
 		type barracks muster_field
 	}
 	building
@@ -2523,81 +2196,49 @@ settlement
 
 settlement
 {
-	level large_town
+	level village
 	region Agri_Decumates
 
 	year_founded 0
 	population 1000
 	plan_set default_set
 	faction_creator gauls
-	building
-	{
-		type core_building governors_villa
-	}
-	building
-	{
-		type barracks muster_field
-	}
 }
 
 settlement
 {
-	level town
+	level village
 	region Germania_Superior
 
 	year_founded 0
 	population 1000
 	plan_set default_set
 	faction_creator gauls
-	building
-	{
-		type core_building governors_house
-	}
-	building
-	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
-		type barracks muster_field
-	}
 }
 
 settlement
 {
-	level town
+	level village
 	region Germania_Inferior
 
 	year_founded 0
 	population 1000
 	plan_set default_set
 	faction_creator gauls
-	building
-	{
-		type core_building governors_house
-	}
 }
 
 settlement
 {
-	level town
+	level village
 	region Regnum_Marcomannii
 
 	year_founded 0
 	population 1000
 	plan_set default_set
 	faction_creator gauls
-	building
-	{
-		type core_building governors_house
-	}
-	building
-	{
-		type barracks muster_field
-	}
 }
 
-character	Arminius, named character, leader, age 60, , x 95, y 130
+character	Arminius, named character, leader, age 55, , x 95, y 130
 traits GoodCommander 2 , Intelligent 2 , PublicFaith 1
 ancillaries bodyguard, civilized_slave
 army
@@ -2653,7 +2294,7 @@ character_record		Vannius, 	male, command 0, influence 0, management 0, subterfu
 character_record		Sesithacus, 	male, command 0, influence 0, management 0, subterfuge 0, age 10, alive, never_a_leader
 character_record		Othelhildis, 	male, command 0, influence 0, management 0, subterfuge 0, age 6, alive, never_a_leader
 character_record		Carolus, 	male, command 0, influence 0, management 0, subterfuge 0, age 2, alive, never_a_leader
-character_record		Herlinda, 	female, command 0, influence 0, management 0, subterfuge 0, age 58, alive, never_a_leader
+character_record		Herlinda, 	female, command 0, influence 0, management 0, subterfuge 0, age 55, alive, never_a_leader
 character_record		Thusnelda, 	female, command 0, influence 0, management 0, subterfuge 0, age 35, alive, never_a_leader
 character_record		Aurinia, 	female, command 0, influence 0, management 0, subterfuge 0, age 28, alive, never_a_leader
 character_record		Amalberga, 	female, command 0, influence 0, management 0, subterfuge 0, age 8, alive, never_a_leader
@@ -2664,7 +2305,7 @@ relative 	Ariogaisus, 	Thusnelda,		Vannius,	Amalberga,	Othelhildis,	end
 relative 	Hariulfus, 	Aurinia,		Sesithacus,	Biua,	Carolus,	end
 
 
-faction	britons, trader_henry
+faction	britons, balanced_smith
 denari	5000
 settlement
 {
@@ -2678,10 +2319,6 @@ settlement
 	building
 	{
 		type core_building governors_villa
-	}
-	building
-	{
-		type defenses wooden_pallisade
 	}
 	building
 	{
@@ -2702,48 +2339,28 @@ settlement
 	{
 		type core_building governors_house
 	}
-	building
-	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
-		type barracks muster_field
-	}
-	building
-	{
-		type market trader
-	}
 }
 
 settlement
 {
-	level town
+	level village
 	region Tribus_Silurii
 
 	year_founded 0
-	population 984
+	population 1000
 	plan_set default_set
 	faction_creator gauls
-	building
-	{
-		type core_building governors_house
-	}
 }
 
 settlement
 {
-	level town
+	level village
 	region Britannia_Inferior
 
 	year_founded 0
-	population 984
+	population 1000
 	plan_set default_set
 	faction_creator gauls
-	building
-	{
-		type core_building governors_house
-	}
 }
 
 character	Barrivendos, named character, leader, age 50, , x 57, y 128
@@ -2822,7 +2439,7 @@ relative 	Prasutagus, 	Esselt,		Iseult,	Verica,	Wotecorix,	end
 relative 	Cynfawr, 	Eudaf,		Sennianus,	Drustan,	end
 
 
-faction	armenia, fortified_henry
+faction	armenia, balanced_smith
 denari	3000
 settlement
 {
@@ -2839,19 +2456,11 @@ settlement
 	}
 	building
 	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
 		type equestrian stables
 	}
 	building
 	{
 		type barracks muster_field
-	}
-	building
-	{
-		type hinterland_farms farms
 	}
 }
 
@@ -2872,17 +2481,9 @@ settlement
 	{
 		type barracks muster_field
 	}
-	building
-	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
-		type hinterland_farms farms
-	}
 }
 
-character	Artaxias, named character, leader, age 60, , x 227, y 87
+character	Artaxias, named character, leader, age 55, , x 227, y 87
 traits GoodCommander 2 , PublicFaith 2 , Intelligent 1 , Bloodthirsty 1
 ancillaries chief_eunuch
 army
@@ -2935,7 +2536,7 @@ relative 	Rusa, 	Karo,		Arao,	Aram,	Sarduri,	end
 relative 	Aramu, 	Pao,		Eminos,	Hurriya,	end
 
 
-faction	dacia, balanced_stalin
+faction	dacia, balanced_smith
 denari	3000
 settlement
 {
@@ -2952,15 +2553,7 @@ settlement
 	}
 	building
 	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
 		type barracks muster_field
-	}
-	building
-	{
-		type market trader
 	}
 	building
 	{
@@ -2987,7 +2580,7 @@ settlement
 	}
 }
 
-character	Zyraxes, named character, leader, age 60, , x 140, y 98
+character	Zyraxes, named character, leader, age 55, , x 140, y 98
 traits GoodCommander 2 , Intelligent 1 , Bloodthirsty 2
 ancillaries bard
 army
@@ -3046,7 +2639,7 @@ settlement
 	region Laconia
 
 	year_founded 0
-	population 1000
+	population 500
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -3056,18 +2649,6 @@ settlement
 	building
 	{
 		type barracks militia_barracks
-	}
-	building
-	{
-		type temple_of_victory temple_of_victory_temple
-	}
-	building
-	{
-		type hinterland_farms farms
-	}
-	building
-	{
-		type hinterland_roads roads
 	}
 }
 
@@ -3086,23 +2667,7 @@ settlement
 	}
 	building
 	{
-		type defenses wooden_wall
-	}
-	building
-	{
 		type barracks muster_field
-	}
-	building
-	{
-		type port_buildings port
-	}
-	building
-	{
-		type market market
-	}
-	building
-	{
-		type hinterland_farms farms
 	}
 }
 
@@ -3123,14 +2688,6 @@ settlement
 	{
 		type barracks muster_field
 	}
-	building
-	{
-		type market trader
-	}
-	building
-	{
-		type hinterland_farms farms
-	}
 }
 
 settlement
@@ -3148,10 +2705,6 @@ settlement
 	}
 	building
 	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
 		type missiles practice_field
 	}
 }
@@ -3162,7 +2715,7 @@ settlement
 	region Sicilia_Graecus
 
 	year_founded 0
-	population 1000
+	population 500
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -3177,21 +2730,9 @@ settlement
 	{
 		type barracks muster_field
 	}
-	building
-	{
-		type port_buildings port
-	}
-	building
-	{
-		type hinterland_farms farms
-	}
-	building
-	{
-		type hinterland_roads roads
-	}
 }
 
-character	Kleomenes of Sparta, named character, leader, age 56, , x 138, y 46
+character	Kleomenes of Sparta, named character, leader, age 51, , x 138, y 46
 traits GoodCommander 2 , NaturalMilitarySkill 1 , GoodDefender 1 , Austere 2 , Intelligent 1
 ancillaries wrestler
 army
@@ -3275,7 +2816,7 @@ relative 	Antigonos of Sparta, 	Eunice,		Doros of Sparta,	Nicanor of Sparta,	end
 relative 	Eumenes of Sparta, 	Kyra,		Eugenius of Sparta,	end
 
 
-faction	numidia, balanced_henry
+faction	numidia, balanced_smith
 denari	3000
 settlement
 {
@@ -3296,10 +2837,6 @@ settlement
 	}
 	building
 	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
 		type barracks muster_field
 	}
 }
@@ -3316,10 +2853,6 @@ settlement
 	building
 	{
 		type core_building governors_house
-	}
-	building
-	{
-		type defenses wooden_pallisade
 	}
 	building
 	{
@@ -3361,15 +2894,11 @@ settlement
 	}
 	building
 	{
-		type temple_of_justice temple_of_justice_temple
-	}
-	building
-	{
 		type core_building governors_villa
 	}
 }
 
-character	Syphax, named character, leader, age 60, , x 55, y 41
+character	Syphax, named character, leader, age 55, , x 55, y 41
 traits GoodCommander 2 , Energetic 1
 ancillaries desert_scout, astrologer
 army
@@ -3436,7 +2965,7 @@ relative 	Gisgo, 	Kahina,		Balhanno,	Pherusa,	end
 relative 	Muttines, 	Aglaurus,		Tabnit,	Sotera,	Abdimilki,	end
 
 
-faction	scythia, trader_smith
+faction	scythia, balanced_smith
 denari	3000
 settlement
 {
@@ -3458,10 +2987,6 @@ settlement
 	building
 	{
 		type barracks muster_field
-	}
-	building
-	{
-		type temple_of_horse_2 temple_of_horse_2_shrine
 	}
 }
 
@@ -3519,10 +3044,6 @@ settlement
 	building
 	{
 		type barracks muster_field
-	}
-	building
-	{
-		type hinterland_farms farms
 	}
 }
 
@@ -3585,7 +3106,7 @@ relative 	Partatua, 	Afina,		Ziaelas,	Hestia,	end
 relative 	Belnirari, 	Branka,		Madyes,	Ara,	end
 
 
-faction	spain, fortified_mao
+faction	spain, balanced_smith
 denari	3000
 settlement
 {
@@ -3598,21 +3119,13 @@ settlement
 	faction_creator gauls
 	building
 	{
-		type barracks muster_field
-	}
-	building
-	{
 		type core_building governors_villa
-	}
-	building
-	{
-		type defenses wooden_pallisade
 	}
 }
 
 settlement
 {
-	level large_town
+	level town
 	region Lusitania
 
 	year_founded 0
@@ -3621,15 +3134,11 @@ settlement
 	faction_creator gauls
 	building
 	{
-		type core_building governors_villa
+		type core_building governors_house
 	}
 	building
 	{
 		type missiles practice_field
-	}
-	building
-	{
-		type defenses wooden_pallisade
 	}
 }
 
@@ -3645,10 +3154,6 @@ settlement
 	building
 	{
 		type core_building governors_house
-	}
-	building
-	{
-		type defenses wooden_pallisade
 	}
 	building
 	{
@@ -3675,7 +3180,7 @@ settlement
 	}
 }
 
-character	Viriathus, named character, leader, age 60, , x 20, y 87
+character	Viriathus, named character, leader, age 55, , x 20, y 87
 traits GoodCommander 1 , Energetic 1 , Intelligent 1 , Drink 1
 ancillaries bard
 army
@@ -3728,7 +3233,7 @@ traits GoodSpy 3
 character_record		Ambon, 	male, command 0, influence 0, management 0, subterfuge 0, age 12, alive, never_a_leader
 character_record		Leukon, 	male, command 0, influence 0, management 0, subterfuge 0, age 8, alive, never_a_leader
 character_record		Avaros, 	male, command 0, influence 0, management 0, subterfuge 0, age 2, alive, never_a_leader
-character_record		Cartimandua, 	female, command 0, influence 0, management 0, subterfuge 0, age 59, alive, never_a_leader
+character_record		Cartimandua, 	female, command 0, influence 0, management 0, subterfuge 0, age 55, alive, never_a_leader
 character_record		Esselta, 	female, command 0, influence 0, management 0, subterfuge 0, age 35, alive, never_a_leader
 character_record		Iseulta, 	female, command 0, influence 0, management 0, subterfuge 0, age 28, alive, never_a_leader
 character_record		Keynea, 	female, command 0, influence 0, management 0, subterfuge 0, age 24, alive, never_a_leader
@@ -3740,7 +3245,7 @@ relative 	Lucco, 	Iseulta,		Leukon,	end
 relative 	Matugenus, 	Keynea,		Verica,	Avaros,	end
 
 
-faction	thrace, sailor_napoleon
+faction	thrace, balanced_smith
 denari	3000
 settlement
 {
@@ -3757,15 +3262,7 @@ settlement
 	}
 	building
 	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
 		type missiles practice_field
-	}
-	building
-	{
-		type hinterland_farms farms
 	}
 }
 
@@ -3796,7 +3293,7 @@ settlement
 	}
 }
 
-character	Sautes, named character, leader, age 60, , x 151, y 78
+character	Sautes, named character, leader, age 55, , x 151, y 78
 traits GoodCommander 2 , GoodAttacker 2 , Energetic 1 , Drink 2
 ancillaries wine_steward, comedian, aged_retainer
 army
@@ -3838,7 +3335,7 @@ character_record		Bryzos, 	male, command 0, influence 0, management 0, subterfug
 character_record		Gaidres, 	male, command 0, influence 0, management 0, subterfuge 0, age 7, alive, never_a_leader
 character_record		Iptacens, 	male, command 0, influence 0, management 0, subterfuge 0, age 10, alive, never_a_leader
 character_record		Ziles, 	male, command 0, influence 0, management 0, subterfuge 0, age 14, alive, never_a_leader
-character_record		Karia, 	female, command 0, influence 0, management 0, subterfuge 0, age 59, alive, never_a_leader
+character_record		Karia, 	female, command 0, influence 0, management 0, subterfuge 0, age 55, alive, never_a_leader
 character_record		Bendidora, 	female, command 0, influence 0, management 0, subterfuge 0, age 35, alive, never_a_leader
 character_record		Cerzula, 	female, command 0, influence 0, management 0, subterfuge 0, age 25, alive, never_a_leader
 character_record		Eptesyka, 	female, command 0, influence 0, management 0, subterfuge 0, age 8, alive, never_a_leader
@@ -3850,7 +3347,7 @@ relative 	Byzas, 	Cerzula,		Gaidres,	Mokasokos,	Bryzos,	end
 
 
 faction	slave, balanced_smith
-denari	10000
+denari	10000000000
 settlement
 {
 	level town
@@ -3913,10 +3410,6 @@ settlement
 	building
 	{
 		type defenses wooden_pallisade
-	}
-	building
-	{
-		type hinterland_farms farms
 	}
 }
 
@@ -4014,7 +3507,7 @@ settlement
 	region Attica
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -4028,10 +3521,6 @@ settlement
 	building
 	{
 		type academic academy
-	}
-	building
-	{
-		type hinterland_farms farms
 	}
 	building
 	{
@@ -4074,10 +3563,6 @@ settlement
 	building
 	{
 		type defenses wooden_pallisade
-	}
-	building
-	{
-		type market trader
 	}
 	building
 	{
@@ -4124,10 +3609,6 @@ settlement
 	building
 	{
 		type defenses wooden_pallisade
-	}
-	building
-	{
-		type market trader
 	}
 	building
 	{
