@@ -1,0 +1,4238 @@
+{
+	"version": 5,
+	"file_tag": "FERAL_RETINA",
+	"texpages": [
+		{
+			"absolutePath": "roman/interface/",
+			"height": "2048",
+			"relativePath": "battle_new_0.tga",
+			"width": "2048"
+		},
+		{
+			"absolutePath": "roman/interface/",
+			"height": "2040",
+			"relativePath": "battle_new_1.tga",
+			"width": "2040"
+		},
+		{
+			"absolutePath": "roman/interface/",
+			"height": "1400",
+			"relativePath": "battle_new_extruded_0.tga",
+			"width": "1400"
+		}
+	],
+	"sprites": [
+		{
+			"hasAlpha": 1,
+			"name": "0001battle_hud_texture.png",
+			"pos": {
+				"x": 4,
+				"y": 634
+			},
+			"size": {
+				"height": 170,
+				"width": 1024
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0002group.png",
+			"pos": {
+				"x": 484,
+				"y": 1790
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0003mring_unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0004stop.png",
+			"pos": {
+				"x": 542,
+				"y": 928
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0005withdraw.png",
+			"pos": {
+				"x": 878,
+				"y": 566
+			},
+			"size": {
+				"height": 150,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0006group_break.png",
+			"pos": {
+				"x": 546,
+				"y": 1078
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0007formationtight_selected.png",
+			"pos": {
+				"x": 180,
+				"y": 1672
+			},
+			"size": {
+				"height": 148,
+				"width": 150
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0008ranged.png",
+			"pos": {
+				"x": 546,
+				"y": 1228
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0009defensive.png",
+			"pos": {
+				"x": 546,
+				"y": 1378
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0010aggressive.png",
+			"pos": {
+				"x": 692,
+				"y": 904
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0011formationloose_selected.png",
+			"pos": {
+				"x": 696,
+				"y": 1054
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0012ranged_selected.png",
+			"pos": {
+				"x": 696,
+				"y": 1204
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0013defensive_selected.png",
+			"pos": {
+				"x": 696,
+				"y": 1354
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0014aggressive_selected.png",
+			"pos": {
+				"x": 842,
+				"y": 900
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0015slideypanel_unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0016menu_sandwich.png",
+			"pos": {
+				"x": 2,
+				"y": 536
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0017play_disabled.png",
+			"pos": {
+				"x": 1898,
+				"y": 484
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0018play.png",
+			"pos": {
+				"x": 1568,
+				"y": 632
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0019play_selected.png",
+			"pos": {
+				"x": 1690,
+				"y": 618
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0020ff.png",
+			"pos": {
+				"x": 1812,
+				"y": 608
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0021ff_selected.png",
+			"pos": {
+				"x": 1592,
+				"y": 754
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0022fff.png",
+			"pos": {
+				"x": 1714,
+				"y": 740
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0023fff_selected.png",
+			"pos": {
+				"x": 1836,
+				"y": 730
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0024stop_disabled.png",
+			"pos": {
+				"x": 846,
+				"y": 1050
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0025group_disabled.png",
+			"pos": {
+				"x": 846,
+				"y": 1200
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0026formationloose_disabled.png",
+			"pos": {
+				"x": 846,
+				"y": 1350
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0027battle_03-10alt2.png",
+			"pos": {
+				"x": 546,
+				"y": 1528
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0028defensive_disabled.png",
+			"pos": {
+				"x": 992,
+				"y": 892
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0029battle_03-17.png",
+			"pos": {
+				"x": 1942,
+				"y": 1052
+			},
+			"size": {
+				"height": 86,
+				"width": 86
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0030battle_03-16.png",
+			"pos": {
+				"x": 1932,
+				"y": 1418
+			},
+			"size": {
+				"height": 86,
+				"width": 86
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0031battle_03-15.png",
+			"pos": {
+				"x": 1932,
+				"y": 1506
+			},
+			"size": {
+				"height": 86,
+				"width": 86
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0032battle_03-11.png",
+			"pos": {
+				"x": 1032,
+				"y": 1766
+			},
+			"size": {
+				"height": 86,
+				"width": 86
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0033battle_03-18.png",
+			"pos": {
+				"x": 1098,
+				"y": 1860
+			},
+			"size": {
+				"height": 86,
+				"width": 86
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0034battle_03-17_disabled.png",
+			"pos": {
+				"x": 726,
+				"y": 566
+			},
+			"size": {
+				"height": 150,
+				"width": 150
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0035battle_03-16_disabled.png",
+			"pos": {
+				"x": 1088,
+				"y": 204
+			},
+			"size": {
+				"height": 150,
+				"width": 150
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0036battle_03-15_disabled.png",
+			"pos": {
+				"x": 1240,
+				"y": 204
+			},
+			"size": {
+				"height": 150,
+				"width": 150
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0037battle_03-11_disabled.png",
+			"pos": {
+				"x": 1716,
+				"y": 180
+			},
+			"size": {
+				"height": 150,
+				"width": 150
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0038battle_03-18_disabled.png",
+			"pos": {
+				"x": 1868,
+				"y": 180
+			},
+			"size": {
+				"height": 150,
+				"width": 150
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0039unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0040unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0041battle_03-8.png",
+			"pos": {
+				"x": 1280,
+				"y": 1640
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0042wedge_selected.png",
+			"pos": {
+				"x": 916,
+				"y": 2
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0043wedge.png",
+			"pos": {
+				"x": 2,
+				"y": 898
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0044cardorig copy 2.png",
+			"pos": {
+				"x": 726,
+				"y": 1448
+			},
+			"size": {
+				"height": 420,
+				"width": 194
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0045cardorig copy 4.png",
+			"pos": {
+				"x": 1908,
+				"y": 1812
+			},
+			"size": {
+				"height": 160,
+				"width": 96
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0046battle_02-9_unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0047eggover_unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0048eggsand_unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0049battle_02-14_unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0050unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0051testudo_selected.png",
+			"pos": {
+				"x": 364,
+				"y": 536
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0052testudo.png",
+			"pos": {
+				"x": 996,
+				"y": 1042
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0053battle_03-14.png",
+			"pos": {
+				"x": 1098,
+				"y": 1948
+			},
+			"size": {
+				"height": 86,
+				"width": 86
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0054auto.png",
+			"pos": {
+				"x": 996,
+				"y": 1192
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0055auto_selected.png",
+			"pos": {
+				"x": 996,
+				"y": 1192
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0056battle_03-13.png",
+			"pos": {
+				"x": 1186,
+				"y": 1928
+			},
+			"size": {
+				"height": 86,
+				"width": 86
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0057battle_03-12.png",
+			"pos": {
+				"x": 1280,
+				"y": 1864
+			},
+			"size": {
+				"height": 86,
+				"width": 86
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0058battle_03-14_disabled.png",
+			"pos": {
+				"x": 1420,
+				"y": 356
+			},
+			"size": {
+				"height": 150,
+				"width": 150
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0059battle_03-13_disabled.png",
+			"pos": {
+				"x": 1572,
+				"y": 342
+			},
+			"size": {
+				"height": 150,
+				"width": 150
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0060battle_03-12_disabled.png",
+			"pos": {
+				"x": 1724,
+				"y": 332
+			},
+			"size": {
+				"height": 150,
+				"width": 150
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0061walk.png",
+			"pos": {
+				"x": 996,
+				"y": 1342
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0062run_selected.png",
+			"pos": {
+				"x": 1142,
+				"y": 890
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0063auto_disabled.png",
+			"pos": {
+				"x": 1146,
+				"y": 1040
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0064walk_disabled.png",
+			"pos": {
+				"x": 1146,
+				"y": 1190
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0065linkbuttondisabled_unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0066battle_03-19alt2.png",
+			"pos": {
+				"x": 1280,
+				"y": 1752
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0067withdraw_disabled.png",
+			"pos": {
+				"x": 1876,
+				"y": 332
+			},
+			"size": {
+				"height": 150,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0068command.png",
+			"pos": {
+				"x": 1368,
+				"y": 1916
+			},
+			"size": {
+				"height": 82,
+				"width": 84
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0069command_disabled.png",
+			"pos": {
+				"x": 1454,
+				"y": 1924
+			},
+			"size": {
+				"height": 82,
+				"width": 84
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0070battle_hud_texture.png",
+			"pos": {
+				"x": 4,
+				"y": 634
+			},
+			"size": {
+				"height": 170,
+				"width": 1024
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0071battle_03-7alt2.png",
+			"pos": {
+				"x": 1392,
+				"y": 1692
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0072phalanx_selected.png",
+			"pos": {
+				"x": 1146,
+				"y": 1340
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0073phalanx.png",
+			"pos": {
+				"x": 1278,
+				"y": 2
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0074mringdisabled_unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0075sringdisabled_unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0076sring_unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0077generalinternal.png",
+			"pos": {
+				"x": 1934,
+				"y": 708
+			},
+			"size": {
+				"height": 20,
+				"width": 20
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0078unitinternal.png",
+			"pos": {
+				"x": 1880,
+				"y": 1984
+			},
+			"size": {
+				"height": 20,
+				"width": 20
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0079unitoutline.png",
+			"pos": {
+				"x": 1798,
+				"y": 2006
+			},
+			"size": {
+				"height": 32,
+				"width": 32
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0080generaloutline.png",
+			"pos": {
+				"x": 1832,
+				"y": 2006
+			},
+			"size": {
+				"height": 32,
+				"width": 32
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0081unitinternallarge.png",
+			"pos": {
+				"x": 1866,
+				"y": 2006
+			},
+			"size": {
+				"height": 32,
+				"width": 32
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0082unit_generals.png",
+			"pos": {
+				"x": 2,
+				"y": 1260
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0083cantabriancircle_selected.png",
+			"pos": {
+				"x": 364,
+				"y": 898
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0084cantabriancircle.png",
+			"pos": {
+				"x": 332,
+				"y": 1672
+			},
+			"size": {
+				"height": 150,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0085battle_02-3.png",
+			"pos": {
+				"x": 1392,
+				"y": 1804
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0086battle_02-3alt2.png",
+			"pos": {
+				"x": 1504,
+				"y": 1700
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0087berserkerrage_selected.png",
+			"pos": {
+				"x": 1292,
+				"y": 886
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0088berserkerrage_disabled.png",
+			"pos": {
+				"x": 1296,
+				"y": 1036
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0089firearrows_selected.png",
+			"pos": {
+				"x": 1640,
+				"y": 2
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0090firearrows.png",
+			"pos": {
+				"x": 2,
+				"y": 1622
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0091horn_selected.png",
+			"pos": {
+				"x": 180,
+				"y": 1822
+			},
+			"size": {
+				"height": 148,
+				"width": 150
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0092horn_disabled.png",
+			"pos": {
+				"x": 332,
+				"y": 1824
+			},
+			"size": {
+				"height": 148,
+				"width": 150
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0093empty.png",
+			"pos": {
+				"x": 1296,
+				"y": 1186
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0094scream_maiden_selected.png",
+			"pos": {
+				"x": 1296,
+				"y": 1336
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0095scream_maiden.png",
+			"pos": {
+				"x": 1376,
+				"y": 518
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0096scream_druid_selected.png",
+			"pos": {
+				"x": 1418,
+				"y": 668
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0097scream_druid.png",
+			"pos": {
+				"x": 1442,
+				"y": 818
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0098battle_fight.png",
+			"pos": {
+				"x": 1290,
+				"y": 2
+			},
+			"size": {
+				"height": 190,
+				"width": 190
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0099berserkerrage.png",
+			"pos": {
+				"x": 1446,
+				"y": 968
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0100battle_02-3alt.png",
+			"pos": {
+				"x": 1616,
+				"y": 1700
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0101horn.png",
+			"pos": {
+				"x": 482,
+				"y": 1640
+			},
+			"size": {
+				"height": 148,
+				"width": 150
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0102siege_drop.png",
+			"pos": {
+				"x": 1446,
+				"y": 1118
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0103unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0104unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0105unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0106unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0107unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0108unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0109grpfrm.png",
+			"pos": {
+				"x": 1504,
+				"y": 1812
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0110grpdis.png",
+			"pos": {
+				"x": 1616,
+				"y": 1812
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0111unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0112unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0113unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0114unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0115unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0116unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0117unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0118unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0119unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0120unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0121unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0122unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0123unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0124unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0125unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0126unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0127unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0128unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0129unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0130unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0131unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0132primary_weapon_icon-80.png",
+			"pos": {
+				"x": 1728,
+				"y": 1700
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0133secondary_weapon_icon-80.png",
+			"pos": {
+				"x": 1728,
+				"y": 1812
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0134primary_weapon_iconbow110.png",
+			"pos": {
+				"x": 1718,
+				"y": 968
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0135secondary_weapon.png",
+			"pos": {
+				"x": 1718,
+				"y": 1080
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0136primary_weapon_iconspear110.png",
+			"pos": {
+				"x": 1718,
+				"y": 1192
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0137secondary_weapon_iconspear110.png",
+			"pos": {
+				"x": 1718,
+				"y": 1304
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0138timeslider.png",
+			"pos": {
+				"x": 4,
+				"y": 1326
+			},
+			"size": {
+				"height": 70,
+				"width": 602
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0139newsdisabled.png",
+			"pos": {
+				"x": 1718,
+				"y": 1416
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0140unitdisabled.png",
+			"pos": {
+				"x": 1830,
+				"y": 878
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0141emptydisabled.png",
+			"pos": {
+				"x": 1446,
+				"y": 1268
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0142drawselectionindicator.png",
+			"pos": {
+				"x": 484,
+				"y": 1940
+			},
+			"size": {
+				"height": 96,
+				"width": 96
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0143formationselectionindicator.png",
+			"pos": {
+				"x": 1942,
+				"y": 954
+			},
+			"size": {
+				"height": 96,
+				"width": 96
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0144unitinfotoggle.png",
+			"pos": {
+				"x": 1446,
+				"y": 1418
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0145unitinfotoggleallunits.png",
+			"pos": {
+				"x": 1830,
+				"y": 990
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0146unitinfotoggleselectedunits.png",
+			"pos": {
+				"x": 1830,
+				"y": 1102
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0147unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0148unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0149unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0150unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0151unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0152unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0153unused.png",
+			"pos": {
+				"x": 1120,
+				"y": 1766
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0154bar_background.png",
+			"pos": {
+				"x": 854,
+				"y": 2022
+			},
+			"size": {
+				"height": 16,
+				"width": 64
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0155bar_fill_ammo.png",
+			"pos": {
+				"x": 922,
+				"y": 1812
+			},
+			"size": {
+				"height": 12,
+				"width": 60
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0156bar_fill_health.png",
+			"pos": {
+				"x": 204,
+				"y": 1590
+			},
+			"size": {
+				"height": 80,
+				"width": 152
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0157bar_fill_health_enemy.png",
+			"pos": {
+				"x": 1836,
+				"y": 852
+			},
+			"size": {
+				"height": 24,
+				"width": 120
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0158bar_fill_stamina.png",
+			"pos": {
+				"x": 2,
+				"y": 1984
+			},
+			"size": {
+				"height": 24,
+				"width": 120
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0159unit_cavalry.png",
+			"pos": {
+				"x": 726,
+				"y": 1870
+			},
+			"size": {
+				"height": 176,
+				"width": 176
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0160unit_handler.png",
+			"pos": {
+				"x": 364,
+				"y": 1260
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0161unit_infantry.png",
+			"pos": {
+				"x": 904,
+				"y": 1870
+			},
+			"size": {
+				"height": 176,
+				"width": 176
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0162unit_missile.png",
+			"pos": {
+				"x": 2,
+				"y": 1630
+			},
+			"size": {
+				"height": 176,
+				"width": 176
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0163unit_siege.png",
+			"pos": {
+				"x": 1482,
+				"y": 2
+			},
+			"size": {
+				"height": 176,
+				"width": 176
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0164unitcard_ammobar_back.png",
+			"pos": {
+				"x": 2,
+				"y": 1986
+			},
+			"size": {
+				"height": 20,
+				"width": 180
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0165unitcard_battle_bg.png",
+			"pos": {
+				"x": 726,
+				"y": 536
+			},
+			"size": {
+				"height": 454,
+				"width": 196
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0166unitstatus_fatiguebad.png",
+			"pos": {
+				"x": 1258,
+				"y": 356
+			},
+			"size": {
+				"height": 160,
+				"width": 160
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0167unitstatus_fatiguegood.png",
+			"pos": {
+				"x": 1830,
+				"y": 1526
+			},
+			"size": {
+				"height": 76,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0168unitstatus_fatiguewarning.png",
+			"pos": {
+				"x": 1814,
+				"y": 1604
+			},
+			"size": {
+				"height": 76,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0169unitstatus_fighting.png",
+			"pos": {
+				"x": 1684,
+				"y": 878
+			},
+			"size": {
+				"height": 88,
+				"width": 88
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0170unitstatus_fightingbad.png",
+			"pos": {
+				"x": 1958,
+				"y": 708
+			},
+			"size": {
+				"height": 80,
+				"width": 80
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0171unitstatus_fightinggood.png",
+			"pos": {
+				"x": 1840,
+				"y": 1682
+			},
+			"size": {
+				"height": 76,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0172unitstatus_hiding.png",
+			"pos": {
+				"x": 184,
+				"y": 1972
+			},
+			"size": {
+				"height": 66,
+				"width": 66
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0173unitstatus_lowammo.png",
+			"pos": {
+				"x": 252,
+				"y": 1972
+			},
+			"size": {
+				"height": 66,
+				"width": 66
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0174unitstatus_moving.png",
+			"pos": {
+				"x": 1958,
+				"y": 790
+			},
+			"size": {
+				"height": 80,
+				"width": 80
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0175unitstatus_routing.png",
+			"pos": {
+				"x": 1840,
+				"y": 1760
+			},
+			"size": {
+				"height": 76,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0176unitstatus_shooting.png",
+			"pos": {
+				"x": 1274,
+				"y": 1952
+			},
+			"size": {
+				"height": 86,
+				"width": 86
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0177unitstatus_underfire.png",
+			"pos": {
+				"x": 1958,
+				"y": 872
+			},
+			"size": {
+				"height": 80,
+				"width": 80
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0178advancedoptions_disabled.png",
+			"pos": {
+				"x": 634,
+				"y": 1930
+			},
+			"size": {
+				"height": 108,
+				"width": 108
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0179advancedoptions_selected.png",
+			"pos": {
+				"x": 744,
+				"y": 1930
+			},
+			"size": {
+				"height": 108,
+				"width": 108
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0180advancedoptions.png",
+			"pos": {
+				"x": 216,
+				"y": 1088
+			},
+			"size": {
+				"height": 136,
+				"width": 136
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0181battleadviser.png",
+			"pos": {
+				"x": 364,
+				"y": 1622
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0182ff_disabled.png",
+			"pos": {
+				"x": 1596,
+				"y": 968
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0183fff_disabled.png",
+			"pos": {
+				"x": 1596,
+				"y": 1090
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0184menu_sandwich_disabled.png",
+			"pos": {
+				"x": 924,
+				"y": 364
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0185menu_sandwich_selected.png",
+			"pos": {
+				"x": 924,
+				"y": 726
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0186play_disabled.png",
+			"pos": {
+				"x": 1898,
+				"y": 484
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0187playbackslow_disabled.png",
+			"pos": {
+				"x": 1596,
+				"y": 1212
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0188playbackslow_selected.png",
+			"pos": {
+				"x": 1596,
+				"y": 1334
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0189playbackslow.png",
+			"pos": {
+				"x": 1596,
+				"y": 1456
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0190selectall.png",
+			"pos": {
+				"x": 1570,
+				"y": 1578
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0191selectnone.png",
+			"pos": {
+				"x": 784,
+				"y": 1778
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0192swapweapon_disabled.png",
+			"pos": {
+				"x": 1296,
+				"y": 1486
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0193swapweapon.png",
+			"pos": {
+				"x": 1146,
+				"y": 1490
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0194unitcard_battle_ammo.png",
+			"pos": {
+				"x": 1918,
+				"y": 1836
+			},
+			"size": {
+				"height": 66,
+				"width": 66
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0195battle_stamina.png",
+			"pos": {
+				"x": 1592,
+				"y": 876
+			},
+			"size": {
+				"height": 90,
+				"width": 90
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0196unit_cavalry_missile.png",
+			"pos": {
+				"x": 2,
+				"y": 1808
+			},
+			"size": {
+				"height": 176,
+				"width": 176
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0197unit_chariot.png",
+			"pos": {
+				"x": 1286,
+				"y": 364
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0198unit_elephant.png",
+			"pos": {
+				"x": 1660,
+				"y": 2
+			},
+			"size": {
+				"height": 176,
+				"width": 176
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0199disc_generic.png",
+			"pos": {
+				"x": 896,
+				"y": 718
+			},
+			"size": {
+				"height": 172,
+				"width": 172
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0200disc_ally.png",
+			"pos": {
+				"x": 1302,
+				"y": 1812
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0201disc_enemy.png",
+			"pos": {
+				"x": 1028,
+				"y": 542
+			},
+			"size": {
+				"height": 172,
+				"width": 172
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0202disc_fill_ammo.tga",
+			"pos": {
+				"x": 1504,
+				"y": 1812
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0203disc_fill_strength.tga",
+			"pos": {
+				"x": 1706,
+				"y": 1812
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0204disc_fill_morale.tga",
+			"pos": {
+				"x": 364,
+				"y": 726
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0205battlebar_topright.png",
+			"pos": {
+				"x": 4,
+				"y": 810
+			},
+			"size": {
+				"height": 190,
+				"width": 998
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0206battlebar_bottomcenter.png",
+			"pos": {
+				"x": 4,
+				"y": 424
+			},
+			"size": {
+				"height": 204,
+				"width": 1172
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0207battlebar_bottomleft.png",
+			"pos": {
+				"x": 4,
+				"y": 214
+			},
+			"size": {
+				"height": 204,
+				"width": 1174
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0208battlebar_bottomright.png",
+			"pos": {
+				"x": 4,
+				"y": 4
+			},
+			"size": {
+				"height": 204,
+				"width": 1208
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0209unit_desc_panel.png",
+			"pos": {
+				"x": 4,
+				"y": 1006
+			},
+			"size": {
+				"height": 314,
+				"width": 836
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0210padlocked.png",
+			"pos": {
+				"x": 1446,
+				"y": 1568
+			},
+			"size": {
+				"height": 122,
+				"width": 122
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0211padunlocked.png",
+			"pos": {
+				"x": 784,
+				"y": 1654
+			},
+			"size": {
+				"height": 122,
+				"width": 122
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0212toggle_arches.png",
+			"pos": {
+				"x": 1286,
+				"y": 726
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0213toggle_banners.png",
+			"pos": {
+				"x": 1692,
+				"y": 1578
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0214toggle_foliage.png",
+			"pos": {
+				"x": 924,
+				"y": 1088
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0215toggle_paths.png",
+			"pos": {
+				"x": 1286,
+				"y": 1088
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0216toggle_selection.png",
+			"pos": {
+				"x": 922,
+				"y": 1450
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0217toggle_unit_info.png",
+			"pos": {
+				"x": 1284,
+				"y": 1450
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0218eagle_battle.png",
+			"pos": {
+				"x": 2,
+				"y": 2
+			},
+			"size": {
+				"height": 532,
+				"width": 912
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0219unitcard_group_filler_unused.png",
+			"pos": {
+				"x": 1316,
+				"y": 896
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0220unitcard_group_formations_top.png",
+			"pos": {
+				"x": 1218,
+				"y": 4
+			},
+			"size": {
+				"height": 102,
+				"width": 100
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0221unitcard_group_menu_center.png",
+			"pos": {
+				"x": 1218,
+				"y": 112
+			},
+			"size": {
+				"height": 102,
+				"width": 100
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0222unitcard_group_menu_bottom.png",
+			"pos": {
+				"x": 1184,
+				"y": 220
+			},
+			"size": {
+				"height": 102,
+				"width": 100
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0223unitcard_group_menu_left.png",
+			"pos": {
+				"x": 1182,
+				"y": 540
+			},
+			"size": {
+				"height": 94,
+				"width": 100
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0224unitcard_group_menu_center_horiz.png",
+			"pos": {
+				"x": 1288,
+				"y": 600
+			},
+			"size": {
+				"height": 94,
+				"width": 100
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0225unitcard_group_menu_right.png",
+			"pos": {
+				"x": 1034,
+				"y": 634
+			},
+			"size": {
+				"height": 94,
+				"width": 100
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0226unitcard_group_frame_bl.png",
+			"pos": {
+				"x": 1234,
+				"y": 802
+			},
+			"size": {
+				"height": 88,
+				"width": 88
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0227unitcard_group_frame_bc.png",
+			"pos": {
+				"x": 1128,
+				"y": 846
+			},
+			"size": {
+				"height": 88,
+				"width": 88
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0228unitcard_group_frame_br.png",
+			"pos": {
+				"x": 1008,
+				"y": 856
+			},
+			"size": {
+				"height": 88,
+				"width": 88
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0229unitcard_group_frame_tl.png",
+			"pos": {
+				"x": 1222,
+				"y": 896
+			},
+			"size": {
+				"height": 88,
+				"width": 88
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0230unitcard_group_frame_tc.png",
+			"pos": {
+				"x": 1102,
+				"y": 940
+			},
+			"size": {
+				"height": 88,
+				"width": 88
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0231unitcard_group_frame_tr.png",
+			"pos": {
+				"x": 1008,
+				"y": 950
+			},
+			"size": {
+				"height": 88,
+				"width": 88
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0232unitcard_group_frame_cr.png",
+			"pos": {
+				"x": 1140,
+				"y": 724
+			},
+			"size": {
+				"height": 116,
+				"width": 88
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0233unitcard_group_frame_cl.png",
+			"pos": {
+				"x": 1034,
+				"y": 734
+			},
+			"size": {
+				"height": 116,
+				"width": 88
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0234toggle_arches_selected.png",
+			"pos": {
+				"x": 908,
+				"y": 1650
+			},
+			"size": {
+				"height": 122,
+				"width": 122
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0235toggle_foliage_selected.png",
+			"pos": {
+				"x": 1032,
+				"y": 1642
+			},
+			"size": {
+				"height": 122,
+				"width": 122
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0236toggle_paths_selected.png",
+			"pos": {
+				"x": 1156,
+				"y": 1640
+			},
+			"size": {
+				"height": 122,
+				"width": 122
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0237toggle_selection_selected.png",
+			"pos": {
+				"x": 1526,
+				"y": 508
+			},
+			"size": {
+				"height": 122,
+				"width": 122
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0238toggle_unit_info_selected.png",
+			"pos": {
+				"x": 1650,
+				"y": 494
+			},
+			"size": {
+				"height": 122,
+				"width": 122
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0239unitcard_group_1.png",
+			"pos": {
+				"x": 612,
+				"y": 1326
+			},
+			"size": {
+				"height": 60,
+				"width": 82
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0240unitcard_group_2.png",
+			"pos": {
+				"x": 1324,
+				"y": 4
+			},
+			"size": {
+				"height": 60,
+				"width": 60
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0241unitcard_group_3.png",
+			"pos": {
+				"x": 1246,
+				"y": 700
+			},
+			"size": {
+				"height": 96,
+				"width": 96
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0242unitcard_group_4.png",
+			"pos": {
+				"x": 700,
+				"y": 1326
+			},
+			"size": {
+				"height": 56,
+				"width": 76
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0243unitcard_group_5.png",
+			"pos": {
+				"x": 782,
+				"y": 1326
+			},
+			"size": {
+				"height": 56,
+				"width": 76
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0244unitcard_group_6.png",
+			"pos": {
+				"x": 1196,
+				"y": 990
+			},
+			"size": {
+				"height": 56,
+				"width": 76
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0245unitcard_group_7.png",
+			"pos": {
+				"x": 1102,
+				"y": 1034
+			},
+			"size": {
+				"height": 56,
+				"width": 76
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0246unitcard_group_8.png",
+			"pos": {
+				"x": 1278,
+				"y": 994
+			},
+			"size": {
+				"height": 56,
+				"width": 76
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0247unitcard_group_9.png",
+			"pos": {
+				"x": 1184,
+				"y": 1052
+			},
+			"size": {
+				"height": 56,
+				"width": 76
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0248unitcard_group_10.png",
+			"pos": {
+				"x": 1266,
+				"y": 1056
+			},
+			"size": {
+				"height": 56,
+				"width": 76
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0249icon_battledisc.png",
+			"pos": {
+				"x": 1082,
+				"y": 1812
+			},
+			"size": {
+				"height": 218,
+				"width": 218
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0250unit_generals.png",
+			"pos": {
+				"x": 1838,
+				"y": 2
+			},
+			"size": {
+				"height": 176,
+				"width": 176
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0251unit_meleeandrange.png",
+			"pos": {
+				"x": 364,
+				"y": 928
+			},
+			"size": {
+				"height": 176,
+				"width": 176
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0252unit_druids.png",
+			"pos": {
+				"x": 1830,
+				"y": 1214
+			},
+			"size": {
+				"height": 106,
+				"width": 106
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0253unit_chariotrange.png",
+			"pos": {
+				"x": 566,
+				"y": 726
+			},
+			"size": {
+				"height": 176,
+				"width": 176
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0254unit_camel_range.png",
+			"pos": {
+				"x": 1648,
+				"y": 364
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0255unit_camel_melee.png",
+			"pos": {
+				"x": 1648,
+				"y": 726
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0256unit_pigs.png",
+			"pos": {
+				"x": 1648,
+				"y": 1088
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0257unit_phalanx.png",
+			"pos": {
+				"x": 928,
+				"y": 364
+			},
+			"size": {
+				"height": 176,
+				"width": 176
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0258unit_spears.png",
+			"pos": {
+				"x": 368,
+				"y": 1106
+			},
+			"size": {
+				"height": 176,
+				"width": 176
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0259unit_slingers.png",
+			"pos": {
+				"x": 1646,
+				"y": 1450
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0260unitstatus_withdrawing.png",
+			"pos": {
+				"x": 1942,
+				"y": 1140
+			},
+			"size": {
+				"height": 68,
+				"width": 68
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0261status_ai_linked.png",
+			"pos": {
+				"x": 1198,
+				"y": 1764
+			},
+			"size": {
+				"height": 80,
+				"width": 80
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0262unitstatus_berserk.png",
+			"pos": {
+				"x": 1198,
+				"y": 1846
+			},
+			"size": {
+				"height": 80,
+				"width": 80
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0263unitstatus_ladder.png",
+			"pos": {
+				"x": 1970,
+				"y": 1594
+			},
+			"size": {
+				"height": 66,
+				"width": 66
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0264unitstatus_ram.png",
+			"pos": {
+				"x": 1880,
+				"y": 1916
+			},
+			"size": {
+				"height": 66,
+				"width": 66
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0265status_running_amok.png",
+			"pos": {
+				"x": 854,
+				"y": 1900
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0266unitstatus_sapping.png",
+			"pos": {
+				"x": 1798,
+				"y": 1924
+			},
+			"size": {
+				"height": 80,
+				"width": 80
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0267status_swimming.png",
+			"pos": {
+				"x": 906,
+				"y": 1778
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0268unitstatus_tower.png",
+			"pos": {
+				"x": 1948,
+				"y": 1904
+			},
+			"size": {
+				"height": 66,
+				"width": 66
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0269unitstatus_fatiguebad_idle.png",
+			"pos": {
+				"x": 1392,
+				"y": 194
+			},
+			"size": {
+				"height": 160,
+				"width": 160
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0270unitstatus_fatiguebad_walking.png",
+			"pos": {
+				"x": 1554,
+				"y": 180
+			},
+			"size": {
+				"height": 160,
+				"width": 160
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0271unitstatus_fatiguegood_idle.png",
+			"pos": {
+				"x": 1840,
+				"y": 1838
+			},
+			"size": {
+				"height": 76,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0272unitstatus_fatiguegood_walking.png",
+			"pos": {
+				"x": 1918,
+				"y": 1760
+			},
+			"size": {
+				"height": 74,
+				"width": 74
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0273unitstatus_fatiguewarning_idle.png",
+			"pos": {
+				"x": 1892,
+				"y": 1604
+			},
+			"size": {
+				"height": 76,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0274unitstatus_fatiguewarning_walking.png",
+			"pos": {
+				"x": 1918,
+				"y": 1682
+			},
+			"size": {
+				"height": 76,
+				"width": 76
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0275unitcard_battle_bg_grouped.png",
+			"pos": {
+				"x": 726,
+				"y": 992
+			},
+			"size": {
+				"height": 454,
+				"width": 196
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0276smallbar_bg_left.png",
+			"pos": {
+				"x": 1366,
+				"y": 70
+			},
+			"size": {
+				"height": 22,
+				"width": 22
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0277smallbar_bg_center.png",
+			"pos": {
+				"x": 1366,
+				"y": 98
+			},
+			"size": {
+				"height": 22,
+				"width": 22
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0278smallbar_bg_right.png",
+			"pos": {
+				"x": 1366,
+				"y": 126
+			},
+			"size": {
+				"height": 22,
+				"width": 22
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0279smallbar_fill_left.png",
+			"pos": {
+				"x": 1366,
+				"y": 154
+			},
+			"size": {
+				"height": 22,
+				"width": 22
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0280smallbar_fill_center.png",
+			"pos": {
+				"x": 1366,
+				"y": 182
+			},
+			"size": {
+				"height": 22,
+				"width": 22
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0281smallbar_fill_right.png",
+			"pos": {
+				"x": 1366,
+				"y": 210
+			},
+			"size": {
+				"height": 22,
+				"width": 22
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0282unitcard_selection_bl.png",
+			"pos": {
+				"x": 1290,
+				"y": 282
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0283unitcard_selection_bc.png",
+			"pos": {
+				"x": 1324,
+				"y": 70
+			},
+			"size": {
+				"height": 100,
+				"width": 36
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0284unitcard_selection_br.png",
+			"pos": {
+				"x": 1184,
+				"y": 328
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0285unitcard_selection_tl.png",
+			"pos": {
+				"x": 1290,
+				"y": 388
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0286unitcard_selection_tc.png",
+			"pos": {
+				"x": 1324,
+				"y": 176
+			},
+			"size": {
+				"height": 100,
+				"width": 36
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0287unitcard_selection_tr.png",
+			"pos": {
+				"x": 1182,
+				"y": 434
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0288unitcard_selection_t_connector.png",
+			"pos": {
+				"x": 1288,
+				"y": 494
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0289unitcard_selection_cr.png",
+			"pos": {
+				"x": 1140,
+				"y": 640
+			},
+			"size": {
+				"height": 36,
+				"width": 100
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0290unitcard_selection_cl.png",
+			"pos": {
+				"x": 1140,
+				"y": 682
+			},
+			"size": {
+				"height": 36,
+				"width": 100
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0291unitstatus_army_fighttodeath.png",
+			"pos": {
+				"x": 634,
+				"y": 1804
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0292unit_javelin.png",
+			"pos": {
+				"x": 368,
+				"y": 1284
+			},
+			"size": {
+				"height": 176,
+				"width": 176
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0293unit_cavalry_javelin.png",
+			"pos": {
+				"x": 368,
+				"y": 1462
+			},
+			"size": {
+				"height": 176,
+				"width": 176
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0294tableft_close.png",
+			"pos": {
+				"x": 2,
+				"y": 1088
+			},
+			"size": {
+				"height": 338,
+				"width": 212
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0295team_chat.png",
+			"pos": {
+				"x": 744,
+				"y": 718
+			},
+			"size": {
+				"height": 180,
+				"width": 150
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0296team_chat_selected.png",
+			"pos": {
+				"x": 1106,
+				"y": 356
+			},
+			"size": {
+				"height": 180,
+				"width": 150
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0297lobby_chat.png",
+			"pos": {
+				"x": 216,
+				"y": 1226
+			},
+			"size": {
+				"height": 180,
+				"width": 150
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0298lobby_chat_selected.png",
+			"pos": {
+				"x": 216,
+				"y": 1408
+			},
+			"size": {
+				"height": 180,
+				"width": 150
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0299forcemelee.png",
+			"pos": {
+				"x": 996,
+				"y": 1492
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0300forcemelee_selected.png",
+			"pos": {
+				"x": 846,
+				"y": 1500
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0301forcemelee_disabled.png",
+			"pos": {
+				"x": 696,
+				"y": 1504
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0302pause_timer.png",
+			"pos": {
+				"x": 726,
+				"y": 364
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0303pause_timer_selected.png",
+			"pos": {
+				"x": 1088,
+				"y": 2
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0304pause_timer_disabled.png",
+			"pos": {
+				"x": 2,
+				"y": 1428
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0305selectall_disabled.png",
+			"pos": {
+				"x": 1774,
+				"y": 484
+			},
+			"size": {
+				"height": 122,
+				"width": 122
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0306attack_button_untoggled.png",
+			"pos": {
+				"x": 1934,
+				"y": 606
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0307attack_button_toggled.png",
+			"pos": {
+				"x": 2,
+				"y": 2
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0308defence_button_untoggled.png",
+			"pos": {
+				"x": 1938,
+				"y": 1214
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0309defence_button_toggled.png",
+			"pos": {
+				"x": 1938,
+				"y": 1316
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0310general_button_untoggled.png",
+			"pos": {
+				"x": 1830,
+				"y": 1322
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0311general_button_toggled.png",
+			"pos": {
+				"x": 1830,
+				"y": 1424
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0312battlediscempty_player.png",
+			"pos": {
+				"x": 1070,
+				"y": 716
+			},
+			"size": {
+				"height": 172,
+				"width": 172
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0313battlediscempty_ally.png",
+			"pos": {
+				"x": 1202,
+				"y": 538
+			},
+			"size": {
+				"height": 172,
+				"width": 172
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0314battlediscempty_enemy.png",
+			"pos": {
+				"x": 1244,
+				"y": 712
+			},
+			"size": {
+				"height": 172,
+				"width": 172
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0315ping_attack.png",
+			"pos": {
+				"x": 2,
+				"y": 364
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0316ping_move.png",
+			"pos": {
+				"x": 364,
+				"y": 2
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0317ping_support.png",
+			"pos": {
+				"x": 2,
+				"y": 726
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0318pause.png",
+			"pos": {
+				"x": 364,
+				"y": 364
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0319pause_disabled.png",
+			"pos": {
+				"x": 976,
+				"y": 1900
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0320pause_selected.png",
+			"pos": {
+				"x": 726,
+				"y": 2
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0321command_selected.png",
+			"pos": {
+				"x": 1540,
+				"y": 1924
+			},
+			"size": {
+				"height": 82,
+				"width": 84
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0322command_small.png",
+			"pos": {
+				"x": 1626,
+				"y": 1924
+			},
+			"size": {
+				"height": 82,
+				"width": 84
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0323command_small_enabled.png",
+			"pos": {
+				"x": 1712,
+				"y": 1924
+			},
+			"size": {
+				"height": 82,
+				"width": 84
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0324swapweapon_selected.png",
+			"pos": {
+				"x": 634,
+				"y": 1654
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 1
+		}
+	]
+}

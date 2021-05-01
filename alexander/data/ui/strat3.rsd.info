@@ -1,0 +1,7240 @@
+{
+	"version": 5,
+	"file_tag": "FERAL_RETINA",
+	"texpages": [
+		{
+			"absolutePath": "roman/interface/",
+			"height": "1594",
+			"relativePath": "strat_new_extruded_0.tga",
+			"width": "1594"
+		},
+		{
+			"absolutePath": "roman/interface/",
+			"height": "2048",
+			"relativePath": "strat_new_2.tga",
+			"width": "2048"
+		},
+		{
+			"absolutePath": "roman/interface/",
+			"height": "1666",
+			"relativePath": "strat_new_3.tga",
+			"width": "1666"
+		},
+		{
+			"absolutePath": "roman/interface/",
+			"height": "2048",
+			"relativePath": "strat_new_0.tga",
+			"width": "2048"
+		},
+		{
+			"absolutePath": "roman/interface/",
+			"height": "2048",
+			"relativePath": "strat_new_1.tga",
+			"width": "2048"
+		}
+	],
+	"sprites": [
+		{
+			"hasAlpha": 1,
+			"name": "0001settlements_selected.png",
+			"pos": {
+				"x": 826,
+				"y": 1812
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0002settlements.png",
+			"pos": {
+				"x": 1028,
+				"y": 1812
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0003armies_selected.png",
+			"pos": {
+				"x": 1230,
+				"y": 1812
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0004armies.png",
+			"pos": {
+				"x": 1432,
+				"y": 1812
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0005agents_selected.png",
+			"pos": {
+				"x": 1088,
+				"y": 510
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0006agents.png",
+			"pos": {
+				"x": 1088,
+				"y": 712
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0007agents_disabled.png",
+			"pos": {
+				"x": 1088,
+				"y": 914
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0008armies_disabled.png",
+			"pos": {
+				"x": 1088,
+				"y": 1116
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0009settlements_disabled.png",
+			"pos": {
+				"x": 1088,
+				"y": 1318
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0010construction.png",
+			"pos": {
+				"x": 618,
+				"y": 2
+			},
+			"size": {
+				"height": 476,
+				"width": 476
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0011whatareyou_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0012recruit.png",
+			"pos": {
+				"x": 618,
+				"y": 480
+			},
+			"size": {
+				"height": 476,
+				"width": 476
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0013circle-60.png",
+			"pos": {
+				"x": 1934,
+				"y": 400
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0014whatareyou copy_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0015strat_03-1.png",
+			"pos": {
+				"x": 1328,
+				"y": 848
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0016whatareyou copy_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0017standard_money-110.png",
+			"pos": {
+				"x": 1212,
+				"y": 850
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0018ring-124_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0019button_ring.png",
+			"pos": {
+				"x": 1812,
+				"y": 256
+			},
+			"size": {
+				"height": 204,
+				"width": 204
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0020end_turn.png",
+			"pos": {
+				"x": 1812,
+				"y": 462
+			},
+			"size": {
+				"height": 204,
+				"width": 204
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0021battlefield_season_summer.png",
+			"pos": {
+				"x": 1446,
+				"y": 406
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0022battlefield_season_winter.png",
+			"pos": {
+				"x": 356,
+				"y": 1968
+			},
+			"size": {
+				"height": 74,
+				"width": 74
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0023factions_3_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0024faction_1_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0025faction_2_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0026whatareyou copy_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0027standard-hand_scroll-grey-110.png",
+			"pos": {
+				"x": 1094,
+				"y": 860
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0028whatareyou copy_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0029whatareyou copy_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0030prevarrow_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0031nextarrow_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0032movementbar.png",
+			"pos": {
+				"x": 2014,
+				"y": 200
+			},
+			"size": {
+				"height": 96,
+				"width": 28
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0033movementbarfill.png",
+			"pos": {
+				"x": 1978,
+				"y": 1430
+			},
+			"size": {
+				"height": 156,
+				"width": 44
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0034settlement_publicorder_nocolor.png",
+			"pos": {
+				"x": 1574,
+				"y": 504
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0035settlementgrowth.png",
+			"pos": {
+				"x": 1574,
+				"y": 866
+			},
+			"size": {
+				"height": 90,
+				"width": 90
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0036settlement_recruit.png",
+			"pos": {
+				"x": 1904,
+				"y": 1384
+			},
+			"size": {
+				"height": 114,
+				"width": 114
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0037settlement_construct.png",
+			"pos": {
+				"x": 1212,
+				"y": 734
+			},
+			"size": {
+				"height": 114,
+				"width": 114
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0038whatareyou copy_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0039whatareyou copy_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0040whatareyou copy_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0041whatareyou copy_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0042whatareyou copy_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0043whatareyou copy_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0044anything_else_sweetcorn-half size_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0045anything_else_red_arrow-half size_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0046anything_else_green-arrow-half size_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0047whatareyou copy_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0048whatareyou copy_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0049anything_else_figures-half size_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0050anything_else_fist-half size_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0051anything_else_heart-half size_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0052anything_else_castle-half size.png",
+			"pos": {
+				"x": 952,
+				"y": 1846
+			},
+			"size": {
+				"height": 42,
+				"width": 42
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0053anything_else_bones-half size.png",
+			"pos": {
+				"x": 704,
+				"y": 1998
+			},
+			"size": {
+				"height": 40,
+				"width": 42
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0054anything_else_skull-half size.png",
+			"pos": {
+				"x": 982,
+				"y": 1088
+			},
+			"size": {
+				"height": 42,
+				"width": 28
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0055merge_icon.png",
+			"pos": {
+				"x": 1812,
+				"y": 668
+			},
+			"size": {
+				"height": 204,
+				"width": 204
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0056settlement_money.png",
+			"pos": {
+				"x": 1584,
+				"y": 1888
+			},
+			"size": {
+				"height": 150,
+				"width": 150
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0057timer-half size.png",
+			"pos": {
+				"x": 1000,
+				"y": 958
+			},
+			"size": {
+				"height": 32,
+				"width": 20
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0058watchtower.png",
+			"pos": {
+				"x": 1486,
+				"y": 1938
+			},
+			"size": {
+				"height": 102,
+				"width": 128
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0059anything_else_fortress-half size.png",
+			"pos": {
+				"x": 1936,
+				"y": 810
+			},
+			"size": {
+				"height": 36,
+				"width": 74
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0060anything_else_helmet-half size_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0061whatareyou copy_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0062anything_else_marbe_arch_left-half size_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0063anything_else_marbe_arch_right-half size_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0064horizontalscrolledge.png",
+			"pos": {
+				"x": 410,
+				"y": 1522
+			},
+			"size": {
+				"height": 54,
+				"width": 400
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0065horizontalscrollmiddle.png",
+			"pos": {
+				"x": 4,
+				"y": 1464
+			},
+			"size": {
+				"height": 68,
+				"width": 400
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0066speechtag.png",
+			"pos": {
+				"x": 410,
+				"y": 1464
+			},
+			"size": {
+				"height": 18,
+				"width": 92
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0067speechleft.png",
+			"pos": {
+				"x": 1566,
+				"y": 4
+			},
+			"size": {
+				"height": 154,
+				"width": 18
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0068speechmid.png",
+			"pos": {
+				"x": 1396,
+				"y": 1020
+			},
+			"size": {
+				"height": 154,
+				"width": 14
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0069speechright.png",
+			"pos": {
+				"x": 932,
+				"y": 656
+			},
+			"size": {
+				"height": 154,
+				"width": 20
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0070marblebg_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0071deal_accept.png",
+			"pos": {
+				"x": 154,
+				"y": 860
+			},
+			"size": {
+				"height": 138,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0072deal_reject.png",
+			"pos": {
+				"x": 154,
+				"y": 1000
+			},
+			"size": {
+				"height": 138,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0073deal.png",
+			"pos": {
+				"x": 154,
+				"y": 1140
+			},
+			"size": {
+				"height": 138,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0074nodeal.png",
+			"pos": {
+				"x": 2,
+				"y": 2
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0075hand_scroll.png",
+			"pos": {
+				"x": 154,
+				"y": 1280
+			},
+			"size": {
+				"height": 138,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0076strat_03-5.png",
+			"pos": {
+				"x": 1440,
+				"y": 848
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0077battle_fight.png",
+			"pos": {
+				"x": 1746,
+				"y": 202
+			},
+			"size": {
+				"height": 196,
+				"width": 196
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0078nightbattle.png",
+			"pos": {
+				"x": 1732,
+				"y": 1500
+			},
+			"size": {
+				"height": 190,
+				"width": 190
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0079whiteflag.png",
+			"pos": {
+				"x": 1492,
+				"y": 708
+			},
+			"size": {
+				"height": 196,
+				"width": 196
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0080autoresolve.png",
+			"pos": {
+				"x": 1492,
+				"y": 906
+			},
+			"size": {
+				"height": 196,
+				"width": 196
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0081battle_02-11alt.png",
+			"pos": {
+				"x": 1552,
+				"y": 896
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0082battle_02-11alt.png",
+			"pos": {
+				"x": 1324,
+				"y": 960
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0083whiteflag_disabled.png",
+			"pos": {
+				"x": 1492,
+				"y": 1104
+			},
+			"size": {
+				"height": 196,
+				"width": 196
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0084autoresolve_disabled.png",
+			"pos": {
+				"x": 2,
+				"y": 364
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0085nodeal_disabled.png",
+			"pos": {
+				"x": 2,
+				"y": 726
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0086hand_scroll_disabled.png",
+			"pos": {
+				"x": 154,
+				"y": 1420
+			},
+			"size": {
+				"height": 138,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0087bribe_disabled.png",
+			"pos": {
+				"x": 294,
+				"y": 860
+			},
+			"size": {
+				"height": 138,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0088anything_else_gold_pile-half size_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0089anything_else_silerpile-half size_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0090anything_else_beam-half size_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0091anything_else_logs-half size_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0092anything_else_fur-half size_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0093construction_disabled.png",
+			"pos": {
+				"x": 1022,
+				"y": 958
+			},
+			"size": {
+				"height": 476,
+				"width": 476
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0094recruit_disabled.png",
+			"pos": {
+				"x": 1096,
+				"y": 2
+			},
+			"size": {
+				"height": 476,
+				"width": 476
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0095tradebutton_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0096tradebuttondisabled copy_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0097showrallypoints_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0098showrallypointsdisabled_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0099removerallypoints copy_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0100removerallypointsdisabled copy_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0101retrain-120.png",
+			"pos": {
+				"x": 844,
+				"y": 128
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0102retrain-grey-120.png",
+			"pos": {
+				"x": 856,
+				"y": 2
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0103senate_ offices-120_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0104senate_ offices-120grey_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0105familytree120.png",
+			"pos": {
+				"x": 840,
+				"y": 384
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0106familytreedark copy.png",
+			"pos": {
+				"x": 840,
+				"y": 506
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0107eventslog_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0108eventslogdisabled_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0109disband.png",
+			"pos": {
+				"x": 1436,
+				"y": 960
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0110disband-half size disabled.png",
+			"pos": {
+				"x": 170,
+				"y": 2
+			},
+			"size": {
+				"height": 150,
+				"width": 150
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0111bireme_icon_200x200-124-dark.png",
+			"pos": {
+				"x": 1692,
+				"y": 582
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0112bireme_icon_200x200-124.png",
+			"pos": {
+				"x": 1818,
+				"y": 582
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0113bireme_icon_200x200-grey-124.png",
+			"pos": {
+				"x": 842,
+				"y": 802
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0114navies_selected.png",
+			"pos": {
+				"x": 1538,
+				"y": 1302
+			},
+			"size": {
+				"height": 196,
+				"width": 196
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0115navies.png",
+			"pos": {
+				"x": 1088,
+				"y": 1520
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0116navies_disabled.png",
+			"pos": {
+				"x": 1088,
+				"y": 1722
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0117daughter_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0118son_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0119wife_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0120treebar_v_1.png",
+			"pos": {
+				"x": 958,
+				"y": 656
+			},
+			"size": {
+				"height": 16,
+				"width": 2
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0121treebarvadopt.png",
+			"pos": {
+				"x": 1416,
+				"y": 1020
+			},
+			"size": {
+				"height": 16,
+				"width": 2
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0122treebar_h_1.png",
+			"pos": {
+				"x": 888,
+				"y": 1208
+			},
+			"size": {
+				"height": 2,
+				"width": 16
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0123treebarhadopt.png",
+			"pos": {
+				"x": 4,
+				"y": 1538
+			},
+			"size": {
+				"height": 2,
+				"width": 16
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0124wifedead_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0125daughterdead_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0126sondead_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0127treebar_r_end.png",
+			"pos": {
+				"x": 1276,
+				"y": 160
+			},
+			"size": {
+				"height": 4,
+				"width": 4
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0128treebar_l_end.png",
+			"pos": {
+				"x": 816,
+				"y": 1522
+			},
+			"size": {
+				"height": 4,
+				"width": 4
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0129stratleft.png",
+			"pos": {
+				"x": 4,
+				"y": 1336
+			},
+			"size": {
+				"height": 122,
+				"width": 562
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0130stratright.png",
+			"pos": {
+				"x": 4,
+				"y": 1208
+			},
+			"size": {
+				"height": 122,
+				"width": 564
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0131isplague.png",
+			"pos": {
+				"x": 2008,
+				"y": 936
+			},
+			"size": {
+				"height": 36,
+				"width": 36
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0132anything_else_fork_square-half size.png",
+			"pos": {
+				"x": 2008,
+				"y": 974
+			},
+			"size": {
+				"height": 36,
+				"width": 36
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0133anything_else_fire_square-half size.png",
+			"pos": {
+				"x": 2008,
+				"y": 1012
+			},
+			"size": {
+				"height": 36,
+				"width": 36
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0134standard_arena-110.png",
+			"pos": {
+				"x": 2008,
+				"y": 1050
+			},
+			"size": {
+				"height": 36,
+				"width": 36
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0135standard_building_fire-110.png",
+			"pos": {
+				"x": 2008,
+				"y": 1088
+			},
+			"size": {
+				"height": 36,
+				"width": 36
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0136isstarving.png",
+			"pos": {
+				"x": 2008,
+				"y": 1126
+			},
+			"size": {
+				"height": 36,
+				"width": 36
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0137anything_else_sword-half size_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0138anything_else_shield-half size_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0139star-half size_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0140radarhorizontal.png",
+			"pos": {
+				"x": 872,
+				"y": 1156
+			},
+			"size": {
+				"height": 16,
+				"width": 128
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0141radarcorner_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0142radarvertical.png",
+			"pos": {
+				"x": 982,
+				"y": 958
+			},
+			"size": {
+				"height": 128,
+				"width": 16
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0143question_mark_light.png",
+			"pos": {
+				"x": 872,
+				"y": 958
+			},
+			"size": {
+				"height": 196,
+				"width": 108
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0144question_mark_dark.png",
+			"pos": {
+				"x": 1916,
+				"y": 2
+			},
+			"size": {
+				"height": 196,
+				"width": 108
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0145sword_hold.png",
+			"pos": {
+				"x": 1736,
+				"y": 1254
+			},
+			"size": {
+				"height": 166,
+				"width": 166
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0146siege_cancel.png",
+			"pos": {
+				"x": 1862,
+				"y": 1072
+			},
+			"size": {
+				"height": 166,
+				"width": 166
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0147siege_continue.png",
+			"pos": {
+				"x": 1872,
+				"y": 890
+			},
+			"size": {
+				"height": 166,
+				"width": 166
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0148repair-grey-120.png",
+			"pos": {
+				"x": 844,
+				"y": 628
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0149anything_else_fork-half size.png",
+			"pos": {
+				"x": 2002,
+				"y": 1588
+			},
+			"size": {
+				"height": 44,
+				"width": 40
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0150anything_else_helmet-half size copy.png",
+			"pos": {
+				"x": 2014,
+				"y": 298
+			},
+			"size": {
+				"height": 42,
+				"width": 28
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0151anything_else_fork-sepia-half size.png",
+			"pos": {
+				"x": 792,
+				"y": 1998
+			},
+			"size": {
+				"height": 44,
+				"width": 40
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0152anything_else_castle-sepia-half size.png",
+			"pos": {
+				"x": 660,
+				"y": 1998
+			},
+			"size": {
+				"height": 42,
+				"width": 42
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0153anything_else_helmet-sepia-half size copy.png",
+			"pos": {
+				"x": 2008,
+				"y": 848
+			},
+			"size": {
+				"height": 42,
+				"width": 28
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0154anything_else__bones-sepia-half size.png",
+			"pos": {
+				"x": 748,
+				"y": 1998
+			},
+			"size": {
+				"height": 40,
+				"width": 42
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0155anything_else_-skull-sepia-half size.png",
+			"pos": {
+				"x": 2008,
+				"y": 892
+			},
+			"size": {
+				"height": 42,
+				"width": 28
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0156character_command.png",
+			"pos": {
+				"x": 618,
+				"y": 958
+			},
+			"size": {
+				"height": 252,
+				"width": 252
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0157character_management.png",
+			"pos": {
+				"x": 698,
+				"y": 1744
+			},
+			"size": {
+				"height": 252,
+				"width": 252
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0158character_influence.png",
+			"pos": {
+				"x": 1088,
+				"y": 2
+			},
+			"size": {
+				"height": 252,
+				"width": 252
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0159character_subterfuge.png",
+			"pos": {
+				"x": 1088,
+				"y": 256
+			},
+			"size": {
+				"height": 252,
+				"width": 252
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0160standard_stab-110.png",
+			"pos": {
+				"x": 1548,
+				"y": 1008
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0161standard_stab-grey-110.png",
+			"pos": {
+				"x": 1206,
+				"y": 962
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0162standard_fire-110.png",
+			"pos": {
+				"x": 1094,
+				"y": 972
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0163standard_fire-grey-110.png",
+			"pos": {
+				"x": 1318,
+				"y": 1072
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0164viewsettlement3d.png",
+			"pos": {
+				"x": 572,
+				"y": 1134
+			},
+			"size": {
+				"height": 134,
+				"width": 134
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0165viewsettlement3d_disabled.png",
+			"pos": {
+				"x": 572,
+				"y": 1270
+			},
+			"size": {
+				"height": 134,
+				"width": 134
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0166destroybuilding.png",
+			"pos": {
+				"x": 1946,
+				"y": 104
+			},
+			"size": {
+				"height": 96,
+				"width": 96
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0167destroybuildinggrey.png",
+			"pos": {
+				"x": 1206,
+				"y": 1074
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0168anything_else_indicator-half size.png",
+			"pos": {
+				"x": 1978,
+				"y": 1588
+			},
+			"size": {
+				"height": 70,
+				"width": 22
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0169multianything_else_indicator-half size.png",
+			"pos": {
+				"x": 952,
+				"y": 1744
+			},
+			"size": {
+				"height": 50,
+				"width": 50
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0170ancillarydraghandle_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0171tick-grey--half size.png",
+			"pos": {
+				"x": 1978,
+				"y": 1730
+			},
+			"size": {
+				"height": 62,
+				"width": 62
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0172cross-half size.png",
+			"pos": {
+				"x": 1978,
+				"y": 1794
+			},
+			"size": {
+				"height": 62,
+				"width": 62
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0173tick-half size.png",
+			"pos": {
+				"x": 1978,
+				"y": 1858
+			},
+			"size": {
+				"height": 62,
+				"width": 62
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0174viewrecruits_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0175viewrecruitsdisabled_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0176showadvicebutton.png",
+			"pos": {
+				"x": 1094,
+				"y": 1084
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0177showadvicebuttondisabled.png",
+			"pos": {
+				"x": 980,
+				"y": 1116
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0178hiremercs.png",
+			"pos": {
+				"x": 1096,
+				"y": 480
+			},
+			"size": {
+				"height": 476,
+				"width": 476
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0179hiremercs_disabled.png",
+			"pos": {
+				"x": 1022,
+				"y": 1436
+			},
+			"size": {
+				"height": 476,
+				"width": 476
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0180standard_scroll-110.png",
+			"pos": {
+				"x": 1430,
+				"y": 1072
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0181standard_scroll-grey-110.png",
+			"pos": {
+				"x": 1542,
+				"y": 1120
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0182purchasemercs.png",
+			"pos": {
+				"x": 1212,
+				"y": 850
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0183purchasemercs copy 2.png",
+			"pos": {
+				"x": 1318,
+				"y": 1184
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0184crossed_swords.png",
+			"pos": {
+				"x": 952,
+				"y": 1914
+			},
+			"size": {
+				"height": 110,
+				"width": 310
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0185anything_else_cogs-half size.png",
+			"pos": {
+				"x": 1666,
+				"y": 866
+			},
+			"size": {
+				"height": 90,
+				"width": 90
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0186fieldconstruct_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0187fieldconstructdisabled_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0188stratmid.png",
+			"pos": {
+				"x": 4,
+				"y": 656
+			},
+			"size": {
+				"height": 234,
+				"width": 922
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0189faction_rankings-120-dark.png",
+			"pos": {
+				"x": 962,
+				"y": 384
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0190faction_rankings-120 grey.png",
+			"pos": {
+				"x": 962,
+				"y": 506
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0191sword_crest.png",
+			"pos": {
+				"x": 460,
+				"y": 1548
+			},
+			"size": {
+				"height": 116,
+				"width": 116
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0192sword_crest_disabled.png",
+			"pos": {
+				"x": 1332,
+				"y": 612
+			},
+			"size": {
+				"height": 116,
+				"width": 116
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0193helmet.png",
+			"pos": {
+				"x": 2,
+				"y": 2
+			},
+			"size": {
+				"height": 614,
+				"width": 614
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0194helmet_disabled.png",
+			"pos": {
+				"x": 2,
+				"y": 618
+			},
+			"size": {
+				"height": 614,
+				"width": 614
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0195newconstructions_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0196newconstructionsdsiabled_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0197repair-120.png",
+			"pos": {
+				"x": 964,
+				"y": 250
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0198buildbrowserbutton.png",
+			"pos": {
+				"x": 572,
+				"y": 1406
+			},
+			"size": {
+				"height": 134,
+				"width": 134
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0199standard_house move-110.png",
+			"pos": {
+				"x": 872,
+				"y": 1174
+			},
+			"size": {
+				"height": 36,
+				"width": 78
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0200techarrowacross.png",
+			"pos": {
+				"x": 1002,
+				"y": 1188
+			},
+			"size": {
+				"height": 26,
+				"width": 8
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0201techarrowdown.png",
+			"pos": {
+				"x": 982,
+				"y": 1132
+			},
+			"size": {
+				"height": 20,
+				"width": 14
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0202texttableft_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0203texttabmid_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0204texttabendright_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0205texttabshadow_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0206sword_hold_disabled.png",
+			"pos": {
+				"x": 2,
+				"y": 2
+			},
+			"size": {
+				"height": 166,
+				"width": 166
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0207puppy.png",
+			"pos": {
+				"x": 1206,
+				"y": 1186
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0208iconbackgroundarrowleft.png",
+			"pos": {
+				"x": 2,
+				"y": 1088
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0209iconbackgroundarrowright.png",
+			"pos": {
+				"x": 2,
+				"y": 1450
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0210settlement_population_down.png",
+			"pos": {
+				"x": 2,
+				"y": 1234
+			},
+			"size": {
+				"height": 508,
+				"width": 508
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0211population_stagnation.png",
+			"pos": {
+				"x": 364,
+				"y": 2
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0212infoscrollbutton_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0213infoscrollbuttondisabled_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0214familytreeleaf.png",
+			"pos": {
+				"x": 1812,
+				"y": 2
+			},
+			"size": {
+				"height": 252,
+				"width": 186
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0215settlement_automanage.png",
+			"pos": {
+				"x": 1088,
+				"y": 1924
+			},
+			"size": {
+				"height": 122,
+				"width": 122
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0216strat_03-2alt.png",
+			"pos": {
+				"x": 1092,
+				"y": 1196
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0217strat_03-10.png",
+			"pos": {
+				"x": 1264,
+				"y": 1914
+			},
+			"size": {
+				"height": 118,
+				"width": 142
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0218setcapital.png",
+			"pos": {
+				"x": 708,
+				"y": 1134
+			},
+			"size": {
+				"height": 134,
+				"width": 134
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0219setcapital_disabled.png",
+			"pos": {
+				"x": 364,
+				"y": 364
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0220texttableftsel_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0221texttabmidsel_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0222tettabrightsel_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0223texttableft_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0224texttabmid_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0225texttabright_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0226radarminus_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0227radarplus_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0228button_ring.png",
+			"pos": {
+				"x": 1944,
+				"y": 614
+			},
+			"size": {
+				"height": 86,
+				"width": 86
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0229sword_crest.png",
+			"pos": {
+				"x": 1572,
+				"y": 368
+			},
+			"size": {
+				"height": 86,
+				"width": 86
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0230button_ring.png",
+			"pos": {
+				"x": 1806,
+				"y": 1904
+			},
+			"size": {
+				"height": 142,
+				"width": 142
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0231button_ring.png",
+			"pos": {
+				"x": 1806,
+				"y": 1904
+			},
+			"size": {
+				"height": 142,
+				"width": 142
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0232hudcolumnoverlay_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0233unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0234unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0235unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0236unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0237unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0238unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0239unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0240unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0241unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0242unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0243unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0244unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0245unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0246unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0247unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0248loyaltyattricon_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0249unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0250unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0251unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0252construction.png",
+			"pos": {
+				"x": 710,
+				"y": 990
+			},
+			"size": {
+				"height": 134,
+				"width": 134
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0253construction-dark-120.png",
+			"pos": {
+				"x": 966,
+				"y": 124
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0254construction_disabled.png",
+			"pos": {
+				"x": 708,
+				"y": 1270
+			},
+			"size": {
+				"height": 134,
+				"width": 134
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0255recruit.png",
+			"pos": {
+				"x": 708,
+				"y": 1406
+			},
+			"size": {
+				"height": 134,
+				"width": 134
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0256recruit-dark-120.png",
+			"pos": {
+				"x": 978,
+				"y": 2
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0257recruit_disabled.png",
+			"pos": {
+				"x": 844,
+				"y": 1126
+			},
+			"size": {
+				"height": 134,
+				"width": 134
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0258repair-120 copy.png",
+			"pos": {
+				"x": 964,
+				"y": 250
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0259repair-dark-120.png",
+			"pos": {
+				"x": 966,
+				"y": 628
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0260repair-grey-120 copy.png",
+			"pos": {
+				"x": 844,
+				"y": 628
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0261retrain-120 copy.png",
+			"pos": {
+				"x": 844,
+				"y": 128
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0262retrain-dark-120.png",
+			"pos": {
+				"x": 968,
+				"y": 750
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0263retrain-120 grey.png",
+			"pos": {
+				"x": 856,
+				"y": 2
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0264buildingbrowserdisable_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0265scroll_01_200x200-110.png",
+			"pos": {
+				"x": 980,
+				"y": 1228
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0266scroll-grey-110.png",
+			"pos": {
+				"x": 1430,
+				"y": 1184
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0267kee_ all_messages-120.png",
+			"pos": {
+				"x": 298,
+				"y": 716
+			},
+			"size": {
+				"height": 138,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0268kee_ all_messages-grey-110.png",
+			"pos": {
+				"x": 1542,
+				"y": 1232
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0269newicondeletemessage-110.png",
+			"pos": {
+				"x": 306,
+				"y": 154
+			},
+			"size": {
+				"height": 138,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0270newicondeletemessage-grey-110.png",
+			"pos": {
+				"x": 1318,
+				"y": 1296
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0271newicondeleteallmessages-120.png",
+			"pos": {
+				"x": 322,
+				"y": 2
+			},
+			"size": {
+				"height": 138,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0272newicondeleteallmessages-grey-110.png",
+			"pos": {
+				"x": 1430,
+				"y": 1296
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0273factions.png",
+			"pos": {
+				"x": 1812,
+				"y": 874
+			},
+			"size": {
+				"height": 204,
+				"width": 204
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0274factions_selected.png",
+			"pos": {
+				"x": 2,
+				"y": 1812
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0275finance.png",
+			"pos": {
+				"x": 204,
+				"y": 1812
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0276finance-dark-120.png",
+			"pos": {
+				"x": 1084,
+				"y": 372
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0277overlaydiplomacy.png",
+			"pos": {
+				"x": 1812,
+				"y": 1080
+			},
+			"size": {
+				"height": 204,
+				"width": 204
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0278overlaydiplomacy_selected.png",
+			"pos": {
+				"x": 406,
+				"y": 1812
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0279familytree.png",
+			"pos": {
+				"x": 608,
+				"y": 1812
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0280familytreedark.png",
+			"pos": {
+				"x": 840,
+				"y": 506
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0281lists.png",
+			"pos": {
+				"x": 810,
+				"y": 1812
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0282lists_selected.png",
+			"pos": {
+				"x": 364,
+				"y": 726
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0283senate-120_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0284senate-120-dark_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0285senate_policy-120_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0286senate_policy-120-dark_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0287senate_mission-120_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0288senate_mission-120-dark_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0289senate_floor-120_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0290senate_floor-120-dark_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0291senate_ offices-120 copy_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0292senate_ offices-120-dark_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0293faction_details-120.png",
+			"pos": {
+				"x": 1086,
+				"y": 246
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0294faction_details-120-dark.png",
+			"pos": {
+				"x": 1088,
+				"y": 124
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0295faction_rankings-120.png",
+			"pos": {
+				"x": 962,
+				"y": 384
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0296faction_rankings-120-dark copy.png",
+			"pos": {
+				"x": 1100,
+				"y": 2
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0297lists _militaryforce-120.png",
+			"pos": {
+				"x": 1084,
+				"y": 494
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0298lists _militaryforce-120-dark.png",
+			"pos": {
+				"x": 1088,
+				"y": 616
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0299lists_settlements.png",
+			"pos": {
+				"x": 844,
+				"y": 1262
+			},
+			"size": {
+				"height": 134,
+				"width": 134
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0300lists_settlements-120dark.png",
+			"pos": {
+				"x": 1206,
+				"y": 368
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0301list_agents-120.png",
+			"pos": {
+				"x": 1208,
+				"y": 246
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0302list_agents-120-dark.png",
+			"pos": {
+				"x": 1210,
+				"y": 124
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0303swap_retinue.png",
+			"pos": {
+				"x": 1290,
+				"y": 510
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0304swap_retinue_disabled.png",
+			"pos": {
+				"x": 844,
+				"y": 1398
+			},
+			"size": {
+				"height": 134,
+				"width": 134
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0305bisprite_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0306bisprite_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0307bisprite_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0308bisprite_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0309bisprite_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0310bisprite_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0311bisprite_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0312desktopsprite_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0313desktopsprite_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0314desktopsprite_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0315_stats_warning.png",
+			"pos": {
+				"x": 1842,
+				"y": 1430
+			},
+			"size": {
+				"height": 24,
+				"width": 24
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0316_stats_up.png",
+			"pos": {
+				"x": 1868,
+				"y": 1430
+			},
+			"size": {
+				"height": 24,
+				"width": 24
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0317_stats_down.png",
+			"pos": {
+				"x": 1894,
+				"y": 1430
+			},
+			"size": {
+				"height": 24,
+				"width": 24
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0318_listretinues-120.png",
+			"pos": {
+				"x": 1222,
+				"y": 2
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0319_listretinues-dark-120.png",
+			"pos": {
+				"x": 1206,
+				"y": 490
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0320_listretinues-grey-120.png",
+			"pos": {
+				"x": 972,
+				"y": 872
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0321characterstats.png",
+			"pos": {
+				"x": 364,
+				"y": 1088
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0322automerge.png",
+			"pos": {
+				"x": 1500,
+				"y": 1460
+			},
+			"size": {
+				"height": 476,
+				"width": 476
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0323confirmassassinate.png",
+			"pos": {
+				"x": 1090,
+				"y": 738
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0324confirmattack.png",
+			"pos": {
+				"x": 1210,
+				"y": 612
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0325confirmdiplomacy.png",
+			"pos": {
+				"x": 1328,
+				"y": 368
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0326disembark_confirm.png",
+			"pos": {
+				"x": 364,
+				"y": 1450
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0327confirmembark.png",
+			"pos": {
+				"x": 1330,
+				"y": 246
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0328confirmentersettlement.png",
+			"pos": {
+				"x": 1332,
+				"y": 124
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0329confirmexchange.png",
+			"pos": {
+				"x": 1344,
+				"y": 2
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0330confirmsabotage.png",
+			"pos": {
+				"x": 1328,
+				"y": 490
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0331confirmsabotageandassassinate.png",
+			"pos": {
+				"x": 972,
+				"y": 994
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0332confirmspy.png",
+			"pos": {
+				"x": 1450,
+				"y": 368
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0333confirmwalk.png",
+			"pos": {
+				"x": 1452,
+				"y": 246
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0334confirmwaypoint.png",
+			"pos": {
+				"x": 1454,
+				"y": 124
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0335senate_disabled.png",
+			"pos": {
+				"x": 726,
+				"y": 2
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0336settlement_nextlevel.png",
+			"pos": {
+				"x": 1916,
+				"y": 364
+			},
+			"size": {
+				"height": 130,
+				"width": 130
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0337settlement_population.png",
+			"pos": {
+				"x": 950,
+				"y": 1534
+			},
+			"size": {
+				"height": 130,
+				"width": 130
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0338settlement_population_up.png",
+			"pos": {
+				"x": 512,
+				"y": 1234
+			},
+			"size": {
+				"height": 508,
+				"width": 508
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0339buildingselector_selected.png",
+			"pos": {
+				"x": 1466,
+				"y": 2
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0340characterstats_disabled.png",
+			"pos": {
+				"x": 446,
+				"y": 142
+			},
+			"size": {
+				"height": 134,
+				"width": 134
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0341characterstats_selected.png",
+			"pos": {
+				"x": 726,
+				"y": 364
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0342characterstats.png",
+			"pos": {
+				"x": 462,
+				"y": 2
+			},
+			"size": {
+				"height": 134,
+				"width": 134
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0343overlays_disabled.png",
+			"pos": {
+				"x": 726,
+				"y": 726
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0344overlays_selected.png",
+			"pos": {
+				"x": 726,
+				"y": 1088
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0345overlays.png",
+			"pos": {
+				"x": 1492,
+				"y": 508
+			},
+			"size": {
+				"height": 198,
+				"width": 198
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0346trade_disabled.png",
+			"pos": {
+				"x": 446,
+				"y": 278
+			},
+			"size": {
+				"height": 134,
+				"width": 134
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0347trade_selected.png",
+			"pos": {
+				"x": 726,
+				"y": 1450
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0348trade.png",
+			"pos": {
+				"x": 446,
+				"y": 414
+			},
+			"size": {
+				"height": 134,
+				"width": 134
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0349arrowdown_small.png",
+			"pos": {
+				"x": 414,
+				"y": 1812
+			},
+			"size": {
+				"height": 164,
+				"width": 204
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0350arrowup_small.png",
+			"pos": {
+				"x": 620,
+				"y": 1812
+			},
+			"size": {
+				"height": 164,
+				"width": 204
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0351sort_ascending.png",
+			"pos": {
+				"x": 1450,
+				"y": 612
+			},
+			"size": {
+				"height": 116,
+				"width": 116
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0352sort_descending.png",
+			"pos": {
+				"x": 1332,
+				"y": 730
+			},
+			"size": {
+				"height": 116,
+				"width": 116
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0353filter_inactive.png",
+			"pos": {
+				"x": 712,
+				"y": 802
+			},
+			"size": {
+				"height": 128,
+				"width": 128
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0354news_alerts_selected.png",
+			"pos": {
+				"x": 1872,
+				"y": 708
+			},
+			"size": {
+				"height": 180,
+				"width": 150
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0355news_alerts.png",
+			"pos": {
+				"x": 2,
+				"y": 170
+			},
+			"size": {
+				"height": 180,
+				"width": 150
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0356news_news_selected.png",
+			"pos": {
+				"x": 2,
+				"y": 352
+			},
+			"size": {
+				"height": 180,
+				"width": 150
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0357news_news.png",
+			"pos": {
+				"x": 2,
+				"y": 534
+			},
+			"size": {
+				"height": 180,
+				"width": 150
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0358news_reports_selected.png",
+			"pos": {
+				"x": 2,
+				"y": 716
+			},
+			"size": {
+				"height": 180,
+				"width": 150
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0359news_reports.png",
+			"pos": {
+				"x": 2,
+				"y": 898
+			},
+			"size": {
+				"height": 180,
+				"width": 150
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0360news_senate_selected.png",
+			"pos": {
+				"x": 2,
+				"y": 1080
+			},
+			"size": {
+				"height": 180,
+				"width": 150
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0361news_senate.png",
+			"pos": {
+				"x": 2,
+				"y": 1262
+			},
+			"size": {
+				"height": 180,
+				"width": 150
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0362thinscroll_rail_center.png",
+			"pos": {
+				"x": 1978,
+				"y": 1660
+			},
+			"size": {
+				"height": 68,
+				"width": 68
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0363separator_center.png",
+			"pos": {
+				"x": 1276,
+				"y": 518
+			},
+			"size": {
+				"height": 64,
+				"width": 198
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0364separator_left.png",
+			"pos": {
+				"x": 1276,
+				"y": 216
+			},
+			"size": {
+				"height": 66,
+				"width": 290
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0365separator_right.png",
+			"pos": {
+				"x": 1276,
+				"y": 288
+			},
+			"size": {
+				"height": 66,
+				"width": 290
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0368cardslot_buildingqueue_add.png",
+			"pos": {
+				"x": 1424,
+				"y": 588
+			},
+			"size": {
+				"height": 138,
+				"width": 110
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0369cardslot_buildingqueue.png",
+			"pos": {
+				"x": 1276,
+				"y": 360
+			},
+			"size": {
+				"height": 152,
+				"width": 196
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0370cardslot_buildings.png",
+			"pos": {
+				"x": 1294,
+				"y": 4
+			},
+			"size": {
+				"height": 206,
+				"width": 266
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0371cardslot_unitqueue_add.png",
+			"pos": {
+				"x": 1478,
+				"y": 360
+			},
+			"size": {
+				"height": 152,
+				"width": 110
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0372cardslot_unitqueue.png",
+			"pos": {
+				"x": 1280,
+				"y": 1020
+			},
+			"size": {
+				"height": 152,
+				"width": 110
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0373cardslot_units.png",
+			"pos": {
+				"x": 1202,
+				"y": 1276
+			},
+			"size": {
+				"height": 174,
+				"width": 124
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0374bisprite_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0375bisprite_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0376bisprite_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0377bisprite_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0378bisprite_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0379nightbattleunavailable.png",
+			"pos": {
+				"x": 1778,
+				"y": 1692
+			},
+			"size": {
+				"height": 190,
+				"width": 190
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0380endturnalertsbutton.png",
+			"pos": {
+				"x": 1812,
+				"y": 1286
+			},
+			"size": {
+				"height": 204,
+				"width": 204
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0381agent_assasin.png",
+			"pos": {
+				"x": 1212,
+				"y": 1924
+			},
+			"size": {
+				"height": 122,
+				"width": 122
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0382agent_diplomat.png",
+			"pos": {
+				"x": 1336,
+				"y": 1924
+			},
+			"size": {
+				"height": 122,
+				"width": 122
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0383agent_spy.png",
+			"pos": {
+				"x": 1460,
+				"y": 1924
+			},
+			"size": {
+				"height": 122,
+				"width": 122
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0384army_1.png",
+			"pos": {
+				"x": 1924,
+				"y": 1500
+			},
+			"size": {
+				"height": 122,
+				"width": 122
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0385army_2.png",
+			"pos": {
+				"x": 578,
+				"y": 1542
+			},
+			"size": {
+				"height": 122,
+				"width": 122
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0386army_3.png",
+			"pos": {
+				"x": 702,
+				"y": 1542
+			},
+			"size": {
+				"height": 122,
+				"width": 122
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0387army_4.png",
+			"pos": {
+				"x": 1088,
+				"y": 2
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0388army_5.png",
+			"pos": {
+				"x": 826,
+				"y": 1542
+			},
+			"size": {
+				"height": 122,
+				"width": 122
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0389army_sett_1.png",
+			"pos": {
+				"x": 1778,
+				"y": 1884
+			},
+			"size": {
+				"height": 156,
+				"width": 156
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0390army_sett_2.png",
+			"pos": {
+				"x": 438,
+				"y": 714
+			},
+			"size": {
+				"height": 136,
+				"width": 136
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0391army_sett_3.png",
+			"pos": {
+				"x": 1904,
+				"y": 1240
+			},
+			"size": {
+				"height": 142,
+				"width": 142
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0392army_sett_4.png",
+			"pos": {
+				"x": 434,
+				"y": 996
+			},
+			"size": {
+				"height": 136,
+				"width": 136
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0393army_sett_5.png",
+			"pos": {
+				"x": 434,
+				"y": 1134
+			},
+			"size": {
+				"height": 136,
+				"width": 136
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0394available_retrain.png",
+			"pos": {
+				"x": 1542,
+				"y": 1344
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0395available_retrainupgrade.png",
+			"pos": {
+				"x": 1204,
+				"y": 1298
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0396available_upgrade.png",
+			"pos": {
+				"x": 1616,
+				"y": 1938
+			},
+			"size": {
+				"height": 102,
+				"width": 102
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0397colour_swatch.png",
+			"pos": {
+				"x": 1720,
+				"y": 1938
+			},
+			"size": {
+				"height": 102,
+				"width": 102
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0398battlefield_natural_bridge.png",
+			"pos": {
+				"x": 1824,
+				"y": 1938
+			},
+			"size": {
+				"height": 102,
+				"width": 102
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0399battlefield_natural_mountain.png",
+			"pos": {
+				"x": 1088,
+				"y": 364
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0400post_fort.png",
+			"pos": {
+				"x": 1342,
+				"y": 406
+			},
+			"size": {
+				"height": 102,
+				"width": 102
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0401post_watchtower.png",
+			"pos": {
+				"x": 306,
+				"y": 294
+			},
+			"size": {
+				"height": 138,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0402settlement_1.png",
+			"pos": {
+				"x": 306,
+				"y": 434
+			},
+			"size": {
+				"height": 138,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0403settlement_2.png",
+			"pos": {
+				"x": 306,
+				"y": 574
+			},
+			"size": {
+				"height": 138,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0404settlement_3.png",
+			"pos": {
+				"x": 294,
+				"y": 1000
+			},
+			"size": {
+				"height": 138,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0405settlement_4.png",
+			"pos": {
+				"x": 294,
+				"y": 1140
+			},
+			"size": {
+				"height": 138,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0406settlement_5.png",
+			"pos": {
+				"x": 294,
+				"y": 1280
+			},
+			"size": {
+				"height": 138,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0407settlement_6.png",
+			"pos": {
+				"x": 294,
+				"y": 1420
+			},
+			"size": {
+				"height": 138,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0408overlaydevelopment_selected.png",
+			"pos": {
+				"x": 1342,
+				"y": 2
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0409overlaydevelopment.png",
+			"pos": {
+				"x": 1812,
+				"y": 1492
+			},
+			"size": {
+				"height": 204,
+				"width": 204
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0410overlayhappiness_selected.png",
+			"pos": {
+				"x": 1342,
+				"y": 204
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0411overlayhappiness.png",
+			"pos": {
+				"x": 1812,
+				"y": 1698
+			},
+			"size": {
+				"height": 204,
+				"width": 204
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0412overlaynatural_selected.png",
+			"pos": {
+				"x": 1088,
+				"y": 726
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0413overlaynatural.png",
+			"pos": {
+				"x": 1088,
+				"y": 1088
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0414overlayresources_selected.png",
+			"pos": {
+				"x": 1544,
+				"y": 2
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0415overlayresources.png",
+			"pos": {
+				"x": 2,
+				"y": 1812
+			},
+			"size": {
+				"height": 204,
+				"width": 204
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0416overlaysecurity_selected.png",
+			"pos": {
+				"x": 1544,
+				"y": 204
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0417overlaysecurity.png",
+			"pos": {
+				"x": 208,
+				"y": 1812
+			},
+			"size": {
+				"height": 204,
+				"width": 204
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0418overlaysexit.png",
+			"pos": {
+				"x": 1290,
+				"y": 712
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0419overlayupgrades_selected.png",
+			"pos": {
+				"x": 1290,
+				"y": 914
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0420overlayupgrades.png",
+			"pos": {
+				"x": 1290,
+				"y": 1116
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0421overlaywatchtowers_selected.png",
+			"pos": {
+				"x": 1336,
+				"y": 1318
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0422overlaywatchtowers.png",
+			"pos": {
+				"x": 1336,
+				"y": 1520
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0423plague_icon.png",
+			"pos": {
+				"x": 1634,
+				"y": 1812
+			},
+			"size": {
+				"height": 180,
+				"width": 170
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0424revolt_icon.png",
+			"pos": {
+				"x": 1950,
+				"y": 1904
+			},
+			"size": {
+				"height": 100,
+				"width": 94
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0425siege_icon.png",
+			"pos": {
+				"x": 1690,
+				"y": 1072
+			},
+			"size": {
+				"height": 180,
+				"width": 170
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0426building_arena.png",
+			"pos": {
+				"x": 1548,
+				"y": 406
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0427building_armoury.png",
+			"pos": {
+				"x": 1650,
+				"y": 406
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0428building_caravan.png",
+			"pos": {
+				"x": 1690,
+				"y": 708
+			},
+			"size": {
+				"height": 180,
+				"width": 180
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0429building_defense.png",
+			"pos": {
+				"x": 840,
+				"y": 260
+			},
+			"size": {
+				"height": 122,
+				"width": 122
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0430building_farming.png",
+			"pos": {
+				"x": 1944,
+				"y": 202
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0431building_government.png",
+			"pos": {
+				"x": 1946,
+				"y": 2
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0432building_law.png",
+			"pos": {
+				"x": 432,
+				"y": 1968
+			},
+			"size": {
+				"height": 74,
+				"width": 74
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0433building_military_cavalry.png",
+			"pos": {
+				"x": 1944,
+				"y": 512
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0434building_military_infantry.png",
+			"pos": {
+				"x": 154,
+				"y": 1560
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0435building_military_ranged.png",
+			"pos": {
+				"x": 256,
+				"y": 1560
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0436building_mining.png",
+			"pos": {
+				"x": 508,
+				"y": 1968
+			},
+			"size": {
+				"height": 74,
+				"width": 74
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0437building_navy.png",
+			"pos": {
+				"x": 358,
+				"y": 1560
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0438building_religion.png",
+			"pos": {
+				"x": 980,
+				"y": 1340
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0439building_roads.png",
+			"pos": {
+				"x": 1428,
+				"y": 1408
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0440building_sanitation.png",
+			"pos": {
+				"x": 1530,
+				"y": 1456
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0441building_school.png",
+			"pos": {
+				"x": 1428,
+				"y": 1510
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0442building_tavern.png",
+			"pos": {
+				"x": 1752,
+				"y": 400
+			},
+			"size": {
+				"height": 180,
+				"width": 180
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0443building_trade.png",
+			"pos": {
+				"x": 1530,
+				"y": 1558
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0444building_level_1.png",
+			"pos": {
+				"x": 584,
+				"y": 1968
+			},
+			"size": {
+				"height": 74,
+				"width": 74
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0445building_level_2.png",
+			"pos": {
+				"x": 1012,
+				"y": 1812
+			},
+			"size": {
+				"height": 74,
+				"width": 74
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0446building_level_3.png",
+			"pos": {
+				"x": 1012,
+				"y": 1888
+			},
+			"size": {
+				"height": 74,
+				"width": 74
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0447building_level_4.png",
+			"pos": {
+				"x": 1012,
+				"y": 1964
+			},
+			"size": {
+				"height": 74,
+				"width": 74
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0448building_level_5.png",
+			"pos": {
+				"x": 1736,
+				"y": 1422
+			},
+			"size": {
+				"height": 74,
+				"width": 74
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0449buildcircle_available.png",
+			"pos": {
+				"x": 846,
+				"y": 928
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0450buildcircle_disabled.png",
+			"pos": {
+				"x": 714,
+				"y": 274
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0451buildcircle_progress.png",
+			"pos": {
+				"x": 718,
+				"y": 134
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0452buildcircle_ready.png",
+			"pos": {
+				"x": 730,
+				"y": 2
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0453settlement_building_blocked.png",
+			"pos": {
+				"x": 1194,
+				"y": 1410
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0454buildline_blocked.png",
+			"pos": {
+				"x": 1424,
+				"y": 866
+			},
+			"size": {
+				"height": 126,
+				"width": 128
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0455buildline_disabled_horiz2vert.png",
+			"pos": {
+				"x": 1280,
+				"y": 588
+			},
+			"size": {
+				"height": 138,
+				"width": 138
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0456buildline_disabled_vert2horiz.png",
+			"pos": {
+				"x": 1280,
+				"y": 732
+			},
+			"size": {
+				"height": 138,
+				"width": 138
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0457buildline_disabled_vertical.png",
+			"pos": {
+				"x": 1280,
+				"y": 876
+			},
+			"size": {
+				"height": 138,
+				"width": 138
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0458buildline_disabled.png",
+			"pos": {
+				"x": 1424,
+				"y": 998
+			},
+			"size": {
+				"height": 126,
+				"width": 128
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0459buildline_progress.png",
+			"pos": {
+				"x": 1332,
+				"y": 1262
+			},
+			"size": {
+				"height": 124,
+				"width": 126
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0460buildline_ready_horiz2vert.png",
+			"pos": {
+				"x": 1464,
+				"y": 1262
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0461buildline_ready_vert2horiz.png",
+			"pos": {
+				"x": 1336,
+				"y": 1392
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0462buildline_ready_vertical.png",
+			"pos": {
+				"x": 1466,
+				"y": 1392
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0463buildline_ready.png",
+			"pos": {
+				"x": 1416,
+				"y": 1130
+			},
+			"size": {
+				"height": 126,
+				"width": 128
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0464menu_highlighter_left.png",
+			"pos": {
+				"x": 1916,
+				"y": 200
+			},
+			"size": {
+				"height": 162,
+				"width": 96
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0465menu_highlighter_right.png",
+			"pos": {
+				"x": 1936,
+				"y": 496
+			},
+			"size": {
+				"height": 162,
+				"width": 96
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0466building_government.png",
+			"pos": {
+				"x": 1574,
+				"y": 246
+			},
+			"size": {
+				"height": 86,
+				"width": 86
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0467settlement_strat_strength_unselected.png",
+			"pos": {
+				"x": 154,
+				"y": 716
+			},
+			"size": {
+				"height": 142,
+				"width": 142
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0468character_agent_idle.png",
+			"pos": {
+				"x": 714,
+				"y": 400
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0469character_agent_moving.png",
+			"pos": {
+				"x": 714,
+				"y": 526
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0470settlement_blockadeport.png",
+			"pos": {
+				"x": 1088,
+				"y": 1450
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0471swap_retinue_selected.png",
+			"pos": {
+				"x": 1450,
+				"y": 2
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0472familyandfinance.png",
+			"pos": {
+				"x": 1450,
+				"y": 364
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0473familyandfinance_selected.png",
+			"pos": {
+				"x": 1450,
+				"y": 726
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0474basemarble_left.png",
+			"pos": {
+				"x": 4,
+				"y": 896
+			},
+			"size": {
+				"height": 150,
+				"width": 956
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0475basemarble_right.png",
+			"pos": {
+				"x": 4,
+				"y": 1052
+			},
+			"size": {
+				"height": 150,
+				"width": 956
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0476basemarble_center.png",
+			"pos": {
+				"x": 4,
+				"y": 4
+			},
+			"size": {
+				"height": 150,
+				"width": 1284
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0477lists_settlements_disabled.png",
+			"pos": {
+				"x": 446,
+				"y": 550
+			},
+			"size": {
+				"height": 134,
+				"width": 134
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0478switchtoarmy_overall_button.png",
+			"pos": {
+				"x": 1082,
+				"y": 1340
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0479traitsandretinue_overall_button.png",
+			"pos": {
+				"x": 1690,
+				"y": 890
+			},
+			"size": {
+				"height": 180,
+				"width": 180
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0480infoframe_arrow_left.png",
+			"pos": {
+				"x": 1202,
+				"y": 1456
+			},
+			"size": {
+				"height": 128,
+				"width": 128
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0481infoframe_arrow_right.png",
+			"pos": {
+				"x": 1424,
+				"y": 732
+			},
+			"size": {
+				"height": 128,
+				"width": 128
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0482negotiation_paper_bottom.png",
+			"pos": {
+				"x": 4,
+				"y": 160
+			},
+			"size": {
+				"height": 160,
+				"width": 1266
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0483negotiation_paper_middle.png",
+			"pos": {
+				"x": 4,
+				"y": 492
+			},
+			"size": {
+				"height": 158,
+				"width": 1266
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0484negotiation_paper_top.png",
+			"pos": {
+				"x": 4,
+				"y": 326
+			},
+			"size": {
+				"height": 160,
+				"width": 1266
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0485negotiation_scroll_bottom.png",
+			"pos": {
+				"x": 574,
+				"y": 1208
+			},
+			"size": {
+				"height": 308,
+				"width": 308
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0486negotiation_scroll_middle.png",
+			"pos": {
+				"x": 966,
+				"y": 656
+			},
+			"size": {
+				"height": 614,
+				"width": 308
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0487negotiation_scroll_top.png",
+			"pos": {
+				"x": 888,
+				"y": 1276
+			},
+			"size": {
+				"height": 308,
+				"width": 308
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0488player_laurels.png",
+			"pos": {
+				"x": 2,
+				"y": 1744
+			},
+			"size": {
+				"height": 280,
+				"width": 352
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0489settlement_income.png",
+			"pos": {
+				"x": 598,
+				"y": 2
+			},
+			"size": {
+				"height": 130,
+				"width": 130
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0490settlement_plague_icon.png",
+			"pos": {
+				"x": 1450,
+				"y": 1088
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0491settlement_siege_icon.png",
+			"pos": {
+				"x": 1316,
+				"y": 1408
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0492settlement_icon_riots.png",
+			"pos": {
+				"x": 1978,
+				"y": 1922
+			},
+			"size": {
+				"height": 62,
+				"width": 62
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0493bisprite_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0494settlement_publicorder_nocolor.png",
+			"pos": {
+				"x": 1576,
+				"y": 124
+			},
+			"size": {
+				"height": 86,
+				"width": 86
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0495settlement_population_up_nocolor.png",
+			"pos": {
+				"x": 1572,
+				"y": 456
+			},
+			"size": {
+				"height": 86,
+				"width": 86
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0496settlement_recruit_nocolor.png",
+			"pos": {
+				"x": 1572,
+				"y": 544
+			},
+			"size": {
+				"height": 86,
+				"width": 86
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0497settlement_construct_nocolor.png",
+			"pos": {
+				"x": 1568,
+				"y": 632
+			},
+			"size": {
+				"height": 86,
+				"width": 86
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0498settlement_nextlevel_small.png",
+			"pos": {
+				"x": 952,
+				"y": 1174
+			},
+			"size": {
+				"height": 48,
+				"width": 48
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0499population_up_nocolor.png",
+			"pos": {
+				"x": 1450,
+				"y": 1450
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0500building_government_small.png",
+			"pos": {
+				"x": 952,
+				"y": 1796
+			},
+			"size": {
+				"height": 48,
+				"width": 48
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0501settlement_income_nocolor.png",
+			"pos": {
+				"x": 2,
+				"y": 2
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0502population_stagnation_nocolor.png",
+			"pos": {
+				"x": 2,
+				"y": 364
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0503settlement_population_down_nocolor.png",
+			"pos": {
+				"x": 1568,
+				"y": 720
+			},
+			"size": {
+				"height": 86,
+				"width": 86
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0504framedecorationleft.png",
+			"pos": {
+				"x": 1500,
+				"y": 958
+			},
+			"size": {
+				"height": 500,
+				"width": 340
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0505framedecorationright.png",
+			"pos": {
+				"x": 1574,
+				"y": 2
+			},
+			"size": {
+				"height": 500,
+				"width": 340
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0506character_weddingring.png",
+			"pos": {
+				"x": 1082,
+				"y": 1452
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0507character_offspring.png",
+			"pos": {
+				"x": 1184,
+				"y": 1512
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0508helmet2.png",
+			"pos": {
+				"x": 576,
+				"y": 686
+			},
+			"size": {
+				"height": 134,
+				"width": 134
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0509bodyguardunpresseddisabledbutton_icons.png",
+			"pos": {
+				"x": 1450,
+				"y": 490
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0510_delateallbackground copy2.png",
+			"pos": {
+				"x": 1538,
+				"y": 1500
+			},
+			"size": {
+				"height": 192,
+				"width": 192
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0511_readallbackground2.png",
+			"pos": {
+				"x": 1584,
+				"y": 1694
+			},
+			"size": {
+				"height": 192,
+				"width": 192
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0512bisprite_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0513bisprite_unused.png",
+			"pos": {
+				"x": 1408,
+				"y": 1914
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0514disembark_disabled.png",
+			"pos": {
+				"x": 582,
+				"y": 138
+			},
+			"size": {
+				"height": 134,
+				"width": 134
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0515merchanticon_overlay_90x90.png",
+			"pos": {
+				"x": 1944,
+				"y": 304
+			},
+			"size": {
+				"height": 90,
+				"width": 90
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0516settlement_public_happy.png",
+			"pos": {
+				"x": 582,
+				"y": 274
+			},
+			"size": {
+				"height": 130,
+				"width": 130
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0517settlement_public_content.png",
+			"pos": {
+				"x": 582,
+				"y": 406
+			},
+			"size": {
+				"height": 130,
+				"width": 130
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0518settlement_public_disillusioned.png",
+			"pos": {
+				"x": 582,
+				"y": 538
+			},
+			"size": {
+				"height": 130,
+				"width": 130
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0519settlement_public_rioting.png",
+			"pos": {
+				"x": 712,
+				"y": 670
+			},
+			"size": {
+				"height": 130,
+				"width": 130
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0520settlement_traderights_enabled.png",
+			"pos": {
+				"x": 1812,
+				"y": 1422
+			},
+			"size": {
+				"height": 74,
+				"width": 74
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0521settlement_traderights_nocolor.png",
+			"pos": {
+				"x": 1970,
+				"y": 1624
+			},
+			"size": {
+				"height": 74,
+				"width": 74
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0522player_attacker.png",
+			"pos": {
+				"x": 1936,
+				"y": 660
+			},
+			"size": {
+				"height": 148,
+				"width": 104
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0523player_defender.png",
+			"pos": {
+				"x": 1936,
+				"y": 1884
+			},
+			"size": {
+				"height": 148,
+				"width": 104
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0524location_alert.png",
+			"pos": {
+				"x": 434,
+				"y": 856
+			},
+			"size": {
+				"height": 138,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0525navy_strength.png",
+			"pos": {
+				"x": 2,
+				"y": 726
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0526settlement_wall_level.png",
+			"pos": {
+				"x": 2,
+				"y": 1088
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0527building_government_positive.png",
+			"pos": {
+				"x": 2,
+				"y": 1450
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0528construct_positive.png",
+			"pos": {
+				"x": 364,
+				"y": 2
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0529recruit_positive.png",
+			"pos": {
+				"x": 364,
+				"y": 364
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0530settlement_population_nocolor.png",
+			"pos": {
+				"x": 1568,
+				"y": 808
+			},
+			"size": {
+				"height": 86,
+				"width": 86
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0531button_ring_selected.png",
+			"pos": {
+				"x": 1336,
+				"y": 1722
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0532nodeal.png",
+			"pos": {
+				"x": 2,
+				"y": 2
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0533navy_embarked.png",
+			"pos": {
+				"x": 364,
+				"y": 726
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0534news_alerts_disabled.png",
+			"pos": {
+				"x": 2,
+				"y": 1444
+			},
+			"size": {
+				"height": 180,
+				"width": 150
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0535news_news_disabled.png",
+			"pos": {
+				"x": 154,
+				"y": 170
+			},
+			"size": {
+				"height": 180,
+				"width": 150
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0536news_reports_disabled.png",
+			"pos": {
+				"x": 154,
+				"y": 352
+			},
+			"size": {
+				"height": 180,
+				"width": 150
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0537news_senate_disabled.png",
+			"pos": {
+				"x": 154,
+				"y": 534
+			},
+			"size": {
+				"height": 180,
+				"width": 150
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0538siege_continue_disabled.png",
+			"pos": {
+				"x": 364,
+				"y": 1088
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0539end_turn_disabled.png",
+			"pos": {
+				"x": 364,
+				"y": 1450
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0540automerge_disabled.png",
+			"pos": {
+				"x": 726,
+				"y": 2
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0541agents_disabled.png",
+			"pos": {
+				"x": 726,
+				"y": 364
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0542filter_noselection.png",
+			"pos": {
+				"x": 1450,
+				"y": 730
+			},
+			"size": {
+				"height": 116,
+				"width": 116
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0543no_trade.png",
+			"pos": {
+				"x": 1758,
+				"y": 866
+			},
+			"size": {
+				"height": 76,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0544fadeout_horiz_left.png",
+			"pos": {
+				"x": 1842,
+				"y": 866
+			},
+			"size": {
+				"height": 280,
+				"width": 164
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0545fadeout_horiz_right.png",
+			"pos": {
+				"x": 1842,
+				"y": 1148
+			},
+			"size": {
+				"height": 280,
+				"width": 164
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0546constructioncardtrigger.png",
+			"pos": {
+				"x": 1746,
+				"y": 2
+			},
+			"size": {
+				"height": 198,
+				"width": 198
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0547recruitmentcardtrigger.png",
+			"pos": {
+				"x": 434,
+				"y": 1272
+			},
+			"size": {
+				"height": 136,
+				"width": 136
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0548show_agents.png",
+			"pos": {
+				"x": 726,
+				"y": 726
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0549show_agents_disabled.png",
+			"pos": {
+				"x": 726,
+				"y": 1088
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0550show_agents_selected.png",
+			"pos": {
+				"x": 726,
+				"y": 1450
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0551framedecorationleft_top.png",
+			"pos": {
+				"x": 356,
+				"y": 1744
+			},
+			"size": {
+				"height": 110,
+				"width": 340
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0552framedecorationright_top.png",
+			"pos": {
+				"x": 356,
+				"y": 1856
+			},
+			"size": {
+				"height": 110,
+				"width": 340
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0553movementbarfill_2.png",
+			"pos": {
+				"x": 1002,
+				"y": 1132
+			},
+			"size": {
+				"height": 54,
+				"width": 14
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0554filternews.png",
+			"pos": {
+				"x": 434,
+				"y": 1410
+			},
+			"size": {
+				"height": 136,
+				"width": 136
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0555filternews_disabled.png",
+			"pos": {
+				"x": 572,
+				"y": 996
+			},
+			"size": {
+				"height": 136,
+				"width": 136
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0556filternews_selected.png",
+			"pos": {
+				"x": 574,
+				"y": 852
+			},
+			"size": {
+				"height": 136,
+				"width": 136
+			},
+			"texPage": 2
+		}
+	]
+}

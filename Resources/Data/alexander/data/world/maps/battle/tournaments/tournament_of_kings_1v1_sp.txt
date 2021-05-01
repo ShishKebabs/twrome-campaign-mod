@@ -1,6 +1,0 @@
-tournament_name	tournament_of_the_kings
-
-
-custom/Chaeronea
-custom/Granicus
-custom/Halicarnassus

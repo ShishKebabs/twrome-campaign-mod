@@ -1,0 +1,7814 @@
+{
+	"version": 5,
+	"file_tag": "FERAL_RETINA",
+	"texpages": [
+		{
+			"absolutePath": "roman/interface/",
+			"height": "2044",
+			"relativePath": "shared_new_1.tga",
+			"width": "2044"
+		},
+		{
+			"absolutePath": "roman/interface/",
+			"height": "1262",
+			"relativePath": "shared_swap_0.tga",
+			"width": "1262"
+		},
+		{
+			"absolutePath": "roman/interface/",
+			"height": "2048",
+			"relativePath": "shared_new_0.tga",
+			"width": "2048"
+		},
+		{
+			"absolutePath": "roman/interface/",
+			"height": "2046",
+			"relativePath": "shared_swap_extruded_0.tga",
+			"width": "2046"
+		},
+		{
+			"absolutePath": "roman/interface/",
+			"height": "1992",
+			"relativePath": "shared_swap_extruded_1.tga",
+			"width": "1992"
+		},
+		{
+			"absolutePath": "roman/interface/",
+			"height": "1080",
+			"relativePath": "shared_new_2.tga",
+			"width": "1080"
+		}
+	],
+	"sprites": [
+		{
+			"hasAlpha": 1,
+			"name": "0001numeral1.png",
+			"pos": {
+				"x": 2030,
+				"y": 640
+			},
+			"size": {
+				"height": 32,
+				"width": 12
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0002numeral2.png",
+			"pos": {
+				"x": 1552,
+				"y": 1772
+			},
+			"size": {
+				"height": 32,
+				"width": 24
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0003numeral3.png",
+			"pos": {
+				"x": 1516,
+				"y": 1772
+			},
+			"size": {
+				"height": 32,
+				"width": 34
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0004numeral4.png",
+			"pos": {
+				"x": 1578,
+				"y": 734
+			},
+			"size": {
+				"height": 32,
+				"width": 38
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0005numeral5.png",
+			"pos": {
+				"x": 1060,
+				"y": 1154
+			},
+			"size": {
+				"height": 32,
+				"width": 30
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0006numeral6.png",
+			"pos": {
+				"x": 1988,
+				"y": 730
+			},
+			"size": {
+				"height": 32,
+				"width": 38
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0007numeral7.png",
+			"pos": {
+				"x": 990,
+				"y": 894
+			},
+			"size": {
+				"height": 32,
+				"width": 52
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0008numeral8.png",
+			"pos": {
+				"x": 930,
+				"y": 894
+			},
+			"size": {
+				"height": 32,
+				"width": 58
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0009numeral9.png",
+			"pos": {
+				"x": 1476,
+				"y": 1772
+			},
+			"size": {
+				"height": 32,
+				"width": 38
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0010numeral10.png",
+			"pos": {
+				"x": 684,
+				"y": 1514
+			},
+			"size": {
+				"height": 32,
+				"width": 30
+			},
+			"texPage": 0
+		},
+		{
+			"cursor": {
+				"xOffset": 15,
+				"yOffset": 7
+			},
+			"hasAlpha": 1,
+			"name": "0011cursorwalk.png",
+			"pos": {
+				"x": 1904,
+				"y": 758
+			},
+			"size": {
+				"height": 68,
+				"width": 76
+			},
+			"texPage": 0
+		},
+		{
+			"cursor": {
+				"xOffset": 1,
+				"yOffset": 2
+			},
+			"hasAlpha": 1,
+			"name": "0012cursorselect.png",
+			"pos": {
+				"x": 1576,
+				"y": 520
+			},
+			"size": {
+				"height": 58,
+				"width": 48
+			},
+			"texPage": 2
+		},
+		{
+			"cursor": {
+				"xOffset": 2,
+				"yOffset": 2
+			},
+			"hasAlpha": 1,
+			"name": "0013cursorcohortinfo.png",
+			"pos": {
+				"x": 1988,
+				"y": 470
+			},
+			"size": {
+				"height": 60,
+				"width": 52
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0014cursorgreenrangemod.png",
+			"pos": {
+				"x": 368,
+				"y": 1922
+			},
+			"size": {
+				"height": 114,
+				"width": 114
+			},
+			"texPage": 0
+		},
+		{
+			"cursor": {
+				"xOffset": 90,
+				"yOffset": 32
+			},
+			"hasAlpha": 1,
+			"name": "0015strat_03-7.png",
+			"pos": {
+				"x": 1632,
+				"y": 248
+			},
+			"size": {
+				"height": 128,
+				"width": 180
+			},
+			"texPage": 2
+		},
+		{
+			"cursor": {
+				"xOffset": 16,
+				"yOffset": 1
+			},
+			"hasAlpha": 1,
+			"name": "0016cursorstepforward.png",
+			"pos": {
+				"x": 334,
+				"y": 1698
+			},
+			"size": {
+				"height": 90,
+				"width": 64
+			},
+			"texPage": 2
+		},
+		{
+			"cursor": {
+				"xOffset": 16,
+				"yOffset": 43
+			},
+			"hasAlpha": 1,
+			"name": "0017cursorstepback.png",
+			"pos": {
+				"x": 334,
+				"y": 1790
+			},
+			"size": {
+				"height": 90,
+				"width": 64
+			},
+			"texPage": 2
+		},
+		{
+			"cursor": {
+				"xOffset": 3,
+				"yOffset": 16
+			},
+			"hasAlpha": 1,
+			"name": "0018arrow_huge_left.png",
+			"pos": {
+				"x": 1884,
+				"y": 1094
+			},
+			"size": {
+				"height": 64,
+				"width": 90
+			},
+			"texPage": 2
+		},
+		{
+			"cursor": {
+				"xOffset": 13,
+				"yOffset": 2
+			},
+			"hasAlpha": 1,
+			"name": "0019cursorrotateright.png",
+			"pos": {
+				"x": 1814,
+				"y": 248
+			},
+			"size": {
+				"height": 74,
+				"width": 38
+			},
+			"texPage": 2
+		},
+		{
+			"cursor": {
+				"xOffset": 19,
+				"yOffset": 22
+			},
+			"hasAlpha": 1,
+			"name": "0020cursormouselook_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"cursor": {
+				"xOffset": 5,
+				"yOffset": 2
+			},
+			"hasAlpha": 1,
+			"name": "0021cursorrotateleft.png",
+			"pos": {
+				"x": 1814,
+				"y": 324
+			},
+			"size": {
+				"height": 74,
+				"width": 38
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0022numerali.png",
+			"pos": {
+				"x": 1918,
+				"y": 204
+			},
+			"size": {
+				"height": 18,
+				"width": 10
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0023numeralv.png",
+			"pos": {
+				"x": 1794,
+				"y": 204
+			},
+			"size": {
+				"height": 18,
+				"width": 20
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0024numeralx.png",
+			"pos": {
+				"x": 1816,
+				"y": 204
+			},
+			"size": {
+				"height": 18,
+				"width": 20
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0025numerall.png",
+			"pos": {
+				"x": 1838,
+				"y": 204
+			},
+			"size": {
+				"height": 18,
+				"width": 18
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0026numeralc.png",
+			"pos": {
+				"x": 1858,
+				"y": 204
+			},
+			"size": {
+				"height": 18,
+				"width": 18
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0027numerald.png",
+			"pos": {
+				"x": 1878,
+				"y": 204
+			},
+			"size": {
+				"height": 18,
+				"width": 18
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0028numeralm.png",
+			"pos": {
+				"x": 1898,
+				"y": 204
+			},
+			"size": {
+				"height": 18,
+				"width": 18
+			},
+			"texPage": 2
+		},
+		{
+			"cursor": {
+				"xOffset": 2,
+				"yOffset": 3
+			},
+			"hasAlpha": 1,
+			"name": "0029cursorclick.png",
+			"pos": {
+				"x": 1988,
+				"y": 640
+			},
+			"size": {
+				"height": 44,
+				"width": 40
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0030sharedpage_box--half size.png",
+			"pos": {
+				"x": 1448,
+				"y": 708
+			},
+			"size": {
+				"height": 42,
+				"width": 72
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0031sharedpage_cross-half size_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0032sliderhandle.png",
+			"pos": {
+				"x": 894,
+				"y": 1916
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0033sliderleft.png",
+			"pos": {
+				"x": 1976,
+				"y": 1094
+			},
+			"size": {
+				"height": 64,
+				"width": 64
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0034sliderright.png",
+			"pos": {
+				"x": 1104,
+				"y": 1618
+			},
+			"size": {
+				"height": 64,
+				"width": 64
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0035sliderhorizontal.png",
+			"pos": {
+				"x": 902,
+				"y": 1916
+			},
+			"size": {
+				"height": 30,
+				"width": 2
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0036sliderup.png",
+			"pos": {
+				"x": 708,
+				"y": 916
+			},
+			"size": {
+				"height": 86,
+				"width": 86
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0037slidervertical.png",
+			"pos": {
+				"x": 1586,
+				"y": 2024
+			},
+			"size": {
+				"height": 2,
+				"width": 30
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0038sliderdown.png",
+			"pos": {
+				"x": 796,
+				"y": 916
+			},
+			"size": {
+				"height": 86,
+				"width": 86
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0039frametl.png",
+			"pos": {
+				"x": 2026,
+				"y": 1422
+			},
+			"size": {
+				"height": 16,
+				"width": 16
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0040framehorizontal.png",
+			"pos": {
+				"x": 646,
+				"y": 2002
+			},
+			"size": {
+				"height": 30,
+				"width": 62
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0041framevertical.png",
+			"pos": {
+				"x": 1704,
+				"y": 1932
+			},
+			"size": {
+				"height": 62,
+				"width": 30
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0042radarframebl.png",
+			"pos": {
+				"x": 2026,
+				"y": 1444
+			},
+			"size": {
+				"height": 16,
+				"width": 16
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0043resizehandle_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0044cameraviewlarge_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0045cameraviewsml_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0046sharedpage_tick-half size_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0047checkboxbg.png",
+			"pos": {
+				"x": 1990,
+				"y": 174
+			},
+			"size": {
+				"height": 46,
+				"width": 46
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0048controldec.png",
+			"pos": {
+				"x": 1944,
+				"y": 1444
+			},
+			"size": {
+				"height": 138,
+				"width": 92
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0049controlinc.png",
+			"pos": {
+				"x": 1944,
+				"y": 1584
+			},
+			"size": {
+				"height": 138,
+				"width": 92
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0050txtbtnlend.png",
+			"pos": {
+				"x": 1992,
+				"y": 616
+			},
+			"size": {
+				"height": 62,
+				"width": 12
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0051txtbtnmid.png",
+			"pos": {
+				"x": 1402,
+				"y": 1788
+			},
+			"size": {
+				"height": 62,
+				"width": 126
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0052txtbtnrend.png",
+			"pos": {
+				"x": 2006,
+				"y": 1402
+			},
+			"size": {
+				"height": 62,
+				"width": 14
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0053txtbtndwnlend.png",
+			"pos": {
+				"x": 1992,
+				"y": 684
+			},
+			"size": {
+				"height": 62,
+				"width": 12
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0054txtbtndwnmid.png",
+			"pos": {
+				"x": 1374,
+				"y": 1976
+			},
+			"size": {
+				"height": 62,
+				"width": 126
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0055txtbtndwnrend.png",
+			"pos": {
+				"x": 1868,
+				"y": 1936
+			},
+			"size": {
+				"height": 62,
+				"width": 14
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0056checkboxgrey.png",
+			"pos": {
+				"x": 1576,
+				"y": 638
+			},
+			"size": {
+				"height": 46,
+				"width": 46
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0057sharedpage_arrow_box-half size_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0058sharedpage_arrow_box-half size copy_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0059cardrun.png",
+			"pos": {
+				"x": 776,
+				"y": 450
+			},
+			"size": {
+				"height": 80,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0060cardwalk.png",
+			"pos": {
+				"x": 916,
+				"y": 450
+			},
+			"size": {
+				"height": 80,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0061shared_02-48.png",
+			"pos": {
+				"x": 1056,
+				"y": 450
+			},
+			"size": {
+				"height": 80,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0062shared_02-49.png",
+			"pos": {
+				"x": 1196,
+				"y": 450
+			},
+			"size": {
+				"height": 80,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0063shared_02-50.png",
+			"pos": {
+				"x": 766,
+				"y": 1964
+			},
+			"size": {
+				"height": 80,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0064shared_02-51.png",
+			"pos": {
+				"x": 906,
+				"y": 1964
+			},
+			"size": {
+				"height": 80,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0065shared_02-52.png",
+			"pos": {
+				"x": 1046,
+				"y": 1964
+			},
+			"size": {
+				"height": 80,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0066cursorredrangemod.png",
+			"pos": {
+				"x": 360,
+				"y": 380
+			},
+			"size": {
+				"height": 114,
+				"width": 114
+			},
+			"texPage": 5
+		},
+		{
+			"cursor": {
+				"xOffset": 34,
+				"yOffset": 31
+			},
+			"hasAlpha": 1,
+			"name": "0067impassable.png",
+			"pos": {
+				"x": 1046,
+				"y": 532
+			},
+			"size": {
+				"height": 400,
+				"width": 400
+			},
+			"texPage": 2
+		},
+		{
+			"cursor": {
+				"xOffset": 13,
+				"yOffset": 13
+			},
+			"hasAlpha": 1,
+			"name": "0068shared_02-42.png",
+			"pos": {
+				"x": 1910,
+				"y": 930
+			},
+			"size": {
+				"height": 92,
+				"width": 104
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0069gadgetframeup_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0070gadgetframedown_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"cursor": {
+				"xOffset": 1,
+				"yOffset": 2
+			},
+			"hasAlpha": 1,
+			"name": "0071cursorperformaction.png",
+			"pos": {
+				"x": 1576,
+				"y": 580
+			},
+			"size": {
+				"height": 56,
+				"width": 46
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0072shared_02-30.png",
+			"pos": {
+				"x": 1486,
+				"y": 1948
+			},
+			"size": {
+				"height": 90,
+				"width": 90
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0073shared_02-31.png",
+			"pos": {
+				"x": 340,
+				"y": 980
+			},
+			"size": {
+				"height": 90,
+				"width": 90
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0074shared_02-32.png",
+			"pos": {
+				"x": 432,
+				"y": 970
+			},
+			"size": {
+				"height": 90,
+				"width": 90
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0075shared_02-33.png",
+			"pos": {
+				"x": 524,
+				"y": 960
+			},
+			"size": {
+				"height": 90,
+				"width": 90
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0076upgrade_siege_ladder.png",
+			"pos": {
+				"x": 1568,
+				"y": 1338
+			},
+			"size": {
+				"height": 200,
+				"width": 202
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0077upgrade_siege_tower.png",
+			"pos": {
+				"x": 1700,
+				"y": 638
+			},
+			"size": {
+				"height": 200,
+				"width": 202
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0078upgrade_siege_ram.png",
+			"pos": {
+				"x": 1568,
+				"y": 1134
+			},
+			"size": {
+				"height": 202,
+				"width": 204
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0079upgrade_siege_sapping.png",
+			"pos": {
+				"x": 1706,
+				"y": 840
+			},
+			"size": {
+				"height": 200,
+				"width": 202
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0080minibuttondown_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0081minibuttonup_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"cursor": {
+				"xOffset": 1,
+				"yOffset": 2
+			},
+			"hasAlpha": 1,
+			"name": "0082pointertl_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"cursor": {
+				"xOffset": 37,
+				"yOffset": 2
+			},
+			"hasAlpha": 1,
+			"name": "0083pointertr_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"cursor": {
+				"xOffset": 1,
+				"yOffset": 44
+			},
+			"hasAlpha": 1,
+			"name": "0084pointerbl_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"cursor": {
+				"xOffset": 36,
+				"yOffset": 43
+			},
+			"hasAlpha": 1,
+			"name": "0085pointerbr_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0086shared_02-2.png",
+			"pos": {
+				"x": 1944,
+				"y": 558
+			},
+			"size": {
+				"height": 96,
+				"width": 96
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0087shared_02-1.png",
+			"pos": {
+				"x": 1020,
+				"y": 1916
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0088shared_02-3.png",
+			"pos": {
+				"x": 1686,
+				"y": 1908
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0089shared_02-6.png",
+			"pos": {
+				"x": 1938,
+				"y": 1908
+			},
+			"size": {
+				"height": 96,
+				"width": 96
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0090shared_02-5.png",
+			"pos": {
+				"x": 1812,
+				"y": 1908
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0091shared_02-12.png",
+			"pos": {
+				"x": 762,
+				"y": 252
+			},
+			"size": {
+				"height": 96,
+				"width": 96
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0092shared_02-11.png",
+			"pos": {
+				"x": 430,
+				"y": 2
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0093shared_02-8.png",
+			"pos": {
+				"x": 860,
+				"y": 252
+			},
+			"size": {
+				"height": 96,
+				"width": 96
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0094shared_02-7.png",
+			"pos": {
+				"x": 1432,
+				"y": 1172
+			},
+			"size": {
+				"height": 138,
+				"width": 138
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0095shared_02-14.png",
+			"pos": {
+				"x": 958,
+				"y": 252
+			},
+			"size": {
+				"height": 96,
+				"width": 96
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0096shared_02-13.png",
+			"pos": {
+				"x": 2,
+				"y": 648
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0097shared_02-4.png",
+			"pos": {
+				"x": 592,
+				"y": 366
+			},
+			"size": {
+				"height": 96,
+				"width": 96
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0098shared_02-10.png",
+			"pos": {
+				"x": 690,
+				"y": 364
+			},
+			"size": {
+				"height": 96,
+				"width": 96
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0099shared_02-9.png",
+			"pos": {
+				"x": 556,
+				"y": 2
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0100shared_02-16.png",
+			"pos": {
+				"x": 788,
+				"y": 350
+			},
+			"size": {
+				"height": 96,
+				"width": 96
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0101shared_02-15.png",
+			"pos": {
+				"x": 2,
+				"y": 774
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0102scrolltl_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0103scrolltc_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0104scrolltr_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0105scrollml_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0106scrollm_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0107scrollmr_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0108scrollbl_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0109scrollbc_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0110scrollbr_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0111closedisabled_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0112close_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0113expanddisabled.png",
+			"pos": {
+				"x": 1944,
+				"y": 1864
+			},
+			"size": {
+				"height": 30,
+				"width": 30
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0114expand.png",
+			"pos": {
+				"x": 1976,
+				"y": 1864
+			},
+			"size": {
+				"height": 30,
+				"width": 30
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0115unitcard_experience_level_7.png",
+			"pos": {
+				"x": 334,
+				"y": 1882
+			},
+			"size": {
+				"height": 66,
+				"width": 66
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0116unitcard_experience_level_4.png",
+			"pos": {
+				"x": 334,
+				"y": 1950
+			},
+			"size": {
+				"height": 66,
+				"width": 66
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0117unitcard_experience_level_1.png",
+			"pos": {
+				"x": 1304,
+				"y": 458
+			},
+			"size": {
+				"height": 74,
+				"width": 74
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0118unitcard_weapon_level_3.png",
+			"pos": {
+				"x": 1956,
+				"y": 1648
+			},
+			"size": {
+				"height": 62,
+				"width": 62
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0119unitcard_weapon_level_2.png",
+			"pos": {
+				"x": 708,
+				"y": 1004
+			},
+			"size": {
+				"height": 74,
+				"width": 74
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0120unitcard_weapon_level_1.png",
+			"pos": {
+				"x": 2,
+				"y": 1698
+			},
+			"size": {
+				"height": 330,
+				"width": 330
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0121unitcard_armour_level_3.png",
+			"pos": {
+				"x": 1956,
+				"y": 1712
+			},
+			"size": {
+				"height": 62,
+				"width": 62
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0122unitcard_armour_level_2.png",
+			"pos": {
+				"x": 246,
+				"y": 980
+			},
+			"size": {
+				"height": 90,
+				"width": 92
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0123unitcard_armour_level_1.png",
+			"pos": {
+				"x": 364,
+				"y": 364
+			},
+			"size": {
+				"height": 330,
+				"width": 330
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0124missileupgradegold_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0125missileupgradesilver_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0126missileupgradebronze_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0127siegeupgradegold_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0128siegeupgradesilver_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0129siegeupgradebronze_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0130spearupgradegold_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0131spearupgradesilver_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0132spearupgradebronze_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0133cardorig copy.png",
+			"pos": {
+				"x": 364,
+				"y": 696
+			},
+			"size": {
+				"height": 334,
+				"width": 252
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0134cardorig copy 3.png",
+			"pos": {
+				"x": 684,
+				"y": 1264
+			},
+			"size": {
+				"height": 248,
+				"width": 186
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0135sqrhighlight.png",
+			"pos": {
+				"x": 784,
+				"y": 1004
+			},
+			"size": {
+				"height": 74,
+				"width": 74
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0136magnifying_glass.png",
+			"pos": {
+				"x": 632,
+				"y": 2
+			},
+			"size": {
+				"height": 614,
+				"width": 614
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0137magnifying_glass_disabled.png",
+			"pos": {
+				"x": 632,
+				"y": 928
+			},
+			"size": {
+				"height": 116,
+				"width": 116
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0138button_ring.png",
+			"pos": {
+				"x": 2,
+				"y": 2
+			},
+			"size": {
+				"height": 628,
+				"width": 628
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0139frametl.png",
+			"pos": {
+				"x": 1538,
+				"y": 1652
+			},
+			"size": {
+				"height": 10,
+				"width": 10
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0140frametr.png",
+			"pos": {
+				"x": 1794,
+				"y": 1430
+			},
+			"size": {
+				"height": 14,
+				"width": 14
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0141framecl.png",
+			"pos": {
+				"x": 1794,
+				"y": 1298
+			},
+			"size": {
+				"height": 126,
+				"width": 14
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0142framecr.png",
+			"pos": {
+				"x": 1938,
+				"y": 1488
+			},
+			"size": {
+				"height": 126,
+				"width": 14
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0143framebl.png",
+			"pos": {
+				"x": 1958,
+				"y": 1604
+			},
+			"size": {
+				"height": 10,
+				"width": 10
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0144framebr.png",
+			"pos": {
+				"x": 1216,
+				"y": 1796
+			},
+			"size": {
+				"height": 14,
+				"width": 14
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0145frametc.png",
+			"pos": {
+				"x": 292,
+				"y": 1960
+			},
+			"size": {
+				"height": 14,
+				"width": 126
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0146framebc.png",
+			"pos": {
+				"x": 910,
+				"y": 1370
+			},
+			"size": {
+				"height": 14,
+				"width": 126
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0147frameccbeige.png",
+			"pos": {
+				"x": 1192,
+				"y": 1488
+			},
+			"size": {
+				"height": 26,
+				"width": 26
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0148tick.png",
+			"pos": {
+				"x": 632,
+				"y": 618
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0149cross.png",
+			"pos": {
+				"x": 834,
+				"y": 618
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0150beveltl.png",
+			"pos": {
+				"x": 2026,
+				"y": 1466
+			},
+			"size": {
+				"height": 16,
+				"width": 16
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0151beveltc.png",
+			"pos": {
+				"x": 1866,
+				"y": 1622
+			},
+			"size": {
+				"height": 16,
+				"width": 16
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0152beveltr.png",
+			"pos": {
+				"x": 1866,
+				"y": 1644
+			},
+			"size": {
+				"height": 16,
+				"width": 16
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0153bevelcl.png",
+			"pos": {
+				"x": 1952,
+				"y": 1724
+			},
+			"size": {
+				"height": 16,
+				"width": 16
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0154bevelcr.png",
+			"pos": {
+				"x": 2004,
+				"y": 1684
+			},
+			"size": {
+				"height": 16,
+				"width": 16
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0155bevelbl.png",
+			"pos": {
+				"x": 2026,
+				"y": 1684
+			},
+			"size": {
+				"height": 16,
+				"width": 16
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0156bevelbc.png",
+			"pos": {
+				"x": 1974,
+				"y": 1724
+			},
+			"size": {
+				"height": 16,
+				"width": 16
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0157bevelbr.png",
+			"pos": {
+				"x": 1534,
+				"y": 1832
+			},
+			"size": {
+				"height": 16,
+				"width": 16
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0158battlestats_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0159battlestatsdisabled_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0160camera.png",
+			"pos": {
+				"x": 1232,
+				"y": 1850
+			},
+			"size": {
+				"height": 190,
+				"width": 190
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0161savereplaydisabled.png",
+			"pos": {
+				"x": 594,
+				"y": 606
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0162button_ring_disabled.png",
+			"pos": {
+				"x": 2,
+				"y": 632
+			},
+			"size": {
+				"height": 628,
+				"width": 628
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0163largering_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0164blankbuttonlrg_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0165formation.png",
+			"pos": {
+				"x": 2,
+				"y": 894
+			},
+			"size": {
+				"height": 400,
+				"width": 400
+			},
+			"texPage": 2
+		},
+		{
+			"cursor": {
+				"xOffset": 5,
+				"yOffset": 1
+			},
+			"hasAlpha": 1,
+			"name": "0166cursorpickup.png",
+			"pos": {
+				"x": 1988,
+				"y": 406
+			},
+			"size": {
+				"height": 62,
+				"width": 54
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0167armystrength.png",
+			"pos": {
+				"x": 1668,
+				"y": 204
+			},
+			"size": {
+				"height": 10,
+				"width": 124
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0168tick.png",
+			"pos": {
+				"x": 404,
+				"y": 1296
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0169xpstar.png",
+			"pos": {
+				"x": 1018,
+				"y": 334
+			},
+			"size": {
+				"height": 32,
+				"width": 32
+			},
+			"texPage": 0
+		},
+		{
+			"cursor": {
+				"xOffset": 14,
+				"yOffset": 11
+			},
+			"hasAlpha": 1,
+			"name": "0170shared_02-38.png",
+			"pos": {
+				"x": 1634,
+				"y": 284
+			},
+			"size": {
+				"height": 94,
+				"width": 70
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0171questionbutton_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0172upgradebutton_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0173uparrow_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0174downarrow_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0175speechtl.png",
+			"pos": {
+				"x": 1804,
+				"y": 1622
+			},
+			"size": {
+				"height": 30,
+				"width": 30
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0176speechbl.png",
+			"pos": {
+				"x": 714,
+				"y": 2002
+			},
+			"size": {
+				"height": 30,
+				"width": 30
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0177speechtr.png",
+			"pos": {
+				"x": 1914,
+				"y": 542
+			},
+			"size": {
+				"height": 30,
+				"width": 30
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0178speechbr.png",
+			"pos": {
+				"x": 1820,
+				"y": 1908
+			},
+			"size": {
+				"height": 30,
+				"width": 30
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0179speechcl.png",
+			"pos": {
+				"x": 1704,
+				"y": 2000
+			},
+			"size": {
+				"height": 2,
+				"width": 30
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0180speechcr.png",
+			"pos": {
+				"x": 1236,
+				"y": 1796
+			},
+			"size": {
+				"height": 2,
+				"width": 30
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0181speechtc.png",
+			"pos": {
+				"x": 902,
+				"y": 1952
+			},
+			"size": {
+				"height": 30,
+				"width": 2
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0182speechbc.png",
+			"pos": {
+				"x": 902,
+				"y": 1988
+			},
+			"size": {
+				"height": 30,
+				"width": 2
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0183speechlink.png",
+			"pos": {
+				"x": 708,
+				"y": 462
+			},
+			"size": {
+				"height": 84,
+				"width": 78
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0184advisorpanel_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0185cursorwaypoint.png",
+			"pos": {
+				"x": 476,
+				"y": 376
+			},
+			"size": {
+				"height": 114,
+				"width": 114
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0186bannerup.png",
+			"pos": {
+				"x": 310,
+				"y": 506
+			},
+			"size": {
+				"height": 114,
+				"width": 114
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0187advisorok.png",
+			"pos": {
+				"x": 1336,
+				"y": 450
+			},
+			"size": {
+				"height": 66,
+				"width": 64
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0188roundcheckbox.png",
+			"pos": {
+				"x": 1988,
+				"y": 686
+			},
+			"size": {
+				"height": 42,
+				"width": 42
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0189checkbox_indeterminate.png",
+			"pos": {
+				"x": 682,
+				"y": 2
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0190checkboxtick.png",
+			"pos": {
+				"x": 1696,
+				"y": 1648
+			},
+			"size": {
+				"height": 128,
+				"width": 128
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0191checkbox.png",
+			"pos": {
+				"x": 2,
+				"y": 900
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0192agent_general_gold_cropped.png",
+			"pos": {
+				"x": 860,
+				"y": 1004
+			},
+			"size": {
+				"height": 74,
+				"width": 74
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0193agent_general_cropped.png",
+			"pos": {
+				"x": 1522,
+				"y": 708
+			},
+			"size": {
+				"height": 54,
+				"width": 54
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0194merge.png",
+			"pos": {
+				"x": 246,
+				"y": 632
+			},
+			"size": {
+				"height": 114,
+				"width": 114
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0195enter.png",
+			"pos": {
+				"x": 246,
+				"y": 748
+			},
+			"size": {
+				"height": 114,
+				"width": 114
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0196negotiate.png",
+			"pos": {
+				"x": 246,
+				"y": 864
+			},
+			"size": {
+				"height": 114,
+				"width": 114
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0197spy.png",
+			"pos": {
+				"x": 362,
+				"y": 622
+			},
+			"size": {
+				"height": 114,
+				"width": 114
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0198burn.png",
+			"pos": {
+				"x": 404,
+				"y": 894
+			},
+			"size": {
+				"height": 400,
+				"width": 400
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0199assassinate.png",
+			"pos": {
+				"x": 362,
+				"y": 738
+			},
+			"size": {
+				"height": 114,
+				"width": 114
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0200attack.png",
+			"pos": {
+				"x": 362,
+				"y": 854
+			},
+			"size": {
+				"height": 114,
+				"width": 114
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0201burnandkill.png",
+			"pos": {
+				"x": 426,
+				"y": 496
+			},
+			"size": {
+				"height": 114,
+				"width": 114
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0202zoomtoadvice_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"cursor": {
+				"xOffset": 0,
+				"yOffset": 23
+			},
+			"hasAlpha": 1,
+			"name": "0203pointerleft_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"cursor": {
+				"xOffset": 36,
+				"yOffset": 20
+			},
+			"hasAlpha": 1,
+			"name": "0204pointerright_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"cursor": {
+				"xOffset": 20,
+				"yOffset": 1
+			},
+			"hasAlpha": 1,
+			"name": "0205pointerup_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"cursor": {
+				"xOffset": 18,
+				"yOffset": 44
+			},
+			"hasAlpha": 1,
+			"name": "0206pointerdown_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0207shared_02-47.png",
+			"pos": {
+				"x": 2008,
+				"y": 1864
+			},
+			"size": {
+				"height": 30,
+				"width": 30
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0208embark.png",
+			"pos": {
+				"x": 478,
+				"y": 612
+			},
+			"size": {
+				"height": 114,
+				"width": 114
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0209disembark.png",
+			"pos": {
+				"x": 2,
+				"y": 1296
+			},
+			"size": {
+				"height": 400,
+				"width": 400
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0210lrghighlight_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0211medhighlight.png",
+			"pos": {
+				"x": 1440,
+				"y": 2
+			},
+			"size": {
+				"height": 280,
+				"width": 280
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0212smlhighlight.png",
+			"pos": {
+				"x": 286,
+				"y": 1672
+			},
+			"size": {
+				"height": 248,
+				"width": 248
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0213smlmedhighlight.png",
+			"pos": {
+				"x": 1884,
+				"y": 930
+			},
+			"size": {
+				"height": 162,
+				"width": 158
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0214msghighlight.png",
+			"pos": {
+				"x": 768,
+				"y": 1916
+			},
+			"size": {
+				"height": 126,
+				"width": 124
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0215lefthighlight.png",
+			"pos": {
+				"x": 1990,
+				"y": 2
+			},
+			"size": {
+				"height": 84,
+				"width": 54
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0216righthiglight.png",
+			"pos": {
+				"x": 1990,
+				"y": 88
+			},
+			"size": {
+				"height": 84,
+				"width": 54
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0217battlecardhighlight.png",
+			"pos": {
+				"x": 1448,
+				"y": 520
+			},
+			"size": {
+				"height": 186,
+				"width": 126
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0218stratcardhighlight.png",
+			"pos": {
+				"x": 890,
+				"y": 334
+			},
+			"size": {
+				"height": 156,
+				"width": 126
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0219advisorclose.png",
+			"pos": {
+				"x": 1976,
+				"y": 1364
+			},
+			"size": {
+				"height": 66,
+				"width": 64
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0220helpbutton.png",
+			"pos": {
+				"x": 250,
+				"y": 1922
+			},
+			"size": {
+				"height": 116,
+				"width": 116
+			},
+			"texPage": 0
+		},
+		{
+			"cursor": {
+				"xOffset": 25,
+				"yOffset": 1
+			},
+			"hasAlpha": 1,
+			"name": "0221tutorialoffscreenarrow.png",
+			"pos": {
+				"x": 1904,
+				"y": 656
+			},
+			"size": {
+				"height": 100,
+				"width": 102
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0222unitstatus_death.png",
+			"pos": {
+				"x": 1876,
+				"y": 768
+			},
+			"size": {
+				"height": 160,
+				"width": 160
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0223shared_01-1.png",
+			"pos": {
+				"x": 1104,
+				"y": 928
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0224shared_01-1alt.png",
+			"pos": {
+				"x": 1104,
+				"y": 1040
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0225advisortextonly.png",
+			"pos": {
+				"x": 2,
+				"y": 1920
+			},
+			"size": {
+				"height": 122,
+				"width": 122
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0226advisorspeechonly.png",
+			"pos": {
+				"x": 1550,
+				"y": 1850
+			},
+			"size": {
+				"height": 134,
+				"width": 134
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0227speechleftlink.png",
+			"pos": {
+				"x": 806,
+				"y": 894
+			},
+			"size": {
+				"height": 30,
+				"width": 122
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0228manual.png",
+			"pos": {
+				"x": 632,
+				"y": 1046
+			},
+			"size": {
+				"height": 116,
+				"width": 116
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0229manual_disabled.png",
+			"pos": {
+				"x": 750,
+				"y": 820
+			},
+			"size": {
+				"height": 116,
+				"width": 116
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0230dropdownup.png",
+			"pos": {
+				"x": 1018,
+				"y": 458
+			},
+			"size": {
+				"height": 32,
+				"width": 32
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0231drowdowndown.png",
+			"pos": {
+				"x": 1014,
+				"y": 922
+			},
+			"size": {
+				"height": 32,
+				"width": 32
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0232mission-grey--half size.png",
+			"pos": {
+				"x": 886,
+				"y": 350
+			},
+			"size": {
+				"height": 96,
+				"width": 96
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0233mission-half size.png",
+			"pos": {
+				"x": 808,
+				"y": 2
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0234advisortextspeech.png",
+			"pos": {
+				"x": 1626,
+				"y": 406
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0235unitslinked.png",
+			"pos": {
+				"x": 1014,
+				"y": 956
+			},
+			"size": {
+				"height": 30,
+				"width": 30
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0236disabledegg_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0237minus.png",
+			"pos": {
+				"x": 934,
+				"y": 2
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0238plus.png",
+			"pos": {
+				"x": 2,
+				"y": 1636
+			},
+			"size": {
+				"height": 282,
+				"width": 282
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0239minusdisabled_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0240plusdisabled_unused.png",
+			"pos": {
+				"x": 984,
+				"y": 350
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0241tick_disabled.png",
+			"pos": {
+				"x": 1036,
+				"y": 782
+			},
+			"size": {
+				"height": 144,
+				"width": 144
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0242cross-half size copy.png",
+			"pos": {
+				"x": 750,
+				"y": 1046
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0243bezerk.png",
+			"pos": {
+				"x": 1060,
+				"y": 1188
+			},
+			"size": {
+				"height": 30,
+				"width": 30
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0244factionalemannismall.png",
+			"pos": {
+				"x": 364,
+				"y": 1032
+			},
+			"size": {
+				"height": 230,
+				"width": 230
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0245factionempireeastsmall.png",
+			"pos": {
+				"x": 596,
+				"y": 1032
+			},
+			"size": {
+				"height": 230,
+				"width": 230
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0246factionempirewestsmall.png",
+			"pos": {
+				"x": 828,
+				"y": 988
+			},
+			"size": {
+				"height": 230,
+				"width": 230
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0247factionfrankssmall.png",
+			"pos": {
+				"x": 872,
+				"y": 1220
+			},
+			"size": {
+				"height": 230,
+				"width": 230
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0248factionhunssmall.png",
+			"pos": {
+				"x": 872,
+				"y": 1452
+			},
+			"size": {
+				"height": 230,
+				"width": 230
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0249factionsarmationssmall.png",
+			"pos": {
+				"x": 536,
+				"y": 1576
+			},
+			"size": {
+				"height": 230,
+				"width": 230
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0250factionsassanidssmall.png",
+			"pos": {
+				"x": 536,
+				"y": 1808
+			},
+			"size": {
+				"height": 230,
+				"width": 230
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0251factionsaxonssmall.png",
+			"pos": {
+				"x": 768,
+				"y": 1684
+			},
+			"size": {
+				"height": 230,
+				"width": 230
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0252factionvandalssmall.png",
+			"pos": {
+				"x": 1000,
+				"y": 1684
+			},
+			"size": {
+				"height": 230,
+				"width": 230
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0253factiongothssmall.png",
+			"pos": {
+				"x": 1634,
+				"y": 406
+			},
+			"size": {
+				"height": 230,
+				"width": 230
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0254factionceltssmall.png",
+			"pos": {
+				"x": 1072,
+				"y": 458
+			},
+			"size": {
+				"height": 230,
+				"width": 230
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0255factionwhitehunssmall.png",
+			"pos": {
+				"x": 1014,
+				"y": 690
+			},
+			"size": {
+				"height": 230,
+				"width": 230
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0256factionostrogothssmall.png",
+			"pos": {
+				"x": 1060,
+				"y": 922
+			},
+			"size": {
+				"height": 230,
+				"width": 230
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0257factionromanobritishsmall.png",
+			"pos": {
+				"x": 1104,
+				"y": 1154
+			},
+			"size": {
+				"height": 230,
+				"width": 230
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0258factionslavssmall.png",
+			"pos": {
+				"x": 1104,
+				"y": 1386
+			},
+			"size": {
+				"height": 230,
+				"width": 230
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0259factionmoorssmall.png",
+			"pos": {
+				"x": 1246,
+				"y": 690
+			},
+			"size": {
+				"height": 230,
+				"width": 230
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0260factionberberssmall.png",
+			"pos": {
+				"x": 1292,
+				"y": 922
+			},
+			"size": {
+				"height": 230,
+				"width": 230
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0261factionslavessmall.png",
+			"pos": {
+				"x": 1336,
+				"y": 1154
+			},
+			"size": {
+				"height": 230,
+				"width": 230
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0262factionempirewestrebelssmall.png",
+			"pos": {
+				"x": 1336,
+				"y": 1386
+			},
+			"size": {
+				"height": 230,
+				"width": 230
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0263factionempireeastrebelssmall.png",
+			"pos": {
+				"x": 1232,
+				"y": 1618
+			},
+			"size": {
+				"height": 230,
+				"width": 230
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0264swimmingstatus.png",
+			"pos": {
+				"x": 484,
+				"y": 1922
+			},
+			"size": {
+				"height": 30,
+				"width": 30
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0265radarglobe.png",
+			"pos": {
+				"x": 632,
+				"y": 820
+			},
+			"size": {
+				"height": 98,
+				"width": 100
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0266frameccblack.png",
+			"pos": {
+				"x": 2034,
+				"y": 694
+			},
+			"size": {
+				"height": 8,
+				"width": 8
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0267unused.png",
+			"pos": {
+				"x": 1494,
+				"y": 1856
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0268unused.png",
+			"pos": {
+				"x": 1106,
+				"y": 1522
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0269unused.png",
+			"pos": {
+				"x": 1096,
+				"y": 1292
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0270unused.png",
+			"pos": {
+				"x": 1514,
+				"y": 1862
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0271unused.png",
+			"pos": {
+				"x": 1596,
+				"y": 1862
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0272unused.png",
+			"pos": {
+				"x": 1820,
+				"y": 1810
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0273unused.png",
+			"pos": {
+				"x": 800,
+				"y": 1866
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0274unused.png",
+			"pos": {
+				"x": 882,
+				"y": 1840
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0275unused.png",
+			"pos": {
+				"x": 964,
+				"y": 1840
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0276radarframetl.png",
+			"pos": {
+				"x": 1302,
+				"y": 1206
+			},
+			"size": {
+				"height": 18,
+				"width": 18
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0277radarframetc.png",
+			"pos": {
+				"x": 1506,
+				"y": 2024
+			},
+			"size": {
+				"height": 18,
+				"width": 34
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0278radarframetr.png",
+			"pos": {
+				"x": 850,
+				"y": 1840
+			},
+			"size": {
+				"height": 18,
+				"width": 18
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0279radarframecl.png",
+			"pos": {
+				"x": 2010,
+				"y": 694
+			},
+			"size": {
+				"height": 34,
+				"width": 18
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0280radarframecr.png",
+			"pos": {
+				"x": 750,
+				"y": 2002
+			},
+			"size": {
+				"height": 34,
+				"width": 18
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0281radarframebl.png",
+			"pos": {
+				"x": 882,
+				"y": 1938
+			},
+			"size": {
+				"height": 18,
+				"width": 18
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0282radarframebc.png",
+			"pos": {
+				"x": 1546,
+				"y": 2024
+			},
+			"size": {
+				"height": 18,
+				"width": 34
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0283radarframebr.png",
+			"pos": {
+				"x": 1914,
+				"y": 578
+			},
+			"size": {
+				"height": 18,
+				"width": 18
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0284curvedtxtbtnl.png",
+			"pos": {
+				"x": 2024,
+				"y": 336
+			},
+			"size": {
+				"height": 88,
+				"width": 18
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0285curvedtxtbtnmid.png",
+			"pos": {
+				"x": 292,
+				"y": 1866
+			},
+			"size": {
+				"height": 88,
+				"width": 142
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0286curvedtxtbtnr.png",
+			"pos": {
+				"x": 2024,
+				"y": 430
+			},
+			"size": {
+				"height": 88,
+				"width": 18
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0287curvedtxtbtndwnl.png",
+			"pos": {
+				"x": 2024,
+				"y": 524
+			},
+			"size": {
+				"height": 88,
+				"width": 18
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0288curvedtxtbtndwnmid.png",
+			"pos": {
+				"x": 1816,
+				"y": 116
+			},
+			"size": {
+				"height": 88,
+				"width": 142
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0289crvedtxtbtndwnr.png",
+			"pos": {
+				"x": 1678,
+				"y": 1862
+			},
+			"size": {
+				"height": 88,
+				"width": 18
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0290button_ring.png",
+			"pos": {
+				"x": 1036,
+				"y": 618
+			},
+			"size": {
+				"height": 162,
+				"width": 162
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0291menu_sandwich.png",
+			"pos": {
+				"x": 868,
+				"y": 820
+			},
+			"size": {
+				"height": 116,
+				"width": 116
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0292deselectallunitsbattle.png",
+			"pos": {
+				"x": 126,
+				"y": 1920
+			},
+			"size": {
+				"height": 122,
+				"width": 122
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0293deselectallunitscampaign.png",
+			"pos": {
+				"x": 1304,
+				"y": 538
+			},
+			"size": {
+				"height": 150,
+				"width": 116
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0294deselectallunitsbattle.png",
+			"pos": {
+				"x": 126,
+				"y": 1920
+			},
+			"size": {
+				"height": 122,
+				"width": 122
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0295deselectallunitscampaign.png",
+			"pos": {
+				"x": 1422,
+				"y": 538
+			},
+			"size": {
+				"height": 150,
+				"width": 114
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0296helpbutton_disabled.png",
+			"pos": {
+				"x": 1582,
+				"y": 1172
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0297glowadvisor.png",
+			"pos": {
+				"x": 1854,
+				"y": 224
+			},
+			"size": {
+				"height": 180,
+				"width": 180
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0298glowendturn.png",
+			"pos": {
+				"x": 1774,
+				"y": 1042
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0299glowfaction.png",
+			"pos": {
+				"x": 1774,
+				"y": 1244
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0300glowradar.png",
+			"pos": {
+				"x": 890,
+				"y": 492
+			},
+			"size": {
+				"height": 180,
+				"width": 180
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0301menu_sandwich_disabled.png",
+			"pos": {
+				"x": 986,
+				"y": 928
+			},
+			"size": {
+				"height": 116,
+				"width": 116
+			},
+			"texPage": 1
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0302infomissileattack.png",
+			"pos": {
+				"x": 1170,
+				"y": 1618
+			},
+			"size": {
+				"height": 30,
+				"width": 30
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0303infogeneralstar.png",
+			"pos": {
+				"x": 834,
+				"y": 1618
+			},
+			"size": {
+				"height": 30,
+				"width": 30
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0304infohide.png",
+			"pos": {
+				"x": 1724,
+				"y": 1540
+			},
+			"size": {
+				"height": 30,
+				"width": 30
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0305inforun.png",
+			"pos": {
+				"x": 1424,
+				"y": 2000
+			},
+			"size": {
+				"height": 30,
+				"width": 30
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0306infowalk.png",
+			"pos": {
+				"x": 1146,
+				"y": 1998
+			},
+			"size": {
+				"height": 30,
+				"width": 30
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0307factioniazygessmall.png",
+			"pos": {
+				"x": 884,
+				"y": 940
+			},
+			"size": {
+				"height": 62,
+				"width": 62
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0308factionroxolanismall.png",
+			"pos": {
+				"x": 1464,
+				"y": 1618
+			},
+			"size": {
+				"height": 230,
+				"width": 230
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0309factionquaddismall.png",
+			"pos": {
+				"x": 948,
+				"y": 940
+			},
+			"size": {
+				"height": 62,
+				"width": 62
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0310factionmarcomannismall.png",
+			"pos": {
+				"x": 936,
+				"y": 1004
+			},
+			"size": {
+				"height": 62,
+				"width": 62
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0311factionlombardismall.png",
+			"pos": {
+				"x": 2,
+				"y": 2
+			},
+			"size": {
+				"height": 230,
+				"width": 230
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0312factionburgundismall.png",
+			"pos": {
+				"x": 2,
+				"y": 234
+			},
+			"size": {
+				"height": 230,
+				"width": 230
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0313recruitmentcardhighloght.png",
+			"pos": {
+				"x": 1424,
+				"y": 1850
+			},
+			"size": {
+				"height": 148,
+				"width": 124
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0314constructioncardhighlight.png",
+			"pos": {
+				"x": 1578,
+				"y": 1896
+			},
+			"size": {
+				"height": 140,
+				"width": 170
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0315glowgoldadvisor.png",
+			"pos": {
+				"x": 2,
+				"y": 466
+			},
+			"size": {
+				"height": 180,
+				"width": 180
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0316add.png",
+			"pos": {
+				"x": 1826,
+				"y": 1648
+			},
+			"size": {
+				"height": 128,
+				"width": 128
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0317spinner.png",
+			"pos": {
+				"x": 594,
+				"y": 718
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0318hordewheel.png",
+			"pos": {
+				"x": 1270,
+				"y": 1964
+			},
+			"size": {
+				"height": 80,
+				"width": 80
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0319title_base.png",
+			"pos": {
+				"x": 2,
+				"y": 2
+			},
+			"size": {
+				"height": 528,
+				"width": 772
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0320buttonshadow120.png",
+			"pos": {
+				"x": 1902,
+				"y": 1896
+			},
+			"size": {
+				"height": 144,
+				"width": 144
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0321buttonshadow180.png",
+			"pos": {
+				"x": 234,
+				"y": 2
+			},
+			"size": {
+				"height": 194,
+				"width": 194
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0322buttonshadow200.png",
+			"pos": {
+				"x": 1772,
+				"y": 1446
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0323unitcard_bonus_desert.png",
+			"pos": {
+				"x": 1706,
+				"y": 1042
+			},
+			"size": {
+				"height": 66,
+				"width": 66
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0324unitcard_bonus_snow.png",
+			"pos": {
+				"x": 360,
+				"y": 1264
+			},
+			"size": {
+				"height": 66,
+				"width": 66
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0325unitcard_bonus_woods.png",
+			"pos": {
+				"x": 1976,
+				"y": 1024
+			},
+			"size": {
+				"height": 66,
+				"width": 66
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0326fill_bar_background_center_big.png",
+			"pos": {
+				"x": 1374,
+				"y": 1796
+			},
+			"size": {
+				"height": 24,
+				"width": 22
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0327fill_bar_background_left_big.png",
+			"pos": {
+				"x": 1374,
+				"y": 1826
+			},
+			"size": {
+				"height": 24,
+				"width": 22
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0328fill_bar_background_right_big.png",
+			"pos": {
+				"x": 774,
+				"y": 2002
+			},
+			"size": {
+				"height": 24,
+				"width": 22
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0329progbarbig_fill_allied.png",
+			"pos": {
+				"x": 1988,
+				"y": 532
+			},
+			"size": {
+				"height": 52,
+				"width": 52
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0330progbarbig_fill_ammo.png",
+			"pos": {
+				"x": 1632,
+				"y": 378
+			},
+			"size": {
+				"height": 24,
+				"width": 24
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0331progbarbig_fill_enemy.png",
+			"pos": {
+				"x": 1988,
+				"y": 586
+			},
+			"size": {
+				"height": 52,
+				"width": 52
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0332progbarbig_fill_health.png",
+			"pos": {
+				"x": 766,
+				"y": 1296
+			},
+			"size": {
+				"height": 16,
+				"width": 16
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0333progbarbig_fill_stamina.png",
+			"pos": {
+				"x": 1578,
+				"y": 686
+			},
+			"size": {
+				"height": 46,
+				"width": 46
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0334progbarsmall_back_center.png",
+			"pos": {
+				"x": 1840,
+				"y": 1622
+			},
+			"size": {
+				"height": 28,
+				"width": 20
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0335progbarsmall_back_left.png",
+			"pos": {
+				"x": 2004,
+				"y": 1616
+			},
+			"size": {
+				"height": 28,
+				"width": 20
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0336progbarsmall_back_right.png",
+			"pos": {
+				"x": 2004,
+				"y": 1650
+			},
+			"size": {
+				"height": 28,
+				"width": 20
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0337progbarsmall_fill_allied.png",
+			"pos": {
+				"x": 334,
+				"y": 2018
+			},
+			"size": {
+				"height": 28,
+				"width": 28
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0338progbarsmall_fill_bad.png",
+			"pos": {
+				"x": 364,
+				"y": 2018
+			},
+			"size": {
+				"height": 28,
+				"width": 28
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0339progbarsmall_fill_good.png",
+			"pos": {
+				"x": 726,
+				"y": 334
+			},
+			"size": {
+				"height": 28,
+				"width": 28
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0340progbarsmall_fill_warning.png",
+			"pos": {
+				"x": 756,
+				"y": 334
+			},
+			"size": {
+				"height": 28,
+				"width": 28
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0341battle_health.png",
+			"pos": {
+				"x": 616,
+				"y": 942
+			},
+			"size": {
+				"height": 90,
+				"width": 90
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0342close.png",
+			"pos": {
+				"x": 1696,
+				"y": 1778
+			},
+			"size": {
+				"height": 128,
+				"width": 128
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0343unitcard_experience_level_2.png",
+			"pos": {
+				"x": 1976,
+				"y": 1092
+			},
+			"size": {
+				"height": 66,
+				"width": 66
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0344unitcard_experience_level_3.png",
+			"pos": {
+				"x": 726,
+				"y": 2
+			},
+			"size": {
+				"height": 330,
+				"width": 330
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0345unitcard_experience_level_5.png",
+			"pos": {
+				"x": 1976,
+				"y": 1160
+			},
+			"size": {
+				"height": 66,
+				"width": 66
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0346unitcard_experience_level_6.png",
+			"pos": {
+				"x": 980,
+				"y": 712
+			},
+			"size": {
+				"height": 74,
+				"width": 74
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0347unitcard_experience_level_8.png",
+			"pos": {
+				"x": 1976,
+				"y": 1228
+			},
+			"size": {
+				"height": 66,
+				"width": 66
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0348unitcard_experience_level_9.png",
+			"pos": {
+				"x": 234,
+				"y": 198
+			},
+			"size": {
+				"height": 180,
+				"width": 180
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0349unit_experience_level.png",
+			"pos": {
+				"x": 1524,
+				"y": 912
+			},
+			"size": {
+				"height": 220,
+				"width": 180
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0350settlement_public_order.png",
+			"pos": {
+				"x": 478,
+				"y": 728
+			},
+			"size": {
+				"height": 114,
+				"width": 114
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0351settlement_taxes.png",
+			"pos": {
+				"x": 1380,
+				"y": 284
+			},
+			"size": {
+				"height": 252,
+				"width": 252
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0352news_counter.png",
+			"pos": {
+				"x": 1976,
+				"y": 1296
+			},
+			"size": {
+				"height": 66,
+				"width": 66
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0353tableft_arrowleft.png",
+			"pos": {
+				"x": 618,
+				"y": 696
+			},
+			"size": {
+				"height": 320,
+				"width": 200
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0354tableft_arrowright.png",
+			"pos": {
+				"x": 288,
+				"y": 1350
+			},
+			"size": {
+				"height": 320,
+				"width": 200
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0355tabup_arrowdown.png",
+			"pos": {
+				"x": 1668,
+				"y": 2
+			},
+			"size": {
+				"height": 200,
+				"width": 320
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0356tabup_arrowup.png",
+			"pos": {
+				"x": 1722,
+				"y": 2
+			},
+			"size": {
+				"height": 200,
+				"width": 320
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0357news_noresponse.png",
+			"pos": {
+				"x": 1012,
+				"y": 940
+			},
+			"size": {
+				"height": 62,
+				"width": 62
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0358news_respond.png",
+			"pos": {
+				"x": 1000,
+				"y": 1004
+			},
+			"size": {
+				"height": 62,
+				"width": 62
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0359news_unread.png",
+			"pos": {
+				"x": 128,
+				"y": 1002
+			},
+			"size": {
+				"height": 62,
+				"width": 62
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0360newsback_bad_center.png",
+			"pos": {
+				"x": 2002,
+				"y": 476
+			},
+			"size": {
+				"height": 124,
+				"width": 16
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0361newsback_bad_left.png",
+			"pos": {
+				"x": 2030,
+				"y": 1074
+			},
+			"size": {
+				"height": 110,
+				"width": 12
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0362newsback_bad_right.png",
+			"pos": {
+				"x": 2030,
+				"y": 1190
+			},
+			"size": {
+				"height": 110,
+				"width": 12
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0363newsback_good_center.png",
+			"pos": {
+				"x": 1972,
+				"y": 616
+			},
+			"size": {
+				"height": 126,
+				"width": 14
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0364newsback_good_left.png",
+			"pos": {
+				"x": 2030,
+				"y": 1306
+			},
+			"size": {
+				"height": 110,
+				"width": 12
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0365newsback_good_right.png",
+			"pos": {
+				"x": 1958,
+				"y": 1488
+			},
+			"size": {
+				"height": 110,
+				"width": 12
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0366settlement_money.png",
+			"pos": {
+				"x": 768,
+				"y": 1514
+			},
+			"size": {
+				"height": 102,
+				"width": 102
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0367unit_stats_down.png",
+			"pos": {
+				"x": 1352,
+				"y": 1964
+			},
+			"size": {
+				"height": 80,
+				"width": 80
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0368unit_stats_up.png",
+			"pos": {
+				"x": 1146,
+				"y": 1916
+			},
+			"size": {
+				"height": 80,
+				"width": 80
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0369unitcard_unit_strength.png",
+			"pos": {
+				"x": 594,
+				"y": 830
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0370progbar3k_back_center.png",
+			"pos": {
+				"x": 1412,
+				"y": 1554
+			},
+			"size": {
+				"height": 136,
+				"width": 96
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0371progbar3k_back_left.png",
+			"pos": {
+				"x": 1412,
+				"y": 1696
+			},
+			"size": {
+				"height": 136,
+				"width": 96
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0372progbar3k_back_right.png",
+			"pos": {
+				"x": 1514,
+				"y": 1720
+			},
+			"size": {
+				"height": 136,
+				"width": 96
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0373progbar3k_fill_center.png",
+			"pos": {
+				"x": 1616,
+				"y": 1720
+			},
+			"size": {
+				"height": 136,
+				"width": 96
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0374progbar3k_fill_left.png",
+			"pos": {
+				"x": 1412,
+				"y": 1838
+			},
+			"size": {
+				"height": 136,
+				"width": 96
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0375progbar3k_fill_right.png",
+			"pos": {
+				"x": 1718,
+				"y": 1810
+			},
+			"size": {
+				"height": 136,
+				"width": 96
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0376infoframe_bc.png",
+			"pos": {
+				"x": 1506,
+				"y": 1954
+			},
+			"size": {
+				"height": 64,
+				"width": 64
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0377infoframe_bl.png",
+			"pos": {
+				"x": 1888,
+				"y": 1750
+			},
+			"size": {
+				"height": 46,
+				"width": 46
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0378infoframe_br.png",
+			"pos": {
+				"x": 1888,
+				"y": 1802
+			},
+			"size": {
+				"height": 46,
+				"width": 46
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0379infoframe_cl.png",
+			"pos": {
+				"x": 1888,
+				"y": 1854
+			},
+			"size": {
+				"height": 46,
+				"width": 46
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0380infoframe_cr.png",
+			"pos": {
+				"x": 1888,
+				"y": 1906
+			},
+			"size": {
+				"height": 46,
+				"width": 46
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0381infoframe_tc.png",
+			"pos": {
+				"x": 802,
+				"y": 1916
+			},
+			"size": {
+				"height": 94,
+				"width": 94
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0382infoframe_tl.png",
+			"pos": {
+				"x": 1888,
+				"y": 1958
+			},
+			"size": {
+				"height": 46,
+				"width": 46
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0383infoframe_tr.png",
+			"pos": {
+				"x": 1940,
+				"y": 1750
+			},
+			"size": {
+				"height": 46,
+				"width": 46
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0384thinscroll_handle.png",
+			"pos": {
+				"x": 1972,
+				"y": 336
+			},
+			"size": {
+				"height": 134,
+				"width": 46
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0385thinscroll_rail_bottom.png",
+			"pos": {
+				"x": 1704,
+				"y": 1832
+			},
+			"size": {
+				"height": 44,
+				"width": 44
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0386thinscroll_rail_center.png",
+			"pos": {
+				"x": 1704,
+				"y": 1882
+			},
+			"size": {
+				"height": 44,
+				"width": 44
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0387thinscroll_rail_top.png",
+			"pos": {
+				"x": 1992,
+				"y": 1828
+			},
+			"size": {
+				"height": 44,
+				"width": 44
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0388tab_small_center.png",
+			"pos": {
+				"x": 4,
+				"y": 1916
+			},
+			"size": {
+				"height": 126,
+				"width": 246
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0389tab_small_left.png",
+			"pos": {
+				"x": 256,
+				"y": 1916
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0390tab_small_right_collapsed.png",
+			"pos": {
+				"x": 386,
+				"y": 1916
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0391tab_small_right_expanded.png",
+			"pos": {
+				"x": 516,
+				"y": 1916
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0392tab_small_right.png",
+			"pos": {
+				"x": 1754,
+				"y": 1668
+			},
+			"size": {
+				"height": 128,
+				"width": 128
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0393tab_unselected_center.png",
+			"pos": {
+				"x": 1588,
+				"y": 1298
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0394tab_unselected_left.png",
+			"pos": {
+				"x": 850,
+				"y": 1634
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0395tab_unselected_right.png",
+			"pos": {
+				"x": 1522,
+				"y": 750
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0396tab_selected_center.png",
+			"pos": {
+				"x": 1708,
+				"y": 222
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0397tab_selected_left.png",
+			"pos": {
+				"x": 1708,
+				"y": 428
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0398tab_selected_right.png",
+			"pos": {
+				"x": 1522,
+				"y": 956
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0399character_strat_hourglass.png",
+			"pos": {
+				"x": 1910,
+				"y": 828
+			},
+			"size": {
+				"height": 100,
+				"width": 100
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0400button_text_thinner.png",
+			"pos": {
+				"x": 1448,
+				"y": 768
+			},
+			"size": {
+				"height": 162,
+				"width": 426
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0401button_text_wider.png",
+			"pos": {
+				"x": 766,
+				"y": 1630
+			},
+			"size": {
+				"height": 180,
+				"width": 708
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0402strat_hud_tl.png",
+			"pos": {
+				"x": 1530,
+				"y": 1162
+			},
+			"size": {
+				"height": 180,
+				"width": 184
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0403strat_hud_tc.png",
+			"pos": {
+				"x": 1224,
+				"y": 1554
+			},
+			"size": {
+				"height": 180,
+				"width": 182
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0404strat_hud_tr.png",
+			"pos": {
+				"x": 1720,
+				"y": 1252
+			},
+			"size": {
+				"height": 180,
+				"width": 184
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0405strat_hud_cl.png",
+			"pos": {
+				"x": 1530,
+				"y": 1348
+			},
+			"size": {
+				"height": 180,
+				"width": 184
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0406strat_hud_cr.png",
+			"pos": {
+				"x": 1720,
+				"y": 1438
+			},
+			"size": {
+				"height": 180,
+				"width": 184
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0407strat_hud_bl.png",
+			"pos": {
+				"x": 1528,
+				"y": 1534
+			},
+			"size": {
+				"height": 180,
+				"width": 184
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0408strat_hud_bc.png",
+			"pos": {
+				"x": 1224,
+				"y": 1740
+			},
+			"size": {
+				"height": 180,
+				"width": 182
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0409strat_hud_br.png",
+			"pos": {
+				"x": 1718,
+				"y": 1624
+			},
+			"size": {
+				"height": 180,
+				"width": 184
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0410strat_hud_cc.png",
+			"pos": {
+				"x": 1210,
+				"y": 766
+			},
+			"size": {
+				"height": 372,
+				"width": 372
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0411buttonback_noframe_disabled.png",
+			"pos": {
+				"x": 234,
+				"y": 380
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0412buttonback_noframe_selected.png",
+			"pos": {
+				"x": 416,
+				"y": 254
+			},
+			"size": {
+				"height": 120,
+				"width": 120
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0413buttonback_noframe.png",
+			"pos": {
+				"x": 184,
+				"y": 506
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0414buttonback_small_disabled.png",
+			"pos": {
+				"x": 1568,
+				"y": 1540
+			},
+			"size": {
+				"height": 76,
+				"width": 76
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0415buttonback_small_selected.png",
+			"pos": {
+				"x": 1646,
+				"y": 1540
+			},
+			"size": {
+				"height": 76,
+				"width": 76
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0416buttonback_small.png",
+			"pos": {
+				"x": 1866,
+				"y": 558
+			},
+			"size": {
+				"height": 76,
+				"width": 76
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0417buttonicon_fautomate_enabled.png",
+			"pos": {
+				"x": 556,
+				"y": 128
+			},
+			"size": {
+				"height": 122,
+				"width": 122
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0418buttonicon_fautomate_no.png",
+			"pos": {
+				"x": 680,
+				"y": 128
+			},
+			"size": {
+				"height": 122,
+				"width": 122
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0419keys_button1.png",
+			"pos": {
+				"x": 2,
+				"y": 532
+			},
+			"size": {
+				"height": 360,
+				"width": 1042
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0420keys_button2.png",
+			"pos": {
+				"x": 1402,
+				"y": 406
+			},
+			"size": {
+				"height": 112,
+				"width": 222
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0421button3.png",
+			"pos": {
+				"x": 1256,
+				"y": 1172
+			},
+			"size": {
+				"height": 116,
+				"width": 174
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0422keys_button4.png",
+			"pos": {
+				"x": 542,
+				"y": 492
+			},
+			"size": {
+				"height": 112,
+				"width": 114
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0423controlbuttons.png",
+			"pos": {
+				"x": 1058,
+				"y": 2
+			},
+			"size": {
+				"height": 252,
+				"width": 380
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0424keys_downarrow.png",
+			"pos": {
+				"x": 1434,
+				"y": 1964
+			},
+			"size": {
+				"height": 34,
+				"width": 34
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0425keys_leftarrow.png",
+			"pos": {
+				"x": 1434,
+				"y": 2000
+			},
+			"size": {
+				"height": 34,
+				"width": 34
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0426keys_mouse.png",
+			"pos": {
+				"x": 1944,
+				"y": 1160
+			},
+			"size": {
+				"height": 140,
+				"width": 88
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0427keys_redbutton1.png",
+			"pos": {
+				"x": 1476,
+				"y": 1630
+			},
+			"size": {
+				"height": 140,
+				"width": 90
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0428keys_redbutton2.png",
+			"pos": {
+				"x": 1944,
+				"y": 1302
+			},
+			"size": {
+				"height": 140,
+				"width": 86
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0429keys_redbutton3.png",
+			"pos": {
+				"x": 1486,
+				"y": 1806
+			},
+			"size": {
+				"height": 140,
+				"width": 90
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0430keys_rightarrow.png",
+			"pos": {
+				"x": 828,
+				"y": 1220
+			},
+			"size": {
+				"height": 34,
+				"width": 34
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0431keys_uparrow.png",
+			"pos": {
+				"x": 490,
+				"y": 1576
+			},
+			"size": {
+				"height": 34,
+				"width": 34
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0432dropdown_frame.png",
+			"pos": {
+				"x": 766,
+				"y": 1812
+			},
+			"size": {
+				"height": 150,
+				"width": 718
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0433textbox_left.png",
+			"pos": {
+				"x": 4,
+				"y": 1866
+			},
+			"size": {
+				"height": 122,
+				"width": 90
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0434textbox_center.png",
+			"pos": {
+				"x": 100,
+				"y": 1866
+			},
+			"size": {
+				"height": 122,
+				"width": 90
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0435textbox_right.png",
+			"pos": {
+				"x": 196,
+				"y": 1866
+			},
+			"size": {
+				"height": 122,
+				"width": 90
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0436window_header.png",
+			"pos": {
+				"x": 766,
+				"y": 1314
+			},
+			"size": {
+				"height": 314,
+				"width": 814
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0437menu_accordion_top.png",
+			"pos": {
+				"x": 776,
+				"y": 248
+			},
+			"size": {
+				"height": 156,
+				"width": 854
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0438menu_accordion_bottom.png",
+			"pos": {
+				"x": 776,
+				"y": 406
+			},
+			"size": {
+				"height": 42,
+				"width": 624
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0439imageframe_bc.png",
+			"pos": {
+				"x": 1940,
+				"y": 1802
+			},
+			"size": {
+				"height": 46,
+				"width": 46
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0440imageframe_bl.png",
+			"pos": {
+				"x": 1940,
+				"y": 1854
+			},
+			"size": {
+				"height": 46,
+				"width": 46
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0441imageframe_br.png",
+			"pos": {
+				"x": 1940,
+				"y": 1906
+			},
+			"size": {
+				"height": 46,
+				"width": 46
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0442imageframe_cl.png",
+			"pos": {
+				"x": 1940,
+				"y": 1958
+			},
+			"size": {
+				"height": 46,
+				"width": 46
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0443imageframe_cr.png",
+			"pos": {
+				"x": 1952,
+				"y": 1620
+			},
+			"size": {
+				"height": 46,
+				"width": 46
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0444imageframe_tc.png",
+			"pos": {
+				"x": 1952,
+				"y": 1672
+			},
+			"size": {
+				"height": 46,
+				"width": 46
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0445imageframe_tl.png",
+			"pos": {
+				"x": 1996,
+				"y": 1724
+			},
+			"size": {
+				"height": 46,
+				"width": 46
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0446imageframe_tr.png",
+			"pos": {
+				"x": 1992,
+				"y": 1776
+			},
+			"size": {
+				"height": 46,
+				"width": 46
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0447postbattle_ct-l.png",
+			"pos": {
+				"x": 1336,
+				"y": 222
+			},
+			"size": {
+				"height": 270,
+				"width": 180
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0448postbattle_cc-l.png",
+			"pos": {
+				"x": 1216,
+				"y": 1144
+			},
+			"size": {
+				"height": 320,
+				"width": 180
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0449postbattle_cb-l.png",
+			"pos": {
+				"x": 1150,
+				"y": 506
+			},
+			"size": {
+				"height": 270,
+				"width": 180
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0450postbattle_tc-l.png",
+			"pos": {
+				"x": 910,
+				"y": 1086
+			},
+			"size": {
+				"height": 278,
+				"width": 180
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0451postbattle_top_tc-r.png",
+			"pos": {
+				"x": 1150,
+				"y": 222
+			},
+			"size": {
+				"height": 278,
+				"width": 180
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0452postbattle_tt-ll.png",
+			"pos": {
+				"x": 646,
+				"y": 1916
+			},
+			"size": {
+				"height": 80,
+				"width": 150
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0453postbattle_top_ttrr.png",
+			"pos": {
+				"x": 1814,
+				"y": 1402
+			},
+			"size": {
+				"height": 80,
+				"width": 150
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0454postbattle_top_tt-cl.png",
+			"pos": {
+				"x": 910,
+				"y": 4
+			},
+			"size": {
+				"height": 106,
+				"width": 1068
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0455postbattle_top_tt-cc.png",
+			"pos": {
+				"x": 4,
+				"y": 1400
+			},
+			"size": {
+				"height": 116,
+				"width": 1182
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0456postbattle_top_tt-cr.png",
+			"pos": {
+				"x": 4,
+				"y": 1522
+			},
+			"size": {
+				"height": 106,
+				"width": 1096
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0457postbattle_top_tc-c_circle.png",
+			"pos": {
+				"x": 1478,
+				"y": 690
+			},
+			"size": {
+				"height": 220,
+				"width": 220
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0458menuwindow_header2.png",
+			"pos": {
+				"x": 806,
+				"y": 934
+			},
+			"size": {
+				"height": 378,
+				"width": 448
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0459banner_top.png",
+			"pos": {
+				"x": 4,
+				"y": 710
+			},
+			"size": {
+				"height": 684,
+				"width": 900
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0460banner_bottom.png",
+			"pos": {
+				"x": 4,
+				"y": 1210
+			},
+			"size": {
+				"height": 700,
+				"width": 900
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0461banner_center_small.png",
+			"pos": {
+				"x": 910,
+				"y": 116
+			},
+			"size": {
+				"height": 100,
+				"width": 900
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0462banner_center_big.png",
+			"pos": {
+				"x": 4,
+				"y": 4
+			},
+			"size": {
+				"height": 700,
+				"width": 900
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0463settlement_taxes_small.png",
+			"pos": {
+				"x": 768,
+				"y": 1618
+			},
+			"size": {
+				"height": 64,
+				"width": 64
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0464statstransparentbgleft.png",
+			"pos": {
+				"x": 1056,
+				"y": 1634
+			},
+			"size": {
+				"height": 190,
+				"width": 162
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0465statstransparentbgcenter.png",
+			"pos": {
+				"x": 1192,
+				"y": 1292
+			},
+			"size": {
+				"height": 190,
+				"width": 164
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0466statstransparentbgright.png",
+			"pos": {
+				"x": 1362,
+				"y": 1192
+			},
+			"size": {
+				"height": 190,
+				"width": 162
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0467tagedgeselectedleft.png",
+			"pos": {
+				"x": 1588,
+				"y": 1504
+			},
+			"size": {
+				"height": 158,
+				"width": 210
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0468tagedgeselectedcenter.png",
+			"pos": {
+				"x": 1362,
+				"y": 1388
+			},
+			"size": {
+				"height": 160,
+				"width": 160
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0469tagedgeselectedright.png",
+			"pos": {
+				"x": 1814,
+				"y": 1074
+			},
+			"size": {
+				"height": 158,
+				"width": 210
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0470tagbgunselectedleft.png",
+			"pos": {
+				"x": 1814,
+				"y": 1238
+			},
+			"size": {
+				"height": 158,
+				"width": 210
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0471tagbgunselectedcenter.png",
+			"pos": {
+				"x": 1336,
+				"y": 1026
+			},
+			"size": {
+				"height": 160,
+				"width": 174
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0472tagbgunselectedright.png",
+			"pos": {
+				"x": 1538,
+				"y": 1668
+			},
+			"size": {
+				"height": 158,
+				"width": 210
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0473unused.png",
+			"pos": {
+				"x": 1910,
+				"y": 1532
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0474 copy_unused.png",
+			"pos": {
+				"x": 1908,
+				"y": 1630
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0475 copy 2_unused.png",
+			"pos": {
+				"x": 1908,
+				"y": 1728
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0476 copy_unused.png",
+			"pos": {
+				"x": 1902,
+				"y": 1826
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0477 copy 2_unused.png",
+			"pos": {
+				"x": 1046,
+				"y": 1840
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0478lp_ct_r.png",
+			"pos": {
+				"x": 1402,
+				"y": 1144
+			},
+			"size": {
+				"height": 248,
+				"width": 180
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0479lp_ct_l.png",
+			"pos": {
+				"x": 1402,
+				"y": 1398
+			},
+			"size": {
+				"height": 248,
+				"width": 180
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0480gold_bar.png",
+			"pos": {
+				"x": 776,
+				"y": 228
+			},
+			"size": {
+				"height": 18,
+				"width": 1076
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0481unused.png",
+			"pos": {
+				"x": 1128,
+				"y": 1830
+			},
+			"size": {
+				"height": 92,
+				"width": 76
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0482thinscroll_horiz_handle.png",
+			"pos": {
+				"x": 1150,
+				"y": 1034
+			},
+			"size": {
+				"height": 44,
+				"width": 126
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0483thinscroll_horiz_rail_right.png",
+			"pos": {
+				"x": 1992,
+				"y": 1878
+			},
+			"size": {
+				"height": 44,
+				"width": 44
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0484thinscroll_horiz_rail_center.png",
+			"pos": {
+				"x": 1992,
+				"y": 1928
+			},
+			"size": {
+				"height": 44,
+				"width": 44
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0485thinscroll_horiz_rail_left.png",
+			"pos": {
+				"x": 1992,
+				"y": 1978
+			},
+			"size": {
+				"height": 44,
+				"width": 44
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0486substract.png",
+			"pos": {
+				"x": 1826,
+				"y": 1778
+			},
+			"size": {
+				"height": 128,
+				"width": 128
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0487text_frame_left.png",
+			"pos": {
+				"x": 1910,
+				"y": 1252
+			},
+			"size": {
+				"height": 134,
+				"width": 42
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0488text_frame_center.png",
+			"pos": {
+				"x": 1972,
+				"y": 476
+			},
+			"size": {
+				"height": 134,
+				"width": 24
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0489text_frame_right.png",
+			"pos": {
+				"x": 1910,
+				"y": 1392
+			},
+			"size": {
+				"height": 134,
+				"width": 42
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0490cross_icon.png",
+			"pos": {
+				"x": 1582,
+				"y": 1534
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0491tick_icon.png",
+			"pos": {
+				"x": 404,
+				"y": 1658
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0492faction_roster_left.png",
+			"pos": {
+				"x": 1150,
+				"y": 782
+			},
+			"size": {
+				"height": 246,
+				"width": 180
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0493faction_roster_center.png",
+			"pos": {
+				"x": 1336,
+				"y": 774
+			},
+			"size": {
+				"height": 246,
+				"width": 180
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0494faction_roster_right.png",
+			"pos": {
+				"x": 1522,
+				"y": 498
+			},
+			"size": {
+				"height": 246,
+				"width": 180
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0495settlement_money_down.png",
+			"pos": {
+				"x": 538,
+				"y": 254
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0496settlement_money_up.png",
+			"pos": {
+				"x": 804,
+				"y": 128
+			},
+			"size": {
+				"height": 122,
+				"width": 122
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0497settlement_money_nocolor.png",
+			"pos": {
+				"x": 972,
+				"y": 448
+			},
+			"size": {
+				"height": 86,
+				"width": 86
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0498settlement_money_down_nocolor.png",
+			"pos": {
+				"x": 980,
+				"y": 536
+			},
+			"size": {
+				"height": 86,
+				"width": 86
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0499settlement_money_up_nocolor.png",
+			"pos": {
+				"x": 980,
+				"y": 624
+			},
+			"size": {
+				"height": 86,
+				"width": 86
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0500gridline_odd_left.png",
+			"pos": {
+				"x": 1972,
+				"y": 4
+			},
+			"size": {
+				"height": 160,
+				"width": 32
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0501gridline_odd_center.png",
+			"pos": {
+				"x": 2010,
+				"y": 4
+			},
+			"size": {
+				"height": 160,
+				"width": 32
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0502gridline_odd_right.png",
+			"pos": {
+				"x": 1972,
+				"y": 170
+			},
+			"size": {
+				"height": 160,
+				"width": 32
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0503tooltipframe_tl.png",
+			"pos": {
+				"x": 1576,
+				"y": 1832
+			},
+			"size": {
+				"height": 58,
+				"width": 58
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0504tooltipframe_tr.png",
+			"pos": {
+				"x": 1576,
+				"y": 1896
+			},
+			"size": {
+				"height": 58,
+				"width": 58
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0505tooltipframe_bl.png",
+			"pos": {
+				"x": 1640,
+				"y": 1832
+			},
+			"size": {
+				"height": 58,
+				"width": 58
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0506tooltipframe_br.png",
+			"pos": {
+				"x": 1576,
+				"y": 1960
+			},
+			"size": {
+				"height": 58,
+				"width": 58
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0507tooltipframe_tc.png",
+			"pos": {
+				"x": 1804,
+				"y": 1488
+			},
+			"size": {
+				"height": 128,
+				"width": 128
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0508tooltipframe_bc.png",
+			"pos": {
+				"x": 1754,
+				"y": 1802
+			},
+			"size": {
+				"height": 128,
+				"width": 128
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0509tooltipframe_cl.png",
+			"pos": {
+				"x": 1640,
+				"y": 1896
+			},
+			"size": {
+				"height": 58,
+				"width": 58
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0510tooltipframe_cr.png",
+			"pos": {
+				"x": 1640,
+				"y": 1960
+			},
+			"size": {
+				"height": 58,
+				"width": 58
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0511tooltipframe_cc.png",
+			"pos": {
+				"x": 1210,
+				"y": 4
+			},
+			"size": {
+				"height": 756,
+				"width": 756
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0512button_selected.png",
+			"pos": {
+				"x": 1186,
+				"y": 1964
+			},
+			"size": {
+				"height": 82,
+				"width": 82
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0513gridline_selected_left.png",
+			"pos": {
+				"x": 2010,
+				"y": 170
+			},
+			"size": {
+				"height": 160,
+				"width": 32
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0514gridline_selected_center.png",
+			"pos": {
+				"x": 1914,
+				"y": 210
+			},
+			"size": {
+				"height": 160,
+				"width": 32
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0515gridline_selected_right.png",
+			"pos": {
+				"x": 1914,
+				"y": 376
+			},
+			"size": {
+				"height": 160,
+				"width": 32
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0516tooltips_key_left.png",
+			"pos": {
+				"x": 1302,
+				"y": 1034
+			},
+			"size": {
+				"height": 80,
+				"width": 28
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0517tooltips_key_center.png",
+			"pos": {
+				"x": 1970,
+				"y": 1402
+			},
+			"size": {
+				"height": 80,
+				"width": 30
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0518tooltips_key_right.png",
+			"pos": {
+				"x": 1302,
+				"y": 1120
+			},
+			"size": {
+				"height": 80,
+				"width": 28
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0519tooltips_mouse_left.png",
+			"pos": {
+				"x": 890,
+				"y": 540
+			},
+			"size": {
+				"height": 88,
+				"width": 88
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0520tooltips_mouse_right.png",
+			"pos": {
+				"x": 890,
+				"y": 630
+			},
+			"size": {
+				"height": 88,
+				"width": 88
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0521tooltips_mouse_wheel.png",
+			"pos": {
+				"x": 2,
+				"y": 1350
+			},
+			"size": {
+				"height": 284,
+				"width": 284
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0522deepframe_tl.png",
+			"pos": {
+				"x": 1740,
+				"y": 1936
+			},
+			"size": {
+				"height": 58,
+				"width": 58
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0523deepframe_tr.png",
+			"pos": {
+				"x": 1804,
+				"y": 1936
+			},
+			"size": {
+				"height": 58,
+				"width": 58
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0524deepframe_bl.png",
+			"pos": {
+				"x": 1976,
+				"y": 1488
+			},
+			"size": {
+				"height": 58,
+				"width": 58
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0525deepframe_br.png",
+			"pos": {
+				"x": 1976,
+				"y": 1552
+			},
+			"size": {
+				"height": 58,
+				"width": 58
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0526deepframe_tc.png",
+			"pos": {
+				"x": 2010,
+				"y": 618
+			},
+			"size": {
+				"height": 32,
+				"width": 32
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0527deepframe_bc.png",
+			"pos": {
+				"x": 2010,
+				"y": 656
+			},
+			"size": {
+				"height": 32,
+				"width": 32
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0528deepframe_cl.png",
+			"pos": {
+				"x": 1888,
+				"y": 1622
+			},
+			"size": {
+				"height": 58,
+				"width": 58
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0529deepframe_cr.png",
+			"pos": {
+				"x": 1888,
+				"y": 1686
+			},
+			"size": {
+				"height": 58,
+				"width": 58
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0530decoframe_outer_big_tl.png",
+			"pos": {
+				"x": 1374,
+				"y": 1856
+			},
+			"size": {
+				"height": 114,
+				"width": 114
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0531decoframe_outer_big_tr.png",
+			"pos": {
+				"x": 440,
+				"y": 1866
+			},
+			"size": {
+				"height": 114,
+				"width": 114
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0532decoframe_outer_big_bl.png",
+			"pos": {
+				"x": 560,
+				"y": 1866
+			},
+			"size": {
+				"height": 114,
+				"width": 114
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0533decoframe_outer_big_br.png",
+			"pos": {
+				"x": 680,
+				"y": 1866
+			},
+			"size": {
+				"height": 114,
+				"width": 114
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0534decoframe_outer_big_tc.png",
+			"pos": {
+				"x": 4,
+				"y": 1634
+			},
+			"size": {
+				"height": 110,
+				"width": 840
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0535decoframe_outer_big_bc.png",
+			"pos": {
+				"x": 4,
+				"y": 1750
+			},
+			"size": {
+				"height": 110,
+				"width": 840
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0536decoframe_outer_big_cl.png",
+			"pos": {
+				"x": 910,
+				"y": 222
+			},
+			"size": {
+				"height": 858,
+				"width": 114
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0537decoframe_outer_big_cr.png",
+			"pos": {
+				"x": 1030,
+				"y": 222
+			},
+			"size": {
+				"height": 858,
+				"width": 114
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0538decoframe_over_big_tl.png",
+			"pos": {
+				"x": 910,
+				"y": 1816
+			},
+			"size": {
+				"height": 226,
+				"width": 226
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0539decoframe_over_big_tr.png",
+			"pos": {
+				"x": 1142,
+				"y": 1816
+			},
+			"size": {
+				"height": 226,
+				"width": 226
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0540curvedframe_cc.png",
+			"pos": {
+				"x": 4,
+				"y": 4
+			},
+			"size": {
+				"height": 1200,
+				"width": 1200
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0541decoframe_over_small_left.png",
+			"pos": {
+				"x": 1894,
+				"y": 766
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0542decoframe_over_small_right.png",
+			"pos": {
+				"x": 1894,
+				"y": 920
+			},
+			"size": {
+				"height": 148,
+				"width": 148
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0543tabdown_arrowdown.png",
+			"pos": {
+				"x": 1722,
+				"y": 204
+			},
+			"size": {
+				"height": 200,
+				"width": 320
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0544tabdown_arrowup.png",
+			"pos": {
+				"x": 1058,
+				"y": 256
+			},
+			"size": {
+				"height": 200,
+				"width": 320
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0545buttonicon_fautomate_enabled_disabled.png",
+			"pos": {
+				"x": 1750,
+				"y": 1896
+			},
+			"size": {
+				"height": 150,
+				"width": 150
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0546buttonicon_fautomate_no_disabled.png",
+			"pos": {
+				"x": 1866,
+				"y": 406
+			},
+			"size": {
+				"height": 150,
+				"width": 150
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0547button_text_thinner_disabled.png",
+			"pos": {
+				"x": 1256,
+				"y": 934
+			},
+			"size": {
+				"height": 236,
+				"width": 626
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0548button_text_wider_disabled.png",
+			"pos": {
+				"x": 776,
+				"y": 2
+			},
+			"size": {
+				"height": 224,
+				"width": 890
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0549postbattle_ct-r.png",
+			"pos": {
+				"x": 1336,
+				"y": 498
+			},
+			"size": {
+				"height": 270,
+				"width": 180
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0550postbattle_cc-r.png",
+			"pos": {
+				"x": 1216,
+				"y": 1470
+			},
+			"size": {
+				"height": 320,
+				"width": 180
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0551postbattle_cb-r.png",
+			"pos": {
+				"x": 1522,
+				"y": 222
+			},
+			"size": {
+				"height": 270,
+				"width": 180
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0552leftclick_mouseicon.png",
+			"pos": {
+				"x": 696,
+				"y": 364
+			},
+			"size": {
+				"height": 310,
+				"width": 192
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0553rightclick_mouseicon.png",
+			"pos": {
+				"x": 820,
+				"y": 676
+			},
+			"size": {
+				"height": 310,
+				"width": 192
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0554middlemousebutton_mouseicon.png",
+			"pos": {
+				"x": 490,
+				"y": 1264
+			},
+			"size": {
+				"height": 310,
+				"width": 192
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0555decoframe_over_small_right_close.png",
+			"pos": {
+				"x": 1402,
+				"y": 1652
+			},
+			"size": {
+				"height": 130,
+				"width": 130
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0556decoframe_over_big_tr_close.png",
+			"pos": {
+				"x": 1728,
+				"y": 634
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0557decoframe_centered_tr_close.png",
+			"pos": {
+				"x": 1588,
+				"y": 1072
+			},
+			"size": {
+				"height": 220,
+				"width": 220
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0558filter_descending.png",
+			"pos": {
+				"x": 980,
+				"y": 788
+			},
+			"size": {
+				"height": 74,
+				"width": 74
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0559filter_ascending.png",
+			"pos": {
+				"x": 890,
+				"y": 720
+			},
+			"size": {
+				"height": 88,
+				"width": 88
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0560filter_unsorted.png",
+			"pos": {
+				"x": 890,
+				"y": 810
+			},
+			"size": {
+				"height": 88,
+				"width": 88
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0561filterfunnel.png",
+			"pos": {
+				"x": 980,
+				"y": 864
+			},
+			"size": {
+				"height": 74,
+				"width": 74
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0562_mosaic_pattern.png",
+			"pos": {
+				"x": 910,
+				"y": 1210
+			},
+			"size": {
+				"height": 600,
+				"width": 300
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0563_mosaic_pattern_corner.png",
+			"pos": {
+				"x": 1588,
+				"y": 766
+			},
+			"size": {
+				"height": 300,
+				"width": 300
+			},
+			"texPage": 3
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0564hourglass_0.png",
+			"pos": {
+				"x": 788,
+				"y": 448
+			},
+			"size": {
+				"height": 90,
+				"width": 90
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0565hourglass_1.png",
+			"pos": {
+				"x": 880,
+				"y": 448
+			},
+			"size": {
+				"height": 90,
+				"width": 90
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0566hourglass_2.png",
+			"pos": {
+				"x": 706,
+				"y": 548
+			},
+			"size": {
+				"height": 90,
+				"width": 90
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0567hourglass_3.png",
+			"pos": {
+				"x": 706,
+				"y": 640
+			},
+			"size": {
+				"height": 90,
+				"width": 90
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0568hourglass_4.png",
+			"pos": {
+				"x": 706,
+				"y": 732
+			},
+			"size": {
+				"height": 90,
+				"width": 90
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0569hourglass_5.png",
+			"pos": {
+				"x": 706,
+				"y": 824
+			},
+			"size": {
+				"height": 90,
+				"width": 90
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0570hourglass_6.png",
+			"pos": {
+				"x": 798,
+				"y": 540
+			},
+			"size": {
+				"height": 90,
+				"width": 90
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0571hourglass_7.png",
+			"pos": {
+				"x": 798,
+				"y": 632
+			},
+			"size": {
+				"height": 90,
+				"width": 90
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0572hourglass_8.png",
+			"pos": {
+				"x": 798,
+				"y": 724
+			},
+			"size": {
+				"height": 90,
+				"width": 90
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0573hourglass_9.png",
+			"pos": {
+				"x": 798,
+				"y": 816
+			},
+			"size": {
+				"height": 90,
+				"width": 90
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0574keys_button_arrow_down.png",
+			"pos": {
+				"x": 2,
+				"y": 2
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0575keys_button_arrow_left.png",
+			"pos": {
+				"x": 2,
+				"y": 364
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0576keys_button_arrow_right.png",
+			"pos": {
+				"x": 364,
+				"y": 2
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0577keys_button_arrow_up.png",
+			"pos": {
+				"x": 2,
+				"y": 726
+			},
+			"size": {
+				"height": 360,
+				"width": 360
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0578warning.png",
+			"pos": {
+				"x": 650,
+				"y": 252
+			},
+			"size": {
+				"height": 110,
+				"width": 110
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0579button.png",
+			"pos": {
+				"x": 430,
+				"y": 128
+			},
+			"size": {
+				"height": 124,
+				"width": 124
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0580buildingcardgradient.png",
+			"pos": {
+				"x": 2,
+				"y": 1088
+			},
+			"size": {
+				"height": 260,
+				"width": 356
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0581merchant.png",
+			"pos": {
+				"x": 478,
+				"y": 844
+			},
+			"size": {
+				"height": 114,
+				"width": 114
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0582controldec_disabled.png",
+			"pos": {
+				"x": 1944,
+				"y": 1724
+			},
+			"size": {
+				"height": 138,
+				"width": 92
+			},
+			"texPage": 2
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0583controlinc_disabled.png",
+			"pos": {
+				"x": 1538,
+				"y": 538
+			},
+			"size": {
+				"height": 138,
+				"width": 92
+			},
+			"texPage": 0
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0584tab_disabled_left.png",
+			"pos": {
+				"x": 1728,
+				"y": 840
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0585tab_disabled_center.png",
+			"pos": {
+				"x": 1728,
+				"y": 1046
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0586tab_disabled_right.png",
+			"pos": {
+				"x": 1096,
+				"y": 1086
+			},
+			"size": {
+				"height": 200,
+				"width": 200
+			},
+			"texPage": 4
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0587selectnone_disabled.png",
+			"pos": {
+				"x": 928,
+				"y": 128
+			},
+			"size": {
+				"height": 122,
+				"width": 122
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0588point_north.png",
+			"pos": {
+				"x": 128,
+				"y": 648
+			},
+			"size": {
+				"height": 116,
+				"width": 116
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0589point_north_disabled.png",
+			"pos": {
+				"x": 128,
+				"y": 766
+			},
+			"size": {
+				"height": 116,
+				"width": 116
+			},
+			"texPage": 5
+		},
+		{
+			"hasAlpha": 1,
+			"name": "0590point_north_selected.png",
+			"pos": {
+				"x": 128,
+				"y": 884
+			},
+			"size": {
+				"height": 116,
+				"width": 116
+			},
+			"texPage": 5
+		}
+	]
+}

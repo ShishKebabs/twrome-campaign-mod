@@ -1,5 +1,0 @@
-tournament_name	tournament_of_ares
-
-custom/Gaugamela_MP_1v1_test
-custom/Gaugamela_MP_1v1_test
-custom/Gaugamela_MP_1v1_test
