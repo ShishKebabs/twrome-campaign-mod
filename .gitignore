@@ -3,7 +3,6 @@ node_modules/
 packs/
 sounds/
 fmv/
-ui/
 models_building/
 models_world/
 models_unit/
@@ -49,7 +48,8 @@ vegetation/
 
 /**/*.xsddelta
 /**/*.dds
-/**/*.tga
+banners/
+interface/
 /**/*.wfc
 /**/*.cas
 /**/*.item
@@ -71,3 +71,13 @@ package-lock.json
 /**/*.feral
 /**/*.wfc
 /**/*.max
+/**/*.rsd
+
+textures/
+eventpics/
+portraits/
+symbols/
+units/
+unit_info/
+units_classic/
+unit_info_classic/
