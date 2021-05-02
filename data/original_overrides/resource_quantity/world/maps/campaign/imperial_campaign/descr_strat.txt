@@ -5,6 +5,7 @@ playable
 	romans_julii
 	romans_brutii
 	romans_scipii
+	romans_senate
 end
 unlockable
 	egypt
@@ -25,7 +26,6 @@ unlockable
 	thrace
 end
 nonplayable
-	romans_senate
 	slave
 end
 
@@ -51,36 +51,27 @@ landmark	mausoleum	160,	50
 ; >>>> start of resources section <<<<
 
 ;        Resource Type   Quantity      X     Y
-resource	iron,           1,         83,   128
-resource	wine,           1,         53,   63
 resource	marble,         1,         55,   63
 resource	timber,         1,         201,  39
 resource	glass,          1,         199,  37
-resource	gold,           1,         45,   135
-resource	gold,           1,         20,   84
+resource	gold,           1,         46,   135
+resource	gold,           1,         20,   83
 resource	gold,           1,         140,  64
 resource	grain,          1,         103,  44
 resource	grain,          1,         84,   41
-resource	lead,           1,         52,   143
-resource	lead,           1,         52,   139
-resource	amber,          1,         96,   137
-resource	amber,          1,         98,   138
-resource	amber,          1,         93,   136
+resource	lead,           2,         56,   142
+resource	amber,          3,         93,   136
 resource	timber,         1,         86,   145
 resource	timber,         1,         124,  140
 resource	camels,         1,         246,  140
 resource	silver,         1,         216,  108
-resource	lead,           1,         45,   133
-resource	lead,           1,         44,   137
-resource	amber,          1,         113,  136
+resource	lead,           2,         47,   136
+resource	amber,          3,         113,  136
 resource	silver,         1,         107,  132
-resource	iron,           1,         105,  133
-resource	iron,           1,         105,  134
-resource	iron,           1,         49,   129
-resource	iron,           1,         50,   130
-resource	iron,           1,         83,   127
-resource	iron,           1,         108,  124
-resource	iron,           1,         107,  125
+resource	iron,           2,         105,  134
+resource	iron,           2,         49,   129
+resource	iron,           2,         78,   132
+resource	iron,           2,         107,  125
 resource	textiles,       1,         69,   122
 resource	textiles,       1,         56,   129
 resource	pottery,        1,         66,   123
@@ -88,119 +79,90 @@ resource	grain,          1,         190,  115
 resource	hides,          1,         84,   113
 resource	timber,         1,         41,   110
 resource	glass,          1,         46,   111
-resource	iron,           1,         110,  111
-resource	iron,           1,         109,  110
-resource	iron,           1,         173,  113
-resource	iron,           1,         171,  111
-resource	iron,           1,         54,   104
-resource	iron,           1,         53,   103
+resource	iron,           2,         109,  110
+resource	iron,           2,         171,  111
+resource	iron,           2,         53,   103
 resource	lead,           1,         54,   99
 resource	lead,           1,         54,   98
 resource	gold,           1,         136,  98
-resource	iron,           1,         142,  98
-resource	iron,           1,         141,  99
+resource	iron,           2,         139,  101
 resource	timber,         1,         160,  99
 resource	grain,          1,         174,  101
-resource	wine,           1,         47,   91
-resource	wine,           1,         45,   89
+resource	wine,           2,         47,   91
 resource	pottery,        1,         65,   89
-resource	iron,           1,         54,   90
-resource	iron,           1,         55,   90
-resource	gold,           1,         214,  92
+resource	iron,           2,         54,   91
+resource	gold,           1,         212,  92
 resource	glass,          1,         96,   91
-resource	textiles,       1,         91,   90
+resource	textiles,       2,         91,   90
 resource	textiles,       1,         49,   85
 resource	wine,           1,         65,   86
-resource	wine,           1,         55,   82
-resource	wine,           1,         57,   83
-resource	silver,         1,         59,   85
-resource	iron,           1,         112,  85
-resource	wine,           1,         106,  89
-resource	wine,           1,         107,  88
-resource	wine,           1,         108,  89
-resource	gold,           1,         148,  79
-resource	iron,           1,         16,   89
-resource	iron,           1,         18,   89
-resource	tin,            1,         23,   87
+resource	wine,           3,         55,   82
+resource	silver,         1,         59,   84
+resource	iron,           2,         112,  84
+resource	wine,           3,         108,  89
+resource	gold,           1,         148,  78
+resource	iron,           2,         16,   88
+resource	tin,            1,         23,   86
 resource	timber,         1,         24,   82
-resource	gold,           1,         117,  77
-resource	olive_oil,      1,         121,  73
-resource	olive_oil,      1,         123,  73
-resource	iron,           1,         223,  81
-resource	iron,           1,         225,  82
-resource	wine,           1,         220,  86
-resource	wine,           1,         221,  88
+resource	gold,           1,         117,  76
+resource	olive_oil,      2,         123,  73
+resource	iron,           2,         223,  80
+resource	wine,           2,         220,  86
 resource	pottery,        1,         86,   83
 resource	timber,         1,         78,   84
 resource	timber,         1,         197,  81
-resource	iron,           1,         188,  74
-resource	iron,           1,         189,  75
-resource	silver,         1,         201,  79
-resource	iron,           1,         31,   74
-resource	iron,           1,         32,   74
-resource	lead,           1,         30,   80
-resource	lead,           1,         31,   81
-resource	iron,           1,         90,   77
-resource	iron,           1,         91,   76
-resource	marble,         1,         91,   82
-resource	silver,         1,         47,   77
+resource	iron,           2,         188,  74
+resource	silver,         1,         202,  78
+resource	iron,           2,         28,   74
+resource	lead,           2,         30,   80
+resource	iron,           2,         89,   78
+resource	marble,         1,         90,   82
+resource	silver,         1,         47,   76
 resource	marble,         1,         50,   72
-resource	wine,           1,         44,   79
-resource	wine,           1,         40,   81
 resource	pottery,        1,         99,   79
-resource	iron,           1,         240,  67
-resource	iron,           1,         240,  64
+resource	iron,           2,         241,  64
 resource	elephants,      1,         253,  75
 resource	camels,         1,         250,  68
 resource	timber,         1,         140,  66
 resource	timber,         1,         155,  70
-resource	wine,           1,         163,  69
-resource	wine,           1,         166,  70
+resource	wine,           2,         166,  70
 resource	textiles,       1,         171,  64
-resource	lead,           1,         196,  68
-resource	silver,         1,         38,   68
+resource	silver,         1,         38,   67
 resource	pottery,        1,         40,   65
-resource	copper,         1,         108,  67
-resource	copper,         1,         108,  66
+resource	copper,         1,         109,  67
+resource	copper,         1,         109,  66
 resource	timber,         1,         115,  65
 resource	camels,         1,         217,  58
 resource	elephants,      1,         216,  62
 resource	textiles,       1,         218,  60
-resource	wine,           1,         18,   54
-resource	wine,           1,         19,   57
-resource	olive_oil,      1,         16,   58
-resource	olive_oil,      1,         12,   54
-resource	gold,           1,         16,   54
+resource	wine,           2,         18,   54
+resource	olive_oil,      2,         12,   54
+resource	gold,           1,         16,   53
 resource	timber,         1,         156,  65
 resource	silver,         1,         160,  63
 resource	textiles,       1,         158,  58
-resource	wine,           1,         161,  65
-resource	silver,         1,         195,  60
-resource	lead,           1,         47,   60
-resource	wine,           1,         54,   61
+resource	wine,           2,         161,  65
+resource	silver,         1,         195,  59
+resource	lead,           1,         55,   62
+resource	wine,           2,         54,   61
 resource	silver,         1,         167,  56
 resource	timber,         1,         156,  55
 resource	marble,         1,         165,  57
 resource	textiles,       1,         160,  54
-resource	iron,           1,         202,  58
-resource	iron,           1,         201,  58
+resource	iron,           2,         201,  57
 resource	camels,         1,         206,  54
 resource	elephants,      1,         201,  50
-resource	wine,           1,         201,  53
-resource	wine,           1,         203,  55
+resource	wine,           2,         203,  55
 resource	textiles,       1,         198,  56
 resource	elephants,      1,         238,  55
 resource	camels,         1,         240,  49
-resource	silver,         1,         142,  53
-resource	olive_oil,      1,         142,  55
-resource	olive_oil,      1,         146,  54
+resource	silver,         1,         142,  52
+resource	olive_oil,      2,         142,  55
 resource	camels,         1,         251,  43
 resource	elephants,      1,         254,  43
-resource	iron,           1,         251,  53
-resource	iron,           1,         252,  54
+resource	iron,           2,         251,  52
 resource	timber,         1,         135,  46
-resource	olive_oil,      1,         166,  50
-resource	olive_oil,      1,         167,  49
+resource	olive_oil,      2,         166,  50
 resource	textiles,       1,         164,  51
 resource	camels,         1,         2,    23
 resource	timber,         1,         15,   44
@@ -214,30 +176,20 @@ resource	timber,         1,         58,   45
 resource	timber,         1,         86,   42
 resource	elephants,      1,         73,   42
 resource	camels,         1,         80,   40
-resource	olive_oil,      1,         76,   44
-resource	olive_oil,      1,         78,   44
+resource	olive_oil,      2,         78,   44
 resource	timber,         1,         104,  45
 resource	camels,         1,         209,  47
 resource	elephants,      1,         206,  45
 resource	camels,         1,         233,  21
 resource	camels,         1,         81,   30
-resource	olive_oil,      1,         85,   37
-resource	purple_dye,     1,         150,  36
-resource	purple_dye,     1,         145,  37
-resource	purple_dye,     1,         151,  36
-resource	iron,           1,         150,  38
-resource	iron,           1,         152,  37
+resource	olive_oil,      2,         85,   37
+resource	purple_dye,     3,         152,  37
 resource	camels,         1,         209,  30
-resource	purple_dye,     1,         199,  31
-resource	purple_dye,     1,         196,  24
-resource	olive_oil,      1,         200,  34
-resource	wine,           1,         202,  35
-resource	wine,           1,         200,  27
+resource	purple_dye,     3,         196,  24
+resource	wine,           2,         200,  27
 resource	elephants,      1,         64,   26
 resource	camels,         1,         105,  14
-resource	purple_dye,     1,         94,   21
-resource	purple_dye,     1,         99,   21
-resource	purple_dye,     1,         89,   23
+resource	purple_dye,     3,         94,   21
 resource	timber,         1,         132,  17
 resource	camels,         1,         139,  16
 resource	camels,         1,         190,  20
@@ -251,66 +203,36 @@ resource	grain,          1,         185,  9
 resource	gold,           1,         192,  4
 resource	camels,         1,         181,  3
 resource	copper,         1,         185,  43
-resource	purple_dye,     1,         191,  45
-resource	purple_dye,     1,         192,  48
-resource	purple_dye,     1,         187,  42
-resource	wine,           1,         105,  64
-resource	wine,           1,         78,   57
-resource	wine,           1,         79,   59
-resource	incense,        1,         211,  26
-resource	incense,        1,         207,  8
-resource	incense,        1,         206,  10
-resource	incense,        1,         207,  12
-resource	incense,        1,         217,  47
-resource	incense,        1,         216,  45
-resource	incense,        1,         218,  44
-resource	silk,           1,         241,  56
-resource	silk,           1,         205,  59
-resource	silk,           1,         204,  58
-resource	silk,           1,         205,  58
+resource	purple_dye,     3,         191,  45
+resource	wine,           2,         105,  64
+resource	wine,           2,         79,   59
+resource	incense,        3,         206,  10
+resource	incense,        3,         218,  44
+resource	silk,           3,         205,  59
 resource	tin,            1,         38,   126
 resource	tin,            1,         40,   126
-resource	wild_animals,   1,         79,   26
-resource	wild_animals,   1,         82,   25
-resource	wild_animals,   1,         79,   22
-resource	wild_animals,   1,         191,  1
-resource	wild_animals,   1,         193,  1
-resource	wild_animals,   1,         189,  0
-resource	incense,        1,         187,  10
-resource	incense,        1,         183,  12
-resource	incense,        1,         187,  7
-resource	wild_animals,   1,         133,  148
-resource	wild_animals,   1,         129,  143
-resource	wild_animals,   1,         136,  137
-resource	wild_animals,   1,         41,   42
+resource	wild_animals,   3,         79,   22
+resource	wild_animals,   3,         191,  1
+resource	incense,        3,         187,  7
+resource	wild_animals,   3,         129,  143
+resource	wild_animals,   2,         41,   42
 resource	wild_animals,   1,         53,   43
-resource	wild_animals,   1,         45,   41
-resource	wild_animals,   1,         103,  122
-resource	wild_animals,   1,         110,  122
-resource	wild_animals,   1,         112,  120
-resource	wine,           1,         101,  67
-resource	textiles,       1,         94,   93
-resource	iron,           1,         106,  99
-resource	iron,           1,         106,  98
-resource	incense,        1,         212,  21
-resource	incense,        1,         212,  16
-resource	iron,           1,         145,  56
+resource	wild_animals,   3,         112,  120
+resource	iron,           2,         106,  99
+resource	incense,        3,         212,  16
+resource	iron,           3,         140,  54
 resource	timber,         1,         191,  57
 resource	pottery,        1,         195,  57
 resource	timber,         1,         161,  44
-resource	purple_dye,     1,         197,  25
-resource	gold,           1,         187,  43
+resource	gold,           1,         188,  43
 resource	timber,         1,         186,  46
 resource	copper,         1,         184,  42
 resource	timber,         1,         110,  80
-resource	iron,           1,         111,  85
-resource	gold,           1,         114,  84
-resource	marble,         1,         136,  49
-resource	iron,           1,         139,  55
-resource	iron,           1,         141,  55
+resource	gold,           1,         114,  83
+resource	marble,         1,         136,  48
 resource	gold,           1,         151,  69
 resource	pottery,        1,         196,  58
-resource	olive_oil,      1,         200,  32
+resource	olive_oil,      2,         200,  32
 resource	camels,         1,         201,  24
 resource	slaves,         1,         35,   141
 resource	slaves,         1,         57,   140
@@ -415,30 +337,20 @@ resource	slaves,         1,         113,  59
 resource	slaves,         1,         85,   84
 resource	slaves,         1,         116,  76
 resource	slaves,         1,         113,  113
-resource	amber,          1,         108,  137
-resource	amber,          1,         114,  137
 resource	gold,           1,         192,  155
-resource	silk,           1,         254,  81
-resource	silk,           1,         254,  76
-resource	silk,           1,         252,  77
-resource	silk,           1,         220,  60
-resource	silk,           1,         222,  61
-resource	silk,           1,         224,  63
-resource	silk,           1,         239,  57
-resource	silk,           1,         243,  55
-resource	lead,           1,         197,  68
-resource	wine,           1,         159,  64
-resource	olive_oil,      1,         83,   38
+resource	silk,           3,         254,  81
+resource	silk,           3,         224,  63
+resource	silk,           3,         239,  57
+resource	lead,           2,         197,  67
 resource	elephants,      1,         80,   32
 resource	elephants,      1,         13,   42
 resource	camels,         1,         43,   20
 resource	camels,         1,         60,   5
-resource	wine,           1,         41,   80
-resource	wine,           1,         63,   87
+resource	wine,           3,         41,   80
 resource	hides,          1,         68,   109
 resource	hides,          1,         80,   129
-resource	silver,         1,         112,  55
-resource	silver,         1,         111,  82
+resource	silver,         1,         111,  54
+resource	silver,         1,         111,  83
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; >>>> start of sound emitters section <<<<
 
@@ -473,7 +385,7 @@ settlement
 
 settlement
 {
-	level large_town
+	level town
 	region Umbria
 
 	year_founded 0
@@ -482,7 +394,7 @@ settlement
 	faction_creator romans_julii
 	building
 	{
-		type core_building governors_villa
+		type core_building governors_house
 	}
 	building
 	{
@@ -680,7 +592,7 @@ settlement
 
 settlement
 {
-	level large_town
+	level town
 	region Sicilia_Romanus
 
 	year_founded 0
@@ -689,7 +601,7 @@ settlement
 	faction_creator romans_julii
 	building
 	{
-		type core_building governors_villa
+		type core_building governors_house
 	}
 	building
 	{
@@ -864,7 +776,7 @@ faction	macedon, balanced_smith
 denari	5000
 settlement
 {
-	level city
+	level large_town
 	region Macedonia
 
 	year_founded 0
@@ -873,7 +785,11 @@ settlement
 	faction_creator macedon
 	building
 	{
-		type core_building governors_palace
+		type core_building governors_villa
+	}
+	building
+	{
+		type defenses stone_wall
 	}
 	building
 	{
@@ -887,7 +803,7 @@ settlement
 
 settlement
 {
-	level town
+	level large_town
 	region Paionia
 
 	year_founded 0
@@ -896,11 +812,15 @@ settlement
 	faction_creator macedon
 	building
 	{
+		type core_building governors_villa
+	}
+	building
+	{
 		type barracks muster_field
 	}
 	building
 	{
-		type core_building governors_house
+		type defenses stone_wall
 	}
 }
 
@@ -916,6 +836,10 @@ settlement
 	building
 	{
 		type core_building governors_villa
+	}
+	building
+	{
+		type defenses stone_wall
 	}
 	building
 	{
@@ -1011,14 +935,14 @@ relative 	Euenus, 	Pervica,		Caleope,	Deukalos,	end
 
 
 faction	egypt, balanced_smith
-denari	5000
+denari	3000
 settlement
 {
 	level town
 	region Nile_Delta
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator egypt
 	building
@@ -1033,20 +957,12 @@ settlement
 	region Middle_Egypt
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator egypt
 	building
 	{
 		type core_building governors_house
-	}
-	building
-	{
-		type barracks muster_field
-	}
-	building
-	{
-		type missiles practice_field
 	}
 }
 
@@ -1056,20 +972,12 @@ settlement
 	region Thebais
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator egypt
 	building
 	{
 		type core_building governors_house
-	}
-	building
-	{
-		type barracks muster_field
-	}
-	building
-	{
-		type missiles practice_field
 	}
 }
 
@@ -1079,16 +987,12 @@ settlement
 	region Cyprus
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator macedon
 	building
 	{
 		type core_building governors_house
-	}
-	building
-	{
-		type barracks muster_field
 	}
 }
 
@@ -1098,16 +1002,12 @@ settlement
 	region Judaea
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator parthia
 	building
 	{
 		type core_building governors_house
-	}
-	building
-	{
-		type missiles practice_field
 	}
 }
 
@@ -1117,16 +1017,12 @@ settlement
 	region Phoenicia
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator parthia
 	building
 	{
 		type core_building governors_house
-	}
-	building
-	{
-		type barracks muster_field
 	}
 }
 
@@ -1228,7 +1124,7 @@ relative 	Kiya, 	Pedibastet,		Heruben,	end
 
 
 faction	seleucid, balanced_smith
-denari	3000
+denari	5000
 settlement
 {
 	level city
@@ -1258,7 +1154,7 @@ settlement
 
 settlement
 {
-	level town
+	level large_town
 	region Coele_Syria
 
 	year_founded 0
@@ -1267,7 +1163,7 @@ settlement
 	faction_creator macedon
 	building
 	{
-		type core_building governors_house
+		type core_building governors_villa
 	}
 	building
 	{
@@ -1281,7 +1177,7 @@ settlement
 
 settlement
 {
-	level town
+	level large_town
 	region Cilicia
 
 	year_founded 0
@@ -1290,7 +1186,7 @@ settlement
 	faction_creator macedon
 	building
 	{
-		type core_building governors_house
+		type core_building governors_villa
 	}
 	building
 	{
@@ -1300,7 +1196,7 @@ settlement
 
 settlement
 {
-	level town
+	level large_town
 	region Assyria
 
 	year_founded 0
@@ -1309,7 +1205,7 @@ settlement
 	faction_creator macedon
 	building
 	{
-		type core_building governors_house
+		type core_building governors_villa
 	}
 	building
 	{
@@ -1342,7 +1238,7 @@ settlement
 
 settlement
 {
-	level town
+	level large_town
 	region Ionia
 
 	year_founded 0
@@ -1351,7 +1247,7 @@ settlement
 	faction_creator macedon
 	building
 	{
-		type core_building governors_house
+		type core_building governors_villa
 	}
 	building
 	{
@@ -1394,7 +1290,7 @@ army
 unit		greek general's guard cavalry early				exp 1 armour 0 weapon_lvl 0
 unit		greek hoplite militia				exp 0 armour 0 weapon_lvl 0
 unit		greek hoplite militia				exp 0 armour 0 weapon_lvl 0
-unit		greek peasant				exp 0 armour 0 weapon_lvl 0
+unit		greek hoplite militia				exp 0 armour 0 weapon_lvl 0
 
 character	Demetrius, named character, age 26, , x 205, y 43
 traits Intelligent 2 , Energetic 1
@@ -1402,7 +1298,7 @@ ancillaries mentor
 army
 unit		greek general's guard cavalry early				exp 1 armour 0 weapon_lvl 0
 unit		greek hoplite militia				exp 0 armour 0 weapon_lvl 0
-unit		greek peasant				exp 0 armour 0 weapon_lvl 0
+unit		greek hoplite militia				exp 0 armour 0 weapon_lvl 0
 unit		greek peltast				exp 0 armour 0 weapon_lvl 0
 
 character	Philip, spy, age 20, , x 240, y 53
@@ -1412,15 +1308,15 @@ character	Achaeus of Hippus, general, age 20, , x 216, y 60
 
 army
 unit		greek hoplite militia				exp 0 armour 0 weapon_lvl 0
-unit		greek peasant				exp 0 armour 0 weapon_lvl 0
-unit		greek peasant				exp 0 armour 0 weapon_lvl 0
+unit		greek hoplite militia				exp 0 armour 0 weapon_lvl 0
+unit		greek hoplite militia				exp 0 armour 0 weapon_lvl 0
 
 character	Molon, general, age 20, , x 193, y 58
 
 army
 unit		greek hoplite militia				exp 0 armour 0 weapon_lvl 0
-unit		greek peasant				exp 0 armour 0 weapon_lvl 0
-unit		greek peasant				exp 0 armour 0 weapon_lvl 0
+unit		greek hoplite militia				exp 0 armour 0 weapon_lvl 0
+unit		greek hoplite militia				exp 0 armour 0 weapon_lvl 0
 
 character	Euthydemus, admiral, age 20, , x 155, y 55
 
@@ -1453,7 +1349,7 @@ faction	carthage, balanced_smith
 denari	5000
 settlement
 {
-	level city
+	level large_town
 	region Africa
 
 	year_founded 0
@@ -1462,15 +1358,15 @@ settlement
 	faction_creator carthage
 	building
 	{
-		type core_building governors_palace
-	}
-	building
-	{
-		type equestrian stables
+		type core_building governors_villa
 	}
 	building
 	{
 		type defenses stone_wall
+	}
+	building
+	{
+		type equestrian stables
 	}
 	building
 	{
@@ -1484,16 +1380,12 @@ settlement
 	region Sicilia_Poeni
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator carthage
 	building
 	{
 		type core_building governors_villa
-	}
-	building
-	{
-		type defenses wooden_pallisade
 	}
 	building
 	{
@@ -1507,7 +1399,7 @@ settlement
 	region Byzacium
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator carthage
 	building
@@ -1561,11 +1453,11 @@ settlement
 	faction_creator carthage
 	building
 	{
-		type barracks muster_field
+		type core_building governors_house
 	}
 	building
 	{
-		type core_building governors_house
+		type barracks muster_field
 	}
 }
 
@@ -1911,16 +1803,16 @@ faction	gauls, balanced_smith
 denari	5000
 settlement
 {
-	level large_town
+	level town
 	region Central_Gaul
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator gauls
 	building
 	{
-		type core_building governors_villa
+		type core_building governors_house
 	}
 	building
 	{
@@ -1934,16 +1826,16 @@ settlement
 
 settlement
 {
-	level large_town
+	level town
 	region Venetia
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator gauls
 	building
 	{
-		type core_building governors_villa
+		type core_building governors_house
 	}
 	building
 	{
@@ -1953,16 +1845,16 @@ settlement
 
 settlement
 {
-	level large_town
+	level town
 	region Cisalpine_Gaul
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator gauls
 	building
 	{
-		type core_building governors_villa
+		type core_building governors_house
 	}
 	building
 	{
@@ -1972,16 +1864,16 @@ settlement
 
 settlement
 {
-	level large_town
+	level town
 	region Celtiberia
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator gauls
 	building
 	{
-		type core_building governors_villa
+		type core_building governors_house
 	}
 	building
 	{
@@ -2155,10 +2047,10 @@ relative 	Vindex, 	Keyne,		Meriadoc,	Verica,	end
 
 
 faction	germans, balanced_smith
-denari	5000
+denari	3000
 settlement
 {
-	level large_town
+	level town
 	region Tribus_Chattii
 
 	year_founded 0
@@ -2167,15 +2059,7 @@ settlement
 	faction_creator gauls
 	building
 	{
-		type core_building governors_villa
-	}
-	building
-	{
-		type barracks muster_field
-	}
-	building
-	{
-		type missiles practice_field
+		type core_building governors_house
 	}
 }
 
@@ -2231,8 +2115,6 @@ unit		barb chieftain cavalry early german				exp 1 armour 0 weapon_lvl 0
 unit		barb cavalry german				exp 2 armour 0 weapon_lvl 0
 unit		warband spear german				exp 1 armour 0 weapon_lvl 0
 unit		warband spear german				exp 1 armour 0 weapon_lvl 0
-unit		warband spear german				exp 1 armour 0 weapon_lvl 0
-unit		barb screeching women german				exp 0 armour 0 weapon_lvl 0
 
 character	Ariogaisus, named character, heir, age 40, , x 79, y 114
 traits GoodCommander 2 , Intelligent 1 , Energetic 1 , GoodAmbusher 1
@@ -2243,7 +2125,6 @@ unit		warband spear german				exp 0 armour 0 weapon_lvl 0
 unit		warband spear german				exp 0 armour 0 weapon_lvl 0
 unit		barb cavalry german				exp 0 armour 0 weapon_lvl 0
 unit		barb peltast german				exp 0 armour 0 weapon_lvl 0
-unit		barb screeching women german				exp 0 armour 0 weapon_lvl 0
 
 character	Hariulfus, named character, age 30, , x 115, y 125
 traits Intelligent 2 , Austere 1
@@ -2257,7 +2138,6 @@ traits NaturalMilitarySkill 2 , Energetic 1 , GoodAmbusher 1
 ancillaries armourer
 army
 unit		barb chieftain cavalry early german				exp 1 armour 0 weapon_lvl 0
-unit		warband spear german				exp 0 armour 0 weapon_lvl 0
 unit		warband spear german				exp 0 armour 0 weapon_lvl 0
 unit		barb peltast german				exp 0 armour 0 weapon_lvl 0
 unit		barb peltast german				exp 0 armour 0 weapon_lvl 0
@@ -2313,17 +2193,13 @@ settlement
 
 settlement
 {
-	level town
+	level village
 	region Belgica
 
 	year_founded 0
-	population 1000
+	population 500
 	plan_set default_set
 	faction_creator gauls
-	building
-	{
-		type core_building governors_house
-	}
 }
 
 settlement
@@ -2332,7 +2208,7 @@ settlement
 	region Tribus_Silurii
 
 	year_founded 0
-	population 1000
+	population 500
 	plan_set default_set
 	faction_creator gauls
 }
@@ -2343,7 +2219,7 @@ settlement
 	region Britannia_Inferior
 
 	year_founded 0
-	population 1000
+	population 500
 	plan_set default_set
 	faction_creator gauls
 }
@@ -2620,7 +2496,7 @@ faction	greek_cities, balanced_smith
 denari	3000
 settlement
 {
-	level city
+	level large_town
 	region Laconia
 
 	year_founded 0
@@ -2629,7 +2505,7 @@ settlement
 	faction_creator macedon
 	building
 	{
-		type core_building governors_palace
+		type core_building governors_villa
 	}
 	building
 	{
@@ -2696,7 +2572,7 @@ settlement
 
 settlement
 {
-	level city
+	level large_town
 	region Sicilia_Graecus
 
 	year_founded 0
@@ -2705,7 +2581,7 @@ settlement
 	faction_creator macedon
 	building
 	{
-		type core_building governors_palace
+		type core_building governors_villa
 	}
 	building
 	{
@@ -2725,8 +2601,6 @@ unit		greek general's guard cavalry early				exp 1 armour 0 weapon_lvl 0
 unit		greek hoplite spartan				exp 1 armour 0 weapon_lvl 0
 unit		greek hoplite militia				exp 0 armour 0 weapon_lvl 0
 unit		greek hoplite				exp 1 armour 0 weapon_lvl 0
-unit		greek peasant				exp 1 armour 0 weapon_lvl 0
-unit		greek peasant				exp 1 armour 0 weapon_lvl 0
 
 character	Dionysios of Sparta, named character, age 34, , x 106, y 44
 traits GoodCommander 1 , Intelligent 1 , GoodAdministrator 2
@@ -3095,7 +2969,7 @@ faction	spain, balanced_smith
 denari	3000
 settlement
 {
-	level large_town
+	level town
 	region Gallaecia
 
 	year_founded 0
@@ -3104,7 +2978,7 @@ settlement
 	faction_creator gauls
 	building
 	{
-		type core_building governors_villa
+		type core_building governors_house
 	}
 }
 
@@ -3121,10 +2995,6 @@ settlement
 	{
 		type core_building governors_house
 	}
-	building
-	{
-		type missiles practice_field
-	}
 }
 
 settlement
@@ -3140,10 +3010,6 @@ settlement
 	{
 		type core_building governors_house
 	}
-	building
-	{
-		type barracks muster_field
-	}
 }
 
 settlement
@@ -3158,10 +3024,6 @@ settlement
 	building
 	{
 		type core_building governors_house
-	}
-	building
-	{
-		type barracks muster_field
 	}
 }
 
@@ -3253,7 +3115,7 @@ settlement
 
 settlement
 {
-	level large_town
+	level town
 	region Tribus_Getae
 
 	year_founded 0
@@ -3262,7 +3124,7 @@ settlement
 	faction_creator macedon
 	building
 	{
-		type core_building governors_villa
+		type core_building governors_house
 	}
 	building
 	{
@@ -3339,7 +3201,7 @@ settlement
 	region Hibernia
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -3362,7 +3224,7 @@ settlement
 	region Hyperboria
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -3385,7 +3247,7 @@ settlement
 	region Bosphorus
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -3404,7 +3266,7 @@ settlement
 	region Lugdinensis
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator gauls
 	building
@@ -3427,7 +3289,7 @@ settlement
 	region Transalpine_Gaul
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -3446,7 +3308,7 @@ settlement
 	region Illyria
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -3469,7 +3331,7 @@ settlement
 	region Propontis
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -3488,7 +3350,7 @@ settlement
 
 settlement
 {
-	level city
+	level large_town
 	region Attica
 
 	year_founded 0
@@ -3497,15 +3359,11 @@ settlement
 	faction_creator macedon
 	building
 	{
-		type core_building governors_palace
+		type core_building governors_villa
 	}
 	building
 	{
 		type defenses stone_wall
-	}
-	building
-	{
-		type academic academy
 	}
 	building
 	{
@@ -3519,7 +3377,7 @@ settlement
 	region Lycia
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -3538,7 +3396,7 @@ settlement
 	region Regnum_Palmyrae
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator parthia
 	building
@@ -3561,7 +3419,7 @@ settlement
 	region Cyrenaica
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator macedon
 	building
@@ -3584,7 +3442,7 @@ settlement
 	region Sinai
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator parthia
 	building
@@ -3651,7 +3509,7 @@ settlement
 	region Crete
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator macedon
 }
@@ -3722,6 +3580,248 @@ settlement
 	faction_creator carthage
 }
 
+settlement
+{
+	level village
+	region Aquitania_Minor
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator gauls
+}
+
+settlement
+{
+	level village
+	region Cantabri
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator gauls
+}
+
+settlement
+{
+	level village
+	region Germania_Minor
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator gauls
+}
+
+settlement
+{
+	level village
+	region Britannia
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator gauls
+}
+
+settlement
+{
+	level village
+	region Caledonia_et_Hibernia
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator gauls
+}
+
+settlement
+{
+	level village
+	region Raetia_et_Noricum
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator gauls
+}
+
+settlement
+{
+	level village
+	region Sequani
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator gauls
+}
+
+settlement
+{
+	level village
+	region Aquitania_Ius
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator gauls
+}
+
+settlement
+{
+	level village
+	region Aremorica_Recta
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator gauls
+}
+
+settlement
+{
+	level village
+	region Africa_Libycis
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator carthage
+}
+
+settlement
+{
+	level village
+	region Phazania
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator carthage
+}
+
+settlement
+{
+	level village
+	region Phazania_Garamantus
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator carthage
+}
+
+settlement
+{
+	level village
+	region Nasamones_Libycis
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator egypt
+}
+
+settlement
+{
+	level village
+	region Paraiton_Libycis
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator egypt
+}
+
+settlement
+{
+	level village
+	region Sarades
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator macedon
+}
+
+settlement
+{
+	level village
+	region Cilicia_Sidea
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator macedon
+}
+
+settlement
+{
+	level village
+	region Seleucia_ad_Calycadnum
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator macedon
+}
+
+settlement
+{
+	level village
+	region Bithynia_et_Pontus
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator parthia
+}
+
+settlement
+{
+	level village
+	region Dacia_Getaea
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator gauls
+}
+
+settlement
+{
+	level village
+	region Singida_Pannonia
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator gauls
+}
+
+settlement
+{
+	level village
+	region Illyria_Dalmatea
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator macedon
+}
+
+settlement
+{
+	level village
+	region Seirinoussai
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator macedon
+}
+
 character	sub_faction britons, Brigomaglos, general, age 20, , x 36, y 142
 
 army
@@ -3729,6 +3829,206 @@ unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
 unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
 unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
 unit		barb druids slave				exp 2 armour 0 weapon_lvl 0
+
+character	sub_faction britons, Enemnogenus, general, age 20, , x 180, y 52
+
+army
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb druids slave				exp 2 armour 0 weapon_lvl 0
+unit		barb druids slave				exp 2 armour 0 weapon_lvl 0
+unit		barb chariot heavy slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barbarian rebel general			exp 2 armour 0 weapon_lvl 0
+
+character	sub_faction britons, Erbin, general, age 20, , x 173, y 48
+
+army
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb druids slave				exp 2 armour 0 weapon_lvl 0
+unit		barb druids slave				exp 2 armour 0 weapon_lvl 0
+unit		barb chariot heavy slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barbarian rebel general			exp 2 armour 0 weapon_lvl 0
+
+character	sub_faction britons, Cintugnatus, general, age 20, , x 128, y 84
+
+army
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb druids slave				exp 2 armour 0 weapon_lvl 0
+unit		barb druids slave				exp 2 armour 0 weapon_lvl 0
+unit		barb chariot heavy slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barbarian rebel general			exp 2 armour 0 weapon_lvl 0
+
+character	sub_faction britons, Cocolitanus, general, age 20, , x 110, y 81
+
+army
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb druids slave				exp 2 armour 0 weapon_lvl 0
+unit		barb druids slave				exp 2 armour 0 weapon_lvl 0
+unit		barb chariot heavy slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barbarian rebel general			exp 2 armour 0 weapon_lvl 0
+
+character	sub_faction britons, Ceanatis, general, age 20, , x 36, y 113
+
+army
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb druids slave				exp 2 armour 0 weapon_lvl 0
+unit		barb druids slave				exp 2 armour 0 weapon_lvl 0
+unit		barb chariot heavy slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barbarian rebel general			exp 2 armour 0 weapon_lvl 0
+
+character	sub_faction britons, Cadeyrn, general, age 20, , x 48, y 150
+
+army
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb druids slave				exp 2 armour 0 weapon_lvl 0
+unit		barb druids slave				exp 2 armour 0 weapon_lvl 0
+unit		barb chariot heavy slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barbarian rebel general			exp 2 armour 0 weapon_lvl 0
+
+character	sub_faction britons, Caratawc, general, age 20, , x 42, y 127
+
+army
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb druids slave				exp 2 armour 0 weapon_lvl 0
+unit		barb druids slave				exp 2 armour 0 weapon_lvl 0
+unit		barb chariot heavy slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barbarian rebel general			exp 2 armour 0 weapon_lvl 0
+
+
+character	sub_faction britons, Berdic, general, age 20, , x 70, y 100
+
+army
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb druids slave				exp 2 armour 0 weapon_lvl 0
+unit		barb druids slave				exp 2 armour 0 weapon_lvl 0
+unit		barb chariot heavy slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barbarian rebel general			exp 2 armour 0 weapon_lvl 0
+
+character	sub_faction britons, Cadwaladur, general, age 20, , x 59, y 94
+
+army
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb druids slave				exp 2 armour 0 weapon_lvl 0
+unit		barb druids slave				exp 2 armour 0 weapon_lvl 0
+unit		barb chariot heavy slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barbarian rebel general			exp 2 armour 0 weapon_lvl 0
+
+
+character	sub_faction britons, Aneirin, general, age 20, , x 71, y 121
+
+army
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb druids slave				exp 2 armour 0 weapon_lvl 0
+unit		barb druids slave				exp 2 armour 0 weapon_lvl 0
+unit		barb chariot heavy slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barbarian rebel general			exp 2 armour 0 weapon_lvl 0
+
+character	sub_faction britons, Adcobrovatus, general, age 20, , x 84, y 100
+
+army
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb infantry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb druids slave				exp 2 armour 0 weapon_lvl 0
+unit		barb druids slave				exp 2 armour 0 weapon_lvl 0
+unit		barb chariot heavy slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb naked fanatics slave		exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barb cavalry slave				exp 2 armour 0 weapon_lvl 0
+unit		barbarian rebel general			exp 2 armour 0 weapon_lvl 0
 
 character	sub_faction numidia, Akbar, general, age 20, , x 61, y 1
 
@@ -3943,7 +4243,77 @@ army
 unit		carthaginian city militia				exp 1 armour 0 weapon_lvl 0
 unit		carthaginian city militia				exp 1 armour 0 weapon_lvl 0
 
+character	sub_faction carthage, Himilco, general, age 20, , x 116, y 7
 
+army
+unit		carthaginian city militia				exp 1 armour 0 weapon_lvl 0
+unit		carthaginian city militia				exp 1 armour 0 weapon_lvl 0
+unit		merc arab cavalry				exp 2 armour 0 weapon_lvl 0
+unit		east archer				exp 2 armour 0 weapon_lvl 0
+unit		merc bedouin				exp 2 armour 0 weapon_lvl 0
+unit		merc bedouin archers				exp 2 armour 0 weapon_lvl 0
+unit		merc bedouin				exp 2 armour 0 weapon_lvl 0
+unit		merc bedouin archers				exp 2 armour 0 weapon_lvl 0
+unit		merc arab cavalry				exp 2 armour 0 weapon_lvl 0
+unit		merc arab cavalry				exp 2 armour 0 weapon_lvl 0
+unit		east infantry				exp 0 armour 0 weapon_lvl 0
+unit		east infantry				exp 0 armour 0 weapon_lvl 0
+unit		east infantry				exp 0 armour 0 weapon_lvl 0
+unit		east infantry				exp 0 armour 0 weapon_lvl 0
+
+character	sub_faction carthage, Theopropides, general, age 20, , x 95, y 4
+
+army
+unit		carthaginian city militia				exp 1 armour 0 weapon_lvl 0
+unit		carthaginian city militia				exp 1 armour 0 weapon_lvl 0
+unit		merc arab cavalry				exp 2 armour 0 weapon_lvl 0
+unit		east archer				exp 2 armour 0 weapon_lvl 0
+unit		merc bedouin				exp 2 armour 0 weapon_lvl 0
+unit		merc bedouin archers				exp 2 armour 0 weapon_lvl 0
+unit		merc bedouin				exp 2 armour 0 weapon_lvl 0
+unit		merc bedouin archers				exp 2 armour 0 weapon_lvl 0
+unit		merc arab cavalry				exp 2 armour 0 weapon_lvl 0
+unit		merc arab cavalry				exp 2 armour 0 weapon_lvl 0
+unit		east infantry				exp 0 armour 0 weapon_lvl 0
+unit		east infantry				exp 0 armour 0 weapon_lvl 0
+unit		east infantry				exp 0 armour 0 weapon_lvl 0
+unit		east infantry				exp 0 armour 0 weapon_lvl 0
+
+character	sub_faction carthage, Hiempsal, general, age 20, , x 80, y 8
+
+army
+unit		carthaginian city militia				exp 1 armour 0 weapon_lvl 0
+unit		carthaginian city militia				exp 1 armour 0 weapon_lvl 0
+unit		merc arab cavalry				exp 2 armour 0 weapon_lvl 0
+unit		east archer				exp 2 armour 0 weapon_lvl 0
+unit		merc bedouin				exp 2 armour 0 weapon_lvl 0
+unit		merc bedouin archers				exp 2 armour 0 weapon_lvl 0
+unit		merc bedouin				exp 2 armour 0 weapon_lvl 0
+unit		merc bedouin archers				exp 2 armour 0 weapon_lvl 0
+unit		merc arab cavalry				exp 2 armour 0 weapon_lvl 0
+unit		merc arab cavalry				exp 2 armour 0 weapon_lvl 0
+unit		east infantry				exp 0 armour 0 weapon_lvl 0
+unit		east infantry				exp 0 armour 0 weapon_lvl 0
+unit		east infantry				exp 0 armour 0 weapon_lvl 0
+unit		east infantry				exp 0 armour 0 weapon_lvl 0
+
+character	sub_faction carthage, Kanmi, general, age 20, , x 139, y 6
+
+army
+unit		carthaginian city militia				exp 1 armour 0 weapon_lvl 0
+unit		carthaginian city militia				exp 1 armour 0 weapon_lvl 0
+unit		merc arab cavalry				exp 2 armour 0 weapon_lvl 0
+unit		east archer				exp 2 armour 0 weapon_lvl 0
+unit		merc bedouin				exp 2 armour 0 weapon_lvl 0
+unit		merc bedouin archers				exp 2 armour 0 weapon_lvl 0
+unit		merc bedouin				exp 2 armour 0 weapon_lvl 0
+unit		merc bedouin archers				exp 2 armour 0 weapon_lvl 0
+unit		merc arab cavalry				exp 2 armour 0 weapon_lvl 0
+unit		merc arab cavalry				exp 2 armour 0 weapon_lvl 0
+unit		east infantry				exp 0 armour 0 weapon_lvl 0
+unit		east infantry				exp 0 armour 0 weapon_lvl 0
+unit		east infantry				exp 0 armour 0 weapon_lvl 0
+unit		east infantry				exp 0 armour 0 weapon_lvl 0
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; >>>> start of diplomacy section <<<<
