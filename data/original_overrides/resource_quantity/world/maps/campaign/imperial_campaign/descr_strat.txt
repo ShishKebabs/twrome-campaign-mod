@@ -3194,7 +3194,7 @@ relative 	Byzas, 	Cerzula,		Gaidres,	Mokasokos,	Bryzos,	end
 
 
 faction	slave, balanced_smith
-denari	10000000000
+denari	9999999999999999999
 settlement
 {
 	level town
